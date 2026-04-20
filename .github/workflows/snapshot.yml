@@ -17,6 +17,7 @@ jobs:
         with: { node-version: '20' }
       - run: npm ci
       - name: Run snapshot
+        # Uses public duty-free search pages only; no Netlify environment variables are required.
         run: npm run snapshot
         timeout-minutes: 10
       - name: Commit updated prices
