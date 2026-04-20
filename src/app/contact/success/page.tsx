@@ -4,6 +4,10 @@ import Link from "@/components/app-link";
 export const metadata: Metadata = {
   title: "문의 접수 완료",
   description: "DFMOA 문의가 접수되었습니다.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function ContactSuccessPage() {

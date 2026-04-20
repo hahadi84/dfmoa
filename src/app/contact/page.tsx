@@ -4,6 +4,9 @@ import Link from "@/components/app-link";
 export const metadata: Metadata = {
   title: "문의",
   description: "DFMOA 문의와 오류 제보",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

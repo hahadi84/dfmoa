@@ -4,6 +4,9 @@ import Link from "@/components/app-link";
 export const metadata: Metadata = {
   title: "FAQ",
   description: "DFMOA 면세점 가격 비교, 국내 판매가 비교, 광고와 데이터 정책 안내",
+  alternates: {
+    canonical: "/faq",
+  },
 };
 
 const compactFaqs = [

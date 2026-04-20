@@ -37,6 +37,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   return {
     title: product.displayName,
     description: `${product.displayName}의 최근 확인 공개가, 국내가 참고 비교, 공식 면세점 링크를 확인해보세요.`,
+    alternates: {
+      canonical: `/product/${product.slug}`,
+    },
   };
 }
 

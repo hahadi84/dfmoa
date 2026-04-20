@@ -4,6 +4,9 @@ import Link from "@/components/app-link";
 export const metadata: Metadata = {
   title: "서비스 소개",
   description: "DFMOA는 공항면세점 공개가와 국내 판매가를 한 화면에서 비교하는 정보 서비스입니다.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

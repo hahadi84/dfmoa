@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "@/components/app-link";
 import { FeaturedProductGrid } from "@/components/featured-product-grid";
 import { SavedProductsPanel } from "@/components/product-actions";
@@ -18,6 +19,12 @@ import {
 } from "@/lib/site-data";
 
 const brandProofs = ["공개가 기준", "국내가 비교", "혜택 조건 분리"];
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   const featuredGuides = guides.slice(0, 3);

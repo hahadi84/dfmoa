@@ -5,6 +5,9 @@ import { categories } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "인기 카테고리",
   description: "공항면세점 인기 카테고리 전체 목록입니다.",
+  alternates: {
+    canonical: "/category",
+  },
 };
 
 export default function CategoryIndexPage() {

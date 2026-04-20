@@ -4,6 +4,9 @@ import Link from "@/components/app-link";
 export const metadata: Metadata = {
   title: "이용약관",
   description: "DFMOA 서비스 이용 조건, 책임 한계, 외부 링크, 콘텐츠 사용 기준",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 const terms = [
