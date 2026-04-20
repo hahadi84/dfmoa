@@ -74,6 +74,7 @@ export function FavoriteButton({
       className={`favorite-button ${isFavorite ? "is-active" : ""} ${className}`}
       aria-pressed={isFavorite}
       aria-label={`${product.displayName} 관심상품 ${isFavorite ? "해제" : "추가"}`}
+      title="관심상품으로 저장"
       onClick={() => {
         const nextIsFavorite = toggleFavoriteProduct(product);
         trackEvent(nextIsFavorite ? "favorite_add" : "favorite_remove", {
@@ -84,7 +85,6 @@ export function FavoriteButton({
       }}
     >
       <span aria-hidden="true">{isFavorite ? "★" : "☆"}</span>
-      <span>{isFavorite ? "관심상품" : "관심추가"}</span>
     </button>
   );
 }

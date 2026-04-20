@@ -24,9 +24,10 @@ export function SiteFooter() {
         <div className="footer-links">
           <Link href="/about">서비스 소개</Link>
           <Link href="/favorites">관심상품</Link>
-          <Link href="/brand/creed">브랜드</Link>
-          <Link href="/airport/icn-t1">공항 가이드</Link>
-          <Link href="/deals/2026-04">월간 혜택</Link>
+          <Link href="/brand">브랜드</Link>
+          <Link href="/airport">공항 가이드</Link>
+          <Link href="/deals">월간 혜택</Link>
+          <Link href="/best-seller-examples">면세점별 베스트 추천 예시 →</Link>
           <Link href="/benefit-reports">주간 리포트</Link>
           <Link href="/feed.xml">RSS</Link>
         </div>

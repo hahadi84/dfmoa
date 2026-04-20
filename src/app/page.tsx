@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
-import { FeaturedProductGrid } from "@/components/featured-product-grid";
 import { SavedProductsPanel } from "@/components/product-actions";
 import { SafeProductImage } from "@/components/product-image";
 import { SearchForm } from "@/components/search-form";
-import { bestSellerExampleNotice, storeBestSellerExamples } from "@/lib/best-seller-examples";
 import { latestBenefitReport } from "@/lib/benefit-report-generator";
 import {
   buildBreadcrumbJsonLd,
@@ -12,18 +10,10 @@ import {
   buildWebsiteJsonLd,
   serializeJsonLd,
 } from "@/lib/json-ld";
-import { formatSnapshotTimestamp, getSnapshotBestItem } from "@/lib/price-snapshot-view";
 import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
+import { getLowestPriceSummaries, getLowestPriceSummary, hasSnapshotPrice } from "@/lib/snapshot-summaries";
 import { buildSeoMetadata, HOME_OG_IMAGE } from "@/lib/seo-metadata";
-import {
-  categories,
-  featureSearches,
-  formatKrw,
-  guides,
-  getStoreById,
-  products,
-  stores,
-} from "@/lib/site-data";
+import { categories, guides, products, stores } from "@/lib/site-data";
 
 const brandProofs = ["공개가 기준", "국내가 비교", "혜택 조건 분리"];
 
@@ -47,31 +37,40 @@ export default function Home() {
     .flatMap((snapshot) => Object.values(snapshot?.sources ?? {}).map((source) => source.fetchedAt).filter(Boolean))
     .sort()
     .at(-1);
-  const latestSnapshotLabel = formatSnapshotTimestamp(latestSnapshotTimestamp) || "최근 확인 시각 없음";
-  const lowestPriceItems = products
-    .flatMap((product) => {
-      const snapshot = priceSnapshotsByProductId[product.id];
-      const bestItem = getSnapshotBestItem(snapshot);
-      const priceKrw = Number(bestItem?.item.priceKrw ?? 0);
+  const latestSnapshotLabel = latestSnapshotTimestamp?.replace("T", " ").slice(0, 16) || "최근 확인 시각 없음";
+  const pricedProducts = products.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id]));
+  const lowestPriceItems = getLowestPriceSummaries(products, priceSnapshotsByProductId, 6);
+  const heroLowestPriceItems = lowestPriceItems.slice(0, 3);
+  const preferredSearchSlugs = [
+    "creed-aventus-50ml",
+    "sulwhasoo-first-care-serum-90ml",
+    "glenfiddich-15-700ml",
+    "jo-malone-english-pear-100ml",
+  ];
+  const popularSearchProducts = preferredSearchSlugs
+    .map((slug) => products.find((product) => product.slug === slug))
+    .filter((product): product is (typeof products)[number] =>
+      Boolean(product && hasSnapshotPrice(priceSnapshotsByProductId[product.id]))
+    );
+  const popularSearchItems = popularSearchProducts.length ? popularSearchProducts : pricedProducts.slice(0, 4);
+  const categorySummaries = categories.map((category) => {
+    const categoryProducts = products.filter((product) => product.categorySlug === category.slug);
+    const lowestItem = categoryProducts
+      .flatMap((product) => {
+        const item = getLowestPriceSummary(product, priceSnapshotsByProductId[product.id]);
+        return item ? [item] : [];
+      })
+      .sort((left, right) => left.priceKrw - right.priceKrw)[0];
+    const pricedCount = categoryProducts.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id])).length;
 
-      if (!bestItem || !priceKrw) {
-        return [];
-      }
-
-      const store = getStoreById(bestItem.sourceId);
-
-      return [
-        {
-          product,
-          storeName: store?.shortName ?? bestItem.sourceId,
-          priceKrw,
-          imageUrl: bestItem.item.imageUrl ?? null,
-          timestamp: formatSnapshotTimestamp(bestItem.source.fetchedAt ?? bestItem.item.fetchedAt),
-        },
-      ];
-    })
-    .sort((left, right) => left.priceKrw - right.priceKrw)
-    .slice(0, 6);
+    return {
+      category,
+      lowestItem,
+      pricedCount,
+    };
+  });
+  const activeCategorySummaries = categorySummaries.filter((item) => item.pricedCount >= 3);
+  const readyCategorySummaries = categorySummaries.filter((item) => item.pricedCount < 3);
 
   return (
     <>
@@ -104,24 +103,56 @@ export default function Home() {
 
             <div className="hero-actions">
               <Link className="chip is-demo" href="/benefits">
-                할인·적립금 이벤트
+                할인·적립금
               </Link>
               <Link className="chip is-soft" href="/benefit-reports">
-                주간 혜택 리포트
+                주간 리포트
               </Link>
-              <Link className="chip is-soft" href="/best-seller-examples">
-                베스트10 추천 예시
+              <Link className="chip is-soft" href="/search">
+                전체 최저가
               </Link>
-              {featureSearches.map((searchText) => (
-                <Link
-                  key={searchText}
-                  className="chip"
-                  href={`/search?q=${encodeURIComponent(searchText)}`}
-                >
-                  {searchText}
-                </Link>
-              ))}
             </div>
+
+            {popularSearchItems.length ? (
+              <div className="hero-search-terms" aria-label="지금 인기 검색어">
+                <span>지금 인기 검색어</span>
+                <div className="chip-row">
+                  {popularSearchItems.map((product) => (
+                    <Link key={product.id} className="chip" href={`/search?q=${encodeURIComponent(product.query)}`}>
+                      {product.displayName}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {heroLowestPriceItems.length ? (
+              <div className="hero-lowest-preview" aria-label="지금 최저가 3개">
+                <div className="hero-lowest-preview-head">
+                  <span>지금 최저가 3개</span>
+                  <Link className="text-link" href="/search">
+                    전체 보기
+                  </Link>
+                </div>
+                <div className="hero-lowest-preview-list">
+                  {heroLowestPriceItems.map((item) => (
+                    <Link key={item.product.id} className="hero-lowest-preview-card" href={`/product/${item.product.slug}`}>
+                      <SafeProductImage
+                        src={item.imageUrl}
+                        alt={`${item.product.brand} ${item.product.name} ${item.product.volume}`}
+                        categorySlug={item.product.categorySlug}
+                      />
+                      <span>
+                        <strong>{item.product.displayName}</strong>
+                        <small>
+                          {item.storeName} {item.priceLabel} · {item.timestamp || latestSnapshotLabel}
+                        </small>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null}
 
             <p className="hero-note">
               {supportedStoreNames}의 최근 확인 가능한 공개가와 공식 링크를 함께 제공합니다.
@@ -131,8 +162,6 @@ export default function Home() {
 
           <div className="hero-panel panel home-usage-panel">
             <span className="eyebrow">How It Works</span>
-            <h2 className="card-title">3단계로 비교</h2>
-            <p className="section-copy">검색어 하나로 가격, 국내가, 혜택 조건을 순서대로 확인합니다.</p>
 
             <div className="home-usage-steps">
               <div className="home-usage-step">
@@ -154,9 +183,6 @@ export default function Home() {
 
             <Link className="ghost-button home-usage-link" href="/search">
               검색 시작
-            </Link>
-            <Link className="ghost-button home-usage-link" href="/benefits">
-              혜택 모아보기
             </Link>
           </div>
         </div>
@@ -188,7 +214,7 @@ export default function Home() {
                   <div className="today-lowest-copy">
                     <h3 className="card-title">{item.product.displayName}</h3>
                     <p className="today-lowest-price">
-                      {item.storeName} · {formatKrw(item.priceKrw)}
+                      {item.storeName} · {item.priceLabel}
                     </p>
                     <p className="today-lowest-time">{item.timestamp || latestSnapshotLabel} 기준</p>
                   </div>
@@ -201,64 +227,15 @@ export default function Home() {
 
       <SavedProductsPanel products={products} />
 
-      <section className="page-section">
+      <section className="page-section is-compact">
         <div className="container">
-          <article className="surface-card report-feature-card">
-            <div>
-              <span className="eyebrow">Weekly Benefit Brief</span>
-              <h2 className="section-title" style={{ fontSize: "2rem", marginTop: 10 }}>
-                이번 주 면세점 혜택 정리
-              </h2>
-              <p className="section-copy">
-                쿠폰, 적립금, 카드 할인, 브랜드 행사를 공식 링크와 확인할 점 중심으로 정리했습니다.
-              </p>
-            </div>
-            <div className="report-metric-strip">
-              <span>{latestBenefitReport.storeCount}개 면세점</span>
-              <span>{latestBenefitReport.sourceCount}개 혜택 링크</span>
-              <span>{latestBenefitReport.periodLabel}</span>
-            </div>
-            <Link className="button" href={`/benefit-reports/${latestBenefitReport.slug}`}>
-              리포트 보기
-            </Link>
-          </article>
-        </div>
-      </section>
-
-      <section className="page-section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <span className="eyebrow">Recommendation Example</span>
-              <h2 className="section-title">면세점별 베스트10 추천 예시</h2>
-              <p className="section-copy">{bestSellerExampleNotice}</p>
-            </div>
-            <Link className="ghost-button" href="/best-seller-examples">
-              전체 보기
-            </Link>
-          </div>
-
-          <div className="best-preview-grid">
-            {storeBestSellerExamples.map((storeExample) => (
-              <Link key={storeExample.storeId} className="best-preview-card" href="/best-seller-examples">
-                <span className="benefit-logo-frame">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={storeExample.logoUrl} alt={`${storeExample.storeName} 로고`} loading="lazy" />
-                </span>
-                <div className="best-preview-copy">
-                  <span className="chip is-soft">추천 예시 TOP 10</span>
-                  <h3 className="card-title">{storeExample.storeName}</h3>
-                </div>
-                <div className="chip-row">
-                  {storeExample.items.slice(0, 3).map((item) => (
-                    <span key={item.product.slug} className="chip is-soft">
-                      {item.product.displayName}
-                    </span>
-                  ))}
-                </div>
-              </Link>
-            ))}
-          </div>
+          <Link className="weekly-benefit-banner" href={`/benefit-reports/${latestBenefitReport.slug}`}>
+            <strong>이번 주 면세 혜택</strong>
+            <span>
+              {latestBenefitReport.storeCount}사 {latestBenefitReport.sourceCount}개 링크 정리 ({latestBenefitReport.periodLabel} 기준)
+            </span>
+            <span className="text-link">리포트 보기 →</span>
+          </Link>
         </div>
       </section>
 
@@ -268,43 +245,43 @@ export default function Home() {
             <div>
               <span className="eyebrow">Popular Categories</span>
               <h2 className="section-title">인기 카테고리</h2>
-              <p className="section-copy">자주 비교하는 면세 품목을 10개로 정리했습니다.</p>
+              <p className="section-copy">가격 데이터가 충분한 카테고리는 크게 보여주고, 준비 중 카테고리는 별도 목록으로 분리했습니다.</p>
             </div>
           </div>
 
-          <div className="cards-grid">
-            {categories.map((category) => (
-              <Link key={category.slug} href={`/category/${category.slug}`} className="store-card category-card">
+          <div className="category-active-grid">
+            {activeCategorySummaries.map(({ category, lowestItem, pricedCount }) => (
+              <Link key={category.slug} href={`/category/${category.slug}`} className="category-active-card">
                 <span className="chip is-soft">{category.name}</span>
-                <div className="store-meta">
-                  <div className="store-name-row">
-                    <h3 className="card-title">{category.headline}</h3>
-                    <span className="text-link">보기</span>
-                  </div>
-                  <p className="section-copy">{category.intro}</p>
+                <h3 className="card-title">{category.headline}</h3>
+                <p className="section-copy">{category.intro}</p>
+                <div className="category-lowest-line">
+                  {lowestItem ? (
+                    <>
+                      <strong>{lowestItem.product.displayName}</strong>
+                      <span>
+                        {lowestItem.storeName} · {lowestItem.priceLabel}
+                      </span>
+                    </>
+                  ) : null}
                 </div>
-                <div className="chip-row">
-                  {category.keywords.slice(0, 3).map((keyword) => (
-                    <span key={keyword} className="chip is-soft">
-                      {keyword}
-                    </span>
-                  ))}
-                </div>
+                <span className="text-link">가격 확인 상품 {pricedCount}개 보기</span>
               </Link>
             ))}
           </div>
-        </div>
-      </section>
 
-      <section className="page-section">
-        <div className="container">
-          <div>
-            <span className="eyebrow">Popular Searches</span>
-            <h2 className="section-title">자주 찾는 상품</h2>
-            <p className="section-copy">대표 상품을 바로 열어 면세가와 국내가를 비교합니다.</p>
-
-            <FeaturedProductGrid products={products} priceSnapshotsByProductId={priceSnapshotsByProductId} />
-          </div>
+          {readyCategorySummaries.length ? (
+            <div className="category-ready-row">
+              <strong>준비 중 카테고리</strong>
+              <div className="chip-row">
+                {readyCategorySummaries.map(({ category, pricedCount }) => (
+                  <Link key={category.slug} className="chip is-soft" href={`/category/${category.slug}`}>
+                    {category.name} · 준비 중 {pricedCount}/3
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : null}
         </div>
       </section>
 

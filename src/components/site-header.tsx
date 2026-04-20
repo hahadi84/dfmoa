@@ -16,9 +16,9 @@ export function SiteHeader() {
           <Link href="/search">가격 비교하기</Link>
           <Link href="/category">카테고리</Link>
           <Link href="/favorites">관심상품</Link>
-          <Link href="/brand/creed">브랜드</Link>
-          <Link href="/deals/2026-04">월간 혜택</Link>
-          <Link href="/airport/icn-t1">공항 가이드</Link>
+          <Link href="/brand">브랜드</Link>
+          <Link href="/deals">월간 혜택</Link>
+          <Link href="/airport">공항 가이드</Link>
           <Link href="/benefit-reports">리포트</Link>
         </nav>
       </div>

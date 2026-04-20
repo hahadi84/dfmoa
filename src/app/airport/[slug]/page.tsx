@@ -59,7 +59,7 @@ export default async function AirportPage({ params }: AirportPageProps) {
   });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
-    { name: "공항 가이드", path: "/airport/icn-t1" },
+    { name: "공항 가이드", path: "/airport" },
     { name: airport.title, path: `/airport/${airport.slug}` },
   ]);
 
@@ -73,7 +73,7 @@ export default async function AirportPage({ params }: AirportPageProps) {
         <div className="breadcrumb">
           <Link href="/">홈</Link>
           <span>/</span>
-          <span>공항 가이드</span>
+          <Link href="/airport">공항 가이드</Link>
           <span>/</span>
           <span>{airport.title}</span>
         </div>

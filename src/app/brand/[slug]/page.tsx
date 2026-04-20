@@ -67,7 +67,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
   const relatedDeals = monthlyDealReports.filter((report) => brand.relatedDealSlugs?.includes(report.slug));
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
-    { name: "브랜드", path: "/brand/creed" },
+    { name: "브랜드", path: "/brand" },
     { name: brand.nameKo, path: `/brand/${brand.slug}` },
   ]);
   const itemListJsonLd = buildBrandJsonLd(brand);
@@ -82,7 +82,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
         <div className="breadcrumb">
           <Link href="/">홈</Link>
           <span>/</span>
-          <span>브랜드</span>
+          <Link href="/brand">브랜드</Link>
           <span>/</span>
           <span>{brand.nameKo}</span>
         </div>

@@ -12,10 +12,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     "",
     "/about",
+    "/airport",
     "/best-seller-examples",
     "/benefits",
     "/benefit-reports",
+    "/brand",
     "/category",
+    "/deals",
     "/faq",
     "/privacy",
     "/terms",

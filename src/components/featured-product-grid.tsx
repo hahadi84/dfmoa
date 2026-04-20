@@ -63,9 +63,6 @@ export function FeaturedProductGrid({ products, priceSnapshotsByProductId = {} }
                 </div>
               </Link>
               <div className="product-card-actions">
-                <Link className="text-link" href={`/product/${product.slug}`}>
-                  상세 비교 보기
-                </Link>
                 <Link className="text-link" href={`/search?q=${encodeURIComponent(product.query)}`}>
                   국내가도 비교
                 </Link>

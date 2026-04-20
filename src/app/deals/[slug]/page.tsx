@@ -57,7 +57,7 @@ export default async function DealsPage({ params }: DealsPageProps) {
   const articleJsonLd = buildMonthlyDealArticleJsonLd(report);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
-    { name: "월간 혜택", path: "/deals/2026-04" },
+    { name: "월간 혜택", path: "/deals" },
     { name: report.title, path: `/deals/${report.slug}` },
   ]);
 
@@ -71,7 +71,7 @@ export default async function DealsPage({ params }: DealsPageProps) {
         <div className="breadcrumb">
           <Link href="/">홈</Link>
           <span>/</span>
-          <span>월간 혜택</span>
+          <Link href="/deals">월간 혜택</Link>
           <span>/</span>
           <span>{report.year}.{String(report.month).padStart(2, "0")}</span>
         </div>
