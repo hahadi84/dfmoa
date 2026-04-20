@@ -3,15 +3,15 @@
   "productSlug": "glenfiddich-15-700ml",
   "categorySlug": "liquor",
   "query": "글렌피딕 15년 700ml",
-  "fetchedAt": "2026-04-20T15:02:28+09:00",
-  "updatedAtLabel": "2026-04-20 15:02 기준",
+  "fetchedAt": "2026-04-20T18:15:46+09:00",
+  "updatedAtLabel": "2026-04-20 18:15 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-04-20T15:02:25+09:00",
+      "fetchedAt": "2026-04-20T18:15:42+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20Vat3%20Perpetual%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2023/04/05/082331000041_20230405_14143526_12_082331000041_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-04-20T15:02:25+09:00"
+          "fetchedAt": "2026-04-20T18:15:42+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95+15%EB%85%84+700ml",
-      "fetchedAt": "2026-04-20T15:02:27+09:00",
+      "fetchedAt": "2026-04-20T18:15:45+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
@@ -55,7 +55,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-04-20T15:02:28+09:00",
+      "fetchedAt": "2026-04-20T18:15:46+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",

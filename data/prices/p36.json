@@ -3,15 +3,15 @@
   "productSlug": "gucci-gg0061s",
   "categorySlug": "eyewear",
   "query": "구찌 GG0061S 선글라스",
-  "fetchedAt": "2026-04-20T15:04:53+09:00",
-  "updatedAtLabel": "2026-04-20 15:04 기준",
+  "fetchedAt": "2026-04-20T18:18:49+09:00",
+  "updatedAtLabel": "2026-04-20 18:18 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B5%AC%EC%B0%8C%20GG0061S%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-04-20T15:04:51+09:00",
+      "fetchedAt": "2026-04-20T18:18:46+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
@@ -28,7 +28,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EA%B5%AC%EC%B0%8C+GG0061S+%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-04-20T15:04:53+09:00",
+      "fetchedAt": "2026-04-20T18:18:48+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
@@ -45,7 +45,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B5%AC%EC%B0%8C%20GG0061S%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-04-20T15:04:53+09:00",
+      "fetchedAt": "2026-04-20T18:18:49+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
