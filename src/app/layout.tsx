@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 const ADSENSE_PUBLISHER_ID = "ca-pub-9602089494397808";
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-body",
@@ -64,6 +66,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
         <div className="site-shell">
           <SiteHeader />
           <main>{children}</main>

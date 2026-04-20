@@ -56,6 +56,10 @@ export function SearchForm({ defaultValue = "", compact = false }: SearchFormPro
       });
     }
 
+    trackEvent("search_submit", {
+      query: nextQuery,
+    });
+
     router.push(`/search?q=${encodeURIComponent(nextQuery)}`);
     setIsOpen(false);
   }

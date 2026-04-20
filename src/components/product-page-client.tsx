@@ -231,7 +231,7 @@ export function ProductPageClient({
               {result?.summary && offers.length ? <PriceRangeSummary summary={result.summary} /> : null}
               <SourcePriceStatusPanel sourcePrices={sourcePrices} query={product.query} product={product} />
               {offers.length ? <BenefitApplicationPanel offers={offers} /> : null}
-              {offers.length ? <OfferTable offers={offers} /> : null}
+              {offers.length ? <OfferTable offers={offers} productSlug={product.slug} /> : null}
             </>
           ) : null}
         </div>

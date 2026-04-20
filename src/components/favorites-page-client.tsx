@@ -7,6 +7,7 @@ import { PriceAlertForm } from "@/components/price-alert-form";
 import { FavoriteButton, useFavoriteProducts, useRecentProducts } from "@/components/product-actions";
 import { SafeProductImage } from "@/components/product-image";
 import { SearchForm } from "@/components/search-form";
+import { trackEvent } from "@/lib/analytics";
 import { brandLandings } from "@/lib/seo-content";
 import { buildSearchApiPath } from "@/lib/search-api-url";
 import { buildSourcePrices, formatDisplayTimestamp, getAggregatePriceStatus, getComparableSourcePrices, getPriceStatusLabel, getPriceStatusTone } from "@/lib/source-policy";
@@ -231,7 +232,20 @@ function FavoriteInsightCard({
           국내가도 비교
         </Link>
         {lowestPrice?.sourceUrl || lowestPrice?.searchUrl ? (
-          <a className="ghost-button" href={(lowestPrice.sourceUrl || lowestPrice.searchUrl) ?? "#"} target="_blank" rel="noreferrer">
+          <a
+            className="ghost-button"
+            href={(lowestPrice.sourceUrl || lowestPrice.searchUrl) ?? "#"}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() =>
+              trackEvent("outbound_click_store", {
+                store: lowestPrice.sourceId,
+                product_slug: product.slug,
+                price_krw: lowestPrice.price ?? 0,
+                source_status: lowestPrice.status,
+              })
+            }
+          >
             원본에서 확인
           </a>
         ) : null}

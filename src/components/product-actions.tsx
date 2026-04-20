@@ -59,9 +59,11 @@ export function useRecentProducts() {
 export function FavoriteButton({
   product,
   className = "",
+  sourcePage = "product",
 }: {
   product: Product;
   className?: string;
+  sourcePage?: string;
 }) {
   const favorites = useFavoriteProducts();
   const isFavorite = favorites.some((item) => item.slug === product.slug);
@@ -77,7 +79,7 @@ export function FavoriteButton({
         trackEvent(nextIsFavorite ? "favorite_add" : "favorite_remove", {
           product_id: product.id,
           product_slug: product.slug,
-          page_type: "product",
+          source_page: sourcePage,
         });
       }}
     >

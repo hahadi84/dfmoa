@@ -58,9 +58,9 @@ export function NewsletterSignupForm({ source, compact = false }: NewsletterSign
       setPrivacyConsent(false);
       setMarketingConsent(false);
       setMessage(data.message);
-      trackEvent("newsletter_subscribe_submit", {
-        page_type: source,
-        marketing_consent: marketingConsent,
+      trackEvent("weekly_report_subscribe", {
+        source_page: source,
+        ad_consent: marketingConsent,
       });
     } catch (submitError) {
       setError(submitError instanceof Error ? submitError.message : "구독 요청을 접수하지 못했습니다.");

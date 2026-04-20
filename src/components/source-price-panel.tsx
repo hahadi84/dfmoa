@@ -42,12 +42,12 @@ export function OfficialSourceLinks({ query, compact = false }: OfficialSourceLi
             target="_blank"
             rel="noopener noreferrer"
             onClick={() =>
-              trackEvent("outbound_dutyfree_click", {
-                source_id: source.id,
-                source_name: source.name,
-                page_type: "search",
-                price_status: "unavailable",
-                has_price: false,
+              trackEvent("outbound_click_store", {
+                store: source.id,
+                product_slug: "search",
+                price_krw: 0,
+                source_status: "unavailable",
+                source_page: "search",
                 cta_type: source.searchUrlTemplate ? "official_search" : "official_home",
               })
             }
@@ -129,14 +129,13 @@ export function SourcePriceStatusPanel({
                   rel="noopener noreferrer"
                   aria-label={`${sourcePrice.sourceName} 원본에서 확인`}
                   onClick={() =>
-                    trackEvent("outbound_dutyfree_click", {
-                      source_id: sourcePrice.sourceId,
-                      source_name: sourcePrice.sourceName,
+                    trackEvent("outbound_click_store", {
+                      store: sourcePrice.sourceId,
                       product_id: product?.id,
-                      product_slug: product?.slug,
+                      product_slug: product?.slug ?? "search",
+                      price_krw: sourcePrice.price ?? 0,
+                      source_status: sourcePrice.status,
                       page_type: "product",
-                      price_status: sourcePrice.status,
-                      has_price: hasPrice,
                       cta_type: sourcePrice.sourceUrl ? "original_source" : "official_search",
                     })
                   }

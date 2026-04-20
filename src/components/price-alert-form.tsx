@@ -120,7 +120,8 @@ export function PriceAlertForm({ product, source = "product_detail", compact = f
       trackEvent("price_alert_submit", {
         product_id: product.id,
         product_slug: product.slug,
-        target_type: form.targetType,
+        threshold_krw: targetPrice,
+        trigger_mode: form.targetType === "effective_price" ? "estimated_price" : "public_price",
         currency: form.currency,
         source_id: form.sourceId,
         page_type: source,

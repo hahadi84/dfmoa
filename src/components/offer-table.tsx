@@ -1,3 +1,5 @@
+"use client";
+
 import {
   formatKrw,
   formatUsd,
@@ -6,13 +8,15 @@ import {
   getStoreById,
 } from "@/lib/site-data";
 import { SafeProductImage } from "@/components/product-image";
+import { trackEvent } from "@/lib/analytics";
 import type { LiveOffer } from "@/lib/search-types";
 
 type OfferTableProps = {
   offers: LiveOffer[];
+  productSlug?: string;
 };
 
-export function OfferTable({ offers }: OfferTableProps) {
+export function OfferTable({ offers, productSlug }: OfferTableProps) {
   if (!offers.length) {
     return <p className="empty-state">현재 확인된 공개가가 없습니다. 공식 면세점 링크에서 판매 여부를 확인해 주세요.</p>;
   }
@@ -84,7 +88,19 @@ export function OfferTable({ offers }: OfferTableProps) {
                   </span>
                 </td>
                 <td>
-                  <a href={offer.sourceUrl} target="_blank" rel="noreferrer">
+                  <a
+                    href={offer.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={() =>
+                      trackEvent("outbound_click_store", {
+                        store: offer.storeId,
+                        product_slug: productSlug ?? "search",
+                        price_krw: offer.krwPrice,
+                        source_status: offer.status,
+                      })
+                    }
+                  >
                     원본에서 확인
                   </a>
                 </td>
