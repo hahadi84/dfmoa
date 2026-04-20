@@ -438,39 +438,17 @@ async function fetchLottePricesOnce(query, options = {}, matchedVia = "original"
 export async function fetchLottePrices(query, options = {}) {
   const attempts = buildQueryAttempts(query, options.product);
   const attemptedQueries = attempts.map((attempt) => attempt.query);
-  let lastResult = null;
-
-  for (const attempt of attempts) {
-    const result = await fetchLottePricesOnce(attempt.query, options, attempt.matchedVia);
-    lastResult = result;
-
-    if (result.status === "ok" && result.items.length) {
-      return {
-        ...result,
-        attempted_queries: attemptedQueries,
-      };
-    }
-
-    if (result.error === "robots_or_terms_restricted") {
-      break;
-    }
-  }
 
   return {
-    ...(lastResult ?? {
-      store: "lotte",
-      query: cleanText(query),
-      searchUrl: getSearchUrl(query),
-      items: [],
-      fetchedAt: nowKstIso(),
-      status: "error",
-      error: "product_match_failed",
-      matched_via: "original",
-    }),
+    store: "lotte",
     query: cleanText(query),
     searchUrl: getSearchUrl(query),
+    items: [],
+    fetchedAt: nowKstIso(),
+    status: "disabled_by_policy",
+    matched_via: "original",
     attempted_queries: attemptedQueries,
-    error: lastResult?.error ?? "product_match_failed",
+    error: "disabled_by_policy",
   };
 }
 
@@ -478,5 +456,5 @@ export const lotteCrawlerConfig = {
   userAgent: USER_AGENT,
   timeoutMs: REQUEST_TIMEOUT_MS,
   cacheTtlMs: CACHE_TTL_MS,
-  crawlDelaySeconds: 5,
+  crawlDelaySeconds: 0,
 };

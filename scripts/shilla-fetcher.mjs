@@ -7,7 +7,18 @@ const ROBOTS_URL = `${SHILLA_BASE_URL}/robots.txt`;
 const USER_AGENT = "DFMOA/1.0 (+https://dfmoa.netlify.app)";
 const REQUEST_TIMEOUT_MS = 8000;
 const CACHE_TTL_MS = 5 * 60 * 1000;
-const VARIANT_TOKENS = ["absolu", "cologne", "homme", "men", "intense", "parfum extrait"];
+const VARIANT_TOKENS = [
+  "absolu",
+  "body mist",
+  "cologne",
+  "edt",
+  "homme",
+  "intense",
+  "men",
+  "mist",
+  "parfum extrait",
+  "바디 미스트",
+];
 const cache = new Map();
 let robotsPromise = null;
 
@@ -316,12 +327,23 @@ function hasDistinctiveProductSignal(product, haystack, compactHaystack) {
 
 function scoreItem(item, query, product) {
   const title = cleanText(item.productNameForDisp ?? item.name);
-  const brand = cleanText(item.brandDisplayName ?? item.brandName);
-  const haystack = normalizeText(`${brand} ${title}`);
-  const compactHaystack = compactText(`${brand} ${title}`);
+  const brand = cleanText(
+    item.brandDisplayName ??
+      item.brandName ??
+      item.brandCategory?.displayName ??
+      item.brandCategory?.brandName ??
+      item.brandCategory?.enName
+  );
+  const attributeText = cleanText(`${item.prodAttrType?.name ?? ""} ${item.prodAttrValue ?? ""}`);
+  const brandAliasText = cleanText(
+    `${item.brandCategory?.displayName ?? ""} ${item.brandCategory?.brandName ?? ""} ${item.brandCategory?.enName ?? ""}`
+  );
+  const haystack = normalizeText(`${brand} ${brandAliasText} ${title} ${attributeText}`);
+  const compactHaystack = compactText(`${brand} ${brandAliasText} ${title} ${attributeText}`);
   const matchText = buildMatchText(product, query);
   const matchTokens = Array.from(new Set(getTokens(matchText))).filter((token) => token.length > 2);
   const volumeTokens = getVolumeTokens(product?.volume ?? query);
+  const itemVolumeTokens = getVolumeTokens(`${title} ${attributeText}`);
   const brandTokens = getTokens(product?.brand ?? getTokens(query)[0] ?? "");
   let score = 0;
 
@@ -331,7 +353,7 @@ function scoreItem(item, query, product) {
 
   if (volumeTokens.length && volumeTokens.every((token) => compactHaystack.includes(token))) {
     score += 40;
-  } else if (volumeTokens.length) {
+  } else if (volumeTokens.length && itemVolumeTokens.length) {
     return -100;
   }
 
@@ -426,7 +448,13 @@ function toPublicItem({ item, score }, exchangeRate, imageMap, query, fetchedAt)
   const skuNo = cleanText(item.skuNo);
   const code = cleanText(item.code);
   const title = cleanText(item.productNameForDisp ?? item.name);
-  const brand = cleanText(item.brandDisplayName ?? item.brandName);
+  const brand = cleanText(
+    item.brandDisplayName ??
+      item.brandName ??
+      item.brandCategory?.displayName ??
+      item.brandCategory?.brandName ??
+      item.brandCategory?.enName
+  );
   const regularUsdPrice = Number(item.userPrice?.salePrice ?? item.userPrice?.guestPrice ?? 0) || undefined;
   const priceUsd = Number(item.discountPrice ?? item.userPrice?.discountPrice ?? regularUsdPrice ?? 0) || undefined;
 
@@ -581,8 +609,18 @@ export async function fetchShillaPrices(query, options = {}) {
   const attempts = buildQueryAttempts(query, options.product);
   const attemptedQueries = attempts.map((attempt) => attempt.query);
   let lastResult = null;
+  let originalFailureLogged = false;
 
-  for (const attempt of attempts) {
+  for (const [index, attempt] of attempts.entries()) {
+    if (index > 0 && !originalFailureLogged) {
+      console.error(`[shilla] original query failed for ${options.product?.slug ?? cleanText(query)}, trying aliases...`);
+      originalFailureLogged = true;
+    }
+
+    if (index > 0) {
+      console.error(`[shilla] trying alias: ${attempt.query}`);
+    }
+
     const result = await fetchShillaPricesOnce(attempt.query, options, attempt.matchedVia);
     lastResult = result;
 

@@ -3,34 +3,44 @@
   "productSlug": "celine-triomphe-cl40194u",
   "categorySlug": "eyewear",
   "query": "셀린느 트리옹프 CL40194U",
-  "fetchedAt": "2026-04-20T13:15:22+09:00",
-  "updatedAtLabel": "2026-04-20 13:15 기준",
+  "fetchedAt": "2026-04-20T14:44:41+09:00",
+  "updatedAtLabel": "2026-04-20 14:44 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
-      "fetchedAt": "2026-04-20T13:15:20+09:00",
+      "fetchedAt": "2026-04-20T14:44:39+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",
-        "셀린느트리옹프cl40194u"
+        "Celine Triomphe CL40194U",
+        "Celine CL40194U",
+        "셀린느트리옹프 CL40194U",
+        "셀린느트리옹프cl40194u",
+        "celinetriomphecl40194u",
+        "celinecl40194u"
       ],
       "items": [],
       "error": "product_match_failed"
     },
     "lotte": {
       "store": "lotte",
-      "status": "error",
+      "status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
-      "fetchedAt": "2026-04-20T13:15:22+09:00",
+      "fetchedAt": "2026-04-20T14:44:41+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",
-        "셀린느트리옹프cl40194u"
+        "Celine Triomphe CL40194U",
+        "Celine CL40194U",
+        "셀린느트리옹프 CL40194U",
+        "셀린느트리옹프cl40194u",
+        "celinetriomphecl40194u",
+        "celinecl40194u"
       ],
       "items": [],
-      "error": "robots_or_terms_restricted"
+      "error": "disabled_by_policy"
     }
   }
 }

@@ -247,6 +247,12 @@ export const products: Product[] = [
     badge: "선물 인기",
     tags: ["여행 선물", "코롱", "100ml"],
     searchTerms: ["조말론", "잉글리쉬 페어", "english pear", "freesia"],
+    aliases: [
+      "Jo Malone English Pear Freesia",
+      "Jo Malone London English Pear",
+      "잉글리쉬 페어 앤 프리지아",
+      "조말론 페어 프리지아 100ml",
+    ],
   },
   {
     id: "p3",
@@ -303,7 +309,12 @@ export const products: Product[] = [
     badge: "재고 변동 큼",
     tags: ["일본 위스키", "하모니", "700ml"],
     searchTerms: ["히비키", "하모니", "hibiki harmony", "japanese harmony"],
-    aliases: ["Hibiki Harmony 700ml", "Hibiki Japanese Harmony 700ml", "히비키하모니 700ml", "Hibiki Harmony"],
+    aliases: [
+      "Hibiki Japanese Harmony",
+      "Hibiki Harmony 700ml",
+      "히비키 재패니즈 하모니",
+      "HIBIKI JAPANESE HARMONY",
+    ],
   },
   {
     id: "p7",
@@ -318,7 +329,7 @@ export const products: Product[] = [
     badge: "아이웨어 인기",
     tags: ["선글라스", "블랙", "젠틀몬스터"],
     searchTerms: ["젠틀몬스터", "디어 01", "dear 01", "black"],
-    aliases: ["Gentle Monster Dear 01", "젠틀몬스터디어 01", "Dear 01"],
+    aliases: ["Gentle Monster Dear 01", "젠틀몬스터 Dear01", "GM Dear 01", "Dear 01"],
   },
   {
     id: "p8",
@@ -333,7 +344,7 @@ export const products: Product[] = [
     badge: "클래식 모델",
     tags: ["웨이페어러", "RB2140", "클래식"],
     searchTerms: ["레이밴", "wayfarer", "rb2140", "rayban"],
-    aliases: ["Ray-Ban Original Wayfarer RB2140", "Ray Ban Wayfarer RB2140", "레이밴웨이페어러 RB2140"],
+    aliases: ["Ray-Ban RB2140", "레이밴 오리지널 웨이페어러", "Original Wayfarer 2140", "Ray Ban Wayfarer Classic"],
   },
   {
     id: "p9",
@@ -348,6 +359,7 @@ export const products: Product[] = [
     badge: "니치 인기",
     tags: ["딥디크", "도손", "75ml"],
     searchTerms: ["diptyque", "do son", "도손", "오드뚜왈렛"],
+    aliases: ["Diptyque Do Son EDT", "디프티크 도손", "딥디크 도손 오드뚜왈렛", "Do Son Eau de Toilette 75"],
   },
   {
     id: "p10",
@@ -406,6 +418,7 @@ export const products: Product[] = [
     badge: "스테디셀러",
     tags: ["디올", "소바쥬", "100ml"],
     searchTerms: ["dior", "sauvage", "소바쥬", "소바주"],
+    aliases: ["Dior Sauvage EDP 100ml", "디올 소바쥬 오 드 빠르펭", "DIOR SAUVAGE EAU DE PARFUM", "Sauvage Eau de Parfum 100"],
   },
   {
     id: "p14",
@@ -604,7 +617,7 @@ export const products: Product[] = [
     badge: "싱글몰트",
     tags: ["맥캘란", "12년", "더블캐스크"],
     searchTerms: ["macallan", "double cask", "맥캘란", "맥켈란"],
-    aliases: ["The Macallan 12 Double Cask 700ml", "Macallan Double Cask 12 700ml", "맥캘란12년 더블캐스크"],
+    aliases: ["Macallan 12 Double Cask", "맥캘란 12년 더블 캐스크", "MACALLAN DOUBLE CASK 12", "The Macallan 12"],
   },
   {
     id: "p28",
@@ -619,6 +632,7 @@ export const products: Product[] = [
     badge: "재고 민감",
     tags: ["야마자키", "12년", "700ml"],
     searchTerms: ["yamazaki", "야마자키", "12 year", "일본 위스키"],
+    aliases: ["Yamazaki 12 Year", "야마자키 12년", "YAMAZAKI SINGLE MALT 12", "Suntory Yamazaki 12"],
   },
   {
     id: "p29",
@@ -704,6 +718,7 @@ export const products: Product[] = [
     badge: "럭셔리",
     tags: ["톰포드", "스노든", "FT0237"],
     searchTerms: ["tom ford", "snowdon", "스노든", "ft0237"],
+    aliases: ["Tom Ford Snowdon FT0237", "Tom Ford FT0237", "톰포드스노든 FT0237"],
   },
   {
     id: "p35",
@@ -718,6 +733,7 @@ export const products: Product[] = [
     badge: "패션 인기",
     tags: ["프라다", "PR17WS", "선글라스"],
     searchTerms: ["prada", "17ws", "프라다", "선글라스"],
+    aliases: ["Prada PR 17WS", "Prada PR17WS", "프라다 PR17WS 선글라스"],
   },
   {
     id: "p36",
@@ -732,6 +748,7 @@ export const products: Product[] = [
     badge: "브랜드 인기",
     tags: ["구찌", "GG0061S", "선글라스"],
     searchTerms: ["gucci", "gg0061s", "구찌", "아이웨어"],
+    aliases: ["Gucci GG0061S", "Gucci GG 0061S", "구찌 GG0061S 선글라스"],
   },
   {
     id: "p37",
@@ -746,6 +763,7 @@ export const products: Product[] = [
     badge: "여성 인기",
     tags: ["셀린느", "트리옹프", "CL40194U"],
     searchTerms: ["celine", "triomphe", "셀린느", "트리옹프"],
+    aliases: ["Celine Triomphe CL40194U", "Celine CL40194U", "셀린느트리옹프 CL40194U"],
   },
   {
     id: "p38",
@@ -760,6 +778,7 @@ export const products: Product[] = [
     badge: "디자이너",
     tags: ["생로랑", "SL276", "Mica"],
     searchTerms: ["saint laurent", "sl 276", "mica", "생로랑"],
+    aliases: ["Saint Laurent SL 276 Mica", "Saint Laurent SL276", "생로랑 SL276 Mica"],
   },
   {
     id: "p39",
@@ -774,6 +793,7 @@ export const products: Product[] = [
     badge: "편광 렌즈",
     tags: ["마우이짐", "피아히", "B202"],
     searchTerms: ["maui jim", "peahi", "마우이짐", "편광"],
+    aliases: ["Maui Jim Peahi B202", "Maui Jim B202", "마우이짐피아히 B202"],
   },
   {
     id: "p40",
@@ -788,6 +808,7 @@ export const products: Product[] = [
     badge: "클래식",
     tags: ["퍼솔", "PO0649", "선글라스"],
     searchTerms: ["persol", "po0649", "퍼솔", "649"],
+    aliases: ["Persol PO0649", "Persol 0649", "퍼솔 PO0649 선글라스"],
   },
   ...createCategoryProducts("fashion", 41, [
     {
@@ -1652,6 +1673,7 @@ export function searchProducts(query: string) {
           product.badge,
           ...product.tags,
           ...product.searchTerms,
+          ...(product.aliases ?? []),
         ].join(" ")
       );
 

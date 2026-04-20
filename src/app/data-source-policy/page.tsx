@@ -50,6 +50,9 @@ export default function DataSourcePolicyPage() {
                 </div>
               ))}
             </div>
+            <p>
+              롯데면세점은 현재 robots.txt 제한으로 자동 수집을 지원하지 않습니다. DFMOA는 해당 제한을 우회하지 않고 원본 확인 링크만 제공합니다.
+            </p>
           </section>
 
           <section>

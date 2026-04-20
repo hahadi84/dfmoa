@@ -3,14 +3,14 @@
   "productSlug": "longchamp-le-pliage-medium",
   "categorySlug": "fashion",
   "query": "롱샴 르 플리아쥬 미디엄",
-  "fetchedAt": "2026-04-20T13:16:03+09:00",
-  "updatedAtLabel": "2026-04-20 13:16 기준",
+  "fetchedAt": "2026-04-20T14:45:41+09:00",
+  "updatedAtLabel": "2026-04-20 14:45 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-04-20T13:16:01+09:00",
+      "fetchedAt": "2026-04-20T14:45:39+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",
@@ -26,9 +26,9 @@
     },
     "lotte": {
       "store": "lotte",
-      "status": "error",
+      "status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-04-20T13:16:03+09:00",
+      "fetchedAt": "2026-04-20T14:45:41+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",
@@ -40,7 +40,7 @@
         "longchamplepliageoriginalmedium"
       ],
       "items": [],
-      "error": "robots_or_terms_restricted"
+      "error": "disabled_by_policy"
     }
   }
 }

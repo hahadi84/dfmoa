@@ -3,34 +3,40 @@
   "productSlug": "gucci-gg0061s",
   "categorySlug": "eyewear",
   "query": "구찌 GG0061S 선글라스",
-  "fetchedAt": "2026-04-20T13:15:13+09:00",
-  "updatedAtLabel": "2026-04-20 13:15 기준",
+  "fetchedAt": "2026-04-20T14:44:26+09:00",
+  "updatedAtLabel": "2026-04-20 14:44 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B5%AC%EC%B0%8C%20GG0061S%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-04-20T13:15:12+09:00",
+      "fetchedAt": "2026-04-20T14:44:24+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
-        "구찌gg0061s선글라스"
+        "Gucci GG0061S",
+        "Gucci GG 0061S",
+        "구찌gg0061s선글라스",
+        "guccigg0061s"
       ],
       "items": [],
       "error": "product_match_failed"
     },
     "lotte": {
       "store": "lotte",
-      "status": "error",
+      "status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B5%AC%EC%B0%8C%20GG0061S%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-04-20T13:15:13+09:00",
+      "fetchedAt": "2026-04-20T14:44:26+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
-        "구찌gg0061s선글라스"
+        "Gucci GG0061S",
+        "Gucci GG 0061S",
+        "구찌gg0061s선글라스",
+        "guccigg0061s"
       ],
       "items": [],
-      "error": "robots_or_terms_restricted"
+      "error": "disabled_by_policy"
     }
   }
 }

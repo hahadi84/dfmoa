@@ -3,34 +3,46 @@
   "productSlug": "saint-laurent-sl-276-mica",
   "categorySlug": "eyewear",
   "query": "생로랑 SL 276 Mica 선글라스",
-  "fetchedAt": "2026-04-20T13:15:31+09:00",
-  "updatedAtLabel": "2026-04-20 13:15 기준",
+  "fetchedAt": "2026-04-20T14:44:58+09:00",
+  "updatedAtLabel": "2026-04-20 14:44 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%83%9D%EB%A1%9C%EB%9E%91%20SL%20276%20Mica%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-04-20T13:15:29+09:00",
+      "fetchedAt": "2026-04-20T14:44:55+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "생로랑 SL 276 Mica 선글라스",
-        "생로랑sl276mica선글라스"
+        "Saint Laurent SL 276 Mica",
+        "Saint Laurent SL276",
+        "생로랑 SL276 Mica",
+        "생로랑sl276mica선글라스",
+        "saintlaurentsl276mica",
+        "saintlaurentsl276",
+        "생로랑sl276mica"
       ],
       "items": [],
       "error": "product_match_failed"
     },
     "lotte": {
       "store": "lotte",
-      "status": "error",
+      "status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%83%9D%EB%A1%9C%EB%9E%91%20SL%20276%20Mica%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-04-20T13:15:31+09:00",
+      "fetchedAt": "2026-04-20T14:44:58+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "생로랑 SL 276 Mica 선글라스",
-        "생로랑sl276mica선글라스"
+        "Saint Laurent SL 276 Mica",
+        "Saint Laurent SL276",
+        "생로랑 SL276 Mica",
+        "생로랑sl276mica선글라스",
+        "saintlaurentsl276mica",
+        "saintlaurentsl276",
+        "생로랑sl276mica"
       ],
       "items": [],
-      "error": "robots_or_terms_restricted"
+      "error": "disabled_by_policy"
     }
   }
 }

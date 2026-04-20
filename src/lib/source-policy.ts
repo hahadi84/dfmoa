@@ -40,10 +40,9 @@ export const dutyFreeSources: DutyFreeSource[] = [
     name: "롯데면세점",
     homepageUrl: "https://kor.lottedfs.com/kr",
     searchUrlTemplate: "https://kor.lottedfs.com/kr/search?comSearchWord={query}",
-    accessPolicy: "manual_only",
-    crawlDelaySeconds: 10,
-    policyNote: "운영 정책 확인이 필요한 소스로, 자동 수집 대신 원본 확인을 우선 노출합니다.",
-    robotsCheckedAt: "2026-04-19",
+    accessPolicy: "blocked_by_policy",
+    policyNote: "롯데는 robots.txt 제한으로 현재 자동 수집을 지원하지 않습니다. 원본 링크에서 직접 확인해 주세요.",
+    robotsCheckedAt: "2026-04-20",
   },
   {
     id: "hyundai",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-20T04:18:05.437Z",
-  "generatedAtKst": "2026-04-20 13:18:05",
+  "generatedAt": "2026-04-20T05:46:28.349Z",
+  "generatedAtKst": "2026-04-20 14:46:28",
   "requiredTotal": 20,
   "selectedCount": 20,
   "quotas": {
@@ -17,9 +17,6 @@
     "byredo-blanche-100ml",
     "le-labo-santal-33-50ml",
     "bleu-de-chanel-edp-100ml",
-    "dior-sauvage-edp-100ml",
-    "tom-ford-oud-wood-50ml",
-    "maison-margiela-lazy-sunday-morning-100ml",
     "sulwhasoo-first-care-serum-90ml",
     "sk2-pitera-essence-230ml",
     "estee-lauder-anr-100ml",
@@ -29,8 +26,6 @@
     "ballantines-21-700ml",
     "johnnie-walker-blue-label-750ml",
     "macallan-12-double-cask-700ml",
-    "yamazaki-12-700ml",
-    "royal-salute-21-700ml",
     "gentle-monster-dear-01",
     "rayban-wayfarer-rb2140",
     "oakley-sutro-oo9406",
@@ -46,14 +41,7 @@
     "montblanc-meisterstuck-wallet",
     "seiko-presage-cocktail-time",
     "citizen-tsuyosa-nj015",
-    "swarovski-tennis-bracelet",
-    "pandora-moments-bracelet",
-    "kgc-everytime-royal",
-    "orthomol-immun",
-    "godiva-gold-collection",
-    "royce-nama-chocolate",
-    "apple-airpods-pro-2",
-    "sony-wh-1000xm5"
+    "swarovski-tennis-bracelet"
   ],
   "selected": [
     {
@@ -61,16 +49,34 @@
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:11:02+09:00",
+      "fetchedAt": "2026-04-20T14:40:39+09:00",
       "priceKrw": 419691,
       "priceUsd": 285
+    },
+    {
+      "productId": "p2",
+      "productSlug": "jo-malone-english-pear-100ml",
+      "categorySlug": "perfume",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-04-20T14:40:47+09:00",
+      "priceKrw": 129456,
+      "priceUsd": 87.91
+    },
+    {
+      "productId": "p9",
+      "productSlug": "diptyque-do-son-75ml",
+      "categorySlug": "perfume",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-04-20T14:40:59+09:00",
+      "priceKrw": 185548,
+      "priceUsd": 126
     },
     {
       "productId": "p10",
       "productSlug": "byredo-blanche-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:11:28+09:00",
+      "fetchedAt": "2026-04-20T14:41:05+09:00",
       "priceKrw": 312957,
       "priceUsd": 212.52
     },
@@ -79,7 +85,7 @@
       "productSlug": "le-labo-santal-33-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:11:36+09:00",
+      "fetchedAt": "2026-04-20T14:41:13+09:00",
       "priceKrw": 270001,
       "priceUsd": 183.35
     },
@@ -88,34 +94,16 @@
       "productSlug": "bleu-de-chanel-edp-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:11:43+09:00",
+      "fetchedAt": "2026-04-20T14:41:21+09:00",
       "priceKrw": 225308,
       "priceUsd": 153
-    },
-    {
-      "productId": "p14",
-      "productSlug": "tom-ford-oud-wood-50ml",
-      "categorySlug": "perfume",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:12:01+09:00",
-      "priceKrw": 231493,
-      "priceUsd": 157.2
-    },
-    {
-      "productId": "p15",
-      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
-      "categorySlug": "perfume",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:12:08+09:00",
-      "priceKrw": 123257,
-      "priceUsd": 83.7
     },
     {
       "productId": "p3",
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:12:15+09:00",
+      "fetchedAt": "2026-04-20T14:41:28+09:00",
       "priceKrw": 171013,
       "priceUsd": 116.13
     },
@@ -124,7 +112,7 @@
       "productSlug": "sk2-pitera-essence-230ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:12:22+09:00",
+      "fetchedAt": "2026-04-20T14:41:36+09:00",
       "priceKrw": 188080,
       "priceUsd": 127.72
     },
@@ -133,7 +121,7 @@
       "productSlug": "estee-lauder-anr-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:12:29+09:00",
+      "fetchedAt": "2026-04-20T14:41:43+09:00",
       "priceKrw": 149454,
       "priceUsd": 101.49
     },
@@ -142,7 +130,7 @@
       "productSlug": "lancome-genifique-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:12:37+09:00",
+      "fetchedAt": "2026-04-20T14:41:50+09:00",
       "priceKrw": 309864,
       "priceUsd": 210.42
     },
@@ -151,7 +139,7 @@
       "productSlug": "glenfiddich-15-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:12:44+09:00",
+      "fetchedAt": "2026-04-20T14:41:58+09:00",
       "priceKrw": 83099,
       "priceUsd": 56.43
     },
@@ -160,7 +148,7 @@
       "productSlug": "ballantines-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:13:11+09:00",
+      "fetchedAt": "2026-04-20T14:42:24+09:00",
       "priceKrw": 233628,
       "priceUsd": 158.65
     },
@@ -169,247 +157,161 @@
       "productSlug": "johnnie-walker-blue-label-750ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:13:18+09:00",
+      "fetchedAt": "2026-04-20T14:42:31+09:00",
       "priceKrw": 360492,
       "priceUsd": 244.8
-    },
-    {
-      "productId": "p29",
-      "productSlug": "royal-salute-21-700ml",
-      "categorySlug": "liquor",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:13:54+09:00",
-      "priceKrw": 295183,
-      "priceUsd": 200.45
-    },
-    {
-      "productId": "p62",
-      "productSlug": "pandora-moments-bracelet",
-      "categorySlug": "jewelry",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T13:17:06+09:00",
-      "priceKrw": 59199,
-      "priceUsd": 40.2
-    },
-    {
-      "productId": "p7",
-      "productSlug": "gentle-monster-dear-01",
-      "categorySlug": "eyewear",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p8",
-      "productSlug": "rayban-wayfarer-rb2140",
-      "categorySlug": "eyewear",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p33",
-      "productSlug": "oakley-sutro-oo9406",
-      "categorySlug": "eyewear",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p41",
-      "productSlug": "longchamp-le-pliage-medium",
-      "categorySlug": "fashion",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p42",
-      "productSlug": "tumi-alpha-bravo-backpack",
-      "categorySlug": "fashion",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    }
-  ],
-  "failures": [
-    {
-      "productId": "p2",
-      "productSlug": "jo-malone-english-pear-100ml",
-      "categorySlug": "perfume",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p9",
-      "productSlug": "diptyque-do-son-75ml",
-      "categorySlug": "perfume",
-      "error": "shilla:cookie_or_login_required, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p13",
-      "productSlug": "dior-sauvage-edp-100ml",
-      "categorySlug": "perfume",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
     },
     {
       "productId": "p27",
       "productSlug": "macallan-12-double-cask-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p28",
-      "productSlug": "yamazaki-12-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p7",
-      "productSlug": "gentle-monster-dear-01",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p8",
-      "productSlug": "rayban-wayfarer-rb2140",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p33",
-      "productSlug": "oakley-sutro-oo9406",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p34",
-      "productSlug": "tom-ford-snowdon-ft0237",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p35",
-      "productSlug": "prada-pr-17ws",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p36",
-      "productSlug": "gucci-gg0061s",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p37",
-      "productSlug": "celine-triomphe-cl40194u",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p38",
-      "productSlug": "saint-laurent-sl-276-mica",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p39",
-      "productSlug": "maui-jim-peahi-b202",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p40",
-      "productSlug": "persol-po0649",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p41",
-      "productSlug": "longchamp-le-pliage-medium",
-      "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "sourceId": "shilla",
+      "fetchedAt": "2026-04-20T14:42:44+09:00",
+      "priceKrw": 116115,
+      "priceUsd": 78.85
     },
     {
       "productId": "p42",
       "productSlug": "tumi-alpha-bravo-backpack",
       "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "sourceId": "shilla",
+      "fetchedAt": "2026-04-20T14:45:46+09:00",
+      "priceKrw": 694478,
+      "priceUsd": 471.6
     },
     {
       "productId": "p43",
       "productSlug": "montblanc-meisterstuck-wallet",
       "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p51",
-      "productSlug": "seiko-presage-cocktail-time",
-      "categorySlug": "watch",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
-    },
-    {
-      "productId": "p52",
-      "productSlug": "citizen-tsuyosa-nj015",
-      "categorySlug": "watch",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "sourceId": "shilla",
+      "fetchedAt": "2026-04-20T14:45:55+09:00",
+      "priceKrw": 1424741,
+      "priceUsd": 967.5
     },
     {
       "productId": "p61",
       "productSlug": "swarovski-tennis-bracelet",
       "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "sourceId": "shilla",
+      "fetchedAt": "2026-04-20T14:46:21+09:00",
+      "priceKrw": 4791251,
+      "priceUsd": 3253.6
     },
     {
-      "productId": "p71",
-      "productSlug": "kgc-everytime-royal",
-      "categorySlug": "health",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "productId": "p7",
+      "productSlug": "gentle-monster-dear-01",
+      "categorySlug": "eyewear",
+      "sourceId": null,
+      "fetchedAt": null,
+      "priceKrw": null,
+      "priceUsd": null,
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
     },
     {
-      "productId": "p72",
-      "productSlug": "orthomol-immun",
-      "categorySlug": "health",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "productId": "p8",
+      "productSlug": "rayban-wayfarer-rb2140",
+      "categorySlug": "eyewear",
+      "sourceId": null,
+      "fetchedAt": null,
+      "priceKrw": null,
+      "priceUsd": null,
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
     },
     {
-      "productId": "p81",
-      "productSlug": "godiva-gold-collection",
-      "categorySlug": "food",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "productId": "p33",
+      "productSlug": "oakley-sutro-oo9406",
+      "categorySlug": "eyewear",
+      "sourceId": null,
+      "fetchedAt": null,
+      "priceKrw": null,
+      "priceUsd": null,
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    }
+  ],
+  "failures": [
+    {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
     },
     {
-      "productId": "p82",
-      "productSlug": "royce-nama-chocolate",
-      "categorySlug": "food",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "productId": "p7",
+      "productSlug": "gentle-monster-dear-01",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
     },
     {
-      "productId": "p91",
-      "productSlug": "apple-airpods-pro-2",
-      "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "productId": "p8",
+      "productSlug": "rayban-wayfarer-rb2140",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
     },
     {
-      "productId": "p92",
-      "productSlug": "sony-wh-1000xm5",
-      "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+      "productId": "p33",
+      "productSlug": "oakley-sutro-oo9406",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p34",
+      "productSlug": "tom-ford-snowdon-ft0237",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p35",
+      "productSlug": "prada-pr-17ws",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p36",
+      "productSlug": "gucci-gg0061s",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p37",
+      "productSlug": "celine-triomphe-cl40194u",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p38",
+      "productSlug": "saint-laurent-sl-276-mica",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p39",
+      "productSlug": "maui-jim-peahi-b202",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p40",
+      "productSlug": "persol-po0649",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p41",
+      "productSlug": "longchamp-le-pliage-medium",
+      "categorySlug": "fashion",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p51",
+      "productSlug": "seiko-presage-cocktail-time",
+      "categorySlug": "watch",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p52",
+      "productSlug": "citizen-tsuyosa-nj015",
+      "categorySlug": "watch",
+      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
     }
   ]
 }

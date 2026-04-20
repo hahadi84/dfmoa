@@ -3,36 +3,64 @@
   "productSlug": "jo-malone-english-pear-100ml",
   "categorySlug": "perfume",
   "query": "조말론 잉글리쉬 페어 프리지아 100ml",
-  "fetchedAt": "2026-04-20T13:11:15+09:00",
-  "updatedAtLabel": "2026-04-20 13:11 기준",
+  "fetchedAt": "2026-04-20T14:40:49+09:00",
+  "updatedAtLabel": "2026-04-20 14:40 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "error",
+      "status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%A7%90%EB%A1%A0%20%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%20%ED%8E%98%EC%96%B4%20%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%20100ml",
-      "fetchedAt": "2026-04-20T13:11:13+09:00",
-      "matched_via": "alias_nospace",
-      "attempted_queries": [
-        "조말론 잉글리쉬 페어 프리지아 100ml",
-        "조말론잉글리쉬페어프리지아100ml",
-        "조말론 잉글리쉬 페어 프리지아"
-      ],
-      "items": [],
-      "error": "product_match_failed"
-    },
-    "lotte": {
-      "store": "lotte",
-      "status": "error",
-      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A1%B0%EB%A7%90%EB%A1%A0%20%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%20%ED%8E%98%EC%96%B4%20%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%20100ml",
-      "fetchedAt": "2026-04-20T13:11:15+09:00",
+      "fetchedAt": "2026-04-20T14:40:47+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "조말론 잉글리쉬 페어 프리지아 100ml",
+        "Jo Malone English Pear Freesia",
+        "Jo Malone London English Pear",
+        "잉글리쉬 페어 앤 프리지아",
+        "조말론 페어 프리지아 100ml",
         "조말론잉글리쉬페어프리지아100ml",
-        "조말론 잉글리쉬 페어 프리지아"
+        "jomaloneenglishpearfreesia",
+        "jomalonelondonenglishpear",
+        "잉글리쉬페어앤프리지아",
+        "조말론페어프리지아100ml"
+      ],
+      "items": [
+        {
+          "id": "shilla-084613000034",
+          "title": "잉글리쉬 페어 앤 프리지아 코롱",
+          "brand": "조 말론 런던",
+          "priceKrw": 129456,
+          "priceUsd": 87.91,
+          "regularUsdPrice": 149,
+          "discountRate": 41,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%20%ED%8E%98%EC%96%B4%20%EC%95%A4%20%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%20%EC%BD%94%EB%A1%B1",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/02/084613000034_20251202_14301597_12_084613000034_2.JPG",
+          "matchScore": 119,
+          "fetchedAt": "2026-04-20T14:40:47+09:00"
+        }
+      ],
+      "error": null
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A1%B0%EB%A7%90%EB%A1%A0%20%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%20%ED%8E%98%EC%96%B4%20%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%20100ml",
+      "fetchedAt": "2026-04-20T14:40:49+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "조말론 잉글리쉬 페어 프리지아 100ml",
+        "Jo Malone English Pear Freesia",
+        "Jo Malone London English Pear",
+        "잉글리쉬 페어 앤 프리지아",
+        "조말론 페어 프리지아 100ml",
+        "조말론잉글리쉬페어프리지아100ml",
+        "jomaloneenglishpearfreesia",
+        "jomalonelondonenglishpear",
+        "잉글리쉬페어앤프리지아",
+        "조말론페어프리지아100ml"
       ],
       "items": [],
-      "error": "robots_or_terms_restricted"
+      "error": "disabled_by_policy"
     }
   }
 }
