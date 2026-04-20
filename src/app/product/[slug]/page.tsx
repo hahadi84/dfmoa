@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "@/components/app-link";
 import { notFound } from "next/navigation";
 import { ProductPageClient } from "@/components/product-page-client";
-import { buildBreadcrumbJsonLd, buildProductJsonLd } from "@/lib/json-ld";
+import { buildBreadcrumbJsonLd, buildProductJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildSearchResultFromSnapshot } from "@/lib/price-snapshot-view";
 import { readProductPriceSnapshot } from "@/lib/static-price-snapshots";
+import { buildProductMetadata } from "@/lib/seo-metadata";
 import {
   getCategoryBySlug,
   getProductBySlug,
@@ -34,13 +35,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     };
   }
 
-  return {
-    title: product.displayName,
-    description: `${product.displayName}의 최근 확인 공개가, 국내가 참고 비교, 공식 면세점 링크를 확인해보세요.`,
-    alternates: {
-      canonical: `/product/${product.slug}`,
-    },
-  };
+  const priceSnapshot = readProductPriceSnapshot(product.id);
+
+  return buildProductMetadata(product, priceSnapshot);
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
@@ -60,13 +57,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
     { name: category?.name ?? product.categorySlug, path: `/category/${product.categorySlug}` },
     { name: product.displayName, path: `/product/${product.slug}` },
   ]);
-  const productJsonLd = buildProductJsonLd(product);
+  const productJsonLd = buildProductJsonLd(product, priceSnapshot);
 
   return (
     <section className="page-section is-tight">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, productJsonLd]) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, productJsonLd]) }}
       />
       <div className="container">
         <div className="breadcrumb">

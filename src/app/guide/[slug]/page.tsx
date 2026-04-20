@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
 import { notFound } from "next/navigation";
-import { buildBreadcrumbJsonLd, buildGuideArticleJsonLd } from "@/lib/json-ld";
+import { buildBreadcrumbJsonLd, buildGuideArticleJsonLd, serializeJsonLd } from "@/lib/json-ld";
+import { buildSeoMetadata } from "@/lib/seo-metadata";
 import { guides, getGuideBySlug } from "@/lib/site-data";
 
 type GuidePageProps = {
@@ -26,13 +27,16 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
     };
   }
 
-  return {
+  return buildSeoMetadata({
     title: guide.title,
     description: guide.excerpt,
-    alternates: {
-      canonical: `/guide/${guide.slug}`,
+    path: `/guide/${guide.slug}`,
+    image: {
+      path: `/og/guide/${guide.slug}.png`,
+      alt: guide.title,
     },
-  };
+    type: "article",
+  });
 }
 
 export default async function GuidePage({ params }: GuidePageProps) {
@@ -53,7 +57,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
     <section className="page-section is-tight">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, articleJsonLd]) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, articleJsonLd]) }}
       />
       <div className="container">
         <div className="breadcrumb">

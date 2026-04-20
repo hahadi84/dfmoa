@@ -6,8 +6,15 @@ import { SafeProductImage } from "@/components/product-image";
 import { SearchForm } from "@/components/search-form";
 import { bestSellerExampleNotice, storeBestSellerExamples } from "@/lib/best-seller-examples";
 import { latestBenefitReport } from "@/lib/benefit-report-generator";
+import {
+  buildBreadcrumbJsonLd,
+  buildOrganizationJsonLd,
+  buildWebsiteJsonLd,
+  serializeJsonLd,
+} from "@/lib/json-ld";
 import { formatSnapshotTimestamp, getSnapshotBestItem } from "@/lib/price-snapshot-view";
 import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
+import { buildSeoMetadata, HOME_OG_IMAGE } from "@/lib/seo-metadata";
 import {
   categories,
   featureSearches,
@@ -21,9 +28,15 @@ import {
 const brandProofs = ["공개가 기준", "국내가 비교", "혜택 조건 분리"];
 
 export const metadata: Metadata = {
-  alternates: {
-    canonical: "/",
-  },
+  ...buildSeoMetadata({
+    title: "한국 면세점 최저가 비교 · 롯데·신라·신세계 공개가 한눈에",
+    description: "면세모아에서 신라·롯데·신세계·현대 면세점 공개가와 국내가 참고 정보를 비교하고, 출국 전 원본 링크로 최종 가격을 확인하세요.",
+    path: "/",
+    image: {
+      path: HOME_OG_IMAGE,
+      alt: "한국 면세점 최저가 비교 DFMOA",
+    },
+  }),
 };
 
 export default function Home() {
@@ -62,6 +75,16 @@ export default function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd([
+            buildOrganizationJsonLd(),
+            buildWebsiteJsonLd(),
+            buildBreadcrumbJsonLd([{ name: "홈", path: "/" }]),
+          ]),
+        }}
+      />
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">

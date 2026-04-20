@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
 import { ContentProductGrid } from "@/components/content-product-grid";
 import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
-import { buildBrandJsonLd, buildBreadcrumbJsonLd } from "@/lib/json-ld";
+import { buildBrandJsonLd, buildBreadcrumbJsonLd, serializeJsonLd } from "@/lib/json-ld";
+import { buildBrandMetadata } from "@/lib/seo-metadata";
 import {
   brandLandings,
   getBrandLandingBySlug,
@@ -37,15 +38,17 @@ export async function generateMetadata({ params }: BrandPageProps): Promise<Meta
     };
   }
 
-  return {
-    title: brand.seoTitle ?? `${brand.nameKo} 면세 가격 비교`,
+  const productCount = brand.representativeProductIds.length;
+
+  return buildBrandMetadata({
+    slug: brand.slug,
+    nameKo: brand.nameKo,
+    nameEn: brand.nameEn,
+    productCount,
     description:
       brand.seoDescription ??
-      `${brand.nameKo} 대표 상품의 최근 확인 공개가, source status, 예상 실결제가 계산 진입점과 공식 면세점 확인 링크를 제공합니다.`,
-    alternates: {
-      canonical: `/brand/${brand.slug}`,
-    },
-  };
+      `${brand.nameKo} 대표 상품 ${productCount}개의 최근 확인 공개가, source status, 예상 실결제가 계산 진입점과 공식 면세점 확인 링크를 제공합니다.`,
+  });
 }
 
 export default async function BrandPage({ params }: BrandPageProps) {
@@ -73,7 +76,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
     <section className="page-section is-tight">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, itemListJsonLd]) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, itemListJsonLd]) }}
       />
       <div className="container">
         <div className="breadcrumb">

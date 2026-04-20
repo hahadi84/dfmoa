@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
+import { buildBreadcrumbJsonLd, buildFaqPageJsonLd, serializeJsonLd } from "@/lib/json-ld";
+import { buildSeoMetadata } from "@/lib/seo-metadata";
 
 export const metadata: Metadata = {
-  title: "FAQ",
-  description: "DFMOA 면세점 가격 비교, 국내 판매가 비교, 광고와 데이터 정책 안내",
-  alternates: {
-    canonical: "/faq",
-  },
+  ...buildSeoMetadata({
+    title: "FAQ · 면세모아 가격 비교와 데이터 기준",
+    description: "DFMOA 면세점 가격 비교, 국내 판매가 비교, 광고와 데이터 정책, 오류 신고 절차와 개인정보 기준을 질문과 답변으로 정리했습니다.",
+    path: "/faq",
+    image: {
+      path: "/og/faq.png",
+      alt: "면세모아 FAQ",
+    },
+  }),
 };
 
 const compactFaqs = [
@@ -45,8 +51,18 @@ const compactFaqs = [
 ];
 
 export default function FaqPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "홈", path: "/" },
+    { name: "FAQ", path: "/faq" },
+  ]);
+  const faqJsonLd = buildFaqPageJsonLd(compactFaqs);
+
   return (
     <section className="page-section is-tight">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, faqJsonLd]) }}
+      />
       <div className="container">
         <div className="breadcrumb">
           <Link href="/">홈</Link>

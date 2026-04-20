@@ -4,6 +4,7 @@ import "./globals.css";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { absoluteSiteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 
 const ADSENSE_PUBLISHER_ID = "ca-pub-9602089494397808";
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
@@ -34,8 +35,15 @@ export const metadata: Metadata = {
     description: "공항면세점 공개가와 국내 판매가를 한 번에 비교합니다.",
     url: "https://dfmoa.netlify.app",
     siteName: "면세모아 DFMOA",
+    images: [{ url: absoluteSiteUrl(DEFAULT_OG_IMAGE), width: 1200, height: 630, alt: "면세모아 DFMOA" }],
     locale: "ko_KR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "면세모아 | 면세가 모이는 곳",
+    description: "공항면세점 공개가와 국내 판매가를 한 번에 비교합니다.",
+    images: [absoluteSiteUrl(DEFAULT_OG_IMAGE)],
   },
   icons: {
     icon: "/icon.svg",

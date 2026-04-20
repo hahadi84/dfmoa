@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
 import { CategoryFilterGrid } from "@/components/category-filter-grid";
-import { buildBreadcrumbJsonLd, buildItemListJsonLd } from "@/lib/json-ld";
+import { buildBreadcrumbJsonLd, buildItemListJsonLd, serializeJsonLd } from "@/lib/json-ld";
+import { buildCategoryMetadata } from "@/lib/seo-metadata";
 import { categories, getCategoryBySlug, getGuideBySlug, getProductsByCategory } from "@/lib/site-data";
 
 type CategoryPageProps = {
@@ -29,13 +30,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     };
   }
 
-  return {
-    title: `${category.name} 면세 가격 비교`,
-    description: `${category.name} 카테고리의 대표 상품, source status, 예상 실결제가 계산 진입점을 제공합니다.`,
-    alternates: {
-      canonical: `/category/${category.slug}`,
-    },
-  };
+  return buildCategoryMetadata(category);
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
@@ -65,7 +60,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <section className="page-section is-tight">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, itemListJsonLd]) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, itemListJsonLd]) }}
       />
       <div className="container">
         <div className="breadcrumb">
