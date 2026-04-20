@@ -3,15 +3,15 @@
   "productSlug": "byredo-blanche-100ml",
   "categorySlug": "perfume",
   "query": "바이레도 블랑쉬 100ml",
-  "fetchedAt": "2026-04-20T18:14:48+09:00",
-  "updatedAtLabel": "2026-04-20 18:14 기준",
+  "fetchedAt": "2026-04-21T01:06:57+09:00",
+  "updatedAtLabel": "2026-04-21 01:06 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml",
-      "fetchedAt": "2026-04-20T18:14:44+09:00",
+      "fetchedAt": "2026-04-21T01:06:54+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "바이레도 블랑쉬 100ml",
@@ -30,14 +30,14 @@
           "id": "shilla-163113000265",
           "title": "Blanche EDP 100ML",
           "brand": "바이레도",
-          "priceKrw": 312957,
+          "priceKrw": 314530,
           "priceUsd": 212.52,
           "regularUsdPrice": 253,
           "discountRate": 16,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Blanche%20EDP%20100ML",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/30/163113000265_20251230_09333739_12_163113000265_4.JPG",
           "matchScore": 111,
-          "fetchedAt": "2026-04-20T18:14:44+09:00"
+          "fetchedAt": "2026-04-21T01:06:54+09:00"
         }
       ],
       "error": null
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84+%EB%B8%94%EB%9E%91%EC%89%AC+100ml",
-      "fetchedAt": "2026-04-20T18:14:47+09:00",
+      "fetchedAt": "2026-04-21T01:06:57+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "바이레도 블랑쉬 100ml",
@@ -69,7 +69,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml",
-      "fetchedAt": "2026-04-20T18:14:48+09:00",
+      "fetchedAt": "2026-04-21T01:06:57+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "바이레도 블랑쉬 100ml",

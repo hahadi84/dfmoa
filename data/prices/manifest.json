@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-20T09:21:11.965Z",
-  "generatedAtKst": "2026-04-20 18:21:11",
+  "generatedAt": "2026-04-20T16:13:29.742Z",
+  "generatedAtKst": "2026-04-21 01:13:29",
   "requiredTotal": 20,
   "selectedCount": 20,
   "quotas": {
@@ -49,8 +49,8 @@
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:14:12+09:00",
-      "priceKrw": 419691,
+      "fetchedAt": "2026-04-21T01:06:22+09:00",
+      "priceKrw": 421800,
       "priceUsd": 285
     },
     {
@@ -58,17 +58,17 @@
       "productSlug": "jo-malone-english-pear-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:14:22+09:00",
-      "priceKrw": 127262,
-      "priceUsd": 86.42
+      "fetchedAt": "2026-04-21T01:06:31+09:00",
+      "priceKrw": 130107,
+      "priceUsd": 87.91
     },
     {
       "productId": "p9",
       "productSlug": "diptyque-do-son-75ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:14:36+09:00",
-      "priceKrw": 185548,
+      "fetchedAt": "2026-04-21T01:06:46+09:00",
+      "priceKrw": 186480,
       "priceUsd": 126
     },
     {
@@ -76,8 +76,8 @@
       "productSlug": "byredo-blanche-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:14:44+09:00",
-      "priceKrw": 312957,
+      "fetchedAt": "2026-04-21T01:06:54+09:00",
+      "priceKrw": 314530,
       "priceUsd": 212.52
     },
     {
@@ -85,8 +85,8 @@
       "productSlug": "le-labo-santal-33-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:14:53+09:00",
-      "priceKrw": 270001,
+      "fetchedAt": "2026-04-21T01:07:02+09:00",
+      "priceKrw": 271358,
       "priceUsd": 183.35
     },
     {
@@ -94,8 +94,8 @@
       "productSlug": "bleu-de-chanel-edp-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:15:01+09:00",
-      "priceKrw": 225308,
+      "fetchedAt": "2026-04-21T01:07:11+09:00",
+      "priceKrw": 226440,
       "priceUsd": 153
     },
     {
@@ -103,8 +103,8 @@
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:15:09+09:00",
-      "priceKrw": 171013,
+      "fetchedAt": "2026-04-21T01:07:19+09:00",
+      "priceKrw": 171872,
       "priceUsd": 116.13
     },
     {
@@ -112,8 +112,8 @@
       "productSlug": "sk2-pitera-essence-230ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:15:17+09:00",
-      "priceKrw": 188080,
+      "fetchedAt": "2026-04-21T01:07:28+09:00",
+      "priceKrw": 189026,
       "priceUsd": 127.72
     },
     {
@@ -121,8 +121,8 @@
       "productSlug": "estee-lauder-anr-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:15:26+09:00",
-      "priceKrw": 149454,
+      "fetchedAt": "2026-04-21T01:07:37+09:00",
+      "priceKrw": 150205,
       "priceUsd": 101.49
     },
     {
@@ -130,8 +130,8 @@
       "productSlug": "lancome-genifique-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:15:34+09:00",
-      "priceKrw": 309864,
+      "fetchedAt": "2026-04-21T01:07:45+09:00",
+      "priceKrw": 311422,
       "priceUsd": 210.42
     },
     {
@@ -139,8 +139,8 @@
       "productSlug": "glenfiddich-15-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:15:42+09:00",
-      "priceKrw": 83099,
+      "fetchedAt": "2026-04-21T01:07:53+09:00",
+      "priceKrw": 83516,
       "priceUsd": 56.43
     },
     {
@@ -148,8 +148,8 @@
       "productSlug": "ballantines-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:16:15+09:00",
-      "priceKrw": 233628,
+      "fetchedAt": "2026-04-21T01:08:27+09:00",
+      "priceKrw": 234802,
       "priceUsd": 158.65
     },
     {
@@ -157,8 +157,8 @@
       "productSlug": "johnnie-walker-blue-label-750ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:16:24+09:00",
-      "priceKrw": 360492,
+      "fetchedAt": "2026-04-21T01:08:35+09:00",
+      "priceKrw": 362304,
       "priceUsd": 244.8
     },
     {
@@ -166,8 +166,8 @@
       "productSlug": "macallan-12-double-cask-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:16:40+09:00",
-      "priceKrw": 116115,
+      "fetchedAt": "2026-04-21T01:08:52+09:00",
+      "priceKrw": 116698,
       "priceUsd": 78.85
     },
     {
@@ -175,8 +175,8 @@
       "productSlug": "tumi-alpha-bravo-backpack",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:20:25+09:00",
-      "priceKrw": 694478,
+      "fetchedAt": "2026-04-21T01:12:36+09:00",
+      "priceKrw": 697968,
       "priceUsd": 471.6
     },
     {
@@ -184,8 +184,8 @@
       "productSlug": "montblanc-meisterstuck-wallet",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:20:35+09:00",
-      "priceKrw": 1424741,
+      "fetchedAt": "2026-04-21T01:12:49+09:00",
+      "priceKrw": 1431900,
       "priceUsd": 967.5
     },
     {
@@ -193,8 +193,8 @@
       "productSlug": "swarovski-tennis-bracelet",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T18:21:03+09:00",
-      "priceKrw": 4791251,
+      "fetchedAt": "2026-04-21T01:13:19+09:00",
+      "priceKrw": 4815328,
       "priceUsd": 3253.6
     },
     {
