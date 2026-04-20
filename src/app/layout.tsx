@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     icon: "/icon.svg",
     apple: "/icon.svg",
   },
+  verification: {
+    other: {
+      "naver-site-verification": "d68acd4c4ba107da4c92dd5e55d0d3c8dcedbddd",
+    },
+  },
   other: {
     "google-adsense-account": ADSENSE_PUBLISHER_ID,
   },
