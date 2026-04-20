@@ -3,14 +3,15 @@
   "productSlug": "rayban-wayfarer-rb2140",
   "categorySlug": "eyewear",
   "query": "레이밴 웨이페어러 RB2140",
-  "fetchedAt": "2026-04-20T14:43:28+09:00",
-  "updatedAtLabel": "2026-04-20 14:43 기준",
+  "fetchedAt": "2026-04-20T15:03:55+09:00",
+  "updatedAtLabel": "2026-04-20 15:03 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A0%88%EC%9D%B4%EB%B0%B4%20%EC%9B%A8%EC%9D%B4%ED%8E%98%EC%96%B4%EB%9F%AC%20RB2140",
-      "fetchedAt": "2026-04-20T14:43:26+09:00",
+      "fetchedAt": "2026-04-20T15:03:52+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "레이밴 웨이페어러 RB2140",
@@ -27,11 +28,34 @@
       "items": [],
       "error": "product_match_failed"
     },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EB%A0%88%EC%9D%B4%EB%B0%B4+%EC%9B%A8%EC%9D%B4%ED%8E%98%EC%96%B4%EB%9F%AC+RB2140",
+      "fetchedAt": "2026-04-20T15:03:54+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "레이밴 웨이페어러 RB2140",
+        "Ray-Ban RB2140",
+        "레이밴 오리지널 웨이페어러",
+        "Original Wayfarer 2140",
+        "Ray Ban Wayfarer Classic",
+        "레이밴웨이페어러rb2140",
+        "raybanrb2140",
+        "레이밴오리지널웨이페어러",
+        "originalwayfarer2140",
+        "raybanwayfarerclassic"
+      ],
+      "items": [],
+      "error": "request_failed_406"
+    },
     "lotte": {
       "store": "lotte",
       "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A0%88%EC%9D%B4%EB%B0%B4%20%EC%9B%A8%EC%9D%B4%ED%8E%98%EC%96%B4%EB%9F%AC%20RB2140",
-      "fetchedAt": "2026-04-20T14:43:28+09:00",
+      "fetchedAt": "2026-04-20T15:03:55+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "레이밴 웨이페어러 RB2140",

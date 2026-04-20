@@ -4,6 +4,7 @@ import vm from "node:vm";
 import { createRequire } from "node:module";
 import ts from "typescript";
 import { fetchShillaPrices, shillaCrawlerConfig } from "./shilla-fetcher.mjs";
+import { fetchShinsegaePrices, shinsegaeCrawlerConfig } from "./shinsegae-fetcher.mjs";
 import { fetchLottePrices, lotteCrawlerConfig } from "./lotte-fetcher.mjs";
 
 const ROOT_DIR = process.cwd();
@@ -118,6 +119,7 @@ function buildSourceRecord(result, sourceId) {
   return {
     store: sourceId,
     status: result.status,
+    source_status: result.status,
     searchUrl: result.searchUrl,
     fetchedAt: result.fetchedAt,
     matched_via: result.matched_via ?? null,
@@ -175,7 +177,9 @@ function buildErrorResult(sourceId, product, error) {
   const searchUrl =
     sourceId === "lotte"
       ? `https://kor.lottedfs.com/kr/search?comSearchWord=${encodeURIComponent(product.query)}`
-      : `https://www.shilladfs.com/estore/kr/ko/search?text=${encodeURIComponent(product.query)}`;
+      : sourceId === "shinsegae"
+        ? `https://www.ssgdfs.com/kr/search/resultsTotal?query=${encodeURIComponent(product.query)}`
+        : `https://www.shilladfs.com/estore/kr/ko/search?text=${encodeURIComponent(product.query)}`;
 
   return {
     store: sourceId,
@@ -203,9 +207,13 @@ async function collectProduct(product) {
 
   await sleep(500);
 
+  const shinsegaeResult = await fetchSource("shinsegae", fetchShinsegaePrices, product);
+
+  await sleep(500);
+
   const lotteResult = await fetchSource("lotte", fetchLottePrices, product);
 
-  return buildSnapshot(product, [shillaResult, lotteResult]);
+  return buildSnapshot(product, [shillaResult, shinsegaeResult, lotteResult]);
 }
 
 function getLowestKrwPrice(source) {
@@ -223,6 +231,7 @@ function appendHistory(snapshot, ts) {
   const record = {
     ts,
     shilla: getLowestKrwPrice(snapshot.sources.shilla),
+    shinsegae: getLowestKrwPrice(snapshot.sources.shinsegae),
     lotte: getLowestKrwPrice(snapshot.sources.lotte),
   };
   const records = fs.existsSync(filePath)
@@ -382,7 +391,13 @@ async function main() {
         });
       }
 
-      await sleep(Math.max(shillaCrawlerConfig.crawlDelaySeconds, lotteCrawlerConfig.crawlDelaySeconds) * 1000);
+      await sleep(
+        Math.max(
+          shillaCrawlerConfig.crawlDelaySeconds,
+          shinsegaeCrawlerConfig.crawlDelaySeconds,
+          lotteCrawlerConfig.crawlDelaySeconds
+        ) * 1000
+      );
     }
   }
 

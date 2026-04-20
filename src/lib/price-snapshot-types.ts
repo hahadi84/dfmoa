@@ -16,7 +16,8 @@ export type SnapshotPriceItem = {
 
 export type SnapshotSourceRecord = {
   store: StoreId | string;
-  status: "ok" | "error";
+  status: "ok" | "error" | "disabled_by_policy";
+  source_status?: "ok" | "error" | "disabled_by_policy";
   searchUrl?: string | null;
   fetchedAt?: string | null;
   matched_via?: "original" | "alias_en" | "alias_nospace" | null;

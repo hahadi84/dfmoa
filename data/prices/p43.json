@@ -3,14 +3,15 @@
   "productSlug": "montblanc-meisterstuck-wallet",
   "categorySlug": "fashion",
   "query": "몽블랑 마이스터스튁 지갑",
-  "fetchedAt": "2026-04-20T14:45:59+09:00",
-  "updatedAtLabel": "2026-04-20 14:45 기준",
+  "fetchedAt": "2026-04-20T15:06:26+09:00",
+  "updatedAtLabel": "2026-04-20 15:06 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%20%EC%A7%80%EA%B0%91",
-      "fetchedAt": "2026-04-20T14:45:55+09:00",
+      "fetchedAt": "2026-04-20T15:06:22+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "몽블랑 마이스터스튁 지갑",
@@ -33,7 +34,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%20%EB%A1%9C%EB%AF%B8%EC%98%A4%EC%99%80%20%EC%A4%84%EB%A6%AC%EC%97%A3%20%ED%81%B4%EB%9E%98%EC%8B%9D%20%EB%A7%8C%EB%85%84%ED%95%84_%20132917",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/04/17/009424002062_20260417_14580135_12_009424002062_2.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-20T14:45:55+09:00"
+          "fetchedAt": "2026-04-20T15:06:22+09:00"
         },
         {
           "id": "shilla-009415002430",
@@ -46,7 +47,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%208cc%20%EC%A7%80%EA%B0%91_%20221324",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/01/30/009415002430_20260130_17275414_12_009415002430_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-20T14:45:55+09:00"
+          "fetchedAt": "2026-04-20T15:06:22+09:00"
         },
         {
           "id": "shilla-009415002404",
@@ -59,16 +60,36 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%204cc%20%EC%B9%B4%EB%93%9C%ED%99%80%EB%8D%94_%20221304",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/01/23/009415002404_20260123_17132211_12_009415002404_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-20T14:45:55+09:00"
+          "fetchedAt": "2026-04-20T15:06:22+09:00"
         }
       ],
       "error": null
     },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EB%AA%BD%EB%B8%94%EB%9E%91+%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81+%EC%A7%80%EA%B0%91",
+      "fetchedAt": "2026-04-20T15:06:26+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "몽블랑 마이스터스튁 지갑",
+        "Montblanc Meisterstuck Wallet",
+        "Montblanc Meisterstuck 4810 Wallet",
+        "몽블랑마이스터스튁 지갑",
+        "몽블랑마이스터스튁지갑",
+        "montblancmeisterstuckwallet",
+        "montblancmeisterstuck4810wallet"
+      ],
+      "items": [],
+      "error": "request_failed_406"
+    },
     "lotte": {
       "store": "lotte",
       "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%20%EC%A7%80%EA%B0%91",
-      "fetchedAt": "2026-04-20T14:45:59+09:00",
+      "fetchedAt": "2026-04-20T15:06:26+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "몽블랑 마이스터스튁 지갑",

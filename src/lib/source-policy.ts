@@ -68,10 +68,11 @@ export const dutyFreeSources: DutyFreeSource[] = [
     id: "shinsegae",
     name: "신세계면세점",
     homepageUrl: "https://www.ssgdfs.com/kr/main/initMain",
-    accessPolicy: "limited",
-    crawlDelaySeconds: 10,
-    policyNote: "공식 검색 URL은 보수적으로 다루며 접근 가능한 공식 노출 정보와 원본 링크를 제공합니다.",
-    robotsCheckedAt: "2026-04-19",
+    searchUrlTemplate: "https://www.ssgdfs.com/kr/search/resultsTotal?query={query}",
+    accessPolicy: "blocked_by_policy",
+    crawlDelaySeconds: 5,
+    policyNote: "robots.txt는 허용하지만 공개 검색 URL이 406/FEC challenge를 반환해 GitHub Actions 자동 수집은 현재 제외합니다.",
+    robotsCheckedAt: "2026-04-20",
   },
 ];
 

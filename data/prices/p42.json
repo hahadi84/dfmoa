@@ -3,14 +3,15 @@
   "productSlug": "tumi-alpha-bravo-backpack",
   "categorySlug": "fashion",
   "query": "투미 알파 브라보 백팩",
-  "fetchedAt": "2026-04-20T14:45:50+09:00",
-  "updatedAtLabel": "2026-04-20 14:45 기준",
+  "fetchedAt": "2026-04-20T15:06:17+09:00",
+  "updatedAtLabel": "2026-04-20 15:06 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%88%AC%EB%AF%B8%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EB%B0%B1%ED%8C%A9",
-      "fetchedAt": "2026-04-20T14:45:46+09:00",
+      "fetchedAt": "2026-04-20T15:06:15+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "투미 알파 브라보 백팩",
@@ -33,7 +34,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=ALPHA%20BRAVO%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EC%84%9C%EC%B9%98%20%EB%B0%B1%ED%8C%A9%20%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2023/07/05/031914003125_20230705_18282556_12_031914003125_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-20T14:45:46+09:00"
+          "fetchedAt": "2026-04-20T15:06:15+09:00"
         },
         {
           "id": "shilla-031914003411",
@@ -46,7 +47,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=ALPHA%20BRAVO%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EB%85%B8%EB%A7%88%EB%94%95%20%EB%B0%B1%ED%8C%A9%20%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/08/26/031914003411_20240826_14473429_12_031914003411_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-20T14:45:46+09:00"
+          "fetchedAt": "2026-04-20T15:06:15+09:00"
         },
         {
           "id": "shilla-031914003206",
@@ -59,16 +60,36 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=ALPHA%20BRAVO%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EC%84%9C%EC%B9%98%20%EB%B0%B1%ED%8C%A9%20%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2023/08/14/031914003206_20230814_15502556_12_031914003206_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-20T14:45:46+09:00"
+          "fetchedAt": "2026-04-20T15:06:15+09:00"
         }
       ],
       "error": null
     },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%ED%88%AC%EB%AF%B8+%EC%95%8C%ED%8C%8C+%EB%B8%8C%EB%9D%BC%EB%B3%B4+%EB%B0%B1%ED%8C%A9",
+      "fetchedAt": "2026-04-20T15:06:17+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "투미 알파 브라보 백팩",
+        "TUMI Alpha Bravo Backpack",
+        "TUMI Alpha Bravo Navigation Backpack",
+        "투미알파브라보 백팩",
+        "투미알파브라보백팩",
+        "tumialphabravobackpack",
+        "tumialphabravonavigationbackpack"
+      ],
+      "items": [],
+      "error": "request_failed_406"
+    },
     "lotte": {
       "store": "lotte",
       "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%88%AC%EB%AF%B8%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EB%B0%B1%ED%8C%A9",
-      "fetchedAt": "2026-04-20T14:45:50+09:00",
+      "fetchedAt": "2026-04-20T15:06:17+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "투미 알파 브라보 백팩",

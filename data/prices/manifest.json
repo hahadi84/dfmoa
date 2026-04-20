@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-20T05:46:28.349Z",
-  "generatedAtKst": "2026-04-20 14:46:28",
+  "generatedAt": "2026-04-20T06:06:56.799Z",
+  "generatedAtKst": "2026-04-20 15:06:56",
   "requiredTotal": 20,
   "selectedCount": 20,
   "quotas": {
@@ -49,7 +49,7 @@
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:40:39+09:00",
+      "fetchedAt": "2026-04-20T15:01:02+09:00",
       "priceKrw": 419691,
       "priceUsd": 285
     },
@@ -58,7 +58,7 @@
       "productSlug": "jo-malone-english-pear-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:40:47+09:00",
+      "fetchedAt": "2026-04-20T15:01:10+09:00",
       "priceKrw": 129456,
       "priceUsd": 87.91
     },
@@ -67,7 +67,7 @@
       "productSlug": "diptyque-do-son-75ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:40:59+09:00",
+      "fetchedAt": "2026-04-20T15:01:22+09:00",
       "priceKrw": 185548,
       "priceUsd": 126
     },
@@ -76,7 +76,7 @@
       "productSlug": "byredo-blanche-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:05+09:00",
+      "fetchedAt": "2026-04-20T15:01:30+09:00",
       "priceKrw": 312957,
       "priceUsd": 212.52
     },
@@ -85,7 +85,7 @@
       "productSlug": "le-labo-santal-33-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:13+09:00",
+      "fetchedAt": "2026-04-20T15:01:38+09:00",
       "priceKrw": 270001,
       "priceUsd": 183.35
     },
@@ -94,7 +94,7 @@
       "productSlug": "bleu-de-chanel-edp-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:21+09:00",
+      "fetchedAt": "2026-04-20T15:01:46+09:00",
       "priceKrw": 225308,
       "priceUsd": 153
     },
@@ -103,7 +103,7 @@
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:28+09:00",
+      "fetchedAt": "2026-04-20T15:01:54+09:00",
       "priceKrw": 171013,
       "priceUsd": 116.13
     },
@@ -112,7 +112,7 @@
       "productSlug": "sk2-pitera-essence-230ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:36+09:00",
+      "fetchedAt": "2026-04-20T15:02:01+09:00",
       "priceKrw": 188080,
       "priceUsd": 127.72
     },
@@ -121,7 +121,7 @@
       "productSlug": "estee-lauder-anr-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:43+09:00",
+      "fetchedAt": "2026-04-20T15:02:09+09:00",
       "priceKrw": 149454,
       "priceUsd": 101.49
     },
@@ -130,7 +130,7 @@
       "productSlug": "lancome-genifique-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:50+09:00",
+      "fetchedAt": "2026-04-20T15:02:17+09:00",
       "priceKrw": 309864,
       "priceUsd": 210.42
     },
@@ -139,7 +139,7 @@
       "productSlug": "glenfiddich-15-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:41:58+09:00",
+      "fetchedAt": "2026-04-20T15:02:25+09:00",
       "priceKrw": 83099,
       "priceUsd": 56.43
     },
@@ -148,7 +148,7 @@
       "productSlug": "ballantines-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:42:24+09:00",
+      "fetchedAt": "2026-04-20T15:02:52+09:00",
       "priceKrw": 233628,
       "priceUsd": 158.65
     },
@@ -157,7 +157,7 @@
       "productSlug": "johnnie-walker-blue-label-750ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:42:31+09:00",
+      "fetchedAt": "2026-04-20T15:03:00+09:00",
       "priceKrw": 360492,
       "priceUsd": 244.8
     },
@@ -166,7 +166,7 @@
       "productSlug": "macallan-12-double-cask-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:42:44+09:00",
+      "fetchedAt": "2026-04-20T15:03:13+09:00",
       "priceKrw": 116115,
       "priceUsd": 78.85
     },
@@ -175,7 +175,7 @@
       "productSlug": "tumi-alpha-bravo-backpack",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:45:46+09:00",
+      "fetchedAt": "2026-04-20T15:06:15+09:00",
       "priceKrw": 694478,
       "priceUsd": 471.6
     },
@@ -184,7 +184,7 @@
       "productSlug": "montblanc-meisterstuck-wallet",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:45:55+09:00",
+      "fetchedAt": "2026-04-20T15:06:22+09:00",
       "priceKrw": 1424741,
       "priceUsd": 967.5
     },
@@ -193,7 +193,7 @@
       "productSlug": "swarovski-tennis-bracelet",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-04-20T14:46:21+09:00",
+      "fetchedAt": "2026-04-20T15:06:49+09:00",
       "priceKrw": 4791251,
       "priceUsd": 3253.6
     },
@@ -205,7 +205,7 @@
       "fetchedAt": null,
       "priceKrw": null,
       "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p8",
@@ -215,7 +215,7 @@
       "fetchedAt": null,
       "priceKrw": null,
       "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p33",
@@ -225,7 +225,7 @@
       "fetchedAt": null,
       "priceKrw": null,
       "priceUsd": null,
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     }
   ],
   "failures": [
@@ -233,85 +233,85 @@
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p7",
       "productSlug": "gentle-monster-dear-01",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p8",
       "productSlug": "rayban-wayfarer-rb2140",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p33",
       "productSlug": "oakley-sutro-oo9406",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p34",
       "productSlug": "tom-ford-snowdon-ft0237",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p35",
       "productSlug": "prada-pr-17ws",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p36",
       "productSlug": "gucci-gg0061s",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p37",
       "productSlug": "celine-triomphe-cl40194u",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p38",
       "productSlug": "saint-laurent-sl-276-mica",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p39",
       "productSlug": "maui-jim-peahi-b202",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p40",
       "productSlug": "persol-po0649",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p41",
       "productSlug": "longchamp-le-pliage-medium",
       "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p51",
       "productSlug": "seiko-presage-cocktail-time",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     },
     {
       "productId": "p52",
       "productSlug": "citizen-tsuyosa-nj015",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
     }
   ]
 }
