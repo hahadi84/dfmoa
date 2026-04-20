@@ -31,6 +31,7 @@ yarn-error.log*
 .pnpm-debug.log*
 dev-server.log
 *.html
+!public/google8a53e6b4aca13df8.html
 
 # env files (can opt-in for committing if needed)
 .env*
