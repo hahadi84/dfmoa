@@ -1,0 +1,66 @@
+{
+  "productId": "p11",
+  "productSlug": "le-labo-santal-33-50ml",
+  "categorySlug": "perfume",
+  "query": "르라보 상탈 33 50ml",
+  "fetchedAt": "2026-04-20T13:11:38+09:00",
+  "updatedAtLabel": "2026-04-20 13:11 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
+      "fetchedAt": "2026-04-20T13:11:36+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "르라보 상탈 33 50ml",
+        "Le Labo Santal 33 50ml",
+        "Le Labo Santal 33 EDP 50ml",
+        "르라보상탈33 50ml",
+        "르라보상탈3350ml",
+        "lelabosantal3350ml",
+        "lelabosantal33edp50ml",
+        "르라보 상탈 33",
+        "Le Labo Santal 33",
+        "Le Labo Santal 33 EDP"
+      ],
+      "items": [
+        {
+          "id": "shilla-161213000242",
+          "title": "상탈 33 EDP 50ml",
+          "brand": "르 라보",
+          "priceKrw": 270001,
+          "priceUsd": 183.35,
+          "regularUsdPrice": 193,
+          "discountRate": 5,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%83%81%ED%83%88%2033%20EDP%2050ml",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2023/12/15/161213000242_20231215_17353889_12_161213000242_3.JPG",
+          "matchScore": 64,
+          "fetchedAt": "2026-04-20T13:11:36+09:00"
+        }
+      ],
+      "error": null
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
+      "fetchedAt": "2026-04-20T13:11:38+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "르라보 상탈 33 50ml",
+        "Le Labo Santal 33 50ml",
+        "Le Labo Santal 33 EDP 50ml",
+        "르라보상탈33 50ml",
+        "르라보상탈3350ml",
+        "lelabosantal3350ml",
+        "lelabosantal33edp50ml",
+        "르라보 상탈 33",
+        "Le Labo Santal 33",
+        "Le Labo Santal 33 EDP"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "productId": "p6",
+  "productSlug": "hibiki-harmony-700ml",
+  "categorySlug": "liquor",
+  "query": "히비키 하모니 700ml",
+  "fetchedAt": "2026-04-20T13:13:06+09:00",
+  "updatedAtLabel": "2026-04-20 13:13 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%9E%88%EB%B9%84%ED%82%A4%20%ED%95%98%EB%AA%A8%EB%8B%88%20700ml",
+      "fetchedAt": "2026-04-20T13:13:04+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "히비키 하모니 700ml",
+        "Hibiki Harmony 700ml",
+        "Hibiki Japanese Harmony 700ml",
+        "히비키하모니 700ml",
+        "Hibiki Harmony",
+        "히비키하모니700ml",
+        "hibikiharmony700ml",
+        "hibikijapaneseharmony700ml",
+        "hibikiharmony",
+        "히비키 하모니"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%9E%88%EB%B9%84%ED%82%A4%20%ED%95%98%EB%AA%A8%EB%8B%88%20700ml",
+      "fetchedAt": "2026-04-20T13:13:06+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "히비키 하모니 700ml",
+        "Hibiki Harmony 700ml",
+        "Hibiki Japanese Harmony 700ml",
+        "히비키하모니 700ml",
+        "Hibiki Harmony",
+        "히비키하모니700ml",
+        "hibikiharmony700ml",
+        "hibikijapaneseharmony700ml",
+        "hibikiharmony",
+        "히비키 하모니"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

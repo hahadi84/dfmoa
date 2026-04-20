@@ -1,0 +1,52 @@
+{
+  "productId": "p5",
+  "productSlug": "glenfiddich-15-700ml",
+  "categorySlug": "liquor",
+  "query": "글렌피딕 15년 700ml",
+  "fetchedAt": "2026-04-20T13:12:46+09:00",
+  "updatedAtLabel": "2026-04-20 13:12 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-20T13:12:44+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "글렌피딕 15년 700ml",
+        "글렌피딕15년700ml",
+        "글렌피딕 15년"
+      ],
+      "items": [
+        {
+          "id": "shilla-082331000041",
+          "title": "글렌피딕 15년 Vat3 Perpetual 700ml",
+          "brand": "글렌피딕",
+          "priceKrw": 83099,
+          "priceUsd": 56.43,
+          "regularUsdPrice": 99,
+          "discountRate": 43,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20Vat3%20Perpetual%20700ml",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2023/04/05/082331000041_20230405_14143526_12_082331000041_1.JPG",
+          "matchScore": 60,
+          "fetchedAt": "2026-04-20T13:12:44+09:00"
+        }
+      ],
+      "error": null
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-20T13:12:46+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "글렌피딕 15년 700ml",
+        "글렌피딕15년700ml",
+        "글렌피딕 15년"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

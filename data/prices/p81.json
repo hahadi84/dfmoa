@@ -1,0 +1,36 @@
+{
+  "productId": "p81",
+  "productSlug": "godiva-gold-collection",
+  "categorySlug": "food",
+  "query": "고디바 골드 컬렉션",
+  "fetchedAt": "2026-04-20T13:17:35+09:00",
+  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B3%A0%EB%94%94%EB%B0%94%20%EA%B3%A8%EB%93%9C%20%EC%BB%AC%EB%A0%89%EC%85%98",
+      "fetchedAt": "2026-04-20T13:17:33+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "고디바 골드 컬렉션",
+        "고디바골드컬렉션"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B3%A0%EB%94%94%EB%B0%94%20%EA%B3%A8%EB%93%9C%20%EC%BB%AC%EB%A0%89%EC%85%98",
+      "fetchedAt": "2026-04-20T13:17:35+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "고디바 골드 컬렉션",
+        "고디바골드컬렉션"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

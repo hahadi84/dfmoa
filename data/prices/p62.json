@@ -1,0 +1,50 @@
+{
+  "productId": "p62",
+  "productSlug": "pandora-moments-bracelet",
+  "categorySlug": "jewelry",
+  "query": "판도라 모멘츠 브레이슬릿",
+  "fetchedAt": "2026-04-20T13:17:10+09:00",
+  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
+      "fetchedAt": "2026-04-20T13:17:06+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "판도라 모멘츠 브레이슬릿",
+        "판도라모멘츠브레이슬릿"
+      ],
+      "items": [
+        {
+          "id": "shilla-072523006971",
+          "title": "Pandora Moments Round Clasp Blue Braided Leather Bracelet",
+          "brand": "판도라",
+          "priceKrw": 59199,
+          "priceUsd": 40.2,
+          "regularUsdPrice": 67,
+          "discountRate": 40,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Pandora%20Moments%20Round%20Clasp%20Blue%20Braided%20Leather%20Bracelet",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/06/25/072523006971_20250625_12024833_12_072523006971_1.JPG",
+          "matchScore": 63,
+          "fetchedAt": "2026-04-20T13:17:06+09:00"
+        }
+      ],
+      "error": null
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
+      "fetchedAt": "2026-04-20T13:17:10+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "판도라 모멘츠 브레이슬릿",
+        "판도라모멘츠브레이슬릿"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.next
+node_modules
+coverage
+build
+out
+.netlify
+.vercel
+dev-server.log
+*.html
+AGENTS.md
+CLAUDE.md

@@ -1,0 +1,32 @@
+name: Daily price snapshot
+
+on:
+  schedule:
+    - cron: '0 15 * * *'
+    - cron: '0 3 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci
+      - name: Run snapshot
+        run: npm run snapshot
+        timeout-minutes: 10
+      - name: Commit updated prices
+        run: |
+          git config user.name "dfmoa-bot"
+          git config user.email "bot@dfmoa.local"
+          git add data/prices/ data/history/ data/last-error.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore(snapshot): $(date -u +'%Y-%m-%dT%H:%MZ')"
+            git push
+          fi

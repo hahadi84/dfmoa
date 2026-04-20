@@ -1,0 +1,36 @@
+{
+  "productId": "p92",
+  "productSlug": "sony-wh-1000xm5",
+  "categorySlug": "electronics",
+  "query": "소니 WH-1000XM5",
+  "fetchedAt": "2026-04-20T13:18:00+09:00",
+  "updatedAtLabel": "2026-04-20 13:18 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WH-1000XM5",
+      "fetchedAt": "2026-04-20T13:17:58+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "소니 WH-1000XM5",
+        "소니wh1000xm5"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%8C%EB%8B%88%20WH-1000XM5",
+      "fetchedAt": "2026-04-20T13:18:00+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "소니 WH-1000XM5",
+        "소니wh1000xm5"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

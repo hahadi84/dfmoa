@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-label="Jewelry placeholder">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#fdf2f8"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="160" height="96" rx="18" fill="url(#g)"/>
+  <path d="M80 19l34 24-34 35-34-35z" fill="none" stroke="#be185d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M46 43h68M65 19l15 59 15-59" fill="none" stroke="#f472b6" stroke-width="4" stroke-linejoin="round"/>
+</svg>

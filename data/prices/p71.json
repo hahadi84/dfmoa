@@ -1,0 +1,36 @@
+{
+  "productId": "p71",
+  "productSlug": "kgc-everytime-royal",
+  "categorySlug": "health",
+  "query": "정관장 에브리타임 로얄",
+  "fetchedAt": "2026-04-20T13:17:18+09:00",
+  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
+      "fetchedAt": "2026-04-20T13:17:16+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "정관장 에브리타임 로얄",
+        "정관장에브리타임로얄"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
+      "fetchedAt": "2026-04-20T13:17:18+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "정관장 에브리타임 로얄",
+        "정관장에브리타임로얄"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

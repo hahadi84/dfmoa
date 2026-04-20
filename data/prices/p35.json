@@ -1,0 +1,36 @@
+{
+  "productId": "p35",
+  "productSlug": "prada-pr-17ws",
+  "categorySlug": "eyewear",
+  "query": "프라다 PR 17WS 선글라스",
+  "fetchedAt": "2026-04-20T13:15:05+09:00",
+  "updatedAtLabel": "2026-04-20 13:15 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%94%84%EB%9D%BC%EB%8B%A4%20PR%2017WS%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
+      "fetchedAt": "2026-04-20T13:15:03+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "프라다 PR 17WS 선글라스",
+        "프라다pr17ws선글라스"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%94%84%EB%9D%BC%EB%8B%A4%20PR%2017WS%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
+      "fetchedAt": "2026-04-20T13:15:05+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "프라다 PR 17WS 선글라스",
+        "프라다pr17ws선글라스"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

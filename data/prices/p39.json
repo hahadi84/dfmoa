@@ -1,0 +1,36 @@
+{
+  "productId": "p39",
+  "productSlug": "maui-jim-peahi-b202",
+  "categorySlug": "eyewear",
+  "query": "마우이짐 피아히 B202",
+  "fetchedAt": "2026-04-20T13:15:39+09:00",
+  "updatedAtLabel": "2026-04-20 13:15 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
+      "fetchedAt": "2026-04-20T13:15:37+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "마우이짐 피아히 B202",
+        "마우이짐피아히b202"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
+      "fetchedAt": "2026-04-20T13:15:39+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "마우이짐 피아히 B202",
+        "마우이짐피아히b202"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

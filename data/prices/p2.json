@@ -1,0 +1,38 @@
+{
+  "productId": "p2",
+  "productSlug": "jo-malone-english-pear-100ml",
+  "categorySlug": "perfume",
+  "query": "조말론 잉글리쉬 페어 프리지아 100ml",
+  "fetchedAt": "2026-04-20T13:11:15+09:00",
+  "updatedAtLabel": "2026-04-20 13:11 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%A7%90%EB%A1%A0%20%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%20%ED%8E%98%EC%96%B4%20%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%20100ml",
+      "fetchedAt": "2026-04-20T13:11:13+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "조말론 잉글리쉬 페어 프리지아 100ml",
+        "조말론잉글리쉬페어프리지아100ml",
+        "조말론 잉글리쉬 페어 프리지아"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A1%B0%EB%A7%90%EB%A1%A0%20%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%20%ED%8E%98%EC%96%B4%20%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%20100ml",
+      "fetchedAt": "2026-04-20T13:11:15+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "조말론 잉글리쉬 페어 프리지아 100ml",
+        "조말론잉글리쉬페어프리지아100ml",
+        "조말론 잉글리쉬 페어 프리지아"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

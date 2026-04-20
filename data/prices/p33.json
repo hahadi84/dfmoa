@@ -1,0 +1,46 @@
+{
+  "productId": "p33",
+  "productSlug": "oakley-sutro-oo9406",
+  "categorySlug": "eyewear",
+  "query": "오클리 수트로 OO9406",
+  "fetchedAt": "2026-04-20T13:14:48+09:00",
+  "updatedAtLabel": "2026-04-20 13:14 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%98%A4%ED%81%B4%EB%A6%AC%20%EC%88%98%ED%8A%B8%EB%A1%9C%20OO9406",
+      "fetchedAt": "2026-04-20T13:14:46+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "오클리 수트로 OO9406",
+        "Oakley Sutro OO9406",
+        "Oakley Sutro 9406",
+        "오클리수트로 OO9406",
+        "오클리수트로oo9406",
+        "oakleysutrooo9406",
+        "oakleysutro9406"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%98%A4%ED%81%B4%EB%A6%AC%20%EC%88%98%ED%8A%B8%EB%A1%9C%20OO9406",
+      "fetchedAt": "2026-04-20T13:14:48+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "오클리 수트로 OO9406",
+        "Oakley Sutro OO9406",
+        "Oakley Sutro 9406",
+        "오클리수트로 OO9406",
+        "오클리수트로oo9406",
+        "oakleysutrooo9406",
+        "oakleysutro9406"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

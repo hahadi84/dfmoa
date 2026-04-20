@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="dfmoa-bg" x1="84" x2="428" y1="64" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1F3A" />
+      <stop offset="0.68" stop-color="#155EEF" />
+      <stop offset="1" stop-color="#10B981" />
+    </linearGradient>
+    <radialGradient id="dfmoa-glow" cx="0" cy="0" r="1" gradientTransform="matrix(110 0 0 110 370 132)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC" />
+      <stop offset="1" stop-color="#7DD3FC" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#dfmoa-bg)" />
+  <rect width="512" height="512" rx="128" fill="url(#dfmoa-glow)" />
+  <path
+    d="M126 340V172h62c52 0 88 33 88 84s-36 84-88 84h-62Zm42-38h18c29 0 47-18 47-46s-18-46-47-46h-18v92Zm149 38V172h112v38h-70v31h62v37h-62v62h-42Z"
+    fill="#fff"
+  />
+</svg>

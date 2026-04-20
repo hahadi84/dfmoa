@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-label="Perfume placeholder">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#eef6ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="160" height="96" rx="18" fill="url(#g)"/>
+  <path d="M70 17h20v12H70zM62 33h36c7 9 11 21 11 36 0 10-10 16-29 16s-29-6-29-16c0-15 4-27 11-36z" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M70 50h20v18H70z" fill="none" stroke="#60a5fa" stroke-width="4"/>
+</svg>

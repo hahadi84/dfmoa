@@ -1,0 +1,36 @@
+{
+  "productId": "p82",
+  "productSlug": "royce-nama-chocolate",
+  "categorySlug": "food",
+  "query": "로이스 나마 초콜릿",
+  "fetchedAt": "2026-04-20T13:17:43+09:00",
+  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%9D%B4%EC%8A%A4%20%EB%82%98%EB%A7%88%20%EC%B4%88%EC%BD%9C%EB%A6%BF",
+      "fetchedAt": "2026-04-20T13:17:41+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "로이스 나마 초콜릿",
+        "로이스나마초콜릿"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%9C%EC%9D%B4%EC%8A%A4%20%EB%82%98%EB%A7%88%20%EC%B4%88%EC%BD%9C%EB%A6%BF",
+      "fetchedAt": "2026-04-20T13:17:43+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "로이스 나마 초콜릿",
+        "로이스나마초콜릿"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

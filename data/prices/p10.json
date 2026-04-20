@@ -1,0 +1,66 @@
+{
+  "productId": "p10",
+  "productSlug": "byredo-blanche-100ml",
+  "categorySlug": "perfume",
+  "query": "바이레도 블랑쉬 100ml",
+  "fetchedAt": "2026-04-20T13:11:31+09:00",
+  "updatedAtLabel": "2026-04-20 13:11 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml",
+      "fetchedAt": "2026-04-20T13:11:28+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "바이레도 블랑쉬 100ml",
+        "Byredo Blanche 100ml",
+        "Byredo Blanche EDP 100ml",
+        "바이레도블랑쉬 100ml",
+        "바이레도블랑쉬100ml",
+        "byredoblanche100ml",
+        "byredoblancheedp100ml",
+        "바이레도 블랑쉬",
+        "Byredo Blanche",
+        "Byredo Blanche EDP"
+      ],
+      "items": [
+        {
+          "id": "shilla-163113000265",
+          "title": "Blanche EDP 100ML",
+          "brand": "바이레도",
+          "priceKrw": 312957,
+          "priceUsd": 212.52,
+          "regularUsdPrice": 253,
+          "discountRate": 16,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Blanche%20EDP%20100ML",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/30/163113000265_20251230_09333739_12_163113000265_4.JPG",
+          "matchScore": 68,
+          "fetchedAt": "2026-04-20T13:11:28+09:00"
+        }
+      ],
+      "error": null
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml",
+      "fetchedAt": "2026-04-20T13:11:31+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "바이레도 블랑쉬 100ml",
+        "Byredo Blanche 100ml",
+        "Byredo Blanche EDP 100ml",
+        "바이레도블랑쉬 100ml",
+        "바이레도블랑쉬100ml",
+        "byredoblanche100ml",
+        "byredoblancheedp100ml",
+        "바이레도 블랑쉬",
+        "Byredo Blanche",
+        "Byredo Blanche EDP"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "productId": "p61",
+  "productSlug": "swarovski-tennis-bracelet",
+  "categorySlug": "jewelry",
+  "query": "스와로브스키 테니스 브레이슬릿",
+  "fetchedAt": "2026-04-20T13:17:01+09:00",
+  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%ED%85%8C%EB%8B%88%EC%8A%A4%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
+      "fetchedAt": "2026-04-20T13:16:59+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "스와로브스키 테니스 브레이슬릿",
+        "스와로브스키테니스브레이슬릿"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%ED%85%8C%EB%8B%88%EC%8A%A4%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
+      "fetchedAt": "2026-04-20T13:17:01+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "스와로브스키 테니스 브레이슬릿",
+        "스와로브스키테니스브레이슬릿"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

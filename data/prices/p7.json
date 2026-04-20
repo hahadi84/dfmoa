@@ -1,0 +1,48 @@
+{
+  "productId": "p7",
+  "productSlug": "gentle-monster-dear-01",
+  "categorySlug": "eyewear",
+  "query": "젠틀몬스터 Dear 01",
+  "fetchedAt": "2026-04-20T13:14:16+09:00",
+  "updatedAtLabel": "2026-04-20 13:14 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
+      "fetchedAt": "2026-04-20T13:14:14+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "젠틀몬스터 Dear 01",
+        "Gentle Monster Dear 01",
+        "젠틀몬스터디어 01",
+        "Dear 01",
+        "젠틀몬스터dear01",
+        "gentlemonsterdear01",
+        "젠틀몬스터디어01",
+        "dear01"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
+      "fetchedAt": "2026-04-20T13:14:16+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "젠틀몬스터 Dear 01",
+        "Gentle Monster Dear 01",
+        "젠틀몬스터디어 01",
+        "Dear 01",
+        "젠틀몬스터dear01",
+        "gentlemonsterdear01",
+        "젠틀몬스터디어01",
+        "dear01"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

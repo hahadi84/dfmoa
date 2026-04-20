@@ -1,0 +1,38 @@
+{
+  "productId": "p28",
+  "productSlug": "yamazaki-12-700ml",
+  "categorySlug": "liquor",
+  "query": "야마자키 12년 700ml",
+  "fetchedAt": "2026-04-20T13:13:49+09:00",
+  "updatedAtLabel": "2026-04-20 13:13 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-20T13:13:47+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "야마자키 12년 700ml",
+        "야마자키12년700ml",
+        "야마자키 12년"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-20T13:13:49+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "야마자키 12년 700ml",
+        "야마자키12년700ml",
+        "야마자키 12년"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

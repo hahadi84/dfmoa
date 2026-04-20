@@ -1,0 +1,36 @@
+{
+  "productId": "p72",
+  "productSlug": "orthomol-immun",
+  "categorySlug": "health",
+  "query": "오쏘몰 이뮨",
+  "fetchedAt": "2026-04-20T13:17:26+09:00",
+  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
+      "fetchedAt": "2026-04-20T13:17:25+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "오쏘몰 이뮨",
+        "오쏘몰이뮨"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
+      "fetchedAt": "2026-04-20T13:17:26+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "오쏘몰 이뮨",
+        "오쏘몰이뮨"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

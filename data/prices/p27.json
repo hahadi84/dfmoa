@@ -1,0 +1,52 @@
+{
+  "productId": "p27",
+  "productSlug": "macallan-12-double-cask-700ml",
+  "categorySlug": "liquor",
+  "query": "맥캘란 12년 더블 캐스크 700ml",
+  "fetchedAt": "2026-04-20T13:13:40+09:00",
+  "updatedAtLabel": "2026-04-20 13:13 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A7%A5%EC%BA%98%EB%9E%80%2012%EB%85%84%20%EB%8D%94%EB%B8%94%20%EC%BA%90%EC%8A%A4%ED%81%AC%20700ml",
+      "fetchedAt": "2026-04-20T13:13:37+09:00",
+      "matched_via": "alias_en",
+      "attempted_queries": [
+        "맥캘란 12년 더블 캐스크 700ml",
+        "The Macallan 12 Double Cask 700ml",
+        "Macallan Double Cask 12 700ml",
+        "맥캘란12년 더블캐스크",
+        "맥캘란12년더블캐스크700ml",
+        "themacallan12doublecask700ml",
+        "macallandoublecask12700ml",
+        "맥캘란12년더블캐스크",
+        "맥캘란 12년 더블 캐스크",
+        "The Macallan 12 Double Cask"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A7%A5%EC%BA%98%EB%9E%80%2012%EB%85%84%20%EB%8D%94%EB%B8%94%20%EC%BA%90%EC%8A%A4%ED%81%AC%20700ml",
+      "fetchedAt": "2026-04-20T13:13:40+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "맥캘란 12년 더블 캐스크 700ml",
+        "The Macallan 12 Double Cask 700ml",
+        "Macallan Double Cask 12 700ml",
+        "맥캘란12년 더블캐스크",
+        "맥캘란12년더블캐스크700ml",
+        "themacallan12doublecask700ml",
+        "macallandoublecask12700ml",
+        "맥캘란12년더블캐스크",
+        "맥캘란 12년 더블 캐스크",
+        "The Macallan 12 Double Cask"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

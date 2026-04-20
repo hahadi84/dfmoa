@@ -1,0 +1,175 @@
+{
+  "generatedAt": "2026-04-20T04:18:05.442Z",
+  "attemptedCount": 43,
+  "failureCount": 28,
+  "failures": [
+    {
+      "productId": "p2",
+      "productSlug": "jo-malone-english-pear-100ml",
+      "categorySlug": "perfume",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p9",
+      "productSlug": "diptyque-do-son-75ml",
+      "categorySlug": "perfume",
+      "error": "shilla:cookie_or_login_required, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p13",
+      "productSlug": "dior-sauvage-edp-100ml",
+      "categorySlug": "perfume",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p27",
+      "productSlug": "macallan-12-double-cask-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p28",
+      "productSlug": "yamazaki-12-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p7",
+      "productSlug": "gentle-monster-dear-01",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p8",
+      "productSlug": "rayban-wayfarer-rb2140",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p33",
+      "productSlug": "oakley-sutro-oo9406",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p34",
+      "productSlug": "tom-ford-snowdon-ft0237",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p35",
+      "productSlug": "prada-pr-17ws",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p36",
+      "productSlug": "gucci-gg0061s",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p37",
+      "productSlug": "celine-triomphe-cl40194u",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p38",
+      "productSlug": "saint-laurent-sl-276-mica",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p39",
+      "productSlug": "maui-jim-peahi-b202",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p40",
+      "productSlug": "persol-po0649",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p41",
+      "productSlug": "longchamp-le-pliage-medium",
+      "categorySlug": "fashion",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p42",
+      "productSlug": "tumi-alpha-bravo-backpack",
+      "categorySlug": "fashion",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p43",
+      "productSlug": "montblanc-meisterstuck-wallet",
+      "categorySlug": "fashion",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p51",
+      "productSlug": "seiko-presage-cocktail-time",
+      "categorySlug": "watch",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p52",
+      "productSlug": "citizen-tsuyosa-nj015",
+      "categorySlug": "watch",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p61",
+      "productSlug": "swarovski-tennis-bracelet",
+      "categorySlug": "jewelry",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p71",
+      "productSlug": "kgc-everytime-royal",
+      "categorySlug": "health",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p72",
+      "productSlug": "orthomol-immun",
+      "categorySlug": "health",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p81",
+      "productSlug": "godiva-gold-collection",
+      "categorySlug": "food",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p82",
+      "productSlug": "royce-nama-chocolate",
+      "categorySlug": "food",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p91",
+      "productSlug": "apple-airpods-pro-2",
+      "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    },
+    {
+      "productId": "p92",
+      "productSlug": "sony-wh-1000xm5",
+      "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, lotte:robots_or_terms_restricted"
+    }
+  ]
+}

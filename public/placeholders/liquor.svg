@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-label="Liquor placeholder">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#fffbeb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="160" height="96" rx="18" fill="url(#g)"/>
+  <path d="M70 12h20v25l10 13v30c0 8-8 12-30 12s-30-4-30-12V50l10-13z" transform="translate(10)" fill="none" stroke="#92400e" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M68 60h24v16H68z" fill="none" stroke="#f59e0b" stroke-width="4"/>
+</svg>

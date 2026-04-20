@@ -1,0 +1,79 @@
+{
+  "productId": "p25",
+  "productSlug": "ballantines-21-700ml",
+  "categorySlug": "liquor",
+  "query": "발렌타인 21년 700ml",
+  "fetchedAt": "2026-04-20T13:13:13+09:00",
+  "updatedAtLabel": "2026-04-20 13:13 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-20T13:13:11+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "발렌타인 21년 700ml",
+        "Ballantine's 21 700ml",
+        "Ballantines 21 Year Old 700ml",
+        "발렌타인21년 700ml",
+        "발렌타인21년700ml",
+        "ballantines21700ml",
+        "ballantines21yearold700ml",
+        "발렌타인 21년",
+        "Ballantine's 21",
+        "Ballantines 21 Year Old"
+      ],
+      "items": [
+        {
+          "id": "shilla-046131000043",
+          "title": "발렌타인 21년 RESTAGE 700ml",
+          "brand": "발렌타인",
+          "priceKrw": 233628,
+          "priceUsd": 158.65,
+          "regularUsdPrice": 167,
+          "discountRate": 5,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20RESTAGE%20700ml",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/01/046131000043_20251201_12264673_12_046131000043_1.JPG",
+          "matchScore": 68,
+          "fetchedAt": "2026-04-20T13:13:11+09:00"
+        },
+        {
+          "id": "shilla-046131000070",
+          "title": "발렌타인 21년 GLENBURGIE 700ml",
+          "brand": "발렌타인",
+          "priceKrw": 257705,
+          "priceUsd": 175,
+          "regularUsdPrice": 250,
+          "discountRate": 30,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20GLENBURGIE%20700ml",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2026/01/20/046131000070_20260120_16394976_12_046131000070_1.JPG",
+          "matchScore": 68,
+          "fetchedAt": "2026-04-20T13:13:11+09:00"
+        }
+      ],
+      "error": null
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-20T13:13:13+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "발렌타인 21년 700ml",
+        "Ballantine's 21 700ml",
+        "Ballantines 21 Year Old 700ml",
+        "발렌타인21년 700ml",
+        "발렌타인21년700ml",
+        "ballantines21700ml",
+        "ballantines21yearold700ml",
+        "발렌타인 21년",
+        "Ballantine's 21",
+        "Ballantines 21 Year Old"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

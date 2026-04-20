@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-label="Eyewear placeholder">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#f1f5f9"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+  <rect width="160" height="96" rx="18" fill="url(#g)"/>
+  <path d="M24 45c22-11 36-10 56-1 20-9 34-10 56 1" fill="none" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M31 50c4 21 29 24 40 9 4-6 3-14-2-19-18-5-33-1-38 10zM129 50c-4 21-29 24-40 9-4-6-3-14 2-19 18-5 33-1 38 10z" fill="none" stroke="#334155" stroke-width="5" stroke-linejoin="round"/>
+</svg>

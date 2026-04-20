@@ -1,0 +1,36 @@
+{
+  "productId": "p91",
+  "productSlug": "apple-airpods-pro-2",
+  "categorySlug": "electronics",
+  "query": "애플 에어팟 프로 2세대",
+  "fetchedAt": "2026-04-20T13:17:51+09:00",
+  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%95%A0%ED%94%8C%20%EC%97%90%EC%96%B4%ED%8C%9F%20%ED%94%84%EB%A1%9C%202%EC%84%B8%EB%8C%80",
+      "fetchedAt": "2026-04-20T13:17:49+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "애플 에어팟 프로 2세대",
+        "애플에어팟프로2세대"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%95%A0%ED%94%8C%20%EC%97%90%EC%96%B4%ED%8C%9F%20%ED%94%84%EB%A1%9C%202%EC%84%B8%EB%8C%80",
+      "fetchedAt": "2026-04-20T13:17:51+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "애플 에어팟 프로 2세대",
+        "애플에어팟프로2세대"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}

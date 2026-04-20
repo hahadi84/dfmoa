@@ -1,0 +1,36 @@
+{
+  "productId": "p51",
+  "productSlug": "seiko-presage-cocktail-time",
+  "categorySlug": "watch",
+  "query": "세이코 프레사지 칵테일 타임",
+  "fetchedAt": "2026-04-20T13:16:44+09:00",
+  "updatedAtLabel": "2026-04-20 13:16 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%84%B8%EC%9D%B4%EC%BD%94%20%ED%94%84%EB%A0%88%EC%82%AC%EC%A7%80%20%EC%B9%B5%ED%85%8C%EC%9D%BC%20%ED%83%80%EC%9E%84",
+      "fetchedAt": "2026-04-20T13:16:43+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "세이코 프레사지 칵테일 타임",
+        "세이코프레사지칵테일타임"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "error",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%84%B8%EC%9D%B4%EC%BD%94%20%ED%94%84%EB%A0%88%EC%82%AC%EC%A7%80%20%EC%B9%B5%ED%85%8C%EC%9D%BC%20%ED%83%80%EC%9E%84",
+      "fetchedAt": "2026-04-20T13:16:44+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "세이코 프레사지 칵테일 타임",
+        "세이코프레사지칵테일타임"
+      ],
+      "items": [],
+      "error": "robots_or_terms_restricted"
+    }
+  }
+}
