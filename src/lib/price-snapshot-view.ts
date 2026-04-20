@@ -6,7 +6,7 @@ import type { ProductPriceSnapshot, SnapshotSourceRecord } from "@/lib/price-sna
 
 const SNAPSHOT_STALE_MS = 3 * 24 * 60 * 60 * 1000;
 const IMAGE_FRESH_MS = 7 * 24 * 60 * 60 * 1000;
-const FAILURE_MESSAGE = "최근 수집 실패 — 원본 면세점 확인";
+const FAILURE_MESSAGE = "가격 확인 준비 중 — 원본 면세점 확인";
 
 export function formatSnapshotTimestamp(value?: string | null) {
   if (!value) {

@@ -23,29 +23,13 @@ function hasSnapshotPrice(snapshot?: ProductPriceSnapshot | null) {
 
 export function FeaturedProductGrid({ products, priceSnapshotsByProductId = {} }: FeaturedProductGridProps) {
   const [visibleCount, setVisibleCount] = useState(STEP_SIZE);
-  const [showFailedProducts, setShowFailedProducts] = useState(false);
-  const { successfulProducts, failedProducts } = useMemo(() => {
-    const successful: Product[] = [];
-    const failed: Product[] = [];
-
-    for (const product of products) {
-      if (hasSnapshotPrice(priceSnapshotsByProductId[product.id])) {
-        successful.push(product);
-      } else {
-        failed.push(product);
-      }
-    }
-
-    return {
-      successfulProducts: successful,
-      failedProducts: failed,
-    };
-  }, [priceSnapshotsByProductId, products]);
+  const successfulProducts = useMemo(
+    () => products.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id])),
+    [priceSnapshotsByProductId, products]
+  );
   const visibleSuccessfulProducts = successfulProducts.slice(0, visibleCount);
-  const visibleFailedProducts = failedProducts.length >= 3 && !showFailedProducts ? [] : failedProducts;
-  const visibleProducts = [...visibleSuccessfulProducts, ...visibleFailedProducts];
+  const visibleProducts = visibleSuccessfulProducts;
   const hasMoreSuccessProducts = visibleCount < successfulProducts.length;
-  const hasHiddenFailedProducts = failedProducts.length >= 3 && !showFailedProducts;
 
   return (
     <div className="featured-products">
@@ -92,7 +76,7 @@ export function FeaturedProductGrid({ products, priceSnapshotsByProductId = {} }
       </div>
 
       <p className="featured-product-source">
-        가격 확인 성공 상품을 먼저 표시하고, 최근 수집 실패 상품은 뒤로 정리합니다.
+        가격 확인이 완료된 상품만 표시합니다. 원본 확인이 필요한 상품은 상세 페이지와 검색에서 별도로 안내합니다.
       </p>
 
       <div className="featured-product-more-row">
@@ -103,16 +87,6 @@ export function FeaturedProductGrid({ products, priceSnapshotsByProductId = {} }
             onClick={() => setVisibleCount((current) => Math.min(current + STEP_SIZE, successfulProducts.length))}
           >
             더보기 12개
-          </button>
-        ) : null}
-
-        {hasHiddenFailedProducts ? (
-          <button
-            type="button"
-            className="ghost-button featured-product-more"
-            onClick={() => setShowFailedProducts(true)}
-          >
-            최근 수집 실패 {failedProducts.length}개 더보기
           </button>
         ) : null}
       </div>
