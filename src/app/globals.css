@@ -5163,6 +5163,7 @@ textarea:focus,
 }
 
 .hero-lowest-preview-card {
+  grid-template-columns: 58px minmax(0, 1fr);
   min-height: 60px;
   padding: var(--space-2);
   border-color: var(--color-border-strong);
@@ -5171,8 +5172,8 @@ textarea:focus,
 
 .hero-lowest-preview-card img,
 .hero-lowest-preview-card .product-image-fallback {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
   border-radius: var(--radius-sm);
 }
 
@@ -5229,13 +5230,13 @@ textarea:focus,
 }
 
 .today-lowest-image {
-  min-height: 48px;
+  min-height: 62px;
   border-radius: var(--radius-sm);
 }
 
 .today-lowest-image img,
 .today-lowest-image .product-image-fallback {
-  height: 52px;
+  height: 62px;
   padding: var(--space-1);
 }
 
