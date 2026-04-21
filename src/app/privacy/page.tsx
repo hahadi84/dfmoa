@@ -21,7 +21,11 @@ const collectionRows = [
 
 const processorRows = [
   [SITE_OPERATOR.hostingProvider.replace(" (미국)", ""), "웹사이트 호스팅·정적 자산 전달", "미국"],
-  [SITE_OPERATOR.analyticsProvider.replace(" (미국)", ""), "방문 분석(Google Analytics 4, 측정 ID G-VXFLYV6T34)", "미국"],
+  [
+    SITE_OPERATOR.analyticsProvider.replace(" (미국)", ""),
+    `방문 분석(Google Analytics 4, 측정 ID ${SITE_OPERATOR.analyticsMeasurementId})`,
+    "미국",
+  ],
   [SITE_OPERATOR.analyticsProvider.replace(" (미국)", ""), "(향후) Google AdSense 광고 제공 - 승인 시 적용", "미국"],
   [SITE_OPERATOR.affiliatePartner, "쿠팡 파트너스 제휴 링크 트래킹", "대한민국"],
 ];
@@ -29,7 +33,7 @@ const processorRows = [
 const cookieRows = [
   [
     "_ga, _ga_*",
-    "Google Analytics 4 방문 분석 (측정 ID G-VXFLYV6T34)",
+    `Google Analytics 4 방문 분석 (측정 ID ${SITE_OPERATOR.analyticsMeasurementId})`,
     "최장 2년",
     "브라우저 설정 또는 Google Analytics 차단 부가기능",
   ],

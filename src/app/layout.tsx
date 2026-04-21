@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/site-header";
 import { absoluteSiteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? SITE_OPERATOR.analyticsMeasurementId;
 
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-body",
