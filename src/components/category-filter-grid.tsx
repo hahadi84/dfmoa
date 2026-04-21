@@ -4,9 +4,11 @@ import { useMemo, useTransition } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FeaturedProductGrid } from "@/components/featured-product-grid";
 import { trackEvent } from "@/lib/analytics";
+import type { ProductPriceSnapshot } from "@/lib/price-snapshot-types";
 import type { Product } from "@/lib/site-data";
 
 type CategoryFilterGridProps = {
+  priceSnapshotsByProductId: Record<string, ProductPriceSnapshot | null>;
   products: Product[];
 };
 
@@ -14,7 +16,7 @@ function unique(values: string[]) {
   return Array.from(new Set(values.filter(Boolean))).sort((left, right) => left.localeCompare(right));
 }
 
-export function CategoryFilterGrid({ products }: CategoryFilterGridProps) {
+export function CategoryFilterGrid({ priceSnapshotsByProductId, products }: CategoryFilterGridProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
@@ -127,7 +129,7 @@ export function CategoryFilterGrid({ products }: CategoryFilterGridProps) {
         {isPending ? "필터 적용 중" : `${filteredProducts.length}개 상품 표시`} · 가격 상태는 상품 상세의 source status를
         기준으로 확인합니다.
       </p>
-      <FeaturedProductGrid products={filteredProducts} />
+      <FeaturedProductGrid products={filteredProducts} priceSnapshotsByProductId={priceSnapshotsByProductId} />
     </div>
   );
 }

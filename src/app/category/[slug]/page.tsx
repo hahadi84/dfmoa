@@ -6,6 +6,7 @@ import { CategoryFilterGrid } from "@/components/category-filter-grid";
 import { buildBreadcrumbJsonLd, buildItemListJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildCategoryMetadata } from "@/lib/seo-metadata";
 import { categories, getCategoryBySlug, getGuideBySlug, getProductsByCategory } from "@/lib/site-data";
+import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
 
 type CategoryPageProps = {
   params: Promise<{
@@ -42,6 +43,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const categoryProducts = getProductsByCategory(category.slug);
+  const priceSnapshotsByProductId = readPriceSnapshotsByProductId(categoryProducts);
   const guide = getGuideBySlug(category.guideSlug);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
@@ -96,7 +98,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
 
         <Suspense fallback={<p className="section-copy">카테고리 상품을 정리하는 중입니다.</p>}>
-          <CategoryFilterGrid products={categoryProducts} />
+          <CategoryFilterGrid products={categoryProducts} priceSnapshotsByProductId={priceSnapshotsByProductId} />
         </Suspense>
 
         <div className="split-grid" style={{ marginTop: 12 }}>

@@ -257,12 +257,22 @@ export default function Home() {
                 <p className="section-copy">{category.intro}</p>
                 <div className="category-lowest-line">
                   {lowestItem ? (
-                    <>
-                      <strong>{lowestItem.product.displayName}</strong>
-                      <span>
-                        {lowestItem.storeName} · {lowestItem.priceLabel}
+                    <span className="category-lowest-product-card">
+                      <span className="category-lowest-product-image">
+                        <SafeProductImage
+                          src={lowestItem.imageUrl}
+                          alt={`${lowestItem.product.brand} ${lowestItem.product.name} ${lowestItem.product.volume}`}
+                          categorySlug={lowestItem.product.categorySlug}
+                        />
                       </span>
-                    </>
+                      <span className="category-lowest-product-copy">
+                        <strong>{lowestItem.product.displayName}</strong>
+                        <span>
+                          {lowestItem.storeName} · {lowestItem.priceLabel}
+                        </span>
+                        <small>{lowestItem.timestamp || latestSnapshotLabel} 기준</small>
+                      </span>
+                    </span>
                   ) : null}
                 </div>
                 <span className="text-link">가격 확인 상품 {pricedCount}개 보기</span>
