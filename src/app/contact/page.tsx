@@ -102,6 +102,13 @@ export default function ContactPage() {
                   개인정보처리방침과 운영정책 기준 적용
                 </p>
               </div>
+              <div className="list-item">
+                <span className="list-number">D</span>
+                <p className="list-copy">
+                  <strong>회신 정책</strong>
+                  운영 상황에 따라 보통 24~72시간 안에 확인
+                </p>
+              </div>
             </div>
           </aside>
         </div>

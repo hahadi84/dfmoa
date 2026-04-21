@@ -6,7 +6,6 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { absoluteSiteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 
-const ADSENSE_PUBLISHER_ID = "ca-pub-9602089494397808";
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const notoSansKr = Noto_Sans_KR({
@@ -54,9 +53,6 @@ export const metadata: Metadata = {
       "naver-site-verification": "d68acd4c4ba107da4c92dd5e55d0d3c8dcedbddd",
     },
   },
-  other: {
-    "google-adsense-account": ADSENSE_PUBLISHER_ID,
-  },
 };
 
 export default function RootLayout({
@@ -66,13 +62,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${notoSansKr.variable} ${plexMono.variable}`}>
-      <head>
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
-          crossOrigin="anonymous"
-        />
-      </head>
       <body>
         <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
         <div className="site-shell">

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
+import { ContentContextCard } from "@/components/content-context-card";
 import { ContentProductGrid } from "@/components/content-product-grid";
 import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
+import { readBrandContext } from "@/lib/context-content";
 import { buildBrandJsonLd, buildBreadcrumbJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildBrandMetadata } from "@/lib/seo-metadata";
 import {
@@ -65,6 +67,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
   const categoryLinks = getCategoryLinks(brand.categoryIds);
   const relatedGuides = getRelatedGuides(brand.relatedGuideSlugs);
   const relatedDeals = monthlyDealReports.filter((report) => brand.relatedDealSlugs?.includes(report.slug));
+  const brandContext = readBrandContext(brand.slug);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
     { name: "브랜드", path: "/brand" },
@@ -97,6 +100,10 @@ export default async function BrandPage({ params }: BrandPageProps) {
             <span>최종 결제가는 원본 면세점에서 확인</span>
           </div>
         </article>
+
+        {brandContext ? (
+          <ContentContextCard context={brandContext} eyebrow="Brand Notes" title={`${brand.nameKo} 브랜드 소개`} />
+        ) : null}
 
         <ContentProductGrid products={brandProducts} title={`${brand.nameKo} 대표 상품`} />
 

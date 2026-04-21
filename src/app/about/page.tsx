@@ -27,6 +27,42 @@ export default function AboutPage() {
           DFMOA는 면세점 공개가, 국내 판매가, 혜택 조건을 분리해 보여주는 비교 서비스입니다.
         </p>
 
+        <article className="surface-card" style={{ marginTop: 20 }}>
+          <p className="panel-title">운영 정보</p>
+          <div className="guide-body" style={{ marginTop: 12 }}>
+            <section className="guide-section">
+              <h2 className="card-title" style={{ fontSize: "1rem" }}>
+                운영 주체와 연락 수단
+              </h2>
+              <p className="section-copy">
+                DFMOA는 면세 가격 비교를 목적으로 운영되는 독립 정보 서비스입니다. 문의, 오류 제보, 권리자 요청은
+                <Link href="/contact"> 문의 페이지</Link>를 통해 접수하며, 운영팀이 상품명과 원본 링크를 기준으로
+                확인합니다.
+              </p>
+            </section>
+            <section className="guide-section">
+              <h2 className="card-title" style={{ fontSize: "1rem" }}>
+                서비스 범위와 한계
+              </h2>
+              <p className="section-copy">
+                DFMOA는 공개 검색 결과와 저장된 가격 스냅샷을 비교 정보로 정리할 뿐, 상품 판매·결제·재고 보장·수령
+                확정을 제공하지 않습니다. 최종 결제가는 쿠폰, 회원 등급, 항공편, 수령 공항, 원본 면세점 정책에 따라
+                달라질 수 있습니다.
+              </p>
+            </section>
+            <section className="guide-section">
+              <h2 className="card-title" style={{ fontSize: "1rem" }}>
+                수익 구조와 독립성
+              </h2>
+              <p className="section-copy">
+                일부 국내가 참고 링크에는 쿠팡 파트너스 제휴 링크가 포함될 수 있고, 향후 Google AdSense 광고 승인을
+                신청할 예정입니다. DFMOA는 롯데·신라·신세계·현대면세점과 제휴한 공식 서비스가 아니며, 광고 노출이나
+                제휴 여부가 가격 비교 순위에 영향을 주지 않도록 운영합니다.
+              </p>
+            </section>
+          </div>
+        </article>
+
         <div className="three-grid" style={{ marginTop: 24 }}>
           <article className="surface-card">
             <p className="panel-title">입력</p>

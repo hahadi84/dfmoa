@@ -1,0 +1,12 @@
+# Tiffany Return to Tiffany Bracelet 면세 구매 메모
+
+## 상품 배경
+Tiffany Return to Tiffany Bracelet은 Tiffany & Co.의 주얼리 상품으로, DFMOA에서는 Bracelet 표기와 상품명 정합성을 기준으로 추적합니다. 현재 공개가 스냅샷에는 유효한 가격이 없어 빈 가격표 대신 구매 전 확인할 기준을 제공합니다. 주얼리는 소재, 도금 여부, 사이즈, 세트 구성에 따라 같은 브랜드라도 가격 차이가 큽니다. 상품명이 비슷한 목걸이, 귀걸이, 팔찌가 함께 노출될 수 있어 카테고리와 모델명을 함께 확인해야 합니다.
+
+## 면세 구매 시 확인 포인트
+Tiffany Return to Tiffany Bracelet 구매 전에는 원본 면세점에서 Bracelet 표기, 출국 공항, 주문 마감 시간, 수령 가능 여부를 확인하세요. 원본 면세점에서 소재, 사이즈, 세트 여부, 교환 조건을 확인하세요. 국내가 비교 시에는 같은 소재와 같은 구성인지, 보증 조건이 다른지 함께 보는 편이 안전합니다.
+
+## 검색 매칭 팁
+- 영문 브랜드명과 모델명, 상품 유형을 함께 쓰고 한글명도 별도로 시도하세요. 기본 검색어는 `티파니 리턴 투 티파니 브레이슬릿`이고, 영문 브랜드명 `Tiffany & Co.`와 상품명 `Return to Tiffany Bracelet`을 조합해 다시 검색할 수 있습니다.
+- DFMOA 기준 상품명은 Tiffany Return to Tiffany Bracelet, 브랜드는 Tiffany & Co., 용량 또는 모델 표기는 Bracelet입니다.
+- 가격이 보이지 않으면 실패로 단정하지 말고 ICN T1, ICN T2, GMP, CJU, PUS 중 본인 출국 공항을 원본 면세점에서 다시 확인하세요.

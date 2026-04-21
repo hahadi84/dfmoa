@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "@/components/app-link";
 import { notFound } from "next/navigation";
 import { ProductPageClient } from "@/components/product-page-client";
+import { readProductContext } from "@/lib/context-content";
 import { buildBreadcrumbJsonLd, buildProductJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildSearchResultFromSnapshot } from "@/lib/price-snapshot-view";
 import { readProductPriceSnapshot } from "@/lib/static-price-snapshots";
@@ -52,6 +53,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const relatedProducts = getRelatedProducts(product.categorySlug, product.id);
   const priceSnapshot = readProductPriceSnapshot(product.id);
   const initialResult = buildSearchResultFromSnapshot(product, priceSnapshot);
+  const productContext = readProductContext(product.slug);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
     { name: category?.name ?? product.categorySlug, path: `/category/${product.categorySlug}` },
@@ -78,6 +80,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           categoryName={category?.name}
           initialResult={initialResult}
           product={product}
+          productContext={productContext}
           relatedProducts={relatedProducts}
         />
       </div>

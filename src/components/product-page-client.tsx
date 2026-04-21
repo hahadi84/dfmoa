@@ -3,6 +3,7 @@
 import { startTransition, useEffect, useState } from "react";
 import { BenefitApplicationPanel } from "@/components/benefit-application-panel";
 import { CategoryTravelNotice } from "@/components/category-travel-notice";
+import { ContentContextCard } from "@/components/content-context-card";
 import { DomesticPricePanel } from "@/components/domestic-price-panel";
 import { EffectivePriceCalculator } from "@/components/effective-price-calculator";
 import Link from "@/components/app-link";
@@ -26,6 +27,7 @@ import {
 } from "@/lib/source-policy";
 import type { DomesticPriceResult } from "@/lib/domestic-price-types";
 import { formatKrw, formatUsd, getStoreById, type Product } from "@/lib/site-data";
+import type { ContentContext } from "@/lib/context-content";
 import type { SearchApiResponse } from "@/lib/search-types";
 
 function getSearchErrorMessage() {
@@ -40,6 +42,7 @@ type ProductPageClientProps = {
   categoryName?: string;
   initialResult?: SearchApiResponse;
   product: Product;
+  productContext?: ContentContext | null;
   relatedProducts: Product[];
 };
 
@@ -47,6 +50,7 @@ export function ProductPageClient({
   categoryName,
   initialResult,
   product,
+  productContext,
   relatedProducts,
 }: ProductPageClientProps) {
   const [result, setResult] = useState<SearchApiResponse | null>(initialResult ?? null);
@@ -200,6 +204,10 @@ export function ProductPageClient({
           <span className="chip is-soft">{product.badge}</span>
           <span className="chip is-soft">{product.query}</span>
         </div>
+
+        {productContext ? (
+          <ContentContextCard context={productContext} title="상품 배경과 면세 구매 체크" />
+        ) : null}
 
         <div className="surface-card" style={{ marginTop: 10 }}>
           <div className="section-head">

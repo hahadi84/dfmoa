@@ -377,6 +377,14 @@
   margin-top: 16px;
 }
 
+.content-context-card {
+  margin-top: 12px;
+}
+
+.content-context-card .guide-section {
+  padding: 18px;
+}
+
 .policy-article section {
   display: grid;
   gap: 8px;
