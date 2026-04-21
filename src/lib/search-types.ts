@@ -46,7 +46,7 @@ export type LiveOffer = {
 
 export type StoreSearchStatus = {
   storeId: StoreId;
-  state: "live" | "blocked" | "error";
+  state: "live" | "blocked" | "empty" | "error";
   message: string;
   searchUrl: string;
   offerCount: number;

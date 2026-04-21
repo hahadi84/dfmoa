@@ -127,7 +127,7 @@ export function getPriceStatusLabel(status: PriceStatus) {
     case "stale":
       return "최근 확인가";
     case "unavailable":
-      return "가격 확인 필요";
+      return "가격 미확인";
     case "manual_only":
       return "원본 확인 필요";
     case "blocked_by_policy":
@@ -208,16 +208,16 @@ function getOfferPriceStatus(offer: LiveOffer): PriceStatus {
 }
 
 function getUnavailableStatus(source: DutyFreeSource, status?: StoreSearchStatus): PriceStatus {
-  if (status?.state === "error") {
-    return "error";
-  }
-
   if (source.accessPolicy === "manual_only") {
     return "manual_only";
   }
 
-  if (source.accessPolicy === "blocked_by_policy") {
+  if (source.accessPolicy === "blocked_by_policy" || status?.state === "blocked") {
     return "blocked_by_policy";
+  }
+
+  if (status?.state === "error") {
+    return "error";
   }
 
   return "unavailable";
@@ -403,6 +403,10 @@ function getHealthReason(status: StoreSearchStatus, source?: DutyFreeSource): So
   }
 
   if (status.state === "live" && status.offerCount === 0) {
+    return "product_match_failed";
+  }
+
+  if (status.state === "empty") {
     return "product_match_failed";
   }
 

@@ -23,6 +23,8 @@ function getSignalLabel(state: StoreSearchStatus["state"]) {
       return "확인 가능";
     case "blocked":
       return "원본 확인 필요";
+    case "empty":
+      return "가격 미확인";
     case "error":
       return "오류";
     default:
@@ -53,6 +55,10 @@ function getCompactDescription(item: StoreStatusListItem) {
 
   if (item.state === "blocked") {
     return "원본";
+  }
+
+  if (item.state === "empty") {
+    return "미확인";
   }
 
   return "오류";

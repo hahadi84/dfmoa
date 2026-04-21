@@ -3337,6 +3337,13 @@ img {
     0 0 16px rgba(245, 158, 11, 0.45);
 }
 
+.traffic-light.is-empty {
+  background: #64748b;
+  box-shadow:
+    0 0 0 2px rgba(100, 116, 139, 0.14),
+    0 0 16px rgba(100, 116, 139, 0.36);
+}
+
 .traffic-light.is-live {
   background: #22c55e;
   box-shadow:

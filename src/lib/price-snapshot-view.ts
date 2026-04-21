@@ -1,12 +1,32 @@
-import { buildOfficialSearchUrl } from "@/lib/source-policy";
+import { buildOfficialSearchUrl, getDutyFreeSource } from "@/lib/source-policy";
 import { formatKrw, formatUsd, getStoreById, stores, type Product, type StoreId } from "@/lib/site-data";
 import { createEmptyHistorySummary } from "@/lib/search-types";
-import type { LiveOffer, SearchApiResponse, SearchPriceRangeSummary, SourceHealth, StoreSearchStatus } from "@/lib/search-types";
+import type {
+  LiveOffer,
+  SearchApiResponse,
+  SearchPriceRangeSummary,
+  SourceHealth,
+  SourceHealthErrorReason,
+  StoreSearchStatus,
+} from "@/lib/search-types";
 import type { ProductPriceSnapshot, SnapshotSourceRecord } from "@/lib/price-snapshot-types";
 
 const SNAPSHOT_STALE_MS = 3 * 24 * 60 * 60 * 1000;
 const IMAGE_FRESH_MS = 7 * 24 * 60 * 60 * 1000;
 const FAILURE_MESSAGE = "가격 확인 준비 중 — 원본 면세점 확인";
+const EMPTY_MESSAGE = "가격 미확인 — 원본 면세점 확인";
+const BLOCKED_MESSAGE = "자동 수집 제외 — 원본 면세점 확인";
+const ERROR_MESSAGE = "확인 오류 — 원본 면세점 확인";
+
+const REAL_ERROR_REASONS = new Set<SourceHealthErrorReason>([
+  "network_error",
+  "parse_error",
+  "function_timeout",
+  "cors_or_403",
+  "cookie_or_login_required",
+  "frontend_state_error",
+  "unknown_error",
+]);
 
 export function formatSnapshotTimestamp(value?: string | null) {
   if (!value) {
@@ -124,6 +144,79 @@ function buildSummary(offers: LiveOffer[]): SearchPriceRangeSummary {
   };
 }
 
+function normalizeSnapshotErrorReason(error?: string | null): SourceHealthErrorReason | undefined {
+  switch (error) {
+    case "robots_or_terms_restricted":
+    case "disabled_by_policy":
+    case "request_failed_406":
+      return "robots_or_terms_restricted";
+    case "product_match_failed":
+      return "product_match_failed";
+    case "low_confidence_match":
+      return "low_confidence_match";
+    case "network_error":
+    case "parse_error":
+    case "function_timeout":
+    case "cors_or_403":
+    case "cookie_or_login_required":
+    case "frontend_state_error":
+    case "unknown_error":
+      return error;
+    default:
+      return undefined;
+  }
+}
+
+function getEmptySnapshotStatus(
+  store: (typeof stores)[number],
+  source: SnapshotSourceRecord | undefined,
+  query: string
+): StoreSearchStatus {
+  const dutyFreeSource = getDutyFreeSource(store.id);
+  const errorReason = normalizeSnapshotErrorReason(source?.error);
+  const isPolicyBlocked =
+    source?.status === "disabled_by_policy" ||
+    source?.source_status === "disabled_by_policy" ||
+    errorReason === "robots_or_terms_restricted" ||
+    dutyFreeSource?.accessPolicy === "blocked_by_policy";
+  const isRealError = Boolean(errorReason && REAL_ERROR_REASONS.has(errorReason));
+  const state: StoreSearchStatus["state"] = isPolicyBlocked ? "blocked" : isRealError ? "error" : "empty";
+
+  return {
+    storeId: store.id,
+    state,
+    message: state === "blocked" ? BLOCKED_MESSAGE : state === "error" ? ERROR_MESSAGE : EMPTY_MESSAGE,
+    searchUrl: source?.searchUrl || buildOfficialSearchUrl(store.id, query) || store.siteUrl,
+    offerCount: 0,
+    eventBadges: [],
+  };
+}
+
+function buildSnapshotSourceHealth(
+  status: StoreSearchStatus,
+  source: SnapshotSourceRecord | undefined,
+  product: Product,
+  firstFetchedAt: string,
+  snapshotFetchedAt?: string | null
+): SourceHealth {
+  const errorReason = normalizeSnapshotErrorReason(source?.error);
+  const healthStatus: SourceHealth["status"] =
+    status.offerCount > 0 ? "ok" : status.state === "blocked" ? "blocked" : status.state === "error" ? "error" : "degraded";
+
+  return {
+    sourceId: status.storeId,
+    productId: product.id,
+    lastAttemptedAt: formatSnapshotTimestamp(source?.fetchedAt ?? snapshotFetchedAt) || firstFetchedAt || "최근 확인 시각 없음",
+    lastSuccessAt: status.offerCount > 0 ? firstFetchedAt : null,
+    status: healthStatus,
+    errorReason:
+      status.offerCount > 0
+        ? undefined
+        : errorReason ?? (status.state === "empty" ? "product_match_failed" : status.state === "blocked" ? "robots_or_terms_restricted" : "unknown_error"),
+    note: status.offerCount > 0 ? "최근 확인 공개가 기준" : status.message,
+  };
+}
+
 export function buildSearchResultFromSnapshot(product: Product, snapshot?: ProductPriceSnapshot | null): SearchApiResponse {
   const sourceEntries = getSourceEntries(snapshot);
   const offers = sourceEntries
@@ -146,24 +239,11 @@ export function buildSearchResultFromSnapshot(product: Product, snapshot?: Produ
       };
     }
 
-    return {
-      storeId: store.id,
-      state: "error",
-      message: FAILURE_MESSAGE,
-      searchUrl: source?.searchUrl || buildOfficialSearchUrl(store.id, product.query) || store.siteUrl,
-      offerCount: 0,
-      eventBadges: [],
-    };
+    return getEmptySnapshotStatus(store, source, product.query);
   });
-  const sourceHealth: SourceHealth[] = statuses.map((status) => ({
-    sourceId: status.storeId,
-    productId: product.id,
-    lastAttemptedAt: firstFetchedAt || "최근 확인 시각 없음",
-    lastSuccessAt: status.offerCount > 0 ? firstFetchedAt : null,
-    status: status.offerCount > 0 ? "ok" : "error",
-    errorReason: status.offerCount > 0 ? undefined : "product_match_failed",
-    note: status.offerCount > 0 ? "최근 확인 공개가 기준" : FAILURE_MESSAGE,
-  }));
+  const sourceHealth: SourceHealth[] = statuses.map((status) =>
+    buildSnapshotSourceHealth(status, snapshot?.sources?.[status.storeId], product, firstFetchedAt, snapshot?.fetchedAt)
+  );
 
   return {
     query: product.query,
