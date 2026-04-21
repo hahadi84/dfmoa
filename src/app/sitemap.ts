@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
 import { benefitReports } from "@/lib/benefit-report-generator";
 import { airportGuides, brandLandings, comparePages, monthlyDealReports } from "@/lib/seo-content";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 import { categories, guides, products } from "@/lib/site-data";
 
-const SITE_URL = "https://dfmoa.netlify.app";
+const SITE_URL = SITE_OPERATOR.serviceUrl;
 const LAST_MODIFIED = new Date("2026-04-19");
 
 export const dynamic = "force-static";

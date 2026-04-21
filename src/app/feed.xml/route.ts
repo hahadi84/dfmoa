@@ -1,7 +1,8 @@
 import { benefitReports } from "@/lib/benefit-report-generator";
 import { monthlyDealReports } from "@/lib/seo-content";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
-const SITE_URL = "https://dfmoa.netlify.app";
+const SITE_URL = SITE_OPERATOR.serviceUrl;
 
 export const dynamic = "force-static";
 

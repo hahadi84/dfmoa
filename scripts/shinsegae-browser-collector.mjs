@@ -4,8 +4,9 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { chromium } from "playwright";
+import { SITE_SERVICE_URL } from "./site-operator-url.mjs";
 
-const DEFAULT_SYNC_URL = "https://dfmoa.netlify.app/api/external-store-snapshot";
+const DEFAULT_SYNC_URL = `${SITE_SERVICE_URL}/api/external-store-snapshot`;
 const DEFAULT_USER_DATA_DIR = path.resolve(".collector", "shinsegae-profile");
 const DEFAULT_OUTPUT_DIR = path.resolve(".collector");
 const DEFAULT_WAIT_MS = Number(process.env.SHINSEGAE_WAIT_MS || "6000");

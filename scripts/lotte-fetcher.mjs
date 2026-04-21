@@ -1,9 +1,10 @@
 import { load } from "cheerio";
+import { SITE_SERVICE_URL } from "./site-operator-url.mjs";
 
 const LOTTE_BASE_URL = "https://kor.lottedfs.com";
 const SEARCH_PATH = "/kr/search";
 const ROBOTS_URL = `${LOTTE_BASE_URL}/robots.txt`;
-const USER_AGENT = "DFMOA/1.0 (+https://dfmoa.netlify.app)";
+const USER_AGENT = `DFMOA/1.0 (+${SITE_SERVICE_URL})`;
 const REQUEST_TIMEOUT_MS = 8000;
 const CACHE_TTL_MS = 5 * 60 * 1000;
 const cache = new Map();

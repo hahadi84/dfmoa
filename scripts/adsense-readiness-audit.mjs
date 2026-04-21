@@ -2,10 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { load } from "cheerio";
+import { SITE_SERVICE_URL } from "./site-operator-url.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
-const sitemapUrl = process.env.ADSENSE_AUDIT_SITEMAP_URL ?? "https://dfmoa.netlify.app/sitemap.xml";
+const sitemapUrl = process.env.ADSENSE_AUDIT_SITEMAP_URL ?? `${SITE_SERVICE_URL}/sitemap.xml`;
 const reportDate =
   process.env.ADSENSE_AUDIT_DATE ??
   new Intl.DateTimeFormat("en-CA", {

@@ -6,6 +6,18 @@
   directory = "netlify/functions"
 
 [[redirects]]
+  from = "https://dfmoa.com/*"
+  to = "https://www.dfmoa.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://dfmoa.netlify.app/*"
+  to = "https://www.dfmoa.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/deals"
   to = "/.netlify/functions/deals-redirect"
   status = 200

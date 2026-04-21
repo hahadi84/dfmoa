@@ -7,6 +7,7 @@ import {
   storeBestSellerExamples,
 } from "@/lib/best-seller-examples";
 import { latestBenefitReport } from "@/lib/benefit-report-generator";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
 export const metadata: Metadata = {
   title: "관리자 메모",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const verificationChecklist = [
-  "Google Search Console에서 https://dfmoa.netlify.app 속성을 등록하고 sitemap.xml을 제출합니다.",
+  `Google Search Console에서 ${SITE_OPERATOR.serviceUrl} 속성을 등록하고 sitemap.xml을 제출합니다.`,
   "Bing Webmaster Tools에서도 동일한 sitemap URL을 제출합니다.",
   "HTML meta verification이 필요하면 app/layout.tsx의 metadata.other 또는 <head> 위치에 운영자가 발급받은 값을 추가합니다.",
   "DNS verification은 도메인 DNS 관리 화면에서 운영자가 직접 설정해야 합니다.",

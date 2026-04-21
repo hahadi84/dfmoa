@@ -1,9 +1,10 @@
 import { load } from "cheerio";
+import { SITE_SERVICE_URL } from "./site-operator-url.mjs";
 
 const SHINSEGAE_BASE_URL = "https://www.ssgdfs.com";
 const SEARCH_PATH = "/kr/search/resultsTotal";
 const ROBOTS_URL = `${SHINSEGAE_BASE_URL}/robots.txt`;
-const USER_AGENT = "DFMOA/1.0 (+https://dfmoa.netlify.app)";
+const USER_AGENT = `DFMOA/1.0 (+${SITE_SERVICE_URL})`;
 const REQUEST_TIMEOUT_MS = 8000;
 const CACHE_TTL_MS = 5 * 60 * 1000;
 const cache = new Map();

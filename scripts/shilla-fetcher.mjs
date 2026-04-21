@@ -1,10 +1,11 @@
 import { load } from "cheerio";
+import { SITE_SERVICE_URL } from "./site-operator-url.mjs";
 
 const SHILLA_BASE_URL = "https://www.shilladfs.com";
 const SEARCH_PATH = "/estore/kr/ko/search";
 const AJAX_PRODUCTS_URL = `${SHILLA_BASE_URL}/estore/kr/ko/ajaxProducts`;
 const ROBOTS_URL = `${SHILLA_BASE_URL}/robots.txt`;
-const USER_AGENT = "DFMOA/1.0 (+https://dfmoa.netlify.app)";
+const USER_AGENT = `DFMOA/1.0 (+${SITE_SERVICE_URL})`;
 const REQUEST_TIMEOUT_MS = 8000;
 const CACHE_TTL_MS = 5 * 60 * 1000;
 const VARIANT_TOKENS = [

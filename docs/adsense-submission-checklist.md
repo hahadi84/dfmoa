@@ -30,7 +30,7 @@
 ## 신청 절차
 
 1. https://www.google.com/adsense/ 접속
-2. 사이트 추가 → https://dfmoa.netlify.app
+2. 사이트 추가 → https://www.dfmoa.com
 3. AdSense 심사 코드 복사 → Codex에 전달 → `<head>` 삽입·배포
 4. "검토 요청" 클릭 → 2일~2주 대기
 5. 승인 후 ads.txt 업데이트 + 광고 슬롯 실제 배치
