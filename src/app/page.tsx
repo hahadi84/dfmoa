@@ -163,32 +163,6 @@ export default function Home() {
               <span className="hero-note">가격 기준 시각: {latestSnapshotLabel} 자동 수집</span>
             </div>
           </div>
-
-          <div className="hero-panel panel home-usage-panel">
-            <span className="eyebrow">How It Works</span>
-
-            <div className="home-usage-steps">
-              <div className="home-usage-step">
-                <span>01</span>
-                <strong>검색</strong>
-                <small>브랜드 + 상품명 + 용량</small>
-              </div>
-              <div className="home-usage-step">
-                <span>02</span>
-                <strong>비교</strong>
-                <small>면세가 · 국내가 · 이벤트</small>
-              </div>
-              <div className="home-usage-step">
-                <span>03</span>
-                <strong>확인</strong>
-                <small>원본 링크에서 최종 결제</small>
-              </div>
-            </div>
-
-            <Link className="ghost-button home-usage-link" href="/search">
-              검색 시작
-            </Link>
-          </div>
         </div>
       </section>
 
