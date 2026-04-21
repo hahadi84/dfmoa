@@ -36,7 +36,7 @@
   --leading-tight: 1.2;
   --leading-normal: 1.5;
   --leading-relaxed: 1.6;
-  --tracking-tight: -0.01em;
+  --tracking-tight: 0;
   --tracking-normal: 0;
   --tracking-wide: 0.02em;
 
@@ -711,7 +711,7 @@ img {
   color: #ffffff;
   font-size: 0.82rem;
   font-weight: 800;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
   background: var(--color-accent);
   box-shadow: none;
 }
@@ -725,7 +725,7 @@ img {
 .brand-copy strong {
   font-size: 0.95rem;
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 .brand-copy span {
@@ -843,7 +843,7 @@ img {
 
 .hero-title,
 .page-title {
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
   line-height: 1.02;
   white-space: nowrap;
   overflow: hidden;
@@ -1232,7 +1232,7 @@ img {
   color: var(--ink);
   font-size: 1.05rem;
   font-weight: 850;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1287,7 +1287,7 @@ img {
 .section-title,
 .card-title,
 .metric-title {
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1526,7 +1526,7 @@ img {
   margin-top: 6px;
   font-size: 1.72rem;
   font-weight: 800;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2144,7 +2144,7 @@ img {
 
 .source-price-value strong {
   font-size: 1rem;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .source-price-value span {
@@ -2341,7 +2341,7 @@ img {
   border: 1px solid transparent;
   font-size: 0.66rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
@@ -2405,7 +2405,7 @@ img {
 .benefit-application-summary strong {
   color: var(--ink);
   font-size: 1rem;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .benefit-application-metrics {
@@ -2436,7 +2436,7 @@ img {
 
 .benefit-application-metrics strong {
   font-size: 0.78rem;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2620,7 +2620,7 @@ img {
 .report-section h2 {
   margin: 0;
   font-size: 1.18rem;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 .report-check-list {
@@ -3033,7 +3033,7 @@ img {
 
 .effective-result-card strong {
   font-size: 1.5rem;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 }
 
 .effective-result-card span:not(.chip) {
@@ -3201,7 +3201,7 @@ img {
 .price-strong {
   font-size: 1.5rem;
   font-weight: 800;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .price-subtle {
@@ -3712,7 +3712,7 @@ img {
 .meta-value {
   font-size: 1.9rem;
   font-weight: 800;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3806,7 +3806,7 @@ img {
 
 .history-value,
 .history-card-value {
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .history-value {
@@ -4085,7 +4085,7 @@ img {
 
 .price-loading-copy strong {
   font-size: 0.9rem;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 .price-loading-copy span {
@@ -4892,5 +4892,446 @@ textarea:focus,
     min-height: 102px;
     padding: 8px;
     border-radius: var(--radius-md);
+  }
+}
+
+/* P3 page layout layer: Linear-inspired page rhythm and density. */
+.page-section {
+  padding: var(--space-16) 0;
+}
+
+.page-section.is-tight {
+  padding: var(--space-12) 0 var(--space-16);
+}
+
+.page-section.is-compact {
+  padding: var(--space-8) 0;
+}
+
+.container:has(.detail-grid),
+.container:has(.today-lowest-grid),
+.container:has(.search-overview-grid),
+.container:has(.category-active-grid),
+.container:has(.brand-index-grid),
+.container:has(.airport-index-grid),
+.container:has(.featured-product-grid) {
+  width: min(var(--container-wide), calc(100% - 32px));
+}
+
+.container:has(.guide-stack),
+.container:has(.policy-article),
+.container:has(.faq-stack) {
+  width: min(var(--container-narrow), calc(100% - 32px));
+}
+
+.breadcrumb {
+  margin-bottom: var(--space-6);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.page-title,
+.hero-title,
+.section-title {
+  color: var(--color-text);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+.page-title {
+  max-width: 820px;
+  font-size: var(--text-3xl);
+}
+
+.page-description {
+  max-width: 760px;
+  margin-top: var(--space-3);
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.section-head {
+  align-items: end;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.section-title {
+  font-size: var(--text-2xl);
+}
+
+.section-copy,
+.faq-answer,
+.guide-section li {
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.hero {
+  padding: var(--space-16) 0 var(--space-12);
+  background: var(--color-bg);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.hero-copy {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 720px;
+  margin-inline: auto;
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+}
+
+.hero-description {
+  max-width: 680px;
+  margin-inline: auto;
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.hero .search-form {
+  width: min(560px, 100%);
+  margin: var(--space-6) auto 0;
+  padding: var(--space-2);
+}
+
+.hero .search-input {
+  min-height: 46px;
+  padding: 0 14px;
+}
+
+.brand-proof-strip,
+.hero-actions,
+.hero-search-terms .chip-row {
+  justify-content: center;
+}
+
+.brand-proof-strip {
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+
+.hero-search-terms {
+  margin-top: var(--space-4);
+}
+
+.hero-lowest-preview {
+  width: min(900px, 100%);
+  margin: var(--space-6) auto 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.hero-lowest-preview-head {
+  margin-bottom: var(--space-3);
+}
+
+.hero-lowest-preview-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.hero-lowest-preview-card {
+  min-width: 0;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+.hero-panel.home-usage-panel {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.home-usage-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.home-usage-step {
+  min-width: 0;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-subtle);
+}
+
+.today-lowest-grid,
+.featured-product-grid,
+.category-active-grid,
+.brand-index-grid,
+.airport-index-grid {
+  gap: var(--space-4);
+}
+
+.today-lowest-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.today-lowest-card {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+.weekly-benefit-banner {
+  min-height: 44px;
+  padding: var(--space-3) var(--space-4);
+}
+
+.category-active-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.category-ready-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.split-grid {
+  gap: var(--space-4);
+}
+
+.search-overview-grid {
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.detail-grid > * {
+  min-width: 0;
+}
+
+.detail-product-visual,
+.meta-panel,
+.sticky-panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  box-shadow: none;
+}
+
+.detail-product-visual img,
+.detail-product-visual .product-image-fallback {
+  border-radius: var(--radius-sm);
+}
+
+.sticky-panel {
+  top: calc(56px + var(--space-4));
+}
+
+.source-price-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.source-price-card {
+  padding: var(--space-3);
+}
+
+.effective-input-grid {
+  gap: var(--space-3);
+}
+
+.effective-result-card {
+  padding: var(--space-4);
+}
+
+.effective-result-card strong {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+}
+
+.content-hero-card,
+.policy-article {
+  padding: var(--space-6);
+}
+
+.content-hero-card {
+  margin-top: var(--space-4);
+}
+
+.report-meta-row {
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.guide-stack {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.guide-section {
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+.guide-section ul,
+.report-check-list,
+.list-block {
+  line-height: var(--leading-relaxed);
+}
+
+.airport-warning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.airport-warning-card {
+  padding: var(--space-4);
+}
+
+.faq-stack {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.faq-card {
+  padding: 0;
+}
+
+.faq-card summary {
+  padding: var(--space-4);
+  color: var(--color-text);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+}
+
+.faq-card details[open] summary {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-answer {
+  padding: var(--space-4);
+}
+
+.contact-form {
+  gap: var(--space-4);
+}
+
+.contact-field {
+  gap: var(--space-2);
+}
+
+@media (max-width: 1080px) {
+  .detail-grid,
+  .search-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .source-price-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .today-lowest-grid,
+  .category-active-grid,
+  .airport-warning-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .page-section,
+  .page-section.is-tight {
+    padding: var(--space-10) 0;
+  }
+
+  .container:has(.detail-grid),
+  .container:has(.today-lowest-grid),
+  .container:has(.search-overview-grid),
+  .container:has(.category-active-grid),
+  .container:has(.brand-index-grid),
+  .container:has(.airport-index-grid),
+  .container:has(.featured-product-grid),
+  .container:has(.guide-stack),
+  .container:has(.policy-article),
+  .container:has(.faq-stack) {
+    width: min(calc(100% - 24px), var(--container-wide));
+  }
+
+  .hero {
+    padding: var(--space-12) 0 var(--space-10);
+  }
+
+  .hero-copy {
+    text-align: left;
+  }
+
+  .hero-title {
+    margin-inline: 0;
+    font-size: var(--text-3xl);
+  }
+
+  .hero-description {
+    margin-inline: 0;
+    font-size: var(--text-base);
+  }
+
+  .brand-proof-strip,
+  .hero-actions,
+  .hero-search-terms .chip-row {
+    justify-content: flex-start;
+  }
+
+  .hero-lowest-preview-list {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: var(--space-1);
+    scroll-snap-type: x mandatory;
+  }
+
+  .hero-lowest-preview-card {
+    min-width: 240px;
+    scroll-snap-align: start;
+  }
+
+  .home-usage-steps,
+  .source-price-grid,
+  .today-lowest-grid,
+  .category-active-grid,
+  .category-ready-row,
+  .airport-warning-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    align-items: start;
+  }
+
+  .content-hero-card,
+  .policy-article,
+  .guide-section {
+    padding: var(--space-4);
   }
 }
