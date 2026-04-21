@@ -16,7 +16,7 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 const plexMono = IBM_Plex_Mono({
-  variable: "--font-mono",
+  variable: "--font-ibm-mono",
   subsets: ["latin"],
   weight: ["400", "500"],
 });
