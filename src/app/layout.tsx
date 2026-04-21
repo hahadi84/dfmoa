@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   verification: {
     other: {
       "naver-site-verification": "d68acd4c4ba107da4c92dd5e55d0d3c8dcedbddd",
-      "google-adsense-account": "ca-pub-960289494397808",
+      "google-adsense-account": "ca-pub-9602089494397808",
     },
   },
 };
@@ -64,6 +64,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${notoSansKr.variable} ${plexMono.variable}`}>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9602089494397808"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
         <div className="site-shell">
