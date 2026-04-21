@@ -5127,11 +5127,11 @@ textarea:focus,
 
 /* Home polish: reduce first-viewport whitespace and make live prices read faster. */
 .hero {
-  padding: var(--space-10) 0 var(--space-4);
+  padding: var(--space-8) 0 var(--space-2);
 }
 
 .hero-grid {
-  gap: var(--space-6);
+  gap: var(--space-4);
 }
 
 .hero-copy {
@@ -5153,12 +5153,12 @@ textarea:focus,
 
 .hero-description {
   order: 3;
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
 }
 
 .hero .search-form {
   order: 4;
-  margin-top: var(--space-5);
+  margin-top: var(--space-4);
 }
 
 .hero-chip-strip {
@@ -5168,7 +5168,7 @@ textarea:focus,
   justify-content: center;
   align-items: center;
   gap: var(--space-2);
-  margin-top: var(--space-4);
+  margin-top: var(--space-2);
 }
 
 .brand-proof-strip,
@@ -5217,7 +5217,7 @@ textarea:focus,
   justify-content: center;
   align-items: center;
   gap: var(--space-3);
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
 }
 
 .hero-search-terms > span {
@@ -5235,13 +5235,13 @@ textarea:focus,
 .hero-lowest-preview {
   order: 5;
   width: min(960px, 100%);
-  margin-top: var(--space-5);
+  margin-top: var(--space-4);
 }
 
 .hero-lowest-preview-head {
   align-items: baseline;
-  margin-bottom: var(--space-2);
-  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-1);
+  padding-bottom: var(--space-1);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -5289,7 +5289,7 @@ textarea:focus,
   justify-content: center;
   align-items: center;
   gap: var(--space-2);
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
   color: var(--color-text-muted);
   font-size: var(--text-sm);
 }
@@ -5338,7 +5338,7 @@ textarea:focus,
 }
 
 .page-section.is-tight.today-lowest-section {
-  padding-top: var(--space-5);
+  padding-top: var(--space-3);
 }
 
 .today-lowest-card {
@@ -5538,7 +5538,7 @@ textarea:focus,
   }
 
   .hero {
-    padding: var(--space-8) 0 var(--space-5);
+    padding: var(--space-6) 0 var(--space-4);
   }
 
   .hero-copy {
@@ -5598,7 +5598,7 @@ textarea:focus,
   }
 
   .page-section.is-tight.today-lowest-section {
-    padding-top: var(--space-6);
+    padding-top: var(--space-4);
   }
 
   .home-usage-steps,
