@@ -5125,6 +5125,187 @@ textarea:focus,
   background: var(--color-bg);
 }
 
+/* Home polish: reduce first-viewport whitespace and make live prices read faster. */
+.hero {
+  padding: var(--space-10) 0 var(--space-4);
+}
+
+.hero-grid {
+  gap: var(--space-6);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(820px, 100%);
+}
+
+.hero .eyebrow {
+  order: 1;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+}
+
+.hero-title {
+  order: 2;
+}
+
+.hero-description {
+  order: 3;
+  margin-top: var(--space-3);
+}
+
+.hero .search-form {
+  order: 4;
+  margin-top: var(--space-5);
+}
+
+.brand-proof-strip {
+  order: 6;
+  margin-top: var(--space-4);
+}
+
+.brand-proof-strip span,
+.brand-proof-strip span:nth-child(2),
+.brand-proof-strip span:nth-child(3) {
+  color: var(--color-text-secondary);
+  border-color: var(--color-border);
+  background: var(--color-bg-subtle);
+}
+
+.hero-actions {
+  order: 7;
+  margin-top: var(--space-3);
+}
+
+.hero-actions .chip,
+.hero-search-terms .chip {
+  color: var(--color-text-secondary);
+  border-color: var(--color-border);
+  background: var(--color-bg);
+}
+
+.hero-actions .chip.is-demo {
+  color: var(--color-accent);
+  border-color: var(--color-accent-border);
+  background: var(--color-accent-subtle);
+}
+
+.hero-actions .chip:hover,
+.hero-search-terms .chip:hover,
+.hero-lowest-preview-card:hover,
+.today-lowest-card:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-bg-subtle);
+}
+
+.hero-search-terms {
+  order: 8;
+  margin-top: var(--space-3);
+}
+
+.hero-lowest-preview {
+  order: 5;
+  width: min(960px, 100%);
+  margin-top: var(--space-5);
+}
+
+.hero-lowest-preview-head {
+  align-items: baseline;
+  margin-bottom: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero-lowest-preview-head > span {
+  color: var(--color-text);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.hero-lowest-preview-list {
+  gap: var(--space-4);
+}
+
+.hero-lowest-preview-card {
+  min-height: 72px;
+  padding: var(--space-4);
+  border-color: var(--color-border-strong);
+  background: var(--color-bg-subtle);
+}
+
+.hero-lowest-preview-card img,
+.hero-lowest-preview-card .product-image-fallback {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+}
+
+.hero-lowest-preview-card strong {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+}
+
+.hero-lowest-preview-card small {
+  color: var(--color-accent-hover);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+}
+
+.hero-note {
+  order: 9;
+  margin-top: var(--space-3);
+}
+
+.hero-panel.home-usage-panel {
+  padding: var(--space-3);
+}
+
+.hero-panel.home-usage-panel .eyebrow,
+.home-usage-link {
+  display: none;
+}
+
+.hero-panel.home-usage-panel .home-usage-steps {
+  gap: var(--space-2);
+}
+
+.hero-panel.home-usage-panel .home-usage-step {
+  grid-template-columns: auto minmax(0, 1fr);
+  justify-items: start;
+  align-items: center;
+  min-height: 48px;
+  padding: var(--space-2);
+  text-align: left;
+}
+
+.hero-panel.home-usage-panel .home-usage-step span {
+  width: 24px;
+  height: 24px;
+}
+
+.hero-panel.home-usage-panel .home-usage-step small {
+  display: none;
+}
+
+.page-section.is-tight.today-lowest-section {
+  padding-top: var(--space-5);
+}
+
+.today-lowest-card {
+  align-items: center;
+  padding: var(--space-4);
+}
+
+.today-lowest-price {
+  color: var(--color-accent-hover);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+}
+
 .weekly-benefit-banner {
   min-height: 44px;
   padding: var(--space-3) var(--space-4);
@@ -5311,10 +5492,11 @@ textarea:focus,
   }
 
   .hero {
-    padding: var(--space-12) 0 var(--space-10);
+    padding: var(--space-8) 0 var(--space-5);
   }
 
   .hero-copy {
+    align-items: stretch;
     text-align: left;
   }
 
@@ -5342,8 +5524,12 @@ textarea:focus,
   }
 
   .hero-lowest-preview-card {
-    min-width: 240px;
+    min-width: 260px;
     scroll-snap-align: start;
+  }
+
+  .page-section.is-tight.today-lowest-section {
+    padding-top: var(--space-6);
   }
 
   .home-usage-steps,
