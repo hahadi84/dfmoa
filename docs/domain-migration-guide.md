@@ -24,7 +24,7 @@
 
 ## GA4
 
-- 기존 측정 ID `G-SRSWS2FHS2` 유지 (도메인 변경과 무관)
+- 기존 측정 ID `G-VXFLYV6T34` 유지 (도메인 변경과 무관)
 - 관리 -> 데이터 스트림 -> 웹 -> 스트림 URL을 `https://www.dfmoa.com`으로 수정
 - 기존 `dfmoa.netlify.app` 방문 데이터는 301 리다이렉트 체인으로 새 URL에 집계된다.
 

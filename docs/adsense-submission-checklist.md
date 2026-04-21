@@ -25,7 +25,7 @@
 
 - [x] 쿠팡 제휴 `rel="sponsored nofollow"`
 - [x] 제휴 고지 명확
-- [x] GA4 분석 (G-SRSWS2FHS2)
+- [x] GA4 분석 (G-VXFLYV6T34)
 
 ## 신청 절차
 

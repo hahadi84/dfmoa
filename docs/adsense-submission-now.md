@@ -6,7 +6,7 @@
 - [x] HTTPS
 - [x] 법적 페이지 4종
 - [x] sitemap / robots
-- [x] GA4 (`G-SRSWS2FHS2`)
+- [x] GA4 (`G-VXFLYV6T34`)
 - [x] 쿠팡 제휴 `rel="sponsored nofollow"`
 
 ## 1. AdSense 계정 접속

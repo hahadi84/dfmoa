@@ -3,7 +3,7 @@
 ## Measurement ID
 
 - Netlify environment variable: `NEXT_PUBLIC_GA_MEASUREMENT_ID`
-- Current production value: `G-SRSWS2FHS2`
+- Current production value: `G-VXFLYV6T34`
 
 ## Events
 
