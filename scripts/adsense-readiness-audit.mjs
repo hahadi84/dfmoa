@@ -63,6 +63,49 @@ function hasSponsoredNofollow(rel) {
   return tokens.has("sponsored") && tokens.has("nofollow");
 }
 
+function flattenJsonLd(value) {
+  if (!value) {
+    return [];
+  }
+
+  if (Array.isArray(value)) {
+    return value.flatMap((item) => flattenJsonLd(item));
+  }
+
+  if (typeof value !== "object") {
+    return [];
+  }
+
+  const graph = value["@graph"];
+  return [value, ...(Array.isArray(graph) ? graph.flatMap((item) => flattenJsonLd(item)) : [])];
+}
+
+function parseJsonLdBlocks($) {
+  const blocks = [];
+
+  $('script[type="application/ld+json"]').each((_, element) => {
+    const rawJson = $(element).contents().text().trim();
+
+    if (!rawJson) {
+      return;
+    }
+
+    try {
+      blocks.push(...flattenJsonLd(JSON.parse(rawJson)));
+    } catch {
+      blocks.push({
+        "@type": "InvalidJsonLd",
+      });
+    }
+  });
+
+  return blocks;
+}
+
+function hasProductType(type) {
+  return Array.isArray(type) ? type.includes("Product") : type === "Product";
+}
+
 function auditHtml(url, status, html) {
   const $ = load(html);
   const pageUrl = new URL(url);
@@ -71,6 +114,9 @@ function auditHtml(url, status, html) {
   const internalLinks = new Set();
   const affiliateRelIssues = [];
   const missingAltImages = [];
+  const jsonLdBlocks = parseJsonLdBlocks($);
+  const productJsonLdBlocks = jsonLdBlocks.filter((block) => hasProductType(block["@type"]));
+  const productJsonLdWithoutOffers = productJsonLdBlocks.filter((block) => !block.offers).length;
 
   $("a[href]").each((_, element) => {
     const href = $(element).attr("href")?.trim();
@@ -143,6 +189,8 @@ function auditHtml(url, status, html) {
     internalLinkCount: internalLinks.size,
     affiliateRelIssues,
     missingAltImages,
+    productJsonLdCount: productJsonLdBlocks.length,
+    productJsonLdWithoutOffers,
     notes,
   };
 }
@@ -192,6 +240,8 @@ function createReport(results) {
       src,
     }))
   );
+  const productJsonLdPages = results.filter((result) => result.productJsonLdCount > 0);
+  const productJsonLdWithoutOffers = results.filter((result) => result.productJsonLdWithoutOffers > 0);
   const attentionRows = results
     .filter((result) => result.notes.length)
     .map((result) => [
@@ -210,6 +260,8 @@ function createReport(results) {
     ["내부 링크 3개 미만 페이지 수", lowInternalLinks.length],
     ["제휴 rel 누락 링크 수", affiliateRelIssues.length],
     ["이미지 alt 누락 수", missingAltImages.length],
+    ["Product JSON-LD 페이지 수", productJsonLdPages.length],
+    ["Product JSON-LD offers 없는 페이지 수", productJsonLdWithoutOffers.length],
   ];
 
   return {
@@ -221,6 +273,8 @@ function createReport(results) {
       lowInternalLinks: lowInternalLinks.length,
       affiliateRelIssues: affiliateRelIssues.length,
       missingAltImages: missingAltImages.length,
+      productJsonLdPages: productJsonLdPages.length,
+      productJsonLdWithoutOffers: productJsonLdWithoutOffers.length,
     },
     markdown: `# AdSense Readiness Audit - ${reportDate}
 
@@ -248,6 +302,13 @@ ${markdownTable(
 ${markdownTable(
   ["Page", "Image"],
   missingAltImages.map((issue) => [issue.page, issue.src])
+)}
+
+## Product JSON-LD Offer Coverage
+
+${markdownTable(
+  ["Page", "Product JSON-LD blocks without offers"],
+  productJsonLdWithoutOffers.map((result) => [result.url, result.productJsonLdWithoutOffers])
 )}
 `,
   };
@@ -280,6 +341,8 @@ async function main() {
         internalLinkCount: 0,
         affiliateRelIssues: [],
         missingAltImages: [],
+        productJsonLdCount: 0,
+        productJsonLdWithoutOffers: 0,
         notes: [`fetch 실패: ${error instanceof Error ? error.message : String(error)}`],
       };
     }
@@ -297,6 +360,8 @@ async function main() {
   console.log(`Internal links under 3: ${report.counts.lowInternalLinks}`);
   console.log(`Affiliate rel issues: ${report.counts.affiliateRelIssues}`);
   console.log(`Images missing alt: ${report.counts.missingAltImages}`);
+  console.log(`Product JSON-LD pages: ${report.counts.productJsonLdPages}`);
+  console.log(`Product JSON-LD without offers: ${report.counts.productJsonLdWithoutOffers}`);
 }
 
 main().catch((error) => {
