@@ -16,7 +16,7 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 const plexMono = IBM_Plex_Mono({
-  variable: "--font-mono",
+  variable: "--font-ibm-mono",
   subsets: ["latin"],
   weight: ["400", "500"],
 });
@@ -80,9 +80,14 @@ export default function RootLayout({
       </head>
       <body>
         <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+        <a className="skip-link" href="#main-content">
+          본문으로 건너뛰기
+        </a>
         <div className="site-shell">
           <SiteHeader />
-          <main>{children}</main>
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
           <SiteFooter />
         </div>
       </body>

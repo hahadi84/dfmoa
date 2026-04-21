@@ -4,7 +4,7 @@ export function SiteHeader() {
   return (
     <header className="topbar">
       <div className="container topbar-inner">
-        <Link className="brand" href="/" aria-label="면세모아 홈">
+        <Link className="brand" href="/">
           <span className="brand-mark">DF</span>
           <span className="brand-copy">
             <strong>면세모아</strong>

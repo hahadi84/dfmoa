@@ -84,7 +84,14 @@ export function FavoriteButton({
         });
       }}
     >
-      <span aria-hidden="true">{isFavorite ? "★" : "☆"}</span>
+      <svg
+        aria-hidden="true"
+        className="favorite-button-icon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path d="m12 3.5 2.6 5.27 5.82.85-4.21 4.1.99 5.79L12 16.77l-5.2 2.74.99-5.79-4.21-4.1 5.82-.85L12 3.5Z" />
+      </svg>
     </button>
   );
 }
