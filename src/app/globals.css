@@ -3537,6 +3537,32 @@ img {
   margin-top: 14px;
 }
 
+.product-collection-status {
+  display: grid;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 12px 14px;
+  color: var(--warning);
+  background: rgba(180, 83, 9, 0.08);
+  border: 1px solid rgba(180, 83, 9, 0.18);
+  border-radius: var(--radius-md);
+}
+
+.product-collection-status strong,
+.product-collection-status span {
+  overflow-wrap: anywhere;
+}
+
+.product-collection-status strong {
+  color: #7c2d12;
+  font-size: 0.86rem;
+}
+
+.product-collection-status span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .sticky-panel {
   position: sticky;
   top: 104px;

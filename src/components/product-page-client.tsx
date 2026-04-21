@@ -172,6 +172,7 @@ export function ProductPageClient({
   const sourcePrices = buildSourcePrices({ offers, statuses, query: product.query });
   const aggregateStatus = getAggregatePriceStatus(sourcePrices);
   const aggregateCopy = getAggregatePriceCopy(sourcePrices);
+  const showCollectionUnavailableNotice = !isLoading && !offers.length;
   const storeCards = statuses.map((status) => {
     const store = getStoreById(status.storeId);
 
@@ -204,6 +205,13 @@ export function ProductPageClient({
           <span className="chip is-soft">{product.badge}</span>
           <span className="chip is-soft">{product.query}</span>
         </div>
+
+        {showCollectionUnavailableNotice ? (
+          <div className="product-collection-status" role="status">
+            <strong>현재 신라/신세계 면세점에서 공개가를 확인할 수 없는 상품입니다.</strong>
+            <span>공식 검색 링크를 통해 원본 면세점에서 직접 확인해 주세요.</span>
+          </div>
+        ) : null}
 
         {productContext ? (
           <ContentContextCard context={productContext} title="상품 배경과 면세 구매 체크" />

@@ -4,23 +4,24 @@ import vm from "node:vm";
 import { createRequire } from "node:module";
 import ts from "typescript";
 import { fetchShillaPrices, shillaCrawlerConfig } from "./shilla-fetcher.mjs";
-import { fetchShinsegaePrices, shinsegaeCrawlerConfig } from "./shinsegae-fetcher.mjs";
-import { fetchLottePrices, lotteCrawlerConfig } from "./lotte-fetcher.mjs";
 
 const ROOT_DIR = process.cwd();
 const require = createRequire(import.meta.url);
 const SITE_DATA_PATH = path.join(ROOT_DIR, "src/lib/site-data.ts");
+const SHILLA_SEARCH_CACHE_PATH = path.join(ROOT_DIR, "data/shilla-search-cache.json");
 const PRICE_DIR = path.join(ROOT_DIR, "data/prices");
 const HISTORY_DIR = path.join(ROOT_DIR, "data/history");
 const MANIFEST_PATH = path.join(PRICE_DIR, "manifest.json");
 const LAST_ERROR_PATH = path.join(ROOT_DIR, "data/last-error.json");
-const REQUIRED_TOTAL = 20;
+const REQUIRED_TOTAL = 40;
 const CATEGORY_QUOTAS = {
-  perfume: 6,
-  beauty: 4,
-  liquor: 4,
-  eyewear: 3,
-  other: 3,
+  perfume: 9,
+  beauty: 9,
+  liquor: 7,
+  fashion: 3,
+  jewelry: 7,
+  health: 3,
+  electronics: 2,
 };
 const CATEGORY_POOLS = {
   perfume: [
@@ -71,20 +72,56 @@ const CATEGORY_POOLS = {
     "maui-jim-peahi-b202",
     "persol-po0649",
   ],
-  other: [
-    "longchamp-le-pliage-medium",
+  fashion: [
     "tumi-alpha-bravo-backpack",
+    "coach-tabby-shoulder-bag",
+    "samsonite-evoa-spinner",
     "montblanc-meisterstuck-wallet",
-    "seiko-presage-cocktail-time",
-    "citizen-tsuyosa-nj015",
+    "longchamp-le-pliage-medium",
+    "polo-ralph-lauren-cap",
+    "mcm-stark-backpack",
+    "vivienne-westwood-wallet",
+    "ferragamo-reversible-belt",
+    "lululemon-everywhere-belt-bag",
+  ],
+  jewelry: [
     "swarovski-tennis-bracelet",
     "pandora-moments-bracelet",
+    "jestina-tiara-necklace",
+    "stonehenge-silver-necklace",
+    "swarovski-matrix-earrings",
+    "swarovski-swan-necklace",
+    "pandora-sparkling-charm",
+    "tiffany-return-to-tiffany-bracelet",
+    "agatha-scottie-earrings",
+    "goldendew-diamond-necklace",
+  ],
+  health: [
+    "solgar-vitamin-d3",
+    "gnc-mega-men",
+    "korea-eundan-vitamin-c",
     "kgc-everytime-royal",
     "orthomol-immun",
-    "godiva-gold-collection",
-    "royce-nama-chocolate",
+    "centrum-multivitamin",
+    "lacto-fit-gold",
+    "blackmores-propolis",
+    "now-omega-3",
+  ],
+  electronics: [
+    "dyson-supersonic",
+    "braun-series-9-pro",
     "apple-airpods-pro-2",
     "sony-wh-1000xm5",
+    "bose-quietcomfort-ultra",
+    "oral-b-io-series-9",
+    "jbl-flip-6",
+    "samsung-galaxy-buds2-pro",
+  ],
+  other: [
+    "seiko-presage-cocktail-time",
+    "citizen-tsuyosa-nj015",
+    "godiva-gold-collection",
+    "royce-nama-chocolate",
   ],
 };
 
@@ -100,6 +137,14 @@ function loadSiteData() {
 
   vm.runInNewContext(js, sandbox, { filename: SITE_DATA_PATH });
   return sandbox.exports;
+}
+
+function loadShillaSearchCache() {
+  if (!fs.existsSync(SHILLA_SEARCH_CACHE_PATH)) {
+    return {};
+  }
+
+  return JSON.parse(fs.readFileSync(SHILLA_SEARCH_CACHE_PATH, "utf8"));
 }
 
 function dedupe(values) {
@@ -159,7 +204,7 @@ function hasValidPrice(snapshot) {
 }
 
 function normalizeQuotaGroup(categorySlug) {
-  return Object.hasOwn(CATEGORY_QUOTAS, categorySlug) ? categorySlug : "other";
+  return Object.hasOwn(CATEGORY_QUOTAS, categorySlug) ? categorySlug : null;
 }
 
 function getPrimarySourceEntry(snapshot) {
@@ -194,6 +239,26 @@ function buildErrorResult(sourceId, product, error) {
   };
 }
 
+function buildDisabledResult(sourceId, product, error = "disabled_by_policy") {
+  const fetchedAt = new Date().toISOString();
+  const searchUrl =
+    sourceId === "lotte"
+      ? `https://kor.lottedfs.com/kr/search?comSearchWord=${encodeURIComponent(product.query)}`
+      : `https://www.ssgdfs.com/kr/search/resultsTotal?query=${encodeURIComponent(product.query)}`;
+
+  return {
+    store: sourceId,
+    query: product.query,
+    searchUrl,
+    fetchedAt,
+    status: "disabled_by_policy",
+    items: [],
+    error,
+    matched_via: "original",
+    attempted_queries: buildLookupQueries(product),
+  };
+}
+
 async function fetchSource(sourceId, fetcher, product) {
   try {
     return await fetcher(product.query, { product });
@@ -202,16 +267,20 @@ async function fetchSource(sourceId, fetcher, product) {
   }
 }
 
-async function collectProduct(product) {
-  const shillaResult = await fetchSource("shilla", fetchShillaPrices, product);
-
-  await sleep(500);
-
-  const shinsegaeResult = await fetchSource("shinsegae", fetchShinsegaePrices, product);
-
-  await sleep(500);
-
-  const lotteResult = await fetchSource("lotte", fetchLottePrices, product);
+async function collectProduct(product, shillaSearchCache) {
+  const cachedQuery = shillaSearchCache[product.slug];
+  const shillaProduct = cachedQuery
+    ? {
+        ...product,
+        aliases: dedupe([cachedQuery, ...(product.aliases ?? [])]),
+      }
+    : product;
+  const shillaResult = await fetchSource("shilla", fetchShillaPrices, {
+    ...shillaProduct,
+    query: cachedQuery || product.query,
+  });
+  const shinsegaeResult = buildDisabledResult("shinsegae", product, "cookie_or_login_required");
+  const lotteResult = buildDisabledResult("lotte", product);
 
   return buildSnapshot(product, [shillaResult, shinsegaeResult, lotteResult]);
 }
@@ -297,7 +366,11 @@ function topUpSelectedWithFailures(selected, failures, productBySlug) {
   const selectedTotals = Object.fromEntries(Object.keys(CATEGORY_QUOTAS).map((group) => [group, 0]));
 
   for (const item of selected) {
-    selectedTotals[normalizeQuotaGroup(item.categorySlug)] += 1;
+    const group = normalizeQuotaGroup(item.categorySlug);
+
+    if (group) {
+      selectedTotals[group] += 1;
+    }
   }
 
   const addFailure = (failure) => {
@@ -322,13 +395,17 @@ function topUpSelectedWithFailures(selected, failures, productBySlug) {
       error: failure.error,
     });
     selectedSlugs.add(product.slug);
-    selectedTotals[normalizeQuotaGroup(product.categorySlug)] += 1;
+    const group = normalizeQuotaGroup(product.categorySlug);
+
+    if (group) {
+      selectedTotals[group] += 1;
+    }
   };
 
   for (const failure of failures) {
     const group = normalizeQuotaGroup(failure.categorySlug);
 
-    if (selectedTotals[group] < CATEGORY_QUOTAS[group]) {
+    if (group && selectedTotals[group] < CATEGORY_QUOTAS[group]) {
       addFailure(failure);
     }
   }
@@ -340,6 +417,7 @@ function topUpSelectedWithFailures(selected, failures, productBySlug) {
 
 async function main() {
   const { products } = loadSiteData();
+  const shillaSearchCache = loadShillaSearchCache();
   const productBySlug = new Map(products.map((product) => [product.slug, product]));
   const selected = [];
   const attempted = [];
@@ -365,7 +443,7 @@ async function main() {
 
       attempted.push(product.slug);
       console.log(`[snapshot] ${group} ${product.slug}`);
-      const snapshot = await collectProduct(product);
+      const snapshot = await collectProduct(product, shillaSearchCache);
 
       fs.writeFileSync(path.join(PRICE_DIR, `${product.id}.json`), `${JSON.stringify(snapshot, null, 2)}\n`);
       appendHistory(snapshot, historyTimestamp);
@@ -392,11 +470,7 @@ async function main() {
       }
 
       await sleep(
-        Math.max(
-          shillaCrawlerConfig.crawlDelaySeconds,
-          shinsegaeCrawlerConfig.crawlDelaySeconds,
-          lotteCrawlerConfig.crawlDelaySeconds
-        ) * 1000
+        shillaCrawlerConfig.crawlDelaySeconds * 1000
       );
     }
   }

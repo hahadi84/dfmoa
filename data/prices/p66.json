@@ -1,0 +1,94 @@
+{
+  "productId": "p66",
+  "productSlug": "swarovski-matrix-earrings",
+  "categorySlug": "jewelry",
+  "query": "스와로브스키 매트릭스 이어링",
+  "fetchedAt": "2026-04-21T14:30:00+09:00",
+  "updatedAtLabel": "2026-04-21 14:30 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "ok",
+      "source_status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81",
+      "fetchedAt": "2026-04-21T14:30:00+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "스와로브스키 매트릭스 이어링",
+        "스와로브스키매트릭스이어링"
+      ],
+      "items": [
+        {
+          "id": "shilla-010723012906",
+          "title": "MATRIX:PE HOOP M WHI/RHS",
+          "brand": "스와로브스키",
+          "priceKrw": 154364,
+          "priceUsd": 104.3,
+          "regularUsdPrice": 149,
+          "discountRate": 30,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=MATRIX%3APE%20HOOP%20M%20WHI%2FRHS",
+          "imageUrl": "https://image2.shilladfs.com/files/product2/2025/09/01/010723012906_20250901_11021060_12_010723012906_1.JPG",
+          "matchScore": 59,
+          "fetchedAt": "2026-04-21T14:30:00+09:00"
+        },
+        {
+          "id": "shilla-010723012601",
+          "title": "MATRIX:PE MINI HOOP CZWH/RHS",
+          "brand": "스와로브스키",
+          "priceKrw": 96348,
+          "priceUsd": 65.1,
+          "regularUsdPrice": 93,
+          "discountRate": 30,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=MATRIX%3APE%20MINI%20HOOP%20CZWH%2FRHS",
+          "imageUrl": "https://image2.shilladfs.com/files/product2/2021/07/15/010723012601_20210715_11415692_12_010723012601_1.JPG",
+          "matchScore": 59,
+          "fetchedAt": "2026-04-21T14:30:00+09:00"
+        },
+        {
+          "id": "shilla-010723013582",
+          "title": "MATRIX:SET PEARL WHITE/RHS",
+          "brand": "스와로브스키",
+          "priceKrw": 166796,
+          "priceUsd": 112.7,
+          "regularUsdPrice": 161,
+          "discountRate": 30,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=MATRIX%3ASET%20PEARL%20WHITE%2FRHS",
+          "imageUrl": "https://image2.shilladfs.com/files/product2/2024/06/17/010723013582_20240617_11145965_12_010723013582_1.JPG",
+          "matchScore": 59,
+          "fetchedAt": "2026-04-21T14:30:00+09:00"
+        }
+      ],
+      "error": null
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81",
+      "fetchedAt": "2026-04-21T05:30:02.734Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "스와로브스키 매트릭스 이어링",
+        "Swarovski Matrix Earrings",
+        "Swarovski Matrix Earrings Earrings"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81",
+      "fetchedAt": "2026-04-21T05:30:02.734Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "스와로브스키 매트릭스 이어링",
+        "Swarovski Matrix Earrings",
+        "Swarovski Matrix Earrings Earrings"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { load } from "cheerio";
+import { fileURLToPath } from "node:url";
 import { SITE_SERVICE_URL } from "./site-operator-url.mjs";
 
 const SHILLA_BASE_URL = "https://www.shilladfs.com";
@@ -301,6 +302,25 @@ function buildMatchText(product, query) {
   ].join(" ");
 }
 
+function getBrandSignalTokens(product, query) {
+  if (!product) {
+    return getTokens(query).slice(0, 1);
+  }
+
+  return Array.from(
+    new Set(
+      [
+        product.brand,
+        ...getTokens(product.query).slice(0, 2),
+        ...(product.aliases ?? []).map((alias) => getTokens(alias)[0]),
+      ]
+        .flatMap((value) => getTokens(value))
+        .map((token) => token.replace(/\s+/g, ""))
+        .filter((token) => token.length > 1 && !/\d/.test(token))
+    )
+  );
+}
+
 function hasDistinctiveProductSignal(product, haystack, compactHaystack) {
   if (!product) {
     return true;
@@ -345,10 +365,16 @@ function scoreItem(item, query, product) {
   const matchTokens = Array.from(new Set(getTokens(matchText))).filter((token) => token.length > 2);
   const volumeTokens = getVolumeTokens(product?.volume ?? query);
   const itemVolumeTokens = getVolumeTokens(`${title} ${attributeText}`);
-  const brandTokens = getTokens(product?.brand ?? getTokens(query)[0] ?? "");
+  const brandTokens = getBrandSignalTokens(product, query);
+  const hasBrandMatch =
+    !brandTokens.length || brandTokens.some((token) => haystack.includes(token) || compactHaystack.includes(token));
   let score = 0;
 
   if (!hasDistinctiveProductSignal(product, haystack, compactHaystack)) {
+    return -100;
+  }
+
+  if (!hasBrandMatch) {
     return -100;
   }
 
@@ -358,7 +384,7 @@ function scoreItem(item, query, product) {
     return -100;
   }
 
-  if (brandTokens.some((token) => haystack.includes(token) || compactHaystack.includes(token))) {
+  if (hasBrandMatch) {
     score += 35;
   }
 
@@ -657,3 +683,26 @@ export const shillaCrawlerConfig = {
   cacheTtlMs: CACHE_TTL_MS,
   crawlDelaySeconds: 5,
 };
+
+function getCliQuery(argv) {
+  const queryFlagIndex = argv.findIndex((arg) => arg === "--query" || arg === "-q");
+
+  if (queryFlagIndex >= 0) {
+    return argv[queryFlagIndex + 1];
+  }
+
+  return argv.filter((arg) => arg !== "--verbose").join(" ");
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  const query = getCliQuery(process.argv.slice(2));
+
+  fetchShillaPrices(query)
+    .then((result) => {
+      console.log(JSON.stringify(result, null, 2));
+    })
+    .catch((error) => {
+      console.error(error);
+      process.exitCode = 1;
+    });
+}

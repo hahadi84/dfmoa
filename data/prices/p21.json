@@ -1,0 +1,55 @@
+{
+  "productId": "p21",
+  "productSlug": "la-mer-moisturizing-cream-60ml",
+  "categorySlug": "beauty",
+  "query": "라메르 크렘 드 라 메르 60ml",
+  "fetchedAt": "2026-04-21T14:27:06+09:00",
+  "updatedAtLabel": "2026-04-21 14:27 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9D%BC%EB%A9%94%EB%A5%B4%20%ED%81%AC%EB%A0%98%20%EB%93%9C%20%EB%9D%BC%20%EB%A9%94%EB%A5%B4%2060ml",
+      "fetchedAt": "2026-04-21T14:27:06+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "라메르 크렘 드 라 메르 60ml",
+        "라메르크렘드라메르60ml",
+        "라메르 크렘 드 라 메르"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%9D%BC%EB%A9%94%EB%A5%B4%20%ED%81%AC%EB%A0%98%20%EB%93%9C%20%EB%9D%BC%20%EB%A9%94%EB%A5%B4%2060ml",
+      "fetchedAt": "2026-04-21T05:27:07.739Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "라메르 크렘 드 라 메르 60ml",
+        "La Mer Moisturizing Cream 60ml",
+        "La Mer Creme de la Mer 60ml"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%9D%BC%EB%A9%94%EB%A5%B4%20%ED%81%AC%EB%A0%98%20%EB%93%9C%20%EB%9D%BC%20%EB%A9%94%EB%A5%B4%2060ml",
+      "fetchedAt": "2026-04-21T05:27:07.739Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "라메르 크렘 드 라 메르 60ml",
+        "La Mer Moisturizing Cream 60ml",
+        "La Mer Creme de la Mer 60ml"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

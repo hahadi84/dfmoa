@@ -3,36 +3,66 @@
   "productSlug": "yamazaki-12-700ml",
   "categorySlug": "liquor",
   "query": "야마자키 12년 700ml",
-  "fetchedAt": "2026-04-20T13:13:49+09:00",
-  "updatedAtLabel": "2026-04-20 13:13 기준",
+  "fetchedAt": "2026-04-21T14:28:37+09:00",
+  "updatedAtLabel": "2026-04-21 14:28 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
-      "fetchedAt": "2026-04-20T13:13:47+09:00",
+      "fetchedAt": "2026-04-21T14:28:37+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "야마자키 12년 700ml",
+        "Yamazaki 12 Year",
+        "야마자키 12년",
+        "YAMAZAKI SINGLE MALT 12",
+        "Suntory Yamazaki 12",
         "야마자키12년700ml",
-        "야마자키 12년"
+        "yamazaki12year",
+        "야마자키12년",
+        "yamazakisinglemalt12",
+        "suntoryyamazaki12"
       ],
       "items": [],
       "error": "product_match_failed"
     },
-    "lotte": {
-      "store": "lotte",
-      "status": "error",
-      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
-      "fetchedAt": "2026-04-20T13:13:49+09:00",
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-21T05:28:38.906Z",
       "matched_via": "original",
       "attempted_queries": [
         "야마자키 12년 700ml",
-        "야마자키12년700ml",
-        "야마자키 12년"
+        "Yamazaki 12 Year",
+        "야마자키 12년",
+        "YAMAZAKI SINGLE MALT 12",
+        "Suntory Yamazaki 12",
+        "Yamazaki 12YO 700ml"
       ],
       "items": [],
-      "error": "robots_or_terms_restricted"
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
+      "fetchedAt": "2026-04-21T05:28:38.906Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "야마자키 12년 700ml",
+        "Yamazaki 12 Year",
+        "야마자키 12년",
+        "YAMAZAKI SINGLE MALT 12",
+        "Suntory Yamazaki 12",
+        "Yamazaki 12YO 700ml"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
     }
   }
 }

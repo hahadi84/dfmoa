@@ -1,0 +1,94 @@
+{
+  "productId": "p47",
+  "productSlug": "samsonite-evoa-spinner",
+  "categorySlug": "fashion",
+  "query": "쌤소나이트 에보아 캐리어",
+  "fetchedAt": "2026-04-21T14:29:27+09:00",
+  "updatedAtLabel": "2026-04-21 14:29 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "ok",
+      "source_status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
+      "fetchedAt": "2026-04-21T14:29:27+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "쌤소나이트 에보아 캐리어",
+        "쌤소나이트에보아캐리어"
+      ],
+      "items": [
+        {
+          "id": "shilla-051214003879",
+          "title": "EVOA Z 에보아 캐리어 프론트 포켓 20인치 기내용_블랙",
+          "brand": "쌤소나이트",
+          "priceKrw": 268531,
+          "priceUsd": 181.44,
+          "regularUsdPrice": 336,
+          "discountRate": 46,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=EVOA%20Z%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%ED%8F%AC%EC%BC%93%2020%EC%9D%B8%EC%B9%98%20%EA%B8%B0%EB%82%B4%EC%9A%A9_%EB%B8%94%EB%9E%99",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/03/051214003879_20251203_15195903_12_051214003879_2.JPG",
+          "matchScore": 67,
+          "fetchedAt": "2026-04-21T14:29:27+09:00"
+        },
+        {
+          "id": "shilla-051214003547",
+          "title": "EVOA Z 에보아 캐리어 확장형 28인치 대형_골드",
+          "brand": "쌤소나이트",
+          "priceKrw": 356443,
+          "priceUsd": 240.84,
+          "regularUsdPrice": 446,
+          "discountRate": 46,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=EVOA%20Z%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4%20%ED%99%95%EC%9E%A5%ED%98%95%2028%EC%9D%B8%EC%B9%98%20%EB%8C%80%ED%98%95_%EA%B3%A8%EB%93%9C",
+          "imageUrl": "https://image2.shilladfs.com/files/product2/2024/05/28/051214003547_20240528_08412739_12_051214003547_1.JPG",
+          "matchScore": 67,
+          "fetchedAt": "2026-04-21T14:29:27+09:00"
+        },
+        {
+          "id": "shilla-051214003545",
+          "title": "EVOA Z 에보아 캐리어 확장형 25인치 중형_골드",
+          "brand": "쌤소나이트",
+          "priceKrw": 322078,
+          "priceUsd": 217.62,
+          "regularUsdPrice": 403,
+          "discountRate": 46,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=EVOA%20Z%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4%20%ED%99%95%EC%9E%A5%ED%98%95%2025%EC%9D%B8%EC%B9%98%20%EC%A4%91%ED%98%95_%EA%B3%A8%EB%93%9C",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2024/05/28/051214003545_20240528_08420204_12_051214003545_1.JPG",
+          "matchScore": 67,
+          "fetchedAt": "2026-04-21T14:29:27+09:00"
+        }
+      ],
+      "error": null
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
+      "fetchedAt": "2026-04-21T05:29:28.861Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "쌤소나이트 에보아 캐리어",
+        "Samsonite Evoa Spinner",
+        "Samsonite Evoa Spinner Spinner"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
+      "fetchedAt": "2026-04-21T05:29:28.861Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "쌤소나이트 에보아 캐리어",
+        "Samsonite Evoa Spinner",
+        "Samsonite Evoa Spinner Spinner"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}
