@@ -5130,6 +5130,10 @@ textarea:focus,
   padding: var(--space-5) 0 0;
 }
 
+.hero .container {
+  width: min(var(--container-wide), calc(100% - 32px));
+}
+
 .hero-grid {
   gap: var(--space-2);
 }
@@ -5138,7 +5142,7 @@ textarea:focus,
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(1040px, 100%);
+  width: min(var(--container-wide), 100%);
 }
 
 .hero .eyebrow {
@@ -5234,7 +5238,7 @@ textarea:focus,
 
 .hero-lowest-preview {
   order: 5;
-  width: min(960px, 100%);
+  width: min(var(--container-wide), 100%);
   margin-top: var(--space-2);
 }
 
@@ -5307,6 +5311,7 @@ textarea:focus,
 }
 
 .hero-panel.home-usage-panel {
+  width: min(var(--container-wide), 100%);
   padding: var(--space-2);
 }
 
@@ -5557,6 +5562,10 @@ textarea:focus,
   .container:has(.guide-stack),
   .container:has(.policy-article),
   .container:has(.faq-stack) {
+    width: min(calc(100% - 24px), var(--container-wide));
+  }
+
+  .hero .container {
     width: min(calc(100% - 24px), var(--container-wide));
   }
 
