@@ -65,6 +65,13 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${notoSansKr.variable} ${plexMono.variable}`}>
       <head>
+        <link rel="shortcut icon" href={`${SITE_OPERATOR.serviceUrl}/favicon.ico`} />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="DFMOA 면세 혜택 리포트"
+          href={`${SITE_OPERATOR.serviceUrl}/feed.xml`}
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9602089494397808"
