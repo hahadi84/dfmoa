@@ -71,8 +71,9 @@ export const dutyFreeSources: DutyFreeSource[] = [
     searchUrlTemplate: "https://www.ssgdfs.com/kr/search/resultsTotal?query={query}",
     accessPolicy: "blocked_by_policy",
     crawlDelaySeconds: 5,
-    policyNote: "robots.txt는 허용하지만 공개 검색 URL이 406/FEC challenge를 반환해 GitHub Actions 자동 수집은 현재 제외합니다.",
-    robotsCheckedAt: "2026-04-20",
+    policyNote:
+      "robots.txt는 허용하지만 검색 결과와 관련 XHR이 FEC 보안 챌린지/세션 토큰을 요구해 서버사이드 자동 수집은 현재 제외합니다.",
+    robotsCheckedAt: "2026-04-21",
   },
 ];
 

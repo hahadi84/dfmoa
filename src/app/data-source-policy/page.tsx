@@ -54,7 +54,9 @@ export default function DataSourcePolicyPage() {
               롯데면세점은 현재 robots.txt 제한으로 자동 수집을 지원하지 않습니다. DFMOA는 해당 제한을 우회하지 않고 원본 확인 링크만 제공합니다.
             </p>
             <p>
-              신세계면세점은 robots.txt가 검색 경로를 허용하지만, 현재 공개 검색 URL이 406/FEC challenge를 반환해 자동 수집 대상에서 제외합니다.
+              신세계면세점은 robots.txt가 검색 경로를 허용하지만, 검색 결과 문서와 관련 XHR이 FEC 보안
+              챌린지 또는 세션 토큰을 요구합니다. 서버사이드 수집에서는 이를 우회하지 않고 자동 수집
+              제외로 처리하며, 향후 공식 API 또는 파트너십이 확보되면 재도입합니다.
             </p>
           </section>
 

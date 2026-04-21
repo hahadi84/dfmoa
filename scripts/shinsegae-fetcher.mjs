@@ -1,4 +1,5 @@
 import { load } from "cheerio";
+import { fileURLToPath } from "node:url";
 import { SITE_SERVICE_URL } from "./site-operator-url.mjs";
 
 const SHINSEGAE_BASE_URL = "https://www.ssgdfs.com";
@@ -387,7 +388,7 @@ async function fetchShinsegaePricesOnce(query, options = {}, matchedVia = "origi
         searchUrl,
         items: [],
         fetchedAt,
-        status: "error",
+        status: "disabled_by_policy",
         error: "cookie_or_login_required",
         matched_via: matchedVia,
       };
@@ -486,3 +487,25 @@ export const shinsegaeCrawlerConfig = {
   cacheTtlMs: CACHE_TTL_MS,
   crawlDelaySeconds: 5,
 };
+
+function getCliQuery(argv) {
+  const queryFlagIndex = argv.indexOf("--query");
+
+  if (queryFlagIndex >= 0) {
+    return argv.slice(queryFlagIndex + 1).filter((arg) => !arg.startsWith("--")).join(" ");
+  }
+
+  return argv.filter((arg) => !arg.startsWith("--")).join(" ");
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  const query = getCliQuery(process.argv.slice(2));
+  fetchShinsegaePrices(query)
+    .then((result) => {
+      process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
+    })
+    .catch((error) => {
+      process.stderr.write(`${error instanceof Error ? error.stack : String(error)}\n`);
+      process.exitCode = 1;
+    });
+}
