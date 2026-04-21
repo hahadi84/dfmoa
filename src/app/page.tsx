@@ -95,22 +95,24 @@ export default function Home() {
 
             <SearchForm />
 
-            <div className="brand-proof-strip" aria-label="DFMOA 비교 기준">
-              {brandProofs.map((proof) => (
-                <span key={proof}>{proof}</span>
-              ))}
-            </div>
+            <div className="hero-chip-strip">
+              <div className="brand-proof-strip" aria-label="DFMOA 비교 기준">
+                {brandProofs.map((proof) => (
+                  <span key={proof}>{proof}</span>
+                ))}
+              </div>
 
-            <div className="hero-actions">
-              <Link className="chip is-demo" href="/benefits">
-                할인·적립금
-              </Link>
-              <Link className="chip is-soft" href="/benefit-reports">
-                주간 리포트
-              </Link>
-              <Link className="chip is-soft" href="/search">
-                전체 최저가
-              </Link>
+              <div className="hero-actions">
+                <Link className="chip is-demo" href="/benefits">
+                  할인·적립금
+                </Link>
+                <Link className="chip is-soft" href="/benefit-reports">
+                  주간 리포트
+                </Link>
+                <Link className="chip is-soft" href="/search">
+                  전체 최저가
+                </Link>
+              </div>
             </div>
 
             {popularSearchItems.length ? (
@@ -154,10 +156,12 @@ export default function Home() {
               </div>
             ) : null}
 
-            <p className="hero-note">
-              {supportedStoreNames}의 최근 확인 가능한 공개가와 공식 링크를 함께 제공합니다.
-            </p>
-            <p className="hero-note">가격 기준 시각: {latestSnapshotLabel} 자동 수집</p>
+            <div className="hero-meta-line">
+              <span className="hero-note">
+                {supportedStoreNames}의 최근 확인 가능한 공개가와 공식 링크를 함께 제공합니다.
+              </span>
+              <span className="hero-note">가격 기준 시각: {latestSnapshotLabel} 자동 수집</span>
+            </div>
           </div>
 
           <div className="hero-panel panel home-usage-panel">
