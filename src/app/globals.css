@@ -5127,7 +5127,7 @@ textarea:focus,
 
 /* Home polish: reduce first-viewport whitespace and make live prices read faster. */
 .hero {
-  padding: var(--space-6) 0 var(--space-1);
+  padding: var(--space-5) 0 0;
 }
 
 .hero-grid {
@@ -5158,7 +5158,7 @@ textarea:focus,
 
 .hero .search-form {
   order: 4;
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
 }
 
 .hero-chip-strip {
@@ -5235,7 +5235,7 @@ textarea:focus,
 .hero-lowest-preview {
   order: 5;
   width: min(960px, 100%);
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
 }
 
 .hero-lowest-preview-head {
@@ -5258,8 +5258,8 @@ textarea:focus,
 }
 
 .hero-lowest-preview-card {
-  min-height: 64px;
-  padding: var(--space-3);
+  min-height: 60px;
+  padding: var(--space-2);
   border-color: var(--color-border-strong);
   background: var(--color-bg-subtle);
 }
@@ -5316,14 +5316,14 @@ textarea:focus,
 }
 
 .hero-panel.home-usage-panel .home-usage-steps {
-  gap: var(--space-2);
+  gap: var(--space-1);
 }
 
 .hero-panel.home-usage-panel .home-usage-step {
   grid-template-columns: auto minmax(0, 1fr);
   justify-items: start;
   align-items: center;
-  min-height: 40px;
+  min-height: 36px;
   padding: var(--space-2);
   text-align: left;
 }
@@ -5338,17 +5338,40 @@ textarea:focus,
 }
 
 .page-section.is-tight.today-lowest-section {
-  padding-top: var(--space-2);
+  padding-top: var(--space-1);
+}
+
+.today-lowest-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-2);
 }
 
 .today-lowest-card {
   align-items: center;
-  padding: var(--space-4);
+  min-height: 136px;
+  padding: var(--space-2);
+  gap: var(--space-2);
+}
+
+.today-lowest-image {
+  min-height: 48px;
+  border-radius: var(--radius-sm);
+}
+
+.today-lowest-image img,
+.today-lowest-image .product-image-fallback {
+  height: 52px;
+  padding: var(--space-1);
+}
+
+.today-lowest-card .card-title {
+  font-size: var(--text-xs);
+  line-height: 1.25;
 }
 
 .today-lowest-price {
   color: var(--color-accent-hover);
-  font-size: var(--text-base);
+  font-size: var(--text-xs);
   font-weight: var(--font-semibold);
 }
 
@@ -5538,7 +5561,7 @@ textarea:focus,
   }
 
   .hero {
-    padding: var(--space-5) 0 var(--space-3);
+    padding: var(--space-4) 0 var(--space-2);
   }
 
   .hero-copy {
