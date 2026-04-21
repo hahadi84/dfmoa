@@ -1,2 +1,1 @@
-# ads.txt will be populated after Google AdSense approval.
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-960289494397808, DIRECT, f08c47fec0942fa0
