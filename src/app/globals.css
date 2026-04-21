@@ -5127,11 +5127,11 @@ textarea:focus,
 
 /* Home polish: reduce first-viewport whitespace and make live prices read faster. */
 .hero {
-  padding: var(--space-8) 0 var(--space-2);
+  padding: var(--space-6) 0 var(--space-1);
 }
 
 .hero-grid {
-  gap: var(--space-4);
+  gap: var(--space-2);
 }
 
 .hero-copy {
@@ -5153,12 +5153,12 @@ textarea:focus,
 
 .hero-description {
   order: 3;
-  margin-top: var(--space-2);
+  margin-top: var(--space-1);
 }
 
 .hero .search-form {
   order: 4;
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
 }
 
 .hero-chip-strip {
@@ -5168,7 +5168,7 @@ textarea:focus,
   justify-content: center;
   align-items: center;
   gap: var(--space-2);
-  margin-top: var(--space-2);
+  margin-top: var(--space-1);
 }
 
 .brand-proof-strip,
@@ -5217,7 +5217,7 @@ textarea:focus,
   justify-content: center;
   align-items: center;
   gap: var(--space-3);
-  margin-top: var(--space-2);
+  margin-top: var(--space-1);
 }
 
 .hero-search-terms > span {
@@ -5235,7 +5235,7 @@ textarea:focus,
 .hero-lowest-preview {
   order: 5;
   width: min(960px, 100%);
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
 }
 
 .hero-lowest-preview-head {
@@ -5258,16 +5258,16 @@ textarea:focus,
 }
 
 .hero-lowest-preview-card {
-  min-height: 72px;
-  padding: var(--space-4);
+  min-height: 64px;
+  padding: var(--space-3);
   border-color: var(--color-border-strong);
   background: var(--color-bg-subtle);
 }
 
 .hero-lowest-preview-card img,
 .hero-lowest-preview-card .product-image-fallback {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: var(--radius-sm);
 }
 
@@ -5289,7 +5289,7 @@ textarea:focus,
   justify-content: center;
   align-items: center;
   gap: var(--space-2);
-  margin-top: var(--space-2);
+  margin-top: var(--space-1);
   color: var(--color-text-muted);
   font-size: var(--text-sm);
 }
@@ -5307,7 +5307,7 @@ textarea:focus,
 }
 
 .hero-panel.home-usage-panel {
-  padding: var(--space-3);
+  padding: var(--space-2);
 }
 
 .hero-panel.home-usage-panel .eyebrow,
@@ -5323,7 +5323,7 @@ textarea:focus,
   grid-template-columns: auto minmax(0, 1fr);
   justify-items: start;
   align-items: center;
-  min-height: 48px;
+  min-height: 40px;
   padding: var(--space-2);
   text-align: left;
 }
@@ -5338,7 +5338,7 @@ textarea:focus,
 }
 
 .page-section.is-tight.today-lowest-section {
-  padding-top: var(--space-3);
+  padding-top: var(--space-2);
 }
 
 .today-lowest-card {
@@ -5538,7 +5538,7 @@ textarea:focus,
   }
 
   .hero {
-    padding: var(--space-6) 0 var(--space-4);
+    padding: var(--space-5) 0 var(--space-3);
   }
 
   .hero-copy {
@@ -5598,7 +5598,7 @@ textarea:focus,
   }
 
   .page-section.is-tight.today-lowest-section {
-    padding-top: var(--space-4);
+    padding-top: var(--space-3);
   }
 
   .home-usage-steps,
