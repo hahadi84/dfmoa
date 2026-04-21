@@ -3,15 +3,15 @@
   "productSlug": "maui-jim-peahi-b202",
   "categorySlug": "eyewear",
   "query": "마우이짐 피아히 B202",
-  "fetchedAt": "2026-04-21T01:11:55+09:00",
-  "updatedAtLabel": "2026-04-21 01:11 기준",
+  "fetchedAt": "2026-04-21T13:24:11+09:00",
+  "updatedAtLabel": "2026-04-21 13:24 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-04-21T01:11:53+09:00",
+      "fetchedAt": "2026-04-21T13:24:09+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "마우이짐 피아히 B202",
@@ -27,10 +27,10 @@
     },
     "shinsegae": {
       "store": "shinsegae",
-      "status": "disabled_by_policy",
-      "source_status": "disabled_by_policy",
+      "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90+%ED%94%BC%EC%95%84%ED%9E%88+B202",
-      "fetchedAt": "2026-04-21T01:11:55+09:00",
+      "fetchedAt": "2026-04-21T13:24:11+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "마우이짐 피아히 B202",
@@ -42,14 +42,14 @@
         "mauijimb202"
       ],
       "items": [],
-      "error": "request_failed_406"
+      "error": "cookie_or_login_required"
     },
     "lotte": {
       "store": "lotte",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-04-21T01:11:55+09:00",
+      "fetchedAt": "2026-04-21T13:24:11+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "마우이짐 피아히 B202",

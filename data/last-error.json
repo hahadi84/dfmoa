@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T16:13:29.743Z",
+  "generatedAt": "2026-04-21T04:25:28.855Z",
   "attemptedCount": 31,
   "failureCount": 14,
   "failures": [
@@ -7,85 +7,85 @@
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p7",
       "productSlug": "gentle-monster-dear-01",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p8",
       "productSlug": "rayban-wayfarer-rb2140",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p33",
       "productSlug": "oakley-sutro-oo9406",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p34",
       "productSlug": "tom-ford-snowdon-ft0237",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p35",
       "productSlug": "prada-pr-17ws",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p36",
       "productSlug": "gucci-gg0061s",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p37",
       "productSlug": "celine-triomphe-cl40194u",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p38",
       "productSlug": "saint-laurent-sl-276-mica",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p39",
       "productSlug": "maui-jim-peahi-b202",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p40",
       "productSlug": "persol-po0649",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p41",
       "productSlug": "longchamp-le-pliage-medium",
       "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p51",
       "productSlug": "seiko-presage-cocktail-time",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p52",
       "productSlug": "citizen-tsuyosa-nj015",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:request_failed_406, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     }
   ]
 }

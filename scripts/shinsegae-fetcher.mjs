@@ -219,6 +219,14 @@ function parseKrw(value) {
   return Number.isFinite(parsed) && parsed > 0 ? parsed : undefined;
 }
 
+function isSecurityChallenge(response, html) {
+  return response.status === 406 || html.includes("/_fec_sbu/") || html.includes("Set-Cookie: FEC");
+}
+
+function isHardStopError(error) {
+  return error === "cookie_or_login_required" || error === "robots_or_terms_restricted";
+}
+
 function resolveUrl(url) {
   const cleaned = cleanText(url);
 
@@ -372,17 +380,24 @@ async function fetchShinsegaePricesOnce(query, options = {}, matchedVia = "origi
     const response = await fetchWithTimeout(searchUrl);
     const html = await response.text();
 
-    if (response.status === 406 || html.includes("/_fec_sbu/")) {
-      return {
+    if (isSecurityChallenge(response, html)) {
+      const result = {
         store: "shinsegae",
         query: trimmedQuery,
         searchUrl,
         items: [],
         fetchedAt,
-        status: "disabled_by_policy",
-        error: "request_failed_406",
+        status: "error",
+        error: "cookie_or_login_required",
         matched_via: matchedVia,
       };
+
+      cache.set(cacheKey, {
+        expiresAt: Date.now() + CACHE_TTL_MS,
+        result,
+      });
+
+      return result;
     }
 
     if (!response.ok) {
@@ -442,7 +457,7 @@ export async function fetchShinsegaePrices(query, options = {}) {
       };
     }
 
-    if (result.status === "disabled_by_policy") {
+    if (result.status === "disabled_by_policy" || isHardStopError(result.error)) {
       break;
     }
   }

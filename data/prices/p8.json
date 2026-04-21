@@ -3,15 +3,15 @@
   "productSlug": "rayban-wayfarer-rb2140",
   "categorySlug": "eyewear",
   "query": "레이밴 웨이페어러 RB2140",
-  "fetchedAt": "2026-04-21T01:09:44+09:00",
-  "updatedAtLabel": "2026-04-21 01:09 기준",
+  "fetchedAt": "2026-04-21T13:22:26+09:00",
+  "updatedAtLabel": "2026-04-21 13:22 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A0%88%EC%9D%B4%EB%B0%B4%20%EC%9B%A8%EC%9D%B4%ED%8E%98%EC%96%B4%EB%9F%AC%20RB2140",
-      "fetchedAt": "2026-04-21T01:09:41+09:00",
+      "fetchedAt": "2026-04-21T13:22:24+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "레이밴 웨이페어러 RB2140",
@@ -30,10 +30,10 @@
     },
     "shinsegae": {
       "store": "shinsegae",
-      "status": "disabled_by_policy",
-      "source_status": "disabled_by_policy",
+      "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EB%A0%88%EC%9D%B4%EB%B0%B4+%EC%9B%A8%EC%9D%B4%ED%8E%98%EC%96%B4%EB%9F%AC+RB2140",
-      "fetchedAt": "2026-04-21T01:09:43+09:00",
+      "fetchedAt": "2026-04-21T13:22:26+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "레이밴 웨이페어러 RB2140",
@@ -48,14 +48,14 @@
         "raybanwayfarerclassic"
       ],
       "items": [],
-      "error": "request_failed_406"
+      "error": "cookie_or_login_required"
     },
     "lotte": {
       "store": "lotte",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A0%88%EC%9D%B4%EB%B0%B4%20%EC%9B%A8%EC%9D%B4%ED%8E%98%EC%96%B4%EB%9F%AC%20RB2140",
-      "fetchedAt": "2026-04-21T01:09:44+09:00",
+      "fetchedAt": "2026-04-21T13:22:26+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "레이밴 웨이페어러 RB2140",

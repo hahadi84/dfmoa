@@ -3,15 +3,15 @@
   "productSlug": "citizen-tsuyosa-nj015",
   "categorySlug": "watch",
   "query": "시티즌 츠요사 NJ015",
-  "fetchedAt": "2026-04-21T01:13:14+09:00",
-  "updatedAtLabel": "2026-04-21 01:13 기준",
+  "fetchedAt": "2026-04-21T13:25:16+09:00",
+  "updatedAtLabel": "2026-04-21 13:25 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8B%9C%ED%8B%B0%EC%A6%8C%20%EC%B8%A0%EC%9A%94%EC%82%AC%20NJ015",
-      "fetchedAt": "2026-04-21T01:13:12+09:00",
+      "fetchedAt": "2026-04-21T13:25:13+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "시티즌 츠요사 NJ015",
@@ -22,24 +22,24 @@
     },
     "shinsegae": {
       "store": "shinsegae",
-      "status": "disabled_by_policy",
-      "source_status": "disabled_by_policy",
+      "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EC%8B%9C%ED%8B%B0%EC%A6%8C+%EC%B8%A0%EC%9A%94%EC%82%AC+NJ015",
-      "fetchedAt": "2026-04-21T01:13:14+09:00",
+      "fetchedAt": "2026-04-21T13:25:15+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "시티즌 츠요사 NJ015",
         "시티즌츠요사nj015"
       ],
       "items": [],
-      "error": "request_failed_406"
+      "error": "cookie_or_login_required"
     },
     "lotte": {
       "store": "lotte",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8B%9C%ED%8B%B0%EC%A6%8C%20%EC%B8%A0%EC%9A%94%EC%82%AC%20NJ015",
-      "fetchedAt": "2026-04-21T01:13:14+09:00",
+      "fetchedAt": "2026-04-21T13:25:16+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "시티즌 츠요사 NJ015",
