@@ -1,10 +1,11 @@
 import type { BrandLanding, MonthlyDealReport, ProductComparePage } from "@/lib/content-models";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 import { getCategoryBySlug, products, type Guide, type Product } from "@/lib/site-data";
 import { getStoreById, type StoreId } from "@/lib/site-data";
 import type { ProductPriceSnapshot, SnapshotPriceItem, SnapshotSourceRecord } from "@/lib/price-snapshot-types";
 import { getProductSeoSummary } from "@/lib/seo-metadata";
 
-const SITE_URL = "https://dfmoa.netlify.app";
+const SITE_URL = SITE_OPERATOR.serviceUrl;
 
 type BreadcrumbItem = {
   name: string;
@@ -149,11 +150,11 @@ export function buildArticleJsonLd({
     dateModified: updatedAt,
     author: {
       "@type": "Organization",
-      name: "DFMOA",
+      name: SITE_OPERATOR.siteName,
     },
     publisher: {
       "@type": "Organization",
-      name: "DFMOA",
+      name: SITE_OPERATOR.siteName,
       url: SITE_URL,
     },
     mainEntityOfPage: absoluteUrl(path),
@@ -179,13 +180,16 @@ export function buildOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "면세모아 DFMOA",
+    name: SITE_OPERATOR.siteName,
     alternateName: "DFMOA",
     url: SITE_URL,
+    email: SITE_OPERATOR.email,
+    description: `한국 공항면세점 공개가 비교 서비스 (${SITE_OPERATOR.operationType} 운영)`,
     logo: absoluteUrl("/icon.svg"),
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
+      email: SITE_OPERATOR.email,
       url: absoluteUrl("/contact"),
       availableLanguage: ["ko"],
     },
@@ -196,7 +200,7 @@ export function buildWebsiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "면세모아 DFMOA",
+    name: SITE_OPERATOR.siteName,
     url: SITE_URL,
     potentialAction: {
       "@type": "SearchAction",

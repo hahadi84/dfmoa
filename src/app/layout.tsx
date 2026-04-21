@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { absoluteSiteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
@@ -21,7 +22,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dfmoa.netlify.app"),
+  metadataBase: new URL(SITE_OPERATOR.serviceUrl),
   title: {
     default: "면세모아 | 면세가 모이는 곳",
     template: "%s | 면세모아",
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "면세모아 | 면세가 모이는 곳",
     description: "공항면세점 공개가와 국내 판매가를 한 번에 비교합니다.",
-    url: "https://dfmoa.netlify.app",
-    siteName: "면세모아 DFMOA",
+    url: SITE_OPERATOR.serviceUrl,
+    siteName: SITE_OPERATOR.siteName,
     images: [{ url: absoluteSiteUrl(DEFAULT_OG_IMAGE), width: 1200, height: 630, alt: "면세모아 DFMOA" }],
     locale: "ko_KR",
     type: "website",

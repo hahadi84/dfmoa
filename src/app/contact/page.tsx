@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
 export const metadata: Metadata = {
   title: "문의",
@@ -23,12 +24,30 @@ export default function ContactPage() {
           Contact
         </span>
         <h1 className="page-title">문의와 오류 제보</h1>
-        <p className="page-description">가격 오류, 이미지 삭제 요청, 서비스 개선 의견을 남겨주세요.</p>
+        <p className="page-description">데이터 수정 요청, 제휴 제안, 개인정보 관련 요청, 기타 문의를 접수합니다.</p>
+
+        <article className="surface-card" style={{ marginTop: 20 }}>
+          <span className="eyebrow">Email</span>
+          <h2 className="card-title" style={{ fontSize: "1.35rem", marginTop: 8 }}>
+            <a href={`mailto:${SITE_OPERATOR.email}`}>{SITE_OPERATOR.email}</a>
+          </h2>
+          <p className="section-copy" style={{ marginTop: 10 }}>
+            회신은 영업일 기준 1~3일 이내를 원칙으로 합니다. 현재 전화·주소 문의 창구는 운영하지 않습니다.
+          </p>
+          <div className="chip-row" style={{ marginTop: 12 }}>
+            <span className="chip is-soft">데이터 수정 요청</span>
+            <span className="chip is-soft">제휴 제안</span>
+            <span className="chip is-soft">개인정보 관련</span>
+            <span className="chip is-soft">기타</span>
+          </div>
+        </article>
 
         <div className="split-grid" style={{ marginTop: 28 }}>
           <article className="surface-card">
             <h2 className="card-title">문의 양식</h2>
-            <p className="section-copy">면세점 원본 링크와 상품명을 함께 보내주시면 더 빠르게 확인합니다.</p>
+            <p className="section-copy">
+              면세점 원본 링크와 상품명을 함께 보내주시면 더 빠르게 확인합니다. 이메일로 바로 보내도 됩니다.
+            </p>
 
             <form
               name="contact"
@@ -61,9 +80,9 @@ export default function ContactPage() {
                 <span>문의 유형</span>
                 <select name="topic" required defaultValue="price">
                   <option value="price">가격/상품 정보 오류</option>
-                  <option value="image">이미지/저작권 요청</option>
-                  <option value="service">서비스 개선 의견</option>
-                  <option value="ad">광고/정책 문의</option>
+                  <option value="privacy">개인정보 관련</option>
+                  <option value="affiliate">제휴 제안</option>
+                  <option value="other">기타 문의</option>
                 </select>
               </label>
 
@@ -84,29 +103,29 @@ export default function ContactPage() {
               <div className="list-item">
                 <span className="list-number">A</span>
                 <p className="list-copy">
-                  <strong>가격 오류</strong>
+                  <strong>데이터 수정 요청</strong>
                   검색 시점과 원본 링크 기준으로 재확인
                 </p>
               </div>
               <div className="list-item">
                 <span className="list-number">B</span>
                 <p className="list-copy">
-                  <strong>이미지 요청</strong>
-                  권리자 요청 시 노출 중단 검토
+                  <strong>제휴 제안</strong>
+                  현재 운영 형태와 서비스 적합성 기준으로 검토
                 </p>
               </div>
               <div className="list-item">
                 <span className="list-number">C</span>
                 <p className="list-copy">
-                  <strong>광고 정책</strong>
-                  개인정보처리방침과 운영정책 기준 적용
+                  <strong>개인정보 관련</strong>
+                  개인정보처리방침 기준으로 접수·처리
                 </p>
               </div>
               <div className="list-item">
                 <span className="list-number">D</span>
                 <p className="list-copy">
                   <strong>회신 정책</strong>
-                  운영 상황에 따라 보통 24~72시간 안에 확인
+                  영업일 기준 1~3일 이내 확인
                 </p>
               </div>
             </div>

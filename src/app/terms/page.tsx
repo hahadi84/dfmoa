@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
+import { AFFILIATE_DISCLOSURE_TEXT } from "@/lib/affiliate";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
 export const metadata: Metadata = {
   title: "이용약관",
-  description: "DFMOA 서비스 이용 조건, 책임 한계, 외부 링크, 콘텐츠 사용 기준",
+  description: "DFMOA 서비스 이용 조건, 운영자 정보, 책임 한계, 제휴 링크, 분쟁 해결 기준",
   alternates: {
     canonical: "/terms",
   },
@@ -11,36 +13,36 @@ export const metadata: Metadata = {
 
 const terms = [
   {
-    title: "서비스 목적",
-    body: "DFMOA는 한국에서 이용 가능한 공항면세점 상품 가격과 국내 공개 판매가를 한 화면에서 비교하도록 돕는 정보 서비스입니다. DFMOA는 상품을 직접 판매하거나 결제를 대행하지 않습니다.",
+    title: "1. 목적 · 서비스 범위",
+    body: "DFMOA는 공개 검색 결과와 저장된 가격 스냅샷을 바탕으로 공항면세점 공개가, 국내 판매가 참고 정보, 혜택 확인 링크를 정리하는 정보 제공 서비스입니다. DFMOA는 상품의 판매·결제·배송·중개 주체가 아니며, 실제 주문과 수령은 원본 면세점 또는 판매처의 정책을 따릅니다.",
   },
   {
-    title: "가격 정보의 한계",
-    body: "화면에 표시되는 가격은 공개 검색 결과와 조회 시점의 수집 데이터에 기반합니다. 환율, 쿠폰, 회원 등급, 적립금, 배송비, 재고, 옵션, 판매처 정책에 따라 실제 결제 금액은 달라질 수 있습니다.",
+    title: "2. 운영자 정보",
+    body: `${SITE_OPERATOR.siteName}는 ${SITE_OPERATOR.operationType} 형태로 운영됩니다. 운영자 명의는 ${SITE_OPERATOR.name}이며, 문의와 권리 요청은 ${SITE_OPERATOR.email}로 접수합니다.`,
   },
   {
-    title: "운영 범위",
-    body: "DFMOA는 가격 비교와 구매 전 확인을 돕는 정보 제공 서비스입니다. 면세품 주문, 결제, 환불, 교환, 재고 확보, 공항 인도장 수령을 대행하지 않으며, 원본 면세점 또는 판매처의 최종 안내가 우선합니다.",
+    title: "3. 이용자의 의무",
+    body: "이용자는 허위 정보 입력, 타인의 이메일 무단 사용, 서비스 안정성을 해치는 자동화 요청, 크롤링 방해 우회, 비정상 트래픽 생성, 데이터 무단 대량 복제, 광고 클릭 조작, 권리 침해 행위를 해서는 안 됩니다.",
   },
   {
-    title: "사용자 확인 의무",
-    body: "구매 전에는 반드시 원본 면세점 또는 판매처 페이지에서 최종 가격, 수령 가능 공항, 출국일 조건, 교환·환불 조건, 통관 및 면세 한도를 확인해야 합니다.",
+    title: "4. 면책 조항",
+    body: "가격 정보는 수집 시점 기준이며 환율, 쿠폰, 회원 등급, 적립금, 카드 혜택, 재고, 옵션, 출국 정보 입력 여부에 따라 실제 결제가와 다를 수 있습니다. 최종 결제 금액과 수령 가능 여부는 반드시 원본 면세점에서 확인해야 합니다.",
   },
   {
-    title: "외부 링크",
-    body: "DFMOA는 비교 편의를 위해 외부 사이트 링크를 제공합니다. 외부 사이트의 상품, 결제, 개인정보 처리, 배송, 고객 응대는 해당 사이트의 약관과 정책을 따릅니다.",
+    title: "5. 제휴 링크 고지",
+    body: `${AFFILIATE_DISCLOSURE_TEXT} 제휴 링크 포함 여부는 상품 가격 비교 순위나 추천 순서에 영향을 주지 않습니다. 현재 운영 상태는 ${SITE_OPERATOR.incomeStatus}입니다.`,
   },
   {
-    title: "금지된 이용",
-    body: "서비스를 방해하는 자동화 요청, 비정상 트래픽 생성, 데이터 무단 대량 복제, 광고 클릭 조작, 허위 신고, 권리 침해 행위는 허용하지 않습니다.",
+    title: "6. 서비스 변경·중단",
+    body: "DFMOA는 데이터 수집 가능 여부, 외부 사이트 정책 변경, 호스팅 장애, 보안 이슈, 운영상 필요에 따라 서비스 일부를 변경하거나 중단할 수 있습니다. 예측 가능한 변경은 사전 공지를 원칙으로 하며, 긴급한 경우 사후 공지할 수 있습니다.",
   },
   {
-    title: "콘텐츠와 권리",
-    body: "DFMOA가 작성한 가이드, 정책 문구, 비교 설명은 서비스 운영 목적의 자체 콘텐츠입니다. 상품명, 브랜드명, 이미지, 로고는 각 권리자에게 귀속될 수 있으며 비교와 식별 목적 범위에서 사용합니다.",
+    title: "7. 분쟁 해결",
+    body: "본 약관은 대한민국 법을 기준으로 해석합니다. 서비스 이용과 관련한 분쟁은 서로 협의해 해결하는 것을 우선하며, 협의가 어려운 경우 민사소송법이 정하는 관할 법원에 제기합니다.",
   },
   {
-    title: "정책 변경",
-    body: "서비스 범위, 수집 가능 사이트, 광고 정책, 개인정보 처리 기준이 바뀌면 관련 페이지를 갱신합니다. 중요한 변경은 시행일을 함께 표시합니다.",
+    title: "8. 시행일",
+    body: "본 약관은 2026-04-20부터 시행합니다.",
   },
 ];
 
@@ -58,9 +60,7 @@ export default function TermsPage() {
           Terms
         </span>
         <h1 className="page-title">이용약관</h1>
-        <p className="page-description">
-          DFMOA를 안전하고 투명하게 이용하기 위한 기본 조건을 안내합니다.
-        </p>
+        <p className="page-description">DFMOA 이용 조건과 책임 한계를 안내합니다.</p>
 
         <div className="faq-stack" style={{ marginTop: 16 }}>
           {terms.map((term) => (
@@ -94,7 +94,7 @@ export default function TermsPage() {
         </article>
 
         <p className="section-copy" style={{ marginTop: 14 }}>
-          시행일: 2026-04-19
+          시행일: 2026-04-20
         </p>
       </div>
     </section>

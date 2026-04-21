@@ -6,6 +6,7 @@ import {
   formatKoreanDate,
   getBenefitReportBySlug,
 } from "@/lib/benefit-report-generator";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
 type BenefitReportPageProps = {
   params: Promise<{
@@ -55,13 +56,13 @@ export default async function BenefitReportPage({ params }: BenefitReportPagePro
     dateModified: report.updatedAt,
     author: {
       "@type": "Organization",
-      name: "면세모아 DFMOA",
+      name: SITE_OPERATOR.siteName,
     },
     publisher: {
       "@type": "Organization",
-      name: "면세모아 DFMOA",
+      name: SITE_OPERATOR.siteName,
     },
-    mainEntityOfPage: `https://dfmoa.netlify.app/benefit-reports/${report.slug}`,
+    mainEntityOfPage: `${SITE_OPERATOR.serviceUrl}/benefit-reports/${report.slug}`,
   };
 
   return (

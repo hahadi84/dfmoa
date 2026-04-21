@@ -1,17 +1,50 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
+import { buildOrganizationJsonLd, serializeJsonLd } from "@/lib/json-ld";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
 export const metadata: Metadata = {
   title: "서비스 소개",
-  description: "DFMOA는 공항면세점 공개가와 국내 판매가를 한 화면에서 비교하는 정보 서비스입니다.",
+  description: "DFMOA 운영 방식, 데이터 출처, 수익 구조, 면세점과의 관계, 연락처 안내",
   alternates: {
     canonical: "/about",
   },
 };
 
+const aboutSections = [
+  {
+    title: "서비스 소개",
+    body: "DFMOA는 한국 공항면세점 공개 검색 결과와 국내 판매가 참고 정보를 한 화면에서 비교하도록 돕는 정보 제공 서비스입니다. 상품 판매, 결제, 배송, 재고 보장, 공항 수령 확정은 제공하지 않으며, 최종 구매 조건은 원본 면세점에서 확인해야 합니다.",
+  },
+  {
+    title: "운영 방식",
+    body: `현재 DFMOA는 ${SITE_OPERATOR.name}가 ${SITE_OPERATOR.operationType} 목적으로 운영합니다. 서비스 개선과 법적 고지 정확성을 위해 운영자 정보는 사이트 전역에서 동일하게 관리합니다.`,
+  },
+  {
+    title: "데이터 출처",
+    body: "가격과 상품 상태는 롯데면세점, 신라면세점, 신세계면세점, 현대면세점의 공개 검색 결과와 저장된 스냅샷을 기반으로 정리합니다. 실시간 결제 데이터가 아니며, 자동 수집 시점과 원본 사이트 정책에 따라 누락이나 지연이 생길 수 있습니다.",
+  },
+  {
+    title: "수익 구조",
+    body: `현재 상태는 ${SITE_OPERATOR.incomeStatus}입니다. 일부 국내가 참고 링크에는 쿠팡 파트너스 제휴 링크가 포함될 수 있고, 구매가 이루어질 경우 수수료가 지급될 수 있습니다. 향후 Google AdSense 신청을 검토하되, 승인 전에는 광고 슬롯을 운영하지 않습니다.`,
+  },
+  {
+    title: "면세점과의 관계",
+    body: "DFMOA는 롯데·신라·신세계·현대면세점과 제휴 관계가 없는 독립 정보 서비스입니다. 각 면세점의 로고, 상품명, 브랜드명은 비교와 식별을 위한 범위에서만 사용하며, 원본 면세점의 정책과 안내가 최종 기준입니다.",
+  },
+  {
+    title: "연락",
+    body: `데이터 수정 요청, 개인정보 관련 요청, 제휴 제안, 기타 문의는 ${SITE_OPERATOR.email}로 접수합니다. 전화나 주소 항목은 운영하지 않습니다.`,
+  },
+];
+
 export default function AboutPage() {
   return (
     <section className="page-section is-tight">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(buildOrganizationJsonLd()) }}
+      />
       <div className="container">
         <div className="breadcrumb">
           <Link href="/">홈</Link>
@@ -24,127 +57,39 @@ export default function AboutPage() {
         </span>
         <h1 className="page-title">면세 가격 비교를 짧고 정확하게</h1>
         <p className="page-description">
-          DFMOA는 면세점 공개가, 국내 판매가, 혜택 조건을 분리해 보여주는 비교 서비스입니다.
+          DFMOA가 하는 일, 하지 않는 일, 운영 방식과 연락처를 투명하게 안내합니다.
         </p>
 
-        <article className="surface-card" style={{ marginTop: 20 }}>
-          <p className="panel-title">운영 정보</p>
-          <div className="guide-body" style={{ marginTop: 12 }}>
-            <section className="guide-section">
+        <div className="faq-stack" style={{ marginTop: 20 }}>
+          {aboutSections.map((section) => (
+            <article key={section.title} className="faq-card">
               <h2 className="card-title" style={{ fontSize: "1rem" }}>
-                운영 주체와 연락 수단
+                {section.title}
               </h2>
-              <p className="section-copy">
-                DFMOA는 면세 가격 비교를 목적으로 운영되는 독립 정보 서비스입니다. 문의, 오류 제보, 권리자 요청은
-                <Link href="/contact"> 문의 페이지</Link>를 통해 접수하며, 운영팀이 상품명과 원본 링크를 기준으로
-                확인합니다.
-              </p>
-            </section>
-            <section className="guide-section">
-              <h2 className="card-title" style={{ fontSize: "1rem" }}>
-                서비스 범위와 한계
-              </h2>
-              <p className="section-copy">
-                DFMOA는 공개 검색 결과와 저장된 가격 스냅샷을 비교 정보로 정리할 뿐, 상품 판매·결제·재고 보장·수령
-                확정을 제공하지 않습니다. 최종 결제가는 쿠폰, 회원 등급, 항공편, 수령 공항, 원본 면세점 정책에 따라
-                달라질 수 있습니다.
-              </p>
-            </section>
-            <section className="guide-section">
-              <h2 className="card-title" style={{ fontSize: "1rem" }}>
-                수익 구조와 독립성
-              </h2>
-              <p className="section-copy">
-                일부 국내가 참고 링크에는 쿠팡 파트너스 제휴 링크가 포함될 수 있고, 향후 Google AdSense 광고 승인을
-                신청할 예정입니다. DFMOA는 롯데·신라·신세계·현대면세점과 제휴한 공식 서비스가 아니며, 광고 노출이나
-                제휴 여부가 가격 비교 순위에 영향을 주지 않도록 운영합니다.
-              </p>
-            </section>
+              <p className="faq-answer">{section.body}</p>
+            </article>
+          ))}
+        </div>
+
+        <article className="surface-card" style={{ marginTop: 16 }}>
+          <h2 className="card-title" style={{ fontSize: "1rem" }}>
+            빠른 연락
+          </h2>
+          <p className="section-copy" style={{ marginTop: 8 }}>
+            <a href={`mailto:${SITE_OPERATOR.email}`}>{SITE_OPERATOR.email}</a>
+          </p>
+          <div className="chip-row" style={{ marginTop: 12 }}>
+            <Link className="chip is-soft" href="/contact">
+              문의 페이지
+            </Link>
+            <Link className="chip is-soft" href="/privacy">
+              개인정보처리방침
+            </Link>
+            <Link className="chip is-soft" href="/terms">
+              이용약관
+            </Link>
           </div>
         </article>
-
-        <div className="three-grid" style={{ marginTop: 24 }}>
-          <article className="surface-card">
-            <p className="panel-title">입력</p>
-            <p className="section-copy" style={{ marginTop: 8 }}>
-              브랜드·상품명·용량 중심으로 검색합니다.
-            </p>
-          </article>
-          <article className="surface-card">
-            <p className="panel-title">매칭</p>
-            <p className="section-copy" style={{ marginTop: 8 }}>
-              비슷한 상품보다 같은 상품을 우선합니다.
-            </p>
-          </article>
-          <article className="surface-card">
-            <p className="panel-title">비교</p>
-            <p className="section-copy" style={{ marginTop: 8 }}>
-              면세가·국내가·혜택 링크를 나란히 정리합니다.
-            </p>
-          </article>
-        </div>
-
-        <div className="split-grid" style={{ marginTop: 24 }}>
-          <article className="surface-card">
-            <p className="panel-title">브랜드 약속</p>
-            <div className="guide-body" style={{ marginTop: 14 }}>
-              <div className="guide-section">
-                <h2 className="card-title" style={{ fontSize: "1rem" }}>
-                  공개가와 혜택을 구분합니다
-                </h2>
-                <p className="section-copy">결제 조건이 필요한 쿠폰·적립금은 최저가와 섞지 않습니다.</p>
-              </div>
-              <div className="guide-section">
-                <h2 className="card-title" style={{ fontSize: "1rem" }}>
-                  원본 출처를 남깁니다
-                </h2>
-                <p className="section-copy">각 가격과 혜택은 확인 가능한 원본 링크를 함께 제공합니다.</p>
-              </div>
-              <div className="guide-section">
-                <h2 className="card-title" style={{ fontSize: "1rem" }}>
-                  동일 상품 기준을 강화합니다
-                </h2>
-                <p className="section-copy">용량, 모델명, 세트 구성을 확인해 다른 상품 유입을 줄입니다.</p>
-              </div>
-              <div className="guide-section">
-                <h2 className="card-title" style={{ fontSize: "1rem" }}>
-                  사용자가 최종 판단합니다
-                </h2>
-                <p className="section-copy">재고, 회원 등급, 결제수단은 원본 면세점에서 마지막으로 확인해야 합니다.</p>
-              </div>
-            </div>
-          </article>
-
-          <aside className="feature-panel">
-            <p className="panel-title">다음 개선 방향</p>
-            <div className="subgrid" style={{ marginTop: 14 }}>
-              <div className="list-item">
-                <span className="list-number">A</span>
-                <p className="list-copy">
-                  <strong>혜택 계산</strong>
-                  쿠폰·적립금 조건을 룰로 분리
-                </p>
-              </div>
-              <div className="list-item">
-                <span className="list-number">B</span>
-                <p className="list-copy">
-                  <strong>이력 강화</strong>
-                  장기 수집으로 가격 흐름 정교화
-                </p>
-              </div>
-              <div className="list-item">
-                <span className="list-number">C</span>
-                <p className="list-copy">
-                  <strong>정확도 개선</strong>
-                  모델·용량·세트 매칭 보강
-                </p>
-              </div>
-              <Link className="ghost-button" href="/editorial-policy">
-                운영정책 보기
-              </Link>
-            </div>
-          </aside>
-        </div>
       </div>
     </section>
   );

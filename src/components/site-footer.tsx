@@ -1,6 +1,7 @@
 import Link from "@/components/app-link";
 import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
 import { AFFILIATE_DISCLOSURE_TEXT } from "@/lib/affiliate";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 
 export function SiteFooter() {
   return (
@@ -16,6 +17,13 @@ export function SiteFooter() {
             최종 가격과 구매 조건은 각 면세점 원본 페이지에서 확인해 주세요.
           </p>
           <p className="footer-copy">{AFFILIATE_DISCLOSURE_TEXT}</p>
+          <div className="footer-operator-block" aria-label="운영자 정보">
+            <p>운영자: {SITE_OPERATOR.name}</p>
+            <p>
+              문의: <a href={`mailto:${SITE_OPERATOR.email}`}>{SITE_OPERATOR.email}</a>
+            </p>
+            <p>DFMOA는 개인이 비영리 목적으로 운영하는 정보 제공 서비스이며, 면세점과 제휴 관계가 없습니다.</p>
+          </div>
           <div style={{ marginTop: 12 }}>
             <NewsletterSignupForm source="footer" compact />
           </div>

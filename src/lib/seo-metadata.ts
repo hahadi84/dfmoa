@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { getSnapshotBestItem, formatSnapshotTimestamp } from "@/lib/price-snapshot-view";
+import { SITE_OPERATOR } from "@/lib/site-operator";
 import { formatKrw, getStoreById, type Category, type Product } from "@/lib/site-data";
 import type { ProductPriceSnapshot } from "@/lib/price-snapshot-types";
 
-export const SITE_URL = "https://dfmoa.netlify.app";
+export const SITE_URL = SITE_OPERATOR.serviceUrl;
 export const DEFAULT_OG_IMAGE = "/og/default.png";
 export const HOME_OG_IMAGE = "/og/home.png";
 
@@ -48,7 +49,7 @@ export function buildSeoMetadata({
       title,
       description,
       url,
-      siteName: "면세모아 DFMOA",
+      siteName: SITE_OPERATOR.siteName,
       images: [{ url: imageUrl, width: 1200, height: 630, alt: image.alt }],
       locale: "ko_KR",
       type,

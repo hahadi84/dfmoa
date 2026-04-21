@@ -1,7 +1,7 @@
 import type { Product } from "@/lib/site-data";
 
 export const AFFILIATE_DISCLOSURE_TEXT =
-  "이 페이지는 쿠팡 파트너스 활동을 포함하며, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.";
+  "이 페이지는 쿠팡 파트너스 제휴 링크를 포함할 수 있으며, 구매가 이루어질 경우 일정액의 수수료가 지급될 수 있습니다.";
 
 export type AffiliateLink = {
   network: "coupang_partners" | "other";
