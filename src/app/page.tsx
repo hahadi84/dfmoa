@@ -127,9 +127,9 @@ export default function Home() {
             ) : null}
 
             {heroLowestPriceItems.length ? (
-              <div className="hero-lowest-preview" aria-label="지금 최저가 3개">
+              <div className="hero-lowest-preview" aria-label="지금 최저가 3선">
                 <div className="hero-lowest-preview-head">
-                  <span>지금 최저가 3개</span>
+                  <span>지금 최저가 3선</span>
                   <Link className="text-link" href="/search">
                     전체 보기
                   </Link>

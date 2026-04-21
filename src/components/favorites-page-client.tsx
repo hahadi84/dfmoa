@@ -225,9 +225,6 @@ function FavoriteInsightCard({
       {insight?.error ? <p className="form-message is-error">가격 상태를 불러오지 못했습니다. 원본 링크로 확인해 주세요.</p> : null}
 
       <div className="favorite-card-actions">
-        <Link className="button" href={`/product/${product.slug}`}>
-          상세 비교 보기
-        </Link>
         <Link className="ghost-button" href={`/search?q=${encodeURIComponent(product.query)}`}>
           국내가도 비교
         </Link>

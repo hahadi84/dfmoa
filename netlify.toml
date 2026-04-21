@@ -4,3 +4,9 @@
 
 [functions]
   directory = "netlify/functions"
+
+[[redirects]]
+  from = "/deals"
+  to = "/.netlify/functions/deals-redirect"
+  status = 200
+  force = true
