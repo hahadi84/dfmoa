@@ -677,6 +677,36 @@ img {
   border: 0;
 }
 
+.skip-link {
+  position: fixed;
+  top: var(--space-3);
+  left: var(--space-3);
+  z-index: 100;
+  padding: 8px 12px;
+  border: 1px solid var(--color-accent-border);
+  border-radius: var(--radius-sm);
+  color: #ffffff;
+  background: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  transform: translateY(calc(-100% - var(--space-6)));
+  transition: transform var(--duration-fast) var(--ease-default);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  color: #ffffff;
+  transform: translateY(0) !important;
+}
+
+main {
+  scroll-margin-top: calc(56px + var(--space-4));
+}
+
+main:focus {
+  outline: none;
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -4449,7 +4479,7 @@ img {
 .chip.is-demo,
 .event-badge,
 .status-chip.is-demo {
-  color: var(--color-accent);
+  color: var(--color-accent-hover);
   border-color: var(--color-accent-border);
   background: var(--color-accent-subtle);
 }

@@ -136,7 +136,7 @@ export function SearchForm({ defaultValue = "", compact = false }: SearchFormPro
           </div>
         ) : null}
       </div>
-      <button className="search-button" type="submit" aria-label="면세가와 국내가 비교 검색">
+      <button className="search-button" type="submit">
         비교하기
       </button>
     </form>
