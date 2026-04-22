@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/site-header";
 import { absoluteSiteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 
+const GA_TAG_ID = process.env.NEXT_PUBLIC_GA_TAG_ID ?? SITE_OPERATOR.analyticsTagId;
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? SITE_OPERATOR.analyticsMeasurementId;
 
 const notoSansKr = Noto_Sans_KR({
@@ -79,7 +80,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+        <GoogleAnalytics tagId={GA_TAG_ID} measurementId={GA_MEASUREMENT_ID} />
         <a className="skip-link" href="#main-content">
           본문으로 건너뛰기
         </a>

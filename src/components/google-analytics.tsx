@@ -3,11 +3,12 @@ import Script from "next/script";
 import { GoogleAnalyticsPageView } from "@/components/google-analytics-page-view";
 
 type GoogleAnalyticsProps = {
+  tagId?: string;
   measurementId?: string;
 };
 
-export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
-  if (!measurementId) {
+export function GoogleAnalytics({ tagId, measurementId }: GoogleAnalyticsProps) {
+  if (!tagId || !measurementId) {
     return null;
   }
 
@@ -17,7 +18,7 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
     <>
       <Script
         id="dfmoa-google-analytics-src"
-        src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${tagId}`}
         strategy="afterInteractive"
       />
       <Script

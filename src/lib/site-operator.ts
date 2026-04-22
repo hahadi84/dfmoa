@@ -8,6 +8,7 @@ export const SITE_OPERATOR = {
   incomeStatus: "현재 영업 수익 발생 전 (쿠팡 파트너스 제휴 링크 포함)",
   hostingProvider: "Netlify, Inc. (미국)",
   analyticsProvider: "Google LLC (미국)",
+  analyticsTagId: "G-SRSWS2FHS2",
   analyticsMeasurementId: "G-VXFLYV6T34",
   affiliatePartner: "Coupang Corp.",
   privacyOfficer: {
