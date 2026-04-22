@@ -29,6 +29,7 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', ${encodedMeasurementId}, {
+              send_page_view: false,
               debug_mode: new URLSearchParams(window.location.search).get('debug_mode') === '1'
             });
           `,

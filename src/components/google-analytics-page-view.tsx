@@ -10,30 +10,51 @@ type GoogleAnalyticsPageViewProps = {
 export function GoogleAnalyticsPageView({ measurementId }: GoogleAnalyticsPageViewProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const hasMounted = useRef(false);
-  const previousPath = useRef<string | null>(null);
+  const lastSentPath = useRef<string | null>(null);
 
   useEffect(() => {
     const queryString = searchParams.toString();
     const pagePath = queryString ? `${pathname}?${queryString}` : pathname;
 
-    if (!hasMounted.current) {
-      hasMounted.current = true;
-      previousPath.current = pagePath;
+    if (lastSentPath.current === pagePath) {
       return;
     }
 
-    if (previousPath.current === pagePath || typeof window.gtag !== "function") {
-      return;
-    }
+    let attempts = 0;
+    let timeoutId: number | undefined;
+    let cancelled = false;
 
-    previousPath.current = pagePath;
-    window.gtag("config", measurementId, {
-      page_path: pagePath,
-      page_location: window.location.href,
-      page_title: document.title,
-      debug_mode: searchParams.get("debug_mode") === "1",
-    });
+    const sendPageView = () => {
+      if (cancelled) {
+        return;
+      }
+
+      if (typeof window.gtag !== "function") {
+        attempts += 1;
+        if (attempts <= 20) {
+          timeoutId = window.setTimeout(sendPageView, 250);
+        }
+        return;
+      }
+
+      lastSentPath.current = pagePath;
+      window.gtag("event", "page_view", {
+        page_path: pagePath,
+        page_location: window.location.href,
+        page_title: document.title,
+        send_to: measurementId,
+        debug_mode: searchParams.get("debug_mode") === "1",
+      });
+    };
+
+    timeoutId = window.setTimeout(sendPageView, 0);
+
+    return () => {
+      cancelled = true;
+      if (timeoutId) {
+        window.clearTimeout(timeoutId);
+      }
+    };
   }, [measurementId, pathname, searchParams]);
 
   return null;
