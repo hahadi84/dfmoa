@@ -3,15 +3,15 @@
   "productSlug": "shiseido-ultimune-75ml",
   "categorySlug": "beauty",
   "query": "시세이도 얼티뮨 75ml",
-  "fetchedAt": "2026-04-22T14:31:01+09:00",
-  "updatedAtLabel": "2026-04-22 14:31 기준",
+  "fetchedAt": "2026-04-23T01:09:20+09:00",
+  "updatedAtLabel": "2026-04-23 01:09 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8B%9C%EC%84%B8%EC%9D%B4%EB%8F%84%20%EC%96%BC%ED%8B%B0%EB%AE%A8",
-      "fetchedAt": "2026-04-22T14:31:01+09:00",
+      "fetchedAt": "2026-04-23T01:09:20+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "시세이도 얼티뮨",
@@ -22,14 +22,14 @@
           "id": "shilla-039910000631",
           "title": "ULTIMUNE POWER INFUSING CONCENTRATE IIII DUO",
           "brand": "시세이도",
-          "priceKrw": 285086,
+          "priceKrw": 284159,
           "priceUsd": 193.2,
           "regularUsdPrice": 322,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=ULTIMUNE%20POWER%20INFUSING%20CONCENTRATE%20IIII%20DUO",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/03/21/039910000631_20250321_16142703_12_039910000631_1.JPG",
           "matchScore": 83,
-          "fetchedAt": "2026-04-22T14:31:01+09:00"
+          "fetchedAt": "2026-04-23T01:09:20+09:00"
         }
       ],
       "error": null
@@ -39,7 +39,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8B%9C%EC%84%B8%EC%9D%B4%EB%8F%84%20%EC%96%BC%ED%8B%B0%EB%AE%A8%2075ml",
-      "fetchedAt": "2026-04-22T05:31:03.461Z",
+      "fetchedAt": "2026-04-22T16:09:22.029Z",
       "matched_via": "original",
       "attempted_queries": [
         "시세이도 얼티뮨 75ml",
@@ -54,7 +54,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8B%9C%EC%84%B8%EC%9D%B4%EB%8F%84%20%EC%96%BC%ED%8B%B0%EB%AE%A8%2075ml",
-      "fetchedAt": "2026-04-22T05:31:03.461Z",
+      "fetchedAt": "2026-04-22T16:09:22.029Z",
       "matched_via": "original",
       "attempted_queries": [
         "시세이도 얼티뮨 75ml",
