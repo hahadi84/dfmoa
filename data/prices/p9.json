@@ -3,15 +3,15 @@
   "productSlug": "diptyque-do-son-75ml",
   "categorySlug": "perfume",
   "query": "딥디크 도손 오 드 뚜왈렛 75ml",
-  "fetchedAt": "2026-04-27T14:58:01+09:00",
-  "updatedAtLabel": "2026-04-27 14:58 기준",
+  "fetchedAt": "2026-04-28T01:24:49+09:00",
+  "updatedAtLabel": "2026-04-28 01:24 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%94%A5%EB%94%94%ED%81%AC%20%EB%8F%84%EC%86%90%20%EC%98%A4%EB%93%9C%EB%9A%9C%EC%99%88%EB%A0%9B",
-      "fetchedAt": "2026-04-27T14:58:01+09:00",
+      "fetchedAt": "2026-04-28T01:24:49+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "딥디크 도손 오 드 뚜왈렛 75ml",
@@ -30,14 +30,14 @@
           "id": "shilla-064113000796",
           "title": "오 드 뚜왈렛 디스커버리 세트 5종",
           "brand": "딥티크",
-          "priceKrw": 186556,
+          "priceKrw": 186845,
           "priceUsd": 126,
           "regularUsdPrice": 126,
           "discountRate": null,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%98%A4%20%EB%93%9C%20%EB%9A%9C%EC%99%88%EB%A0%9B%20%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC%20%EC%84%B8%ED%8A%B8%205%EC%A2%85",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/04/14/064113000796_20250414_09285584_12_064113000796_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-04-27T14:58:01+09:00"
+          "fetchedAt": "2026-04-28T01:24:49+09:00"
         }
       ],
       "error": null
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%94%A5%EB%94%94%ED%81%AC%20%EB%8F%84%EC%86%90%20%EC%98%A4%20%EB%93%9C%20%EB%9A%9C%EC%99%88%EB%A0%9B%2075ml",
-      "fetchedAt": "2026-04-27T05:58:02.711Z",
+      "fetchedAt": "2026-04-27T16:24:51.004Z",
       "matched_via": "original",
       "attempted_queries": [
         "딥디크 도손 오 드 뚜왈렛 75ml",
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%94%A5%EB%94%94%ED%81%AC%20%EB%8F%84%EC%86%90%20%EC%98%A4%20%EB%93%9C%20%EB%9A%9C%EC%99%88%EB%A0%9B%2075ml",
-      "fetchedAt": "2026-04-27T05:58:02.711Z",
+      "fetchedAt": "2026-04-27T16:24:51.004Z",
       "matched_via": "original",
       "attempted_queries": [
         "딥디크 도손 오 드 뚜왈렛 75ml",

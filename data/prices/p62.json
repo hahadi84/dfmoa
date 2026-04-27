@@ -3,15 +3,15 @@
   "productSlug": "pandora-moments-bracelet",
   "categorySlug": "jewelry",
   "query": "판도라 모멘츠 브레이슬릿",
-  "fetchedAt": "2026-04-27T15:02:21+09:00",
-  "updatedAtLabel": "2026-04-27 15:02 기준",
+  "fetchedAt": "2026-04-28T01:29:17+09:00",
+  "updatedAtLabel": "2026-04-28 01:29 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
-      "fetchedAt": "2026-04-27T15:02:21+09:00",
+      "fetchedAt": "2026-04-28T01:29:17+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "판도라 모멘츠 브레이슬릿",
@@ -22,40 +22,40 @@
           "id": "shilla-072523006971",
           "title": "Pandora Moments Round Clasp Blue Braided Leather Bracelet",
           "brand": "판도라",
-          "priceKrw": 59520,
+          "priceKrw": 59613,
           "priceUsd": 40.2,
           "regularUsdPrice": 67,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Pandora%20Moments%20Round%20Clasp%20Blue%20Braided%20Leather%20Bracelet",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/06/25/072523006971_20250625_12024833_12_072523006971_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-27T15:02:21+09:00"
+          "fetchedAt": "2026-04-28T01:29:17+09:00"
         },
         {
           "id": "shilla-072523002412",
           "title": "모멘츠 하트 클라습 브레이슬릿",
           "brand": "판도라",
-          "priceKrw": 83506,
+          "priceKrw": 83636,
           "priceUsd": 56.4,
           "regularUsdPrice": 94,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%A8%EB%A9%98%EC%B8%A0%20%ED%95%98%ED%8A%B8%20%ED%81%B4%EB%9D%BC%EC%8A%B5%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
           "imageUrl": "https://image2.shilladfs.com/files/product/2016/05/17/072523002412_20160517_18531664_12_397156_20150212_142539_org_072523002412.JPG",
           "matchScore": 59,
-          "fetchedAt": "2026-04-27T15:02:21+09:00"
+          "fetchedAt": "2026-04-28T01:29:17+09:00"
         },
         {
           "id": "shilla-072523002999",
           "title": "모멘츠 실버 클라습 브레이슬릿",
           "brand": "판도라",
-          "priceKrw": 83506,
+          "priceKrw": 83636,
           "priceUsd": 56.4,
           "regularUsdPrice": 94,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EC%8B%A4%EB%B2%84%20%ED%81%B4%EB%9D%BC%EC%8A%B5%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
           "imageUrl": "https://image1.shilladfs.com/files/product/2016/05/22/072523002999_20160522_16172320_12_072523002999_1.JPG",
           "matchScore": 59,
-          "fetchedAt": "2026-04-27T15:02:21+09:00"
+          "fetchedAt": "2026-04-28T01:29:17+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
-      "fetchedAt": "2026-04-27T06:02:23.742Z",
+      "fetchedAt": "2026-04-27T16:29:19.609Z",
       "matched_via": "original",
       "attempted_queries": [
         "판도라 모멘츠 브레이슬릿",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
-      "fetchedAt": "2026-04-27T06:02:23.742Z",
+      "fetchedAt": "2026-04-27T16:29:19.609Z",
       "matched_via": "original",
       "attempted_queries": [
         "판도라 모멘츠 브레이슬릿",

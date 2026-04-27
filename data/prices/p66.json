@@ -3,15 +3,15 @@
   "productSlug": "swarovski-matrix-earrings",
   "categorySlug": "jewelry",
   "query": "스와로브스키 매트릭스 이어링",
-  "fetchedAt": "2026-04-27T15:02:43+09:00",
-  "updatedAtLabel": "2026-04-27 15:02 기준",
+  "fetchedAt": "2026-04-28T01:29:38+09:00",
+  "updatedAtLabel": "2026-04-28 01:29 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81",
-      "fetchedAt": "2026-04-27T15:02:43+09:00",
+      "fetchedAt": "2026-04-28T01:29:38+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 매트릭스 이어링",
@@ -22,40 +22,40 @@
           "id": "shilla-010723012906",
           "title": "MATRIX:PE HOOP M WHI/RHS",
           "brand": "스와로브스키",
-          "priceKrw": 154427,
-          "priceUsd": 104.3,
+          "priceKrw": 134781,
+          "priceUsd": 90.89,
           "regularUsdPrice": 149,
-          "discountRate": 30,
+          "discountRate": 39,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=MATRIX%3APE%20HOOP%20M%20WHI%2FRHS",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/09/01/010723012906_20250901_11021060_12_010723012906_1.JPG",
           "matchScore": 59,
-          "fetchedAt": "2026-04-27T15:02:43+09:00"
+          "fetchedAt": "2026-04-28T01:29:38+09:00"
         },
         {
           "id": "shilla-010723013880",
           "title": "MATRIX:PE MN HOOP WHITE/RHS",
           "brand": "스와로브스키",
-          "priceKrw": 147172,
-          "priceUsd": 99.4,
+          "priceKrw": 128449,
+          "priceUsd": 86.62,
           "regularUsdPrice": 142,
-          "discountRate": 30,
+          "discountRate": 39,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=MATRIX%3APE%20MN%20HOOP%20WHITE%2FRHS",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/06/10/010723013880_20250610_15535272_12_010723013880_1.JPG",
           "matchScore": 59,
-          "fetchedAt": "2026-04-27T15:02:43+09:00"
+          "fetchedAt": "2026-04-28T01:29:38+09:00"
         },
         {
           "id": "shilla-010723012601",
           "title": "MATRIX:PE MINI HOOP CZWH/RHS",
           "brand": "스와로브스키",
-          "priceKrw": 96387,
-          "priceUsd": 65.1,
+          "priceKrw": 84125,
+          "priceUsd": 56.73,
           "regularUsdPrice": 93,
-          "discountRate": 30,
+          "discountRate": 39,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=MATRIX%3APE%20MINI%20HOOP%20CZWH%2FRHS",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2021/07/15/010723012601_20210715_11415692_12_010723012601_1.JPG",
           "matchScore": 59,
-          "fetchedAt": "2026-04-27T15:02:43+09:00"
+          "fetchedAt": "2026-04-28T01:29:38+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81",
-      "fetchedAt": "2026-04-27T06:02:45.763Z",
+      "fetchedAt": "2026-04-27T16:29:40.762Z",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 매트릭스 이어링",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81",
-      "fetchedAt": "2026-04-27T06:02:45.763Z",
+      "fetchedAt": "2026-04-27T16:29:40.762Z",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 매트릭스 이어링",
