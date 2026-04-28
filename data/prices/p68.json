@@ -3,15 +3,15 @@
   "productSlug": "pandora-sparkling-charm",
   "categorySlug": "jewelry",
   "query": "판도라 스파클링 참",
-  "fetchedAt": "2026-04-28T15:14:42+09:00",
-  "updatedAtLabel": "2026-04-28 15:14 기준",
+  "fetchedAt": "2026-04-29T01:54:33+09:00",
+  "updatedAtLabel": "2026-04-29 01:54 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EC%B0%B8",
-      "fetchedAt": "2026-04-28T15:14:42+09:00",
+      "fetchedAt": "2026-04-29T01:54:33+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "판도라 스파클링 참",
@@ -22,40 +22,40 @@
           "id": "shilla-072523005803",
           "title": "인피니트 하트 스파클링 클립 참",
           "brand": "판도라",
-          "priceKrw": 59613,
+          "priceKrw": 59219,
           "priceUsd": 40.2,
           "regularUsdPrice": 67,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9D%B8%ED%94%BC%EB%8B%88%ED%8A%B8%20%ED%95%98%ED%8A%B8%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%ED%81%B4%EB%A6%BD%20%EC%B0%B8",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/11/26/072523005803_20251126_14121421_12_072523005803_2.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-04-28T15:14:42+09:00"
+          "fetchedAt": "2026-04-29T01:54:33+09:00"
         },
         {
           "id": "shilla-072523006255",
           "title": "스파클링 문 스피닝 댕글 참",
           "brand": "판도라",
-          "priceKrw": 83636,
+          "priceKrw": 83083,
           "priceUsd": 56.4,
           "regularUsdPrice": 94,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EB%AC%B8%20%EC%8A%A4%ED%94%BC%EB%8B%9D%20%EB%8C%95%EA%B8%80%20%EC%B0%B8",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2023/12/11/072523006255_20231211_09593857_12_072523006255_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-04-28T15:14:42+09:00"
+          "fetchedAt": "2026-04-29T01:54:33+09:00"
         },
         {
           "id": "shilla-072523007303",
           "title": "스파클링 크레센트 문 참",
           "brand": "판도라",
-          "priceKrw": 71179,
+          "priceKrw": 70709,
           "priceUsd": 48,
           "regularUsdPrice": 80,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%ED%81%AC%EB%A0%88%EC%84%BC%ED%8A%B8%20%EB%AC%B8%20%EC%B0%B8",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/03/072523007303_20251203_14441565_12_072523007303_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-04-28T15:14:42+09:00"
+          "fetchedAt": "2026-04-29T01:54:33+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EC%B0%B8",
-      "fetchedAt": "2026-04-28T06:14:44.857Z",
+      "fetchedAt": "2026-04-28T16:54:36.471Z",
       "matched_via": "original",
       "attempted_queries": [
         "판도라 스파클링 참",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EC%B0%B8",
-      "fetchedAt": "2026-04-28T06:14:44.857Z",
+      "fetchedAt": "2026-04-28T16:54:36.471Z",
       "matched_via": "original",
       "attempted_queries": [
         "판도라 스파클링 참",

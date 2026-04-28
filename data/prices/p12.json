@@ -3,15 +3,15 @@
   "productSlug": "bleu-de-chanel-edp-100ml",
   "categorySlug": "perfume",
   "query": "블루 드 샤넬 오 드 빠르펭 100ml",
-  "fetchedAt": "2026-04-28T15:10:07+09:00",
-  "updatedAtLabel": "2026-04-28 15:10 기준",
+  "fetchedAt": "2026-04-29T01:49:58+09:00",
+  "updatedAtLabel": "2026-04-29 01:49 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%94%EB%A3%A8%20%EB%93%9C%20%EC%83%A4%EB%84%AC%20%EC%98%A4%20%EB%93%9C%20%EB%B9%A0%EB%A5%B4%ED%8E%AD%20100ml",
-      "fetchedAt": "2026-04-28T15:10:07+09:00",
+      "fetchedAt": "2026-04-29T01:49:58+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "블루 드 샤넬 오 드 빠르펭 100ml",
@@ -23,14 +23,14 @@
           "id": "shilla-036913000101",
           "title": "블루 드 샤넬 오 드 빠르펭 스프레이 100ml",
           "brand": "샤넬",
-          "priceKrw": 226884,
+          "priceKrw": 225384,
           "priceUsd": 153,
           "regularUsdPrice": 153,
           "discountRate": null,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%94%EB%A3%A8%20%EB%93%9C%20%EC%83%A4%EB%84%AC%20%EC%98%A4%20%EB%93%9C%20%EB%B9%A0%EB%A5%B4%ED%8E%AD%20%EC%8A%A4%ED%94%84%EB%A0%88%EC%9D%B4%20100ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/01/09/036913000101_20250109_15034304_12_036913000101_2.JPG",
           "matchScore": 95,
-          "fetchedAt": "2026-04-28T15:10:07+09:00"
+          "fetchedAt": "2026-04-29T01:49:58+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B8%94%EB%A3%A8%20%EB%93%9C%20%EC%83%A4%EB%84%AC%20%EC%98%A4%20%EB%93%9C%20%EB%B9%A0%EB%A5%B4%ED%8E%AD%20100ml",
-      "fetchedAt": "2026-04-28T06:10:09.103Z",
+      "fetchedAt": "2026-04-28T16:50:00.503Z",
       "matched_via": "original",
       "attempted_queries": [
         "블루 드 샤넬 오 드 빠르펭 100ml",
@@ -55,7 +55,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B8%94%EB%A3%A8%20%EB%93%9C%20%EC%83%A4%EB%84%AC%20%EC%98%A4%20%EB%93%9C%20%EB%B9%A0%EB%A5%B4%ED%8E%AD%20100ml",
-      "fetchedAt": "2026-04-28T06:10:09.103Z",
+      "fetchedAt": "2026-04-28T16:50:00.504Z",
       "matched_via": "original",
       "attempted_queries": [
         "블루 드 샤넬 오 드 빠르펭 100ml",
