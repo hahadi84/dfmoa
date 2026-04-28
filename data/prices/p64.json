@@ -3,15 +3,15 @@
   "productSlug": "stonehenge-silver-necklace",
   "categorySlug": "jewelry",
   "query": "스톤헨지 실버 목걸이",
-  "fetchedAt": "2026-04-28T01:29:31+09:00",
-  "updatedAtLabel": "2026-04-28 01:29 기준",
+  "fetchedAt": "2026-04-28T15:14:18+09:00",
+  "updatedAtLabel": "2026-04-28 15:14 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-04-28T01:29:31+09:00",
+      "fetchedAt": "2026-04-28T15:14:18+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "스톤헨지 실버 목걸이",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=SA25B29J%20Silver%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/08/27/672423003531_20250827_16330995_12_672423003531_2.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-28T01:29:31+09:00"
+          "fetchedAt": "2026-04-28T15:14:18+09:00"
         },
         {
           "id": "shilla-672423003592",
@@ -42,7 +42,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9C%84%EB%93%9C%20%EC%9C%A0%20SA25C31T%20Silver%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/10/01/672423003592_20251001_11034356_12_672423003592_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-28T01:29:31+09:00"
+          "fetchedAt": "2026-04-28T15:14:18+09:00"
         },
         {
           "id": "shilla-672423003687",
@@ -55,7 +55,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%8B%AC%EB%B9%9B%20SA26A48T%20Silver%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/02/27/672423003687_20260227_10524298_12_672423003687_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-28T01:29:31+09:00"
+          "fetchedAt": "2026-04-28T15:14:18+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-04-27T16:29:33.211Z",
+      "fetchedAt": "2026-04-28T06:14:21.832Z",
       "matched_via": "original",
       "attempted_queries": [
         "스톤헨지 실버 목걸이",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-04-27T16:29:33.211Z",
+      "fetchedAt": "2026-04-28T06:14:21.832Z",
       "matched_via": "original",
       "attempted_queries": [
         "스톤헨지 실버 목걸이",

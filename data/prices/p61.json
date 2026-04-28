@@ -3,15 +3,15 @@
   "productSlug": "swarovski-tennis-bracelet",
   "categorySlug": "jewelry",
   "query": "스와로브스키 테니스 브레이슬릿",
-  "fetchedAt": "2026-04-28T01:29:10+09:00",
-  "updatedAtLabel": "2026-04-28 01:29 기준",
+  "fetchedAt": "2026-04-28T15:13:56+09:00",
+  "updatedAtLabel": "2026-04-28 15:13 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%ED%85%8C%EB%8B%88%EC%8A%A4%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
-      "fetchedAt": "2026-04-28T01:29:10+09:00",
+      "fetchedAt": "2026-04-28T15:13:56+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 테니스 브레이슬릿",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Eternity%20Tennis%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF%2C%EB%9E%A9%EA%B7%B8%EB%A1%9C%EC%9A%B4%20%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C3ct%2C18K",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/04/15/010723014142_20260415_10033536_12_010723014142_2.JPG",
           "matchScore": 67,
-          "fetchedAt": "2026-04-28T01:29:10+09:00"
+          "fetchedAt": "2026-04-28T15:13:56+09:00"
         },
         {
           "id": "shilla-010723012883",
@@ -42,7 +42,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=MATRIX%3ABRACELET%20HRT%20WOVEN%20WHI%2FRHS",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2023/02/01/010723012883_20230201_16233780_12_010723012883_1.JPG",
           "matchScore": 59,
-          "fetchedAt": "2026-04-28T01:29:10+09:00"
+          "fetchedAt": "2026-04-28T15:13:56+09:00"
         }
       ],
       "error": null
@@ -52,7 +52,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%ED%85%8C%EB%8B%88%EC%8A%A4%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
-      "fetchedAt": "2026-04-27T16:29:12.183Z",
+      "fetchedAt": "2026-04-28T06:13:57.943Z",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 테니스 브레이슬릿",
@@ -67,7 +67,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%ED%85%8C%EB%8B%88%EC%8A%A4%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
-      "fetchedAt": "2026-04-27T16:29:12.183Z",
+      "fetchedAt": "2026-04-28T06:13:57.943Z",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 테니스 브레이슬릿",
