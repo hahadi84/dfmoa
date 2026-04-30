@@ -3,15 +3,15 @@
   "productSlug": "biotherm-life-plankton-125ml",
   "categorySlug": "beauty",
   "query": "비오템 라이프 플랑크톤 에센스 125ml",
-  "fetchedAt": "2026-04-30T15:09:52+09:00",
-  "updatedAtLabel": "2026-04-30 15:09 기준",
+  "fetchedAt": "2026-05-01T01:19:11+09:00",
+  "updatedAtLabel": "2026-05-01 01:19 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B9%84%EC%98%A4%ED%85%9C%20%EB%9D%BC%EC%9D%B4%ED%94%84%20%ED%94%8C%EB%9E%91%ED%81%AC%ED%86%A4%20%EC%97%90%EC%84%BC%EC%8A%A4%20125ml",
-      "fetchedAt": "2026-04-30T15:09:52+09:00",
+      "fetchedAt": "2026-05-01T01:19:11+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "비오템 라이프 플랑크톤 에센스 125ml",
@@ -23,27 +23,27 @@
           "id": "shilla-040210000307",
           "title": "라이프 플랑크톤™ 온천수 에센스-속건조 수분",
           "brand": "비오템",
-          "priceKrw": 55720,
+          "priceKrw": 55826,
           "priceUsd": 37.82,
           "regularUsdPrice": 61,
           "discountRate": 38,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9D%BC%EC%9D%B4%ED%94%84%20%ED%94%8C%EB%9E%91%ED%81%AC%ED%86%A4%E2%84%A2%20%EC%98%A8%EC%B2%9C%EC%88%98%20%EC%97%90%EC%84%BC%EC%8A%A4-%EC%86%8D%EA%B1%B4%EC%A1%B0%20%EC%88%98%EB%B6%84",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/12/24/040210000307_20251224_17472208_12_040210000307_5.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-30T15:09:52+09:00"
+          "fetchedAt": "2026-05-01T01:19:11+09:00"
         },
         {
           "id": "shilla-040210000461",
           "title": "라이프 플랑크톤™ 클리어 에센스-모공각질케어",
           "brand": "비오템",
-          "priceKrw": 69422,
+          "priceKrw": 69554,
           "priceUsd": 47.12,
           "regularUsdPrice": 76,
           "discountRate": 38,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9D%BC%EC%9D%B4%ED%94%84%20%ED%94%8C%EB%9E%91%ED%81%AC%ED%86%A4%E2%84%A2%20%ED%81%B4%EB%A6%AC%EC%96%B4%20%EC%97%90%EC%84%BC%EC%8A%A4-%EB%AA%A8%EA%B3%B5%EA%B0%81%EC%A7%88%EC%BC%80%EC%96%B4",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/24/040210000464_20251224_17515830_12_040210000464_2.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-04-30T15:09:52+09:00"
+          "fetchedAt": "2026-05-01T01:19:11+09:00"
         }
       ],
       "error": null
@@ -53,7 +53,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B9%84%EC%98%A4%ED%85%9C%20%EB%9D%BC%EC%9D%B4%ED%94%84%20%ED%94%8C%EB%9E%91%ED%81%AC%ED%86%A4%20%EC%97%90%EC%84%BC%EC%8A%A4%20125ml",
-      "fetchedAt": "2026-04-30T06:09:54.358Z",
+      "fetchedAt": "2026-04-30T16:19:13.594Z",
       "matched_via": "original",
       "attempted_queries": [
         "비오템 라이프 플랑크톤 에센스 125ml",
@@ -68,7 +68,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B9%84%EC%98%A4%ED%85%9C%20%EB%9D%BC%EC%9D%B4%ED%94%84%20%ED%94%8C%EB%9E%91%ED%81%AC%ED%86%A4%20%EC%97%90%EC%84%BC%EC%8A%A4%20125ml",
-      "fetchedAt": "2026-04-30T06:09:54.358Z",
+      "fetchedAt": "2026-04-30T16:19:13.594Z",
       "matched_via": "original",
       "attempted_queries": [
         "비오템 라이프 플랑크톤 에센스 125ml",
