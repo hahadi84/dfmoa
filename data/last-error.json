@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T16:32:32.657Z",
+  "generatedAt": "2026-04-30T06:13:43.993Z",
   "attemptedCount": 44,
   "failureCount": 4,
   "failures": [
@@ -7,7 +7,7 @@
       "productId": "p21",
       "productSlug": "la-mer-moisturizing-cream-60ml",
       "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p6",
