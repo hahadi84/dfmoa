@@ -3,15 +3,15 @@
   "productSlug": "hennessy-xo-700ml",
   "categorySlug": "liquor",
   "query": "헤네시 XO 700ml",
-  "fetchedAt": "2026-05-01T01:21:02+09:00",
-  "updatedAtLabel": "2026-05-01 01:21 기준",
+  "fetchedAt": "2026-05-01T15:22:12+09:00",
+  "updatedAtLabel": "2026-05-01 15:22 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO%20700ml",
-      "fetchedAt": "2026-05-01T01:21:02+09:00",
+      "fetchedAt": "2026-05-01T15:22:12+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "헤네시 XO 700ml",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%84%A4%EC%8B%9C%20%ED%8C%8C%EB%9D%BC%EB%94%94%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/06/05/086931000104_20240605_13524490_12_086931000104_1.JPG",
           "matchScore": 95,
-          "fetchedAt": "2026-05-01T01:21:02+09:00"
+          "fetchedAt": "2026-05-01T15:22:12+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO%20700ml",
-      "fetchedAt": "2026-04-30T16:21:03.699Z",
+      "fetchedAt": "2026-05-01T06:22:13.888Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤네시 XO 700ml",
@@ -54,7 +54,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO%20700ml",
-      "fetchedAt": "2026-04-30T16:21:03.699Z",
+      "fetchedAt": "2026-05-01T06:22:13.888Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤네시 XO 700ml",

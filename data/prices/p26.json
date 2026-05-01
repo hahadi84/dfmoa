@@ -3,15 +3,15 @@
   "productSlug": "johnnie-walker-blue-label-750ml",
   "categorySlug": "liquor",
   "query": "조니워커 블루라벨 750ml",
-  "fetchedAt": "2026-05-01T01:19:59+09:00",
-  "updatedAtLabel": "2026-05-01 01:19 기준",
+  "fetchedAt": "2026-05-01T15:21:09+09:00",
+  "updatedAtLabel": "2026-05-01 15:21 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-05-01T01:19:59+09:00",
+      "fetchedAt": "2026-05-01T15:21:09+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",
@@ -37,7 +37,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20%EC%8B%A0%EB%85%84%20%EC%97%90%EB%94%94%EC%85%98%20(%EB%A7%90%EC%9D%98%20%ED%95%B4)%20750ml",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/03/30/046331000093_20260330_09114590_12_046331000093_2.JPG",
           "matchScore": 123,
-          "fetchedAt": "2026-05-01T01:19:59+09:00"
+          "fetchedAt": "2026-05-01T15:21:09+09:00"
         }
       ],
       "error": null
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-04-30T16:20:01.524Z",
+      "fetchedAt": "2026-05-01T06:21:11.089Z",
       "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",
@@ -63,7 +63,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-04-30T16:20:01.524Z",
+      "fetchedAt": "2026-05-01T06:21:11.089Z",
       "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",

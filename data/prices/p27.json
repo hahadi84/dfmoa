@@ -3,15 +3,15 @@
   "productSlug": "macallan-12-double-cask-700ml",
   "categorySlug": "liquor",
   "query": "맥캘란 12년 더블 캐스크 700ml",
-  "fetchedAt": "2026-05-01T01:20:13+09:00",
-  "updatedAtLabel": "2026-05-01 01:20 기준",
+  "fetchedAt": "2026-05-01T15:21:24+09:00",
+  "updatedAtLabel": "2026-05-01 15:21 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=The%20Macallan%2012",
-      "fetchedAt": "2026-05-01T01:20:13+09:00",
+      "fetchedAt": "2026-05-01T15:21:24+09:00",
       "matched_via": "alias_en",
       "attempted_queries": [
         "맥캘란 12년 더블 캐스크 700ml",
@@ -37,7 +37,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A7%A5%EC%BA%98%EB%9E%80%20GTR12%EB%85%84%20700ml",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2024/07/05/081831000056_20240705_13504995_12_081831000056_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-05-01T01:20:13+09:00"
+          "fetchedAt": "2026-05-01T15:21:24+09:00"
         }
       ],
       "error": null
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A7%A5%EC%BA%98%EB%9E%80%2012%EB%85%84%20%EB%8D%94%EB%B8%94%20%EC%BA%90%EC%8A%A4%ED%81%AC%20700ml",
-      "fetchedAt": "2026-04-30T16:20:15.263Z",
+      "fetchedAt": "2026-05-01T06:21:25.897Z",
       "matched_via": "original",
       "attempted_queries": [
         "맥캘란 12년 더블 캐스크 700ml",
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A7%A5%EC%BA%98%EB%9E%80%2012%EB%85%84%20%EB%8D%94%EB%B8%94%20%EC%BA%90%EC%8A%A4%ED%81%AC%20700ml",
-      "fetchedAt": "2026-04-30T16:20:15.263Z",
+      "fetchedAt": "2026-05-01T06:21:25.897Z",
       "matched_via": "original",
       "attempted_queries": [
         "맥캘란 12년 더블 캐스크 700ml",
