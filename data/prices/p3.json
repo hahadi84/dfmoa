@@ -3,15 +3,15 @@
   "productSlug": "sulwhasoo-first-care-serum-90ml",
   "categorySlug": "beauty",
   "query": "설화수 윤조에센스 90ml",
-  "fetchedAt": "2026-05-02T14:41:34+09:00",
-  "updatedAtLabel": "2026-05-02 14:41 기준",
+  "fetchedAt": "2026-05-03T00:43:32+09:00",
+  "updatedAtLabel": "2026-05-03 00:43 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%84%A4%ED%99%94%EC%88%98%20%EC%9C%A4%EC%A1%B0%EC%97%90%EC%84%BC%EC%8A%A4%2090ml",
-      "fetchedAt": "2026-05-02T14:41:34+09:00",
+      "fetchedAt": "2026-05-03T00:43:32+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "설화수 윤조에센스 90ml",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9C%A4%EC%A1%B0%EC%97%90%EC%84%BC%EC%8A%A4%206%EC%84%B8%EB%8C%80%2090ML%20%EB%93%80%EC%98%A4",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/02/20/670610001175_20260220_09155324_12_670610001175_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-05-02T14:41:34+09:00"
+          "fetchedAt": "2026-05-03T00:43:32+09:00"
         },
         {
           "id": "shilla-670610001167",
@@ -43,7 +43,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9C%A4%EC%A1%B0%EC%97%90%EC%84%BC%EC%8A%A4%206%EC%84%B8%EB%8C%80%2090ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/02/20/670610001167_20260220_09155236_12_670610001167_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-05-02T14:41:34+09:00"
+          "fetchedAt": "2026-05-03T00:43:32+09:00"
         }
       ],
       "error": null
@@ -53,7 +53,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%84%A4%ED%99%94%EC%88%98%20%EC%9C%A4%EC%A1%B0%EC%97%90%EC%84%BC%EC%8A%A4%2090ml",
-      "fetchedAt": "2026-05-02T05:41:36.093Z",
+      "fetchedAt": "2026-05-02T15:43:34.564Z",
       "matched_via": "original",
       "attempted_queries": [
         "설화수 윤조에센스 90ml",
@@ -67,7 +67,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%84%A4%ED%99%94%EC%88%98%20%EC%9C%A4%EC%A1%B0%EC%97%90%EC%84%BC%EC%8A%A4%2090ml",
-      "fetchedAt": "2026-05-02T05:41:36.093Z",
+      "fetchedAt": "2026-05-02T15:43:34.564Z",
       "matched_via": "original",
       "attempted_queries": [
         "설화수 윤조에센스 90ml",

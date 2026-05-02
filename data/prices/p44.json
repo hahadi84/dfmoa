@@ -3,15 +3,15 @@
   "productSlug": "coach-tabby-shoulder-bag",
   "categorySlug": "fashion",
   "query": "코치 태비 숄더백",
-  "fetchedAt": "2026-05-02T14:44:42+09:00",
-  "updatedAtLabel": "2026-05-02 14:44 기준",
+  "fetchedAt": "2026-05-03T00:46:39+09:00",
+  "updatedAtLabel": "2026-05-03 00:46 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-05-02T14:44:42+09:00",
+      "fetchedAt": "2026-05-03T00:46:39+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -29,7 +29,20 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/04/16/026814010462_20260416_16400600_12_026814010462_1.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-05-02T14:44:42+09:00"
+          "fetchedAt": "2026-05-03T00:46:39+09:00"
+        },
+        {
+          "id": "shilla-026814010441",
+          "title": "태비 숄더 백 20 위드 퀼팅",
+          "brand": "코치",
+          "priceKrw": 697457,
+          "priceUsd": 472.5,
+          "regularUsdPrice": 525,
+          "discountRate": 10,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2020%20%EC%9C%84%EB%93%9C%20%ED%80%BC%ED%8C%85",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2026/04/01/026814010441_20260401_10335994_12_026814010441_8.JPG",
+          "matchScore": 47,
+          "fetchedAt": "2026-05-03T00:46:39+09:00"
         },
         {
           "id": "shilla-026814010408",
@@ -42,20 +55,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2020%20%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/03/03/026814010408_20260303_16080953_12_026814010408_2.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-05-02T14:44:42+09:00"
-        },
-        {
-          "id": "shilla-026814010442",
-          "title": "태비 숄더 백 26 위드 필로우 퀼팅 블랙",
-          "brand": "코치",
-          "priceKrw": 797094,
-          "priceUsd": 540,
-          "regularUsdPrice": 600,
-          "discountRate": 10,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026%20%EC%9C%84%EB%93%9C%20%ED%95%84%EB%A1%9C%EC%9A%B0%20%ED%80%BC%ED%8C%85%20%EB%B8%94%EB%9E%99",
-          "imageUrl": "https://image2.shilladfs.com/files/product2/2026/03/20/026814010442_20260320_15174602_12_026814010442_1.JPG",
-          "matchScore": 47,
-          "fetchedAt": "2026-05-02T14:44:42+09:00"
+          "fetchedAt": "2026-05-03T00:46:39+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-05-02T05:44:45.093Z",
+      "fetchedAt": "2026-05-02T15:46:41.673Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-05-02T05:44:45.093Z",
+      "fetchedAt": "2026-05-02T15:46:41.673Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
