@@ -3,15 +3,15 @@
   "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
   "categorySlug": "perfume",
   "query": "메종 마르지엘라 레이지 선데이 모닝 100ml",
-  "fetchedAt": "2026-05-03T15:08:33+09:00",
-  "updatedAtLabel": "2026-05-03 15:08 기준",
+  "fetchedAt": "2026-05-04T00:44:24+09:00",
+  "updatedAtLabel": "2026-05-04 00:44 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A9%94%EC%A2%85%20%EB%A7%88%EB%A5%B4%EC%A7%80%EC%97%98%EB%9D%BC%20%EB%A0%88%EC%9D%B4%EC%A7%80%20%EC%84%A0%EB%8D%B0%EC%9D%B4%20%EB%AA%A8%EB%8B%9D%20100ml",
-      "fetchedAt": "2026-05-03T15:08:33+09:00",
+      "fetchedAt": "2026-05-04T00:44:24+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "메종 마르지엘라 레이지 선데이 모닝 100ml",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A0%88%ED%94%8C%EB%A6%AC%EC%B9%B4%20%EB%A0%88%EC%9D%B4%EC%A7%80%20%EC%84%A0%EB%8D%B0%EC%9D%B4%20%EB%AA%A8%EB%8B%9D%20%EC%98%A4%20%EB%93%9C%20%EB%9A%9C%EC%99%88%EB%A0%9B%20%ED%96%A5%EC%88%98%20100ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/05/21/209313000004_20250521_10325353_12_209313000004_11.JPG",
           "matchScore": 115,
-          "fetchedAt": "2026-05-03T15:08:33+09:00"
+          "fetchedAt": "2026-05-04T00:44:24+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A9%94%EC%A2%85%20%EB%A7%88%EB%A5%B4%EC%A7%80%EC%97%98%EB%9D%BC%20%EB%A0%88%EC%9D%B4%EC%A7%80%20%EC%84%A0%EB%8D%B0%EC%9D%B4%20%EB%AA%A8%EB%8B%9D%20100ml",
-      "fetchedAt": "2026-05-03T06:08:35.757Z",
+      "fetchedAt": "2026-05-03T15:44:26.544Z",
       "matched_via": "original",
       "attempted_queries": [
         "메종 마르지엘라 레이지 선데이 모닝 100ml",
@@ -54,7 +54,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A9%94%EC%A2%85%20%EB%A7%88%EB%A5%B4%EC%A7%80%EC%97%98%EB%9D%BC%20%EB%A0%88%EC%9D%B4%EC%A7%80%20%EC%84%A0%EB%8D%B0%EC%9D%B4%20%EB%AA%A8%EB%8B%9D%20100ml",
-      "fetchedAt": "2026-05-03T06:08:35.757Z",
+      "fetchedAt": "2026-05-03T15:44:26.544Z",
       "matched_via": "original",
       "attempted_queries": [
         "메종 마르지엘라 레이지 선데이 모닝 100ml",
