@@ -3,15 +3,15 @@
   "productSlug": "coach-tabby-shoulder-bag",
   "categorySlug": "fashion",
   "query": "코치 태비 숄더백",
-  "fetchedAt": "2026-05-05T01:33:39+09:00",
-  "updatedAtLabel": "2026-05-05 01:33 기준",
+  "fetchedAt": "2026-05-05T14:50:44+09:00",
+  "updatedAtLabel": "2026-05-05 14:50 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-05-05T01:33:39+09:00",
+      "fetchedAt": "2026-05-05T14:50:44+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/04/16/026814010462_20260416_16400600_12_026814010462_1.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-05-05T01:33:39+09:00"
+          "fetchedAt": "2026-05-05T14:50:44+09:00"
         },
         {
           "id": "shilla-026814010441",
@@ -42,7 +42,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2020%20%EC%9C%84%EB%93%9C%20%ED%80%BC%ED%8C%85",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/04/01/026814010441_20260401_10335994_12_026814010441_8.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-05-05T01:33:39+09:00"
+          "fetchedAt": "2026-05-05T14:50:44+09:00"
         },
         {
           "id": "shilla-026814010419",
@@ -55,7 +55,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B2%B4%EC%9D%B8%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%20%EC%9C%84%EB%93%9C%20%ED%80%BC%ED%8C%85",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/04/01/026814010419_20260401_10154897_12_026814010419_1.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-05-05T01:33:39+09:00"
+          "fetchedAt": "2026-05-05T14:50:44+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-05-04T16:33:41.552Z",
+      "fetchedAt": "2026-05-05T05:50:46.351Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-05-04T16:33:41.552Z",
+      "fetchedAt": "2026-05-05T05:50:46.351Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
