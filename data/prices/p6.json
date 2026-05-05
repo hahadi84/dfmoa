@@ -3,15 +3,15 @@
   "productSlug": "hibiki-harmony-700ml",
   "categorySlug": "liquor",
   "query": "히비키 하모니 700ml",
-  "fetchedAt": "2026-05-05T14:49:07+09:00",
-  "updatedAtLabel": "2026-05-05 14:49 기준",
+  "fetchedAt": "2026-05-06T01:25:14+09:00",
+  "updatedAtLabel": "2026-05-06 01:25 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%9E%88%EB%B9%84%ED%82%A4%20%ED%95%98%EB%AA%A8%EB%8B%88%20700ml",
-      "fetchedAt": "2026-05-05T14:49:07+09:00",
+      "fetchedAt": "2026-05-06T01:25:14+09:00",
       "matched_via": "alias_en",
       "attempted_queries": [
         "히비키 하모니 700ml",
@@ -33,7 +33,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%9E%88%EB%B9%84%ED%82%A4%20%ED%95%98%EB%AA%A8%EB%8B%88%20700ml",
-      "fetchedAt": "2026-05-05T05:49:09.320Z",
+      "fetchedAt": "2026-05-05T16:25:15.807Z",
       "matched_via": "original",
       "attempted_queries": [
         "히비키 하모니 700ml",
@@ -51,7 +51,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%9E%88%EB%B9%84%ED%82%A4%20%ED%95%98%EB%AA%A8%EB%8B%88%20700ml",
-      "fetchedAt": "2026-05-05T05:49:09.320Z",
+      "fetchedAt": "2026-05-05T16:25:15.807Z",
       "matched_via": "original",
       "attempted_queries": [
         "히비키 하모니 700ml",
