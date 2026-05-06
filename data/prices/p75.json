@@ -3,15 +3,15 @@
   "productSlug": "gnc-mega-men",
   "categorySlug": "health",
   "query": "GNC 메가맨",
-  "fetchedAt": "2026-05-06T15:13:14+09:00",
-  "updatedAtLabel": "2026-05-06 15:13 기준",
+  "fetchedAt": "2026-05-07T01:30:57+09:00",
+  "updatedAtLabel": "2026-05-07 01:30 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-05-06T15:13:14+09:00",
+      "fetchedAt": "2026-05-07T01:30:57+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",
@@ -22,40 +22,40 @@
           "id": "shilla-050628000526",
           "title": "메가맨 180정 Mega Men (남성, 멀티, 종합, 비타민)",
           "brand": "GNC",
-          "priceKrw": 72785,
+          "priceKrw": 72084,
           "priceUsd": 49.02,
           "regularUsdPrice": 86,
           "discountRate": 43,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A9%94%EA%B0%80%EB%A7%A8%20180%EC%A0%95%20Mega%20Men%20(%EB%82%A8%EC%84%B1%2C%20%EB%A9%80%ED%8B%B0%2C%20%EC%A2%85%ED%95%A9%2C%20%EB%B9%84%ED%83%80%EB%AF%BC)",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/01/28/050628000526_20260128_14102462_12_050628000526_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-05-06T15:13:14+09:00"
+          "fetchedAt": "2026-05-07T01:30:57+09:00"
         },
         {
           "id": "shilla-890528000045",
           "title": "메가맨 임팩트(남성,멀티,종합,비타민)",
           "brand": "GNC",
-          "priceKrw": 35116,
+          "priceKrw": 34777,
           "priceUsd": 23.65,
           "regularUsdPrice": 43,
           "discountRate": 45,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A9%94%EA%B0%80%EB%A7%A8%20%EC%9E%84%ED%8C%A9%ED%8A%B8(%EB%82%A8%EC%84%B1%2C%EB%A9%80%ED%8B%B0%2C%EC%A2%85%ED%95%A9%2C%EB%B9%84%ED%83%80%EB%AF%BC)",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2024/10/30/890528000045_20241030_14543874_12_890528000045_1.JPG",
           "matchScore": 43,
-          "fetchedAt": "2026-05-06T15:13:14+09:00"
+          "fetchedAt": "2026-05-07T01:30:57+09:00"
         },
         {
           "id": "shilla-050628000498",
           "title": "메가맨 50+ 멀티비타민(남성, 50대 이상, 종합, 120정)",
           "brand": "GNC",
-          "priceKrw": 71092,
+          "priceKrw": 70408,
           "priceUsd": 47.88,
           "regularUsdPrice": 84,
           "discountRate": 43,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A9%94%EA%B0%80%EB%A7%A8%2050%2B%20%EB%A9%80%ED%8B%B0%EB%B9%84%ED%83%80%EB%AF%BC(%EB%82%A8%EC%84%B1%2C%2050%EB%8C%80%20%EC%9D%B4%EC%83%81%2C%20%EC%A2%85%ED%95%A9%2C%20120%EC%A0%95)",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/10/14/050628000498_20241014_17355857_12_050628000498_1.JPG",
           "matchScore": 43,
-          "fetchedAt": "2026-05-06T15:13:14+09:00"
+          "fetchedAt": "2026-05-07T01:30:57+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-05-06T06:13:16.682Z",
+      "fetchedAt": "2026-05-06T16:30:59.725Z",
       "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-05-06T06:13:16.682Z",
+      "fetchedAt": "2026-05-06T16:30:59.725Z",
       "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",

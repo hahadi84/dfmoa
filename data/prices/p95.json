@@ -3,15 +3,15 @@
   "productSlug": "braun-series-9-pro",
   "categorySlug": "electronics",
   "query": "브라운 시리즈 9 프로",
-  "fetchedAt": "2026-05-06T15:13:35+09:00",
-  "updatedAtLabel": "2026-05-06 15:13 기준",
+  "fetchedAt": "2026-05-07T01:31:18+09:00",
+  "updatedAtLabel": "2026-05-07 01:31 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-05-06T15:13:35+09:00",
+      "fetchedAt": "2026-05-07T01:31:18+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
@@ -22,14 +22,14 @@
           "id": "shilla-048129000438",
           "title": "시리즈 9 PRO+ 울트라 씬 9615s",
           "brand": "브라운",
-          "priceKrw": 318044,
+          "priceKrw": 314981,
           "priceUsd": 214.2,
           "regularUsdPrice": 315,
           "discountRate": 32,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20PRO%2B%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%EC%94%AC%209615s",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/12/11/048129000438_20251211_10054613_12_048129000438_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-05-06T15:13:35+09:00"
+          "fetchedAt": "2026-05-07T01:31:18+09:00"
         }
       ],
       "error": null
@@ -39,7 +39,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-05-06T06:13:36.875Z",
+      "fetchedAt": "2026-05-06T16:31:19.873Z",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
@@ -54,7 +54,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-05-06T06:13:36.875Z",
+      "fetchedAt": "2026-05-06T16:31:19.873Z",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
