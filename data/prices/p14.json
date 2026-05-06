@@ -3,15 +3,15 @@
   "productSlug": "tom-ford-oud-wood-50ml",
   "categorySlug": "perfume",
   "query": "톰포드 오드 우드 50ml",
-  "fetchedAt": "2026-05-06T01:23:25+09:00",
-  "updatedAtLabel": "2026-05-06 01:23 기준",
+  "fetchedAt": "2026-05-06T15:08:47+09:00",
+  "updatedAtLabel": "2026-05-06 15:08 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%86%B0%ED%8F%AC%EB%93%9C%20%EC%98%A4%EB%93%9C%20%EC%9A%B0%EB%93%9C%2050ml",
-      "fetchedAt": "2026-05-06T01:23:25+09:00",
+      "fetchedAt": "2026-05-06T15:08:47+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "톰포드 오드 우드 50ml",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%98%A4%EB%93%9C%20%EC%9A%B0%EB%93%9C%20EDP%2050ml",
           "imageUrl": "https://image2.shilladfs.com/files/product/2016/10/12/091213000050_20161012_17412083_12_091213000050_1.JPG",
           "matchScore": 107,
-          "fetchedAt": "2026-05-06T01:23:25+09:00"
+          "fetchedAt": "2026-05-06T15:08:47+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%86%B0%ED%8F%AC%EB%93%9C%20%EC%98%A4%EB%93%9C%20%EC%9A%B0%EB%93%9C%2050ml",
-      "fetchedAt": "2026-05-05T16:23:28.201Z",
+      "fetchedAt": "2026-05-06T06:08:48.865Z",
       "matched_via": "original",
       "attempted_queries": [
         "톰포드 오드 우드 50ml",
@@ -55,7 +55,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%86%B0%ED%8F%AC%EB%93%9C%20%EC%98%A4%EB%93%9C%20%EC%9A%B0%EB%93%9C%2050ml",
-      "fetchedAt": "2026-05-05T16:23:28.201Z",
+      "fetchedAt": "2026-05-06T06:08:48.865Z",
       "matched_via": "original",
       "attempted_queries": [
         "톰포드 오드 우드 50ml",
