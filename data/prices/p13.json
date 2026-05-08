@@ -3,15 +3,15 @@
   "productSlug": "dior-sauvage-edp-100ml",
   "categorySlug": "perfume",
   "query": "디올 소바쥬 오 드 퍼퓸 100ml",
-  "fetchedAt": "2026-05-08T01:48:08+09:00",
-  "updatedAtLabel": "2026-05-08 01:48 기준",
+  "fetchedAt": "2026-05-08T14:32:43+09:00",
+  "updatedAtLabel": "2026-05-08 14:32 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%94%94%EC%98%AC%20%EC%86%8C%EB%B0%94%EC%A5%AC%20%EC%98%A4%20%EB%93%9C%20%ED%8D%BC%ED%93%B8%20100ml",
-      "fetchedAt": "2026-05-08T01:48:08+09:00",
+      "fetchedAt": "2026-05-08T14:32:43+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "디올 소바쥬 오 드 퍼퓸 100ml",
@@ -37,7 +37,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=SAUVAGE%20EDP",
           "imageUrl": "https://image1.shilladfs.com/files/product/2018/06/19/037413000291_20180619_09461769_12_037413000291_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-05-08T01:48:08+09:00"
+          "fetchedAt": "2026-05-08T14:32:43+09:00"
         }
       ],
       "error": null
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%94%94%EC%98%AC%20%EC%86%8C%EB%B0%94%EC%A5%AC%20%EC%98%A4%20%EB%93%9C%20%ED%8D%BC%ED%93%B8%20100ml",
-      "fetchedAt": "2026-05-07T16:48:10.470Z",
+      "fetchedAt": "2026-05-08T05:32:45.846Z",
       "matched_via": "original",
       "attempted_queries": [
         "디올 소바쥬 오 드 퍼퓸 100ml",
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%94%94%EC%98%AC%20%EC%86%8C%EB%B0%94%EC%A5%AC%20%EC%98%A4%20%EB%93%9C%20%ED%8D%BC%ED%93%B8%20100ml",
-      "fetchedAt": "2026-05-07T16:48:10.470Z",
+      "fetchedAt": "2026-05-08T05:32:45.846Z",
       "matched_via": "original",
       "attempted_queries": [
         "디올 소바쥬 오 드 퍼퓸 100ml",
