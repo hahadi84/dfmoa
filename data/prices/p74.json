@@ -3,15 +3,15 @@
   "productSlug": "solgar-vitamin-d3",
   "categorySlug": "health",
   "query": "솔가 비타민 D3",
-  "fetchedAt": "2026-05-10T15:20:15+09:00",
-  "updatedAtLabel": "2026-05-10 15:20 기준",
+  "fetchedAt": "2026-05-11T00:56:32+09:00",
+  "updatedAtLabel": "2026-05-11 00:56 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BC%20D3",
-      "fetchedAt": "2026-05-10T15:20:15+09:00",
+      "fetchedAt": "2026-05-11T00:56:32+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "솔가 비타민 D3",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EA%B5%AC%EC%97%B0%EC%82%B0%20%EC%B9%BC%EC%8A%98%20%EC%9C%84%EB%93%9C%20%EB%B9%84%ED%83%80%EB%AF%BCD3%2090%EC%A0%95",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/02/25/286928000018_20250225_14475769_12_286928000018_1.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-05-10T15:20:15+09:00"
+          "fetchedAt": "2026-05-11T00:56:32+09:00"
         },
         {
           "id": "shilla-286928000007",
@@ -42,7 +42,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/02/25/286928000007_20250225_14485448_12_286928000007_1.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-05-10T15:20:15+09:00"
+          "fetchedAt": "2026-05-11T00:56:32+09:00"
         }
       ],
       "error": null
@@ -52,7 +52,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BC%20D3",
-      "fetchedAt": "2026-05-10T06:20:16.689Z",
+      "fetchedAt": "2026-05-10T15:56:34.298Z",
       "matched_via": "original",
       "attempted_queries": [
         "솔가 비타민 D3",
@@ -67,7 +67,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BC%20D3",
-      "fetchedAt": "2026-05-10T06:20:16.689Z",
+      "fetchedAt": "2026-05-10T15:56:34.298Z",
       "matched_via": "original",
       "attempted_queries": [
         "솔가 비타민 D3",
