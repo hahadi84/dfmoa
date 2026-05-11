@@ -3,15 +3,15 @@
   "productSlug": "glenmorangie-original-10-700ml",
   "categorySlug": "liquor",
   "query": "글렌모렌지 오리지널 10년 700ml",
-  "fetchedAt": "2026-05-11T15:45:31+09:00",
-  "updatedAtLabel": "2026-05-11 15:45 기준",
+  "fetchedAt": "2026-05-12T02:26:30+09:00",
+  "updatedAtLabel": "2026-05-12 02:26 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%EB%AA%A8%EB%A0%8C%EC%A7%80%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%2010%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-11T15:45:31+09:00",
+      "fetchedAt": "2026-05-12T02:26:30+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "글렌모렌지 오리지널 10년 700ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B8%80%EB%A0%8C%EB%AA%A8%EB%A0%8C%EC%A7%80%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%2010%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-11T06:45:32.990Z",
+      "fetchedAt": "2026-05-11T17:26:32.204Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌모렌지 오리지널 10년 700ml",
@@ -41,7 +41,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B8%80%EB%A0%8C%EB%AA%A8%EB%A0%8C%EC%A7%80%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%2010%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-11T06:45:32.990Z",
+      "fetchedAt": "2026-05-11T17:26:32.204Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌모렌지 오리지널 10년 700ml",
