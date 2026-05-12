@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-12T06:23:09.660Z",
+  "generatedAt": "2026-05-12T17:14:12.508Z",
   "attemptedCount": 44,
-  "failureCount": 4,
+  "failureCount": 5,
   "failures": [
     {
       "productId": "p21",
@@ -12,6 +12,12 @@
     {
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p26",
+      "productSlug": "johnnie-walker-blue-label-750ml",
       "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

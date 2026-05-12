@@ -3,15 +3,15 @@
   "productSlug": "royal-salute-21-700ml",
   "categorySlug": "liquor",
   "query": "로얄살루트 21년 700ml",
-  "fetchedAt": "2026-05-12T15:20:49+09:00",
-  "updatedAtLabel": "2026-05-12 15:20 기준",
+  "fetchedAt": "2026-05-13T02:11:56+09:00",
+  "updatedAtLabel": "2026-05-13 02:11 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-12T15:20:49+09:00",
+      "fetchedAt": "2026-05-13T02:11:56+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",
@@ -23,40 +23,40 @@
           "id": "shilla-110231000035",
           "title": "로얄살루트 21년 빈티지 블렌디드 스카치 위스키 700ml",
           "brand": "로얄살루트",
-          "priceKrw": 293860,
+          "priceKrw": 295263,
           "priceUsd": 200.45,
           "regularUsdPrice": 211,
           "discountRate": 5,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20%EB%B9%88%ED%8B%B0%EC%A7%80%20%EB%B8%94%EB%A0%8C%EB%94%94%EB%93%9C%20%EC%8A%A4%EC%B9%B4%EC%B9%98%20%EC%9C%84%EC%8A%A4%ED%82%A4%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/12/31/110231000035_20241231_14340679_12_110231000035_1.JPG",
           "matchScore": 115,
-          "fetchedAt": "2026-05-12T15:20:49+09:00"
+          "fetchedAt": "2026-05-13T02:11:56+09:00"
         },
         {
           "id": "shilla-110231000020",
           "title": "로얄살루트 21년 700ml",
           "brand": "로얄살루트",
-          "priceKrw": 245115,
+          "priceKrw": 246286,
           "priceUsd": 167.2,
           "regularUsdPrice": 176,
           "discountRate": 5,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/02/27/110231000020_20250227_18532258_12_110231000020_1.JPG",
           "matchScore": 111,
-          "fetchedAt": "2026-05-12T15:20:49+09:00"
+          "fetchedAt": "2026-05-13T02:11:56+09:00"
         },
         {
           "id": "shilla-110231000044",
           "title": "로얄살루트 21년 루나 뉴이어 2026 700ml",
           "brand": "로얄살루트",
-          "priceKrw": 245115,
+          "priceKrw": 246286,
           "priceUsd": 167.2,
           "regularUsdPrice": 176,
           "discountRate": 5,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20%EB%A3%A8%EB%82%98%20%EB%89%B4%EC%9D%B4%EC%96%B4%202026%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/04/110231000044_20251204_17490052_12_110231000044_1.JPG",
           "matchScore": 111,
-          "fetchedAt": "2026-05-12T15:20:49+09:00"
+          "fetchedAt": "2026-05-13T02:11:56+09:00"
         }
       ],
       "error": null
@@ -66,7 +66,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-12T06:20:51.464Z",
+      "fetchedAt": "2026-05-12T17:11:57.985Z",
       "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",
@@ -81,7 +81,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-12T06:20:51.464Z",
+      "fetchedAt": "2026-05-12T17:11:57.985Z",
       "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",
