@@ -3,15 +3,15 @@
   "productSlug": "kiehls-ultra-facial-cream-125ml",
   "categorySlug": "beauty",
   "query": "키엘 울트라 훼이셜 크림 125ml",
-  "fetchedAt": "2026-05-13T02:09:41+09:00",
-  "updatedAtLabel": "2026-05-13 02:09 기준",
+  "fetchedAt": "2026-05-13T15:29:57+09:00",
+  "updatedAtLabel": "2026-05-13 15:29 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%82%A4%EC%97%98%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC%20125ml",
-      "fetchedAt": "2026-05-13T02:09:41+09:00",
+      "fetchedAt": "2026-05-13T15:29:57+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "키엘 울트라 훼이셜 크림 125ml",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%82%A4%EC%97%98%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC%20125ML%2B%20%EB%A6%AC%ED%95%84150ML",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/11/19/053810000496_20251119_09080905_12_053810000496_1.JPG",
           "matchScore": 99,
-          "fetchedAt": "2026-05-13T02:09:41+09:00"
+          "fetchedAt": "2026-05-13T15:29:57+09:00"
         },
         {
           "id": "shilla-053810000466",
@@ -43,7 +43,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=ULTRA%20FACIAL%20OIL-FREE%20GEL%20CREAM",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/01/053810000453_20251201_12522325_12_053810000453_1.JPG",
           "matchScore": 67,
-          "fetchedAt": "2026-05-13T02:09:41+09:00"
+          "fetchedAt": "2026-05-13T15:29:57+09:00"
         },
         {
           "id": "shilla-053810000378",
@@ -56,7 +56,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/01/053810000378_20251201_12591180_12_053810000378_54.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-05-13T02:09:41+09:00"
+          "fetchedAt": "2026-05-13T15:29:57+09:00"
         }
       ],
       "error": null
@@ -66,7 +66,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%82%A4%EC%97%98%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC%20125ml",
-      "fetchedAt": "2026-05-12T17:09:43.908Z",
+      "fetchedAt": "2026-05-13T06:30:00.254Z",
       "matched_via": "original",
       "attempted_queries": [
         "키엘 울트라 훼이셜 크림 125ml",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%82%A4%EC%97%98%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC%20125ml",
-      "fetchedAt": "2026-05-12T17:09:43.908Z",
+      "fetchedAt": "2026-05-13T06:30:00.254Z",
       "matched_via": "original",
       "attempted_queries": [
         "키엘 울트라 훼이셜 크림 125ml",
