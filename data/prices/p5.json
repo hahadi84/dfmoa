@@ -3,15 +3,15 @@
   "productSlug": "glenfiddich-15-700ml",
   "categorySlug": "liquor",
   "query": "글렌피딕 15년 700ml",
-  "fetchedAt": "2026-05-14T15:29:02+09:00",
-  "updatedAtLabel": "2026-05-14 15:29 기준",
+  "fetchedAt": "2026-05-15T02:01:09+09:00",
+  "updatedAtLabel": "2026-05-15 02:01 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-14T15:29:02+09:00",
+      "fetchedAt": "2026-05-15T02:01:09+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
@@ -23,14 +23,14 @@
           "id": "shilla-082331000041",
           "title": "글렌피딕 15년 Vat3 Perpetual 700ml",
           "brand": "글렌피딕",
-          "priceKrw": 76412,
+          "priceKrw": 76968,
           "priceUsd": 51.48,
           "regularUsdPrice": 99,
           "discountRate": 48,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20Vat3%20Perpetual%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2023/04/05/082331000041_20230405_14143526_12_082331000041_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-05-14T15:29:02+09:00"
+          "fetchedAt": "2026-05-15T02:01:09+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-14T06:29:03.703Z",
+      "fetchedAt": "2026-05-14T17:01:11.266Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
@@ -55,7 +55,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-05-14T06:29:03.703Z",
+      "fetchedAt": "2026-05-14T17:01:11.266Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",

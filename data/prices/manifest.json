@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-14T06:33:01.176Z",
-  "generatedAtKst": "2026-05-14 15:33:01",
+  "generatedAt": "2026-05-14T17:05:06.273Z",
+  "generatedAtKst": "2026-05-15 02:05:06",
   "requiredTotal": 40,
   "selectedCount": 40,
   "quotas": {
@@ -64,8 +64,8 @@
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:26:39+09:00",
-      "priceKrw": 423026,
+      "fetchedAt": "2026-05-15T01:58:44+09:00",
+      "priceKrw": 426104,
       "priceUsd": 285
     },
     {
@@ -73,8 +73,8 @@
       "productSlug": "jo-malone-english-pear-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:26:47+09:00",
-      "priceKrw": 128273,
+      "fetchedAt": "2026-05-15T01:58:52+09:00",
+      "priceKrw": 129207,
       "priceUsd": 86.42
     },
     {
@@ -82,8 +82,8 @@
       "productSlug": "diptyque-do-son-75ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:00+09:00",
-      "priceKrw": 187022,
+      "fetchedAt": "2026-05-15T01:59:04+09:00",
+      "priceKrw": 188383,
       "priceUsd": 126
     },
     {
@@ -91,8 +91,8 @@
       "productSlug": "byredo-blanche-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:07+09:00",
-      "priceKrw": 315443,
+      "fetchedAt": "2026-05-15T01:59:11+09:00",
+      "priceKrw": 317739,
       "priceUsd": 212.52
     },
     {
@@ -100,8 +100,8 @@
       "productSlug": "le-labo-santal-33-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:14+09:00",
-      "priceKrw": 272146,
+      "fetchedAt": "2026-05-15T01:59:17+09:00",
+      "priceKrw": 274127,
       "priceUsd": 183.35
     },
     {
@@ -109,8 +109,8 @@
       "productSlug": "bleu-de-chanel-edp-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:21+09:00",
-      "priceKrw": 227098,
+      "fetchedAt": "2026-05-15T01:59:24+09:00",
+      "priceKrw": 228750,
       "priceUsd": 153
     },
     {
@@ -118,8 +118,8 @@
       "productSlug": "dior-sauvage-edp-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:28+09:00",
-      "priceKrw": 138188,
+      "fetchedAt": "2026-05-15T01:59:31+09:00",
+      "priceKrw": 139194,
       "priceUsd": 93.1
     },
     {
@@ -127,8 +127,8 @@
       "productSlug": "tom-ford-oud-wood-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:35+09:00",
-      "priceKrw": 233332,
+      "fetchedAt": "2026-05-15T01:59:39+09:00",
+      "priceKrw": 235030,
       "priceUsd": 157.2
     },
     {
@@ -136,8 +136,8 @@
       "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:41+09:00",
-      "priceKrw": 124236,
+      "fetchedAt": "2026-05-15T01:59:47+09:00",
+      "priceKrw": 125140,
       "priceUsd": 83.7
     },
     {
@@ -145,8 +145,8 @@
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:48+09:00",
-      "priceKrw": 172372,
+      "fetchedAt": "2026-05-15T01:59:55+09:00",
+      "priceKrw": 173626,
       "priceUsd": 116.13
     },
     {
@@ -154,8 +154,8 @@
       "productSlug": "sk2-pitera-essence-230ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:27:56+09:00",
-      "priceKrw": 189575,
+      "fetchedAt": "2026-05-15T02:00:01+09:00",
+      "priceKrw": 190954,
       "priceUsd": 127.72
     },
     {
@@ -163,8 +163,8 @@
       "productSlug": "estee-lauder-anr-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:28:03+09:00",
-      "priceKrw": 150642,
+      "fetchedAt": "2026-05-15T02:00:09+09:00",
+      "priceKrw": 151738,
       "priceUsd": 101.49
     },
     {
@@ -172,8 +172,8 @@
       "productSlug": "lancome-genifique-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:28:10+09:00",
-      "priceKrw": 307369,
+      "fetchedAt": "2026-05-15T02:00:16+09:00",
+      "priceKrw": 309605,
       "priceUsd": 207.08
     },
     {
@@ -181,8 +181,8 @@
       "productSlug": "hera-black-cushion-15g",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:28:17+09:00",
-      "priceKrw": 22858,
+      "fetchedAt": "2026-05-15T02:00:23+09:00",
+      "priceKrw": 23025,
       "priceUsd": 15.4
     },
     {
@@ -190,8 +190,8 @@
       "productSlug": "kiehls-ultra-facial-cream-125ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:28:24+09:00",
-      "priceKrw": 103797,
+      "fetchedAt": "2026-05-15T02:00:30+09:00",
+      "priceKrw": 104552,
       "priceUsd": 69.93
     },
     {
@@ -199,17 +199,17 @@
       "productSlug": "shiseido-ultimune-75ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:28:42+09:00",
-      "priceKrw": 301105,
-      "priceUsd": 202.86
+      "fetchedAt": "2026-05-15T02:00:49+09:00",
+      "priceKrw": 284039,
+      "priceUsd": 189.98
     },
     {
       "productId": "p23",
       "productSlug": "biotherm-life-plankton-125ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:28:48+09:00",
-      "priceKrw": 56136,
+      "fetchedAt": "2026-05-15T02:00:55+09:00",
+      "priceKrw": 56545,
       "priceUsd": 37.82
     },
     {
@@ -217,8 +217,8 @@
       "productSlug": "aesop-resurrection-hand-balm-75ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:28:55+09:00",
-      "priceKrw": 35252,
+      "fetchedAt": "2026-05-15T02:01:02+09:00",
+      "priceKrw": 35509,
       "priceUsd": 23.75
     },
     {
@@ -226,8 +226,8 @@
       "productSlug": "glenfiddich-15-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:29:02+09:00",
-      "priceKrw": 76412,
+      "fetchedAt": "2026-05-15T02:01:09+09:00",
+      "priceKrw": 76968,
       "priceUsd": 51.48
     },
     {
@@ -235,8 +235,8 @@
       "productSlug": "ballantines-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:29:29+09:00",
-      "priceKrw": 239714,
+      "fetchedAt": "2026-05-15T02:01:37+09:00",
+      "priceKrw": 241459,
       "priceUsd": 161.5
     },
     {
@@ -244,8 +244,8 @@
       "productSlug": "macallan-12-double-cask-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:30:09+09:00",
-      "priceKrw": 117037,
+      "fetchedAt": "2026-05-15T02:02:15+09:00",
+      "priceKrw": 117889,
       "priceUsd": 78.85
     },
     {
@@ -253,8 +253,8 @@
       "productSlug": "royal-salute-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:30:41+09:00",
-      "priceKrw": 297528,
+      "fetchedAt": "2026-05-15T02:02:45+09:00",
+      "priceKrw": 299693,
       "priceUsd": 200.45
     },
     {
@@ -262,8 +262,8 @@
       "productSlug": "hennessy-xo-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:30:58+09:00",
-      "priceKrw": 1831700,
+      "fetchedAt": "2026-05-15T02:03:02+09:00",
+      "priceKrw": 1845028,
       "priceUsd": 1234.05
     },
     {
@@ -271,8 +271,8 @@
       "productSlug": "don-julio-1942-750ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:04+09:00",
-      "priceKrw": 180788,
+      "fetchedAt": "2026-05-15T02:03:09+09:00",
+      "priceKrw": 182103,
       "priceUsd": 121.8
     },
     {
@@ -280,8 +280,8 @@
       "productSlug": "tumi-alpha-bravo-backpack",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:11+09:00",
-      "priceKrw": 699996,
+      "fetchedAt": "2026-05-15T02:03:16+09:00",
+      "priceKrw": 705089,
       "priceUsd": 471.6
     },
     {
@@ -289,8 +289,8 @@
       "productSlug": "coach-tabby-shoulder-bag",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:19+09:00",
-      "priceKrw": 801522,
+      "fetchedAt": "2026-05-15T02:03:24+09:00",
+      "priceKrw": 807354,
       "priceUsd": 540
     },
     {
@@ -298,26 +298,26 @@
       "productSlug": "samsonite-evoa-spinner",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:28+09:00",
-      "priceKrw": 279286,
-      "priceUsd": 188.16
+      "fetchedAt": "2026-05-15T02:03:32+09:00",
+      "priceKrw": 271271,
+      "priceUsd": 181.44
     },
     {
       "productId": "p61",
       "productSlug": "swarovski-tennis-bracelet",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:35+09:00",
-      "priceKrw": 4829318,
-      "priceUsd": 3253.6
+      "fetchedAt": "2026-05-15T02:03:39+09:00",
+      "priceKrw": 4239027,
+      "priceUsd": 2835.28
     },
     {
       "productId": "p62",
       "productSlug": "pandora-moments-bracelet",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:41+09:00",
-      "priceKrw": 70356,
+      "fetchedAt": "2026-05-15T02:03:46+09:00",
+      "priceKrw": 70868,
       "priceUsd": 47.4
     },
     {
@@ -325,8 +325,8 @@
       "productSlug": "jestina-tiara-necklace",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:51+09:00",
-      "priceKrw": 150656,
+      "fetchedAt": "2026-05-15T02:03:54+09:00",
+      "priceKrw": 151753,
       "priceUsd": 101.5
     },
     {
@@ -334,8 +334,8 @@
       "productSlug": "stonehenge-silver-necklace",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:31:57+09:00",
-      "priceKrw": 137520,
+      "fetchedAt": "2026-05-15T02:04:01+09:00",
+      "priceKrw": 138521,
       "priceUsd": 92.65
     },
     {
@@ -343,26 +343,26 @@
       "productSlug": "swarovski-matrix-earrings",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:04+09:00",
-      "priceKrw": 154812,
-      "priceUsd": 104.3
+      "fetchedAt": "2026-05-15T02:04:08+09:00",
+      "priceKrw": 135890,
+      "priceUsd": 90.89
     },
     {
       "productId": "p67",
       "productSlug": "swarovski-swan-necklace",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:12+09:00",
-      "priceKrw": 167281,
-      "priceUsd": 112.7
+      "fetchedAt": "2026-05-15T02:04:16+09:00",
+      "priceKrw": 146834,
+      "priceUsd": 98.21
     },
     {
       "productId": "p68",
       "productSlug": "pandora-sparkling-charm",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:20+09:00",
-      "priceKrw": 95292,
+      "fetchedAt": "2026-05-15T02:04:23+09:00",
+      "priceKrw": 95985,
       "priceUsd": 64.2
     },
     {
@@ -370,8 +370,8 @@
       "productSlug": "solgar-vitamin-d3",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:27+09:00",
-      "priceKrw": 22636,
+      "fetchedAt": "2026-05-15T02:04:31+09:00",
+      "priceKrw": 22800,
       "priceUsd": 15.25
     },
     {
@@ -379,8 +379,8 @@
       "productSlug": "gnc-mega-men",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:34+09:00",
-      "priceKrw": 72760,
+      "fetchedAt": "2026-05-15T02:04:37+09:00",
+      "priceKrw": 73290,
       "priceUsd": 49.02
     },
     {
@@ -388,8 +388,8 @@
       "productSlug": "korea-eundan-vitamin-c",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:41+09:00",
-      "priceKrw": 10123,
+      "fetchedAt": "2026-05-15T02:04:44+09:00",
+      "priceKrw": 10197,
       "priceUsd": 6.82
     },
     {
@@ -397,8 +397,8 @@
       "productSlug": "dyson-supersonic",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:47+09:00",
-      "priceKrw": 456140,
+      "fetchedAt": "2026-05-15T02:04:51+09:00",
+      "priceKrw": 459459,
       "priceUsd": 307.31
     },
     {
@@ -406,8 +406,8 @@
       "productSlug": "braun-series-9-pro",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-05-14T15:32:54+09:00",
-      "priceKrw": 317937,
+      "fetchedAt": "2026-05-15T02:04:58+09:00",
+      "priceKrw": 320250,
       "priceUsd": 214.2
     },
     {
