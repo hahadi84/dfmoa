@@ -3,15 +3,15 @@
   "productSlug": "aesop-resurrection-hand-balm-75ml",
   "categorySlug": "beauty",
   "query": "이솝 레저렉션 핸드밤 75ml",
-  "fetchedAt": "2026-05-15T15:37:56+09:00",
-  "updatedAtLabel": "2026-05-15 15:37 기준",
+  "fetchedAt": "2026-05-16T01:51:28+09:00",
+  "updatedAtLabel": "2026-05-16 01:51 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9D%B4%EC%86%9D%20%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%ED%95%B8%EB%93%9C%EB%B0%A4",
-      "fetchedAt": "2026-05-15T15:37:56+09:00",
+      "fetchedAt": "2026-05-16T01:51:28+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "이솝 레저렉션 핸드밤",
@@ -22,27 +22,27 @@
           "id": "shilla-098112000168",
           "title": "레저렉션 아로마틱 핸드 밤 75mL",
           "brand": "이솝",
-          "priceKrw": 35509,
+          "priceKrw": 35430,
           "priceUsd": 23.75,
           "regularUsdPrice": 25,
           "discountRate": 5,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%EC%95%84%EB%A1%9C%EB%A7%88%ED%8B%B1%20%ED%95%B8%EB%93%9C%20%EB%B0%A4%2075mL",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/09/10/098112000168_20250910_09220929_12_098112000168_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-05-15T15:37:56+09:00"
+          "fetchedAt": "2026-05-16T01:51:28+09:00"
         },
         {
           "id": "shilla-098112000180",
           "title": "레저렉션 아로마틱 핸드 밤 75mL",
           "brand": "이솝",
-          "priceKrw": 35509,
+          "priceKrw": 35430,
           "priceUsd": 23.75,
           "regularUsdPrice": 25,
           "discountRate": 5,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%EC%95%84%EB%A1%9C%EB%A7%88%ED%8B%B1%20%ED%95%B8%EB%93%9C%20%EB%B0%A4%2075mL",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/05/11/098112000180_20260511_08312985_12_098112000180_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-05-15T15:37:56+09:00"
+          "fetchedAt": "2026-05-16T01:51:28+09:00"
         }
       ],
       "error": null
@@ -52,7 +52,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%9D%B4%EC%86%9D%20%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%ED%95%B8%EB%93%9C%EB%B0%A4%2075ml",
-      "fetchedAt": "2026-05-15T06:37:58.073Z",
+      "fetchedAt": "2026-05-15T16:51:29.898Z",
       "matched_via": "original",
       "attempted_queries": [
         "이솝 레저렉션 핸드밤 75ml",
@@ -67,7 +67,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%9D%B4%EC%86%9D%20%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%ED%95%B8%EB%93%9C%EB%B0%A4%2075ml",
-      "fetchedAt": "2026-05-15T06:37:58.073Z",
+      "fetchedAt": "2026-05-15T16:51:29.898Z",
       "matched_via": "original",
       "attempted_queries": [
         "이솝 레저렉션 핸드밤 75ml",

@@ -3,15 +3,15 @@
   "productSlug": "lancome-genifique-100ml",
   "categorySlug": "beauty",
   "query": "랑콤 제니피끄 세럼 100ml",
-  "fetchedAt": "2026-05-15T15:37:11+09:00",
-  "updatedAtLabel": "2026-05-15 15:37 기준",
+  "fetchedAt": "2026-05-16T01:50:43+09:00",
+  "updatedAtLabel": "2026-05-16 01:50 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-05-15T15:37:11+09:00",
+      "fetchedAt": "2026-05-16T01:50:43+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
@@ -23,40 +23,40 @@
           "id": "shilla-002010000653",
           "title": "제니피끄 얼티미트 세럼 100ML*2",
           "brand": "랑콤",
-          "priceKrw": 309605,
+          "priceKrw": 308922,
           "priceUsd": 207.08,
           "regularUsdPrice": 334,
           "discountRate": 38,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%96%BC%ED%8B%B0%EB%AF%B8%ED%8A%B8%20%EC%84%B8%EB%9F%BC%20100ML*2",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/01/24/002010000653_20250124_14274314_12_002010000653_1.JPG",
           "matchScore": 99,
-          "fetchedAt": "2026-05-15T15:37:11+09:00"
+          "fetchedAt": "2026-05-16T01:50:43+09:00"
         },
         {
           "id": "shilla-002010000651",
           "title": "제니피끄 얼티미트 세럼 100ML",
           "brand": "랑콤",
-          "priceKrw": 173192,
+          "priceKrw": 172810,
           "priceUsd": 115.84,
           "regularUsdPrice": 181,
           "discountRate": 36,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%96%BC%ED%8B%B0%EB%AF%B8%ED%8A%B8%20%EC%84%B8%EB%9F%BC%20100ML",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/03/09/002010000651_20260309_15341787_12_002010000651_1.JPG",
           "matchScore": 99,
-          "fetchedAt": "2026-05-15T15:37:11+09:00"
+          "fetchedAt": "2026-05-16T01:50:43+09:00"
         },
         {
           "id": "shilla-002010000669",
           "title": "제니피끄 얼티미트 세럼 100ML & 클라리피끄 더블 트리트먼트 에센스 250ml",
           "brand": "랑콤",
-          "priceKrw": 290573,
+          "priceKrw": 289931,
           "priceUsd": 194.35,
           "regularUsdPrice": 299,
           "discountRate": 35,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%96%BC%ED%8B%B0%EB%AF%B8%ED%8A%B8%20%EC%84%B8%EB%9F%BC%20100ML%20%26%20%ED%81%B4%EB%9D%BC%EB%A6%AC%ED%94%BC%EB%81%84%20%EB%8D%94%EB%B8%94%20%ED%8A%B8%EB%A6%AC%ED%8A%B8%EB%A8%BC%ED%8A%B8%20%EC%97%90%EC%84%BC%EC%8A%A4%20250ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/07/25/002010000669_20250725_16501832_12_002010000669_1.JPG",
           "matchScore": 99,
-          "fetchedAt": "2026-05-15T15:37:11+09:00"
+          "fetchedAt": "2026-05-16T01:50:43+09:00"
         }
       ],
       "error": null
@@ -66,7 +66,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-05-15T06:37:13.296Z",
+      "fetchedAt": "2026-05-15T16:50:45.107Z",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
@@ -81,7 +81,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-05-15T06:37:13.296Z",
+      "fetchedAt": "2026-05-15T16:50:45.107Z",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
