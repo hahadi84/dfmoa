@@ -3,15 +3,15 @@
   "productSlug": "johnnie-walker-blue-label-750ml",
   "categorySlug": "liquor",
   "query": "조니워커 블루라벨 750ml",
-  "fetchedAt": "2026-05-16T15:00:02+09:00",
-  "updatedAtLabel": "2026-05-16 15:00 기준",
+  "fetchedAt": "2026-05-17T00:58:54+09:00",
+  "updatedAtLabel": "2026-05-17 00:58 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-05-16T15:00:02+09:00",
+      "fetchedAt": "2026-05-17T00:58:54+09:00",
       "matched_via": "alias_en",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",
@@ -33,7 +33,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-05-16T06:00:04.224Z",
+      "fetchedAt": "2026-05-16T15:58:56.133Z",
       "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",
@@ -49,7 +49,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-05-16T06:00:04.224Z",
+      "fetchedAt": "2026-05-16T15:58:56.133Z",
       "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",

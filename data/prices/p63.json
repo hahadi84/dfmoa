@@ -3,15 +3,15 @@
   "productSlug": "jestina-tiara-necklace",
   "categorySlug": "jewelry",
   "query": "제이에스티나 티아라 목걸이",
-  "fetchedAt": "2026-05-16T15:01:50+09:00",
-  "updatedAtLabel": "2026-05-16 15:01 기준",
+  "fetchedAt": "2026-05-17T01:00:43+09:00",
+  "updatedAtLabel": "2026-05-17 01:00 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-05-16T15:01:50+09:00",
+      "fetchedAt": "2026-05-17T01:00:43+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "제이에스티나 티아라 목걸이",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Basic%20Tiara%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/04/28/861823000013_20250428_16553322_12_861823000013_2.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-05-16T15:01:50+09:00"
+          "fetchedAt": "2026-05-17T01:00:43+09:00"
         },
         {
           "id": "shilla-861823000707",
@@ -42,7 +42,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=TIARA%20%ED%82%A4%EC%A6%88%20%EB%AF%B8%EC%95%84%EB%B0%A9%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%ED%83%84%EC%83%9D%EC%84%9D%20%EB%AA%A9%EA%B1%B8%EC%9D%B4%20JJK1NQ2BF758SC340",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2024/12/06/861823000707_20241206_17520217_12_861823000707_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-05-16T15:01:50+09:00"
+          "fetchedAt": "2026-05-17T01:00:43+09:00"
         },
         {
           "id": "shilla-861823000307",
@@ -55,7 +55,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Delicate%20Tiara%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/03/26/861823000307_20240326_16155976_12_861823000307_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-05-16T15:01:50+09:00"
+          "fetchedAt": "2026-05-17T01:00:43+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-05-16T06:01:52.524Z",
+      "fetchedAt": "2026-05-16T16:00:44.667Z",
       "matched_via": "original",
       "attempted_queries": [
         "제이에스티나 티아라 목걸이",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-05-16T06:01:52.524Z",
+      "fetchedAt": "2026-05-16T16:00:44.667Z",
       "matched_via": "original",
       "attempted_queries": [
         "제이에스티나 티아라 목걸이",
