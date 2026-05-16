@@ -3,16 +3,16 @@
   "productSlug": "hera-black-cushion-15g",
   "categorySlug": "beauty",
   "query": "헤라 블랙 쿠션 15g",
-  "fetchedAt": "2026-05-16T01:50:50+09:00",
-  "updatedAtLabel": "2026-05-16 01:50 기준",
+  "fetchedAt": "2026-05-16T14:58:28+09:00",
+  "updatedAtLabel": "2026-05-16 14:58 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g",
-      "fetchedAt": "2026-05-16T01:50:50+09:00",
-      "matched_via": "original",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%9D%BC%EB%B8%94%EB%9E%99%EC%BF%A0%EC%85%9815g",
+      "fetchedAt": "2026-05-16T14:58:28+09:00",
+      "matched_via": "alias_nospace",
       "attempted_queries": [
         "헤라 블랙 쿠션 15g",
         "헤라블랙쿠션15g",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%20%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98%2015g%20%EB%A6%AC%ED%95%84",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2024/09/06/670711001922_20240906_10522105_12_670711001922_1.JPG",
           "matchScore": 95,
-          "fetchedAt": "2026-05-16T01:50:50+09:00"
+          "fetchedAt": "2026-05-16T14:58:28+09:00"
         },
         {
           "id": "shilla-670711001914",
@@ -43,7 +43,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%20%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98%2000P1%2015g",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2024/08/29/670711001914_20240829_12162663_12_670711001914_1.JPG",
           "matchScore": 95,
-          "fetchedAt": "2026-05-16T01:50:50+09:00"
+          "fetchedAt": "2026-05-16T14:58:28+09:00"
         },
         {
           "id": "shilla-670711001915",
@@ -56,7 +56,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%20%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98%20(%EB%B3%B8%ED%92%88%2B%EB%A6%AC%ED%95%84)",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2024/09/09/670711001915_20240909_14390731_12_670711001915_1.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-05-16T01:50:50+09:00"
+          "fetchedAt": "2026-05-16T14:58:28+09:00"
         }
       ],
       "error": null
@@ -66,7 +66,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g",
-      "fetchedAt": "2026-05-15T16:50:52.235Z",
+      "fetchedAt": "2026-05-16T05:58:30.344Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤라 블랙 쿠션 15g",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g",
-      "fetchedAt": "2026-05-15T16:50:52.235Z",
+      "fetchedAt": "2026-05-16T05:58:30.344Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤라 블랙 쿠션 15g",
