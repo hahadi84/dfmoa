@@ -3,15 +3,15 @@
   "productSlug": "samsonite-evoa-spinner",
   "categorySlug": "fashion",
   "query": "쌤소나이트 에보아 캐리어",
-  "fetchedAt": "2026-05-17T01:00:22+09:00",
-  "updatedAtLabel": "2026-05-17 01:00 기준",
+  "fetchedAt": "2026-05-17T15:29:50+09:00",
+  "updatedAtLabel": "2026-05-17 15:29 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
-      "fetchedAt": "2026-05-17T01:00:22+09:00",
+      "fetchedAt": "2026-05-17T15:29:50+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "쌤소나이트 에보아 캐리어",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=EVOA%20Z%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%ED%8F%AC%EC%BC%93%2020%EC%9D%B8%EC%B9%98%20%EA%B8%B0%EB%82%B4%EC%9A%A9_%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/03/051214003879_20251203_15195903_12_051214003879_2.JPG",
           "matchScore": 67,
-          "fetchedAt": "2026-05-17T01:00:22+09:00"
+          "fetchedAt": "2026-05-17T15:29:50+09:00"
         },
         {
           "id": "shilla-051214003878",
@@ -42,7 +42,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=EVOA%20Z%20%EC%97%90%EB%B3%B4%EC%95%84%20%EB%A1%A4%EB%A7%81%20%ED%86%A0%ED%8A%B8%20%EA%B8%B0%EB%82%B4%EC%9A%A9_%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/12/03/051214003878_20251203_15194675_12_051214003878_2.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-05-17T01:00:22+09:00"
+          "fetchedAt": "2026-05-17T15:29:50+09:00"
         }
       ],
       "error": null
@@ -52,7 +52,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
-      "fetchedAt": "2026-05-16T16:00:23.830Z",
+      "fetchedAt": "2026-05-17T06:29:53.027Z",
       "matched_via": "original",
       "attempted_queries": [
         "쌤소나이트 에보아 캐리어",
@@ -67,7 +67,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
-      "fetchedAt": "2026-05-16T16:00:23.830Z",
+      "fetchedAt": "2026-05-17T06:29:53.027Z",
       "matched_via": "original",
       "attempted_queries": [
         "쌤소나이트 에보아 캐리어",

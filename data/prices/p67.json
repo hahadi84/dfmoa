@@ -3,15 +3,15 @@
   "productSlug": "swarovski-swan-necklace",
   "categorySlug": "jewelry",
   "query": "스와로브스키 스완 목걸이",
-  "fetchedAt": "2026-05-17T01:01:07+09:00",
-  "updatedAtLabel": "2026-05-17 01:01 기준",
+  "fetchedAt": "2026-05-17T15:30:36+09:00",
+  "updatedAtLabel": "2026-05-17 15:30 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EC%8A%A4%EC%99%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-05-17T01:01:07+09:00",
+      "fetchedAt": "2026-05-17T15:30:36+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 스완 목걸이",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=SWAN%3ANECKLACE%20CZMO%2FROS",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2023/09/21/010723010785_20230921_17252551_12_010723010785_1.JPG",
           "matchScore": 67,
-          "fetchedAt": "2026-05-17T01:01:07+09:00"
+          "fetchedAt": "2026-05-17T15:30:36+09:00"
         },
         {
           "id": "shilla-010723012141",
@@ -42,7 +42,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=SWAN%3ANECKLACE%20CZWH%2FRHS",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2023/09/21/010723012141_20230921_17243744_12_010723012141_1.JPG",
           "matchScore": 67,
-          "fetchedAt": "2026-05-17T01:01:07+09:00"
+          "fetchedAt": "2026-05-17T15:30:36+09:00"
         },
         {
           "id": "shilla-010723012140",
@@ -55,7 +55,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=SWAN%3ANECKLACE%20ANNI%20CZFU%2FRHS",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2023/09/21/010723012140_20230921_17245263_12_010723012140_1.JPG",
           "matchScore": 67,
-          "fetchedAt": "2026-05-17T01:01:07+09:00"
+          "fetchedAt": "2026-05-17T15:30:36+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EC%8A%A4%EC%99%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-05-16T16:01:09.973Z",
+      "fetchedAt": "2026-05-17T06:30:40.725Z",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 스완 목걸이",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EC%8A%A4%EC%99%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-05-16T16:01:09.973Z",
+      "fetchedAt": "2026-05-17T06:30:40.725Z",
       "matched_via": "original",
       "attempted_queries": [
         "스와로브스키 스완 목걸이",
