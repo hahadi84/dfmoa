@@ -3,15 +3,15 @@
   "productSlug": "la-mer-moisturizing-cream-60ml",
   "categorySlug": "beauty",
   "query": "라메르 크렘 드 라 메르 60ml",
-  "fetchedAt": "2026-05-17T15:26:59+09:00",
-  "updatedAtLabel": "2026-05-17 15:26 기준",
+  "fetchedAt": "2026-05-18T00:58:28+09:00",
+  "updatedAtLabel": "2026-05-18 00:58 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9D%BC%EB%A9%94%EB%A5%B4%20%ED%81%AC%EB%A0%98%20%EB%93%9C%20%EB%9D%BC%20%EB%A9%94%EB%A5%B4%2060ml",
-      "fetchedAt": "2026-05-17T15:26:59+09:00",
+      "fetchedAt": "2026-05-18T00:58:28+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "라메르 크렘 드 라 메르 60ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%9D%BC%EB%A9%94%EB%A5%B4%20%ED%81%AC%EB%A0%98%20%EB%93%9C%20%EB%9D%BC%20%EB%A9%94%EB%A5%B4%2060ml",
-      "fetchedAt": "2026-05-17T06:27:01.536Z",
+      "fetchedAt": "2026-05-17T15:58:30.099Z",
       "matched_via": "original",
       "attempted_queries": [
         "라메르 크렘 드 라 메르 60ml",
@@ -41,7 +41,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%9D%BC%EB%A9%94%EB%A5%B4%20%ED%81%AC%EB%A0%98%20%EB%93%9C%20%EB%9D%BC%20%EB%A9%94%EB%A5%B4%2060ml",
-      "fetchedAt": "2026-05-17T06:27:01.536Z",
+      "fetchedAt": "2026-05-17T15:58:30.099Z",
       "matched_via": "original",
       "attempted_queries": [
         "라메르 크렘 드 라 메르 60ml",
