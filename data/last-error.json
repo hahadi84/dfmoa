@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T08:43:31.361Z",
+  "generatedAt": "2026-06-01T20:00:27.269Z",
   "attemptedCount": 44,
   "failureCount": 5,
   "failures": [
@@ -31,7 +31,7 @@
       "productId": "p30",
       "productSlug": "glenmorangie-original-10-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     }
   ]
 }
