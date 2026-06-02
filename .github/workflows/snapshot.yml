@@ -2,9 +2,13 @@ name: Daily price snapshot
 
 on:
   schedule:
-    - cron: '0 15 * * *'
-    - cron: '0 3 * * *'
+    # Daily at 00:10 KST.
+    - cron: '10 15 * * *'
   workflow_dispatch: {}
+
+concurrency:
+  group: daily-price-snapshot
+  cancel-in-progress: false
 
 jobs:
   snapshot:
@@ -21,13 +25,27 @@ jobs:
         run: npm run snapshot
         timeout-minutes: 10
       - name: Commit updated prices
+        id: commit
         run: |
           git config user.name "dfmoa-bot"
           git config user.email "bot@dfmoa.local"
           git add data/prices/ data/history/ data/last-error.json
           if git diff --cached --quiet; then
             echo "No changes"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore(snapshot): $(date -u +'%Y-%m-%dT%H:%MZ')"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+      - name: Trigger Netlify deploy hook
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          NETLIFY_BUILD_HOOK_URL: ${{ secrets.NETLIFY_BUILD_HOOK_URL }}
+        run: |
+          if [ -z "$NETLIFY_BUILD_HOOK_URL" ]; then
+            echo "No NETLIFY_BUILD_HOOK_URL secret configured; relying on Netlify Git deploy."
+            exit 0
+          fi
+
+          curl -fsS -X POST "$NETLIFY_BUILD_HOOK_URL"
