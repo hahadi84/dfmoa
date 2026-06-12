@@ -1,11 +1,17 @@
 {
-  "generatedAt": "2026-06-11T18:32:32.871Z",
+  "generatedAt": "2026-06-12T17:47:48.692Z",
   "attemptedCount": 44,
-  "failureCount": 5,
+  "failureCount": 6,
   "failures": [
     {
       "productId": "p21",
       "productSlug": "la-mer-moisturizing-cream-60ml",
+      "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p23",
+      "productSlug": "biotherm-life-plankton-125ml",
       "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
