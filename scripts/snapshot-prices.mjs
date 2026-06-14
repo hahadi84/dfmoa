@@ -477,6 +477,7 @@ async function main() {
 
   topUpSelectedWithFailures(selected, failures, productBySlug);
   const selectedFailureCount = selected.filter((item) => !item.priceKrw && !item.priceUsd).length;
+  const successfulSelectionCount = selected.length - selectedFailureCount;
   const manifest = {
     generatedAt: new Date().toISOString(),
     generatedAtKst: new Intl.DateTimeFormat("sv-SE", {
@@ -500,8 +501,11 @@ async function main() {
   fs.writeFileSync(MANIFEST_PATH, `${JSON.stringify(manifest, null, 2)}\n`);
   writeLastError(failures, attempted.length);
   console.log(`[snapshot] selected ${selected.length}/${REQUIRED_TOTAL}`);
+  console.log(`[snapshot] successful ${successfulSelectionCount}, fallback ${selectedFailureCount}`);
 
-  if (selectedFailureCount / Math.max(selected.length, 1) >= 0.5) {
+  // Keep the daily snapshot flowing unless we produced no usable prices at all.
+  // Partial freshness is better than blocking commits and serving multi-day stale data.
+  if (successfulSelectionCount === 0) {
     process.exitCode = 1;
   }
 }

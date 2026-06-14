@@ -2,8 +2,8 @@ name: Daily price snapshot
 
 on:
   schedule:
-    # Daily at 00:10 KST.
-    - cron: '10 15 * * *'
+    # Daily at 09:00 KST.
+    - cron: '0 0 * * *'
   workflow_dispatch: {}
 
 concurrency:
@@ -25,6 +25,7 @@ jobs:
         run: npm run snapshot
         timeout-minutes: 10
       - name: Commit updated prices
+        if: always()
         id: commit
         run: |
           git config user.name "dfmoa-bot"
@@ -39,7 +40,7 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
       - name: Trigger Netlify deploy hook
-        if: steps.commit.outputs.changed == 'true'
+        if: always() && steps.commit.outputs.changed == 'true'
         env:
           NETLIFY_BUILD_HOOK_URL: ${{ secrets.NETLIFY_BUILD_HOOK_URL }}
         run: |
