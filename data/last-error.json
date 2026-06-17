@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-16T04:06:35.358Z",
-  "attemptedCount": 44,
-  "failureCount": 6,
+  "generatedAt": "2026-06-17T04:04:58.655Z",
+  "attemptedCount": 46,
+  "failureCount": 8,
   "failures": [
     {
       "productId": "p21",
@@ -37,6 +37,18 @@
       "productId": "p30",
       "productSlug": "glenmorangie-original-10-700ml",
       "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p94",
+      "productSlug": "dyson-supersonic",
+      "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p91",
+      "productSlug": "apple-airpods-pro-2",
+      "categorySlug": "electronics",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     }
   ]
