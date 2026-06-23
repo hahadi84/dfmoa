@@ -3,15 +3,15 @@
   "productSlug": "ballantines-21-700ml",
   "categorySlug": "liquor",
   "query": "발렌타인 21년 700ml",
-  "fetchedAt": "2026-06-22T13:06:54+09:00",
-  "updatedAtLabel": "2026-06-22 13:06 기준",
+  "fetchedAt": "2026-06-23T12:28:18+09:00",
+  "updatedAtLabel": "2026-06-23 12:28 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-06-22T13:06:54+09:00",
+      "fetchedAt": "2026-06-23T12:28:18+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",
@@ -30,40 +30,40 @@
           "id": "shilla-046131000043",
           "title": "발렌타인 21년 RESTAGE 700ml",
           "brand": "발렌타인",
-          "priceKrw": 246029,
+          "priceKrw": 247903,
           "priceUsd": 161.5,
           "regularUsdPrice": 170,
           "discountRate": 5,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20RESTAGE%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/12/01/046131000043_20251201_12264673_12_046131000043_1.JPG",
           "matchScore": 111,
-          "fetchedAt": "2026-06-22T13:06:54+09:00"
+          "fetchedAt": "2026-06-23T12:28:18+09:00"
         },
         {
           "id": "shilla-046131000067",
           "title": "발렌타인 21년 아티스트 에디션 5 700ml",
           "brand": "발렌타인",
-          "priceKrw": 241687,
+          "priceKrw": 243528,
           "priceUsd": 158.65,
           "regularUsdPrice": 167,
           "discountRate": 5,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8%20%EC%97%90%EB%94%94%EC%85%98%205%20700ml",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/04/14/046131000067_20260414_15265594_12_046131000067_2.JPG",
           "matchScore": 111,
-          "fetchedAt": "2026-06-22T13:06:54+09:00"
+          "fetchedAt": "2026-06-23T12:28:18+09:00"
         },
         {
           "id": "shilla-046131000070",
           "title": "발렌타인 21년 GLENBURGIE 700ml",
           "brand": "발렌타인",
-          "priceKrw": 266595,
+          "priceKrw": 268625,
           "priceUsd": 175,
           "regularUsdPrice": 250,
           "discountRate": 30,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20GLENBURGIE%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/01/20/046131000070_20260120_16394976_12_046131000070_1.JPG",
           "matchScore": 111,
-          "fetchedAt": "2026-06-22T13:06:54+09:00"
+          "fetchedAt": "2026-06-23T12:28:18+09:00"
         }
       ],
       "error": null
@@ -73,7 +73,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-06-22T04:06:56.329Z",
+      "fetchedAt": "2026-06-23T03:28:19.738Z",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",
@@ -91,7 +91,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-06-22T04:06:56.329Z",
+      "fetchedAt": "2026-06-23T03:28:19.738Z",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",
