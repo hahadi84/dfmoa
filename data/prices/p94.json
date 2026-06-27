@@ -3,15 +3,15 @@
   "productSlug": "dyson-supersonic",
   "categorySlug": "electronics",
   "query": "다이슨 슈퍼소닉 드라이어",
-  "fetchedAt": "2026-06-26T12:38:57+09:00",
-  "updatedAtLabel": "2026-06-26 12:38 기준",
+  "fetchedAt": "2026-06-27T12:01:33+09:00",
+  "updatedAtLabel": "2026-06-27 12:01 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%8B%A4%EC%9D%B4%EC%8A%A8%20%EC%8A%88%ED%8D%BC%EC%86%8C%EB%8B%89%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EC%96%B4",
-      "fetchedAt": "2026-06-26T12:38:57+09:00",
+      "fetchedAt": "2026-06-27T12:01:33+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "다이슨 슈퍼소닉 드라이어",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%8B%A4%EC%9D%B4%EC%8A%A8%20%EC%8A%88%ED%8D%BC%EC%86%8C%EB%8B%89%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EC%96%B4",
-      "fetchedAt": "2026-06-26T03:38:58.504Z",
+      "fetchedAt": "2026-06-27T03:01:34.774Z",
       "matched_via": "original",
       "attempted_queries": [
         "다이슨 슈퍼소닉 드라이어",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%8B%A4%EC%9D%B4%EC%8A%A8%20%EC%8A%88%ED%8D%BC%EC%86%8C%EB%8B%89%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EC%96%B4",
-      "fetchedAt": "2026-06-26T03:38:58.505Z",
+      "fetchedAt": "2026-06-27T03:01:34.774Z",
       "matched_via": "original",
       "attempted_queries": [
         "다이슨 슈퍼소닉 드라이어",

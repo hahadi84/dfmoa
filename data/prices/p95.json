@@ -3,15 +3,15 @@
   "productSlug": "braun-series-9-pro",
   "categorySlug": "electronics",
   "query": "브라운 시리즈 9 프로",
-  "fetchedAt": "2026-06-26T12:39:03+09:00",
-  "updatedAtLabel": "2026-06-26 12:39 기준",
+  "fetchedAt": "2026-06-27T12:01:39+09:00",
+  "updatedAtLabel": "2026-06-27 12:01 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-06-26T12:39:03+09:00",
+      "fetchedAt": "2026-06-27T12:01:39+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
@@ -22,40 +22,40 @@
           "id": "shilla-048129000446",
           "title": "시리즈 9 PRO+ 울트라 씬 9615s GP 기획팩 (+96M 날망 증정)",
           "brand": "브라운",
-          "priceKrw": 314967,
+          "priceKrw": 316400,
           "priceUsd": 204.75,
           "regularUsdPrice": 315,
           "discountRate": 35,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20PRO%2B%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%EC%94%AC%209615s%20GP%20%EA%B8%B0%ED%9A%8D%ED%8C%A9%20(%2B96M%20%EB%82%A0%EB%A7%9D%20%EC%A6%9D%EC%A0%95)",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/05/20/048129000446_20260520_17033088_12_048129000446_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-06-26T12:39:03+09:00"
+          "fetchedAt": "2026-06-27T12:01:39+09:00"
         },
         {
           "id": "shilla-048129000444",
           "title": "전기면도기 시리즈9 PRO+ 9517S 기획 (+파워케이스 증정)",
           "brand": "브라운",
-          "priceKrw": 306891,
+          "priceKrw": 308287,
           "priceUsd": 199.5,
           "regularUsdPrice": 285,
           "discountRate": 30,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%84%EA%B8%B0%EB%A9%B4%EB%8F%84%EA%B8%B0%20%EC%8B%9C%EB%A6%AC%EC%A6%889%20PRO%2B%209517S%20%EA%B8%B0%ED%9A%8D%20(%2B%ED%8C%8C%EC%9B%8C%EC%BC%80%EC%9D%B4%EC%8A%A4%20%EC%A6%9D%EC%A0%95)",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/05/19/048129000444_20260519_11521350_12_048129000444_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-06-26T12:39:03+09:00"
+          "fetchedAt": "2026-06-27T12:01:39+09:00"
         },
         {
           "id": "shilla-048129000438",
           "title": "시리즈 9 PRO+ 울트라 씬 9615s",
           "brand": "브라운",
-          "priceKrw": 300430,
+          "priceKrw": 301797,
           "priceUsd": 195.3,
           "regularUsdPrice": 315,
           "discountRate": 38,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20PRO%2B%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%EC%94%AC%209615s",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/12/11/048129000438_20251211_10054613_12_048129000438_1.JPG",
           "matchScore": 55,
-          "fetchedAt": "2026-06-26T12:39:03+09:00"
+          "fetchedAt": "2026-06-27T12:01:39+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-06-26T03:39:05.354Z",
+      "fetchedAt": "2026-06-27T03:01:42.208Z",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-06-26T03:39:05.354Z",
+      "fetchedAt": "2026-06-27T03:01:42.208Z",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
