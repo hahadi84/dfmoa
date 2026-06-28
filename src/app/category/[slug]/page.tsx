@@ -5,6 +5,7 @@ import Link from "@/components/app-link";
 import { CategoryFilterGrid } from "@/components/category-filter-grid";
 import { buildBreadcrumbJsonLd, buildItemListJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildCategoryMetadata } from "@/lib/seo-metadata";
+import { hasSnapshotPrice } from "@/lib/snapshot-summaries";
 import { categories, getCategoryBySlug, getGuideBySlug, getProductsByCategory } from "@/lib/site-data";
 import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
 
@@ -31,7 +32,26 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     };
   }
 
-  return buildCategoryMetadata(category);
+  const categoryProducts = getProductsByCategory(category.slug);
+  const priceSnapshotsByProductId = readPriceSnapshotsByProductId(categoryProducts);
+  const pricedCount = categoryProducts.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id])).length;
+  const metadata = buildCategoryMetadata(category);
+
+  if (pricedCount < 3) {
+    return {
+      ...metadata,
+      robots: {
+        index: false,
+        follow: true,
+        googleBot: {
+          index: false,
+          follow: true,
+        },
+      },
+    };
+  }
+
+  return metadata;
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
@@ -44,7 +64,22 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   const categoryProducts = getProductsByCategory(category.slug);
   const priceSnapshotsByProductId = readPriceSnapshotsByProductId(categoryProducts);
+  const pricedCount = categoryProducts.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id])).length;
   const guide = getGuideBySlug(category.guideSlug);
+  const categoryReviewNotes = [
+    {
+      title: "이 카테고리를 어떻게 봐야 하나요",
+      body: `${category.intro} 현재 DFMOA에서는 ${categoryProducts.length}개 대표 상품을 묶어 보고 있으며, 최근 스냅샷 가격이 잡힌 상품은 ${pricedCount}개입니다.`,
+    },
+    {
+      title: "최저가보다 먼저 확인할 기준",
+      body: `${category.name} 카테고리는 브랜드명, 제품명, 용량 또는 모델명 일치 여부에 따라 같은 상품인지 판단이 달라질 수 있습니다. 가격 숫자만 보지 말고 검색어 정합성과 수령 가능 공항, 세트 구성 차이를 함께 봐야 합니다.`,
+    },
+    {
+      title: "실구매 판단은 이렇게 보세요",
+      body: "표에 보이는 가격은 출발점입니다. 먼저 가격 기준 시각과 소스 상태를 확인하고, 마지막에는 면세점 원문 페이지에서 혜택 적용 여부와 주문 마감 조건을 다시 확인해야 실제 결제 금액과 가까워집니다.",
+    },
+  ];
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
     { name: "카테고리", path: "/category" },
@@ -74,7 +109,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
 
         <span className="eyebrow" style={{ marginTop: 24 }}>
-          Category Landing
+          카테고리 비교
         </span>
         <h1 className="page-title">{category.headline}</h1>
         <p className="page-description">{category.intro}</p>
@@ -87,9 +122,26 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           ))}
         </div>
 
+        <article className="surface-card" style={{ marginTop: 14 }}>
+          <span className="eyebrow">비교 가이드</span>
+          <h2 className="card-title" style={{ fontSize: "1.1rem" }}>
+            가격표 전에 먼저 읽을 카테고리 해설
+          </h2>
+          <div className="guide-body" style={{ marginTop: 10 }}>
+            {categoryReviewNotes.map((note) => (
+              <section key={note.title} className="guide-section">
+                <h3 className="card-title" style={{ fontSize: "1.05rem" }}>
+                  {note.title}
+                </h3>
+                <p className="section-copy">{note.body}</p>
+              </section>
+            ))}
+          </div>
+        </article>
+
         <div className="section-head" style={{ marginTop: 15 }}>
           <div>
-            <span className="eyebrow">Representative Products</span>
+            <span className="eyebrow">대표 상품</span>
             <h2 className="section-title">대표 상품 {categoryProducts.length}가지</h2>
             <p className="section-copy">
               필터 URL은 공유 가능하지만 canonical은 카테고리 기본 페이지로 유지합니다.

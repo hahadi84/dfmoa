@@ -1,9 +1,19 @@
 import type { AirportGuide, BrandLanding, MonthlyDealReport, ProductComparePage } from "@/lib/content-models";
+import { getBenefitReportsByMonth, getLatestBenefitReportForMonth } from "@/lib/benefit-report-generator";
 import { benefitRules } from "@/lib/effective-price";
 import { dutyFreeBenefitStores, dutyFreeBenefitUpdatedAt } from "@/lib/duty-free-benefits";
 import { categories, guides, products, stores, type Category, type CategorySlug, type Guide } from "@/lib/site-data";
 
-const UPDATED_AT = "2026-04-19";
+const UPDATED_AT = "2026-06-02";
+const APRIL_2026_MONTH_SLUG = "2026-04";
+const MAY_2026_MONTH_SLUG = "2026-05";
+const JUNE_2026_MONTH_SLUG = "2026-06";
+const april2026WeeklyReports = getBenefitReportsByMonth(APRIL_2026_MONTH_SLUG);
+const april2026LatestWeeklyReport = getLatestBenefitReportForMonth(APRIL_2026_MONTH_SLUG);
+const may2026WeeklyReports = getBenefitReportsByMonth(MAY_2026_MONTH_SLUG);
+const may2026LatestWeeklyReport = getLatestBenefitReportForMonth(MAY_2026_MONTH_SLUG);
+const june2026WeeklyReports = getBenefitReportsByMonth(JUNE_2026_MONTH_SLUG);
+const june2026LatestWeeklyReport = getLatestBenefitReportForMonth(JUNE_2026_MONTH_SLUG);
 
 function productId(slug: string) {
   return products.find((product) => product.slug === slug)?.id;
@@ -274,16 +284,64 @@ const sourceLinks = dutyFreeBenefitStores.map((store) => ({
 
 export const monthlyDealReports: MonthlyDealReport[] = [
   {
+    slug: "2026-06",
+    year: 2026,
+    month: 6,
+    title: "2026년 6월 면세점 쿠폰·적립금 혜택 총정리",
+    summary:
+      "롯데·신라·신세계·현대면세점의 2026년 6월 1주차 쿠폰, 적립금, 결제쿠폰, H.oney, 카드 할인, 제휴 이벤트를 출국 전 확인 흐름으로 정리했습니다.",
+    benefitRuleIds: benefitRules.map((rule) => rule.id),
+    weeklyReportSlugs: june2026WeeklyReports.map((report) => report.slug),
+    sourceLinks,
+    relatedProductIds: idsFromSlugs([
+      "creed-aventus-50ml",
+      "jo-malone-english-pear-100ml",
+      "sk2-pitera-essence-230ml",
+      "glenfiddich-15-700ml",
+      "dyson-supersonic",
+    ]),
+    publishedAt: "2026-06-02",
+    updatedAt: june2026LatestWeeklyReport?.updatedAt ?? UPDATED_AT,
+  },
+  {
+    slug: "2026-05",
+    year: 2026,
+    month: 5,
+    title: "2026년 5월 면세점 쿠폰·적립금 혜택 총정리",
+    summary:
+      "롯데·신라·신세계·현대면세점의 2026년 5월 쿠폰, 적립금, H.oney, 카드 할인, 제휴 이벤트를 출국 전 최종 확인 흐름으로 정리했습니다.",
+    benefitRuleIds: benefitRules.map((rule) => rule.id),
+    weeklyReportSlugs: may2026WeeklyReports.map((report) => report.slug),
+    sourceLinks,
+    relatedProductIds: idsFromSlugs([
+      "creed-aventus-50ml",
+      "sk2-pitera-essence-230ml",
+      "hera-black-cushion-15g",
+      "glenfiddich-15-700ml",
+      "dyson-supersonic",
+    ]),
+    publishedAt: "2026-05-27",
+    updatedAt: may2026LatestWeeklyReport?.updatedAt ?? UPDATED_AT,
+  },
+  {
     slug: "2026-04",
     year: 2026,
     month: 4,
-    title: "2026년 4월 면세 혜택 총정리",
-    summary: "4월 공개 혜택 링크와 쿠폰·적립금·카드 조건을 예상 실결제가 계산 관점에서 정리했습니다.",
+    title: "2026년 4월 면세점 쿠폰·적립금 혜택 총정리",
+    summary:
+      "롯데·신라·신세계·현대면세점 2026년 4월 쿠폰, 적립금, 카드 할인, 브랜드 이벤트와 주간 변경사항을 출국 전 확인용으로 정리했습니다.",
     benefitRuleIds: benefitRules.map((rule) => rule.id),
+    weeklyReportSlugs: april2026WeeklyReports.map((report) => report.slug),
     sourceLinks,
-    relatedProductIds: idsFromSlugs(["creed-aventus-50ml", "sulwhasoo-first-care-serum-90ml", "glenfiddich-15-700ml"]),
+    relatedProductIds: idsFromSlugs([
+      "bleu-de-chanel-edp-100ml",
+      "sk2-pitera-essence-230ml",
+      "hera-black-cushion-15g",
+      "glenfiddich-15-700ml",
+      "sulwhasoo-first-care-serum-90ml",
+    ]),
     publishedAt: "2026-04-19",
-    updatedAt: UPDATED_AT,
+    updatedAt: april2026LatestWeeklyReport?.updatedAt ?? UPDATED_AT,
   },
   {
     slug: "2026-03",

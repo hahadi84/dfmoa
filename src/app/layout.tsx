@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { IBM_Plex_Mono, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/google-analytics";
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   verification: {
     other: {
       "naver-site-verification": "d68acd4c4ba107da4c92dd5e55d0d3c8dcedbddd",
-      "google-adsense-account": "ca-pub-9602089494397808",
+      "google-adsense-account": SITE_OPERATOR.adsenseAccountId,
     },
   },
 };
@@ -73,10 +74,11 @@ export default function RootLayout({
           title="DFMOA 면세 혜택 리포트"
           href={`${SITE_OPERATOR.serviceUrl}/feed.xml`}
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9602089494397808"
+        <Script
+          id="dfmoa-adsense-account"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE_OPERATOR.adsenseAccountId}`}
           crossOrigin="anonymous"
+          strategy="beforeInteractive"
         />
       </head>
       <body>

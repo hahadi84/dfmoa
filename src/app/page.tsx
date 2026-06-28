@@ -71,6 +71,20 @@ export default function Home() {
   });
   const activeCategorySummaries = categorySummaries.filter((item) => item.pricedCount >= 3);
   const readyCategorySummaries = categorySummaries.filter((item) => item.pricedCount < 3);
+  const homeEditorialNotes = [
+    {
+      title: "DFMOA를 어떻게 봐야 하나요",
+      body: `DFMOA는 ${supportedStoreNames} 공개가와 국내가 비교 흐름을 한 화면에서 정리하지만, 숫자만 빠르게 나열하는 대신 실제 구매 판단에 필요한 기준 시각과 원문 확인 동선을 함께 보여주는 것을 목표로 합니다.`,
+    },
+    {
+      title: "최저가보다 먼저 확인할 기준",
+      body: `현재 가격 스냅샷이 잡힌 상품은 ${pricedProducts.length}개이며, 카테고리마다 비교 가능한 상품 수가 다릅니다. 따라서 headline 최저가보다 기준 시각, 검색어 일치, 공항 수령 가능 여부를 먼저 보는 편이 안전합니다.`,
+    },
+    {
+      title: "실구매 판단은 이렇게 하세요",
+      body: "홈에서는 비교 출발점만 빠르게 좁히고, 실제 결제 전에는 상품 상세에서 가격 범위, 혜택 조건, 국내가 비교를 함께 확인한 뒤 면세점 원문 페이지에서 최종 조건을 다시 확인하는 순서가 적절합니다.",
+    },
+  ];
 
   return (
     <>
@@ -103,6 +117,9 @@ export default function Home() {
               </div>
 
               <div className="hero-actions">
+                <Link className="chip is-demo" href="/price-compare">
+                  면세점 가격 비교
+                </Link>
                 <Link className="chip is-demo" href="/benefits">
                   할인·적립금
                 </Link>
@@ -114,6 +131,23 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            <article className="surface-card" style={{ marginTop: 16 }}>
+              <span className="eyebrow">홈 비교 요약</span>
+              <h2 className="card-title" style={{ fontSize: "1.1rem" }}>
+                검색 전에 먼저 읽을 핵심 해설
+              </h2>
+              <div className="guide-body" style={{ marginTop: 10 }}>
+                {homeEditorialNotes.map((note) => (
+                  <section key={note.title} className="guide-section">
+                    <h3 className="card-title" style={{ fontSize: "1rem" }}>
+                      {note.title}
+                    </h3>
+                    <p className="section-copy">{note.body}</p>
+                  </section>
+                ))}
+              </div>
+            </article>
 
             {popularSearchItems.length ? (
               <div className="hero-search-terms" aria-label="지금 인기 검색어">
@@ -207,8 +241,20 @@ export default function Home() {
 
       <section className="page-section is-compact">
         <div className="container">
+          <Link className="weekly-benefit-banner" href="/deals/2026-06">
+            <strong>2026년 6월 면세점 쿠폰·적립금 혜택</strong>
+            <span>
+              신세계·신라·롯데·현대면세점 6월 1주차 쿠폰, 적립금, 카드 할인 확인
+            </span>
+            <span className="text-link">월간 혜택 보기 →</span>
+          </Link>
+        </div>
+      </section>
+
+      <section className="page-section is-compact">
+        <div className="container">
           <Link className="weekly-benefit-banner" href={`/benefit-reports/${latestBenefitReport.slug}`}>
-            <strong>이번 주 면세 혜택</strong>
+            <strong>이번 주 면세 혜택 리포트</strong>
             <span>
               {latestBenefitReport.storeCount}사 {latestBenefitReport.sourceCount}개 링크 정리 ({latestBenefitReport.periodLabel} 기준)
             </span>
@@ -221,7 +267,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Popular Categories</span>
+              <span className="eyebrow">카테고리 비교</span>
               <h2 className="section-title">인기 카테고리</h2>
               <p className="section-copy">가격 데이터가 충분한 카테고리는 크게 보여주고, 준비 중 카테고리는 별도 목록으로 분리했습니다.</p>
             </div>
@@ -258,7 +304,7 @@ export default function Home() {
             ))}
           </div>
 
-          {readyCategorySummaries.length ? (
+          {false && readyCategorySummaries.length ? (
             <div className="category-ready-row">
               <strong>준비 중 카테고리</strong>
               <div className="chip-row">
@@ -277,7 +323,7 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Guides</span>
+              <span className="eyebrow">구매 가이드</span>
               <h2 className="section-title">구매 전 가이드</h2>
               <p className="section-copy">면세 구매 전에 확인할 핵심 기준만 짧게 정리했습니다.</p>
             </div>

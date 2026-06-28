@@ -21,6 +21,24 @@ type BuildMetadataInput = {
   type?: "website" | "article";
 };
 
+function normalizeSeoText(value: string) {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+function limitSeoText(value: string, maxLength: number) {
+  const normalized = normalizeSeoText(value);
+
+  if (normalized.length <= maxLength) {
+    return normalized;
+  }
+
+  return normalized.slice(0, maxLength).replace(/\s+\S*$/, "").trim();
+}
+
+function getProductSearchLabel(product: Product) {
+  return normalizeSeoText(product.query || product.displayName);
+}
+
 export function absoluteSiteUrl(path: string) {
   if (path.startsWith("https://") || path.startsWith("http://")) {
     return path;
@@ -65,11 +83,14 @@ export function buildSeoMetadata({
 
 export function getProductSeoSummary(product: Product, snapshot?: ProductPriceSnapshot | null) {
   const best = getSnapshotBestItem(snapshot);
+  const searchLabel = getProductSearchLabel(product);
 
   if (!best) {
+    const title = `${searchLabel} 면세점 가격 비교｜공식몰 확인`;
+
     return {
-      title: `${product.displayName} 면세 가격 정보 · 4개 공항면세점 공식 검색 링크`,
-      description: `${product.displayName}의 면세 가격 정보와 공식 검색 링크를 정리했습니다. 수령 공항·구매 한도·원본 확인 방법 포함.`,
+      title: limitSeoText(title, 58),
+      description: `${searchLabel} 면세점 가격 비교용 공식몰 확인 페이지입니다. 롯데·현대·신라·신세계 공개가, 수령 공항, 쿠폰·적립금, 원본 확인 포인트를 정리했습니다.`,
       imagePath: `/og/product/${product.slug}.png`,
       hasPrice: false,
     };
@@ -80,10 +101,12 @@ export function getProductSeoSummary(product: Product, snapshot?: ProductPriceSn
   const fetchedAt = best.source.fetchedAt ?? best.item.fetchedAt ?? snapshot?.fetchedAt ?? "";
   const dateLabel = formatSnapshotTimestamp(fetchedAt).slice(0, 10) || "최근";
   const storeName = store?.shortName ?? best.sourceId;
+  const priceLabel = formatKrw(priceKrw);
+  const title = `${searchLabel} 면세점 가격 비교｜${storeName} ${priceLabel}`;
 
   return {
-    title: `${product.displayName} — ${storeName} ${formatKrw(priceKrw)} (${dateLabel} 기준)`,
-    description: `${product.displayName}의 롯데·신라·신세계 면세 공개가 비교. 최근 확인가 ${formatKrw(priceKrw)} (${storeName}, ${dateLabel} 기준).`,
+    title: limitSeoText(title, 58),
+    description: `${searchLabel} 최근 확인가 ${priceLabel}(${storeName}, ${dateLabel}). 롯데·현대·신라·신세계 공개가, 수령 공항, 쿠폰·적립금, 원본 확인 링크를 함께 정리했습니다.`,
     imagePath: `/og/product/${product.slug}.png`,
     hasPrice: true,
   };

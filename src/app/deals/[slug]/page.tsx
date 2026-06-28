@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
 import { ContentProductGrid } from "@/components/content-product-grid";
 import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
+import { getBenefitReportsByMonth } from "@/lib/benefit-report-generator";
 import { benefitRules } from "@/lib/effective-price";
 import { buildBreadcrumbJsonLd, buildMonthlyDealArticleJsonLd } from "@/lib/json-ld";
 import { getMonthlyDealReportBySlug, monthlyDealReports } from "@/lib/seo-content";
@@ -55,6 +56,10 @@ export default async function DealsPage({ params }: DealsPageProps) {
     .map((id) => products.find((product) => product.id === id))
     .filter((product): product is (typeof products)[number] => Boolean(product));
   const articleJsonLd = buildMonthlyDealArticleJsonLd(report);
+  const isFeaturedCouponReport = report.slug === "2026-04" || report.slug === "2026-05" || report.slug === "2026-06";
+  const weeklyReports = getBenefitReportsByMonth(report.slug);
+  const latestWeeklyReport = weeklyReports[0] ?? null;
+  const monthLabel = `${report.year}년 ${report.month}월`;
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
     { name: "월간 혜택", path: "/deals" },
@@ -86,6 +91,83 @@ export default async function DealsPage({ params }: DealsPageProps) {
             <span>제휴/광고 링크 포함 가능</span>
           </div>
         </article>
+
+        {isFeaturedCouponReport ? (
+          <article className="surface-card" style={{ marginTop: 12 }}>
+            <div className="section-head">
+              <div>
+                <span className="eyebrow">2026 Coupon Check</span>
+                <h2 className="section-title">{monthLabel} 면세점 쿠폰·적립금 확인</h2>
+                <p className="section-copy">
+                  신세계·신라·롯데·현대면세점의 {monthLabel} 쿠폰, 적립금, 카드 할인, 브랜드 이벤트를 한 화면에서
+                  비교하고 원본 혜택 페이지에서 최종 조건을 확인하세요.
+                </p>
+              </div>
+            </div>
+            <div className="chip-row">
+              {latestWeeklyReport ? (
+                <Link className="chip is-demo" href={`/benefit-reports/${latestWeeklyReport.slug}`}>
+                  최신 주간 업데이트
+                </Link>
+              ) : null}
+              {latestWeeklyReport ? (
+                <Link className="chip is-soft" href={`/benefit-reports/${latestWeeklyReport.slug}`}>
+                  {latestWeeklyReport.weekLabel} 쿠폰·적립금
+                </Link>
+              ) : null}
+              <Link className="chip is-soft" href="/price-compare">
+                면세점 가격 비교
+              </Link>
+              <Link className="chip is-soft" href="/product/sk2-pitera-essence-230ml">
+                SK-II 피테라 가격
+              </Link>
+              <Link className="chip is-soft" href="/product/bleu-de-chanel-edp-100ml">
+                블루 드 샤넬 가격
+              </Link>
+            </div>
+          </article>
+        ) : null}
+
+        {weeklyReports.length > 0 ? (
+          <article className="surface-card" style={{ marginTop: 12 }}>
+            <div className="section-head">
+              <div>
+                <span className="eyebrow">Weekly Archive</span>
+                <h2 className="section-title">{monthLabel} 주간 혜택 업데이트</h2>
+                <p className="section-copy">
+                  {monthLabel} 쿠폰·적립금·카드 할인 변경사항을 주차별로 쌓아 두고, 월간 혜택 총정리 페이지에서
+                  한 번에 비교할 수 있게 정리했습니다.
+                </p>
+              </div>
+              {latestWeeklyReport ? (
+                <span className="chip is-soft">최신 업데이트: {latestWeeklyReport.updatedAt}</span>
+              ) : null}
+            </div>
+
+            <div className="report-grid">
+              {weeklyReports.map((weeklyReport) => (
+                <Link
+                  key={weeklyReport.slug}
+                  className="report-card"
+                  href={`/benefit-reports/${weeklyReport.slug}`}
+                >
+                  <span className="eyebrow">{weeklyReport.weekLabel}</span>
+                  <h3 className="card-title">{weeklyReport.title}</h3>
+                  <p className="section-copy">{weeklyReport.description}</p>
+                  <ul className="report-check-list">
+                    {weeklyReport.changesFromPreviousWeek.slice(0, 2).map((change) => (
+                      <li key={change}>{change}</li>
+                    ))}
+                  </ul>
+                  <div className="report-meta-row">
+                    <span>{weeklyReport.periodLabel}</span>
+                    <span>업데이트: {weeklyReport.updatedAt}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </article>
+        ) : null}
 
         <article className="surface-card" style={{ marginTop: 12 }}>
           <div className="section-head">

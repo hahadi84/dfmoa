@@ -13,7 +13,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className="topnav" aria-label="주요 메뉴">
-          <Link href="/search">가격 비교하기</Link>
+          <Link href="/price-compare">가격 비교하기</Link>
           <Link href="/category">카테고리</Link>
           <Link href="/favorites">관심상품</Link>
           <Link href="/brand">브랜드</Link>

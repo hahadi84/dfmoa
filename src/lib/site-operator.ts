@@ -4,6 +4,8 @@ export const SITE_OPERATOR = {
   siteName: "면세모아 DFMOA",
   serviceUrl: "https://www.dfmoa.com",
   legacyUrls: ["https://dfmoa.netlify.app"],
+  adsensePublisherId: "pub-2271072565444318",
+  adsenseAccountId: "ca-pub-2271072565444318",
   operationType: "개인 · 비영리",
   incomeStatus: "현재 영업 수익 발생 전 (쿠팡 파트너스 제휴 링크 포함)",
   hostingProvider: "Netlify, Inc. (미국)",

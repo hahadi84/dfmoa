@@ -41,6 +41,7 @@ export type MonthlyDealReport = {
   title: string;
   summary: string;
   benefitRuleIds: string[];
+  weeklyReportSlugs?: string[];
   sourceLinks: {
     sourceName: string;
     url: string;

@@ -173,6 +173,22 @@ export function ProductPageClient({
   const aggregateStatus = getAggregatePriceStatus(sourcePrices);
   const aggregateCopy = getAggregatePriceCopy(sourcePrices);
   const showCollectionUnavailableNotice = !isLoading && !offers.length;
+  const contextLead =
+    productContext?.sections.find((section) => section.body.length)?.body[0] ?? product.summary;
+  const editorialNotes = [
+    {
+      title: "이 상품을 먼저 봐야 하는 이유",
+      body: contextLead,
+    },
+    {
+      title: "가격표 전에 확인할 점",
+      body: `${categoryName ?? "해당 카테고리"}는 수령 공항, 적용 가능한 혜택, 세트 구성 차이로 실제 체감 가격이 달라질 수 있어서, headline 최저가보다 기준 시각과 상품 구성 일치 여부를 먼저 보는 편이 안전합니다.`,
+    },
+    {
+      title: "최저가 해석 기준",
+      body: "표에 보이는 숫자는 비교 출발점입니다. 먼저 소스 상태와 가격 범위를 함께 보고, 마지막에는 면세점 원문 페이지에서 결제 조건과 수령 가능 여부를 다시 확인해야 실제 구매 판단에 가깝습니다.",
+    },
+  ];
   const storeCards = statuses.map((status) => {
     const store = getStoreById(status.storeId);
 
@@ -195,15 +211,27 @@ export function ProductPageClient({
       <RecentProductsTracker product={product} />
       <div>
         <span className="eyebrow" style={{ marginTop: 20 }}>
-          Product detail
+          상품 상세
         </span>
         <h1 className="page-title">{product.displayName}</h1>
         <p className="page-description">{product.summary}</p>
+        <p className="section-copy" style={{ marginTop: 10 }}>
+          롯데·신라·신세계·현대면세점 공개가와 원본 확인 링크를 함께 비교합니다.
+        </p>
 
         <div className="chip-row" style={{ marginTop: 16 }}>
           {categoryName ? <span className="chip">{categoryName}</span> : null}
           <span className="chip is-soft">{product.badge}</span>
           <span className="chip is-soft">{product.query}</span>
+          <Link className="chip is-demo" href="/price-compare">
+            면세점 가격 비교
+          </Link>
+          <Link className="chip is-soft" href="/deals/2026-04">
+            4월 쿠폰·적립금
+          </Link>
+          <Link className="chip is-soft" href="/benefit-reports/2026-04-week-4-duty-free-benefits">
+            이번 주 혜택
+          </Link>
         </div>
 
         {showCollectionUnavailableNotice ? (
@@ -216,6 +244,23 @@ export function ProductPageClient({
         {productContext ? (
           <ContentContextCard context={productContext} title="상품 배경과 면세 구매 체크" />
         ) : null}
+
+        <article className="surface-card" style={{ marginTop: 10 }}>
+          <span className="eyebrow">비교 요약</span>
+          <h2 className="card-title" style={{ fontSize: "1.1rem" }}>
+            가격표 전에 먼저 읽을 핵심 요약
+          </h2>
+          <div className="guide-body" style={{ marginTop: 10 }}>
+            {editorialNotes.map((note) => (
+              <section key={note.title} className="guide-section">
+                <h3 className="card-title" style={{ fontSize: "1rem" }}>
+                  {note.title}
+                </h3>
+                <p className="section-copy">{note.body}</p>
+              </section>
+            ))}
+          </div>
+        </article>
 
         <div className="surface-card" style={{ marginTop: 10 }}>
           <div className="section-head">
@@ -262,6 +307,8 @@ export function ProductPageClient({
           </div>
         ) : null}
 
+        {!isLoading && !error ? <PriceHistoryPanel history={result?.history} /> : null}
+
         {!isLoading && !error ? (
           <DomesticPricePanel
             domestic={domesticResult}
@@ -272,8 +319,6 @@ export function ProductPageClient({
             query={product.query}
           />
         ) : null}
-
-        {!isLoading && !error ? <PriceHistoryPanel history={result?.history} /> : null}
 
         <div className="split-grid" style={{ marginTop: 10 }}>
           <div className="surface-card">

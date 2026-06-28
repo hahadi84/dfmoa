@@ -6,6 +6,9 @@ import type { ProductPriceSnapshot, SnapshotPriceItem, SnapshotSourceRecord } fr
 import { getProductSeoSummary } from "@/lib/seo-metadata";
 
 const SITE_URL = SITE_OPERATOR.serviceUrl;
+const PRICE_OFFER_MAX_AGE_DAYS = 7;
+const PRICE_VALID_DAYS = 7;
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 type BreadcrumbItem = {
   name: string;
@@ -29,19 +32,32 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   };
 }
 
-function addHours(value: string | null | undefined, hours: number) {
+function getFreshPriceValidUntil(value: string | null | undefined) {
   if (!value) {
     return undefined;
   }
 
-  const parsed = new Date(value);
+  const fetchedAt = new Date(value);
 
-  if (Number.isNaN(parsed.getTime())) {
+  if (Number.isNaN(fetchedAt.getTime())) {
     return undefined;
   }
 
-  parsed.setHours(parsed.getHours() + hours);
-  return parsed.toISOString();
+  const buildTime = new Date();
+  const ageMs = buildTime.getTime() - fetchedAt.getTime();
+
+  if (ageMs > PRICE_OFFER_MAX_AGE_DAYS * DAY_MS) {
+    return undefined;
+  }
+
+  const validUntil = new Date(fetchedAt);
+  validUntil.setDate(validUntil.getDate() + PRICE_VALID_DAYS);
+
+  if (validUntil.getTime() <= buildTime.getTime()) {
+    validUntil.setTime(buildTime.getTime() + DAY_MS);
+  }
+
+  return validUntil.toISOString();
 }
 
 function getSnapshotOfferEntries(snapshot?: ProductPriceSnapshot | null) {
@@ -61,11 +77,16 @@ export function buildProductJsonLd(product: Product, snapshot?: ProductPriceSnap
   const seo = getProductSeoSummary(product, snapshot);
   const offers = getSnapshotOfferEntries(snapshot)
     .sort((left, right) => Number(left.item.priceKrw) - Number(right.item.priceKrw))
-    .map(({ sourceId, source, item }) => {
+    .flatMap(({ sourceId, source, item }) => {
       const store = getStoreById(sourceId);
       const fetchedAt = item.fetchedAt ?? source.fetchedAt ?? snapshot?.fetchedAt;
+      const priceValidUntil = getFreshPriceValidUntil(fetchedAt);
 
-      return {
+      if (!priceValidUntil) {
+        return [];
+      }
+
+      return [{
         "@type": "Offer",
         price: String(Math.round(Number(item.priceKrw))),
         priceCurrency: "KRW",
@@ -75,8 +96,8 @@ export function buildProductJsonLd(product: Product, snapshot?: ProductPriceSnap
         },
         url: item.url || source.searchUrl || absoluteUrl(`/product/${product.slug}`),
         availability: "https://schema.org/InStock",
-        priceValidUntil: addHours(fetchedAt, 24),
-      };
+        priceValidUntil,
+      }];
     });
   const image = getSnapshotOfferEntries(snapshot).find(({ item }) => item.imageUrl)?.item.imageUrl;
   const productJsonLd: Record<string, unknown> = {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
+import { latestBenefitReport } from "@/lib/benefit-report-generator";
 import { buildBreadcrumbJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import {
   formatYearMonthSlug,
@@ -11,7 +12,8 @@ import { monthlyDealReports } from "@/lib/seo-content";
 
 export const metadata: Metadata = {
   title: "월간 면세 혜택",
-  description: "월별 면세점 혜택 리포트를 최신 월부터 아카이브까지 모아봅니다.",
+  description:
+    "월별 면세점 쿠폰, 적립금, 카드 할인 혜택과 주간 변경사항을 최신 월부터 아카이브까지 모아 출국 전 확인 흐름으로 정리합니다.",
   alternates: {
     canonical: "/deals",
   },
@@ -61,6 +63,14 @@ export default function DealsIndexPage() {
             <span className="text-link">최신 혜택 리포트 보기</span>
           </Link>
         ) : null}
+
+        <Link className="weekly-benefit-banner" href={`/benefit-reports/${latestBenefitReport.slug}`}>
+          <strong>최신 주간 혜택 업데이트</strong>
+          <span>
+            {latestBenefitReport.weekLabel} 쿠폰·적립금·카드 할인 변경사항을 월간 허브와 함께 확인하세요.
+          </span>
+          <span className="text-link">주간 리포트 보기 →</span>
+        </Link>
 
         <div className="section-head" style={{ marginTop: 18 }}>
           <div>

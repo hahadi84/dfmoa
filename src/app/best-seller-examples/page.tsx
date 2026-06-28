@@ -13,6 +13,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/best-seller-examples",
   },
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+    },
+  },
 };
 
 function getStoreBadgeLabel(storeName: string) {
