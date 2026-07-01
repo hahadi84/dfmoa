@@ -3,15 +3,15 @@
   "productSlug": "stonehenge-silver-necklace",
   "categorySlug": "jewelry",
   "query": "스톤헨지 실버 목걸이",
-  "fetchedAt": "2026-06-30T12:36:12+09:00",
-  "updatedAtLabel": "2026-06-30 12:36 기준",
+  "fetchedAt": "2026-07-01T12:45:09+09:00",
+  "updatedAtLabel": "2026-07-01 12:45 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-06-30T12:36:12+09:00",
+      "fetchedAt": "2026-07-01T12:45:09+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "스톤헨지 실버 목걸이",
@@ -19,43 +19,43 @@
       ],
       "items": [
         {
-          "id": "shilla-672423003698",
-          "title": "벨라 SA26A98F Silver 3부랩다목걸이",
+          "id": "shilla-672423003149",
+          "title": "커넥션 SA24A79T 실버 목걸이",
           "brand": "스톤헨지",
-          "priceKrw": 244138,
-          "priceUsd": 158.1,
-          "regularUsdPrice": 186,
-          "discountRate": 15,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B2%A8%EB%9D%BC%20SA26A98F%20Silver%203%EB%B6%80%EB%9E%A9%EB%8B%A4%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-          "imageUrl": "https://image1.shilladfs.com/files/product2/2026/04/10/672423003698_20260410_14162587_12_672423003698_1.JPG",
-          "matchScore": 63,
-          "fetchedAt": "2026-06-30T12:36:12+09:00"
-        },
-        {
-          "id": "shilla-672423003687",
-          "title": "달빛 SA26A48T Silver 목걸이",
-          "brand": "스톤헨지",
-          "priceKrw": 179822,
-          "priceUsd": 116.45,
-          "regularUsdPrice": 137,
-          "discountRate": 15,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%8B%AC%EB%B9%9B%20SA26A48T%20Silver%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-          "imageUrl": "https://image1.shilladfs.com/files/product2/2026/02/27/672423003687_20260227_10524298_12_672423003687_1.JPG",
-          "matchScore": 63,
-          "fetchedAt": "2026-06-30T12:36:12+09:00"
-        },
-        {
-          "id": "shilla-672423003697",
-          "title": "벨라 SA26A97F Silver 1부랩다목걸이",
-          "brand": "스톤헨지",
-          "priceKrw": 143070,
+          "priceKrw": 142820,
           "priceUsd": 92.65,
           "regularUsdPrice": 109,
           "discountRate": 15,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B2%A8%EB%9D%BC%20SA26A97F%20Silver%201%EB%B6%80%EB%9E%A9%EB%8B%A4%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-          "imageUrl": "https://image2.shilladfs.com/files/product2/2026/04/10/672423003697_20260410_14162651_12_672423003697_1.JPG",
-          "matchScore": 63,
-          "fetchedAt": "2026-06-30T12:36:12+09:00"
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BB%A4%EB%84%A5%EC%85%98%20SA24A79T%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2024/03/26/672423003149_20240326_18134499_12_672423003149_1.JPG",
+          "matchScore": 55,
+          "fetchedAt": "2026-07-01T12:45:09+09:00"
+        },
+        {
+          "id": "shilla-672423002876",
+          "title": "DAL K1743 실버 목걸이",
+          "brand": "스톤헨지",
+          "priceKrw": 128407,
+          "priceUsd": 83.3,
+          "regularUsdPrice": 98,
+          "discountRate": 15,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=DAL%20K1743%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
+          "imageUrl": "https://image2.shilladfs.com/files/product2/2023/03/30/672423002876_20230330_15120226_12_672423002876_1.JPG",
+          "matchScore": 55,
+          "fetchedAt": "2026-07-01T12:45:09+09:00"
+        },
+        {
+          "id": "shilla-672423003813",
+          "title": "[신라단독] 듀엘 SA26B72T 실버목걸이",
+          "brand": "스톤헨지",
+          "priceKrw": 193921,
+          "priceUsd": 125.8,
+          "regularUsdPrice": 148,
+          "discountRate": 15,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%5B%EC%8B%A0%EB%9D%BC%EB%8B%A8%EB%8F%85%5D%20%EB%93%80%EC%97%98%20SA26B72T%20%EC%8B%A4%EB%B2%84%EB%AA%A9%EA%B1%B8%EC%9D%B4",
+          "imageUrl": "https://image2.shilladfs.com/files/product3/2026/06/17/672423003813_20260617_16183736_12_672423003813_1.JPG",
+          "matchScore": 55,
+          "fetchedAt": "2026-07-01T12:45:09+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-06-30T03:36:14.759Z",
+      "fetchedAt": "2026-07-01T03:45:12.416Z",
       "matched_via": "original",
       "attempted_queries": [
         "스톤헨지 실버 목걸이",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-06-30T03:36:14.759Z",
+      "fetchedAt": "2026-07-01T03:45:12.416Z",
       "matched_via": "original",
       "attempted_queries": [
         "스톤헨지 실버 목걸이",
