@@ -3,15 +3,15 @@
   "productSlug": "sony-wh-1000xm5",
   "categorySlug": "electronics",
   "query": "소니 WH-1000XM5",
-  "fetchedAt": "2026-07-09T11:55:41+09:00",
-  "updatedAtLabel": "2026-07-09 11:55 기준",
+  "fetchedAt": "2026-07-10T11:58:10+09:00",
+  "updatedAtLabel": "2026-07-10 11:58 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WH-1000XM5",
-      "fetchedAt": "2026-07-09T11:55:41+09:00",
+      "fetchedAt": "2026-07-10T11:58:10+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-1000XM5",
@@ -22,40 +22,40 @@
           "id": "shilla-284429000030",
           "title": "WH-1000XM5/B 노이즈캔슬링 헤드폰 5세대",
           "brand": "소니",
-          "priceKrw": 398901,
+          "priceKrw": 394537,
           "priceUsd": 261.3,
           "regularUsdPrice": 335,
           "discountRate": 22,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WH-1000XM5%2FB%20%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%94%EC%8A%AC%EB%A7%81%20%ED%97%A4%EB%93%9C%ED%8F%B0%205%EC%84%B8%EB%8C%80",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/12/03/284429000030_20241203_11551039_12_284429000030_1.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-07-09T11:55:41+09:00"
+          "fetchedAt": "2026-07-10T11:58:10+09:00"
         },
         {
           "id": "shilla-284429000028",
           "title": "WH-1000XM5/S 노이즈캔슬링 헤드폰 5세대",
           "brand": "소니",
-          "priceKrw": 398901,
+          "priceKrw": 394537,
           "priceUsd": 261.3,
           "regularUsdPrice": 335,
           "discountRate": 22,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WH-1000XM5%2FS%20%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%94%EC%8A%AC%EB%A7%81%20%ED%97%A4%EB%93%9C%ED%8F%B0%205%EC%84%B8%EB%8C%80",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2024/12/04/284429000028_20241204_14440767_12_284429000028_1.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-07-09T11:55:41+09:00"
+          "fetchedAt": "2026-07-10T11:58:10+09:00"
         },
         {
           "id": "shilla-284429000019",
           "title": "WH-1000XM5/P 노이즈캔슬링 헤드폰 5세대",
           "brand": "소니",
-          "priceKrw": 398901,
+          "priceKrw": 394537,
           "priceUsd": 261.3,
           "regularUsdPrice": 335,
           "discountRate": 22,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WH-1000XM5%2FP%20%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%94%EC%8A%AC%EB%A7%81%20%ED%97%A4%EB%93%9C%ED%8F%B0%205%EC%84%B8%EB%8C%80",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/12/03/284429000019_20241203_11555086_12_284429000019_1.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-07-09T11:55:41+09:00"
+          "fetchedAt": "2026-07-10T11:58:10+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%8C%EB%8B%88%20WH-1000XM5",
-      "fetchedAt": "2026-07-09T02:55:42.542Z",
+      "fetchedAt": "2026-07-10T02:58:11.945Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-1000XM5",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%8C%EB%8B%88%20WH-1000XM5",
-      "fetchedAt": "2026-07-09T02:55:42.542Z",
+      "fetchedAt": "2026-07-10T02:58:11.945Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-1000XM5",
