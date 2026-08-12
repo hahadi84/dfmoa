@@ -3,34 +3,52 @@
   "productSlug": "orthomol-immun",
   "categorySlug": "health",
   "query": "오쏘몰 이뮨",
-  "fetchedAt": "2026-04-20T13:17:26+09:00",
-  "updatedAtLabel": "2026-04-20 13:17 기준",
+  "fetchedAt": "2026-08-12T10:50:56+09:00",
+  "updatedAtLabel": "2026-08-12 10:50 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
-      "fetchedAt": "2026-04-20T13:17:25+09:00",
+      "fetchedAt": "2026-08-12T10:50:56+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "오쏘몰 이뮨",
         "오쏘몰이뮨"
       ],
       "items": [],
-      "error": "product_match_failed"
+      "error": "타임아웃"
     },
-    "lotte": {
-      "store": "lotte",
-      "status": "error",
-      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
-      "fetchedAt": "2026-04-20T13:17:26+09:00",
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
+      "fetchedAt": "2026-08-12T01:50:56.258Z",
       "matched_via": "original",
       "attempted_queries": [
         "오쏘몰 이뮨",
-        "오쏘몰이뮨"
+        "Orthomol Immun",
+        "Orthomol Immun 30일분"
       ],
       "items": [],
-      "error": "robots_or_terms_restricted"
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
+      "fetchedAt": "2026-08-12T01:50:56.258Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "오쏘몰 이뮨",
+        "Orthomol Immun",
+        "Orthomol Immun 30일분"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
     }
   }
 }

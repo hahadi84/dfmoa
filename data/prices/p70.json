@@ -1,0 +1,54 @@
+{
+  "productId": "p70",
+  "productSlug": "goldendew-diamond-necklace",
+  "categorySlug": "jewelry",
+  "query": "골든듀 다이아몬드 목걸이",
+  "fetchedAt": "2026-08-12T10:50:31+09:00",
+  "updatedAtLabel": "2026-08-12 10:50 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B3%A8%EB%93%A0%EB%93%80%20%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
+      "fetchedAt": "2026-08-12T10:50:31+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "골든듀 다이아몬드 목걸이",
+        "골든듀다이아몬드목걸이"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B3%A8%EB%93%A0%EB%93%80%20%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
+      "fetchedAt": "2026-08-12T01:50:31.233Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "골든듀 다이아몬드 목걸이",
+        "Golden Dew Diamond Necklace",
+        "Golden Dew Diamond Necklace Diamond"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B3%A8%EB%93%A0%EB%93%80%20%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
+      "fetchedAt": "2026-08-12T01:50:31.233Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "골든듀 다이아몬드 목걸이",
+        "Golden Dew Diamond Necklace",
+        "Golden Dew Diamond Necklace Diamond"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

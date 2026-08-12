@@ -1,0 +1,55 @@
+{
+  "productId": "p16",
+  "productSlug": "penhaligons-halfeti-100ml",
+  "categorySlug": "perfume",
+  "query": "펜할리곤스 할페티 100ml",
+  "fetchedAt": "2026-08-12T10:47:10+09:00",
+  "updatedAtLabel": "2026-08-12 10:47 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8E%9C%ED%95%A0%EB%A6%AC%EA%B3%A4%EC%8A%A4%20%ED%95%A0%ED%8E%98%ED%8B%B0%20100ml",
+      "fetchedAt": "2026-08-12T10:47:10+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "펜할리곤스 할페티 100ml",
+        "펜할리곤스할페티100ml",
+        "펜할리곤스 할페티"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8E%9C%ED%95%A0%EB%A6%AC%EA%B3%A4%EC%8A%A4%20%ED%95%A0%ED%8E%98%ED%8B%B0%20100ml",
+      "fetchedAt": "2026-08-12T01:47:10.953Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "펜할리곤스 할페티 100ml",
+        "Penhaligon's Halfeti EDP 100ml",
+        "Penhaligon's Halfeti Eau de Parfum 100ml"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8E%9C%ED%95%A0%EB%A6%AC%EA%B3%A4%EC%8A%A4%20%ED%95%A0%ED%8E%98%ED%8B%B0%20100ml",
+      "fetchedAt": "2026-08-12T01:47:10.953Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "펜할리곤스 할페티 100ml",
+        "Penhaligon's Halfeti EDP 100ml",
+        "Penhaligon's Halfeti Eau de Parfum 100ml"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

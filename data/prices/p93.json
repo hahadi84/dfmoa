@@ -1,0 +1,54 @@
+{
+  "productId": "p93",
+  "productSlug": "bose-quietcomfort-ultra",
+  "categorySlug": "electronics",
+  "query": "보스 QuietComfort Ultra",
+  "fetchedAt": "2026-08-12T10:51:41+09:00",
+  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B3%B4%EC%8A%A4%20QuietComfort%20Ultra",
+      "fetchedAt": "2026-08-12T10:51:41+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "보스 QuietComfort Ultra",
+        "보스quietcomfortultra"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B3%B4%EC%8A%A4%20QuietComfort%20Ultra",
+      "fetchedAt": "2026-08-12T01:51:41.316Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "보스 QuietComfort Ultra",
+        "Bose QuietComfort Ultra",
+        "Bose QuietComfort Ultra Headphones"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B3%B4%EC%8A%A4%20QuietComfort%20Ultra",
+      "fetchedAt": "2026-08-12T01:51:41.316Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "보스 QuietComfort Ultra",
+        "Bose QuietComfort Ultra",
+        "Bose QuietComfort Ultra Headphones"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

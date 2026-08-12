@@ -1,0 +1,54 @@
+{
+  "productId": "p76",
+  "productSlug": "lacto-fit-gold",
+  "categorySlug": "health",
+  "query": "락토핏 골드 유산균",
+  "fetchedAt": "2026-08-12T10:51:06+09:00",
+  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9D%BD%ED%86%A0%ED%95%8F%20%EA%B3%A8%EB%93%9C%20%EC%9C%A0%EC%82%B0%EA%B7%A0",
+      "fetchedAt": "2026-08-12T10:51:06+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "락토핏 골드 유산균",
+        "락토핏골드유산균"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%9D%BD%ED%86%A0%ED%95%8F%20%EA%B3%A8%EB%93%9C%20%EC%9C%A0%EC%82%B0%EA%B7%A0",
+      "fetchedAt": "2026-08-12T01:51:06.270Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "락토핏 골드 유산균",
+        "Lacto-Fit Gold",
+        "Lacto-Fit Gold Probiotics Stick"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%9D%BD%ED%86%A0%ED%95%8F%20%EA%B3%A8%EB%93%9C%20%EC%9C%A0%EC%82%B0%EA%B7%A0",
+      "fetchedAt": "2026-08-12T01:51:06.270Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "락토핏 골드 유산균",
+        "Lacto-Fit Gold",
+        "Lacto-Fit Gold Probiotics Stick"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

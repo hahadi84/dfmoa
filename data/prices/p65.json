@@ -1,0 +1,54 @@
+{
+  "productId": "p65",
+  "productSlug": "tiffany-return-to-tiffany-bracelet",
+  "categorySlug": "jewelry",
+  "query": "티파니 리턴 투 티파니 브레이슬릿",
+  "fetchedAt": "2026-08-12T10:50:21+09:00",
+  "updatedAtLabel": "2026-08-12 10:50 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%ED%8C%8C%EB%8B%88%20%EB%A6%AC%ED%84%B4%20%ED%88%AC%20%ED%8B%B0%ED%8C%8C%EB%8B%88%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
+      "fetchedAt": "2026-08-12T10:50:21+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "티파니 리턴 투 티파니 브레이슬릿",
+        "티파니리턴투티파니브레이슬릿"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8B%B0%ED%8C%8C%EB%8B%88%20%EB%A6%AC%ED%84%B4%20%ED%88%AC%20%ED%8B%B0%ED%8C%8C%EB%8B%88%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
+      "fetchedAt": "2026-08-12T01:50:21.219Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "티파니 리턴 투 티파니 브레이슬릿",
+        "Tiffany Return to Tiffany Bracelet",
+        "Tiffany & Co. Return to Tiffany Bracelet Bracelet"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8B%B0%ED%8C%8C%EB%8B%88%20%EB%A6%AC%ED%84%B4%20%ED%88%AC%20%ED%8B%B0%ED%8C%8C%EB%8B%88%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF",
+      "fetchedAt": "2026-08-12T01:50:21.220Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "티파니 리턴 투 티파니 브레이슬릿",
+        "Tiffany Return to Tiffany Bracelet",
+        "Tiffany & Co. Return to Tiffany Bracelet Bracelet"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

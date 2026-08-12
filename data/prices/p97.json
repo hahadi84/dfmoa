@@ -1,0 +1,54 @@
+{
+  "productId": "p97",
+  "productSlug": "jbl-flip-6",
+  "categorySlug": "electronics",
+  "query": "JBL 플립 6",
+  "fetchedAt": "2026-08-12T10:51:51+09:00",
+  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=JBL%20%ED%94%8C%EB%A6%BD%206",
+      "fetchedAt": "2026-08-12T10:51:51+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "JBL 플립 6",
+        "jbl플립6"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=JBL%20%ED%94%8C%EB%A6%BD%206",
+      "fetchedAt": "2026-08-12T01:51:51.329Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "JBL 플립 6",
+        "JBL Flip 6",
+        "JBL Flip 6 Speaker"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=JBL%20%ED%94%8C%EB%A6%BD%206",
+      "fetchedAt": "2026-08-12T01:51:51.329Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "JBL 플립 6",
+        "JBL Flip 6",
+        "JBL Flip 6 Speaker"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

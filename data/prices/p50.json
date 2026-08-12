@@ -1,0 +1,54 @@
+{
+  "productId": "p50",
+  "productSlug": "lululemon-everywhere-belt-bag",
+  "categorySlug": "fashion",
+  "query": "룰루레몬 에브리웨어 벨트백",
+  "fetchedAt": "2026-08-12T10:49:41+09:00",
+  "updatedAtLabel": "2026-08-12 10:49 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A3%B0%EB%A3%A8%EB%A0%88%EB%AA%AC%20%EC%97%90%EB%B8%8C%EB%A6%AC%EC%9B%A8%EC%96%B4%20%EB%B2%A8%ED%8A%B8%EB%B0%B1",
+      "fetchedAt": "2026-08-12T10:49:41+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "룰루레몬 에브리웨어 벨트백",
+        "룰루레몬에브리웨어벨트백"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A3%B0%EB%A3%A8%EB%A0%88%EB%AA%AC%20%EC%97%90%EB%B8%8C%EB%A6%AC%EC%9B%A8%EC%96%B4%20%EB%B2%A8%ED%8A%B8%EB%B0%B1",
+      "fetchedAt": "2026-08-12T01:49:41.167Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "룰루레몬 에브리웨어 벨트백",
+        "Lululemon Everywhere Belt Bag",
+        "Lululemon Everywhere Belt Bag Belt Bag"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A3%B0%EB%A3%A8%EB%A0%88%EB%AA%AC%20%EC%97%90%EB%B8%8C%EB%A6%AC%EC%9B%A8%EC%96%B4%20%EB%B2%A8%ED%8A%B8%EB%B0%B1",
+      "fetchedAt": "2026-08-12T01:49:41.167Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "룰루레몬 에브리웨어 벨트백",
+        "Lululemon Everywhere Belt Bag",
+        "Lululemon Everywhere Belt Bag Belt Bag"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "productId": "p45",
+  "productSlug": "polo-ralph-lauren-cap",
+  "categorySlug": "fashion",
+  "query": "폴로 랄프로렌 볼캡",
+  "fetchedAt": "2026-08-12T10:49:21+09:00",
+  "updatedAtLabel": "2026-08-12 10:49 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
+      "fetchedAt": "2026-08-12T10:49:21+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "폴로 랄프로렌 볼캡",
+        "폴로랄프로렌볼캡"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
+      "fetchedAt": "2026-08-12T01:49:21.141Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "폴로 랄프로렌 볼캡",
+        "Polo Ralph Lauren Cap",
+        "Polo Ralph Lauren Cotton Chino Cap Cap"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
+      "fetchedAt": "2026-08-12T01:49:21.141Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "폴로 랄프로렌 볼캡",
+        "Polo Ralph Lauren Cap",
+        "Polo Ralph Lauren Cotton Chino Cap Cap"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

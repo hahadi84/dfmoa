@@ -1,0 +1,54 @@
+{
+  "productId": "p100",
+  "productSlug": "samsung-galaxy-buds2-pro",
+  "categorySlug": "electronics",
+  "query": "삼성 갤럭시 버즈2 프로",
+  "fetchedAt": "2026-08-12T10:51:56+09:00",
+  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%82%BC%EC%84%B1%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%B2%84%EC%A6%882%20%ED%94%84%EB%A1%9C",
+      "fetchedAt": "2026-08-12T10:51:56+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "삼성 갤럭시 버즈2 프로",
+        "삼성갤럭시버즈2프로"
+      ],
+      "items": [],
+      "error": "타임아웃"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%82%BC%EC%84%B1%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%B2%84%EC%A6%882%20%ED%94%84%EB%A1%9C",
+      "fetchedAt": "2026-08-12T01:51:56.335Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "삼성 갤럭시 버즈2 프로",
+        "Samsung Galaxy Buds2 Pro",
+        "Samsung Galaxy Buds2 Pro Earbuds"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%82%BC%EC%84%B1%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%B2%84%EC%A6%882%20%ED%94%84%EB%A1%9C",
+      "fetchedAt": "2026-08-12T01:51:56.335Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "삼성 갤럭시 버즈2 프로",
+        "Samsung Galaxy Buds2 Pro",
+        "Samsung Galaxy Buds2 Pro Earbuds"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}
