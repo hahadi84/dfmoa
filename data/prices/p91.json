@@ -3,29 +3,29 @@
   "productSlug": "apple-airpods-pro-2",
   "categorySlug": "electronics",
   "query": "애플 에어팟 프로 2세대",
-  "fetchedAt": "2026-08-12T10:51:31+09:00",
-  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "fetchedAt": "2026-08-13T10:54:44+09:00",
+  "updatedAtLabel": "2026-08-13 10:54 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%95%A0%ED%94%8C%20%EC%97%90%EC%96%B4%ED%8C%9F%20%ED%94%84%EB%A1%9C%202%EC%84%B8%EB%8C%80",
-      "fetchedAt": "2026-08-12T10:51:31+09:00",
+      "fetchedAt": "2026-08-13T10:54:44+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "애플 에어팟 프로 2세대",
         "애플에어팟프로2세대"
       ],
       "items": [],
-      "error": "타임아웃"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%95%A0%ED%94%8C%20%EC%97%90%EC%96%B4%ED%8C%9F%20%ED%94%84%EB%A1%9C%202%EC%84%B8%EB%8C%80",
-      "fetchedAt": "2026-08-12T01:51:31.303Z",
+      "fetchedAt": "2026-08-13T01:54:46.182Z",
       "matched_via": "original",
       "attempted_queries": [
         "애플 에어팟 프로 2세대",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%95%A0%ED%94%8C%20%EC%97%90%EC%96%B4%ED%8C%9F%20%ED%94%84%EB%A1%9C%202%EC%84%B8%EB%8C%80",
-      "fetchedAt": "2026-08-12T01:51:31.303Z",
+      "fetchedAt": "2026-08-13T01:54:46.182Z",
       "matched_via": "original",
       "attempted_queries": [
         "애플 에어팟 프로 2세대",

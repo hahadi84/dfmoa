@@ -3,16 +3,16 @@
   "productSlug": "le-labo-santal-33-50ml",
   "categorySlug": "perfume",
   "query": "르라보 상탈 33 50ml",
-  "fetchedAt": "2026-08-12T10:46:45+09:00",
-  "updatedAtLabel": "2026-08-12 10:46 기준",
+  "fetchedAt": "2026-08-13T10:49:12+09:00",
+  "updatedAtLabel": "2026-08-13 10:49 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "error",
-      "source_status": "error",
+      "status": "ok",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
-      "fetchedAt": "2026-08-12T10:46:45+09:00",
-      "matched_via": "alias_en",
+      "fetchedAt": "2026-08-13T10:49:12+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "르라보 상탈 33 50ml",
         "Le Labo Santal 33 50ml",
@@ -25,15 +25,29 @@
         "Le Labo Santal 33",
         "Le Labo Santal 33 EDP"
       ],
-      "items": [],
-      "error": "타임아웃"
+      "items": [
+        {
+          "id": "shilla-161213000242",
+          "title": "상탈 33 EDP 50ml",
+          "brand": "르 라보",
+          "priceKrw": 266162,
+          "priceUsd": 188.1,
+          "regularUsdPrice": 198,
+          "discountRate": 5,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%83%81%ED%83%88%2033%20EDP%2050ml",
+          "imageUrl": "https://image1.shilladfs.com/files/product3/2026/08/10/161213000242_20260810_15583130_12_161213000242_3.JPG",
+          "matchScore": 99,
+          "fetchedAt": "2026-08-13T10:49:12+09:00"
+        }
+      ],
+      "error": null
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
-      "fetchedAt": "2026-08-12T01:46:45.921Z",
+      "fetchedAt": "2026-08-13T01:49:13.635Z",
       "matched_via": "original",
       "attempted_queries": [
         "르라보 상탈 33 50ml",
@@ -50,7 +64,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
-      "fetchedAt": "2026-08-12T01:46:45.921Z",
+      "fetchedAt": "2026-08-13T01:49:13.635Z",
       "matched_via": "original",
       "attempted_queries": [
         "르라보 상탈 33 50ml",
