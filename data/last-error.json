@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T03:06:24.895Z",
+  "generatedAt": "2026-09-05T03:05:30.008Z",
   "attemptedCount": 46,
   "failureCount": 7,
   "failures": [
@@ -25,7 +25,7 @@
       "productId": "p28",
       "productSlug": "yamazaki-12-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p30",
