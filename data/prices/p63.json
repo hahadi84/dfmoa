@@ -3,15 +3,15 @@
   "productSlug": "jestina-tiara-necklace",
   "categorySlug": "jewelry",
   "query": "제이에스티나 티아라 목걸이",
-  "fetchedAt": "2026-09-15T12:31:13+09:00",
-  "updatedAtLabel": "2026-09-15 12:31 기준",
+  "fetchedAt": "2026-09-16T12:27:16+09:00",
+  "updatedAtLabel": "2026-09-16 12:27 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-09-15T12:31:13+09:00",
+      "fetchedAt": "2026-09-16T12:27:16+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "제이에스티나 티아라 목걸이",
@@ -22,40 +22,40 @@
           "id": "shilla-861823000726",
           "title": "TIARA 키즈 미아방지 탄생석 목걸이 JJK1NQ2BF757SC340",
           "brand": "제이에스티나",
-          "priceKrw": 151228,
+          "priceKrw": 151104,
           "priceUsd": 112.32,
           "regularUsdPrice": 156,
           "discountRate": 28,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=TIARA%20%ED%82%A4%EC%A6%88%20%EB%AF%B8%EC%95%84%EB%B0%A9%EC%A7%80%20%ED%83%84%EC%83%9D%EC%84%9D%20%EB%AA%A9%EA%B1%B8%EC%9D%B4%20JJK1NQ2BF757SC340",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/02/25/861823000726_20250225_13575278_12_861823000726_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-09-15T12:31:13+09:00"
+          "fetchedAt": "2026-09-16T12:27:16+09:00"
         },
         {
           "id": "shilla-861823000307",
           "title": "Delicate Tiara 목걸이",
           "brand": "제이에스티나",
-          "priceKrw": 66889,
+          "priceKrw": 66835,
           "priceUsd": 49.68,
           "regularUsdPrice": 69,
           "discountRate": 28,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Delicate%20Tiara%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2024/03/26/861823000307_20240326_16155976_12_861823000307_1.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-09-15T12:31:13+09:00"
+          "fetchedAt": "2026-09-16T12:27:16+09:00"
         },
         {
           "id": "shilla-861823000013",
           "title": "Basic Tiara 목걸이",
           "brand": "제이에스티나",
-          "priceKrw": 65920,
+          "priceKrw": 65866,
           "priceUsd": 48.96,
           "regularUsdPrice": 68,
           "discountRate": 28,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=Basic%20Tiara%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/02/12/861823000013_20260212_09414880_12_861823000013_2.JPG",
           "matchScore": 63,
-          "fetchedAt": "2026-09-15T12:31:13+09:00"
+          "fetchedAt": "2026-09-16T12:27:16+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-09-15T03:31:15.404Z",
+      "fetchedAt": "2026-09-16T03:27:19.286Z",
       "matched_via": "original",
       "attempted_queries": [
         "제이에스티나 티아라 목걸이",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4",
-      "fetchedAt": "2026-09-15T03:31:15.404Z",
+      "fetchedAt": "2026-09-16T03:27:19.287Z",
       "matched_via": "original",
       "attempted_queries": [
         "제이에스티나 티아라 목걸이",
