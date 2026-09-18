@@ -3,15 +3,15 @@
   "productSlug": "coach-tabby-shoulder-bag",
   "categorySlug": "fashion",
   "query": "코치 태비 숄더백",
-  "fetchedAt": "2026-09-17T12:32:32+09:00",
-  "updatedAtLabel": "2026-09-17 12:32 기준",
+  "fetchedAt": "2026-09-18T12:18:30+09:00",
+  "updatedAtLabel": "2026-09-18 12:18 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-09-17T12:32:32+09:00",
+      "fetchedAt": "2026-09-18T12:18:30+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -22,40 +22,40 @@
           "id": "shilla-026814010420",
           "title": "체인 태비 숄더 백 블랙",
           "brand": "코치",
-          "priceKrw": 700333,
+          "priceKrw": 708095,
           "priceUsd": 517.5,
           "regularUsdPrice": 575,
           "discountRate": 10,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B2%B4%EC%9D%B8%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%20%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2026/05/11/026814010420_20260511_14201469_12_026814010420_9.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-09-17T12:32:32+09:00"
+          "fetchedAt": "2026-09-18T12:18:30+09:00"
+        },
+        {
+          "id": "shilla-026814010374",
+          "title": "체인 태비 숄더 백",
+          "brand": "코치",
+          "priceKrw": 708095,
+          "priceUsd": 517.5,
+          "regularUsdPrice": 575,
+          "discountRate": 10,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B2%B4%EC%9D%B8%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1",
+          "imageUrl": "https://image1.shilladfs.com/files/product3/2026/06/17/026814010374_20260617_17174235_12_026814010374_2.JPG",
+          "matchScore": 47,
+          "fetchedAt": "2026-09-18T12:18:30+09:00"
         },
         {
           "id": "shilla-026814010464",
           "title": "태비 숄더 백 26 블랙",
           "brand": "코치",
-          "priceKrw": 669884,
+          "priceKrw": 677309,
           "priceUsd": 495,
           "regularUsdPrice": 550,
           "discountRate": 10,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026%20%EB%B8%94%EB%9E%99",
           "imageUrl": "https://image1.shilladfs.com/files/product3/2026/07/08/026814010464_20260708_10403719_12_026814010464_11.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-09-17T12:32:32+09:00"
-        },
-        {
-          "id": "shilla-026814010465",
-          "title": "태비 숄더 백 26 초크",
-          "brand": "코치",
-          "priceKrw": 669884,
-          "priceUsd": 495,
-          "regularUsdPrice": 550,
-          "discountRate": 10,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026%20%EC%B4%88%ED%81%AC",
-          "imageUrl": "https://image1.shilladfs.com/files/product3/2026/07/08/026814010465_20260708_10404952_12_026814010465_8.JPG",
-          "matchScore": 47,
-          "fetchedAt": "2026-09-17T12:32:32+09:00"
+          "fetchedAt": "2026-09-18T12:18:30+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-09-17T03:32:33.920Z",
+      "fetchedAt": "2026-09-18T03:18:32.246Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-09-17T03:32:33.920Z",
+      "fetchedAt": "2026-09-18T03:18:32.246Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
