@@ -3,15 +3,15 @@
   "productSlug": "glenfiddich-15-700ml",
   "categorySlug": "liquor",
   "query": "글렌피딕 15년 700ml",
-  "fetchedAt": "2026-09-18T12:16:15+09:00",
-  "updatedAtLabel": "2026-09-18 12:16 기준",
+  "fetchedAt": "2026-09-19T12:12:35+09:00",
+  "updatedAtLabel": "2026-09-19 12:12 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-09-18T12:16:15+09:00",
+      "fetchedAt": "2026-09-19T12:12:35+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
@@ -23,14 +23,14 @@
           "id": "shilla-082331000041",
           "title": "글렌피딕 15년 벳3 퍼페추얼 컬렉션 700ml",
           "brand": "글렌피딕",
-          "priceKrw": 81277,
+          "priceKrw": 81990,
           "priceUsd": 59.4,
           "regularUsdPrice": 99,
           "discountRate": 40,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20%EB%B2%B33%20%ED%8D%BC%ED%8E%98%EC%B6%94%EC%96%BC%20%EC%BB%AC%EB%A0%89%EC%85%98%20700ml",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2023/04/05/082331000041_20230405_14143526_12_082331000041_1.JPG",
           "matchScore": 103,
-          "fetchedAt": "2026-09-18T12:16:15+09:00"
+          "fetchedAt": "2026-09-19T12:12:35+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-09-18T03:16:17.693Z",
+      "fetchedAt": "2026-09-19T03:12:36.566Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
@@ -55,7 +55,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-09-18T03:16:17.693Z",
+      "fetchedAt": "2026-09-19T03:12:36.566Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
