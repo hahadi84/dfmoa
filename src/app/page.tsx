@@ -14,8 +14,12 @@ import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
 import { getLowestPriceSummaries, getLowestPriceSummary, hasSnapshotPrice } from "@/lib/snapshot-summaries";
 import { buildSeoMetadata, HOME_OG_IMAGE } from "@/lib/seo-metadata";
 import { categories, guides, products, stores } from "@/lib/site-data";
+import searchDemand from "../../data/search-demand.json";
+import { getSnapshotBestItem } from "@/lib/price-snapshot-view";
 
 const brandProofs = ["공개가 기준", "국내가 비교", "혜택 조건 분리"];
+// This page is statically exported; all freshness decisions use one build-time clock.
+const buildTimestamp = Date.now();
 
 export const metadata: Metadata = {
   ...buildSeoMetadata({
@@ -34,12 +38,26 @@ export default function Home() {
   const supportedStoreNames = stores.map((store) => store.name).join(", ");
   const priceSnapshotsByProductId = readPriceSnapshotsByProductId(products);
   const latestSnapshotTimestamp = Object.values(priceSnapshotsByProductId)
-    .flatMap((snapshot) => Object.values(snapshot?.sources ?? {}).map((source) => source.fetchedAt).filter(Boolean))
+    .flatMap((snapshot) => Object.values(snapshot?.sources ?? {})
+      .filter((source) => source.items?.some((item) => Number(item.priceKrw) > 0 || Number(item.priceUsd) > 0))
+      .map((source) => source.fetchedAt).filter(Boolean))
     .sort()
     .at(-1);
   const latestSnapshotLabel = latestSnapshotTimestamp?.replace("T", " ").slice(0, 16) || "최근 확인 시각 없음";
   const pricedProducts = products.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id]));
-  const lowestPriceItems = getLowestPriceSummaries(products, priceSnapshotsByProductId, 6);
+  const demandRows = searchDemand.products as { productSlug: string; count: number }[];
+  const demandTimestamp = Date.parse(searchDemand.generatedAt ?? "");
+  const hasSearchDemand = Number.isFinite(demandTimestamp) && buildTimestamp - demandTimestamp < 48 * 3_600_000 && demandRows.length > 0;
+  const demandCounts = new Map(hasSearchDemand ? demandRows.map((item) => [item.productSlug, item.count]) : []);
+  const recentPriceItems = getLowestPriceSummaries(products, priceSnapshotsByProductId)
+    .filter((item) => {
+      const best = getSnapshotBestItem(priceSnapshotsByProductId[item.product.id]);
+      const timestamp = Date.parse(best?.source.fetchedAt ?? best?.item.fetchedAt ?? "");
+      return Number.isFinite(timestamp) && buildTimestamp - timestamp <= 3 * 86_400_000;
+    });
+  const popularPriceItems = recentPriceItems.filter((item) => demandCounts.has(item.product.slug))
+    .sort((a, b) => (demandCounts.get(b.product.slug) ?? 0) - (demandCounts.get(a.product.slug) ?? 0) || a.product.slug.localeCompare(b.product.slug));
+  const lowestPriceItems = (popularPriceItems.length ? popularPriceItems : recentPriceItems).slice(0, 6);
   const heroLowestPriceItems = lowestPriceItems.slice(0, 3);
   const preferredSearchSlugs = [
     "creed-aventus-50ml",
@@ -52,7 +70,12 @@ export default function Home() {
     .filter((product): product is (typeof products)[number] =>
       Boolean(product && hasSnapshotPrice(priceSnapshotsByProductId[product.id]))
     );
-  const popularSearchItems = popularSearchProducts.length ? popularSearchProducts : pricedProducts.slice(0, 4);
+  const rankedSearchProducts = hasSearchDemand ? demandRows
+    .map((row) => products.find((product) => product.slug === row.productSlug))
+    .filter((product): product is (typeof products)[number] => Boolean(product)).slice(0, 4) : [];
+  const popularSearchItems = rankedSearchProducts.length ? rankedSearchProducts :
+    popularSearchProducts.length ? popularSearchProducts : pricedProducts.slice(0, 4);
+  const searchHeading = rankedSearchProducts.length ? "최근 7일 인기 검색어" : "추천 검색어";
   const categorySummaries = categories.map((category) => {
     const categoryProducts = products.filter((product) => product.categorySlug === category.slug);
     const lowestItem = categoryProducts
@@ -116,8 +139,8 @@ export default function Home() {
             </div>
 
             {popularSearchItems.length ? (
-              <div className="hero-search-terms" aria-label="지금 인기 검색어">
-                <span>지금 인기 검색어</span>
+              <div className="hero-search-terms" aria-label={searchHeading}>
+                <span>{searchHeading}</span>
                 <div className="chip-row">
                   {popularSearchItems.map((product) => (
                     <Link key={product.id} className="chip" href={`/search?q=${encodeURIComponent(product.query)}`}>
@@ -129,9 +152,9 @@ export default function Home() {
             ) : null}
 
             {heroLowestPriceItems.length ? (
-              <div className="hero-lowest-preview" aria-label="지금 최저가 3선">
+              <div className="hero-lowest-preview" aria-label="최근 수집 가격">
                 <div className="hero-lowest-preview-head">
-                  <span>지금 최저가 3선</span>
+                  <span>{popularPriceItems.length ? "인기검색 상품 최근 가격" : "최근 수집 가격"}</span>
                   <Link className="text-link" href="/search">
                     전체 보기
                   </Link>
@@ -172,7 +195,7 @@ export default function Home() {
             <div className="section-head today-lowest-head">
               <div>
                 <span className="eyebrow">기준: {latestSnapshotLabel} 자동 수집</span>
-                <h2 className="section-title">오늘의 최저가 TOP 6</h2>
+                <h2 className="section-title">{popularPriceItems.length ? "인기검색 상품 최근 가격" : "최근 수집 가격 TOP 6"}</h2>
               </div>
               <Link className="ghost-button" href="/search">
                 전체 가격 비교

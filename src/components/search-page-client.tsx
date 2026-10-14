@@ -14,6 +14,7 @@ import { StoreStatusList } from "@/components/store-status-list";
 import { buildDomesticPriceApiPath, buildSearchApiPath } from "@/lib/search-api-url";
 import type { DomesticPriceResult } from "@/lib/domestic-price-types";
 import { categories, featureSearches, getStoreById, searchProducts, stores } from "@/lib/site-data";
+import { recordBrowserSearchDemand } from "@/lib/record-search-demand";
 import {
   buildSourcePrices,
   getAggregatePriceCopy,
@@ -105,6 +106,10 @@ export function SearchPageClient() {
       cancelled = true;
       controller.abort();
     };
+  }, [query]);
+
+  useEffect(() => {
+    if (query) recordBrowserSearchDemand(query);
   }, [query]);
 
   useEffect(() => {

@@ -4,6 +4,7 @@ import vm from "node:vm";
 import { createRequire } from "node:module";
 import ts from "typescript";
 import { fetchShillaPrices, shillaCrawlerConfig } from "./shilla-fetcher.mjs";
+import { validateSearchDemand, mergeSnapshotAfterFailure } from "./search-demand.mjs";
 
 const ROOT_DIR = process.cwd();
 const require = createRequire(import.meta.url);
@@ -13,6 +14,7 @@ const PRICE_DIR = path.join(ROOT_DIR, "data/prices");
 const HISTORY_DIR = path.join(ROOT_DIR, "data/history");
 const MANIFEST_PATH = path.join(PRICE_DIR, "manifest.json");
 const LAST_ERROR_PATH = path.join(ROOT_DIR, "data/last-error.json");
+const SEARCH_DEMAND_PATH = path.join(ROOT_DIR, "data/search-demand.json");
 const REQUIRED_TOTAL = 40;
 const CATEGORY_QUOTAS = {
   perfume: 9,
@@ -422,56 +424,63 @@ async function main() {
   const selected = [];
   const attempted = [];
   const failures = [];
+  let searchDemand = { generatedAt: null, windowDays: 7, metric: "daily_tab_product_searches", products: [] };
+  try {
+    const response = await fetch("https://www.dfmoa.com/api/search-demand", { signal: AbortSignal.timeout(15_000) });
+    if (!response.ok) throw new Error(`Search demand HTTP ${response.status}`);
+    searchDemand = validateSearchDemand(await response.json(), new Set(products.map((product) => product.slug)));
+  } catch (error) {
+    console.warn(`[snapshot] Internal search demand unavailable: ${error.message}; using category watchlist.`);
+  }
+  fs.writeFileSync(SEARCH_DEMAND_PATH, `${JSON.stringify(searchDemand, null, 2)}\n`);
 
   fs.mkdirSync(PRICE_DIR, { recursive: true });
   fs.mkdirSync(HISTORY_DIR, { recursive: true });
   const historyTimestamp = new Date().toISOString();
 
+  const collect = async (product) => {
+    attempted.push(product.slug);
+    console.log(`[snapshot] ${product.categorySlug} ${product.slug}`);
+    const snapshot = await collectProduct(product, shillaSearchCache);
+    const filePath = path.join(PRICE_DIR, `${product.id}.json`);
+    const previous = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf8")) : null;
+    fs.writeFileSync(filePath, `${JSON.stringify(mergeSnapshotAfterFailure(previous, snapshot), null, 2)}\n`);
+    appendHistory(snapshot, historyTimestamp);
+    const successful = hasValidPrice(snapshot);
+    if (successful) {
+      const [sourceId, source] = getPrimarySourceEntry(snapshot);
+      selected.push({ productId: product.id, productSlug: product.slug, categorySlug: product.categorySlug,
+        sourceId, fetchedAt: source.fetchedAt, priceKrw: source.items[0]?.priceKrw ?? null,
+        priceUsd: source.items[0]?.priceUsd ?? null });
+    } else {
+      failures.push({ productId: product.id, productSlug: product.slug, categorySlug: product.categorySlug,
+        error: getSnapshotFailureReason(snapshot) });
+    }
+    await sleep(shillaCrawlerConfig.crawlDelaySeconds * 1000);
+    return successful;
+  };
+
+  // Real internal demand comes first, including categories outside the curated quotas.
+  for (const { productSlug } of searchDemand.products.slice(0, 30)) {
+    const product = productBySlug.get(productSlug);
+    if (product) await collect(product);
+  }
+
   for (const [group, quota] of Object.entries(CATEGORY_QUOTAS)) {
-    let accepted = 0;
+    let accepted = selected.filter((item) => item.categorySlug === group).length;
 
     for (const slug of CATEGORY_POOLS[group]) {
-      if (accepted >= quota) {
+      if (accepted >= quota || selected.length >= REQUIRED_TOTAL) {
         break;
       }
 
       const product = productBySlug.get(slug);
 
-      if (!product) {
+      if (!product || attempted.includes(slug)) {
         continue;
       }
 
-      attempted.push(product.slug);
-      console.log(`[snapshot] ${group} ${product.slug}`);
-      const snapshot = await collectProduct(product, shillaSearchCache);
-
-      fs.writeFileSync(path.join(PRICE_DIR, `${product.id}.json`), `${JSON.stringify(snapshot, null, 2)}\n`);
-      appendHistory(snapshot, historyTimestamp);
-
-      if (hasValidPrice(snapshot)) {
-        const [sourceId, source] = getPrimarySourceEntry(snapshot);
-        selected.push({
-          productId: product.id,
-          productSlug: product.slug,
-          categorySlug: product.categorySlug,
-          sourceId,
-          fetchedAt: source.fetchedAt,
-          priceKrw: source.items[0]?.priceKrw ?? null,
-          priceUsd: source.items[0]?.priceUsd ?? null,
-        });
-        accepted += 1;
-      } else {
-        failures.push({
-          productId: product.id,
-          productSlug: product.slug,
-          categorySlug: product.categorySlug,
-          error: getSnapshotFailureReason(snapshot),
-        });
-      }
-
-      await sleep(
-        shillaCrawlerConfig.crawlDelaySeconds * 1000
-      );
+      if (await collect(product)) accepted += 1;
     }
   }
 
@@ -491,6 +500,8 @@ async function main() {
       hour12: false,
     }).format(new Date()),
     requiredTotal: REQUIRED_TOTAL,
+    searchDemandGeneratedAt: searchDemand.generatedAt,
+    prioritizedSlugs: searchDemand.products.slice(0, 30).map((item) => item.productSlug),
     selectedCount: selected.length,
     quotas: CATEGORY_QUOTAS,
     attempted,
