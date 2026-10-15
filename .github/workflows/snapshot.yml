@@ -2,8 +2,8 @@ name: Daily price snapshot
 
 on:
   schedule:
-    # Daily at 09:00 KST.
-    - cron: '0 0 * * *'
+    # Daily at 07:00 KST (22:00 UTC on the previous day).
+    - cron: '0 22 * * *'
   workflow_dispatch: {}
 
 concurrency:
@@ -20,17 +20,19 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
       - run: npm ci
+      - name: Validate internal demand and failure handling
+        run: node --test scripts/search-demand.test.mjs
       - name: Run snapshot
         # Uses public duty-free search pages only; no Netlify environment variables are required.
         run: npm run snapshot
-        timeout-minutes: 10
+        timeout-minutes: 20
       - name: Commit updated prices
         if: always()
         id: commit
         run: |
           git config user.name "dfmoa-bot"
           git config user.email "bot@dfmoa.local"
-          git add data/prices/ data/history/ data/last-error.json
+          git add data/prices/ data/history/ data/last-error.json data/search-demand.json
           if git diff --cached --quiet; then
             echo "No changes"
             echo "changed=false" >> "$GITHUB_OUTPUT"
