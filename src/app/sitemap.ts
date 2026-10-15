@@ -3,6 +3,7 @@ import { benefitReports } from "@/lib/benefit-report-generator";
 import { airportGuides, brandLandings, comparePages, monthlyDealReports } from "@/lib/seo-content";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 import { categories, guides, products } from "@/lib/site-data";
+import { preservedPages } from "@/lib/preserved-pages";
 
 const SITE_URL = SITE_OPERATOR.serviceUrl;
 const LAST_MODIFIED = new Date("2026-04-19");
@@ -38,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const comparePagePaths = comparePages.filter((page) => !page.noindex).map((page) => `/compare/${page.slug}`);
 
   return [
+    ...preservedPages.map((page) => page.path),
     ...staticPages,
     ...categoryPages,
     ...guidePages,

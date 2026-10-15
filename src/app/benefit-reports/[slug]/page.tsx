@@ -7,6 +7,8 @@ import {
   getBenefitReportBySlug,
 } from "@/lib/benefit-report-generator";
 import { SITE_OPERATOR } from "@/lib/site-operator";
+import { PreservedPage } from "@/components/preserved-page";
+import { getPreservedPage, preservedPages, preservedMetadata } from "@/lib/preserved-pages";
 
 type BenefitReportPageProps = {
   params: Promise<{
@@ -15,7 +17,8 @@ type BenefitReportPageProps = {
 };
 
 export function generateStaticParams() {
-  return benefitReports.map((report) => ({
+  return [...benefitReports, ...preservedPages.filter((page) => page.path.startsWith("/benefit-reports/"))
+    .map((page) => ({ slug: page.path.split("/").at(-1)! }))].map((report) => ({
     slug: report.slug,
   }));
 }
@@ -23,6 +26,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: BenefitReportPageProps): Promise<Metadata> {
   const { slug } = await params;
   const report = getBenefitReportBySlug(slug);
+
+  if (getPreservedPage(`/benefit-reports/${slug}`)) return preservedMetadata(`/benefit-reports/${slug}`);
 
   if (!report) {
     return {
@@ -41,6 +46,7 @@ export async function generateMetadata({ params }: BenefitReportPageProps): Prom
 
 export default async function BenefitReportPage({ params }: BenefitReportPageProps) {
   const { slug } = await params;
+  if (getPreservedPage(`/benefit-reports/${slug}`)) return <PreservedPage path={`/benefit-reports/${slug}`} />;
   const report = getBenefitReportBySlug(slug);
 
   if (!report) {

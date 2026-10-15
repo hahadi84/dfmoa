@@ -7,6 +7,8 @@ import { benefitRules } from "@/lib/effective-price";
 import { buildBreadcrumbJsonLd, buildMonthlyDealArticleJsonLd } from "@/lib/json-ld";
 import { getMonthlyDealReportBySlug, monthlyDealReports } from "@/lib/seo-content";
 import { getStoreById, products } from "@/lib/site-data";
+import { PreservedPage } from "@/components/preserved-page";
+import { getPreservedPage, preservedPages, preservedMetadata } from "@/lib/preserved-pages";
 
 type DealsPageProps = {
   params: Promise<{
@@ -15,7 +17,8 @@ type DealsPageProps = {
 };
 
 export function generateStaticParams() {
-  return monthlyDealReports.map((report) => ({
+  return [...monthlyDealReports, ...preservedPages.filter((page) => page.path.startsWith("/deals/"))
+    .map((page) => ({ slug: page.path.split("/").at(-1)! }))].map((report) => ({
     slug: report.slug,
   }));
 }
@@ -23,6 +26,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: DealsPageProps): Promise<Metadata> {
   const { slug } = await params;
   const report = getMonthlyDealReportBySlug(slug);
+
+  if (getPreservedPage(`/deals/${slug}`)) return preservedMetadata(`/deals/${slug}`);
 
   if (!report) {
     return {
@@ -42,6 +47,7 @@ export async function generateMetadata({ params }: DealsPageProps): Promise<Meta
 
 export default async function DealsPage({ params }: DealsPageProps) {
   const { slug } = await params;
+  if (getPreservedPage(`/deals/${slug}`)) return <PreservedPage path={`/deals/${slug}`} />;
   const report = getMonthlyDealReportBySlug(slug);
 
   if (!report) {
