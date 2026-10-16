@@ -3,16 +3,16 @@
   "productSlug": "johnnie-walker-blue-label-750ml",
   "categorySlug": "liquor",
   "query": "조니워커 블루라벨 750ml",
-  "fetchedAt": null,
-  "updatedAtLabel": null,
+  "fetchedAt": "2026-10-16T09:08:28+09:00",
+  "updatedAtLabel": "2026-10-16 09:08 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "error",
-      "source_status": "error",
+      "status": "ok",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-10-15T12:49:29+09:00",
-      "matched_via": "alias_en",
+      "fetchedAt": "2026-10-16T09:08:28+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",
         "Johnnie Walker Blue Label 750ml",
@@ -25,15 +25,29 @@
         "Johnnie Walker Blue Label",
         "Johnnie Walker Blue"
       ],
-      "items": [],
-      "error": "product_match_failed"
+      "items": [
+        {
+          "id": "shilla-046331000096",
+          "title": "조니워커 블루라벨 아주르 750ml",
+          "brand": "조니워커",
+          "priceKrw": 380229,
+          "priceUsd": 284.05,
+          "regularUsdPrice": 299,
+          "discountRate": 5,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20%EC%95%84%EC%A3%BC%EB%A5%B4%20750ml",
+          "imageUrl": "https://image1.shilladfs.com/files/product3/2026/10/15/046331000096_20261015_17453403_12_046331000096_1.JPG",
+          "matchScore": 123,
+          "fetchedAt": "2026-10-16T09:08:28+09:00"
+        }
+      ],
+      "error": null
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-10-15T03:49:31.424Z",
+      "fetchedAt": "2026-10-16T00:08:30.423Z",
       "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",
@@ -49,7 +63,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A1%B0%EB%8B%88%EC%9B%8C%EC%BB%A4%20%EB%B8%94%EB%A3%A8%EB%9D%BC%EB%B2%A8%20750ml",
-      "fetchedAt": "2026-10-15T03:49:31.424Z",
+      "fetchedAt": "2026-10-16T00:08:30.424Z",
       "matched_via": "original",
       "attempted_queries": [
         "조니워커 블루라벨 750ml",

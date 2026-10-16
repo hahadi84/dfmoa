@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-10-15T03:46:26.844Z",
+  "generatedAt": "2026-10-16T00:08:27.556Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
-  "products": []
+  "products": [
+    {
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 1
+    }
+  ]
 }
