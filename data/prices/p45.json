@@ -3,29 +3,56 @@
   "productSlug": "polo-ralph-lauren-cap",
   "categorySlug": "fashion",
   "query": "폴로 랄프로렌 볼캡",
-  "fetchedAt": "2026-08-12T10:49:21+09:00",
-  "updatedAtLabel": "2026-08-12 10:49 기준",
+  "fetchedAt": "2026-10-18T08:52:14+09:00",
+  "updatedAtLabel": "2026-10-18 08:52 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "error",
-      "source_status": "error",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
-      "fetchedAt": "2026-08-12T10:49:21+09:00",
+      "status": "ok",
+      "source_status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8F%B4%EB%A1%9C%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%EB%B3%BC%EC%BA%A1",
+      "fetchedAt": "2026-10-18T08:52:14+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "폴로 랄프로렌 볼캡",
         "폴로랄프로렌볼캡"
       ],
-      "items": [],
-      "error": "타임아웃"
+      "items": [
+        {
+          "id": "shilla-128821000249",
+          "title": "#폴로 블랙 위드 골드 피피 / 코튼 트윌 볼 캡",
+          "brand": "폴로 랄프 로렌",
+          "priceKrw": 78213,
+          "priceUsd": 58,
+          "regularUsdPrice": 58,
+          "discountRate": null,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%23%ED%8F%B4%EB%A1%9C%20%EB%B8%94%EB%9E%99%20%EC%9C%84%EB%93%9C%20%EA%B3%A8%EB%93%9C%20%ED%94%BC%ED%94%BC%20%2F%20%EC%BD%94%ED%8A%BC%20%ED%8A%B8%EC%9C%8C%20%EB%B3%BC%20%EC%BA%A1",
+          "imageUrl": "https://image2.shilladfs.com/files/product3/2026/09/17/128821000249_20260917_15161852_12_128821000249_1.JPG",
+          "matchScore": 67,
+          "fetchedAt": "2026-10-18T08:52:14+09:00"
+        },
+        {
+          "id": "shilla-128821000239",
+          "title": "#화이트 / 아이코닉 코튼 치노 볼 캡 (8세 이상)",
+          "brand": "폴로 랄프 로렌",
+          "priceKrw": 53940,
+          "priceUsd": 40,
+          "regularUsdPrice": 40,
+          "discountRate": null,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%23%ED%99%94%EC%9D%B4%ED%8A%B8%20%2F%20%EC%95%84%EC%9D%B4%EC%BD%94%EB%8B%89%20%EC%BD%94%ED%8A%BC%20%EC%B9%98%EB%85%B8%20%EB%B3%BC%20%EC%BA%A1%20(8%EC%84%B8%20%EC%9D%B4%EC%83%81)",
+          "imageUrl": "https://image1.shilladfs.com/files/product3/2026/08/11/128821000239_20260811_17260352_12_128821000239_1.JPG",
+          "matchScore": 67,
+          "fetchedAt": "2026-10-18T08:52:14+09:00"
+        }
+      ],
+      "error": null
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
-      "fetchedAt": "2026-08-12T01:49:21.141Z",
+      "fetchedAt": "2026-10-17T23:52:15.529Z",
       "matched_via": "original",
       "attempted_queries": [
         "폴로 랄프로렌 볼캡",
@@ -40,7 +67,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
-      "fetchedAt": "2026-08-12T01:49:21.141Z",
+      "fetchedAt": "2026-10-17T23:52:15.529Z",
       "matched_via": "original",
       "attempted_queries": [
         "폴로 랄프로렌 볼캡",

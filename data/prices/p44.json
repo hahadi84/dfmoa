@@ -3,15 +3,15 @@
   "productSlug": "coach-tabby-shoulder-bag",
   "categorySlug": "fashion",
   "query": "코치 태비 숄더백",
-  "fetchedAt": "2026-10-17T09:16:43+09:00",
-  "updatedAtLabel": "2026-10-17 09:16 기준",
+  "fetchedAt": "2026-10-18T08:56:02+09:00",
+  "updatedAtLabel": "2026-10-18 08:56 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-10-17T09:16:43+09:00",
+      "fetchedAt": "2026-10-18T08:56:02+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -29,7 +29,20 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026%20%EC%9C%84%EB%93%9C%20%ED%95%84%EB%A1%9C%EC%9A%B0%20%ED%80%BC%ED%8C%85",
           "imageUrl": "https://image1.shilladfs.com/files/product3/2026/09/23/026814010538_20260923_16103658_12_026814010538_1.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-10-17T09:16:43+09:00"
+          "fetchedAt": "2026-10-18T08:56:02+09:00"
+        },
+        {
+          "id": "shilla-026814010568",
+          "title": "태비 숄더 백 26",
+          "brand": "코치",
+          "priceKrw": 667508,
+          "priceUsd": 495,
+          "regularUsdPrice": 550,
+          "discountRate": 10,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026",
+          "imageUrl": "https://image1.shilladfs.com/files/product3/2026/10/12/026814010568_20261012_14531468_12_026814010568_2.JPG",
+          "matchScore": 47,
+          "fetchedAt": "2026-10-18T08:56:02+09:00"
         },
         {
           "id": "shilla-026814010494",
@@ -42,20 +55,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1%2026%20%EC%9C%84%EB%93%9C%20%ED%95%84%EB%A1%9C%EC%9A%B0%20%ED%80%BC%ED%8C%85",
           "imageUrl": "https://image2.shilladfs.com/files/product3/2026/06/18/026814010494_20260618_09411317_12_026814010494_1.JPG",
           "matchScore": 47,
-          "fetchedAt": "2026-10-17T09:16:43+09:00"
-        },
-        {
-          "id": "shilla-026814010374",
-          "title": "체인 태비 숄더 백",
-          "brand": "코치",
-          "priceKrw": 697849,
-          "priceUsd": 517.5,
-          "regularUsdPrice": 575,
-          "discountRate": 10,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B2%B4%EC%9D%B8%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%20%EB%B0%B1",
-          "imageUrl": "https://image1.shilladfs.com/files/product3/2026/06/17/026814010374_20260617_17174235_12_026814010374_2.JPG",
-          "matchScore": 47,
-          "fetchedAt": "2026-10-17T09:16:43+09:00"
+          "fetchedAt": "2026-10-18T08:56:02+09:00"
         }
       ],
       "error": null
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-10-17T00:16:46.495Z",
+      "fetchedAt": "2026-10-17T23:56:05.508Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -80,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-10-17T00:16:46.495Z",
+      "fetchedAt": "2026-10-17T23:56:05.508Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
