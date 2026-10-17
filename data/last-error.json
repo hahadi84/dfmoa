@@ -1,8 +1,14 @@
 {
-  "generatedAt": "2026-10-16T00:14:25.418Z",
+  "generatedAt": "2026-10-17T00:18:35.542Z",
   "attemptedCount": 46,
-  "failureCount": 6,
+  "failureCount": 7,
   "failures": [
+    {
+      "productId": "p26",
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
     {
       "productId": "p21",
       "productSlug": "la-mer-moisturizing-cream-60ml",
