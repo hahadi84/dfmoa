@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-17T23:51:33.985Z",
+  "generatedAt": "2026-10-18T23:58:42.405Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
+    {
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 2
+    },
     {
       "productSlug": "ballantines-21-700ml",
       "count": 1
     },
     {
       "productSlug": "glenfiddich-15-700ml",
-      "count": 1
-    },
-    {
-      "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 1
     },
     {
