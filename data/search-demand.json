@@ -1,14 +1,22 @@
 {
-  "generatedAt": "2026-10-18T23:58:42.405Z",
+  "generatedAt": "2026-10-20T00:57:26.423Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
+    {
+      "productSlug": "ballantines-21-700ml",
+      "count": 2
+    },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 2
     },
     {
-      "productSlug": "ballantines-21-700ml",
+      "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "count": 1
+    },
+    {
+      "productSlug": "diptyque-do-son-75ml",
       "count": 1
     },
     {
@@ -16,7 +24,23 @@
       "count": 1
     },
     {
+      "productSlug": "hibiki-harmony-700ml",
+      "count": 1
+    },
+    {
+      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
+      "count": 1
+    },
+    {
+      "productSlug": "pandora-moments-bracelet",
+      "count": 1
+    },
+    {
       "productSlug": "polo-ralph-lauren-cap",
+      "count": 1
+    },
+    {
+      "productSlug": "rayban-wayfarer-rb2140",
       "count": 1
     }
   ]
