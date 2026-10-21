@@ -3,29 +3,29 @@
   "productSlug": "blackmores-propolis",
   "categorySlug": "health",
   "query": "블랙모어스 프로폴리스",
-  "fetchedAt": "2026-08-12T10:51:11+09:00",
-  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%94%EB%9E%99%EB%AA%A8%EC%96%B4%EC%8A%A4%20%ED%94%84%EB%A1%9C%ED%8F%B4%EB%A6%AC%EC%8A%A4",
-      "fetchedAt": "2026-08-12T10:51:11+09:00",
+      "fetchedAt": "2026-10-21T09:36:13+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "블랙모어스 프로폴리스",
         "블랙모어스프로폴리스"
       ],
       "items": [],
-      "error": "타임아웃"
+      "error": "cookie_or_login_required"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B8%94%EB%9E%99%EB%AA%A8%EC%96%B4%EC%8A%A4%20%ED%94%84%EB%A1%9C%ED%8F%B4%EB%A6%AC%EC%8A%A4",
-      "fetchedAt": "2026-08-12T01:51:11.277Z",
+      "fetchedAt": "2026-10-21T00:36:14.504Z",
       "matched_via": "original",
       "attempted_queries": [
         "블랙모어스 프로폴리스",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B8%94%EB%9E%99%EB%AA%A8%EC%96%B4%EC%8A%A4%20%ED%94%84%EB%A1%9C%ED%8F%B4%EB%A6%AC%EC%8A%A4",
-      "fetchedAt": "2026-08-12T01:51:11.277Z",
+      "fetchedAt": "2026-10-21T00:36:14.504Z",
       "matched_via": "original",
       "attempted_queries": [
         "블랙모어스 프로폴리스",

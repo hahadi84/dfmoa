@@ -3,37 +3,16 @@
   "productSlug": "gentle-monster-dear-01",
   "categorySlug": "eyewear",
   "query": "젠틀몬스터 Dear 01",
-  "fetchedAt": "2026-04-21T14:33:11+09:00",
-  "updatedAtLabel": "2026-04-21 14:33 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
-      "fetchedAt": "2026-04-21T14:33:08+09:00",
+      "fetchedAt": "2026-10-21T09:27:09+09:00",
       "matched_via": "alias_nospace",
-      "attempted_queries": [
-        "젠틀몬스터 Dear 01",
-        "Gentle Monster Dear 01",
-        "젠틀몬스터 Dear01",
-        "GM Dear 01",
-        "Dear 01",
-        "젠틀몬스터dear01",
-        "gentlemonsterdear01",
-        "gmdear01",
-        "dear01"
-      ],
-      "items": [],
-      "error": "product_match_failed"
-    },
-    "shinsegae": {
-      "store": "shinsegae",
-      "status": "error",
-      "source_status": "error",
-      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0+Dear+01",
-      "fetchedAt": "2026-04-21T14:33:11+09:00",
-      "matched_via": "original",
       "attempted_queries": [
         "젠틀몬스터 Dear 01",
         "Gentle Monster Dear 01",
@@ -48,12 +27,12 @@
       "items": [],
       "error": "cookie_or_login_required"
     },
-    "lotte": {
-      "store": "lotte",
+    "shinsegae": {
+      "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
-      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
-      "fetchedAt": "2026-04-21T14:33:11+09:00",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
+      "fetchedAt": "2026-10-21T00:27:10.562Z",
       "matched_via": "original",
       "attempted_queries": [
         "젠틀몬스터 Dear 01",
@@ -61,10 +40,25 @@
         "젠틀몬스터 Dear01",
         "GM Dear 01",
         "Dear 01",
-        "젠틀몬스터dear01",
-        "gentlemonsterdear01",
-        "gmdear01",
-        "dear01"
+        "Gentle Monster Dear 01 Black"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
+      "fetchedAt": "2026-10-21T00:27:10.562Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "젠틀몬스터 Dear 01",
+        "Gentle Monster Dear 01",
+        "젠틀몬스터 Dear01",
+        "GM Dear 01",
+        "Dear 01",
+        "Gentle Monster Dear 01 Black"
       ],
       "items": [],
       "error": "disabled_by_policy"

@@ -1,18 +1,30 @@
 {
-  "generatedAt": "2026-10-20T00:57:26.423Z",
+  "generatedAt": "2026-10-21T00:26:07.371Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
+    {
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 4
+    },
+    {
+      "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "count": 2
+    },
     {
       "productSlug": "ballantines-21-700ml",
       "count": 2
     },
     {
-      "productSlug": "johnnie-walker-blue-label-750ml",
+      "productSlug": "dyson-supersonic",
       "count": 2
     },
     {
-      "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "productSlug": "gentle-monster-dear-01",
+      "count": 2
+    },
+    {
+      "productSlug": "byredo-blanche-100ml",
       "count": 1
     },
     {
@@ -20,11 +32,39 @@
       "count": 1
     },
     {
+      "productSlug": "estee-lauder-anr-100ml",
+      "count": 1
+    },
+    {
       "productSlug": "glenfiddich-15-700ml",
       "count": 1
     },
     {
+      "productSlug": "gnc-mega-men",
+      "count": 1
+    },
+    {
       "productSlug": "hibiki-harmony-700ml",
+      "count": 1
+    },
+    {
+      "productSlug": "jestina-tiara-necklace",
+      "count": 1
+    },
+    {
+      "productSlug": "kiehls-ultra-facial-cream-125ml",
+      "count": 1
+    },
+    {
+      "productSlug": "la-mer-moisturizing-cream-60ml",
+      "count": 1
+    },
+    {
+      "productSlug": "le-labo-santal-33-50ml",
+      "count": 1
+    },
+    {
+      "productSlug": "macallan-12-double-cask-700ml",
       "count": 1
     },
     {
@@ -41,6 +81,14 @@
     },
     {
       "productSlug": "rayban-wayfarer-rb2140",
+      "count": 1
+    },
+    {
+      "productSlug": "shiseido-ultimune-75ml",
+      "count": 1
+    },
+    {
+      "productSlug": "swarovski-swan-necklace",
       "count": 1
     }
   ]

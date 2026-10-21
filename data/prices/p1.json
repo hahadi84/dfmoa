@@ -3,44 +3,30 @@
   "productSlug": "creed-aventus-50ml",
   "categorySlug": "perfume",
   "query": "크리드 어벤투스 50ml",
-  "fetchedAt": "2026-10-20T09:59:28+09:00",
-  "updatedAtLabel": "2026-10-20 09:59 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "ok",
-      "source_status": "ok",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%81%AC%EB%A6%AC%EB%93%9C%EC%96%B4%EB%B2%A4%ED%88%AC%EC%8A%A450ml",
-      "fetchedAt": "2026-10-20T09:59:28+09:00",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%81%AC%EB%A6%AC%EB%93%9C%20%EC%96%B4%EB%B2%A4%ED%88%AC%EC%8A%A4%2050ml",
+      "fetchedAt": "2026-10-21T09:30:29+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "크리드 어벤투스 50ml",
         "크리드어벤투스50ml",
         "크리드 어벤투스"
       ],
-      "items": [
-        {
-          "id": "shilla-162513000012",
-          "title": "AVENTUS 50ml",
-          "brand": "크리드",
-          "priceKrw": 382584,
-          "priceUsd": 285,
-          "regularUsdPrice": 300,
-          "discountRate": 5,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml",
-          "imageUrl": "https://image2.shilladfs.com/files/product2/2025/04/28/162513000012_20250428_21314438_12_162513000012_3.JPG",
-          "matchScore": 103,
-          "fetchedAt": "2026-10-20T09:59:28+09:00"
-        }
-      ],
-      "error": null
+      "items": [],
+      "error": "cookie_or_login_required"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%81%AC%EB%A6%AC%EB%93%9C%20%EC%96%B4%EB%B2%A4%ED%88%AC%EC%8A%A4%2050ml",
-      "fetchedAt": "2026-10-20T00:59:30.100Z",
+      "fetchedAt": "2026-10-21T00:30:30.986Z",
       "matched_via": "original",
       "attempted_queries": [
         "크리드 어벤투스 50ml",
@@ -54,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%81%AC%EB%A6%AC%EB%93%9C%20%EC%96%B4%EB%B2%A4%ED%88%AC%EC%8A%A4%2050ml",
-      "fetchedAt": "2026-10-20T00:59:30.100Z",
+      "fetchedAt": "2026-10-21T00:30:30.986Z",
       "matched_via": "original",
       "attempted_queries": [
         "크리드 어벤투스 50ml",

@@ -3,29 +3,29 @@
   "productSlug": "orthomol-immun",
   "categorySlug": "health",
   "query": "오쏘몰 이뮨",
-  "fetchedAt": "2026-08-12T10:50:56+09:00",
-  "updatedAtLabel": "2026-08-12 10:50 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
-      "fetchedAt": "2026-08-12T10:50:56+09:00",
+      "fetchedAt": "2026-10-21T09:35:51+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "오쏘몰 이뮨",
         "오쏘몰이뮨"
       ],
       "items": [],
-      "error": "타임아웃"
+      "error": "cookie_or_login_required"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
-      "fetchedAt": "2026-08-12T01:50:56.258Z",
+      "fetchedAt": "2026-10-21T00:35:52.937Z",
       "matched_via": "original",
       "attempted_queries": [
         "오쏘몰 이뮨",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%98%A4%EC%8F%98%EB%AA%B0%20%EC%9D%B4%EB%AE%A8",
-      "fetchedAt": "2026-08-12T01:50:56.258Z",
+      "fetchedAt": "2026-10-21T00:35:52.937Z",
       "matched_via": "original",
       "attempted_queries": [
         "오쏘몰 이뮨",

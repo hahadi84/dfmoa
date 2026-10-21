@@ -3,29 +3,29 @@
   "productSlug": "centrum-multivitamin",
   "categorySlug": "health",
   "query": "센트룸 멀티비타민",
-  "fetchedAt": "2026-08-12T10:51:01+09:00",
-  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%84%BC%ED%8A%B8%EB%A3%B8%20%EB%A9%80%ED%8B%B0%EB%B9%84%ED%83%80%EB%AF%BC",
-      "fetchedAt": "2026-08-12T10:51:01+09:00",
+      "fetchedAt": "2026-10-21T09:35:59+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "센트룸 멀티비타민",
         "센트룸멀티비타민"
       ],
       "items": [],
-      "error": "타임아웃"
+      "error": "cookie_or_login_required"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%84%BC%ED%8A%B8%EB%A3%B8%20%EB%A9%80%ED%8B%B0%EB%B9%84%ED%83%80%EB%AF%BC",
-      "fetchedAt": "2026-08-12T01:51:01.264Z",
+      "fetchedAt": "2026-10-21T00:36:00.092Z",
       "matched_via": "original",
       "attempted_queries": [
         "센트룸 멀티비타민",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%84%BC%ED%8A%B8%EB%A3%B8%20%EB%A9%80%ED%8B%B0%EB%B9%84%ED%83%80%EB%AF%BC",
-      "fetchedAt": "2026-08-12T01:51:01.264Z",
+      "fetchedAt": "2026-10-21T00:36:00.092Z",
       "matched_via": "original",
       "attempted_queries": [
         "센트룸 멀티비타민",

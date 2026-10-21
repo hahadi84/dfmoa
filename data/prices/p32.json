@@ -3,43 +3,29 @@
   "productSlug": "don-julio-1942-750ml",
   "categorySlug": "liquor",
   "query": "돈 훌리오 1942 750ml",
-  "fetchedAt": "2026-10-20T10:02:31+09:00",
-  "updatedAtLabel": "2026-10-20 10:02 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "ok",
-      "source_status": "ok",
+      "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%8F%88%ED%9B%8C%EB%A6%AC%EC%98%A41942750ml",
-      "fetchedAt": "2026-10-20T10:02:31+09:00",
-      "matched_via": "original",
+      "fetchedAt": "2026-10-21T09:33:06+09:00",
+      "matched_via": "alias_nospace",
       "attempted_queries": [
         "돈훌리오1942750ml",
         "돈훌리오"
       ],
-      "items": [
-        {
-          "id": "shilla-254931000001",
-          "title": "돈훌리오 1942 750ml",
-          "brand": "돈훌리오",
-          "priceKrw": 229550,
-          "priceUsd": 171,
-          "regularUsdPrice": 180,
-          "discountRate": 5,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%8F%88%ED%9B%8C%EB%A6%AC%EC%98%A4%201942%20750ml",
-          "imageUrl": "https://image2.shilladfs.com/files/product2/2026/03/30/254931000001_20260330_09093164_12_254931000001_1.JPG",
-          "matchScore": 115,
-          "fetchedAt": "2026-10-20T10:02:31+09:00"
-        }
-      ],
-      "error": null
+      "items": [],
+      "error": "cookie_or_login_required"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%8F%88%20%ED%9B%8C%EB%A6%AC%EC%98%A4%201942%20750ml",
-      "fetchedAt": "2026-10-20T01:02:33.256Z",
+      "fetchedAt": "2026-10-21T00:33:07.856Z",
       "matched_via": "original",
       "attempted_queries": [
         "돈 훌리오 1942 750ml",
@@ -53,7 +39,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%8F%88%20%ED%9B%8C%EB%A6%AC%EC%98%A4%201942%20750ml",
-      "fetchedAt": "2026-10-20T01:02:33.256Z",
+      "fetchedAt": "2026-10-21T00:33:07.856Z",
       "matched_via": "original",
       "attempted_queries": [
         "돈 훌리오 1942 750ml",

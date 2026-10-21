@@ -3,29 +3,29 @@
   "productSlug": "now-omega-3",
   "categorySlug": "health",
   "query": "나우 오메가3",
-  "fetchedAt": "2026-08-12T10:51:16+09:00",
-  "updatedAtLabel": "2026-08-12 10:51 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%82%98%EC%9A%B0%20%EC%98%A4%EB%A9%94%EA%B0%803",
-      "fetchedAt": "2026-08-12T10:51:16+09:00",
+      "fetchedAt": "2026-10-21T09:36:20+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "나우 오메가3",
         "나우오메가3"
       ],
       "items": [],
-      "error": "타임아웃"
+      "error": "cookie_or_login_required"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%82%98%EC%9A%B0%20%EC%98%A4%EB%A9%94%EA%B0%803",
-      "fetchedAt": "2026-08-12T01:51:16.283Z",
+      "fetchedAt": "2026-10-21T00:36:21.705Z",
       "matched_via": "original",
       "attempted_queries": [
         "나우 오메가3",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%82%98%EC%9A%B0%20%EC%98%A4%EB%A9%94%EA%B0%803",
-      "fetchedAt": "2026-08-12T01:51:16.283Z",
+      "fetchedAt": "2026-10-21T00:36:21.705Z",
       "matched_via": "original",
       "attempted_queries": [
         "나우 오메가3",
