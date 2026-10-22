@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%9D%B4%EC%86%9D%20%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%ED%95%B8%EB%93%9C%EB%B0%A4",
-      "fetchedAt": "2026-10-21T09:26:27+09:00",
+      "fetchedAt": "2026-10-22T09:29:27+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "이솝 레저렉션 핸드밤",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%9D%B4%EC%86%9D%20%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%ED%95%B8%EB%93%9C%EB%B0%A4%2075ml",
-      "fetchedAt": "2026-10-21T00:26:28.685Z",
+      "fetchedAt": "2026-10-22T00:29:28.986Z",
       "matched_via": "original",
       "attempted_queries": [
         "이솝 레저렉션 핸드밤 75ml",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%9D%B4%EC%86%9D%20%EB%A0%88%EC%A0%80%EB%A0%89%EC%85%98%20%ED%95%B8%EB%93%9C%EB%B0%A4%2075ml",
-      "fetchedAt": "2026-10-21T00:26:28.686Z",
+      "fetchedAt": "2026-10-22T00:29:28.986Z",
       "matched_via": "original",
       "attempted_queries": [
         "이솝 레저렉션 핸드밤 75ml",

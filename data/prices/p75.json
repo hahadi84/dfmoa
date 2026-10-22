@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-10-21T09:28:10+09:00",
+      "fetchedAt": "2026-10-22T09:33:41+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "GNC 메가맨",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-10-21T00:28:11.290Z",
+      "fetchedAt": "2026-10-22T00:33:42.160Z",
       "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-10-21T00:28:11.290Z",
+      "fetchedAt": "2026-10-22T00:33:42.160Z",
       "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",

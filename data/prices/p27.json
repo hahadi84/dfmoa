@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A7%A5%EC%BA%98%EB%9E%80%2012%EB%85%84%20%EB%8D%94%EB%B8%94%20%EC%BA%90%EC%8A%A4%ED%81%AC%20700ml",
-      "fetchedAt": "2026-10-21T09:29:27+09:00",
+      "fetchedAt": "2026-10-22T09:34:06+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "맥캘란 12년 더블 캐스크 700ml",
@@ -33,7 +33,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A7%A5%EC%BA%98%EB%9E%80%2012%EB%85%84%20%EB%8D%94%EB%B8%94%20%EC%BA%90%EC%8A%A4%ED%81%AC%20700ml",
-      "fetchedAt": "2026-10-21T00:29:28.205Z",
+      "fetchedAt": "2026-10-22T00:34:07.880Z",
       "matched_via": "original",
       "attempted_queries": [
         "맥캘란 12년 더블 캐스크 700ml",
@@ -51,7 +51,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A7%A5%EC%BA%98%EB%9E%80%2012%EB%85%84%20%EB%8D%94%EB%B8%94%20%EC%BA%90%EC%8A%A4%ED%81%AC%20700ml",
-      "fetchedAt": "2026-10-21T00:29:28.205Z",
+      "fetchedAt": "2026-10-22T00:34:07.880Z",
       "matched_via": "original",
       "attempted_queries": [
         "맥캘란 12년 더블 캐스크 700ml",

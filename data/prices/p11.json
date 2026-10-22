@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
-      "fetchedAt": "2026-10-21T09:29:09+09:00",
+      "fetchedAt": "2026-10-22T09:31:25+09:00",
       "matched_via": "alias_en",
       "attempted_queries": [
         "르라보 상탈 33 50ml",
@@ -33,7 +33,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
-      "fetchedAt": "2026-10-21T00:29:10.513Z",
+      "fetchedAt": "2026-10-22T00:31:26.690Z",
       "matched_via": "original",
       "attempted_queries": [
         "르라보 상탈 33 50ml",
@@ -50,7 +50,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A5%B4%EB%9D%BC%EB%B3%B4%20%EC%83%81%ED%83%88%2033%2050ml",
-      "fetchedAt": "2026-10-21T00:29:10.513Z",
+      "fetchedAt": "2026-10-22T00:31:26.690Z",
       "matched_via": "original",
       "attempted_queries": [
         "르라보 상탈 33 50ml",

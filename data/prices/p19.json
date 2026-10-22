@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g",
-      "fetchedAt": "2026-10-21T09:32:07+09:00",
+      "fetchedAt": "2026-10-22T09:32:51+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "헤라 블랙 쿠션 15g",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g",
-      "fetchedAt": "2026-10-21T00:32:08.699Z",
+      "fetchedAt": "2026-10-22T00:32:52.102Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤라 블랙 쿠션 15g",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g",
-      "fetchedAt": "2026-10-21T00:32:08.699Z",
+      "fetchedAt": "2026-10-22T00:32:52.102Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤라 블랙 쿠션 15g",

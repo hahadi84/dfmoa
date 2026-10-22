@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml",
-      "fetchedAt": "2026-10-21T09:27:27+09:00",
+      "fetchedAt": "2026-10-22T09:30:09+09:00",
       "matched_via": "alias_en",
       "attempted_queries": [
         "바이레도 블랑쉬 100ml",
@@ -33,7 +33,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml",
-      "fetchedAt": "2026-10-21T00:27:29.169Z",
+      "fetchedAt": "2026-10-22T00:30:10.640Z",
       "matched_via": "original",
       "attempted_queries": [
         "바이레도 블랑쉬 100ml",
@@ -50,7 +50,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml",
-      "fetchedAt": "2026-10-21T00:27:29.169Z",
+      "fetchedAt": "2026-10-22T00:30:10.640Z",
       "matched_via": "original",
       "attempted_queries": [
         "바이레도 블랑쉬 100ml",

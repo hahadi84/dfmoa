@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-21T09:32:42+09:00",
+      "fetchedAt": "2026-10-22T09:34:29+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "로얄살루트 21년 700ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-21T00:32:43.952Z",
+      "fetchedAt": "2026-10-22T00:34:30.745Z",
       "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",
@@ -41,7 +41,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-21T00:32:43.952Z",
+      "fetchedAt": "2026-10-22T00:34:30.745Z",
       "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",

@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%81%AC%EB%A6%AC%EB%93%9C%20%EC%96%B4%EB%B2%A4%ED%88%AC%EC%8A%A4%2050ml",
-      "fetchedAt": "2026-10-21T09:30:29+09:00",
+      "fetchedAt": "2026-10-22T09:32:42+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "크리드 어벤투스 50ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%81%AC%EB%A6%AC%EB%93%9C%20%EC%96%B4%EB%B2%A4%ED%88%AC%EC%8A%A4%2050ml",
-      "fetchedAt": "2026-10-21T00:30:30.986Z",
+      "fetchedAt": "2026-10-22T00:32:43.386Z",
       "matched_via": "original",
       "attempted_queries": [
         "크리드 어벤투스 50ml",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%81%AC%EB%A6%AC%EB%93%9C%20%EC%96%B4%EB%B2%A4%ED%88%AC%EC%8A%A4%2050ml",
-      "fetchedAt": "2026-10-21T00:30:30.986Z",
+      "fetchedAt": "2026-10-22T00:32:43.386Z",
       "matched_via": "original",
       "attempted_queries": [
         "크리드 어벤투스 50ml",

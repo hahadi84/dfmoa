@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8E%98%EB%9D%BC%EA%B0%80%EB%AA%A8%20%EB%A6%AC%EB%B2%84%EC%8B%9C%EB%B8%94%20%EB%B2%A8%ED%8A%B8",
-      "fetchedAt": "2026-10-21T09:34:23+09:00",
+      "fetchedAt": "2026-10-22T09:37:20+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "페라가모 리버시블 벨트",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8E%98%EB%9D%BC%EA%B0%80%EB%AA%A8%20%EB%A6%AC%EB%B2%84%EC%8B%9C%EB%B8%94%20%EB%B2%A8%ED%8A%B8",
-      "fetchedAt": "2026-10-21T00:34:24.631Z",
+      "fetchedAt": "2026-10-22T00:37:22.249Z",
       "matched_via": "original",
       "attempted_queries": [
         "페라가모 리버시블 벨트",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8E%98%EB%9D%BC%EA%B0%80%EB%AA%A8%20%EB%A6%AC%EB%B2%84%EC%8B%9C%EB%B8%94%20%EB%B2%A8%ED%8A%B8",
-      "fetchedAt": "2026-10-21T00:34:24.631Z",
+      "fetchedAt": "2026-10-22T00:37:22.249Z",
       "matched_via": "original",
       "attempted_queries": [
         "페라가모 리버시블 벨트",

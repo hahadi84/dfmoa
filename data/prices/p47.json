@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
-      "fetchedAt": "2026-10-21T09:33:34+09:00",
+      "fetchedAt": "2026-10-22T09:36:33+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "쌤소나이트 에보아 캐리어",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
-      "fetchedAt": "2026-10-21T00:33:35.662Z",
+      "fetchedAt": "2026-10-22T00:36:34.545Z",
       "matched_via": "original",
       "attempted_queries": [
         "쌤소나이트 에보아 캐리어",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4",
-      "fetchedAt": "2026-10-21T00:33:35.662Z",
+      "fetchedAt": "2026-10-22T00:36:34.545Z",
       "matched_via": "original",
       "attempted_queries": [
         "쌤소나이트 에보아 캐리어",
