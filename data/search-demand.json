@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T00:27:25.657Z",
+  "generatedAt": "2026-10-23T13:00:57.466Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "aesop-resurrection-hand-balm-75ml",
-      "count": 8
+      "count": 9
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
@@ -104,11 +104,23 @@
       "count": 1
     },
     {
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "count": 1
+    },
+    {
       "productSlug": "jestina-tiara-necklace",
       "count": 1
     },
     {
+      "productSlug": "kgc-everytime-royal",
+      "count": 1
+    },
+    {
       "productSlug": "macallan-12-double-cask-700ml",
+      "count": 1
+    },
+    {
+      "productSlug": "orthomol-immun",
       "count": 1
     },
     {
@@ -133,6 +145,10 @@
     },
     {
       "productSlug": "swarovski-swan-necklace",
+      "count": 1
+    },
+    {
+      "productSlug": "tom-ford-snowdon-ft0237",
       "count": 1
     }
   ]

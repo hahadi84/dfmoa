@@ -3,29 +3,69 @@
   "productSlug": "kgc-everytime-royal",
   "categorySlug": "health",
   "query": "정관장 에브리타임 로얄",
-  "fetchedAt": null,
-  "updatedAtLabel": null,
+  "fetchedAt": "2026-10-23T22:05:29+09:00",
+  "updatedAtLabel": "2026-10-23 22:05 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "error",
-      "source_status": "error",
+      "status": "ok",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
-      "fetchedAt": "2026-10-23T09:37:20+09:00",
-      "matched_via": "alias_nospace",
+      "fetchedAt": "2026-10-23T22:05:29+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "정관장 에브리타임 로얄",
         "정관장에브리타임로얄"
       ],
-      "items": [],
-      "error": "cookie_or_login_required"
+      "items": [
+        {
+          "id": "shilla-622728001074",
+          "title": "에브리타임 로얄 면세 에디션 (100포)",
+          "brand": "정관장",
+          "priceKrw": 299696,
+          "priceUsd": 226.1,
+          "regularUsdPrice": 266,
+          "discountRate": 15,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84%20%EB%A9%B4%EC%84%B8%20%EC%97%90%EB%94%94%EC%85%98%20(100%ED%8F%AC)",
+          "imageUrl": "https://image2.shilladfs.com/files/product2/2026/01/09/622728001074_20260109_16532498_12_622728001074_14.JPG",
+          "matchScore": 47,
+          "fetchedAt": "2026-10-23T22:05:29+09:00"
+        },
+        {
+          "id": "shilla-622728000981",
+          "title": "에브리타임로얄(30포)",
+          "brand": "정관장",
+          "priceKrw": 95767,
+          "priceUsd": 72.25,
+          "regularUsdPrice": 85,
+          "discountRate": 15,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%EB%A1%9C%EC%96%84(30%ED%8F%AC)",
+          "imageUrl": "https://image2.shilladfs.com/files/product3/2026/08/10/622728000981_20260810_18025174_12_622728000981_24.JPG",
+          "matchScore": 47,
+          "fetchedAt": "2026-10-23T22:05:29+09:00"
+        },
+        {
+          "id": "shilla-622728001143",
+          "title": "에브리타임로얄 Health Wish 에디션 (10ml*66포)",
+          "brand": "정관장",
+          "priceKrw": 205055,
+          "priceUsd": 154.7,
+          "regularUsdPrice": 182,
+          "discountRate": 15,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%EB%A1%9C%EC%96%84%20Health%20Wish%20%EC%97%90%EB%94%94%EC%85%98%20(10ml*66%ED%8F%AC)",
+          "imageUrl": "https://image2.shilladfs.com/files/product2/2025/06/26/622728001143_20250626_16313608_12_622728001143_1.JPG",
+          "matchScore": 47,
+          "fetchedAt": "2026-10-23T22:05:29+09:00"
+        }
+      ],
+      "error": null
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
-      "fetchedAt": "2026-10-23T00:37:21.914Z",
+      "fetchedAt": "2026-10-23T13:05:31.499Z",
       "matched_via": "original",
       "attempted_queries": [
         "정관장 에브리타임 로얄",
@@ -40,7 +80,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
-      "fetchedAt": "2026-10-23T00:37:21.914Z",
+      "fetchedAt": "2026-10-23T13:05:31.499Z",
       "matched_via": "original",
       "attempted_queries": [
         "정관장 에브리타임 로얄",

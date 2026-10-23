@@ -1,0 +1,54 @@
+{
+  "productId": "p57",
+  "productSlug": "hamilton-khaki-field-mechanical",
+  "categorySlug": "watch",
+  "query": "해밀턴 카키 필드 메카니컬",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%95%B4%EB%B0%80%ED%84%B4%20%EC%B9%B4%ED%82%A4%20%ED%95%84%EB%93%9C%20%EB%A9%94%EC%B9%B4%EB%8B%88%EC%BB%AC",
+      "fetchedAt": "2026-10-23T22:05:16+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "해밀턴 카키 필드 메카니컬",
+        "해밀턴카키필드메카니컬"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%95%B4%EB%B0%80%ED%84%B4%20%EC%B9%B4%ED%82%A4%20%ED%95%84%EB%93%9C%20%EB%A9%94%EC%B9%B4%EB%8B%88%EC%BB%AC",
+      "fetchedAt": "2026-10-23T13:05:17.609Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "해밀턴 카키 필드 메카니컬",
+        "Hamilton Khaki Field Mechanical",
+        "Hamilton Khaki Field Mechanical 38mm"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%95%B4%EB%B0%80%ED%84%B4%20%EC%B9%B4%ED%82%A4%20%ED%95%84%EB%93%9C%20%EB%A9%94%EC%B9%B4%EB%8B%88%EC%BB%AC",
+      "fetchedAt": "2026-10-23T13:05:17.609Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "해밀턴 카키 필드 메카니컬",
+        "Hamilton Khaki Field Mechanical",
+        "Hamilton Khaki Field Mechanical 38mm"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}
