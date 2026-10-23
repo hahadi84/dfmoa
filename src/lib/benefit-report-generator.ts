@@ -1,4 +1,5 @@
 import { dutyFreeBenefitStores, dutyFreeBenefitUpdatedAt } from "./duty-free-benefits";
+import { publishedWeeklyBenefits } from './published-benefits';
 import { getStoreById, type StoreId } from "./site-data";
 
 export type BenefitReportBenefit = {
@@ -157,7 +158,34 @@ export function buildBenefitReport(publishedAt = dutyFreeBenefitUpdatedAt): Bene
   };
 }
 
-export const benefitReports: BenefitReport[] = [buildBenefitReport()];
+export const benefitReports: BenefitReport[] = [
+  ...publishedWeeklyBenefits.map((report): BenefitReport => ({
+    slug: report.slug,
+    title: `${report.publishedAt} 면세점 혜택 주간 리포트`,
+    description: '이번 주 확인한 현대면세점 행사 기간과 구매 전 확인할 결제 조건을 정리합니다.',
+    publishedAt: report.publishedAt, updatedAt: report.updatedAt,
+    periodLabel: `${report.publishedAt} 확인 · 주간 기록`,
+    storeCount: 1, sourceCount: report.benefits.length, benefitTypes: ['공식 행사'],
+    highlights: [
+      `공식 행사 목록에서 기간을 확인한 ${report.benefits.length}개 행사입니다.`,
+      '기간이 짧은 행사를 먼저 배치했습니다. 할인 한도·회원 조건·제외 브랜드는 상세 페이지에서 확인하세요.',
+      '일본 여행 예정이라면 엔화 환산 비용과 국내 면세점 최종 결제액을 함께 비교하세요.',
+    ],
+    sections: [{ storeId: 'hyundai', storeName: '현대면세점', logoUrl: '/store-logos/hyundai-logo.png',
+      summary: '공개 목록에서 확인 가능한 행사만 수록합니다. 다른 면세점 전체 혜택을 대표하지 않습니다.',
+      benefitTypes: ['공식 행사'], benefits: report.benefits.map(item => ({
+        title: item.title, type: '기간 확인', url: item.url,
+        description: `${item.startDate} ~ ${item.endDate} · ${item.description}`,
+      })),
+      checkPoints: ['지난 호의 행사에는 종료된 혜택이 포함될 수 있습니다.', '수집 시점의 목록 노출은 개인별 할인 적용을 보장하지 않습니다.'],
+      editorialNote: '최대 할인액을 모든 구매에 일괄 적용하지 말고, 결제창에서 실제 할인액을 확인하세요.',
+    }],
+    methodology: ['공식 목록의 행사명·시작일·종료일을 확인해 저장합니다.', '기간이 없거나 종료된 행사, 별도 자격 검토가 필요한 카드 발급 캐시백은 자동 수록하지 않습니다.', '매주 첫 수집 성공 시 새 호를 발행하고 이전 호의 내용과 날짜는 보존합니다.'],
+    automationNote: '공식 목록의 기간 확인 후 주간 발행합니다.',
+    disclaimer: '이 글은 발행일 기준 기록입니다. 현재 적용 조건과 종료 여부는 공식 행사 페이지에서 확인하세요.',
+  })),
+  buildBenefitReport(),
+];
 
 export const latestBenefitReport = benefitReports[0];
 

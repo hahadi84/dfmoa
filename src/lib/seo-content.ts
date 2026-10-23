@@ -1,4 +1,5 @@
 import type { AirportGuide, BrandLanding, MonthlyDealReport, ProductComparePage } from "@/lib/content-models";
+import { publishedMonthlyBenefits } from './published-benefits';
 import { benefitRules } from "@/lib/effective-price";
 import { dutyFreeBenefitStores, dutyFreeBenefitUpdatedAt } from "@/lib/duty-free-benefits";
 import { categories, guides, products, stores, type Category, type CategorySlug, type Guide } from "@/lib/site-data";
@@ -273,6 +274,7 @@ const sourceLinks = dutyFreeBenefitStores.map((store) => ({
 }));
 
 export const monthlyDealReports: MonthlyDealReport[] = [
+  ...publishedMonthlyBenefits,
   {
     slug: "2026-04",
     year: 2026,

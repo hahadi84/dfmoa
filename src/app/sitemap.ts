@@ -4,6 +4,7 @@ import { airportGuides, brandLandings, comparePages, monthlyDealReports } from "
 import { SITE_OPERATOR } from "@/lib/site-operator";
 import { categories, guides, products } from "@/lib/site-data";
 import { preservedPages } from "@/lib/preserved-pages";
+import yenRate from '../../data/content/yen-rate.json';
 
 const SITE_URL = SITE_OPERATOR.serviceUrl;
 const LAST_MODIFIED = new Date("2026-04-19");
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/brand",
     "/category",
     "/deals",
+    "/japan",
     "/faq",
     "/privacy",
     "/terms",
@@ -38,7 +40,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const monthlyDealPages = monthlyDealReports.map((report) => `/deals/${report.slug}`);
   const comparePagePaths = comparePages.filter((page) => !page.noindex).map((page) => `/compare/${page.slug}`);
 
-  return [
+  const modified = new Map<string, string>([
+    ...guides.filter(guide => guide.updatedAt).map(guide => [`/guide/${guide.slug}`, guide.updatedAt!] as [string, string]),
+    ...benefitReports.map(report => [`/benefit-reports/${report.slug}`, report.updatedAt] as [string, string]),
+    ...monthlyDealReports.map(report => [`/deals/${report.slug}`, report.updatedAt] as [string, string]),
+    ['/japan', yenRate.date],
+    ['/deals', monthlyDealReports[0].updatedAt],
+    ['/benefit-reports', benefitReports[0].updatedAt],
+  ]);
+  return [...new Set([
     ...preservedPages.map((page) => page.path),
     ...staticPages,
     ...categoryPages,
@@ -49,9 +59,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...airportPages,
     ...monthlyDealPages,
     ...comparePagePaths,
-  ].map((path) => ({
+  ])].map((path) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: LAST_MODIFIED,
+    lastModified: modified.has(path) ? new Date(modified.get(path)!) : LAST_MODIFIED,
     changeFrequency:
       path.startsWith("/product") || path.startsWith("/benefit-reports") || path.startsWith("/deals")
         ? "weekly"

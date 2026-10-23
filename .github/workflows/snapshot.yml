@@ -21,7 +21,11 @@ jobs:
         with: { node-version: '20' }
       - run: npm ci
       - name: Validate internal demand and failure handling
-        run: node --test scripts/search-demand.test.mjs
+        run: node --test scripts/search-demand.test.mjs scripts/content-refresh.test.mjs
+      - name: Refresh monthly benefits, weekly issue and yen reference rate
+        id: content
+        continue-on-error: true
+        run: node scripts/content-refresh.mjs
       - name: Run snapshot
         # Uses public duty-free search pages only; no Netlify environment variables are required.
         run: npm run snapshot
@@ -32,7 +36,7 @@ jobs:
         run: |
           git config user.name "dfmoa-bot"
           git config user.email "bot@dfmoa.local"
-          git add data/prices/ data/history/ data/last-error.json data/search-demand.json
+          git add data/prices/ data/history/ data/last-error.json data/search-demand.json data/content/
           if git diff --cached --quiet; then
             echo "No changes"
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -52,3 +56,8 @@ jobs:
           fi
 
           curl -fsS -X POST "$NETLIFY_BUILD_HOOK_URL"
+      - name: Report content refresh failure
+        if: always() && steps.content.outcome == 'failure'
+        run: |
+          echo "Content refresh failed. Prior valid snapshots were preserved; inspect the refresh log."
+          exit 1

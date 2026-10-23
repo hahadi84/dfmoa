@@ -106,6 +106,16 @@ export default async function DealsPage({ params }: DealsPageProps) {
           </div>
 
           <div className="deal-rule-grid">
+            {report.benefits?.map(benefit => (
+              <article key={benefit.url} className="deal-rule-card">
+                <span className="chip is-soft">현대면세점</span>
+                <h3 className="card-title">{benefit.title}</h3>
+                <p className="section-copy">{benefit.description}</p>
+                <p className="section-copy">기간: {benefit.startDate} ~ {benefit.endDate}</p>
+                <p className="section-copy">목록 확인: {benefit.checkedAt} · 지난 월의 행사는 종료되었을 수 있습니다.</p>
+                <a className="text-link" href={benefit.url} target="_blank" rel="noreferrer">상세 조건 확인</a>
+              </article>
+            ))}
             {rules.map((rule) => {
               const store = getStoreById(rule.sourceId);
 
@@ -131,6 +141,7 @@ export default async function DealsPage({ params }: DealsPageProps) {
         </article>
 
         <ContentProductGrid products={relatedProducts} title="혜택 적용을 확인할 대표 상품" />
+        <p className="section-copy"><Link href="/japan">일본 여행 쇼핑: 엔화 환율로 현지가와 면세가 비교하기</Link> · <Link href="/benefit-reports">주간 혜택 보기</Link></p>
 
         <div className="split-grid" style={{ marginTop: 12 }}>
           <article className="surface-card">

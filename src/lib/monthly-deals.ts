@@ -1,7 +1,7 @@
 import type { MonthlyDealReport } from "@/lib/content-models";
 
 export function formatYearMonthSlug(date: Date) {
-  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit' }).format(date).slice(0, 7);
 }
 
 export function getDealsBuildDate() {
@@ -20,7 +20,7 @@ export function sortMonthlyDealReports(reports: MonthlyDealReport[]) {
 }
 
 export function getLatestMonthlyDealReportForDate(reports: MonthlyDealReport[], date: Date) {
-  const currentMonth = date.getFullYear() * 100 + date.getMonth() + 1;
+  const currentMonth = Number(formatYearMonthSlug(date).replace('-', ''));
   const sortedReports = sortMonthlyDealReports(reports);
 
   return sortedReports.find((report) => monthNumber(report) <= currentMonth) ?? sortedReports[0] ?? null;

@@ -45,7 +45,7 @@ export default function DealsIndexPage() {
         </span>
         <h1 className="page-title">월간 면세 혜택</h1>
         <p className="page-description">
-          빌드 시점의 현재 월을 기준으로 최신 리포트를 먼저 보여주고, 이전 월은 아카이브로 분리합니다.
+          공식 행사 목록에서 기간을 확인한 혜택을 월별로 모았습니다. 확인 가능한 변경 사항은 갱신하고, 이전 월 기록은 보관합니다.
         </p>
 
         {latestReport ? (

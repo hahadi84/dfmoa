@@ -39,12 +39,14 @@ export default function BenefitReportsPage() {
           <div className="report-metric-strip">
             <span>{latestBenefitReport.storeCount}개 면세점</span>
             <span>{latestBenefitReport.sourceCount}개 혜택 링크</span>
-            <span>수신거부 링크 포함</span>
+            <span>발행일 기준 기록</span>
           </div>
           <Link className="button" href={`/benefit-reports/${latestBenefitReport.slug}`}>
             최신 리포트 보기
           </Link>
         </article>
+
+        <p className="section-copy"><Link href="/japan">일본 여행·엔화 계산기</Link> · <Link href="/deals">월간 혜택 모아보기</Link></p>
 
         <div className="split-grid" style={{ marginTop: 12 }}>
           <div className="report-grid">

@@ -232,8 +232,8 @@ export function buildGuideArticleJsonLd(guide: Guide, path: string) {
     title: guide.title,
     description: guide.excerpt,
     path,
-    publishedAt: "2026-04-19",
-    updatedAt: "2026-04-19",
+    publishedAt: guide.updatedAt ?? "2026-04-19",
+    updatedAt: guide.updatedAt ?? "2026-04-19",
   });
 }
 

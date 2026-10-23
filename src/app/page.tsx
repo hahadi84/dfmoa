@@ -301,8 +301,8 @@ export default function Home() {
           <div className="section-head">
             <div>
               <span className="eyebrow">Guides</span>
-              <h2 className="section-title">구매 전 가이드</h2>
-              <p className="section-copy">면세 구매 전에 확인할 핵심 기준만 짧게 정리했습니다.</p>
+              <h2 className="section-title">일본 여행, 쇼핑 전에 비교하세요</h2>
+              <p className="section-copy">엔화 환산 비용부터 면세 환급까지 확인하세요. <Link href="/japan">엔화 계산기 열기</Link></p>
             </div>
           </div>
 

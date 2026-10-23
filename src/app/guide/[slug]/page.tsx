@@ -97,6 +97,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
         </span>
         <h1 className="page-title">{guide.title}</h1>
         <p className="page-description">{guide.excerpt}</p>
+        {guide.updatedAt ? <p className="section-copy">최종 확인: {guide.updatedAt} · <Link href="/japan">엔화 계산기와 일본 쇼핑 가이드</Link></p> : null}
 
         <div className="split-grid" style={{ marginTop: 28 }}>
           <article className="surface-card">
@@ -120,7 +121,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
                   ) : null}
                 </section>
               ))}
-              {reviewNotes.map((section) => (
+              {guide.sources?.length ? <section className="guide-section"><h2 className="card-title">공식 출처</h2><ul>{guide.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label}</a></li>)}</ul></section> : null}
+              {(guide.updatedAt ? [] : reviewNotes).map((section) => (
                 <section key={section.heading} className="guide-section">
                   <h2 className="card-title" style={{ fontSize: "1.25rem" }}>
                     {section.heading}

@@ -1,3 +1,5 @@
+import { japanGuides } from './japan-guides';
+
 export type StoreId = "lotte" | "shilla" | "hyundai" | "shinsegae";
 export type CategorySlug =
   | "perfume"
@@ -52,6 +54,8 @@ export type Product = {
 };
 
 export type Guide = {
+  updatedAt?: string;
+  sources?: { label: string; url: string }[];
   slug: string;
   title: string;
   excerpt: string;
@@ -1428,6 +1432,7 @@ export const products: Product[] = [
 ];
 
 export const guides: Guide[] = [
+  ...japanGuides,
   {
     slug: "airport-duty-free-basics",
     title: "공항면세점 비교 전에 먼저 정리할 기본값",
