@@ -191,7 +191,10 @@ function extractResponseCookies(headers) {
 }
 
 function extractCsrfToken(html) {
-  return cleanText(html.match(/name="CSRFToken"\s+value="([^"]+)"/)?.[1]);
+  const $ = load(html);
+  const inputToken = $('input[name="CSRFToken"]').val();
+  const configToken = html.match(/ACC\.config\.CSRFToken\s*=\s*["']([^"']+)["']/)?.[1];
+  return cleanText(inputToken || configToken);
 }
 
 function extractExchangeRate(html) {
