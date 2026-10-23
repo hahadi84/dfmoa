@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%94%EB%A3%A8%20%EB%93%9C%20%EC%83%A4%EB%84%AC%20%EC%98%A4%20%EB%93%9C%20%EB%B9%A0%EB%A5%B4%ED%8E%AD%20100ml",
-      "fetchedAt": "2026-10-22T09:31:59+09:00",
+      "fetchedAt": "2026-10-23T09:30:24+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "블루 드 샤넬 오 드 빠르펭 100ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B8%94%EB%A3%A8%20%EB%93%9C%20%EC%83%A4%EB%84%AC%20%EC%98%A4%20%EB%93%9C%20%EB%B9%A0%EB%A5%B4%ED%8E%AD%20100ml",
-      "fetchedAt": "2026-10-22T00:32:01.032Z",
+      "fetchedAt": "2026-10-23T00:30:26.417Z",
       "matched_via": "original",
       "attempted_queries": [
         "블루 드 샤넬 오 드 빠르펭 100ml",
@@ -41,7 +41,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B8%94%EB%A3%A8%20%EB%93%9C%20%EC%83%A4%EB%84%AC%20%EC%98%A4%20%EB%93%9C%20%EB%B9%A0%EB%A5%B4%ED%8E%AD%20100ml",
-      "fetchedAt": "2026-10-22T00:32:01.032Z",
+      "fetchedAt": "2026-10-23T00:30:26.417Z",
       "matched_via": "original",
       "attempted_queries": [
         "블루 드 샤넬 오 드 빠르펭 100ml",

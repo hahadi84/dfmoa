@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-22T09:29:44+09:00",
+      "fetchedAt": "2026-10-23T09:28:12+09:00",
       "matched_via": "alias_en",
       "attempted_queries": [
         "발렌타인 21년 700ml",
@@ -33,7 +33,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-22T00:29:45.166Z",
+      "fetchedAt": "2026-10-23T00:28:13.723Z",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",
@@ -51,7 +51,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-22T00:29:45.166Z",
+      "fetchedAt": "2026-10-23T00:28:13.723Z",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",

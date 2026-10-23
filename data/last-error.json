@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-10-22T00:40:13.965Z",
+  "generatedAt": "2026-10-23T00:38:48.678Z",
   "attemptedCount": 69,
   "failureCount": 69,
   "failures": [
-    {
-      "productId": "p26",
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "categorySlug": "liquor",
-      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
     {
       "productId": "p24",
       "productSlug": "aesop-resurrection-hand-balm-75ml",
@@ -16,8 +10,8 @@
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p25",
-      "productSlug": "ballantines-21-700ml",
+      "productId": "p26",
+      "productSlug": "johnnie-walker-blue-label-750ml",
       "categorySlug": "liquor",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -25,6 +19,12 @@
       "productId": "p94",
       "productSlug": "dyson-supersonic",
       "categorySlug": "electronics",
+      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p25",
+      "productSlug": "ballantines-21-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -52,9 +52,9 @@
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p5",
-      "productSlug": "glenfiddich-15-700ml",
-      "categorySlug": "liquor",
+      "productId": "p20",
+      "productSlug": "kiehls-ultra-facial-cream-125ml",
+      "categorySlug": "beauty",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -88,15 +88,21 @@
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
+      "productId": "p5",
+      "productSlug": "glenfiddich-15-700ml",
       "categorySlug": "liquor",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p20",
-      "productSlug": "kiehls-ultra-facial-cream-125ml",
+      "productId": "p19",
+      "productSlug": "hera-black-cushion-15g",
       "categorySlug": "beauty",
+      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -109,12 +115,6 @@
       "productId": "p1",
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
-      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p19",
-      "productSlug": "hera-black-cushion-15g",
-      "categorySlug": "beauty",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -139,6 +139,12 @@
       "productId": "p14",
       "productSlug": "tom-ford-oud-wood-50ml",
       "categorySlug": "perfume",
+      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p73",
+      "productSlug": "centrum-multivitamin",
+      "categorySlug": "health",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -178,12 +184,6 @@
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p22",
-      "productSlug": "shiseido-ultimune-75ml",
-      "categorySlug": "beauty",
-      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p13",
       "productSlug": "dior-sauvage-edp-100ml",
       "categorySlug": "perfume",
@@ -198,6 +198,12 @@
     {
       "productId": "p18",
       "productSlug": "lancome-genifique-100ml",
+      "categorySlug": "beauty",
+      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p22",
+      "productSlug": "shiseido-ultimune-75ml",
       "categorySlug": "beauty",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -348,12 +354,6 @@
     {
       "productId": "p72",
       "productSlug": "orthomol-immun",
-      "categorySlug": "health",
-      "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p73",
-      "productSlug": "centrum-multivitamin",
       "categorySlug": "health",
       "error": "shilla:cookie_or_login_required, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-22T00:29:08.445Z",
+  "generatedAt": "2026-10-23T00:27:25.657Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
+    {
+      "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "count": 8
+    },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 7
     },
     {
-      "productSlug": "aesop-resurrection-hand-balm-75ml",
-      "count": 6
+      "productSlug": "dyson-supersonic",
+      "count": 5
     },
     {
       "productSlug": "ballantines-21-700ml",
-      "count": 5
-    },
-    {
-      "productSlug": "dyson-supersonic",
-      "count": 5
+      "count": 4
     },
     {
       "productSlug": "byredo-blanche-100ml",
@@ -36,7 +36,7 @@
       "count": 4
     },
     {
-      "productSlug": "glenfiddich-15-700ml",
+      "productSlug": "kiehls-ultra-facial-cream-125ml",
       "count": 4
     },
     {
@@ -60,11 +60,15 @@
       "count": 3
     },
     {
-      "productSlug": "hibiki-harmony-700ml",
+      "productSlug": "glenfiddich-15-700ml",
       "count": 3
     },
     {
-      "productSlug": "kiehls-ultra-facial-cream-125ml",
+      "productSlug": "hera-black-cushion-15g",
+      "count": 3
+    },
+    {
+      "productSlug": "hibiki-harmony-700ml",
       "count": 3
     },
     {
@@ -73,10 +77,6 @@
     },
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 2
-    },
-    {
-      "productSlug": "hera-black-cushion-15g",
       "count": 2
     },
     {
@@ -94,6 +94,10 @@
     {
       "productSlug": "tom-ford-oud-wood-50ml",
       "count": 2
+    },
+    {
+      "productSlug": "centrum-multivitamin",
+      "count": 1
     },
     {
       "productSlug": "gnc-mega-men",

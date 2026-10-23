@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%82%98%EC%9A%B0%20%EC%98%A4%EB%A9%94%EA%B0%803",
-      "fetchedAt": "2026-10-22T09:39:16+09:00",
+      "fetchedAt": "2026-10-23T09:37:49+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "나우 오메가3",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%82%98%EC%9A%B0%20%EC%98%A4%EB%A9%94%EA%B0%803",
-      "fetchedAt": "2026-10-22T00:39:17.488Z",
+      "fetchedAt": "2026-10-23T00:37:50.845Z",
       "matched_via": "original",
       "attempted_queries": [
         "나우 오메가3",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%82%98%EC%9A%B0%20%EC%98%A4%EB%A9%94%EA%B0%803",
-      "fetchedAt": "2026-10-22T00:39:17.488Z",
+      "fetchedAt": "2026-10-23T00:37:50.845Z",
       "matched_via": "original",
       "attempted_queries": [
         "나우 오메가3",

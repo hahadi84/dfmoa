@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WH-1000XM5",
-      "fetchedAt": "2026-10-22T09:39:38+09:00",
+      "fetchedAt": "2026-10-23T09:38:12+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "소니 WH-1000XM5",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%8C%EB%8B%88%20WH-1000XM5",
-      "fetchedAt": "2026-10-22T00:39:39.927Z",
+      "fetchedAt": "2026-10-23T00:38:13.480Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-1000XM5",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%8C%EB%8B%88%20WH-1000XM5",
-      "fetchedAt": "2026-10-22T00:39:39.927Z",
+      "fetchedAt": "2026-10-23T00:38:13.480Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-1000XM5",

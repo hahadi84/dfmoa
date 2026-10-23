@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-10-22T09:36:26+09:00",
+      "fetchedAt": "2026-10-23T09:35:02+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-10-22T00:36:27.244Z",
+      "fetchedAt": "2026-10-23T00:35:04.028Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1",
-      "fetchedAt": "2026-10-22T00:36:27.244Z",
+      "fetchedAt": "2026-10-23T00:35:04.028Z",
       "matched_via": "original",
       "attempted_queries": [
         "코치 태비 숄더백",

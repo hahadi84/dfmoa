@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-10-22T09:39:24+09:00",
+      "fetchedAt": "2026-10-23T09:37:57+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-10-22T00:39:25.390Z",
+      "fetchedAt": "2026-10-23T00:37:58.467Z",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B8%8C%EB%9D%BC%EC%9A%B4%20%EC%8B%9C%EB%A6%AC%EC%A6%88%209%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-10-22T00:39:25.390Z",
+      "fetchedAt": "2026-10-23T00:37:58.467Z",
       "matched_via": "original",
       "attempted_queries": [
         "브라운 시리즈 9 프로",

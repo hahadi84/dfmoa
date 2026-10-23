@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
-      "fetchedAt": "2026-10-22T09:38:41+09:00",
+      "fetchedAt": "2026-10-23T09:37:20+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "정관장 에브리타임 로얄",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
-      "fetchedAt": "2026-10-22T00:38:42.229Z",
+      "fetchedAt": "2026-10-23T00:37:21.914Z",
       "matched_via": "original",
       "attempted_queries": [
         "정관장 에브리타임 로얄",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%95%EA%B4%80%EC%9E%A5%20%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84%20%EB%A1%9C%EC%96%84",
-      "fetchedAt": "2026-10-22T00:38:42.229Z",
+      "fetchedAt": "2026-10-23T00:37:21.914Z",
       "matched_via": "original",
       "attempted_queries": [
         "정관장 에브리타임 로얄",

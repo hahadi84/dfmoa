@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-10-22T09:35:12+09:00",
+      "fetchedAt": "2026-10-23T09:33:43+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-10-22T00:35:14.222Z",
+      "fetchedAt": "2026-10-23T00:33:44.521Z",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
@@ -41,7 +41,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-10-22T00:35:14.222Z",
+      "fetchedAt": "2026-10-23T00:33:44.521Z",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
