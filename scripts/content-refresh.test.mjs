@@ -1,6 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import ts from 'typescript';
 import { parseBenefits, updateReports, koreaDate, weekStart } from './content-refresh.mjs';
+test('site data remains loadable by the standalone price collector', () => {
+  const js = ts.transpileModule(fs.readFileSync('src/lib/site-data.ts', 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
+  const sandbox = { exports: {}, require: name => { throw new Error(`Unexpected runtime dependency: ${name}`); } };
+  vm.runInNewContext(js, sandbox);
+  assert.ok(sandbox.exports.products.length >= 100);
+  assert.ok(sandbox.exports.guides.some(guide => guide.slug === 'yen-rate-duty-free-comparison'));
+});
 const card = (start, end, url = 'https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=1') => `<a href="${url}"><p class="tit">결제 혜택</p><p class="txt_date">${start} ~ ${end}</p></a>`;
 test('only dated active official events are published; expiry is inclusive', () => {
   assert.equal(parseBenefits(card('2026-10-01','2026-10-23'), '2026-10-23').length, 1);
