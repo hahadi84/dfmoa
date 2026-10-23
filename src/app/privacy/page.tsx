@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const effectiveDate = "2026-04-20";
-const updatedDate = "2026-10-14 (내부 인기검색 집계 안내 추가)";
+const updatedDate = "2026-10-23 (Google AdSense 광고 및 쿠키 안내 갱신)";
 
 const collectionRows = [
   ["필수", "이메일 주소", "주간 리포트 구독, 가격 알림 등록 시"],
@@ -27,7 +27,7 @@ const processorRows = [
     `방문 분석(Google Analytics 4, 측정 ID ${SITE_OPERATOR.analyticsMeasurementId})`,
     "미국",
   ],
-  [SITE_OPERATOR.analyticsProvider.replace(" (미국)", ""), "(향후) Google AdSense 광고 제공 - 승인 시 적용", "미국"],
+  [SITE_OPERATOR.analyticsProvider.replace(" (미국)", ""), "Google AdSense 광고 제공", "미국"],
   [SITE_OPERATOR.affiliatePartner, "쿠팡 파트너스 제휴 링크 트래킹", "대한민국"],
 ];
 
@@ -38,7 +38,7 @@ const cookieRows = [
     "최장 2년",
     "브라우저 설정 또는 Google Analytics 차단 부가기능",
   ],
-  ["AdSense 관련", "(향후) 맞춤형 광고 노출", "Google 정책에 따름", "Google 광고 설정"],
+  ["AdSense 관련", "광고 제공 및 맞춤형 광고", "Google 정책에 따름", "Google 광고 설정"],
 ];
 
 function PolicyTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
           </p>
 
           <div className="policy-highlight">
-            <strong>현재 DFMOA는 개인이 비영리 목적으로 운영 중이며, 쿠팡 파트너스 제휴 링크 외 영업 수익이 발생하지 않는 상태입니다.</strong>{" "}
+            <strong>DFMOA는 개인이 운영하는 정보 제공 서비스이며, Google AdSense 광고와 쿠팡 파트너스 제휴 링크를 통해 수익이 발생할 수 있습니다.</strong>{" "}
             수익 구조 또는 운영 주체가 변경되는 경우 본 방침을 갱신해 공지합니다.
           </div>
 
@@ -117,7 +117,7 @@ export default function PrivacyPage() {
             <h2>3. 개인정보의 수집·이용 목적</h2>
             <ul>
               <li>이메일: 주간 면세 리포트 발송, 가격 알림 전송, 수신거부 처리</li>
-              <li>자동수집 정보: 서비스 품질 개선, 방문 분석, 보안 목적, 향후 맞춤형 광고 제공(AdSense 승인 시)</li>
+              <li>자동수집 정보: 서비스 품질 개선, 방문 분석, 보안 및 광고 제공</li>
               <li>검색 집계: 최근 7일 인기상품 순위와 가격 수집 우선순위 결정. 검색 원문, IP 주소와 임시 탭 식별자는 이 집계에 저장하지 않습니다.</li>
               <li>문의 정보: 데이터 오류 확인, 권리자 요청 처리, 서비스 개선 의견 회신</li>
             </ul>
@@ -155,8 +155,7 @@ export default function PrivacyPage() {
             <h2>7. 개인정보 처리 위탁</h2>
             <PolicyTable headers={["수탁자", "위탁 업무", "보관 국가"]} rows={processorRows} />
             <p>
-              위탁 업무는 서비스 운영에 필요한 범위로 제한합니다. Google AdSense 항목은 승인 후 광고 기능을 실제 적용할
-              때부터 해당됩니다.
+              위탁 업무는 서비스 운영에 필요한 범위로 제한합니다. Google AdSense는 광고 기능이 적용된 페이지에서 사용됩니다.
             </p>
           </section>
 
@@ -181,6 +180,13 @@ export default function PrivacyPage() {
           <section>
             <h2>10. 자동 수집 장치(쿠키)의 설치·운영 및 거부</h2>
             <PolicyTable headers={["쿠키명", "목적", "유효 기간", "거부 방법"]} rows={cookieRows} />
+            <p>
+              Google을 포함한 제3자 광고 제공업체는 이용자의 이 사이트 및 다른 웹사이트 방문 기록을 바탕으로 쿠키를
+              사용해 광고를 게재할 수 있습니다. Google과 파트너는 광고 쿠키를 이용해 방문 기록에 맞춘 광고를 제공할 수 있습니다.
+              이용자는 아래 Google 광고 설정에서 맞춤형 광고를 관리하거나 거부할 수 있으며, 다른 광고 제공업체의 쿠키 선택은{" "}
+              <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer">광고 쿠키 거부 도구</a>
+              에서 관리할 수 있습니다.
+            </p>
             <p>
               Google Analytics 차단 부가기능은{" "}
               <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">

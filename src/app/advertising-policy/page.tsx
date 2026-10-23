@@ -42,10 +42,10 @@ export default function AdvertisingPolicyPage() {
           </section>
 
           <section>
-            <h2>Google AdSense 준비 상태</h2>
+            <h2>Google AdSense 광고 운영</h2>
             <p>
-              DFMOA는 향후 Google AdSense 심사를 신청할 예정입니다. 심사 전에는 광고 슬롯을 본문에 배치하지 않으며,
-              승인 후에도 가격 비교, 원본 확인, 예상 실결제가 계산 흐름을 방해하지 않는 위치에만 제한적으로 노출합니다.
+              DFMOA는 Google AdSense를 통해 광고를 게재합니다. 구매 가이드와 리포트 등 정보성 콘텐츠의 본문 배너를
+              중심으로 운영하며, 가격 비교, 원본 확인, 예상 실결제가 계산 흐름을 방해하지 않는 위치에 제한적으로 노출합니다.
             </p>
             <p>
               사용자는 광고 차단기를 사용할 수 있습니다. 광고 차단 여부는 상품 가격 비교, 검색 결과, 즐겨찾기, 알림 기능
