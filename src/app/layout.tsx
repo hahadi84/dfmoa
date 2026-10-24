@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { IBM_Plex_Mono, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/google-analytics";
@@ -73,13 +74,15 @@ export default function RootLayout({
           title="DFMOA 면세 혜택 리포트"
           href={`${SITE_OPERATOR.serviceUrl}/feed.xml`}
         />
-        <script
+      </head>
+      <body>
+        <Script
+          id="google-adsense"
+          strategy="afterInteractive"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271072565444318"
           crossOrigin="anonymous"
         />
-      </head>
-      <body>
         <GoogleAnalytics tagId={GA_TAG_ID} measurementId={GA_MEASUREMENT_ID} />
         <a className="skip-link" href="#main-content">
           본문으로 건너뛰기
