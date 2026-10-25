@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { internationalProductIds, INTERNATIONAL_UPDATED } from "@/lib/international";
 import { benefitReports } from "@/lib/benefit-report-generator";
 import { airportGuides, brandLandings, comparePages, monthlyDealReports } from "@/lib/seo-content";
 import { SITE_OPERATOR } from "@/lib/site-operator";
@@ -17,6 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     "",
     "/about",
+    "/en",
+    "/en/guide/incheon-duty-free-pickup",
+    "/en/compare",
+    "/en/privacy",
     "/airport",
     "/best-seller-examples",
     "/benefits",
@@ -36,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoryPages = categories.map((category) => `/category/${category.slug}`);
   const guidePages = guides.map((guide) => `/guide/${guide.slug}`);
   const productPages = products.map((product) => `/product/${product.slug}`);
+  const englishProductPages = products.filter(product => internationalProductIds.includes(product.id)).map(product => `/en/product/${product.slug}`);
   const benefitReportPages = benefitReports.map((report) => `/benefit-reports/${report.slug}`);
   const brandPages = brandLandings.map((brand) => `/brand/${brand.slug}`);
   const airportPages = airportGuides.map((airport) => `/airport/${airport.slug}`);
@@ -71,12 +77,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const brand of brandLandings) {
     modified.set(`/brand/${brand.slug}`, latest(brand.representativeProductIds.map(productDate)));
   }
+  for (const path of [...staticPages.filter(path => path.startsWith("/en")), ...englishProductPages]) modified.set(path, INTERNATIONAL_UPDATED);
+  for (const product of products.filter(product => internationalProductIds.includes(product.id))) modified.set(`/en/product/${product.slug}`, modified.get(`/product/${product.slug}`)!);
+  modified.set("/en", latest([INTERNATIONAL_UPDATED, ...products.filter(product => internationalProductIds.includes(product.id)).map(product => modified.get(`/product/${product.slug}`) ?? "")]));
   return [...new Set([
     ...preservedPages.map((page) => page.path),
     ...staticPages,
     ...categoryPages,
     ...guidePages,
     ...productPages,
+    ...englishProductPages,
     ...benefitReportPages,
     ...brandPages,
     ...airportPages,

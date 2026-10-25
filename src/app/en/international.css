@@ -1,0 +1,26 @@
+.intl-page { line-height: 1.7; }
+.intl-page .page-title { margin-top: 20px; max-width: 920px; line-height: 1.15; }
+.intl-page .page-description { white-space: normal; max-width: 800px; overflow: visible; text-overflow: clip; }
+.intl-page p { overflow-wrap: anywhere; }
+.intl-section-nav, .intl-footer nav { display: flex; gap: 14px 28px; flex-wrap: wrap; margin: 24px 0; }
+.intl-section-nav a, .intl-footer a, .intl-page a:not(.button) { text-decoration: underline; text-underline-offset: 3px; }
+.intl-note { border-left: 3px solid #355d93; background: #f3f6fa; padding: 18px 24px; margin: 30px 0; }
+.intl-note h2 { margin: 0 0 10px; font-size: 1.2rem; font-weight: 600; }
+.intl-note p { margin: 10px 0; }
+.intl-guide-section { margin: 36px 0; }
+.intl-guide-section li { margin: 10px 0; }
+.intl-filters { display: flex; gap: 20px; flex-wrap: wrap; margin: 24px 0; }
+.intl-filters label { display: grid; gap: 6px; }
+.intl-filters select { padding: 10px 14px; border: 1px solid #b9c4d3; border-radius: 8px; background: #fff; font: inherit; }
+.intl-product-list { border-top: 1px solid #d8dee7; }
+.intl-product-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; border-bottom: 1px solid #d8dee7; }
+.intl-product-row h3 { font-size: 1.2rem; font-weight: 600; margin: 4px 0; }
+.intl-product-row p { margin: 4px 0; }
+.intl-brand { font-size: .9rem; color: #526176; }
+.intl-price { display: grid; gap: 6px; text-align: right; flex-shrink: 0; }
+.intl-price strong { font-size: 1.3rem; font-weight: 600; }
+.intl-price small { color: #526176; }
+.intl-reading { max-width: 900px; }
+.intl-location-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.intl-footer { line-height: 1.7; padding: 24px 0; }
+@media (max-width: 640px) { .intl-product-row { align-items: start; flex-direction: column; gap: 12px; } .intl-price { text-align: left; flex-shrink: 1; } .intl-filters, .intl-filters label, .intl-filters select { width: 100%; } .intl-location-list { grid-template-columns: 1fr; } .intl-page .page-title { font-size: 2rem; } }

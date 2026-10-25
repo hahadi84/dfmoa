@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { internationalProductIds } from "@/lib/international";
 import { getSnapshotBestItem, formatSnapshotTimestamp } from "@/lib/price-snapshot-view";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 import { formatKrw, getStoreById, type Category, type Product } from "@/lib/site-data";
@@ -92,7 +93,7 @@ export function getProductSeoSummary(product: Product, snapshot?: ProductPriceSn
 export function buildProductMetadata(product: Product, snapshot?: ProductPriceSnapshot | null) {
   const seo = getProductSeoSummary(product, snapshot);
 
-  return buildSeoMetadata({
+  const metadata = buildSeoMetadata({
     title: seo.title,
     description: seo.description,
     path: `/product/${product.slug}`,
@@ -101,6 +102,10 @@ export function buildProductMetadata(product: Product, snapshot?: ProductPriceSn
       alt: `${product.displayName} 면세 가격 비교`,
     },
   });
+  if (internationalProductIds.includes(product.id)) {
+    metadata.alternates = { canonical: `/product/${product.slug}`, languages: { ko: `/product/${product.slug}`, en: `/en/product/${product.slug}` } };
+  }
+  return metadata;
 }
 
 export function buildCategoryMetadata(category: Category) {

@@ -31,6 +31,7 @@ export const metadata: Metadata = {
       alt: "면세점 가격비교 면세모아",
     },
   }),
+  alternates: { canonical: "/", languages: { ko: "/", en: "/en" } },
 };
 
 export default function Home() {

@@ -85,7 +85,7 @@ export default function RootLayout({
         />
         <GoogleAnalytics tagId={GA_TAG_ID} measurementId={GA_MEASUREMENT_ID} />
         <a className="skip-link" href="#main-content">
-          본문으로 건너뛰기
+          본문으로 건너뛰기 / Skip to content
         </a>
         <div className="site-shell">
           <SiteHeader />

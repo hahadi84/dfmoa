@@ -1,9 +1,15 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Link from "@/components/app-link";
 import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
 import { AFFILIATE_DISCLOSURE_TEXT } from "@/lib/affiliate";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 
 export function SiteFooter() {
+  const path = usePathname();
+  if (path === "/en" || path.startsWith("/en/")) return <footer className="site-footer" lang="en"><div className="container intl-footer"><p className="footer-brand">DFMOA</p><p>Independent Korea duty-free comparison and travel shopping guidance. DFMOA is not a retailer and is not affiliated with the duty-free operators unless explicitly stated. Complete purchases and confirm prices, stock and pickup with the retailer.</p><p>Questions: <a href={`mailto:${SITE_OPERATOR.email}`}>{SITE_OPERATOR.email}</a></p><nav aria-label="Policies and language"><Link href="/en/guide/incheon-duty-free-pickup">Pickup guide</Link><Link href="/en/compare">Shopping cost calculator</Link><Link href="/en/privacy">Privacy</Link><Link href="/" lang="ko">한국어</Link></nav></div></footer>;
+
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
