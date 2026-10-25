@@ -92,7 +92,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <span className="eyebrow">Representative Products</span>
             <h2 className="section-title">대표 상품 {categoryProducts.length}가지</h2>
             <p className="section-copy">
-              필터 URL은 공유 가능하지만 canonical은 카테고리 기본 페이지로 유지합니다.
+              브랜드와 가격 확인 여부로 상품을 좁히고, 같은 용량의 공개가를 비교하세요.
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   가격 상태 확인
                 </h3>
                 <p className="section-copy">
-                  가격이 없거나 일부 source만 확인되는 경우에도 공식 검색과 원본 확인 링크를 제공합니다.
+                  가격이 없거나 일부 면세점 가격만 확인되는 경우에도 공식 검색과 원본 확인 링크를 제공합니다.
                 </p>
               </div>
               <div className="guide-section">

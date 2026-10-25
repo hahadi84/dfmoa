@@ -23,12 +23,12 @@ const buildTimestamp = Date.now();
 
 export const metadata: Metadata = {
   ...buildSeoMetadata({
-    title: "한국 면세점 최저가 비교 · 롯데·신라·신세계 공개가 한눈에",
+    title: "면세점 가격비교 · 상품별 공개가와 할인 혜택",
     description: "면세모아에서 신라·롯데·신세계·현대 면세점 공개가와 국내가 참고 정보를 비교하고, 출국 전 원본 링크로 최종 가격을 확인하세요.",
     path: "/",
     image: {
       path: HOME_OG_IMAGE,
-      alt: "한국 면세점 최저가 비교 DFMOA",
+      alt: "면세점 가격비교 면세모아",
     },
   }),
 };
@@ -111,7 +111,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <span className="eyebrow">DFMOA Price Radar</span>
-            <h1 className="hero-title">면세가·국내가 비교</h1>
+            <h1 className="hero-title">면세점 가격비교</h1>
             <p className="hero-description">
               상품명과 용량만 넣으면 면세점 공개가, 국내 판매가, 혜택 링크를 한 화면에 정리합니다.
             </p>

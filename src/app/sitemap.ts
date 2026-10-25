@@ -4,10 +4,12 @@ import { airportGuides, brandLandings, comparePages, monthlyDealReports } from "
 import { SITE_OPERATOR } from "@/lib/site-operator";
 import { categories, guides, products } from "@/lib/site-data";
 import { preservedPages } from "@/lib/preserved-pages";
+import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
 import yenRate from '../../data/content/yen-rate.json';
 
 const SITE_URL = SITE_OPERATOR.serviceUrl;
-const LAST_MODIFIED = new Date("2026-04-19");
+// Actual date of the title/content revision; never substitute the build clock.
+const SEO_UPDATED_AT = "2026-10-25T00:00:00+09:00";
 
 export const dynamic = "force-static";
 
@@ -48,6 +50,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ['/deals', monthlyDealReports[0].updatedAt],
     ['/benefit-reports', benefitReports[0].updatedAt],
   ]);
+  const snapshots = readPriceSnapshotsByProductId(products);
+  const latest = (values: string[]) => values.filter(value => Number.isFinite(Date.parse(value)))
+    .sort((a, b) => Date.parse(b) - Date.parse(a))[0];
+  for (const product of products) {
+    const dates = Object.values(snapshots[product.id]?.sources ?? {})
+      .filter(source => source.items.some(item => Number(item.priceKrw) > 0))
+      .flatMap(source => [source.fetchedAt ?? "", ...source.items.map(item => item.fetchedAt ?? "")]);
+    modified.set(`/product/${product.slug}`, latest([SEO_UPDATED_AT, ...dates]));
+  }
+  const productDate = (id: string) => {
+    const product = products.find(item => item.id === id);
+    return product ? modified.get(`/product/${product.slug}`) ?? "" : "";
+  };
+  modified.set("", latest(products.map(product => productDate(product.id))));
+  modified.set("/deals", latest([SEO_UPDATED_AT, ...monthlyDealReports.map(report => report.updatedAt)]));
+  for (const category of categories) {
+    modified.set(`/category/${category.slug}`, latest(products.filter(product => product.categorySlug === category.slug).map(product => productDate(product.id))));
+  }
+  for (const brand of brandLandings) {
+    modified.set(`/brand/${brand.slug}`, latest(brand.representativeProductIds.map(productDate)));
+  }
   return [...new Set([
     ...preservedPages.map((page) => page.path),
     ...staticPages,
@@ -61,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...comparePagePaths,
   ])].map((path) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: modified.has(path) ? new Date(modified.get(path)!) : LAST_MODIFIED,
+    ...(modified.get(path) ? { lastModified: new Date(modified.get(path)!) } : {}),
     changeFrequency:
       path.startsWith("/product") || path.startsWith("/benefit-reports") || path.startsWith("/deals")
         ? "weekly"

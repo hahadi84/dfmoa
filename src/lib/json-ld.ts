@@ -29,21 +29,6 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   };
 }
 
-function addHours(value: string | null | undefined, hours: number) {
-  if (!value) {
-    return undefined;
-  }
-
-  const parsed = new Date(value);
-
-  if (Number.isNaN(parsed.getTime())) {
-    return undefined;
-  }
-
-  parsed.setHours(parsed.getHours() + hours);
-  return parsed.toISOString();
-}
-
 function getSnapshotOfferEntries(snapshot?: ProductPriceSnapshot | null) {
   return Object.entries(snapshot?.sources ?? {}).flatMap(([sourceId, source]) =>
     source.items
@@ -63,7 +48,6 @@ export function buildProductJsonLd(product: Product, snapshot?: ProductPriceSnap
     .sort((left, right) => Number(left.item.priceKrw) - Number(right.item.priceKrw))
     .map(({ sourceId, source, item }) => {
       const store = getStoreById(sourceId);
-      const fetchedAt = item.fetchedAt ?? source.fetchedAt ?? snapshot?.fetchedAt;
 
       return {
         "@type": "Offer",
@@ -74,15 +58,14 @@ export function buildProductJsonLd(product: Product, snapshot?: ProductPriceSnap
           name: store?.name ?? source.store,
         },
         url: item.url || source.searchUrl || absoluteUrl(`/product/${product.slug}`),
-        availability: "https://schema.org/InStock",
-        priceValidUntil: addHours(fetchedAt, 24),
       };
     });
   const image = getSnapshotOfferEntries(snapshot).find(({ item }) => item.imageUrl)?.item.imageUrl;
   const productJsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: product.displayName,
+    name: product.query,
+    alternateName: product.displayName,
     brand: {
       "@type": "Brand",
       name: product.brand,

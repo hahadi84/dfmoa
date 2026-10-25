@@ -68,8 +68,8 @@ export function getProductSeoSummary(product: Product, snapshot?: ProductPriceSn
 
   if (!best) {
     return {
-      title: `${product.displayName} 면세 가격 정보 · 4개 공항면세점 공식 검색 링크`,
-      description: `${product.displayName}의 면세 가격 정보와 공식 검색 링크를 정리했습니다. 수령 공항·구매 한도·원본 확인 방법 포함.`,
+      title: `${product.query} 면세점 가격 · 공식 판매처 확인`,
+      description: `${product.query}의 면세 가격을 확인할 수 있는 공식 판매처 링크와 구매 전 확인 사항을 정리했습니다. 현재 공개 가격이 없어 판매처에서 용량·재고·최종 결제액을 확인하세요.`,
       imagePath: `/og/product/${product.slug}.png`,
       hasPrice: false,
     };
@@ -82,8 +82,8 @@ export function getProductSeoSummary(product: Product, snapshot?: ProductPriceSn
   const storeName = store?.shortName ?? best.sourceId;
 
   return {
-    title: `${product.displayName} — ${storeName} ${formatKrw(priceKrw)} (${dateLabel} 기준)`,
-    description: `${product.displayName}의 롯데·신라·신세계 면세 공개가 비교. 최근 확인가 ${formatKrw(priceKrw)} (${storeName}, ${dateLabel} 기준).`,
+    title: `${product.query} 면세점 가격 비교`,
+    description: `${product.query} 면세 공개가 ${formatKrw(priceKrw)} (${storeName}, ${dateLabel} 확인). 면세점별 공식 링크와 할인 조건을 비교하고, 재고와 최종 결제액은 판매처에서 확인하세요.`,
     imagePath: `/og/product/${product.slug}.png`,
     hasPrice: true,
   };

@@ -197,7 +197,8 @@ export function ProductPageClient({
         <span className="eyebrow" style={{ marginTop: 20 }}>
           Product detail
         </span>
-        <h1 className="page-title">{product.displayName}</h1>
+        <h1 className="page-title">{product.query} 면세 가격</h1>
+        <p className="section-copy">{product.displayName}</p>
         <p className="page-description">{product.summary}</p>
 
         <div className="chip-row" style={{ marginTop: 16 }}>

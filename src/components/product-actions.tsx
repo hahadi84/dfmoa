@@ -38,8 +38,7 @@ export function useFavoriteProducts() {
   );
 
   return useMemo(() => {
-    void snapshot;
-    return readFavoriteProducts();
+    return readFavoriteProducts(snapshot);
   }, [snapshot]);
 }
 
@@ -51,8 +50,7 @@ export function useRecentProducts() {
   );
 
   return useMemo(() => {
-    void snapshot;
-    return readRecentProducts();
+    return readRecentProducts(snapshot);
   }, [snapshot]);
 }
 

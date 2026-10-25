@@ -57,7 +57,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "홈", path: "/" },
     { name: category?.name ?? product.categorySlug, path: `/category/${product.categorySlug}` },
-    { name: product.displayName, path: `/product/${product.slug}` },
+    { name: product.query, path: `/product/${product.slug}` },
   ]);
   const productJsonLd = buildProductJsonLd(product, priceSnapshot);
 
@@ -73,7 +73,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <span>/</span>
           <Link href={`/category/${product.categorySlug}`}>{category?.name}</Link>
           <span>/</span>
-          <span>{product.displayName}</span>
+          <span>{product.query}</span>
         </div>
 
         <ProductPageClient

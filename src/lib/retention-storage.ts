@@ -125,14 +125,14 @@ function safeParseArray(value: string | null) {
   }
 }
 
-export function readFavoriteProducts(): FavoriteProduct[] {
-  return safeParseArray(getRawStorageSnapshot(FAVORITES_STORAGE_KEY))
+export function readFavoriteProducts(snapshot = getRawStorageSnapshot(FAVORITES_STORAGE_KEY)): FavoriteProduct[] {
+  return safeParseArray(snapshot)
     .map(toFavoriteProduct)
     .filter((item): item is FavoriteProduct => Boolean(item));
 }
 
-export function readRecentProducts(): RecentProduct[] {
-  return safeParseArray(getRawStorageSnapshot(RECENT_PRODUCTS_STORAGE_KEY))
+export function readRecentProducts(snapshot = getRawStorageSnapshot(RECENT_PRODUCTS_STORAGE_KEY)): RecentProduct[] {
+  return safeParseArray(snapshot)
     .map(toRecentProduct)
     .filter((item): item is RecentProduct => Boolean(item))
     .slice(0, MAX_RECENT_PRODUCTS);
