@@ -1,11 +1,14 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { TravelerHeader, LanguageLinks } from "@/components/traveler-chrome";
 import Link from "@/components/app-link";
 
 export function SiteHeader() {
   const path = usePathname();
-  if (path === "/en" || path.startsWith("/en/")) return <header className="topbar" lang="en"><div className="container topbar-inner"><Link className="brand" href="/en"><span className="brand-mark">DF</span><span className="brand-copy"><strong>DFMOA</strong><span>Korea duty-free comparison</span></span></Link><nav className="topnav" aria-label="Main navigation"><Link href="/en">Compare products</Link><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup</Link><Link href="/en/compare">Duty free vs tax refund</Link><Link href="/" lang="ko">한국어</Link></nav></div></header>;
+  if (path === "/ja" || path.startsWith("/ja/")) return <TravelerHeader locale="ja" path={path}/>;
+  if (path === "/zh" || path.startsWith("/zh/")) return <TravelerHeader locale="zh" path={path}/>;
+  if (path === "/en" || path.startsWith("/en/")) return <header className="topbar" lang="en"><div className="container topbar-inner"><Link className="brand" href="/en"><span className="brand-mark">DF</span><span className="brand-copy"><strong>DFMOA</strong><span>Korea duty-free comparison</span></span></Link><nav className="topnav" aria-label="Main navigation"><Link href="/en">Compare products</Link><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup</Link><Link href="/en/compare">Duty free vs tax refund</Link><LanguageLinks path={path}/></nav></div></header>;
 
   return (
     <header className="topbar">
@@ -29,6 +32,8 @@ export function SiteHeader() {
           <Link href="/airport">공항 가이드</Link>
           <Link href="/benefit-reports">리포트</Link>
           <Link href="/en" lang="en">English</Link>
+          <Link href="/ja" lang="ja">日本語</Link>
+          <Link href="/zh" lang="zh-Hans">简体中文</Link>
         </nav>
       </div>
     </header>

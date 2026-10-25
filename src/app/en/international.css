@@ -24,3 +24,10 @@
 .intl-location-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .intl-footer { line-height: 1.7; padding: 24px 0; }
 @media (max-width: 640px) { .intl-product-row { align-items: start; flex-direction: column; gap: 12px; } .intl-price { text-align: left; flex-shrink: 1; } .intl-filters, .intl-filters label, .intl-filters select { width: 100%; } .intl-location-list { grid-template-columns: 1fr; } .intl-page .page-title { font-size: 2rem; } }
+
+.intl-country-rules > div { padding: 14px 0; border-bottom: 1px solid #d8dee7; }
+.intl-country-rules dt { font-weight: 600; }
+.intl-country-rules dd { margin: 6px 0 0; }
+
+.intl-page[lang="ja"] { font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif; }
+.intl-page[lang="zh-Hans"] { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }

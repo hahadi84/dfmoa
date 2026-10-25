@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { countryGuides, COUNTRY_GUIDANCE_CHECKED } from "@/lib/english-country-guides";
 import { internationalProductIds, INTERNATIONAL_UPDATED } from "@/lib/international";
 import { benefitReports } from "@/lib/benefit-report-generator";
 import { airportGuides, brandLandings, comparePages, monthlyDealReports } from "@/lib/seo-content";
@@ -22,6 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/en/guide/incheon-duty-free-pickup",
     "/en/compare",
     "/en/privacy",
+    "/en/travelers",
+    ...countryGuides.map(guide => `/en/guide/${guide.slug}`),
+    ...["ja", "zh"].flatMap(locale => [`/${locale}`, `/${locale}/compare`, `/${locale}/privacy`, `/${locale}/guide/incheon-duty-free-pickup`]),
     "/airport",
     "/best-seller-examples",
     "/benefits",
@@ -42,6 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const guidePages = guides.map((guide) => `/guide/${guide.slug}`);
   const productPages = products.map((product) => `/product/${product.slug}`);
   const englishProductPages = products.filter(product => internationalProductIds.includes(product.id)).map(product => `/en/product/${product.slug}`);
+  const translatedProductPages = ["ja", "zh"].flatMap(locale => products.filter(product => internationalProductIds.includes(product.id)).map(product => `/${locale}/product/${product.slug}`));
   const benefitReportPages = benefitReports.map((report) => `/benefit-reports/${report.slug}`);
   const brandPages = brandLandings.map((brand) => `/brand/${brand.slug}`);
   const airportPages = airportGuides.map((airport) => `/airport/${airport.slug}`);
@@ -80,6 +85,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const path of [...staticPages.filter(path => path.startsWith("/en")), ...englishProductPages]) modified.set(path, INTERNATIONAL_UPDATED);
   for (const product of products.filter(product => internationalProductIds.includes(product.id))) modified.set(`/en/product/${product.slug}`, modified.get(`/product/${product.slug}`)!);
   modified.set("/en", latest([INTERNATIONAL_UPDATED, ...products.filter(product => internationalProductIds.includes(product.id)).map(product => modified.get(`/product/${product.slug}`) ?? "")]));
+  for (const locale of ["ja", "zh"]) {
+    for (const path of staticPages.filter(path => path.startsWith(`/${locale}`))) modified.set(path, INTERNATIONAL_UPDATED);
+    for (const product of products.filter(product => internationalProductIds.includes(product.id))) modified.set(`/${locale}/product/${product.slug}`, modified.get(`/en/product/${product.slug}`)!);
+    modified.set(`/${locale}`, modified.get("/en")!);
+  }
+  for (const path of ["/en/travelers", ...countryGuides.map(guide => `/en/guide/${guide.slug}`)]) modified.set(path, COUNTRY_GUIDANCE_CHECKED);
   return [...new Set([
     ...preservedPages.map((page) => page.path),
     ...staticPages,
@@ -87,6 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guidePages,
     ...productPages,
     ...englishProductPages,
+    ...translatedProductPages,
     ...benefitReportPages,
     ...brandPages,
     ...airportPages,

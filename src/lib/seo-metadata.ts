@@ -103,7 +103,7 @@ export function buildProductMetadata(product: Product, snapshot?: ProductPriceSn
     },
   });
   if (internationalProductIds.includes(product.id)) {
-    metadata.alternates = { canonical: `/product/${product.slug}`, languages: { ko: `/product/${product.slug}`, en: `/en/product/${product.slug}` } };
+    metadata.alternates = { canonical: `/product/${product.slug}`, languages: { ko: `/product/${product.slug}`, en: `/en/product/${product.slug}`, ja: `/ja/product/${product.slug}`, "zh-Hans": `/zh/product/${product.slug}` } };
   }
   return metadata;
 }

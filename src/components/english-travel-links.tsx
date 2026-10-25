@@ -1,0 +1,3 @@
+import Link from "@/components/app-link";
+import { countryGuides } from "@/lib/english-country-guides";
+export function EnglishTravelLinks(){return <section className="intl-guide-section" aria-labelledby="returning-home"><h2 id="returning-home" className="section-title">Taking your purchases home</h2><p>Your destination’s customs rules still apply to Korean duty-free purchases. Choose where you will arrive; the resident and visitor conditions may differ.</p><div className="japan-guide-list">{countryGuides.map(guide=><Link href={`/en/guide/${guide.slug}`} key={guide.slug}><h3>{guide.country}: what to check before buying</h3><p>{guide.description}</p></Link>)}</div><Link href="/en/travelers">Travel shopping checklist</Link></section>;}
