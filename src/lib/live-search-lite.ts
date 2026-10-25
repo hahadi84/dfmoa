@@ -1,4 +1,5 @@
 import { load } from "cheerio";
+import { isVerifiedProductOffer } from "./product-offer-validation.mjs";
 import {
   buildLiveOffersFromExternalSnapshot,
   getExternalSnapshotFreshnessHours,
@@ -1386,6 +1387,14 @@ export async function searchDutyFreeOffersLite(
     ]),
   };
 
+  const knownProduct = findKnownProduct(trimmedQuery);
+  result.offers = knownProduct ? result.offers.filter(offer => offer.krwPrice > 0 && isVerifiedProductOffer(knownProduct, { title: offer.title })) : [];
+  result.summary = buildPriceRangeSummary(result.offers);
+  result.statuses = result.statuses.map(status => {
+    const offerCount = result.offers.filter(offer => offer.storeId === status.storeId).length;
+    return status.state === "live" ? { ...status, offerCount, state: offerCount ? "live" : "empty", message: offerCount ? status.message : "상품 구성 미확인 — 원본 면세점 확인" } : status;
+  });
+  result.sourceHealth = buildSourceHealth(result.statuses, searchedAt);
   if (!options.bypassCache) {
     resultCache.set(trimmedQuery, {
       expiresAt: Date.now() + CACHE_TTL_MS,
@@ -1425,7 +1434,7 @@ export async function searchDutyFreeImageCandidatesLite(
     await runStoreCrawlersWithQueryFallbacks(crawlerQueries);
   const crawlerResults = [lotteResult, hyundaiResult, shillaResult, shinsegaeResult];
   const offers = dedupeOffers(
-    crawlerResults.flatMap((result) => result.candidates ?? result.offers).filter((offer) => offer.imageUrl)
+    crawlerResults.flatMap((result) => result.candidates ?? result.offers).filter((offer) => { const product = findKnownProduct(trimmedQuery); return offer.imageUrl && product && isVerifiedProductOffer(product, { title: offer.title }); })
   ).sort((left, right) => {
     if (right.matchScore !== left.matchScore) {
       return right.matchScore - left.matchScore;

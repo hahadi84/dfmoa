@@ -1,0 +1,8 @@
+/* Fixed reservation and inline-sized ins follow Google's supported responsive-code pattern. */
+.ad-banner { display: block; width: 100%; margin: 24px auto; padding: 0; clear: both; }
+.ad-banner__label { display: block; margin-bottom: 8px; color: #64748b; font-size: 10px; font-weight: 500; letter-spacing: .04em; line-height: 16px; text-align: center; }
+.ad-banner__space { display: block; width: 100%; min-height: 280px; height: 280px; margin: 0 auto; }
+.ad-banner--top .ad-banner__space { max-width: 970px; min-height: 100px; height: 100px; }
+.ad-banner--results .ad-banner__space { max-width: 970px; }
+.ad-banner__placeholder { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: inherit; background: #eceff3; border: 1px dashed #c4cbd5; color: #536170; font-size: 13px; text-align: center; }
+@media(min-width:800px){.ad-banner--top .ad-banner__space { min-height: 90px; height: 90px; }}

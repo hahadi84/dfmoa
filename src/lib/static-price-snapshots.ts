@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import { products } from "@/lib/site-data";
+import { filterVerifiedSnapshot } from "@/lib/product-offer-validation.mjs";
 import type { Product } from "@/lib/site-data";
 import type { ProductPriceSnapshot } from "@/lib/price-snapshot-types";
 
@@ -13,7 +15,9 @@ export function readProductPriceSnapshot(productId: string) {
   }
 
   try {
-    return JSON.parse(fs.readFileSync(filePath, "utf8")) as ProductPriceSnapshot;
+    const product = products.find(product => product.id === productId);
+    if (!product) return null;
+    return filterVerifiedSnapshot(product, JSON.parse(fs.readFileSync(filePath, "utf8")) as ProductPriceSnapshot);
   } catch {
     return null;
   }

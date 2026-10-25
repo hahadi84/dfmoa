@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { filterVerifiedSnapshot } from "../src/lib/product-offer-validation.mjs";
 import path from "node:path";
 import vm from "node:vm";
 import { createRequire } from "node:module";
@@ -441,10 +442,10 @@ async function main() {
   const collect = async (product) => {
     attempted.push(product.slug);
     console.log(`[snapshot] ${product.categorySlug} ${product.slug}`);
-    const snapshot = await collectProduct(product, shillaSearchCache);
+    const snapshot = filterVerifiedSnapshot(product, await collectProduct(product, shillaSearchCache));
     const filePath = path.join(PRICE_DIR, `${product.id}.json`);
     const previous = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf8")) : null;
-    fs.writeFileSync(filePath, `${JSON.stringify(mergeSnapshotAfterFailure(previous, snapshot), null, 2)}\n`);
+    fs.writeFileSync(filePath, `${JSON.stringify(filterVerifiedSnapshot(product, mergeSnapshotAfterFailure(previous, snapshot)), null, 2)}\n`);
     appendHistory(snapshot, historyTimestamp);
     const successful = hasValidPrice(snapshot);
     if (successful) {

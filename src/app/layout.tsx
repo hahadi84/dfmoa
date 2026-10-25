@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import { TopAdBanner } from "@/components/ad-banner";
+import "./adsense.css";
+import "./brand.css";
 import { IBM_Plex_Mono, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/google-analytics";
@@ -48,8 +50,9 @@ export const metadata: Metadata = {
     images: [absoluteSiteUrl(DEFAULT_OG_IMAGE)],
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
+    icon: [{ url: "/icon.svg?v=20261025", type: "image/svg+xml" }, {url:"/brand/icon-32.png?v=20261025",sizes:"32x32",type:"image/png"}],
+    shortcut: "/favicon.ico?v=20261025",
+    apple: "/apple-touch-icon.png?v=20261025",
   },
   verification: {
     other: {
@@ -67,7 +70,6 @@ export default function RootLayout({
   return (
     <html lang="ko" className={`${notoSansKr.variable} ${plexMono.variable}`}>
       <head>
-        <link rel="shortcut icon" href={`${SITE_OPERATOR.serviceUrl}/favicon.ico`} />
         <link
           rel="alternate"
           type="application/rss+xml"
@@ -76,19 +78,13 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Script
-          id="google-adsense"
-          strategy="afterInteractive"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271072565444318"
-          crossOrigin="anonymous"
-        />
         <GoogleAnalytics tagId={GA_TAG_ID} measurementId={GA_MEASUREMENT_ID} />
         <a className="skip-link" href="#main-content">
           본문으로 건너뛰기 / Skip to content
         </a>
         <div className="site-shell">
           <SiteHeader />
+          <TopAdBanner />
           <main id="main-content" tabIndex={-1}>
             {children}
           </main>

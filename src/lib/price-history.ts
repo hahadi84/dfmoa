@@ -1,3 +1,5 @@
+import { products } from "@/lib/site-data";
+import { isVerifiedProductOffer } from "@/lib/product-offer-validation.mjs";
 import { getDeployStore, getStore } from "@netlify/blobs";
 import type {
   DutyFreeSearchResult,
@@ -226,7 +228,11 @@ export async function recordPriceHistory(
   const store = getHistoryStore();
   const key = getHistoryKey(subject);
   const existing = (await store.get(key, { type: "json" })) as QueryHistoryRecord | null;
-  const points = existing?.points ?? [];
+  const product = products.find(product => product.id === subject.key || product.query === result.query || product.displayName === result.query);
+  const points = product ? (existing?.points ?? []).map(point => {
+    const offers = point.offers.filter(offer => isVerifiedProductOffer(product, { title: offer.title })).sort((a,b) => a.krwPrice-b.krwPrice);
+    return { ...point, offers, bestKrwPrice: offers[0]?.krwPrice ?? null, bestStoreId: offers[0]?.storeId ?? null };
+  }).filter(point => point.offers.length) : [];
 
   if (!result.offers.length) {
     return summarizeHistory(points, subject);

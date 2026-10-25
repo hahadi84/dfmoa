@@ -78,7 +78,7 @@ export function getSnapshotBestItem(snapshot?: ProductPriceSnapshot | null) {
         item,
       }))
     )
-    .filter(({ item }) => Number(item.priceKrw) > 0 || Number(item.priceUsd) > 0)
+    .filter(({ item }) => Number(item.priceKrw) > 0)
     .sort((left, right) => (left.item.priceKrw ?? Number.MAX_SAFE_INTEGER) - (right.item.priceKrw ?? Number.MAX_SAFE_INTEGER))[0];
 }
 
@@ -89,7 +89,7 @@ function buildOffer(sourceId: StoreId, source: SnapshotSourceRecord, product: Pr
   const priceKrw = Number(item?.priceKrw ?? 0);
   const updatedAt = formatSnapshotTimestamp(source.fetchedAt ?? item?.fetchedAt);
 
-  if (!item || (!priceUsd && !priceKrw) || !store) {
+  if (!item || !(priceKrw > 0) || !store) {
     return null;
   }
 
@@ -98,12 +98,12 @@ function buildOffer(sourceId: StoreId, source: SnapshotSourceRecord, product: Pr
     storeId: sourceId,
     title: item.title,
     brand: item.brand,
-    usdPrice: priceUsd || Math.round(priceKrw / 1470),
+    usdPrice: priceUsd,
     regularUsdPrice: item.regularUsdPrice ?? undefined,
-    krwPrice: priceKrw || Math.round(priceUsd * 1470),
+    krwPrice: priceKrw,
     discountRate: item.discountRate ?? undefined,
     imageUrl: item.imageUrl ?? undefined,
-    status: "available",
+    status: "check",
     pickupAirports: store.pickupAirports,
     updatedAt,
     sourceUrl: item.url || source.searchUrl || buildOfficialSearchUrl(sourceId, product.query) || store.siteUrl,

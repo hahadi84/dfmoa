@@ -1,4 +1,5 @@
 "use client";
+import { AdBanner } from "@/components/ad-banner";
 
 import {
   formatKrw,
@@ -14,9 +15,10 @@ import type { LiveOffer } from "@/lib/search-types";
 type OfferTableProps = {
   offers: LiveOffer[];
   productSlug?: string;
+  showAd?: boolean;
 };
 
-export function OfferTable({ offers, productSlug }: OfferTableProps) {
+export function OfferTable({ offers, productSlug, showAd = false }: OfferTableProps) {
   if (!offers.length) {
     return <p className="empty-state">현재 확인된 공개가가 없습니다. 공식 면세점 링크에서 판매 여부를 확인해 주세요.</p>;
   }
@@ -24,6 +26,7 @@ export function OfferTable({ offers, productSlug }: OfferTableProps) {
   const lowestPrice = offers[0]?.krwPrice;
 
   return (
+    <>
     <div className="table-wrap">
       <table className="offer-table">
         <thead>
@@ -70,7 +73,7 @@ export function OfferTable({ offers, productSlug }: OfferTableProps) {
                 </td>
                 <td>
                   <div className="table-price">
-                    <strong>{formatUsd(offer.usdPrice)}</strong>
+                    <strong>{offer.usdPrice > 0 ? formatUsd(offer.usdPrice) : "미확인"}</strong>
                     <span>{offer.discountRate ? `${offer.discountRate}% 할인` : "공개가"}</span>
                   </div>
                 </td>
@@ -110,5 +113,7 @@ export function OfferTable({ offers, productSlug }: OfferTableProps) {
         </tbody>
       </table>
     </div>
+    {showAd ? <AdBanner placement="results"/> : null}
+    </>
   );
 }

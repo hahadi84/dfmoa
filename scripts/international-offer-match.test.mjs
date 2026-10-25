@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import ts from 'typescript';
 function readTs(file) { const sandbox = { exports: {} }; vm.runInNewContext(ts.transpileModule(fs.readFileSync(file,'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText, sandbox); return sandbox.exports; }
-const { isInternationalOfferMatch: matches } = readTs('src/lib/international-offer-match.ts');
+import { isVerifiedProductOffer as matches } from '../src/lib/product-offer-validation.mjs';
 const { products } = readTs('src/lib/site-data.ts');
 test('exact volume and identity are required; cheaper wrong products and bundles are rejected', () => {
  const item = title => ({ title, priceKrw: 10000 });
