@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T00:22:20.241Z",
+  "generatedAt": "2026-10-25T00:04:41.969Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -9,7 +9,11 @@
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 7
+      "count": 6
+    },
+    {
+      "productSlug": "byredo-blanche-100ml",
+      "count": 5
     },
     {
       "productSlug": "dyson-supersonic",
@@ -17,10 +21,6 @@
     },
     {
       "productSlug": "ballantines-21-700ml",
-      "count": 4
-    },
-    {
-      "productSlug": "byredo-blanche-100ml",
       "count": 4
     },
     {
@@ -33,6 +33,14 @@
     },
     {
       "productSlug": "gentle-monster-dear-01",
+      "count": 4
+    },
+    {
+      "productSlug": "hera-black-cushion-15g",
+      "count": 4
+    },
+    {
+      "productSlug": "hibiki-harmony-700ml",
       "count": 4
     },
     {
@@ -56,19 +64,15 @@
       "count": 4
     },
     {
+      "productSlug": "royal-salute-21-700ml",
+      "count": 4
+    },
+    {
       "productSlug": "bleu-de-chanel-edp-100ml",
       "count": 3
     },
     {
       "productSlug": "glenfiddich-15-700ml",
-      "count": 3
-    },
-    {
-      "productSlug": "hera-black-cushion-15g",
-      "count": 3
-    },
-    {
-      "productSlug": "hibiki-harmony-700ml",
       "count": 3
     },
     {
@@ -125,14 +129,6 @@
     },
     {
       "productSlug": "pandora-moments-bracelet",
-      "count": 1
-    },
-    {
-      "productSlug": "polo-ralph-lauren-cap",
-      "count": 1
-    },
-    {
-      "productSlug": "royal-salute-21-700ml",
       "count": 1
     },
     {

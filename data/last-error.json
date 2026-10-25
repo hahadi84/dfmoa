@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-24T00:30:07.968Z",
-  "attemptedCount": 51,
-  "failureCount": 12,
+  "generatedAt": "2026-10-25T00:12:22.805Z",
+  "attemptedCount": 50,
+  "failureCount": 11,
   "failures": [
     {
       "productId": "p26",
@@ -22,6 +22,12 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p21",
       "productSlug": "la-mer-moisturizing-cream-60ml",
       "categorySlug": "beauty",
@@ -34,12 +40,6 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p73",
       "productSlug": "centrum-multivitamin",
       "categorySlug": "health",
@@ -49,12 +49,6 @@
       "productId": "p57",
       "productSlug": "hamilton-khaki-field-mechanical",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p72",
-      "productSlug": "orthomol-immun",
-      "categorySlug": "health",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
