@@ -11,21 +11,21 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%82%BC%EC%84%B1%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%B2%84%EC%A6%882%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-10-23T09:38:42+09:00",
+      "fetchedAt": "2026-10-26T09:06:30+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "삼성 갤럭시 버즈2 프로",
         "삼성갤럭시버즈2프로"
       ],
       "items": [],
-      "error": "cookie_or_login_required"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%82%BC%EC%84%B1%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%B2%84%EC%A6%882%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-10-23T00:38:43.675Z",
+      "fetchedAt": "2026-10-26T00:06:32.403Z",
       "matched_via": "original",
       "attempted_queries": [
         "삼성 갤럭시 버즈2 프로",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%82%BC%EC%84%B1%20%EA%B0%A4%EB%9F%AD%EC%8B%9C%20%EB%B2%84%EC%A6%882%20%ED%94%84%EB%A1%9C",
-      "fetchedAt": "2026-10-23T00:38:43.675Z",
+      "fetchedAt": "2026-10-26T00:06:32.403Z",
       "matched_via": "original",
       "attempted_queries": [
         "삼성 갤럭시 버즈2 프로",

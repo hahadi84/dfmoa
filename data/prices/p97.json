@@ -11,21 +11,21 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=JBL%20%ED%94%8C%EB%A6%BD%206",
-      "fetchedAt": "2026-10-23T09:38:35+09:00",
+      "fetchedAt": "2026-10-26T09:06:22+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "JBL 플립 6",
         "jbl플립6"
       ],
       "items": [],
-      "error": "cookie_or_login_required"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=JBL%20%ED%94%8C%EB%A6%BD%206",
-      "fetchedAt": "2026-10-23T00:38:36.359Z",
+      "fetchedAt": "2026-10-26T00:06:24.231Z",
       "matched_via": "original",
       "attempted_queries": [
         "JBL 플립 6",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=JBL%20%ED%94%8C%EB%A6%BD%206",
-      "fetchedAt": "2026-10-23T00:38:36.359Z",
+      "fetchedAt": "2026-10-26T00:06:24.232Z",
       "matched_via": "original",
       "attempted_queries": [
         "JBL 플립 6",

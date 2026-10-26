@@ -64,6 +64,68 @@
   ],
   "weekly": [
     {
+      "publishedAt": "2026-10-26",
+      "updatedAt": "2026-10-26",
+      "benefits": [
+        {
+          "title": "26년 10월 카드사별 무이자 혜택",
+          "url": "https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=0007870",
+          "storeId": "hyundai",
+          "startDate": "2026-10-01",
+          "endDate": "2026-10-31",
+          "checkedAt": "2026-10-26",
+          "description": "공식 목록에서 행사명과 기간을 확인했습니다. 적용 대상·최소 결제액·할인 한도·제외 브랜드는 상세 페이지에서 확인하세요."
+        },
+        {
+          "title": "삼성카드 구매금액별 할인 혜택",
+          "url": "https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=0007872",
+          "storeId": "hyundai",
+          "startDate": "2026-10-12",
+          "endDate": "2026-10-31",
+          "checkedAt": "2026-10-26",
+          "description": "공식 목록에서 행사명과 기간을 확인했습니다. 적용 대상·최소 결제액·할인 한도·제외 브랜드는 상세 페이지에서 확인하세요."
+        },
+        {
+          "title": "토스페이 2% 즉시할인",
+          "url": "https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=0007883",
+          "storeId": "hyundai",
+          "startDate": "2026-10-01",
+          "endDate": "2026-10-31",
+          "checkedAt": "2026-10-26",
+          "description": "공식 목록에서 행사명과 기간을 확인했습니다. 적용 대상·최소 결제액·할인 한도·제외 브랜드는 상세 페이지에서 확인하세요."
+        },
+        {
+          "title": "상품평 이벤트",
+          "url": "https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=0004044",
+          "storeId": "hyundai",
+          "startDate": "2023-01-18",
+          "endDate": "2026-12-31",
+          "checkedAt": "2026-10-26",
+          "description": "공식 목록에서 행사명과 기간을 확인했습니다. 적용 대상·최소 결제액·할인 한도·제외 브랜드는 상세 페이지에서 확인하세요."
+        },
+        {
+          "title": "이달의 적립금 모음",
+          "url": "https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=0006095",
+          "storeId": "hyundai",
+          "startDate": "2025-01-01",
+          "endDate": "2026-12-31",
+          "checkedAt": "2026-10-26",
+          "description": "공식 목록에서 행사명과 기간을 확인했습니다. 적용 대상·최소 결제액·할인 한도·제외 브랜드는 상세 페이지에서 확인하세요."
+        },
+        {
+          "title": "마케팅 수신동의 이벤트",
+          "url": "https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=0006097",
+          "storeId": "hyundai",
+          "startDate": "2025-01-01",
+          "endDate": "2026-12-31",
+          "checkedAt": "2026-10-26",
+          "description": "공식 목록에서 행사명과 기간을 확인했습니다. 적용 대상·최소 결제액·할인 한도·제외 브랜드는 상세 페이지에서 확인하세요."
+        }
+      ],
+      "period": "2026-10-26",
+      "slug": "2026-10-26-duty-free-benefit-weekly"
+    },
+    {
       "publishedAt": "2026-10-23",
       "updatedAt": "2026-10-23",
       "benefits": [

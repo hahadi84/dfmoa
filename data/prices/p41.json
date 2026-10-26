@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-10-23T09:35:37+09:00",
+      "fetchedAt": "2026-10-26T09:03:03+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",
@@ -23,14 +23,14 @@
         "longchamplepliageoriginalmedium"
       ],
       "items": [],
-      "error": "cookie_or_login_required"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-10-23T00:35:38.735Z",
+      "fetchedAt": "2026-10-26T00:03:04.622Z",
       "matched_via": "original",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-10-23T00:35:38.735Z",
+      "fetchedAt": "2026-10-26T00:03:04.622Z",
       "matched_via": "original",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",

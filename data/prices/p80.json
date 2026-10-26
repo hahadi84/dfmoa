@@ -9,23 +9,23 @@
     "shilla": {
       "store": "shilla",
       "status": "error",
-      "source_status": "error",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B3%A0%EB%A0%A4%EC%9D%80%EB%8B%A8%20%EB%B9%84%ED%83%80%EB%AF%BCC",
-      "fetchedAt": "2026-10-23T09:37:13+09:00",
-      "matched_via": "alias_nospace",
+      "fetchedAt": "2026-10-26T09:04:59+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "고려은단 비타민C",
         "고려은단비타민c"
       ],
       "items": [],
-      "error": "cookie_or_login_required"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B3%A0%EB%A0%A4%EC%9D%80%EB%8B%A8%20%EB%B9%84%ED%83%80%EB%AF%BCC",
-      "fetchedAt": "2026-10-23T00:37:14.638Z",
+      "fetchedAt": "2026-10-26T00:05:01.214Z",
       "matched_via": "original",
       "attempted_queries": [
         "고려은단 비타민C",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B3%A0%EB%A0%A4%EC%9D%80%EB%8B%A8%20%EB%B9%84%ED%83%80%EB%AF%BCC",
-      "fetchedAt": "2026-10-23T00:37:14.638Z",
+      "fetchedAt": "2026-10-26T00:05:01.214Z",
       "matched_via": "original",
       "attempted_queries": [
         "고려은단 비타민C",
