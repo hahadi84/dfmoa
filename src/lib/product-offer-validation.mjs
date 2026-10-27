@@ -30,6 +30,11 @@ const rules = {
  p31: { name: /hennessy|헤네시/i, require: /\bXO\b|엑스오/i, reject: /paradis|파라디/i },
  p32: { name: /don\s*julio|돈\s*훌리오/i, require: /1942/ },
  p92: { name: /WH[\s-]*1000XM5(?:\b|\/)/i, modelOnly: true },
+ p71: { name: /^에브리타임\s*로얄\s*\(\s*30포\s*\)$/, modelOnly: true },
+ p74: { name: /^(?:솔가|solgar)\s*(?:비타민|vitamin)\s*D3\s*1000(?:\s*IU)?\s*90(?:정|\s*tablets?)$/i, modelOnly: true },
+ p101: { name: /^WF[\s-]*1000XM5\/[BSP](?:\s+노이즈캔슬링\s+무선이어폰\s+5세대)?$/i, modelOnly: true },
+ p102: { name: /^WH[\s-]*CH720N\/[BWN]$/i, modelOnly: true },
+ p103: { name: /^메가맨\s*스포츠\s*남성\s*멀티비타민\s*180정(?:\s*\(비타민,종합,BCAA\))?$/, modelOnly: true },
 };
 /** @param {{id:string,volume:string}} product @param {{title?:string,priceKrw?:number|null,priceUsd?:number|null}} item */
 export function getOfferMatchReason(product, item) {

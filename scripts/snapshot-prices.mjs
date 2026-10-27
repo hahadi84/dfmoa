@@ -16,117 +16,7 @@ const HISTORY_DIR = path.join(ROOT_DIR, "data/history");
 const MANIFEST_PATH = path.join(PRICE_DIR, "manifest.json");
 const LAST_ERROR_PATH = path.join(ROOT_DIR, "data/last-error.json");
 const SEARCH_DEMAND_PATH = path.join(ROOT_DIR, "data/search-demand.json");
-const REQUIRED_TOTAL = 40;
-const CATEGORY_QUOTAS = {
-  perfume: 9,
-  beauty: 9,
-  liquor: 7,
-  fashion: 3,
-  jewelry: 7,
-  health: 3,
-  electronics: 2,
-};
-const CATEGORY_POOLS = {
-  perfume: [
-    "creed-aventus-50ml",
-    "jo-malone-english-pear-100ml",
-    "diptyque-do-son-75ml",
-    "byredo-blanche-100ml",
-    "le-labo-santal-33-50ml",
-    "bleu-de-chanel-edp-100ml",
-    "dior-sauvage-edp-100ml",
-    "tom-ford-oud-wood-50ml",
-    "maison-margiela-lazy-sunday-morning-100ml",
-    "penhaligons-halfeti-100ml",
-  ],
-  beauty: [
-    "sulwhasoo-first-care-serum-90ml",
-    "sk2-pitera-essence-230ml",
-    "estee-lauder-anr-100ml",
-    "lancome-genifique-100ml",
-    "hera-black-cushion-15g",
-    "kiehls-ultra-facial-cream-125ml",
-    "la-mer-moisturizing-cream-60ml",
-    "shiseido-ultimune-75ml",
-    "biotherm-life-plankton-125ml",
-    "aesop-resurrection-hand-balm-75ml",
-  ],
-  liquor: [
-    "glenfiddich-15-700ml",
-    "hibiki-harmony-700ml",
-    "ballantines-21-700ml",
-    "johnnie-walker-blue-label-750ml",
-    "macallan-12-double-cask-700ml",
-    "yamazaki-12-700ml",
-    "royal-salute-21-700ml",
-    "glenmorangie-original-10-700ml",
-    "hennessy-xo-700ml",
-    "don-julio-1942-750ml",
-  ],
-  eyewear: [
-    "gentle-monster-dear-01",
-    "rayban-wayfarer-rb2140",
-    "oakley-sutro-oo9406",
-    "tom-ford-snowdon-ft0237",
-    "prada-pr-17ws",
-    "gucci-gg0061s",
-    "celine-triomphe-cl40194u",
-    "saint-laurent-sl-276-mica",
-    "maui-jim-peahi-b202",
-    "persol-po0649",
-  ],
-  fashion: [
-    "tumi-alpha-bravo-backpack",
-    "coach-tabby-shoulder-bag",
-    "samsonite-evoa-spinner",
-    "montblanc-meisterstuck-wallet",
-    "longchamp-le-pliage-medium",
-    "polo-ralph-lauren-cap",
-    "mcm-stark-backpack",
-    "vivienne-westwood-wallet",
-    "ferragamo-reversible-belt",
-    "lululemon-everywhere-belt-bag",
-  ],
-  jewelry: [
-    "swarovski-tennis-bracelet",
-    "pandora-moments-bracelet",
-    "jestina-tiara-necklace",
-    "stonehenge-silver-necklace",
-    "swarovski-matrix-earrings",
-    "swarovski-swan-necklace",
-    "pandora-sparkling-charm",
-    "tiffany-return-to-tiffany-bracelet",
-    "agatha-scottie-earrings",
-    "goldendew-diamond-necklace",
-  ],
-  health: [
-    "solgar-vitamin-d3",
-    "gnc-mega-men",
-    "korea-eundan-vitamin-c",
-    "kgc-everytime-royal",
-    "orthomol-immun",
-    "centrum-multivitamin",
-    "lacto-fit-gold",
-    "blackmores-propolis",
-    "now-omega-3",
-  ],
-  electronics: [
-    "dyson-supersonic",
-    "braun-series-9-pro",
-    "apple-airpods-pro-2",
-    "sony-wh-1000xm5",
-    "bose-quietcomfort-ultra",
-    "oral-b-io-series-9",
-    "jbl-flip-6",
-    "samsung-galaxy-buds2-pro",
-  ],
-  other: [
-    "seiko-presage-cocktail-time",
-    "citizen-tsuyosa-nj015",
-    "godiva-gold-collection",
-    "royce-nama-chocolate",
-  ],
-};
+import { REQUIRED_TOTAL, CATEGORY_QUOTAS, CATEGORY_POOLS } from "./category-watchlist.mjs";
 
 function loadSiteData() {
   const source = fs.readFileSync(SITE_DATA_PATH, "utf8");
@@ -425,6 +315,7 @@ async function main() {
   const selected = [];
   const attempted = [];
   const failures = [];
+  const rejectedOffers = [];
   let searchDemand = { generatedAt: null, windowDays: 7, metric: "daily_tab_product_searches", products: [] };
   try {
     const response = await fetch("https://www.dfmoa.com/api/search-demand", { signal: AbortSignal.timeout(15_000) });
@@ -442,7 +333,16 @@ async function main() {
   const collect = async (product) => {
     attempted.push(product.slug);
     console.log(`[snapshot] ${product.categorySlug} ${product.slug}`);
-    const snapshot = filterVerifiedSnapshot(product, await collectProduct(product, shillaSearchCache));
+    const raw = await collectProduct(product, shillaSearchCache);
+    for (const [store, source] of Object.entries(raw.sources)) {
+      const verified = filterVerifiedSnapshot(product, { sources: { [store]: source } });
+      const accepted = new Set(verified.sources[store].items);
+      for (const item of source.items ?? []) {
+        if (!accepted.has(item)) rejectedOffers.push({ productId: product.id, categorySlug: product.categorySlug,
+          store, title: item.title, observedAt: source.fetchedAt, sourceUrl: source.searchUrl });
+      }
+    }
+    const snapshot = filterVerifiedSnapshot(product, raw);
     const filePath = path.join(PRICE_DIR, `${product.id}.json`);
     const previous = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf8")) : null;
     fs.writeFileSync(filePath, `${JSON.stringify(filterVerifiedSnapshot(product, mergeSnapshotAfterFailure(previous, snapshot)), null, 2)}\n`);
@@ -511,6 +411,8 @@ async function main() {
   };
 
   fs.writeFileSync(MANIFEST_PATH, `${JSON.stringify(manifest, null, 2)}\n`);
+  // Keep mismatched titles for review, without publishing their unverified prices.
+  fs.writeFileSync(path.join(ROOT_DIR, "data/category-collection-review.json"), `${JSON.stringify({ generatedAt: manifest.generatedAt, rejectedOffers }, null, 2)}\n`);
   writeLastError(failures, attempted.length);
   console.log(`[snapshot] selected ${selected.length}/${REQUIRED_TOTAL}`);
   console.log(`[snapshot] successful ${successfulSelectionCount}, fallback ${selectedFailureCount}`);

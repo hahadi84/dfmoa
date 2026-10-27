@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "out"
+  ignore = "node ./scripts/netlify-weekly-ignore.mjs"
 
 [functions]
   directory = "netlify/functions"

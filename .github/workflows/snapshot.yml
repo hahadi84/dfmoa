@@ -37,25 +37,19 @@ jobs:
           git config user.name "dfmoa-bot"
           git config user.email "bot@dfmoa.local"
           git add data/prices/ data/history/ data/last-error.json data/search-demand.json data/content/
+          if [ -f data/category-collection-review.json ]; then
+            git add data/category-collection-review.json
+          fi
           if git diff --cached --quiet; then
             echo "No changes"
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "chore(snapshot): $(date -u +'%Y-%m-%dT%H:%MZ')"
+            git commit -m "chore(snapshot): $(date -u +'%Y-%m-%dT%H:%MZ') [skip netlify]"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Trigger Netlify deploy hook
-        if: always() && steps.commit.outputs.changed == 'true'
-        env:
-          NETLIFY_BUILD_HOOK_URL: ${{ secrets.NETLIFY_BUILD_HOOK_URL }}
-        run: |
-          if [ -z "$NETLIFY_BUILD_HOOK_URL" ]; then
-            echo "No NETLIFY_BUILD_HOOK_URL secret configured; relying on Netlify Git deploy."
-            exit 0
-          fi
-
-          curl -fsS -X POST "$NETLIFY_BUILD_HOOK_URL"
+      # Collection is daily; publishing is performed by the Monday review only.
+      # Do not call build hooks: they bypass Netlify's ignore command.
       - name: Report content refresh failure
         if: always() && steps.content.outcome == 'failure'
         run: |

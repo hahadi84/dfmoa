@@ -1126,9 +1126,9 @@ export const products: Product[] = [
       slug: "kgc-everytime-royal",
       brand: "KGC",
       name: "Everytime Royal",
-      displayName: "KGC Everytime Royal",
-      query: "정관장 에브리타임 로얄",
-      volume: "Stick",
+      displayName: "정관장 에브리타임 로얄 30포",
+      query: "정관장 에브리타임로얄 30포",
+      volume: "30포",
       summary: "선물용 건강식품 대표 상품으로 구성 수량 확인이 중요합니다.",
       badge: "홍삼",
     },
@@ -1155,10 +1155,10 @@ export const products: Product[] = [
     {
       slug: "solgar-vitamin-d3",
       brand: "Solgar",
-      name: "Vitamin D3",
-      displayName: "Solgar Vitamin D3",
-      query: "솔가 비타민 D3",
-      volume: "Capsules",
+      name: "Vitamin D3 1000 IU",
+      displayName: "솔가 비타민 D3 1000 IU 90정",
+      query: "솔가 비타민D3 1000 90정",
+      volume: "1000 IU / 90정",
       summary: "함량과 캡슐 수를 함께 봐야 정확한 비교가 가능합니다.",
       badge: "비타민D",
     },
@@ -1428,6 +1428,20 @@ export const products: Product[] = [
     },
   ]),
 ];
+
+// Keep stable IDs and URLs for the original catalogue; add precisely identified models separately.
+products.push(
+  ...createCategoryProducts("electronics", 101, [
+    { slug: "sony-wf-1000xm5", brand: "Sony", name: "WF-1000XM5", displayName: "Sony WF-1000XM5 무선이어폰",
+      query: "소니 WF-1000XM5", volume: "WF-1000XM5", summary: "WH 헤드폰과 다른 WF 무선이어폰입니다. 색상별 원본 구성과 최종 결제 가격을 확인하세요.", badge: "모델 확인" },
+    { slug: "sony-wh-ch720n", brand: "Sony", name: "WH-CH720N", displayName: "Sony WH-CH720N 헤드폰",
+      query: "소니 WH-CH720N", volume: "WH-CH720N", summary: "정확한 모델 코드로 비교합니다. 표시 색상과 구성품, 보증 조건은 공식 판매처에서 확인하세요.", badge: "모델 확인" },
+  ]),
+  ...createCategoryProducts("health", 103, [
+    { slug: "gnc-mega-men-sport-180-tablets", brand: "GNC", name: "Mega Men Sport", displayName: "GNC 메가맨 스포츠 180정",
+      query: "GNC 메가맨 스포츠 180정", volume: "180정", summary: "메가맨 일반·임팩트·50+ 제품과 구분한 스포츠 180정 구성입니다. 성분과 섭취 안내는 공식 제품 표시를 확인하세요.", badge: "구성 확인" },
+  ]),
+);
 
 export const japanGuides: Guide[] = [
   {

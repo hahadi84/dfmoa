@@ -4,6 +4,7 @@ import { useMemo, useTransition } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FeaturedProductGrid } from "@/components/featured-product-grid";
 import { trackEvent } from "@/lib/analytics";
+import { hasSnapshotPrice } from "@/lib/snapshot-summaries";
 import type { ProductPriceSnapshot } from "@/lib/price-snapshot-types";
 import type { Product } from "@/lib/site-data";
 
@@ -54,6 +55,7 @@ export function CategoryFilterGrid({ priceSnapshotsByProductId, products }: Cate
       return 0;
     });
   }, [brand, products, size, sort]);
+  const pricedCount = filteredProducts.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id])).length;
 
   function updateFilter(key: "brand" | "size" | "sort", value: string) {
     const next = new URLSearchParams(searchParams.toString());
@@ -126,8 +128,7 @@ export function CategoryFilterGrid({ priceSnapshotsByProductId, products }: Cate
       </details>
 
       <p className="section-copy">
-        {isPending ? "필터 적용 중" : `${filteredProducts.length}개 상품 표시`} · 가격 상태는 상품 상세의 source status를
-        기준으로 확인합니다.
+        {isPending ? "필터 적용 중" : `가격 확인 상품 ${pricedCount}개`} · 실제 확인 시각과 판매처는 상품 상세에서 확인하세요.
       </p>
       <FeaturedProductGrid products={filteredProducts} priceSnapshotsByProductId={priceSnapshotsByProductId} />
     </div>
