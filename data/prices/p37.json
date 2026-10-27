@@ -3,15 +3,15 @@
   "productSlug": "celine-triomphe-cl40194u",
   "categorySlug": "eyewear",
   "query": "셀린느 트리옹프 CL40194U",
-  "fetchedAt": "2026-04-21T14:35:03+09:00",
-  "updatedAtLabel": "2026-04-21 14:35 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
-      "fetchedAt": "2026-04-21T14:35:00+09:00",
+      "fetchedAt": "2026-10-27T10:20:45+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",
@@ -27,19 +27,17 @@
     },
     "shinsegae": {
       "store": "shinsegae",
-      "status": "error",
-      "source_status": "error",
-      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?startCount=0&offShop=&suggestReSearchReq=true&orReSearchReq=true&query=%EC%85%80%EB%A6%B0%EB%8A%90+%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84+CL40194U",
-      "fetchedAt": "2026-04-21T14:35:02+09:00",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
+      "fetchedAt": "2026-10-27T01:20:47.222Z",
       "matched_via": "original",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",
         "Celine Triomphe CL40194U",
         "Celine CL40194U",
         "셀린느트리옹프 CL40194U",
-        "셀린느트리옹프cl40194u",
-        "celinetriomphecl40194u",
-        "celinecl40194u"
+        "Celine Triomphe CL40194U CL40194U"
       ],
       "items": [],
       "error": "cookie_or_login_required"
@@ -49,16 +47,14 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
-      "fetchedAt": "2026-04-21T14:35:03+09:00",
+      "fetchedAt": "2026-10-27T01:20:47.222Z",
       "matched_via": "original",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",
         "Celine Triomphe CL40194U",
         "Celine CL40194U",
         "셀린느트리옹프 CL40194U",
-        "셀린느트리옹프cl40194u",
-        "celinetriomphecl40194u",
-        "celinecl40194u"
+        "Celine Triomphe CL40194U CL40194U"
       ],
       "items": [],
       "error": "disabled_by_policy"

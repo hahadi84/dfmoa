@@ -1,18 +1,14 @@
 {
-  "generatedAt": "2026-10-25T23:56:03.754Z",
+  "generatedAt": "2026-10-27T01:16:17.825Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "aesop-resurrection-hand-balm-75ml",
-      "count": 10
+      "count": 8
     },
     {
       "productSlug": "dyson-supersonic",
-      "count": 6
-    },
-    {
-      "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 6
     },
     {
@@ -20,7 +16,7 @@
       "count": 5
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
+      "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 5
     },
     {
@@ -32,39 +28,11 @@
       "count": 5
     },
     {
-      "productSlug": "diptyque-do-son-75ml",
-      "count": 4
-    },
-    {
-      "productSlug": "gentle-monster-dear-01",
+      "productSlug": "estee-lauder-anr-100ml",
       "count": 4
     },
     {
       "productSlug": "hera-black-cushion-15g",
-      "count": 4
-    },
-    {
-      "productSlug": "hibiki-harmony-700ml",
-      "count": 4
-    },
-    {
-      "productSlug": "kiehls-ultra-facial-cream-125ml",
-      "count": 4
-    },
-    {
-      "productSlug": "la-mer-moisturizing-cream-60ml",
-      "count": 4
-    },
-    {
-      "productSlug": "le-labo-santal-33-50ml",
-      "count": 4
-    },
-    {
-      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
-      "count": 4
-    },
-    {
-      "productSlug": "rayban-wayfarer-rb2140",
       "count": 4
     },
     {
@@ -76,11 +44,43 @@
       "count": 3
     },
     {
+      "productSlug": "diptyque-do-son-75ml",
+      "count": 3
+    },
+    {
       "productSlug": "glenfiddich-15-700ml",
       "count": 3
     },
     {
+      "productSlug": "hibiki-harmony-700ml",
+      "count": 3
+    },
+    {
+      "productSlug": "kiehls-ultra-facial-cream-125ml",
+      "count": 3
+    },
+    {
+      "productSlug": "la-mer-moisturizing-cream-60ml",
+      "count": 3
+    },
+    {
+      "productSlug": "le-labo-santal-33-50ml",
+      "count": 3
+    },
+    {
+      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
+      "count": 3
+    },
+    {
+      "productSlug": "rayban-wayfarer-rb2140",
+      "count": 3
+    },
+    {
       "productSlug": "creed-aventus-50ml",
+      "count": 2
+    },
+    {
+      "productSlug": "gentle-monster-dear-01",
       "count": 2
     },
     {
@@ -100,11 +100,27 @@
       "count": 2
     },
     {
+      "productSlug": "bose-quietcomfort-ultra",
+      "count": 1
+    },
+    {
+      "productSlug": "celine-triomphe-cl40194u",
+      "count": 1
+    },
+    {
       "productSlug": "centrum-multivitamin",
       "count": 1
     },
     {
-      "productSlug": "gnc-mega-men",
+      "productSlug": "citizen-tsuyosa-nj015",
+      "count": 1
+    },
+    {
+      "productSlug": "dior-sauvage-edp-100ml",
+      "count": 1
+    },
+    {
+      "productSlug": "don-julio-1942-750ml",
       "count": 1
     },
     {
@@ -112,27 +128,11 @@
       "count": 1
     },
     {
-      "productSlug": "jestina-tiara-necklace",
-      "count": 1
-    },
-    {
       "productSlug": "kgc-everytime-royal",
       "count": 1
     },
     {
-      "productSlug": "macallan-12-double-cask-700ml",
-      "count": 1
-    },
-    {
       "productSlug": "orthomol-immun",
-      "count": 1
-    },
-    {
-      "productSlug": "pandora-moments-bracelet",
-      "count": 1
-    },
-    {
-      "productSlug": "shiseido-ultimune-75ml",
       "count": 1
     },
     {

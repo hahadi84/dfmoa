@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-26T00:06:37.405Z",
-  "attemptedCount": 70,
-  "failureCount": 56,
+  "generatedAt": "2026-10-27T01:27:18.320Z",
+  "attemptedCount": 71,
+  "failureCount": 57,
   "failures": [
     {
       "productId": "p94",
@@ -16,21 +16,21 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p19",
+      "productSlug": "hera-black-cushion-15g",
+      "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p9",
       "productSlug": "diptyque-do-son-75ml",
       "categorySlug": "perfume",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p7",
-      "productSlug": "gentle-monster-dear-01",
-      "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p19",
-      "productSlug": "hera-black-cushion-15g",
-      "categorySlug": "beauty",
+      "productId": "p5",
+      "productSlug": "glenfiddich-15-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -58,9 +58,9 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p5",
-      "productSlug": "glenfiddich-15-700ml",
-      "categorySlug": "liquor",
+      "productId": "p7",
+      "productSlug": "gentle-monster-dear-01",
+      "categorySlug": "eyewear",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -82,39 +82,27 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p93",
+      "productSlug": "bose-quietcomfort-ultra",
+      "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p37",
+      "productSlug": "celine-triomphe-cl40194u",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p73",
       "productSlug": "centrum-multivitamin",
       "categorySlug": "health",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p75",
-      "productSlug": "gnc-mega-men",
-      "categorySlug": "health",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p57",
-      "productSlug": "hamilton-khaki-field-mechanical",
+      "productId": "p52",
+      "productSlug": "citizen-tsuyosa-nj015",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p63",
-      "productSlug": "jestina-tiara-necklace",
-      "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p71",
-      "productSlug": "kgc-everytime-royal",
-      "categorySlug": "health",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p27",
-      "productSlug": "macallan-12-double-cask-700ml",
-      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -139,6 +127,12 @@
       "productId": "p23",
       "productSlug": "biotherm-life-plankton-125ml",
       "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p27",
+      "productSlug": "macallan-12-double-cask-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -232,6 +226,12 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p63",
+      "productSlug": "jestina-tiara-necklace",
+      "categorySlug": "jewelry",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p64",
       "productSlug": "stonehenge-silver-necklace",
       "categorySlug": "jewelry",
@@ -274,8 +274,20 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p75",
+      "productSlug": "gnc-mega-men",
+      "categorySlug": "health",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p80",
       "productSlug": "korea-eundan-vitamin-c",
+      "categorySlug": "health",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p71",
+      "productSlug": "kgc-everytime-royal",
       "categorySlug": "health",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -312,12 +324,6 @@
     {
       "productId": "p91",
       "productSlug": "apple-airpods-pro-2",
-      "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p93",
-      "productSlug": "bose-quietcomfort-ultra",
       "categorySlug": "electronics",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

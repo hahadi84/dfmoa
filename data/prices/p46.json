@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=MCM%20%EC%8A%A4%ED%83%80%ED%81%AC%20%EB%B0%B1%ED%8C%A9",
-      "fetchedAt": "2026-10-26T09:03:19+09:00",
+      "fetchedAt": "2026-10-27T10:23:46+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "MCM 스타크 백팩",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=MCM%20%EC%8A%A4%ED%83%80%ED%81%AC%20%EB%B0%B1%ED%8C%A9",
-      "fetchedAt": "2026-10-26T00:03:20.862Z",
+      "fetchedAt": "2026-10-27T01:23:48.649Z",
       "matched_via": "original",
       "attempted_queries": [
         "MCM 스타크 백팩",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=MCM%20%EC%8A%A4%ED%83%80%ED%81%AC%20%EB%B0%B1%ED%8C%A9",
-      "fetchedAt": "2026-10-26T00:03:20.862Z",
+      "fetchedAt": "2026-10-27T01:23:48.649Z",
       "matched_via": "original",
       "attempted_queries": [
         "MCM 스타크 백팩",
