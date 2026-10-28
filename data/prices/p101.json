@@ -3,15 +3,15 @@
   "productSlug": "sony-wf-1000xm5",
   "categorySlug": "electronics",
   "query": "소니 WF-1000XM5",
-  "fetchedAt": "2026-10-27T17:56:47+09:00",
-  "updatedAtLabel": "2026-10-27 17:56 기준",
+  "fetchedAt": "2026-10-28T10:09:09+09:00",
+  "updatedAtLabel": "2026-10-28 10:09 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WF-1000XM5",
-      "fetchedAt": "2026-10-27T17:56:47+09:00",
+      "fetchedAt": "2026-10-28T10:09:09+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WF-1000XM5",
@@ -19,46 +19,76 @@
       ],
       "items": [
         {
-          "id": "shilla-284429000014",
-          "title": "WF-1000XM5/B 노이즈캔슬링 무선이어폰 5세대",
-          "brand": "소니",
-          "priceKrw": 261417,
-          "priceUsd": 197.4,
-          "regularUsdPrice": 235,
-          "discountRate": 16,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WF-1000XM5%2FB%20%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%94%EC%8A%AC%EB%A7%81%20%EB%AC%B4%EC%84%A0%EC%9D%B4%EC%96%B4%ED%8F%B0%205%EC%84%B8%EB%8C%80",
-          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/04/15/284429000014_20250415_17492306_12_284429000014_1.JPG",
-          "matchScore": 43,
-          "fetchedAt": "2026-10-27T17:56:47+09:00"
-        },
-        {
           "id": "shilla-284429000013",
           "title": "WF-1000XM5/S 노이즈캔슬링 무선이어폰 5세대",
           "brand": "소니",
-          "priceKrw": 261417,
+          "priceKrw": 261081,
           "priceUsd": 197.4,
           "regularUsdPrice": 235,
           "discountRate": 16,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WF-1000XM5%2FS%20%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%94%EC%8A%AC%EB%A7%81%20%EB%AC%B4%EC%84%A0%EC%9D%B4%EC%96%B4%ED%8F%B0%205%EC%84%B8%EB%8C%80",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/04/15/284429000013_20250415_17493643_12_284429000013_1.JPG",
-          "matchScore": 43,
-          "fetchedAt": "2026-10-27T17:56:47+09:00"
+          "matchScore": 59,
+          "fetchedAt": "2026-10-28T10:09:09+09:00"
+        },
+        {
+          "id": "shilla-284429000014",
+          "title": "WF-1000XM5/B 노이즈캔슬링 무선이어폰 5세대",
+          "brand": "소니",
+          "priceKrw": 261081,
+          "priceUsd": 197.4,
+          "regularUsdPrice": 235,
+          "discountRate": 16,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WF-1000XM5%2FB%20%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%94%EC%8A%AC%EB%A7%81%20%EB%AC%B4%EC%84%A0%EC%9D%B4%EC%96%B4%ED%8F%B0%205%EC%84%B8%EB%8C%80",
+          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/04/15/284429000014_20250415_17492306_12_284429000014_1.JPG",
+          "matchScore": 59,
+          "fetchedAt": "2026-10-28T10:09:09+09:00"
         },
         {
           "id": "shilla-284429000010",
           "title": "WF-1000XM5/P 노이즈캔슬링 무선이어폰 5세대",
           "brand": "소니",
-          "priceKrw": 261417,
+          "priceKrw": 261081,
           "priceUsd": 197.4,
           "regularUsdPrice": 235,
           "discountRate": 16,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WF-1000XM5%2FP%20%EB%85%B8%EC%9D%B4%EC%A6%88%EC%BA%94%EC%8A%AC%EB%A7%81%20%EB%AC%B4%EC%84%A0%EC%9D%B4%EC%96%B4%ED%8F%B0%205%EC%84%B8%EB%8C%80",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/06/17/284429000010_20250617_09055417_12_284429000010_1.JPG",
-          "matchScore": 43,
-          "fetchedAt": "2026-10-27T17:56:47+09:00"
+          "matchScore": 59,
+          "fetchedAt": "2026-10-28T10:09:09+09:00"
         }
       ],
       "error": null
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%8C%EB%8B%88%20WF-1000XM5",
+      "fetchedAt": "2026-10-28T01:09:11.610Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "소니 WF-1000XM5",
+        "Sony WF-1000XM5 무선이어폰",
+        "Sony WF-1000XM5 WF-1000XM5"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%8C%EB%8B%88%20WF-1000XM5",
+      "fetchedAt": "2026-10-28T01:09:11.611Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "소니 WF-1000XM5",
+        "Sony WF-1000XM5 무선이어폰",
+        "Sony WF-1000XM5 WF-1000XM5"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
     }
   }
 }

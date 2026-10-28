@@ -1,22 +1,10 @@
 {
-  "generatedAt": "2026-10-27T01:16:17.825Z",
+  "generatedAt": "2026-10-28T01:02:21.610Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "aesop-resurrection-hand-balm-75ml",
-      "count": 8
-    },
-    {
-      "productSlug": "dyson-supersonic",
-      "count": 6
-    },
-    {
-      "productSlug": "byredo-blanche-100ml",
-      "count": 5
-    },
-    {
-      "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 5
     },
     {
@@ -28,76 +16,40 @@
       "count": 5
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
+      "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 4
+    },
+    {
+      "productSlug": "estee-lauder-anr-100ml",
+      "count": 3
     },
     {
       "productSlug": "hera-black-cushion-15g",
-      "count": 4
-    },
-    {
-      "productSlug": "ballantines-21-700ml",
       "count": 3
     },
     {
-      "productSlug": "bleu-de-chanel-edp-100ml",
-      "count": 3
+      "productSlug": "byredo-blanche-100ml",
+      "count": 2
     },
     {
-      "productSlug": "diptyque-do-son-75ml",
-      "count": 3
-    },
-    {
-      "productSlug": "glenfiddich-15-700ml",
-      "count": 3
+      "productSlug": "dyson-supersonic",
+      "count": 2
     },
     {
       "productSlug": "hibiki-harmony-700ml",
-      "count": 3
+      "count": 2
     },
     {
       "productSlug": "kiehls-ultra-facial-cream-125ml",
-      "count": 3
-    },
-    {
-      "productSlug": "la-mer-moisturizing-cream-60ml",
-      "count": 3
-    },
-    {
-      "productSlug": "le-labo-santal-33-50ml",
-      "count": 3
-    },
-    {
-      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
-      "count": 3
-    },
-    {
-      "productSlug": "rayban-wayfarer-rb2140",
-      "count": 3
-    },
-    {
-      "productSlug": "creed-aventus-50ml",
       "count": 2
     },
     {
-      "productSlug": "gentle-monster-dear-01",
-      "count": 2
+      "productSlug": "ballantines-21-700ml",
+      "count": 1
     },
     {
-      "productSlug": "jo-malone-english-pear-100ml",
-      "count": 2
-    },
-    {
-      "productSlug": "pandora-sparkling-charm",
-      "count": 2
-    },
-    {
-      "productSlug": "sk2-pitera-essence-230ml",
-      "count": 2
-    },
-    {
-      "productSlug": "tom-ford-oud-wood-50ml",
-      "count": 2
+      "productSlug": "bleu-de-chanel-edp-100ml",
+      "count": 1
     },
     {
       "productSlug": "bose-quietcomfort-ultra",
@@ -116,7 +68,15 @@
       "count": 1
     },
     {
+      "productSlug": "creed-aventus-50ml",
+      "count": 1
+    },
+    {
       "productSlug": "dior-sauvage-edp-100ml",
+      "count": 1
+    },
+    {
+      "productSlug": "diptyque-do-son-75ml",
       "count": 1
     },
     {
@@ -124,7 +84,19 @@
       "count": 1
     },
     {
+      "productSlug": "gentle-monster-dear-01",
+      "count": 1
+    },
+    {
+      "productSlug": "glenfiddich-15-700ml",
+      "count": 1
+    },
+    {
       "productSlug": "hamilton-khaki-field-mechanical",
+      "count": 1
+    },
+    {
+      "productSlug": "jo-malone-english-pear-100ml",
       "count": 1
     },
     {
@@ -132,11 +104,31 @@
       "count": 1
     },
     {
+      "productSlug": "la-mer-moisturizing-cream-60ml",
+      "count": 1
+    },
+    {
+      "productSlug": "le-labo-santal-33-50ml",
+      "count": 1
+    },
+    {
+      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
+      "count": 1
+    },
+    {
       "productSlug": "orthomol-immun",
       "count": 1
     },
     {
-      "productSlug": "sony-wh-1000xm5",
+      "productSlug": "rayban-wayfarer-rb2140",
+      "count": 1
+    },
+    {
+      "productSlug": "shiseido-ultimune-75ml",
+      "count": 1
+    },
+    {
+      "productSlug": "sk2-pitera-essence-230ml",
       "count": 1
     },
     {
@@ -145,6 +137,10 @@
     },
     {
       "productSlug": "tissot-prx-powermatic-80",
+      "count": 1
+    },
+    {
+      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 1
     },
     {

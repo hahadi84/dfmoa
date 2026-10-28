@@ -3,36 +3,66 @@
   "productSlug": "solgar-vitamin-d3",
   "categorySlug": "health",
   "query": "솔가 비타민D3 1000 90정",
-  "fetchedAt": "2026-10-27T17:55:04+09:00",
-  "updatedAtLabel": "2026-10-27 17:55 기준",
+  "fetchedAt": "2026-10-28T10:10:47+09:00",
+  "updatedAtLabel": "2026-10-28 10:10 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
-      "fetchedAt": "2026-10-27T17:55:04+09:00",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BC%20D3",
+      "fetchedAt": "2026-10-28T10:10:47+09:00",
       "matched_via": "original",
       "attempted_queries": [
-        "솔가 비타민D3 1000 90정",
-        "솔가비타민d3100090정"
+        "솔가 비타민 D3",
+        "솔가비타민d3"
       ],
       "items": [
         {
           "id": "shilla-286928000007",
           "title": "솔가 비타민D3 1000 90정",
           "brand": "솔가",
-          "priceKrw": 21851,
+          "priceKrw": 21823,
           "priceUsd": 16.5,
           "regularUsdPrice": 25,
           "discountRate": 34,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/02/25/286928000007_20250225_14485448_12_286928000007_1.JPG",
-          "matchScore": 55,
-          "fetchedAt": "2026-10-27T17:55:04+09:00"
+          "matchScore": 67,
+          "fetchedAt": "2026-10-28T10:10:47+09:00"
         }
       ],
       "error": null
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
+      "fetchedAt": "2026-10-28T01:10:49.592Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "솔가 비타민D3 1000 90정",
+        "솔가 비타민 D3 1000 IU 90정",
+        "Solgar Vitamin D3 1000 IU 1000 IU / 90정"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
+      "fetchedAt": "2026-10-28T01:10:49.592Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "솔가 비타민D3 1000 90정",
+        "솔가 비타민 D3 1000 IU 90정",
+        "Solgar Vitamin D3 1000 IU 1000 IU / 90정"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
     }
   }
 }

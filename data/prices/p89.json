@@ -1,0 +1,54 @@
+{
+  "productId": "p89",
+  "productSlug": "loacker-quadratini",
+  "categorySlug": "food",
+  "query": "로아커 콰드라티니",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%95%84%EC%BB%A4%20%EC%BD%B0%EB%93%9C%EB%9D%BC%ED%8B%B0%EB%8B%88",
+      "fetchedAt": "2026-10-28T10:15:07+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "로아커 콰드라티니",
+        "로아커콰드라티니"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A1%9C%EC%95%84%EC%BB%A4%20%EC%BD%B0%EB%93%9C%EB%9D%BC%ED%8B%B0%EB%8B%88",
+      "fetchedAt": "2026-10-28T01:15:09.169Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "로아커 콰드라티니",
+        "Loacker Quadratini",
+        "Loacker Quadratini Wafer"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%9C%EC%95%84%EC%BB%A4%20%EC%BD%B0%EB%93%9C%EB%9D%BC%ED%8B%B0%EB%8B%88",
+      "fetchedAt": "2026-10-28T01:15:09.169Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "로아커 콰드라티니",
+        "Loacker Quadratini",
+        "Loacker Quadratini Wafer"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

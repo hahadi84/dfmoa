@@ -1,0 +1,54 @@
+{
+  "productId": "p54",
+  "productSlug": "casio-g-shock-ga-2100",
+  "categorySlug": "watch",
+  "query": "카시오 지샥 GA-2100",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "ok",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
+      "fetchedAt": "2026-10-28T10:13:10+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "카시오 지샥 GA-2100",
+        "카시오지샥ga2100"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
+      "fetchedAt": "2026-10-28T01:13:12.200Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "카시오 지샥 GA-2100",
+        "Casio G-Shock GA-2100",
+        "Casio G-Shock GA-2100 GA-2100"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
+      "fetchedAt": "2026-10-28T01:13:12.200Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "카시오 지샥 GA-2100",
+        "Casio G-Shock GA-2100",
+        "Casio G-Shock GA-2100 GA-2100"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

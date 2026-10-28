@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-27T10:22:26+09:00",
+      "fetchedAt": "2026-10-28T10:08:39+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "야마자키 12년 700ml",
@@ -33,7 +33,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-27T01:22:28.317Z",
+      "fetchedAt": "2026-10-28T01:08:41.140Z",
       "matched_via": "original",
       "attempted_queries": [
         "야마자키 12년 700ml",
@@ -51,7 +51,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%95%BC%EB%A7%88%EC%9E%90%ED%82%A4%2012%EB%85%84%20700ml",
-      "fetchedAt": "2026-10-27T01:22:28.318Z",
+      "fetchedAt": "2026-10-28T01:08:41.140Z",
       "matched_via": "original",
       "attempted_queries": [
         "야마자키 12년 700ml",
