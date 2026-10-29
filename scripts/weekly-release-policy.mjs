@@ -12,7 +12,9 @@ export function allowWeeklyBuild({ subject, context, currentCommit, previousComm
   // expires with that Korean calendar day; ordinary/manual future commits stay held.
   const requestedRelease = 'release(requested): 2026-10-29';
   const scheduled = korean.getUTCDay() === 1 && korean.getUTCHours() >= 9 && subject === release;
-  const requested = korean.toISOString().slice(0, 10) === '2026-10-29' && subject === requestedRelease;
+  // A second, separate user request approves the verified four-store benefit fix.
+  const requested = korean.toISOString().slice(0, 10) === '2026-10-29' &&
+    [requestedRelease, 'release(requested-benefits): 2026-10-29'].includes(subject);
   return context === 'production' && (scheduled || requested) &&
     /^[a-f0-9]{40}$/i.test(currentCommit ?? '') &&
     /^[a-f0-9]{40}$/i.test(previousCommit ?? '') && previousCommit !== currentCommit &&

@@ -5550,3 +5550,19 @@ textarea:focus,
 .japan-guide-list h3 { font-size: 1.15rem; font-weight: 600; margin: 0 0 8px; }
 .japan-guide-list p { margin: 0 0 8px; line-height: 1.7; }
 @media (max-width: 640px) { .yen-fields { grid-template-columns: 1fr; } .yen-calculator { padding: 18px; } }
+
+/* Benefit conditions must remain readable instead of inheriting one-line cards. */
+.benefit-coverage .section-copy,
+.benefit-current-page .section-copy,
+.benefit-current-page .page-description,
+.benefit-events .benefit-link-copy strong,
+.benefit-events .benefit-link-copy small {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+}
+.benefit-current-page .page-title { font-weight: 700; }
+.benefit-current-page nav { gap: 8px 16px; margin: 16px 0; }
+.benefit-events .benefit-link-copy { gap: 6px; }
+.benefit-events .benefit-link-copy small { line-height: 1.6; }

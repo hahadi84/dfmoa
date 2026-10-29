@@ -1,0 +1,536 @@
+{
+  "storeId": "shinsegae",
+  "checkedAt": "2026-10-29",
+  "sourceUrl": "https://www.ssgdfs.com/kr/event/initEventMain",
+  "method": "browser-visible-list",
+  "scannedCount": 76,
+  "benefits": [
+    {
+      "id": "E261095301",
+      "title": "KOREA DUTY-FREE FESTA",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E261095301",
+      "startDate": "2026-10-29",
+      "endDate": "2026-11-15"
+    },
+    {
+      "id": "E261094970",
+      "title": "쓱데이 X 신한 super SOL",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E261094970",
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-05"
+    },
+    {
+      "id": "E261094958",
+      "title": "신한카드 1만 2천원 결제일 할인",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E261094958",
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-02"
+    },
+    {
+      "id": "E261094058",
+      "title": "쓱데이 D-6 사전 혜택 캘린더",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E261094058",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-29"
+    },
+    {
+      "id": "E261093564",
+      "title": "미리 쓱데이 사전혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E261093564",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-29"
+    },
+    {
+      "id": "E261093880",
+      "title": "삼성카드 최대 10% 결제일 할인",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E261093880",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260989238",
+      "title": "네이버페이 최대 12만원 포인트 적립",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260989238",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E261093884",
+      "title": "제주항공 센다이 탑승고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E261093884",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260682222",
+      "title": "주류 결제할인 포인트",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260682222",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260990518",
+      "title": "메리어트 본보이 회원 전용",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260990518",
+      "startDate": "2026-10-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260989247",
+      "title": "반려견에게도 특별한 하루를! 애견호텔 1박 이용권 증정",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260989247",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260991330",
+      "title": "신용카드 무이자 할부",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260991330",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260989577",
+      "title": "신세계포인트 회원 인증 고객 대상",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260989577",
+      "startDate": "2026-10-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260988937",
+      "title": "네이버페이 포인트 1만원 랜덤 지급",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260988937",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260884819",
+      "title": "GOLD 이상 고객께 드리는쓱닷컴 특별 혜택!",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260884819",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260992258",
+      "title": "한눈에 보는 T 멤버십 혜택!",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260992258",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260992238",
+      "title": "한눈에 보는 KT멤버십 혜택!",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260992238",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260992218",
+      "title": "한눈에 보는 LGU+멤버십 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260992218",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260989779",
+      "title": "웨딩 고객을 위한특별한 면세 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260989779",
+      "startDate": "2026-09-21"
+    },
+    {
+      "id": "E260988936",
+      "title": "플라이퀀시 스탬프몇 개 모으셨나요?",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260988936",
+      "startDate": "2026-10-29"
+    },
+    {
+      "id": "E260988366",
+      "title": "Kakao Tools에서 만나는신세계면세점",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260988366",
+      "startDate": "2026-10-29"
+    },
+    {
+      "id": "E260887258",
+      "title": "첫 만남 첫 구매 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260887258",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260886309",
+      "title": "꽝 없는 룰렛",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260886309",
+      "startDate": "2026-08-28",
+      "endDate": "2026-11-05"
+    },
+    {
+      "id": "E260884661",
+      "title": "함께라서, 더 풍성한 가을",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260884661",
+      "startDate": "2026-08-28",
+      "endDate": "2026-11-05"
+    },
+    {
+      "id": "E260884480",
+      "title": "2027년 신세계면세점 등급 선정기준 변경 안내",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260884480",
+      "startDate": "2026-08-10",
+      "endDate": "2027-01-31"
+    },
+    {
+      "id": "E260681586",
+      "title": "신한 SOL뱅크 환전 고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260681586",
+      "startDate": "2026-07-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260782580",
+      "title": "다비치안경 특별 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260782580",
+      "startDate": "2026-07-01",
+      "endDate": "2027-06-30"
+    },
+    {
+      "id": "E260782561",
+      "title": "NEW! 프리미엄공항 픽업·샌딩 서비스",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260782561",
+      "startDate": "2026-07-01",
+      "endDate": "2028-01-31"
+    },
+    {
+      "id": "E260682234",
+      "title": "KB국민은행 환전 고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260682234",
+      "startDate": "2026-07-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260681595",
+      "title": "우리은행 환전 고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260681595",
+      "startDate": "2026-07-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260681590",
+      "title": "하나은행 환전 고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260681590",
+      "startDate": "2026-07-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260884085",
+      "title": "쓱7클럽 대상 특별 쇼핑혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260884085",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260681178",
+      "title": "쓱7클럽 VIP 대상 특별 쇼핑혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260681178",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260580445",
+      "title": "KT 로밍 고객 면세 쇼핑 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260580445",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260580443",
+      "title": "클럽 T 로밍 baro 요금제 고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260580443",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260782760",
+      "title": "결제 혜택 모아보기",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260782760",
+      "startDate": "2026-10-29"
+    },
+    {
+      "id": "E260479619",
+      "title": "트래블로카 회원전용",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479619",
+      "startDate": "2026-05-04",
+      "endDate": "2026-11-18"
+    },
+    {
+      "id": "E250258715",
+      "title": "네이버플러스 멤버십 회원 전용 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E250258715",
+      "startDate": "2026-05-01",
+      "endDate": "2027-04-30"
+    },
+    {
+      "id": "E260479650",
+      "title": "제주항공 국제선 탑승고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479650",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260479218",
+      "title": "트립스토어 고객 전용 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479218",
+      "startDate": "2026-05-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479196",
+      "title": "마이리얼트립 회원 전용",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479196",
+      "startDate": "2026-05-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479189",
+      "title": "온라인투어 고객 전용 면세쇼핑 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479189",
+      "startDate": "2026-05-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479184",
+      "title": "역시 신세계 여행이지",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479184",
+      "startDate": "2026-04-30",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479180",
+      "title": "노랑풍선으로 혜택을 든든하게",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479180",
+      "startDate": "2026-04-30",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479226",
+      "title": "NOL 고객 전용",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479226",
+      "startDate": "2026-04-30",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479224",
+      "title": "혜택의 모든 것 트리플과 함께!",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479224",
+      "startDate": "2026-04-30",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479193",
+      "title": "한진관광 면세 쇼핑 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479193",
+      "startDate": "2026-04-30",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479187",
+      "title": "하나투어 고객 전용 신세계면세점 쇼핑혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479187",
+      "startDate": "2026-04-29",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479191",
+      "title": "모두투어 고객 전용 면세쇼핑 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479191",
+      "startDate": "2026-04-29",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479474",
+      "title": "대한항공카드20만원 캐시백",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479474",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260479410",
+      "title": "싱가포르항공 회원 전용 마일리지 적립",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479410",
+      "startDate": "2026-04-17",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260479405",
+      "title": "싱가포르항공 회원 전용 더블 적립",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260479405",
+      "startDate": "2026-04-17",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260378361",
+      "title": "로밍도깨비",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260378361",
+      "startDate": "2026-03-19",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260277752",
+      "title": "CJ ONE 회원에게 매일 드리는 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260277752",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260277747",
+      "title": "OK캐쉬백 고객, 매일받는 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260277747",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E260277490",
+      "title": "중국남방항공 회원 전용",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260277490",
+      "startDate": "2026-02-13",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260277482",
+      "title": "캐세이 회원 전용 스페셜 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260277482",
+      "startDate": "2026-02-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E260176860",
+      "title": "신세계면세점 멤버십 안내",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260176860",
+      "startDate": "2026-02-01",
+      "endDate": "2027-01-31"
+    },
+    {
+      "id": "E260176679",
+      "title": "VIP 멤버스 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260176679",
+      "startDate": "2026-02-01",
+      "endDate": "2027-01-31"
+    },
+    {
+      "id": "E260176468",
+      "title": "VIP&BLACK 멤버스 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E260176468",
+      "startDate": "2026-02-01",
+      "endDate": "2027-01-31"
+    },
+    {
+      "id": "E251275591",
+      "title": "에어서울 국제선 탑승고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E251275591",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E251275589",
+      "title": "에어부산 국제선 탑승고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E251275589",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E251275585",
+      "title": "이스타항공 국제선 탑승고객 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E251275585",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E251275536",
+      "title": "NOL 특별 할인 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E251275536",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E250360550",
+      "title": "글로벌와이파이 최대20% 특급할인",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E250360550",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E251072792",
+      "title": "신세계 유니버스 클럽 회원 전용 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E251072792",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E250767685",
+      "title": "문자 수신 동의하고 더 큰 혜택 받으세요!",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E250767685",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E250360065",
+      "title": "나와 친구 모두 받는 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E250360065",
+      "startDate": "2025-04-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E250155840",
+      "title": "신세계면세점 회원 로밍 20% 특별 할인",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E250155840",
+      "startDate": "2025-02-03",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "E241254101",
+      "title": "출국정보 등록 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E241254101",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E241253101",
+      "title": "매일매일 출석체크",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E241253101",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E241149918",
+      "title": "신세계면세점 회원 오늘의 혜택",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E241149918",
+      "startDate": "2026-10-29"
+    },
+    {
+      "id": "E240642518",
+      "title": "신규회원이면 받을 수 있는",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E240642518",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E231024918",
+      "title": "와이파이 도시락 eSIM",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E231024918",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E221217299",
+      "title": "이 달의 혜택 한 번에 끝내기",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E221217299",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    },
+    {
+      "id": "E210505684",
+      "title": "누구나 쉬운 쓱-환전",
+      "url": "https://www.ssgdfs.com/kr/event/initEventDetail?event_no=E210505684",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  {"storeId":"lotte","name":"롯데면세점","url":"https://kor.lottedfs.com/kr/eventmain/benefit?onOff=ON"},
+  {"storeId":"shilla","name":"신라면세점","url":"https://www.shilladfs.com/estore/kr/ko/event?uiel=Desktop"},
+  {"storeId":"shinsegae","name":"신세계면세점","url":"https://www.ssgdfs.com/kr/event/initEventMain"},
+  {"storeId":"hyundai","name":"현대면세점","url":"https://www.hddfs.com/event/op/evnt/evntShop.do"}
+]

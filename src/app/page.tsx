@@ -234,7 +234,7 @@ export default function Home() {
           <Link className="weekly-benefit-banner" href={`/benefit-reports/${latestBenefitReport.slug}`}>
             <strong>이번 주 면세 혜택</strong>
             <span>
-              {latestBenefitReport.storeCount}사 {latestBenefitReport.sourceCount}개 링크 정리 ({latestBenefitReport.periodLabel} 기준)
+              {latestBenefitReport.storeCount}사 {latestBenefitReport.sourceCount}개 기간 확인 행사 ({latestBenefitReport.periodLabel})
             </span>
             <span className="text-link">리포트 보기 →</span>
           </Link>

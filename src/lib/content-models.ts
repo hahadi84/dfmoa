@@ -34,6 +34,18 @@ export type AirportGuide = {
   updatedAt: string;
 };
 
+export type BenefitCoverage = {
+  storeId: string;
+  sourceUrl: string;
+  checkedAt: string;
+  lastVerifiedAt?: string;
+  status: string;
+  count: number;
+  scannedCount?: number;
+  note: string;
+  error?: string;
+};
+
 export type MonthlyDealReport = {
   slug: string;
   year: number;
@@ -41,7 +53,8 @@ export type MonthlyDealReport = {
   title: string;
   summary: string;
   benefitRuleIds: string[];
-  benefits?: { title: string; description: string; url: string; startDate: string; endDate: string; checkedAt: string }[];
+  benefits?: { id?: string; storeId?: string; category?: string; title: string; description: string; url: string; startDate: string; endDate: string; checkedAt: string }[];
+  coverage?: BenefitCoverage[];
   sourceLinks: {
     sourceName: string;
     url: string;

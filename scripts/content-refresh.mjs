@@ -1,6 +1,7 @@
 import { load } from 'cheerio';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
+import { benefitSources, parseHyundai, collectLotte, collectShilla, reviewedBenefits, dedupeBenefits, fetchPublic } from './benefit-collectors.mjs';
 
 export const BENEFIT_URL = 'https://www.hddfs.com/event/op/evnt/evntShop.do';
 export const FX_URL = 'https://api.frankfurter.dev/v2/rate/JPY/KRW?providers=ECB';
@@ -13,28 +14,14 @@ export function weekStart(day) {
   return date.toISOString().slice(0, 10);
 }
 export function parseBenefits(html, day) {
-  const $ = load(html);
-  const entries = new Map();
-  $('a[href*="evntDetail.do"]').each((_, element) => {
-    const node = $(element);
-    const title = node.find('.tit').text().replace(/\s+/g, ' ').trim();
-    const dates = node.find('.txt_date').text().match(/\d{4}-\d{2}-\d{2}/g);
-    if (!title || !dates || dates.length !== 2 || dates[0] > day || dates[1] < day) return;
-    // Card acquisition offers require eligibility verification beyond the public list.
-    if (/캐시백|임직원|웨딩/.test(title)) return;
-    const url = new URL(node.attr('href'), BENEFIT_URL);
-    if (url.hostname !== 'www.hddfs.com' || url.pathname !== '/event/op/evnt/evntDetail.do') return;
-    entries.set(url.href, { title, url: url.href, storeId: 'hyundai', startDate: dates[0], endDate: dates[1], checkedAt: day,
-      description: '공식 목록에서 행사명과 기간을 확인했습니다. 적용 대상·최소 결제액·할인 한도·제외 브랜드는 상세 페이지에서 확인하세요.' });
-  });
-  return [...entries.values()].sort((a, b) => a.endDate.localeCompare(b.endDate) || a.url.localeCompare(b.url)).slice(0, 6);
+  return parseHyundai(html, day);
 }
-export function updateReports(previous, benefits, day) {
+export function updateReports(previous, benefits, day, coverage) {
   if (!benefits.length) throw new Error('No dated active events found; previous reports preserved.');
   const monthly = [...previous.monthly];
   const weekly = [...previous.weekly];
   const month = day.slice(0, 7);
-  const snapshot = { publishedAt: day, updatedAt: day, benefits };
+  const snapshot = { publishedAt: day, updatedAt: day, benefits, ...(coverage ? {coverage} : {}) };
   const index = monthly.findIndex(item => item.slug === month);
   const current = { ...snapshot, slug: month };
   if (index < 0) monthly.push(current);
@@ -56,6 +43,34 @@ async function save(file, value) {
   const old = await readFile(file, 'utf8').catch(() => '');
   if (old !== text) await writeFile(file, text);
 }
+export async function collectBenefits(day) {
+  const results=await Promise.all(benefitSources.map(async source=>{
+    const base={storeId:source.storeId,sourceUrl:source.url,checkedAt:day};
+    try {
+      let result;
+      if(source.storeId==='lotte')result=await collectLotte(day);
+      else if(source.storeId==='shilla')result=await collectShilla(day);
+      else {
+        const html=await(await fetchPublic(source.url)).text();
+        if(source.storeId==='hyundai'){
+          const $=load(html); const total=html.match(/var totalPage\s*=\s*"(\d+)"/);
+          if(total && Number(total[1])>1)throw new Error('현대 목록 페이지 추가 확인 필요');
+          if(!$('a[href*="evntDetail.do"]').length)throw new Error('현대 행사 목록 형식 변경');
+          result={benefits:parseHyundai(html,day),scannedCount:$('a[href*="evntDetail.do"]').length};
+        } else throw new Error('동적 행사 목록: 브라우저 검증 자료 필요');
+      }
+      return {benefits:result.benefits,coverage:{...base,status:result.benefits.length?'ok':'no_verified_events',count:result.benefits.length,scannedCount:result.scannedCount,lastVerifiedAt:day,note:'공개 행사 목록 확인. 기간과 대상 조건이 없는 항목은 수록하지 않습니다.'}};
+    }catch(error){
+      let record=null;
+      try { record=JSON.parse(await readFile(`data/content/benefit-reviewed/${source.storeId}.json`,'utf8')); } catch { /* Missing or malformed reviewed files cannot masquerade as verified data. */ }
+      const benefits=reviewedBenefits(record,source.storeId,day);
+      return {benefits,coverage:{...base,status:benefits.length?'manual_verified':'error',count:benefits.length,
+        ...(benefits.length?{lastVerifiedAt:record.checkedAt,scannedCount:record.scannedCount}:{}),
+        note:benefits.length?'자동 수집 제한. 별도로 브라우저에서 확인한 행사 목록이며 확인일과 종료일을 유지합니다.':'자동 수집 또는 행사 기간 확인 실패. 공식 목록에서 확인하세요.',error:error.message}};
+    }
+  }));
+  return {checkedAt:day,benefits:dedupeBenefits(results.flatMap(x=>x.benefits)),coverage:results.map(x=>x.coverage)};
+}
 export async function refresh() {
   await mkdir('data/content', { recursive: true });
   const day = koreaDate();
@@ -63,9 +78,12 @@ export async function refresh() {
   try {
     const file = 'data/content/benefit-publications.json';
     const previous = JSON.parse(await readFile(file, 'utf8').catch(error => { if (error.code === 'ENOENT') return '{"monthly":[],"weekly":[]}'; throw error; }));
-    const benefits = parseBenefits(await (await fetchOk(BENEFIT_URL)).text(), day);
-    await save(file, updateReports(previous, benefits, day));
-    console.log(`Benefits: ${benefits.length} dated active events; publication archives updated.`);
+    const latest = await collectBenefits(day);
+    await save('data/content/benefit-latest.json',latest);
+    await save(file, updateReports(previous, latest.benefits, day,latest.coverage));
+    console.log(`Benefits: ${latest.benefits.length} dated active events across ${new Set(latest.benefits.map(x=>x.storeId)).size} stores.`);
+    for(const source of latest.coverage)console.log(`${source.storeId}: ${source.status}, ${source.count} events`);
+    for(const source of latest.coverage.filter(x=>x.status==='error'))errors.push(`Benefits ${source.storeId}: ${source.error}`);
   } catch (error) { errors.push(`Benefits: ${error.message}`); }
   try {
     const rate = await (await fetchOk(FX_URL)).json();

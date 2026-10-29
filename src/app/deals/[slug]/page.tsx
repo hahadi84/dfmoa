@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { BenefitCollectionStatus } from '@/components/benefit-collection-status';
+import { BenefitEventList } from '@/components/benefit-event-list';
+import benefitSources from '@/lib/benefit-sources.json';
 import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
 import { ContentProductGrid } from "@/components/content-product-grid";
@@ -105,17 +108,18 @@ export default async function DealsPage({ params }: DealsPageProps) {
             </div>
           </div>
 
+          <BenefitCollectionStatus coverage={report.coverage} />
+          <nav aria-label="면세점별 행사 바로가기" className="chip-row">
+            {benefitSources.filter(source=>report.benefits?.some(b=>b.storeId===source.storeId)).map(source=><a className="text-link" key={source.storeId} href={`#benefits-${source.storeId}`}>{source.name} ({report.benefits?.filter(b=>b.storeId===source.storeId).length}개)</a>)}
+          </nav>
+          {benefitSources.map(source=>{
+            const benefits=report.benefits?.filter(b=>b.storeId===source.storeId) ?? [];
+            return benefits.length?<section key={source.storeId} id={`benefits-${source.storeId}`} className="report-section">
+              <h3 className="section-title">{source.name}</h3>
+              <BenefitEventList benefits={benefits.map(b=>({title:b.title,type:b.category ?? '공식 행사',url:b.url,description:`${b.startDate} ~ ${b.endDate} · ${b.checkedAt} 목록 확인 · ${b.description}`}))} />
+            </section>:null;
+          })}
           <div className="deal-rule-grid">
-            {report.benefits?.map(benefit => (
-              <article key={benefit.url} className="deal-rule-card">
-                <span className="chip is-soft">현대면세점</span>
-                <h3 className="card-title">{benefit.title}</h3>
-                <p className="section-copy">{benefit.description}</p>
-                <p className="section-copy">기간: {benefit.startDate} ~ {benefit.endDate}</p>
-                <p className="section-copy">목록 확인: {benefit.checkedAt} · 지난 월의 행사는 종료되었을 수 있습니다.</p>
-                <a className="text-link" href={benefit.url} target="_blank" rel="noreferrer">상세 조건 확인</a>
-              </article>
-            ))}
             {rules.map((rule) => {
               const store = getStoreById(rule.sourceId);
 

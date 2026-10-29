@@ -50,3 +50,9 @@ test('explicit user-requested release is limited to October 29 KST and cannot re
     { previousCommit: undefined },
   ]) assert.equal(allowWeeklyBuild({ ...input, ...override }), false);
 });
+
+test('separate benefits publication requires the specifically approved subject and same KST date',()=>{
+  const input={subject:'release(requested-benefits): 2026-10-29',context:'production',currentCommit:'a'.repeat(40),previousCommit:'b'.repeat(40),previousSubject:'release(requested): 2026-10-29',now:new Date('2026-10-29T03:00:00Z')};
+  assert.equal(allowWeeklyBuild(input),true);
+  for(const override of [{earlierReleaseThisWeek:true},{previousSubject:input.subject},{now:new Date('2026-10-29T15:00:00Z')},{context:'deploy-preview'},{subject:'release(requested-benefits): 2026-10-30'}])assert.equal(allowWeeklyBuild({...input,...override}),false);
+});

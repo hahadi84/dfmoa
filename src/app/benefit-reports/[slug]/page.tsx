@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { BenefitCollectionStatus } from '@/components/benefit-collection-status';
+import { BenefitEventList } from '@/components/benefit-event-list';
 import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
 import {
@@ -98,6 +100,7 @@ export default async function BenefitReportPage({ params }: BenefitReportPagePro
             </div>
           </header>
 
+          <BenefitCollectionStatus coverage={report.coverage} />
           <section className="report-section">
             <h2>핵심 요약</h2>
             <ul className="report-check-list">
@@ -133,26 +136,7 @@ export default async function BenefitReportPage({ params }: BenefitReportPagePro
 
                   <p className="report-editorial-note">{section.editorialNote}</p>
 
-                  <div className="benefit-link-list">
-                    {section.benefits.map((benefit) => (
-                      <a
-                        key={`${section.storeId}-${benefit.title}`}
-                        className="benefit-link-item"
-                        href={benefit.url}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span className="benefit-link-copy">
-                          <span className="benefit-link-title-line">
-                            <strong>{benefit.title}</strong>
-                            <span className="benefit-action-button is-benefit">{benefit.type}</span>
-                          </span>
-                          <small>{benefit.description}</small>
-                        </span>
-                        <span className="text-link">원본</span>
-                      </a>
-                    ))}
-                  </div>
+                  <BenefitEventList benefits={section.benefits} />
 
                   <div className="benefit-check-card">
                     <p className="panel-title">확인할 점</p>
