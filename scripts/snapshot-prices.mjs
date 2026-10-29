@@ -1,5 +1,6 @@
 import fs from "node:fs";
-import { filterVerifiedSnapshot } from "../src/lib/product-offer-validation.mjs";
+import { filterVerifiedSnapshot, getOfferMatchReason } from "../src/lib/product-offer-validation.mjs";
+import { buildVerifiedHistoryRecord } from './verified-price-history.mjs';
 import path from "node:path";
 import vm from "node:vm";
 import { createRequire } from "node:module";
@@ -178,24 +179,13 @@ async function collectProduct(product, shillaSearchCache) {
   return buildSnapshot(product, [shillaResult, shinsegaeResult, lotteResult]);
 }
 
-function getLowestKrwPrice(source) {
-  return (source?.items ?? [])
-    .map((item) => Number(item.priceKrw) || Math.round(Number(item.priceUsd ?? 0) * 1470))
-    .filter((price) => price > 0)
-    .sort((left, right) => left - right)[0] ?? null;
-}
-
-function appendHistory(snapshot, ts) {
+function appendHistory(product, snapshot) {
   fs.mkdirSync(HISTORY_DIR, { recursive: true });
 
   const filePath = path.join(HISTORY_DIR, `${snapshot.productId}.jsonl`);
   const cutoff = Date.now() - 90 * 24 * 60 * 60 * 1000;
-  const record = {
-    ts,
-    shilla: getLowestKrwPrice(snapshot.sources.shilla),
-    shinsegae: getLowestKrwPrice(snapshot.sources.shinsegae),
-    lotte: getLowestKrwPrice(snapshot.sources.lotte),
-  };
+  const record = buildVerifiedHistoryRecord(product, snapshot);
+  if (!record) return;
   const records = fs.existsSync(filePath)
     ? fs
         .readFileSync(filePath, "utf8")
@@ -328,7 +318,6 @@ async function main() {
 
   fs.mkdirSync(PRICE_DIR, { recursive: true });
   fs.mkdirSync(HISTORY_DIR, { recursive: true });
-  const historyTimestamp = new Date().toISOString();
 
   const collect = async (product) => {
     attempted.push(product.slug);
@@ -339,14 +328,15 @@ async function main() {
       const accepted = new Set(verified.sources[store].items);
       for (const item of source.items ?? []) {
         if (!accepted.has(item)) rejectedOffers.push({ productId: product.id, categorySlug: product.categorySlug,
-          store, title: item.title, observedAt: source.fetchedAt, sourceUrl: source.searchUrl });
+          store, sourceItemId: item.id ?? null, brand: item.brand ?? null, title: item.title,
+          reason: getOfferMatchReason(product, item), observedAt: source.fetchedAt, sourceUrl: source.searchUrl });
       }
     }
     const snapshot = filterVerifiedSnapshot(product, raw);
     const filePath = path.join(PRICE_DIR, `${product.id}.json`);
     const previous = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf8")) : null;
     fs.writeFileSync(filePath, `${JSON.stringify(filterVerifiedSnapshot(product, mergeSnapshotAfterFailure(previous, snapshot)), null, 2)}\n`);
-    appendHistory(snapshot, historyTimestamp);
+    appendHistory(product, snapshot);
     const successful = hasValidPrice(snapshot);
     if (successful) {
       const [sourceId, source] = getPrimarySourceEntry(snapshot);

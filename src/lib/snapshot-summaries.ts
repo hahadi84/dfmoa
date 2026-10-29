@@ -1,6 +1,7 @@
 import { formatKrw, getStoreById, type Product, type StoreId } from "@/lib/site-data";
 import { formatSnapshotTimestamp, getSnapshotBestItem } from "@/lib/price-snapshot-view";
 import type { ProductPriceSnapshot } from "@/lib/price-snapshot-types";
+import { observationState } from './observation-policy.mjs';
 
 export type LowestPriceSummary = {
   product: Product;
@@ -12,9 +13,7 @@ export type LowestPriceSummary = {
 };
 
 export function hasSnapshotPrice(snapshot?: ProductPriceSnapshot | null) {
-  return Object.values(snapshot?.sources ?? {}).some((source) =>
-    source?.items?.some((item) => Number(item.priceKrw) > 0 || Number(item.priceUsd) > 0)
-  );
+  return Boolean(getSnapshotBestItem(snapshot));
 }
 
 export function getLowestPriceSummary(product: Product, snapshot?: ProductPriceSnapshot | null) {
@@ -32,7 +31,7 @@ export function getLowestPriceSummary(product: Product, snapshot?: ProductPriceS
     product,
     storeName: store?.shortName ?? bestItem.sourceId,
     priceKrw,
-    priceLabel: formatKrw(priceKrw),
+    priceLabel: `${formatKrw(priceKrw)}${observationState(bestItem.source.fetchedAt ?? bestItem.item.fetchedAt) === 'historical' ? ' · 과거 관측가' : ''}`,
     imageUrl: bestItem.item.imageUrl ?? null,
     timestamp,
   } satisfies LowestPriceSummary;

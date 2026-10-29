@@ -1,6 +1,7 @@
 import { buildOfficialSearchUrl, getDutyFreeSource } from "@/lib/source-policy";
 import { formatKrw, formatUsd, getStoreById, stores, type Product, type StoreId } from "@/lib/site-data";
 import { createEmptyHistorySummary } from "@/lib/search-types";
+import { observationState, formatObservationTime } from './observation-policy.mjs';
 import type {
   LiveOffer,
   SearchApiResponse,
@@ -11,7 +12,6 @@ import type {
 } from "@/lib/search-types";
 import type { ProductPriceSnapshot, SnapshotSourceRecord } from "@/lib/price-snapshot-types";
 
-const SNAPSHOT_STALE_MS = 3 * 24 * 60 * 60 * 1000;
 const IMAGE_FRESH_MS = 7 * 24 * 60 * 60 * 1000;
 const FAILURE_MESSAGE = "가격 확인 준비 중 — 원본 면세점 확인";
 const EMPTY_MESSAGE = "가격 미확인 — 원본 면세점 확인";
@@ -33,7 +33,7 @@ export function formatSnapshotTimestamp(value?: string | null) {
     return "";
   }
 
-  return value.replace("T", " ").slice(0, 16);
+  return formatObservationTime(value);
 }
 
 function parseSnapshotDate(value?: string | null) {
@@ -46,13 +46,7 @@ function parseSnapshotDate(value?: string | null) {
 }
 
 export function isSnapshotStale(value?: string | null) {
-  const parsed = parseSnapshotDate(value);
-
-  if (!parsed) {
-    return false;
-  }
-
-  return Date.now() - parsed.getTime() > SNAPSHOT_STALE_MS;
+  return observationState(value) !== 'recent';
 }
 
 export function isSnapshotImageFresh(value?: string | null) {
@@ -78,7 +72,7 @@ export function getSnapshotBestItem(snapshot?: ProductPriceSnapshot | null) {
         item,
       }))
     )
-    .filter(({ item }) => Number(item.priceKrw) > 0)
+    .filter(({ item, source }) => Number(item.priceKrw) > 0 && observationState(source.fetchedAt ?? item.fetchedAt) !== 'unknown')
     .sort((left, right) => (left.item.priceKrw ?? Number.MAX_SAFE_INTEGER) - (right.item.priceKrw ?? Number.MAX_SAFE_INTEGER))[0];
 }
 
@@ -274,7 +268,7 @@ export function getSnapshotPriceLine(snapshot?: ProductPriceSnapshot | null) {
   const priceText = best.item.priceKrw ? formatKrw(best.item.priceKrw) : formatUsd(best.item.priceUsd ?? 0);
 
   return {
-    text: `${store?.shortName ?? best.sourceId} ${priceText} · ${timestamp} 기준${stale ? " · 수집 지연" : ""}`,
+    text: `${store?.shortName ?? best.sourceId} ${priceText} · ${timestamp} KST 관측${stale ? " · 과거 관측 가격" : ""}`,
     isStale: stale,
     imageUrl: isSnapshotImageFresh(best.source.fetchedAt ?? best.item.fetchedAt) ? best.item.imageUrl ?? null : null,
   };

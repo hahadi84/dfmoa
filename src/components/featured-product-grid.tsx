@@ -5,6 +5,7 @@ import Link from "@/components/app-link";
 import { FavoriteButton } from "@/components/product-actions";
 import { SafeProductImage } from "@/components/product-image";
 import { getSnapshotPriceLine } from "@/lib/price-snapshot-view";
+import { hasSnapshotPrice } from "@/lib/snapshot-summaries";
 import type { ProductPriceSnapshot } from "@/lib/price-snapshot-types";
 import type { Product } from "@/lib/site-data";
 
@@ -14,12 +15,6 @@ type FeaturedProductGridProps = {
   products: Product[];
   priceSnapshotsByProductId?: Record<string, ProductPriceSnapshot | null>;
 };
-
-function hasSnapshotPrice(snapshot?: ProductPriceSnapshot | null) {
-  return Object.values(snapshot?.sources ?? {}).some((source) =>
-    source?.items?.some((item) => Number(item.priceKrw) > 0 || Number(item.priceUsd) > 0)
-  );
-}
 
 export function FeaturedProductGrid({ products, priceSnapshotsByProductId = {} }: FeaturedProductGridProps) {
   const [visibleCount, setVisibleCount] = useState(STEP_SIZE);

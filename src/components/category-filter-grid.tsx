@@ -128,7 +128,7 @@ export function CategoryFilterGrid({ priceSnapshotsByProductId, products }: Cate
       </details>
 
       <p className="section-copy">
-        {isPending ? "필터 적용 중" : `가격 확인 상품 ${pricedCount}개`} · 실제 확인 시각과 판매처는 상품 상세에서 확인하세요.
+        {isPending ? "필터 적용 중" : `관측 가격이 있는 상품 ${pricedCount}개`} · 매주 공개된 관측값이며 현재 결제 가격은 판매처에서 확인하세요.
       </p>
       <FeaturedProductGrid products={filteredProducts} priceSnapshotsByProductId={priceSnapshotsByProductId} />
     </div>

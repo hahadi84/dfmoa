@@ -17,7 +17,7 @@ function getRecentValidPoints(history?: SearchHistorySummary) {
     .filter((point) => typeof point.bestKrwPrice === "number")
     .filter((point) => {
       const date = parseKstDate(point.searchedAt);
-      return date ? date.getTime() >= cutoff : true;
+      return date ? date.getTime() >= cutoff && date.getTime() <= Date.now() + 60_000 : false;
     })
     .map((point) => ({
       searchedAt: point.searchedAt,
@@ -32,7 +32,7 @@ export function PriceHistoryPanel({ history }: PriceHistoryPanelProps) {
   const maxPrice = prices.length ? Math.max(...prices) : null;
   const currentPrice = points.at(-1)?.price ?? null;
   const canDrawChart = points.length >= 7 && minPrice !== null && maxPrice !== null;
-  const isNinetyDayLow = currentPrice !== null && minPrice !== null && currentPrice <= minPrice;
+  const isNinetyDayLow = points.length >= 2 && currentPrice !== null && minPrice !== null && currentPrice <= minPrice;
   const range = maxPrice !== null && minPrice !== null ? Math.max(maxPrice - minPrice, 1) : 1;
   const polyline = canDrawChart
     ? points
@@ -51,10 +51,10 @@ export function PriceHistoryPanel({ history }: PriceHistoryPanelProps) {
           <span className="eyebrow">Price Trend</span>
           <h2 className="card-title">가격 추이</h2>
           <p className="section-copy">
-            최근 90일 기준 유효 가격 포인트가 7개 이상이면 차트를 표시합니다.
+            수집된 최근 90일 관측 기록이 7개 이상이면 차트를 표시합니다.
           </p>
         </div>
-        {isNinetyDayLow ? <span className="status-chip is-available">최근 90일 저점</span> : null}
+        {isNinetyDayLow ? <span className="status-chip is-available">관측 기록 내 최저가</span> : null}
       </div>
 
       {canDrawChart ? (

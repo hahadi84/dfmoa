@@ -1,7 +1,7 @@
 import type { BrandLanding, MonthlyDealReport, ProductComparePage } from "@/lib/content-models";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 import { getCategoryBySlug, products, type Guide, type Product } from "@/lib/site-data";
-import { getStoreById, type StoreId } from "@/lib/site-data";
+import { type StoreId } from "@/lib/site-data";
 import type { ProductPriceSnapshot, SnapshotPriceItem, SnapshotSourceRecord } from "@/lib/price-snapshot-types";
 import { getProductSeoSummary } from "@/lib/seo-metadata";
 
@@ -44,22 +44,8 @@ function getSnapshotOfferEntries(snapshot?: ProductPriceSnapshot | null) {
 export function buildProductJsonLd(product: Product, snapshot?: ProductPriceSnapshot | null) {
   const category = getCategoryBySlug(product.categorySlug);
   const seo = getProductSeoSummary(product, snapshot);
-  const offers = getSnapshotOfferEntries(snapshot)
-    .sort((left, right) => Number(left.item.priceKrw) - Number(right.item.priceKrw))
-    .map(({ sourceId, source, item }) => {
-      const store = getStoreById(sourceId);
-
-      return {
-        "@type": "Offer",
-        price: String(Math.round(Number(item.priceKrw))),
-        priceCurrency: "KRW",
-        seller: {
-          "@type": "Organization",
-          name: store?.name ?? source.store,
-        },
-        url: item.url || source.searchUrl || absoluteUrl(`/product/${product.slug}`),
-      };
-    });
+  // Weekly static pages contain historical observations, not executable checkout
+  // quotes. Do not advertise these snapshots as current Offer/AggregateOffer prices.
   const image = getSnapshotOfferEntries(snapshot).find(({ item }) => item.imageUrl)?.item.imageUrl;
   const productJsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -77,22 +63,10 @@ export function buildProductJsonLd(product: Product, snapshot?: ProductPriceSnap
     url: absoluteUrl(`/product/${product.slug}`),
   };
 
-  if (offers.length === 1) {
-    productJsonLd.offers = offers;
-  }
-
-  if (offers.length > 1) {
-    const prices = offers.map((offer) => Number(offer.price));
-
-    productJsonLd.offers = {
-      "@type": "AggregateOffer",
-      priceCurrency: "KRW",
-      lowPrice: String(Math.min(...prices)),
-      highPrice: String(Math.max(...prices)),
-      offerCount: offers.length,
-      offers,
-    };
-  }
+  const observedAt = snapshot?.fetchedAt;
+  if (observedAt && Number.isFinite(Date.parse(observedAt))) productJsonLd.additionalProperty = [{
+    "@type": "PropertyValue", name: "가격 관측 시각", value: observedAt,
+  }];
 
   return productJsonLd;
 }

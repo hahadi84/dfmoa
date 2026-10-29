@@ -247,7 +247,7 @@ export default function Home() {
             <div>
               <span className="eyebrow">Popular Categories</span>
               <h2 className="section-title">인기 카테고리</h2>
-              <p className="section-copy">가격 데이터가 충분한 카테고리는 크게 보여주고, 준비 중 카테고리는 별도 목록으로 분리했습니다.</p>
+              <p className="section-copy">관측 가격이 있는 카테고리를 안내합니다. 매주 공개되는 과거 관측값으로, 실제 결제 가격은 판매처에서 확인하세요.</p>
             </div>
           </div>
 
@@ -277,7 +277,7 @@ export default function Home() {
                     </span>
                   ) : null}
                 </div>
-                <span className="text-link">가격 확인 상품 {pricedCount}개 보기</span>
+                <span className="text-link">관측 가격 상품 {pricedCount}개 보기</span>
               </Link>
             ))}
           </div>

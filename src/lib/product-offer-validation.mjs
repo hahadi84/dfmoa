@@ -1,3 +1,14 @@
+import verifiedIdentities from './verified-offer-identities.json' with { type: 'json' };
+export const OFFER_VALIDATION_VERSION = 'exact-product-v2';
+const brands = {
+ p1:['CREED','크리드'],p2:['Jo Malone','Jo Malone London','조말론','조말론런던'],p3:['Sulwhasoo','설화수'],p4:['SK-II','에스케이투'],p5:['Glenfiddich','글렌피딕'],
+ p9:['Diptyque','딥티크'],p10:['Byredo','바이레도'],p11:['Le Labo','르 라보'],p12:['Chanel','샤넬'],p13:['Dior','디올'],p14:['Tom Ford','Tom Ford Beauty','톰 포드 뷰티'],
+ p15:['Maison Margiela','Maison Margiela Fragrances','메종 마르지엘라 향수'],p16:['Penhaligons','펜할리곤스'],p17:['Estee Lauder','에스티 로더'],p18:['Lancome','랑콤'],p19:['Hera','헤라'],
+ p20:['Kiehls','키엘'],p21:['La Mer','라 메르'],p22:['Shiseido','시세이도'],p23:['Biotherm','비오템'],p24:['Aesop','이솝'],p25:['Ballantines','발렌타인'],
+ p26:['Johnnie Walker','조니워커'],p27:['Macallan','The Macallan','맥캘란'],p28:['Yamazaki','야마자키'],p29:['Royal Salute','로얄살루트'],p30:['Glenmorangie','글렌모렌지'],p31:['Hennessy','헤네시'],p32:['Don Julio','돈훌리오'],
+ p71:['KGC','정관장'],p74:['Solgar','솔가'],p92:['Sony','소니'],p101:['Sony','소니'],p102:['Sony','소니'],p103:['GNC'],
+};
+const normalizeBrand = value => String(value ?? '').normalize('NFKC').toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
 // One fail-closed matching policy for exported pages, live results and daily snapshots.
 const rules = {
  p1: { name: /aventus|어벤투스/i, reject: /cologne|코롱|for\s*her|포\s*허/i },
@@ -29,7 +40,7 @@ const rules = {
  p30: { name: /glenmorangie|글렌모렌지/i, require: /10\s*(?:year|yo|년)/i },
  p31: { name: /hennessy|헤네시/i, require: /\bXO\b|엑스오/i, reject: /paradis|파라디/i },
  p32: { name: /don\s*julio|돈\s*훌리오/i, require: /1942/ },
- p92: { name: /WH[\s-]*1000XM5(?:\b|\/)/i, modelOnly: true },
+ p92: { name: /^WH[\s-]*1000XM5\/[BSP](?:\s+노이즈캔슬링\s+헤드폰\s+5세대)?$/i, modelOnly: true },
  p71: { name: /^에브리타임\s*로얄\s*\(\s*30포\s*\)$/, modelOnly: true },
  p74: { name: /^(?:솔가|solgar)\s*(?:비타민|vitamin)\s*D3\s*1000(?:\s*IU)?\s*90(?:정|\s*tablets?)$/i, modelOnly: true },
  p101: { name: /^WF[\s-]*1000XM5\/[BSP](?:\s+노이즈캔슬링\s+무선이어폰\s+5세대)?$/i, modelOnly: true },
@@ -39,10 +50,19 @@ const rules = {
 /** @param {{id:string,volume:string}} product @param {{title?:string,priceKrw?:number|null,priceUsd?:number|null}} item */
 export function getOfferMatchReason(product, item) {
  const title = (item.title ?? '').normalize('NFKC');
+ // Guard product kind before matching the model: model names also occur on accessories.
+ if (/이어\s*패드|교체용|보호\s*케이스|케이스\s*단품|충전\s*케이스\s*단품|\b(?:earpads?|replacement|accessor(?:y|ies)|shower\s*gel|body\s*(?:wash|lotion|cream|mist))\b|샤워\s*젤|샤워\s*겔|바디\s*(?:워시|로션|크림|미스트)/i.test(title)) return 'different_product_kind';
+ if (/\b(?:duo|trio|set|refill|discovery|pack\s*of\s*[2-9]|[2-9]\s*pack)\b|리필|듀오|세트|디스커버리|묶음|[+]|[x×*]\s*\d|(?:^|[^\d])(?:[2-9]|\d{2,})\s*(?:개입|개\s*묶음|개\s*세트|팩|박스|병|개)(?![가-힣\d])/i.test(title)) return 'bundle_or_refill';
+ if (/(?:^|[^\d])(?:[2-9]|\d{2,})\s*(?:개(?:입|묶음|세트)?|병|박스|팩|pcs?\b|pieces?\b|bottles?\b)/i.test(title)) return 'bundle_or_refill';
+ const identity = verifiedIdentities[product.id];
+ if (identity) {
+   const normalize = value => String(value ?? '').normalize('NFKC').replace(/\s+/g, ' ').trim().toLowerCase();
+   return identity.offers.some(offer => item.id === offer.id && normalize(item.brand) === normalize(offer.brand) && normalize(title) === normalize(offer.title)) ? null : 'different_or_unverified_model';
+ }
  const rule = rules[product.id];
  if (!rule) return 'model_not_verified';
+ if (product.brand && !(brands[product.id] ?? [product.brand]).some(brand => normalizeBrand(brand) === normalizeBrand(item.brand))) return 'brand_not_verified';
  if (!title || !rule.name.test(title) || (rule.require && !rule.require.test(title)) || (rule.reject && rule.reject.test(title))) return 'different_or_unverified_model';
- if (/\b(?:duo|trio|set|refill|discovery)\b|리필|듀오|세트|디스커버리|[+]|[x×*]\s*\d/i.test(title)) return 'bundle_or_refill';
  const capacities = title.match(/\d+(?:\.\d+)?\s*(?:ml|g)\b/gi) ?? [];
  if (capacities.length > 1) return 'multiple_sizes';
  if (!rule.modelOnly) {

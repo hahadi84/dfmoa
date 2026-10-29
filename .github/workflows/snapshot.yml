@@ -21,7 +21,7 @@ jobs:
         with: { node-version: '20' }
       - run: npm ci
       - name: Validate internal demand and failure handling
-        run: node --test scripts/search-demand.test.mjs scripts/content-refresh.test.mjs
+        run: node --test scripts/*.test.mjs
       - name: Refresh monthly benefits, weekly issue and yen reference rate
         id: content
         continue-on-error: true

@@ -11,6 +11,7 @@ export function AdBanner({placement="results",slot}:{placement?:"top"|"results";
  const element=useRef<HTMLModElement>(null);
  const box=useRef<HTMLDivElement>(null);
  const [dimensions,setDimensions]=useState({width:0,height:placement==="top"?100:280});
+ const [diagnostic,setDiagnostic]=useState('waiting');
  const adSlot=slot??ADSENSE_SLOTS[placement];
  const eligible=isAdContentPath(pathname);
  useEffect(()=>{
@@ -20,20 +21,26 @@ export function AdBanner({placement="results",slot}:{placement?:"top"|"results";
  },[eligible]);
  useEffect(()=>{
   if(mode!=="production" || !eligible || !/^\d+$/.test(adSlot) || !element.current)return;
-  let cancelled=false,near=placement==="top",loaded=false;
+  let cancelled=false,near=placement==="top",loaded=false,submitted=false;
   const target=element.current;
+  const observeStatus=()=>setDiagnostic(target.getAttribute('data-ad-status')==='filled'?'filled':target.getAttribute('data-ad-status')==='unfilled'?'unfilled':target.getAttribute('data-adsbygoogle-status')==='done'?'processed':'submitted');
+  const statusObserver=new MutationObserver(observeStatus);statusObserver.observe(target,{attributes:true,attributeFilter:['data-ad-status','data-adsbygoogle-status']});
   const push=()=>{
-   if(cancelled || !near || !loaded || !target.isConnected || !canRequestAd(window.location.hostname,target))return;
+   if(cancelled || submitted || !target.isConnected)return;
+   if(!loaded)return;
+   if(!near){setDiagnostic('waiting-viewport');return;}
+   if(!canRequestAd(window.location.hostname,target)){if(target.getAttribute('data-adsbygoogle-status'))observeStatus();else setDiagnostic('waiting-size-or-submitted');return;}
    markAdRequested(target);
-   try { (window.adsbygoogle=window.adsbygoogle||([] as Record<string,never>[])).push({}); } catch { /* Do not retry or refresh a submitted slot. */ }
+   submitted=true;
+   try { (window.adsbygoogle=window.adsbygoogle||([] as Record<string,never>[])).push({});observeStatus(); } catch { setDiagnostic('push-error'); /* Never retry or refresh a submitted slot. */ }
   };
   const size=new ResizeObserver(push);size.observe(target);
   const visibility=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){near=true;push();}},{rootMargin:"150px"});visibility.observe(target);
-  loadAdSense().then(()=>{loaded=true;push();}).catch(()=>{});
-  return()=>{cancelled=true;size.disconnect();visibility.disconnect();};
+  loadAdSense().then(()=>{if(!cancelled){loaded=true;push();}}).catch(()=>{if(!cancelled)setDiagnostic('script-error');});
+  return()=>{cancelled=true;size.disconnect();visibility.disconnect();statusObserver.disconnect();};
  },[mode,eligible,adSlot,placement]);
  if(!eligible)return null;
- return <aside className={`ad-banner ad-banner--${placement}`} aria-label="Advertisement"><span className="ad-banner__label">ADVERTISEMENT · 광고</span><div ref={box} className="ad-banner__space">
+ return <aside className={`ad-banner ad-banner--${placement}`} aria-label="Advertisement" data-ad-state={mode==='preview'?'preview-blocked':diagnostic}><span className="ad-banner__label">ADVERTISEMENT · 광고</span><div ref={box} className="ad-banner__space">
  {mode==="production" && adSlot ? <ins ref={element} className="adsbygoogle dfmoa-manual-ad" style={{display:"block",width:"100%",height:dimensions.height,minHeight:placement==="top"?90:280}} data-ad-client={ADSENSE_PUBLISHER} data-ad-slot={adSlot}/> : <div className="ad-banner__placeholder">AdSense 영역 ({dimensions.width||"가로"}×{dimensions.height})</div>}
  </div></aside>;
 }
