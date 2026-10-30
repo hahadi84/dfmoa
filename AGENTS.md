@@ -15,3 +15,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 일일 데이터 수집과 주간 정적 공개를 구분한다. 실제 관측일을 유지하고 최신 가격을 보장한다고 표현하지 않는다.
 - 정기 공개 커밋 준비는 `scripts/prepare-weekly-release.mjs --confirmed-no-published-release`를 사용한다. 이력 확인·로컬 주간 잠금·Netlify 마지막 빌드 검사 중 하나라도 확인할 수 없으면 공개를 보류한다. 잠금을 임의 삭제하거나 우회 배포하지 않는다.
 `n- 2026-10-30 사용자 “배포” 요청: release(requested-ads): 2026-10-30 공개 1회 승인. 정기 주기는 유지한다.
+- 2026-10-31 사용자 배포 요청: release(requested-airport): 2026-10-31 홈페이지 공항 디자인 공개 1회 승인. 정기 주기는 유지한다.

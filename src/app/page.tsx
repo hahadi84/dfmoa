@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./airport-home.css";
 import Link from "@/components/app-link";
 import { SavedProductsPanel } from "@/components/product-actions";
 import { SafeProductImage } from "@/components/product-image";
@@ -97,7 +98,7 @@ export default function Home() {
   const readyCategorySummaries = categorySummaries.filter((item) => item.pricedCount < 3);
 
   return (
-    <>
+    <div className="airport-home">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -111,7 +112,7 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">DFMOA Price Radar</span>
+            <span className="eyebrow">출국 전 쇼핑 안내 · DFMOA</span>
             <h1 className="hero-title">면세점 가격비교</h1>
             <p className="hero-description">
               상품명과 용량만 넣으면 면세점 공개가, 국내 판매가, 혜택 링크를 한 화면에 정리합니다.
@@ -319,6 +320,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

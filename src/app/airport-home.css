@@ -1,0 +1,49 @@
+/* Airport wayfinding palette, scoped to the Korean homepage. */
+.airport-home { --color-accent: #174f70; --color-accent-hover: #123e58; background: #f4f6f7; padding-bottom: 32px; }
+.airport-home .hero { background: #142838; color: #fff; border-top: 6px solid #f2c94c; padding: 40px 0 28px; }
+.airport-home .hero-copy { align-items: stretch; text-align: left; }
+.airport-home .hero .eyebrow { color: #f2c94c; letter-spacing: 0; font-weight: 600; }
+.airport-home .hero .eyebrow::before { background: #f2c94c; }
+.airport-home .hero-title { color: #fff; font-size: clamp(30px, 3.5vw, 46px); font-weight: 700; margin: 12px 0; max-width: none; }
+.airport-home .hero-description { color: #dce5ec; margin: 0 0 20px; max-width: none; font-size: 16px; line-height: 1.7; }
+.airport-home .hero .search-form { width: 100%; max-width: 720px; margin: 0 0 20px; background: #fff; padding: 10px; border-radius: 8px; }
+.airport-home .hero .search-input { color: #142838; }
+.airport-home .hero .search-form button[type=submit] { background: #f2c94c; color: #142838; font-weight: 700; border-color: #f2c94c; }
+.airport-home .hero-chip-strip, .airport-home .hero-search-terms, .airport-home .hero-meta-line { justify-content: flex-start; }
+.airport-home .hero-chip-strip { margin: 18px 0 10px; gap: 12px; }
+.airport-home .hero .brand-proof-strip span { color: #dce5ec; background: transparent; border-color: #587082; }
+.airport-home .hero-actions .chip, .airport-home .hero-search-terms .chip { color: #fff; background: #203c50; border-color: #587082; border-radius: 6px; }
+.airport-home .hero-actions .chip.is-demo { color: #142838; background: #f2c94c; border-color: #f2c94c; }
+.airport-home .hero-search-terms { flex-wrap: wrap; color: #dce5ec; margin: 10px 0; }
+.airport-home .hero-search-terms .chip-row { justify-content: flex-start; }
+.airport-home .hero-lowest-preview { margin: 8px 0 0; padding: 18px; border: 1px solid #587082; border-radius: 8px; background: #10212e; }
+.airport-home .hero-lowest-preview-head { border-color: #587082; padding-bottom: 12px; margin-bottom: 12px; }
+.airport-home .hero-lowest-preview-head > span { color: #fff; font-weight: 600; }
+.airport-home .hero-lowest-preview-head .text-link { color: #f2c94c; }
+.airport-home .hero-lowest-preview-card { background: #1c3445; border-color: #587082; border-radius: 6px; padding: 12px; }
+.airport-home .hero-lowest-preview-card:hover { background: #2b465a; }
+.airport-home .hero-lowest-preview-card strong { color: #fff; font-weight: 600; white-space: normal; line-height: 1.5; }
+.airport-home .hero-lowest-preview-card small { color: #f2c94c; white-space: normal; line-height: 1.6; font-variant-numeric: tabular-nums; }
+.airport-home .hero-meta-line { color: #c1d0db; margin-top: 14px; line-height: 1.7; }
+.airport-home .page-section { padding-top: 32px; padding-bottom: 24px; }
+.airport-home .today-lowest-section { border-bottom: 1px solid #d5dde2; }
+.airport-home .section-title, .airport-home .card-title { font-weight: 700; }
+.airport-home .today-lowest-grid { gap: 12px; }
+.airport-home .today-lowest-card { background: #fff; padding: 14px; border-radius: 8px; border-color: #d5dde2; border-top: 3px solid #174f70; }
+.airport-home .today-lowest-image, .airport-home .today-lowest-image img { min-height: 104px; height: 104px; }
+.airport-home .today-lowest-card .card-title { font-size: 14px; line-height: 1.5; white-space: normal; }
+.airport-home .today-lowest-price { color: #174f70; font-size: 15px; font-weight: 700; white-space: normal; font-variant-numeric: tabular-nums; }
+.airport-home .today-lowest-time { font-size: 12px; line-height: 1.5; white-space: normal; }
+.airport-home .weekly-benefit-banner { background: #fff; border-left: 6px solid #f2c94c; border-radius: 8px; padding: 20px; }
+.airport-home .weekly-benefit-banner > span:not(.text-link) { white-space: normal; line-height: 1.6; }
+.airport-home a:focus-visible, .airport-home button:focus-visible { outline: 3px solid #d39000; outline-offset: 4px; }
+@media(max-width:1000px) { .airport-home .today-lowest-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media(max-width:640px) {
+ .airport-home .hero { padding: 28px 0 20px; }
+ .airport-home .hero-lowest-preview { padding: 12px; }
+ .airport-home .hero-lowest-preview-list { display: grid; grid-template-columns: 1fr; overflow: visible; }
+ .airport-home .hero-lowest-preview-card { min-width: 0; }
+ .airport-home .today-lowest-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ .airport-home .weekly-benefit-banner { grid-template-columns: 1fr; gap: 8px; }
+ .airport-home .hero-chip-strip { align-items: flex-start; }
+}
