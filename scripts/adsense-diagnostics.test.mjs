@@ -7,11 +7,11 @@ import ts from 'typescript';
 import * as policy from '../src/lib/adsense-policy.mjs';
 const require = createRequire(import.meta.url);
 
-async function mount(host, fail = false) {
+async function mount(host, fail = false, serverSnapshot = false) {
   const effects=[], diagnostics=[], resize=[], mutations=[];
   const attributes=new Map();let pushes=0, loads=0, ref=0, state=0;
   const element={isConnected:true,getAttribute:key=>attributes.get(key)??null,getBoundingClientRect:()=>({width:320,height:280})};
-  const react={useRef:()=>({current:ref++===0?element:element}),useState:initial=>[++state===1?initial:'waiting', state===1?()=>{}:value=>diagnostics.push(value)],useEffect:fn=>effects.push(fn),useSyncExternalStore:(_,snapshot)=>snapshot()};
+  const react={useRef:()=>({current:ref++===0?element:element}),useState:initial=>[++state===1?initial:'waiting', state===1?()=>{}:value=>diagnostics.push(value)],useEffect:fn=>effects.push(fn),useSyncExternalStore:(_,snapshot,server)=>serverSnapshot?server():snapshot()};
   const exports={};
   const code=ts.transpileModule(fs.readFileSync('src/components/ad-banner.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX}}).outputText;
   vm.runInNewContext(code,{exports,require:id=>id==='react'?react:id==='next/navigation'?{usePathname:()=>'/product/test'}:id.includes('adsense-policy')?policy:id.includes('adsense-browser')?{loadAdSense:()=>{loads++;return Promise.resolve();}}:require(id),window:{location:{hostname:host},adsbygoogle:{push:()=>{pushes++;if(fail)throw Error('ad failure');}}},ResizeObserver:class{constructor(fn){resize.push(fn);}observe(){}disconnect(){}},IntersectionObserver:class{constructor(fn){this.fn=fn;}observe(){this.fn([{isIntersecting:true}]);}disconnect(){}},MutationObserver:class{constructor(fn){mutations.push(fn);}observe(){}disconnect(){}}});
@@ -29,4 +29,13 @@ test('diagnostics distinguish errors and filled state without retrying the submi
 test('preview diagnostics do not call the loader or push ads',async()=>{
   const preview=await mount('127.0.0.1');assert.deepEqual(preview.counts(),{pushes:0,loads:0});
   assert.equal(preview.tree.props['data-ad-state'],'preview-blocked');preview.cleanup();
+});
+test('initial server snapshot reserves space without showing a development placeholder or requesting ads',async()=>{
+ const initial=await mount('www.dfmoa.com',false,true);
+ assert.deepEqual(initial.counts(),{pushes:0,loads:0});
+ assert.equal(initial.tree.props.children[1].props.children,null);
+ initial.cleanup();
+ const preview=await mount('localhost');
+ assert.equal(preview.tree.props.children[1].props.children.props.className,'ad-banner__placeholder');
+ preview.cleanup();
 });

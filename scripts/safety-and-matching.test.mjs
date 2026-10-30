@@ -1,10 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { isAdSenseHost,isAdContentPath,canRequestAd,markAdRequested } from '../src/lib/adsense-policy.mjs';
+import { isAdSenseHost,isAdContentPath,hasInlineTopAd,canRequestAd,markAdRequested } from '../src/lib/adsense-policy.mjs';
 import { isVerifiedProductOffer,filterVerifiedSnapshot } from '../src/lib/product-offer-validation.mjs';
 test('AdSense requires exact production hostname',()=>{
  for(const host of ['dfmoa.com','www.dfmoa.com'])assert.equal(isAdSenseHost(host),true);
  for(const host of ['localhost','127.0.0.1','dfmoa.netlify.app','deploy--dfmoa.netlify.app','dfmoa.com.evil.test','www.dfmoa.com.netlify.app',''])assert.equal(isAdSenseHost(host),false);
+});
+test('benefits has an eligible inline banner without a duplicate global top banner',()=>{
+ assert.equal(isAdContentPath('/benefits'),true);
+ assert.equal(isAdContentPath('/benefits/'),true);
+ assert.equal(isAdContentPath('/privacy/'),false);
+ assert.equal(isAdContentPath('/en/privacy/'),false);
+ assert.equal(hasInlineTopAd('/benefits'),true);
+ assert.equal(hasInlineTopAd('/benefits/'),true);
+ for(const path of ['/','/deals','/product/example'])assert.equal(hasInlineTopAd(path),false);
+ assert.equal(isAdContentPath('/benefits-admin'),false);
 });
 test('one submission per visible DOM slot, never on preview or zero-width slots',()=>{
  const element={getAttribute:()=>null,getBoundingClientRect:()=>({width:320,height:100})};

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
-import { ADSENSE_PUBLISHER, ADSENSE_SLOTS, isAdSenseHost, isAdContentPath, canRequestAd, markAdRequested } from "@/lib/adsense-policy.mjs";
+import { ADSENSE_PUBLISHER, ADSENSE_SLOTS, isAdSenseHost, isAdContentPath, hasInlineTopAd, canRequestAd, markAdRequested } from "@/lib/adsense-policy.mjs";
 import { loadAdSense } from "@/lib/adsense-browser";
 const subscribe=()=>()=>{};
 const clientMode=()=>isAdSenseHost(window.location.hostname)?"production":"preview";
@@ -41,7 +41,7 @@ export function AdBanner({placement="results",slot}:{placement?:"top"|"results";
  },[mode,eligible,adSlot,placement]);
  if(!eligible)return null;
  return <aside className={`ad-banner ad-banner--${placement}`} aria-label="Advertisement" data-ad-state={mode==='preview'?'preview-blocked':diagnostic}><span className="ad-banner__label">ADVERTISEMENT · 광고</span><div ref={box} className="ad-banner__space">
- {mode==="production" && adSlot ? <ins ref={element} className="adsbygoogle dfmoa-manual-ad" style={{display:"block",width:"100%",height:dimensions.height,minHeight:placement==="top"?90:280}} data-ad-client={ADSENSE_PUBLISHER} data-ad-slot={adSlot}/> : <div className="ad-banner__placeholder">AdSense 영역 ({dimensions.width||"가로"}×{dimensions.height})</div>}
+ {mode==="production" && adSlot ? <ins ref={element} className="adsbygoogle dfmoa-manual-ad" style={{display:"block",width:"100%",height:dimensions.height,minHeight:placement==="top"?90:280}} data-ad-client={ADSENSE_PUBLISHER} data-ad-slot={adSlot}/> : mode==="preview" ? <div className="ad-banner__placeholder">AdSense 영역 ({dimensions.width||"가로"}×{dimensions.height})</div> : null}
  </div></aside>;
 }
-export function TopAdBanner(){const path=usePathname();if(path==="/search")return null;return <div className="container"><AdBanner key={path} placement="top"/></div>;}
+export function TopAdBanner(){const path=usePathname();if(path==="/search" || hasInlineTopAd(path))return null;return <div className="container"><AdBanner key={path} placement="top"/></div>;}

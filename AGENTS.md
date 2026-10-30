@@ -14,3 +14,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 테스트와 빌드를 통과한 변경만 `release(weekly): YYYY-MM-DD`(해당 월요일) 커밋으로 공개한다. 재시도·추가 공개는 사용자의 별도 지시 없이 하지 않는다.
 - 일일 데이터 수집과 주간 정적 공개를 구분한다. 실제 관측일을 유지하고 최신 가격을 보장한다고 표현하지 않는다.
 - 정기 공개 커밋 준비는 `scripts/prepare-weekly-release.mjs --confirmed-no-published-release`를 사용한다. 이력 확인·로컬 주간 잠금·Netlify 마지막 빌드 검사 중 하나라도 확인할 수 없으면 공개를 보류한다. 잠금을 임의 삭제하거나 우회 배포하지 않는다.
+`n- 2026-10-30 사용자 “배포” 요청: release(requested-ads): 2026-10-30 공개 1회 승인. 정기 주기는 유지한다.

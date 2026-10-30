@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { AdBanner } from '@/components/ad-banner';
 import Link from '@/components/app-link';
 import { BenefitCollectionStatus } from '@/components/benefit-collection-status';
 import { BenefitEventList } from '@/components/benefit-event-list';
@@ -16,6 +17,7 @@ export default function BenefitsPage() {
     <h1 className="page-title">면세점 할인·적립금 이벤트</h1>
     <p className="page-description">롯데·신라·신세계·현대의 공식 목록에서 기간이 확인된 행사를 정리했습니다. 실제 적용 조건과 종료 여부는 각 면세점에서 확인하세요.</p>
     <p className="section-copy">최근 점검: {latest.checkedAt} · {new Set(latest.benefits.map(b=>b.storeId)).size}사 {latest.benefits.length}개 기간 확인 행사 · 회사별 실제 확인일은 아래 표를 확인하세요.</p>
+    {latest.benefits.length > 0 ? <AdBanner placement="top" /> : null}
     <BenefitCollectionStatus coverage={latest.coverage} />
     <nav aria-label="면세점별 혜택 바로가기" className="chip-row">
       {sources.map(source=><a key={source.storeId} className="text-link" href={'#benefits-'+source.storeId}>{source.name} ({latest.benefits.filter(b=>b.storeId===source.storeId).length}개)</a>)}
