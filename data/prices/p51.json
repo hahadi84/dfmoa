@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%84%B8%EC%9D%B4%EC%BD%94%20%ED%94%84%EB%A0%88%EC%82%AC%EC%A7%80%20%EC%B9%B5%ED%85%8C%EC%9D%BC%20%ED%83%80%EC%9E%84",
-      "fetchedAt": "2026-10-28T10:12:57+09:00",
+      "fetchedAt": "2026-10-30T10:51:31+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "세이코 프레사지 칵테일 타임",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%84%B8%EC%9D%B4%EC%BD%94%20%ED%94%84%EB%A0%88%EC%82%AC%EC%A7%80%20%EC%B9%B5%ED%85%8C%EC%9D%BC%20%ED%83%80%EC%9E%84",
-      "fetchedAt": "2026-10-28T01:12:58.580Z",
+      "fetchedAt": "2026-10-30T01:51:33.235Z",
       "matched_via": "original",
       "attempted_queries": [
         "세이코 프레사지 칵테일 타임",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%84%B8%EC%9D%B4%EC%BD%94%20%ED%94%84%EB%A0%88%EC%82%AC%EC%A7%80%20%EC%B9%B5%ED%85%8C%EC%9D%BC%20%ED%83%80%EC%9E%84",
-      "fetchedAt": "2026-10-28T01:12:58.580Z",
+      "fetchedAt": "2026-10-30T01:51:33.235Z",
       "matched_via": "original",
       "attempted_queries": [
         "세이코 프레사지 칵테일 타임",

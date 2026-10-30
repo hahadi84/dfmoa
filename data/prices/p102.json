@@ -3,15 +3,15 @@
   "productSlug": "sony-wh-ch720n",
   "categorySlug": "electronics",
   "query": "소니 WH-CH720N",
-  "fetchedAt": "2026-10-28T10:09:16+09:00",
-  "updatedAtLabel": "2026-10-28 10:09 기준",
+  "fetchedAt": "2026-10-30T10:47:04+09:00",
+  "updatedAtLabel": "2026-10-30 10:47 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-10-28T10:09:16+09:00",
+      "fetchedAt": "2026-10-30T10:47:04+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",
@@ -22,27 +22,27 @@
           "id": "shilla-284429000024",
           "title": "WH-CH720N/B",
           "brand": "소니",
-          "priceKrw": 161370,
-          "priceUsd": 122.01,
+          "priceKrw": 165006,
+          "priceUsd": 123.48,
           "regularUsdPrice": 147,
-          "discountRate": 17,
+          "discountRate": 16,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WH-CH720N%2FB",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/02/03/284429000024_20250203_18551025_12_284429000024_1.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-10-28T10:09:16+09:00"
+          "fetchedAt": "2026-10-30T10:47:04+09:00"
         },
         {
           "id": "shilla-284429000023",
           "title": "WH-CH720N/W",
           "brand": "소니",
-          "priceKrw": 161370,
-          "priceUsd": 122.01,
+          "priceKrw": 165006,
+          "priceUsd": 123.48,
           "regularUsdPrice": 147,
-          "discountRate": 17,
+          "discountRate": 16,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WH-CH720N%2FW",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/02/03/284429000023_20250203_18551665_12_284429000023_1.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-10-28T10:09:16+09:00"
+          "fetchedAt": "2026-10-30T10:47:04+09:00"
         }
       ],
       "error": null
@@ -52,7 +52,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-10-28T01:09:18.206Z",
+      "fetchedAt": "2026-10-30T01:47:06.007Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",
@@ -67,7 +67,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-10-28T01:09:18.206Z",
+      "fetchedAt": "2026-10-30T01:47:06.007Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",

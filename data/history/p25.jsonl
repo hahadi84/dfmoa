@@ -1,5 +1,3 @@
-{"ts":"2026-07-30T02:10:13.905Z","shilla":232613,"shinsegae":null,"lotte":null}
-{"ts":"2026-07-31T02:38:17.978Z","shilla":230058,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-01T02:37:00.260Z","shilla":228631,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-02T02:35:46.807Z","shilla":228631,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-03T02:37:40.512Z","shilla":228631,"shinsegae":null,"lotte":null}
@@ -92,3 +90,4 @@
 {"ts":"2026-10-25T23:56:04.463Z","shilla":213923,"shinsegae":null,"lotte":null}
 {"ts":"2026-10-27T01:16:18.251Z","shilla":213874,"shinsegae":null,"lotte":null}
 {"ts":"2026-10-28T01:02:22.042Z","shilla":134905,"shinsegae":null,"lotte":null}
+{"ts":"2026-10-30T10:46:00+09:00","productId":"p25","validationVersion":"exact-product-v2","shilla":136303,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-10-30T10:46:00+09:00","priceKrw":136303,"priceUsd":102,"itemId":"shilla-046131000043","title":"발렌타인 21년 700ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml"},"shinsegae":null,"lotte":null}}

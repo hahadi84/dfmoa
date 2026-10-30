@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-10-28T10:12:34+09:00",
+      "fetchedAt": "2026-10-30T10:51:09+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "마우이짐 피아히 B202",
@@ -30,7 +30,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-10-28T01:12:35.918Z",
+      "fetchedAt": "2026-10-30T01:51:10.905Z",
       "matched_via": "original",
       "attempted_queries": [
         "마우이짐 피아히 B202",
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-10-28T01:12:35.918Z",
+      "fetchedAt": "2026-10-30T01:51:10.905Z",
       "matched_via": "original",
       "attempted_queries": [
         "마우이짐 피아히 B202",

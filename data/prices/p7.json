@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
-      "fetchedAt": "2026-10-28T10:05:52+09:00",
+      "fetchedAt": "2026-10-30T10:49:14+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "젠틀몬스터 Dear 01",
@@ -32,7 +32,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
-      "fetchedAt": "2026-10-28T01:05:54.609Z",
+      "fetchedAt": "2026-10-30T01:49:16.177Z",
       "matched_via": "original",
       "attempted_queries": [
         "젠틀몬스터 Dear 01",
@@ -50,7 +50,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%A0%A0%ED%8B%80%EB%AA%AC%EC%8A%A4%ED%84%B0%20Dear%2001",
-      "fetchedAt": "2026-10-28T01:05:54.609Z",
+      "fetchedAt": "2026-10-30T01:49:16.178Z",
       "matched_via": "original",
       "attempted_queries": [
         "젠틀몬스터 Dear 01",

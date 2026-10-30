@@ -1,42 +1,12 @@
 {
-  "generatedAt": "2026-10-28T01:15:14.172Z",
-  "attemptedCount": 80,
-  "failureCount": 61,
+  "generatedAt": "2026-10-30T01:53:41.387Z",
+  "attemptedCount": 78,
+  "failureCount": 56,
   "failures": [
     {
       "productId": "p26",
       "productSlug": "johnnie-walker-blue-label-750ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p19",
-      "productSlug": "hera-black-cushion-15g",
-      "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p94",
-      "productSlug": "dyson-supersonic",
-      "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p20",
-      "productSlug": "kiehls-ultra-facial-cream-125ml",
-      "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p93",
-      "productSlug": "bose-quietcomfort-ultra",
-      "categorySlug": "electronics",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -46,9 +16,21 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p73",
-      "productSlug": "centrum-multivitamin",
-      "categorySlug": "health",
+      "productId": "p19",
+      "productSlug": "hera-black-cushion-15g",
+      "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p93",
+      "productSlug": "bose-quietcomfort-ultra",
+      "categorySlug": "electronics",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -70,20 +52,20 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p7",
-      "productSlug": "gentle-monster-dear-01",
-      "categorySlug": "eyewear",
+      "productId": "p94",
+      "productSlug": "dyson-supersonic",
+      "categorySlug": "electronics",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p5",
-      "productSlug": "glenfiddich-15-700ml",
-      "categorySlug": "liquor",
+      "productId": "p22",
+      "productSlug": "shiseido-ultimune-75ml",
+      "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p57",
-      "productSlug": "hamilton-khaki-field-mechanical",
+      "productId": "p53",
+      "productSlug": "tissot-prx-powermatic-80",
       "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -91,24 +73,6 @@
       "productId": "p2",
       "productSlug": "jo-malone-english-pear-100ml",
       "categorySlug": "perfume",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p21",
-      "productSlug": "la-mer-moisturizing-cream-60ml",
-      "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p72",
-      "productSlug": "orthomol-immun",
-      "categorySlug": "health",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p8",
-      "productSlug": "rayban-wayfarer-rb2140",
-      "categorySlug": "eyewear",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -124,8 +88,14 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p22",
-      "productSlug": "shiseido-ultimune-75ml",
+      "productId": "p20",
+      "productSlug": "kiehls-ultra-facial-cream-125ml",
+      "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p21",
+      "productSlug": "la-mer-moisturizing-cream-60ml",
       "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -133,6 +103,12 @@
       "productId": "p23",
       "productSlug": "biotherm-life-plankton-125ml",
       "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p5",
+      "productSlug": "glenfiddich-15-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -157,12 +133,6 @@
       "productId": "p31",
       "productSlug": "hennessy-xo-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p42",
-      "productSlug": "tumi-alpha-bravo-backpack",
-      "categorySlug": "fashion",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -220,6 +190,18 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p7",
+      "productSlug": "gentle-monster-dear-01",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p8",
+      "productSlug": "rayban-wayfarer-rb2140",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p33",
       "productSlug": "oakley-sutro-oo9406",
       "categorySlug": "eyewear",
@@ -268,14 +250,14 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p53",
-      "productSlug": "tissot-prx-powermatic-80",
+      "productId": "p54",
+      "productSlug": "casio-g-shock-ga-2100",
       "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p54",
-      "productSlug": "casio-g-shock-ga-2100",
+      "productId": "p57",
+      "productSlug": "hamilton-khaki-field-mechanical",
       "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -310,12 +292,6 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p67",
-      "productSlug": "swarovski-swan-necklace",
-      "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p68",
       "productSlug": "pandora-sparkling-charm",
       "categorySlug": "jewelry",
@@ -337,12 +313,6 @@
       "productId": "p70",
       "productSlug": "goldendew-diamond-necklace",
       "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p81",
-      "productSlug": "godiva-gold-collection",
-      "categorySlug": "food",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {

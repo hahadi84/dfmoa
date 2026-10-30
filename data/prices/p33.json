@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%98%A4%ED%81%B4%EB%A6%AC%20%EC%88%98%ED%8A%B8%EB%A1%9C%20OO9406",
-      "fetchedAt": "2026-10-28T10:11:12+09:00",
+      "fetchedAt": "2026-10-30T10:49:51+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "오클리 수트로 OO9406",
@@ -30,7 +30,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%98%A4%ED%81%B4%EB%A6%AC%20%EC%88%98%ED%8A%B8%EB%A1%9C%20OO9406",
-      "fetchedAt": "2026-10-28T01:11:13.483Z",
+      "fetchedAt": "2026-10-30T01:49:52.850Z",
       "matched_via": "original",
       "attempted_queries": [
         "오클리 수트로 OO9406",
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%98%A4%ED%81%B4%EB%A6%AC%20%EC%88%98%ED%8A%B8%EB%A1%9C%20OO9406",
-      "fetchedAt": "2026-10-28T01:11:13.483Z",
+      "fetchedAt": "2026-10-30T01:49:52.850Z",
       "matched_via": "original",
       "attempted_queries": [
         "오클리 수트로 OO9406",

@@ -1,33 +1,66 @@
 {
   "productId": "p81",
+  "productSlug": "godiva-gold-collection",
+  "categorySlug": "food",
   "query": "고디바 골드 컬렉션 15조각",
-  "fetchedAt": "2026-10-28T18:49:03+09:00",
-  "updatedAtLabel": "2026-10-28 18:49 기준",
+  "fetchedAt": "2026-10-30T10:53:03+09:00",
+  "updatedAtLabel": "2026-10-30 10:53 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B3%A0%EB%94%94%EB%B0%94%20%EA%B3%A8%EB%93%9C%20%EC%BB%AC%EB%A0%89%EC%85%98",
-      "fetchedAt": "2026-10-28T18:49:03+09:00",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B3%A0%EB%94%94%EB%B0%94%20%EA%B3%A8%EB%93%9C%20%EC%BB%AC%EB%A0%89%EC%85%98%2015%EC%A1%B0%EA%B0%81",
+      "fetchedAt": "2026-10-30T10:53:03+09:00",
+      "matched_via": "original",
+      "attempted_queries": [
+        "고디바 골드 컬렉션 15조각",
+        "고디바골드컬렉션15조각"
+      ],
       "items": [
         {
           "id": "shilla-056427000460",
           "title": "골드 컬렉션 15조각",
           "brand": "고디바",
-          "priceKrw": 38554,
+          "priceKrw": 38953,
           "priceUsd": 29.15,
           "regularUsdPrice": 53,
           "discountRate": 45,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B3%A8%EB%93%9C%20%EC%BB%AC%EB%A0%89%EC%85%98%2015%EC%A1%B0%EA%B0%81",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2026/01/29/056427000460_20260129_16324624_12_056427000460_1.JPG",
-          "matchScore": 43,
-          "fetchedAt": "2026-10-28T18:49:03+09:00"
+          "matchScore": 59,
+          "fetchedAt": "2026-10-30T10:53:03+09:00"
         }
       ],
       "error": null
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B3%A0%EB%94%94%EB%B0%94%20%EA%B3%A8%EB%93%9C%20%EC%BB%AC%EB%A0%89%EC%85%98%2015%EC%A1%B0%EA%B0%81",
+      "fetchedAt": "2026-10-30T01:53:05.104Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "고디바 골드 컬렉션 15조각",
+        "Godiva Gold Collection 15조각"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B3%A0%EB%94%94%EB%B0%94%20%EA%B3%A8%EB%93%9C%20%EC%BB%AC%EB%A0%89%EC%85%98%2015%EC%A1%B0%EA%B0%81",
+      "fetchedAt": "2026-10-30T01:53:05.104Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "고디바 골드 컬렉션 15조각",
+        "Godiva Gold Collection 15조각"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
     }
-  },
-  "productSlug": "godiva-gold-collection",
-  "categorySlug": "food"
+  }
 }

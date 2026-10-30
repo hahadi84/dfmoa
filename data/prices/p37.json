@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
-      "fetchedAt": "2026-10-28T10:04:43+09:00",
+      "fetchedAt": "2026-10-30T10:42:05+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",
@@ -30,7 +30,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
-      "fetchedAt": "2026-10-28T01:04:45.052Z",
+      "fetchedAt": "2026-10-30T01:42:06.641Z",
       "matched_via": "original",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%85%80%EB%A6%B0%EB%8A%90%20%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84%20CL40194U",
-      "fetchedAt": "2026-10-28T01:04:45.052Z",
+      "fetchedAt": "2026-10-30T01:42:06.641Z",
       "matched_via": "original",
       "attempted_queries": [
         "셀린느 트리옹프 CL40194U",

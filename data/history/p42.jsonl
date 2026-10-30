@@ -1,5 +1,3 @@
-{"ts":"2026-07-30T02:10:13.905Z","shilla":612285,"shinsegae":null,"lotte":null}
-{"ts":"2026-07-31T02:38:17.978Z","shilla":605562,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-01T02:37:00.260Z","shilla":601803,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-02T02:35:46.807Z","shilla":601803,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-03T02:37:40.512Z","shilla":601803,"shinsegae":null,"lotte":null}
@@ -92,3 +90,4 @@
 {"ts":"2026-10-25T23:56:04.463Z","shilla":null,"shinsegae":null,"lotte":null}
 {"ts":"2026-10-27T01:16:18.251Z","shilla":null,"shinsegae":null,"lotte":null}
 {"ts":"2026-10-28T01:02:22.042Z","shilla":null,"shinsegae":null,"lotte":null}
+{"ts":"2026-10-30T10:47:11+09:00","productId":"p42","validationVersion":"exact-product-v2","shilla":558039,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-10-30T10:47:11+09:00","priceKrw":558039,"priceUsd":417.6,"itemId":"shilla-031914003129","title":"ALPHA BRAVO 알파 브라보 내비게이션 백팩 블랙","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=ALPHA%20BRAVO%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%20%EB%B0%B1%ED%8C%A9%20%EB%B8%94%EB%9E%99"},"shinsegae":null,"lotte":null}}
