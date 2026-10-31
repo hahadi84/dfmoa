@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-10-30T10:47:49+09:00",
+      "fetchedAt": "2026-10-31T10:35:14+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",
@@ -30,7 +30,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-10-30T01:47:51.248Z",
+      "fetchedAt": "2026-10-31T01:35:16.435Z",
       "matched_via": "original",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%B1%EC%83%B4%20%EB%A5%B4%20%ED%94%8C%EB%A6%AC%EC%95%84%EC%A5%AC%20%EB%AF%B8%EB%94%94%EC%97%84",
-      "fetchedAt": "2026-10-30T01:47:51.248Z",
+      "fetchedAt": "2026-10-31T01:35:16.435Z",
       "matched_via": "original",
       "attempted_queries": [
         "롱샴 르 플리아쥬 미디엄",

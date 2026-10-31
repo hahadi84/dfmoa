@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T01:53:41.387Z",
+  "generatedAt": "2026-10-31T01:41:19.430Z",
   "attemptedCount": 78,
   "failureCount": 56,
   "failures": [
@@ -13,12 +13,6 @@
       "productId": "p37",
       "productSlug": "celine-triomphe-cl40194u",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p19",
-      "productSlug": "hera-black-cushion-15g",
-      "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -55,6 +49,12 @@
       "productId": "p94",
       "productSlug": "dyson-supersonic",
       "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p19",
+      "productSlug": "hera-black-cushion-15g",
+      "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {

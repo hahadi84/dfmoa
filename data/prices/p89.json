@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%95%84%EC%BB%A4%20%EC%BD%B0%EB%93%9C%EB%9D%BC%ED%8B%B0%EB%8B%88",
-      "fetchedAt": "2026-10-30T10:53:35+09:00",
+      "fetchedAt": "2026-10-31T10:41:12+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "로아커 콰드라티니",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A1%9C%EC%95%84%EC%BB%A4%20%EC%BD%B0%EB%93%9C%EB%9D%BC%ED%8B%B0%EB%8B%88",
-      "fetchedAt": "2026-10-30T01:53:36.384Z",
+      "fetchedAt": "2026-10-31T01:41:14.425Z",
       "matched_via": "original",
       "attempted_queries": [
         "로아커 콰드라티니",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%9C%EC%95%84%EC%BB%A4%20%EC%BD%B0%EB%93%9C%EB%9D%BC%ED%8B%B0%EB%8B%88",
-      "fetchedAt": "2026-10-30T01:53:36.384Z",
+      "fetchedAt": "2026-10-31T01:41:14.425Z",
       "matched_via": "original",
       "attempted_queries": [
         "로아커 콰드라티니",

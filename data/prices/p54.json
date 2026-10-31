@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
-      "fetchedAt": "2026-10-30T10:51:38+09:00",
+      "fetchedAt": "2026-10-31T10:39:13+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "카시오 지샥 GA-2100",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
-      "fetchedAt": "2026-10-30T01:51:40.494Z",
+      "fetchedAt": "2026-10-31T01:39:15.300Z",
       "matched_via": "original",
       "attempted_queries": [
         "카시오 지샥 GA-2100",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
-      "fetchedAt": "2026-10-30T01:51:40.494Z",
+      "fetchedAt": "2026-10-31T01:39:15.300Z",
       "matched_via": "original",
       "attempted_queries": [
         "카시오 지샥 GA-2100",
