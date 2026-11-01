@@ -18,7 +18,7 @@ export function allowWeeklyBuild({ subject, context, currentCommit, previousComm
   const adsRequested = korean.toISOString().slice(0, 10) === '2026-10-30' && subject === 'release(requested-ads): 2026-10-30';
   const airportRequested = korean.toISOString().slice(0, 10) === '2026-10-31' && subject === 'release(requested-airport): 2026-10-31';
   const searchAdRequested = korean.toISOString().slice(0, 10) === '2026-11-01' && subject === 'release(requested-search-ad): 2026-11-01';
-  const unifiedAirportRequested = korean.toISOString().slice(0, 10) === '2026-11-02' && subject === 'release(requested-airport-all): 2026-11-02';
+  const unifiedAirportRequested = korean.toISOString().slice(0, 10) === '2026-11-02' && ['release(requested-airport-all): 2026-11-02', 'release(requested-airport-font-fix): 2026-11-02'].includes(subject);
   return context === 'production' && (scheduled || requested || adsRequested || airportRequested || searchAdRequested || unifiedAirportRequested) &&
     /^[a-f0-9]{40}$/i.test(currentCommit ?? '') &&
     /^[a-f0-9]{40}$/i.test(previousCommit ?? '') && previousCommit !== currentCommit &&

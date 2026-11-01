@@ -69,3 +69,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .search-form { gap: 12px; }
 }
 .airport-home .hero-search-terms > span { color: #cad7e0; }
+
+/* System fonts keep production builds independent of external font downloads. */
+:root { --font-body: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; --font-ibm-mono: Consolas, "SFMono-Regular", monospace; }

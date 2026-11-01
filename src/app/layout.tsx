@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { TopAdBanner } from "@/components/ad-banner";
 import "./adsense.css";
 import "./brand.css";
-import { IBM_Plex_Mono, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import "./airport-theme.css";
 import { GoogleAnalytics } from "@/components/google-analytics";
@@ -14,17 +13,6 @@ import { SITE_OPERATOR } from "@/lib/site-operator";
 const GA_TAG_ID = process.env.NEXT_PUBLIC_GA_TAG_ID ?? SITE_OPERATOR.analyticsTagId;
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? SITE_OPERATOR.analyticsMeasurementId;
 
-const notoSansKr = Noto_Sans_KR({
-  variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_OPERATOR.serviceUrl),
@@ -69,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${notoSansKr.variable} ${plexMono.variable}`}>
+    <html lang="ko" >
       <head>
         <link
           rel="alternate"
