@@ -1,24 +1,23 @@
 {
-  "generatedAt": "2026-10-31T01:41:19.427Z",
-  "generatedAtKst": "2026-10-31 10:41:19",
+  "generatedAt": "2026-11-01T01:00:47.990Z",
+  "generatedAtKst": "2026-11-01 10:00:47",
   "requiredTotal": 40,
-  "searchDemandGeneratedAt": "2026-10-31T01:28:21.128Z",
+  "searchDemandGeneratedAt": "2026-11-01T00:48:00.841Z",
   "prioritizedSlugs": [
     "sulwhasoo-first-care-serum-90ml",
     "johnnie-walker-blue-label-750ml",
+    "celine-triomphe-cl40194u",
     "royal-salute-21-700ml",
     "aesop-resurrection-hand-balm-75ml",
-    "celine-triomphe-cl40194u",
-    "estee-lauder-anr-100ml",
-    "hibiki-harmony-700ml",
     "bose-quietcomfort-ultra",
     "citizen-tsuyosa-nj015",
     "creed-aventus-50ml",
     "dior-sauvage-edp-100ml",
     "diptyque-do-son-75ml",
     "don-julio-1942-750ml",
-    "dyson-supersonic",
+    "estee-lauder-anr-100ml",
     "hera-black-cushion-15g",
+    "hibiki-harmony-700ml",
     "shiseido-ultimune-75ml",
     "sony-wf-1000xm5",
     "sony-wh-1000xm5",
@@ -41,19 +40,18 @@
   "attempted": [
     "sulwhasoo-first-care-serum-90ml",
     "johnnie-walker-blue-label-750ml",
+    "celine-triomphe-cl40194u",
     "royal-salute-21-700ml",
     "aesop-resurrection-hand-balm-75ml",
-    "celine-triomphe-cl40194u",
-    "estee-lauder-anr-100ml",
-    "hibiki-harmony-700ml",
     "bose-quietcomfort-ultra",
     "citizen-tsuyosa-nj015",
     "creed-aventus-50ml",
     "dior-sauvage-edp-100ml",
     "diptyque-do-son-75ml",
     "don-julio-1942-750ml",
-    "dyson-supersonic",
+    "estee-lauder-anr-100ml",
     "hera-black-cushion-15g",
+    "hibiki-harmony-700ml",
     "shiseido-ultimune-75ml",
     "sony-wf-1000xm5",
     "sony-wh-1000xm5",
@@ -124,7 +122,7 @@
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:28:21+09:00",
+      "fetchedAt": "2026-11-01T09:48:01+09:00",
       "priceKrw": 89305,
       "priceUsd": 66.88
     },
@@ -133,7 +131,7 @@
       "productSlug": "royal-salute-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:28:55+09:00",
+      "fetchedAt": "2026-11-01T09:48:53+09:00",
       "priceKrw": 145708,
       "priceUsd": 109.12
     },
@@ -142,25 +140,16 @@
       "productSlug": "aesop-resurrection-hand-balm-75ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:29:03+09:00",
-      "priceKrw": 30645,
-      "priceUsd": 22.95
-    },
-    {
-      "productId": "p17",
-      "productSlug": "estee-lauder-anr-100ml",
-      "categorySlug": "beauty",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:29:27+09:00",
-      "priceKrw": 132862,
-      "priceUsd": 99.5
+      "fetchedAt": "2026-11-01T09:48:59+09:00",
+      "priceKrw": 36053,
+      "priceUsd": 27
     },
     {
       "productId": "p1",
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:30:16+09:00",
+      "fetchedAt": "2026-11-01T09:49:25+09:00",
       "priceKrw": 380561,
       "priceUsd": 285
     },
@@ -169,43 +158,52 @@
       "productSlug": "don-julio-1942-750ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:30:43+09:00",
+      "fetchedAt": "2026-11-01T09:49:52+09:00",
       "priceKrw": 228336,
       "priceUsd": 171
+    },
+    {
+      "productId": "p17",
+      "productSlug": "estee-lauder-anr-100ml",
+      "categorySlug": "beauty",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-01T09:49:59+09:00",
+      "priceKrw": 142330,
+      "priceUsd": 106.59
     },
     {
       "productId": "p101",
       "productSlug": "sony-wf-1000xm5",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:31:12+09:00",
-      "priceKrw": 263588,
-      "priceUsd": 197.4
+      "fetchedAt": "2026-11-01T09:50:41+09:00",
+      "priceKrw": 251036,
+      "priceUsd": 188
     },
     {
       "productId": "p92",
       "productSlug": "sony-wh-1000xm5",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:31:19+09:00",
-      "priceKrw": 339967,
-      "priceUsd": 254.6
+      "fetchedAt": "2026-11-01T09:50:48+09:00",
+      "priceKrw": 331021,
+      "priceUsd": 247.9
     },
     {
       "productId": "p67",
       "productSlug": "swarovski-swan-necklace",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:31:27+09:00",
-      "priceKrw": 153292,
-      "priceUsd": 114.8
+      "fetchedAt": "2026-11-01T09:50:55+09:00",
+      "priceKrw": 166378,
+      "priceUsd": 124.6
     },
     {
       "productId": "p10",
       "productSlug": "byredo-blanche-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:31:49+09:00",
+      "fetchedAt": "2026-11-01T09:51:17+09:00",
       "priceKrw": 287156,
       "priceUsd": 215.05
     },
@@ -214,7 +212,7 @@
       "productSlug": "le-labo-santal-33-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:31:55+09:00",
+      "fetchedAt": "2026-11-01T09:51:24+09:00",
       "priceKrw": 251170,
       "priceUsd": 188.1
     },
@@ -223,7 +221,7 @@
       "productSlug": "bleu-de-chanel-edp-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:32:03+09:00",
+      "fetchedAt": "2026-11-01T09:51:31+09:00",
       "priceKrw": 204301,
       "priceUsd": 153
     },
@@ -232,16 +230,16 @@
       "productSlug": "tom-ford-oud-wood-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:32:11+09:00",
-      "priceKrw": 219924,
-      "priceUsd": 164.7
+      "fetchedAt": "2026-11-01T09:51:38+09:00",
+      "priceKrw": 230513,
+      "priceUsd": 172.63
     },
     {
       "productId": "p15",
       "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:32:18+09:00",
+      "fetchedAt": "2026-11-01T09:51:45+09:00",
       "priceKrw": 118975,
       "priceUsd": 89.1
     },
@@ -250,7 +248,7 @@
       "productSlug": "lancome-genifique-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:32:44+09:00",
+      "fetchedAt": "2026-11-01T09:52:11+09:00",
       "priceKrw": 169183,
       "priceUsd": 126.7
     },
@@ -259,7 +257,7 @@
       "productSlug": "ballantines-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:33:23+09:00",
+      "fetchedAt": "2026-11-01T09:52:50+09:00",
       "priceKrw": 136201,
       "priceUsd": 102
     },
@@ -268,16 +266,16 @@
       "productSlug": "sony-wh-ch720n",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:34:28+09:00",
-      "priceKrw": 164883,
-      "priceUsd": 123.48
+      "fetchedAt": "2026-11-01T09:53:55+09:00",
+      "priceKrw": 145254,
+      "priceUsd": 108.78
     },
     {
       "productId": "p42",
       "productSlug": "tumi-alpha-bravo-backpack",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:34:35+09:00",
+      "fetchedAt": "2026-11-01T09:54:01+09:00",
       "priceKrw": 557621,
       "priceUsd": 417.6
     },
@@ -286,7 +284,7 @@
       "productSlug": "solgar-vitamin-d3",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:36:03+09:00",
+      "fetchedAt": "2026-11-01T09:55:30+09:00",
       "priceKrw": 22032,
       "priceUsd": 16.5
     },
@@ -295,7 +293,7 @@
       "productSlug": "gnc-mega-men-sport-180-tablets",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:36:10+09:00",
+      "fetchedAt": "2026-11-01T09:55:37+09:00",
       "priceKrw": 65697,
       "priceUsd": 49.2
     },
@@ -304,7 +302,7 @@
       "productSlug": "kgc-everytime-royal",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:36:18+09:00",
+      "fetchedAt": "2026-11-01T09:55:45+09:00",
       "priceKrw": 96475,
       "priceUsd": 72.25
     },
@@ -313,7 +311,7 @@
       "productSlug": "godiva-gold-collection",
       "categorySlug": "food",
       "sourceId": "shilla",
-      "fetchedAt": "2026-10-31T10:40:39+09:00",
+      "fetchedAt": "2026-11-01T10:00:07+09:00",
       "priceKrw": 38924,
       "priceUsd": 29.15
     },
@@ -331,16 +329,6 @@
       "productId": "p37",
       "productSlug": "celine-triomphe-cl40194u",
       "categorySlug": "eyewear",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
-      "categorySlug": "liquor",
       "sourceId": null,
       "fetchedAt": null,
       "priceKrw": null,
@@ -371,6 +359,16 @@
       "productId": "p19",
       "productSlug": "hera-black-cushion-15g",
       "categorySlug": "beauty",
+      "sourceId": null,
+      "fetchedAt": null,
+      "priceKrw": null,
+      "priceUsd": null,
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
       "sourceId": null,
       "fetchedAt": null,
       "priceKrw": null,
@@ -512,12 +510,6 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p93",
       "productSlug": "bose-quietcomfort-ultra",
       "categorySlug": "electronics",
@@ -542,15 +534,15 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p94",
-      "productSlug": "dyson-supersonic",
-      "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p19",
       "productSlug": "hera-black-cushion-15g",
       "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {

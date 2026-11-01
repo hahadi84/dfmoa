@@ -1,35 +1,27 @@
 {
-  "generatedAt": "2026-10-31T01:28:21.128Z",
+  "generatedAt": "2026-11-01T00:48:00.841Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "sulwhasoo-first-care-serum-90ml",
-      "count": 10
+      "count": 8
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 4
-    },
-    {
-      "productSlug": "royal-salute-21-700ml",
-      "count": 3
-    },
-    {
-      "productSlug": "aesop-resurrection-hand-balm-75ml",
-      "count": 2
+      "count": 5
     },
     {
       "productSlug": "celine-triomphe-cl40194u",
       "count": 2
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
+      "productSlug": "royal-salute-21-700ml",
       "count": 2
     },
     {
-      "productSlug": "hibiki-harmony-700ml",
-      "count": 2
+      "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "count": 1
     },
     {
       "productSlug": "bose-quietcomfort-ultra",
@@ -56,11 +48,15 @@
       "count": 1
     },
     {
-      "productSlug": "dyson-supersonic",
+      "productSlug": "estee-lauder-anr-100ml",
       "count": 1
     },
     {
       "productSlug": "hera-black-cushion-15g",
+      "count": 1
+    },
+    {
+      "productSlug": "hibiki-harmony-700ml",
       "count": 1
     },
     {
