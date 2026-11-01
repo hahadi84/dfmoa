@@ -4,6 +4,7 @@ import "./adsense.css";
 import "./brand.css";
 import { IBM_Plex_Mono, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
+import "./airport-theme.css";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -16,7 +17,7 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? SITE_OPER
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
+  weight: ["400", "500", "700"],
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -50,9 +51,9 @@ export const metadata: Metadata = {
     images: [absoluteSiteUrl(DEFAULT_OG_IMAGE)],
   },
   icons: {
-    icon: [{ url: "/icon.svg?v=20261025", type: "image/svg+xml" }, {url:"/brand/icon-32.png?v=20261025",sizes:"32x32",type:"image/png"}],
-    shortcut: "/favicon.ico?v=20261025",
-    apple: "/apple-touch-icon.png?v=20261025",
+    icon: [{ url: "/icon.svg?v=20261102", type: "image/svg+xml" }, {url:"/brand/icon-32.png?v=20261102",sizes:"32x32",type:"image/png"}],
+    shortcut: "/favicon.ico?v=20261102",
+    apple: "/apple-touch-icon.png?v=20261102",
   },
   verification: {
     other: {

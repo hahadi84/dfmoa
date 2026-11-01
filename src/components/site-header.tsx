@@ -1,4 +1,6 @@
 "use client";
+import { AirportNavigation } from "@/components/airport-navigation";
+
 import { BrandMark } from "@/components/brand-mark";
 
 import { usePathname } from "next/navigation";
@@ -9,7 +11,7 @@ export function SiteHeader() {
   const path = usePathname();
   if (path === "/ja" || path.startsWith("/ja/")) return <TravelerHeader locale="ja" path={path}/>;
   if (path === "/zh" || path.startsWith("/zh/")) return <TravelerHeader locale="zh" path={path}/>;
-  if (path === "/en" || path.startsWith("/en/")) return <header className="topbar" lang="en"><div className="container topbar-inner"><Link className="brand" href="/en"><BrandMark/><span className="brand-copy"><strong>DFMOA</strong><span>Korea duty-free comparison</span></span></Link><nav className="topnav" aria-label="Main navigation"><Link href="/en">Compare products</Link><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup</Link><Link href="/en/compare">Duty free vs tax refund</Link><LanguageLinks path={path}/></nav></div></header>;
+  if (path === "/en" || path.startsWith("/en/")) return <header className="topbar" lang="en"><div className="container topbar-inner"><Link className="brand" href="/en"><BrandMark/><span className="brand-copy"><strong>DFMOA</strong><span>Korea duty-free comparison</span></span></Link><AirportNavigation label="Main navigation" menuLabel="Menu"><Link href="/en">Compare products</Link><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup</Link><Link href="/en/compare">Duty free vs tax refund</Link><LanguageLinks path={path}/></AirportNavigation></div></header>;
 
   return (
     <header className="topbar">
@@ -22,7 +24,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="topnav" aria-label="주요 메뉴">
+        <AirportNavigation label="주요 메뉴" menuLabel="메뉴">
           <Link href="/price-compare">가격 비교하기</Link>
           <Link href="/methodology">비교 기준</Link>
           <Link href="/category">카테고리</Link>
@@ -35,7 +37,7 @@ export function SiteHeader() {
           <Link href="/en" lang="en">English</Link>
           <Link href="/ja" lang="ja">日本語</Link>
           <Link href="/zh" lang="zh-Hans">简体中文</Link>
-        </nav>
+        </AirportNavigation>
       </div>
     </header>
   );

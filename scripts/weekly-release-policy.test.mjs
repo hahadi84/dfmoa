@@ -56,3 +56,11 @@ test('separate benefits publication requires the specifically approved subject a
   assert.equal(allowWeeklyBuild(input),true);
   for(const override of [{earlierReleaseThisWeek:true},{previousSubject:input.subject},{now:new Date('2026-10-29T15:00:00Z')},{context:'deploy-preview'},{subject:'release(requested-benefits): 2026-10-30'}])assert.equal(allowWeeklyBuild({...input,...override}),false);
 });
+
+test('all-page airport release requires the approved date, subject and production context', () => {
+  const input = { subject: 'release(requested-airport-all): 2026-11-02', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'release(requested-search-ad): 2026-11-01', now: new Date('2026-11-01T17:00:00Z') };
+  assert.equal(allowWeeklyBuild(input), true);
+  assert.equal(allowWeeklyBuild({ ...input, now: new Date('2026-11-02T17:00:00Z') }), false);
+  assert.equal(allowWeeklyBuild({ ...input, context: 'deploy-preview' }), false);
+  assert.equal(allowWeeklyBuild({ ...input, earlierReleaseThisWeek: true }), false);
+});

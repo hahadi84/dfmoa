@@ -1,0 +1,71 @@
+/* Shared airport wayfinding system. Loaded after the base component styles. */
+:root, :root[data-theme], :root:not([data-theme="light"]) {
+  color-scheme: light;
+  --airport-navy: #142838;
+  --airport-yellow: #f2c94c;
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f4f6f7;
+  --color-bg-muted: #eaf0f3;
+  --color-border: #d5dde2;
+  --color-border-strong: #9cabb6;
+  --color-text: #142838;
+  --color-text-secondary: #374e5e;
+  --color-text-muted: #526776;
+  --color-accent: #174f70;
+  --color-accent-hover: #123e58;
+  --color-accent-subtle: #e8f1f6;
+  --color-accent-border: #b8cedc;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 8px;
+}
+body { background: var(--color-bg-subtle); }
+.topbar { background: #142838f5; border-bottom: 4px solid var(--airport-yellow); }
+.topbar-inner { min-height: 76px; gap: 24px; }
+.topbar .brand-copy strong, .topbar .topnav a { color: #fff; }
+.topbar .brand-copy span { color: #cad7e0; }
+.topbar .brand { flex-shrink: 0; }
+.topnav { flex-wrap: wrap; justify-content: flex-end; gap: 4px 16px; }
+.topnav a { padding: 8px 0; }
+.topbar .topnav a:hover { color: var(--airport-yellow); }
+.airport-menu-toggle { display: none; }
+.page-section { padding-block: 36px; }
+.page-title { max-width: none; padding: 20px 24px; background: var(--airport-navy); color: #fff; border-left: 6px solid var(--airport-yellow); border-radius: 0 8px 8px 0; font-size: clamp(24px, 3vw, 34px); line-height: 1.4; }
+.page-description, .section-copy { white-space: normal; line-height: 1.7; }
+.eyebrow { letter-spacing: 0; text-transform: none; }
+.section-title, .card-title { font-weight: 700; }
+.surface-card, .panel, .guide-card, .faq-card, .feature-panel, .store-card,
+.product-card, .meta-panel, .intl-note, .intl-product-card { background: #fff; border-color: var(--color-border); border-radius: 8px; }
+.search-form { background: #fff; border-color: var(--color-border-strong); border-radius: 8px; }
+.search-button, .button, .nav-cta { min-height: 44px; background: var(--airport-yellow); color: var(--airport-navy); border-color: var(--airport-yellow); font-weight: 700; }
+.search-button:hover, .button:hover, .nav-cta:hover { background: #e7b82e; color: var(--airport-navy); border-color: #e7b82e; }
+.ghost-button, .official-link-button, .source-price-cta { min-height: 44px; background: #fff; }
+input, select, textarea { accent-color: var(--color-accent); }
+input:not([type=checkbox]):not([type=radio]), select { min-height: 44px; }
+.chip { border-radius: 6px; }
+.breadcrumb { margin-bottom: 20px; }
+.site-footer { border-top: 4px solid var(--airport-yellow); background: var(--airport-navy); color: #dce5ec; }
+.site-footer .footer-brand, .site-footer a { color: #fff; }
+.site-footer .footer-copy, .site-footer .footer-note, .site-footer .footer-operator-block,
+.site-footer .form-fine-print { color: #cad7e0; white-space: normal; }
+.site-footer input { background: #fff; color: var(--airport-navy); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #b77a00; outline-offset: 3px; }
+.topbar a:focus-visible, .topbar button:focus-visible { outline-color: var(--airport-yellow); }
+@media (max-width: 1100px) {
+  .topbar-inner { flex-direction: row; align-items: center; position: relative; min-height: 72px; }
+  .airport-menu-toggle { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px; border: 1px solid #718695; border-radius: 6px; background: transparent; color: #fff; font: inherit; cursor: pointer; }
+  .airport-navigation .topnav { display: none; }
+  .airport-navigation .topnav[data-open="true"] { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); position: absolute; top: 100%; left: 0; right: 0; max-height: 70vh; overflow-y: auto; padding: 16px; gap: 8px 16px; background: var(--airport-navy); border-bottom: 4px solid var(--airport-yellow); box-shadow: 0 4px 8px #14283820; }
+  .airport-navigation .topnav a { white-space: normal; min-height: 44px; display: flex; align-items: center; }
+}
+@media (max-width: 640px) {
+  .page-section, .page-section.is-tight { padding-block: 24px; }
+  .page-title { padding: 16px; font-size: 25px; overflow-wrap: anywhere; }
+  .page-description { font-size: 16px; }
+  .brand-copy { max-width: 210px; }
+  .brand-copy span { white-space: normal; }
+  .topbar-inner { gap: 12px; }
+  .section-title { font-size: 21px; }
+  .search-form { gap: 12px; }
+}
+.airport-home .hero-search-terms > span { color: #cad7e0; }
