@@ -9,6 +9,7 @@ import { OfferTable } from "@/components/offer-table";
 import { PriceRangeSummary } from "@/components/price-range-summary";
 import { PriceLoadingCard } from "@/components/price-loading-card";
 import { SearchForm } from "@/components/search-form";
+import { AdBanner } from "@/components/ad-banner";
 import { OfficialSourceLinks, SourcePriceStatusPanel } from "@/components/source-price-panel";
 import { StoreStatusList } from "@/components/store-status-list";
 import { buildDomesticPriceApiPath, buildSearchApiPath } from "@/lib/search-api-url";
@@ -232,6 +233,8 @@ export function SearchPageClient() {
         <p className="page-description">
           최근 확인 가능한 공개가와 공식 면세점 링크를 함께 제공합니다.
         </p>
+        {/* Keep the slot mounted across query/loading updates; never refresh it on search. */}
+        {query ? <AdBanner placement="top" /> : null}
 
         <SearchForm defaultValue={query} compact />
 
