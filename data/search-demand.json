@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T00:48:00.841Z",
+  "generatedAt": "2026-11-02T01:21:46.142Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -8,11 +8,15 @@
       "count": 8
     },
     {
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 5
+      "productSlug": "creed-aventus-50ml",
+      "count": 4
     },
     {
-      "productSlug": "celine-triomphe-cl40194u",
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 4
+    },
+    {
+      "productSlug": "diptyque-do-son-75ml",
       "count": 2
     },
     {
@@ -24,27 +28,7 @@
       "count": 1
     },
     {
-      "productSlug": "bose-quietcomfort-ultra",
-      "count": 1
-    },
-    {
-      "productSlug": "citizen-tsuyosa-nj015",
-      "count": 1
-    },
-    {
-      "productSlug": "creed-aventus-50ml",
-      "count": 1
-    },
-    {
-      "productSlug": "dior-sauvage-edp-100ml",
-      "count": 1
-    },
-    {
-      "productSlug": "diptyque-do-son-75ml",
-      "count": 1
-    },
-    {
-      "productSlug": "don-julio-1942-750ml",
+      "productSlug": "celine-triomphe-cl40194u",
       "count": 1
     },
     {
@@ -60,6 +44,18 @@
       "count": 1
     },
     {
+      "productSlug": "le-labo-santal-33-50ml",
+      "count": 1
+    },
+    {
+      "productSlug": "longines-hydroconquest",
+      "count": 1
+    },
+    {
+      "productSlug": "orthomol-immun",
+      "count": 1
+    },
+    {
       "productSlug": "shiseido-ultimune-75ml",
       "count": 1
     },
@@ -69,14 +65,6 @@
     },
     {
       "productSlug": "sony-wh-1000xm5",
-      "count": 1
-    },
-    {
-      "productSlug": "swarovski-swan-necklace",
-      "count": 1
-    },
-    {
-      "productSlug": "tissot-prx-powermatic-80",
       "count": 1
     }
   ]

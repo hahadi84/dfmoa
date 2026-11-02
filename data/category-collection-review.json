@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T01:00:47.990Z",
+  "generatedAt": "2026-11-02T01:34:49.304Z",
   "rejectedOffers": [
     {
       "productId": "p3",
@@ -9,7 +9,7 @@
       "brand": "설화수",
       "title": "윤조에센스 6세대 90ML 듀오",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:48:01+09:00",
+      "observedAt": "2026-11-02T10:21:46+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%84%A4%ED%99%94%EC%88%98%20%EC%9C%A4%EC%A1%B0%EC%97%90%EC%84%BC%EC%8A%A4%2090ml"
     },
     {
@@ -20,8 +20,19 @@
       "brand": "설화수",
       "title": "윤조에센스 6세대 90ml 단품기획세트 (홀리데이 한정세트",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:48:01+09:00",
+      "observedAt": "2026-11-02T10:21:46+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%84%A4%ED%99%94%EC%88%98%20%EC%9C%A4%EC%A1%B0%EC%97%90%EC%84%BC%EC%8A%A4%2090ml"
+    },
+    {
+      "productId": "p9",
+      "categorySlug": "perfume",
+      "store": "shilla",
+      "sourceItemId": "shilla-064113000796",
+      "brand": "딥티크",
+      "title": "오 드 뚜왈렛 디스커버리 세트 5종",
+      "reason": "bundle_or_refill",
+      "observedAt": "2026-11-02T10:22:35+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%94%A5%EB%94%94%ED%81%AC%20%EB%8F%84%EC%86%90%20%EC%98%A4%EB%93%9C%EB%9A%9C%EC%99%88%EB%A0%9B"
     },
     {
       "productId": "p29",
@@ -31,7 +42,7 @@
       "brand": "로얄살루트",
       "title": "로얄살루트 21년 빈티지 블렌디드 스카치 위스키 700ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:48:53+09:00",
+      "observedAt": "2026-11-02T10:22:41+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml"
     },
     {
@@ -42,40 +53,18 @@
       "brand": "로얄살루트",
       "title": "로얄살루트 21년 루나 뉴이어 2026 700ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:48:53+09:00",
+      "observedAt": "2026-11-02T10:22:41+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml"
-    },
-    {
-      "productId": "p13",
-      "categorySlug": "perfume",
-      "store": "shilla",
-      "sourceItemId": "shilla-037413000291",
-      "brand": "디올",
-      "title": "SAUVAGE EDP",
-      "reason": "size_not_verified",
-      "observedAt": "2026-11-01T09:49:33+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%94%94%EC%98%AC%20%EC%86%8C%EB%B0%94%EC%A5%AC%20%EC%98%A4%20%EB%93%9C%20%ED%8D%BC%ED%93%B8%20100ml"
-    },
-    {
-      "productId": "p9",
-      "categorySlug": "perfume",
-      "store": "shilla",
-      "sourceItemId": "shilla-064113000796",
-      "brand": "딥티크",
-      "title": "오 드 뚜왈렛 디스커버리 세트 5종",
-      "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:49:45+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%94%A5%EB%94%94%ED%81%AC%20%EB%8F%84%EC%86%90%20%EC%98%A4%EB%93%9C%EB%9A%9C%EC%99%88%EB%A0%9B"
     },
     {
       "productId": "p17",
       "categorySlug": "beauty",
       "store": "shilla",
-      "sourceItemId": "shilla-001810000642",
+      "sourceItemId": "shilla-001810000516",
       "brand": "에스티 로더",
-      "title": "E.LAUDER SKIN E.L SKIN ANR SERUM DUO 100ml",
+      "title": "E.LAUDER SKIN ANR SERUM DUO 100ml",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:49:59+09:00",
+      "observedAt": "2026-11-02T10:23:12+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%97%90%EC%8A%A4%ED%8B%B0%EB%A1%9C%EB%8D%94%20%EA%B0%88%EC%83%89%EB%B3%91%20100ml"
     },
     {
@@ -86,7 +75,7 @@
       "brand": "헤라",
       "title": "블랙 쿠션 파운데이션 15g 리필",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:50:06+09:00",
+      "observedAt": "2026-11-02T10:23:19+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g"
     },
     {
@@ -97,7 +86,7 @@
       "brand": "헤라",
       "title": "블랙 쿠션 파운데이션 (본품+리필)",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:50:06+09:00",
+      "observedAt": "2026-11-02T10:23:19+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%9D%BC%20%EB%B8%94%EB%9E%99%20%EC%BF%A0%EC%85%98%2015g"
     },
     {
@@ -108,63 +97,19 @@
       "brand": "시세이도",
       "title": "ULTIMUNE POWER INFUSING CONCENTRATE IIII DUO",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:50:35+09:00",
+      "observedAt": "2026-11-02T10:24:13+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8B%9C%EC%84%B8%EC%9D%B4%EB%8F%84%20%EC%96%BC%ED%8B%B0%EB%AE%A8"
     },
     {
-      "productId": "p67",
-      "categorySlug": "jewelry",
+      "productId": "p92",
+      "categorySlug": "electronics",
       "store": "shilla",
-      "sourceItemId": "shilla-010723012140",
-      "brand": "스와로브스키",
-      "title": "SWAN:NECKLACE ANNI CZFU/RHS",
+      "sourceItemId": "shilla-284429000029",
+      "brand": "소니",
+      "title": "WH-1000XM5/L 노이즈캔슬링 헤드폰 5세대",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:50:55+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EC%8A%A4%EC%99%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
-    },
-    {
-      "productId": "p67",
-      "categorySlug": "jewelry",
-      "store": "shilla",
-      "sourceItemId": "shilla-010723013478",
-      "brand": "스와로브스키",
-      "title": "SWAN:NECKLACE PRL GRY/RHS",
-      "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:50:55+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EC%8A%A4%EC%99%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
-    },
-    {
-      "productId": "p53",
-      "categorySlug": "watch",
-      "store": "shilla",
-      "sourceItemId": "shilla-006722003063",
-      "brand": "티쏘",
-      "title": "PRX 40mm 파워매틱 80 스틸 & 18K 골드 베젤",
-      "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:51:03+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080"
-    },
-    {
-      "productId": "p53",
-      "categorySlug": "watch",
-      "store": "shilla",
-      "sourceItemId": "shilla-006722002978",
-      "brand": "티쏘",
-      "title": "PRX 파워매틱 80 40mm",
-      "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:51:03+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080"
-    },
-    {
-      "productId": "p53",
-      "categorySlug": "watch",
-      "store": "shilla",
-      "sourceItemId": "shilla-006722002895",
-      "brand": "티쏘",
-      "title": "PRX 파워매틱 80 40mm",
-      "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:51:03+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080"
+      "observedAt": "2026-11-02T10:24:26+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WH-1000XM5"
     },
     {
       "productId": "p2",
@@ -174,7 +119,7 @@
       "brand": "조 말론 런던",
       "title": "잉글리쉬 페어 앤 프리지아 코롱",
       "reason": "size_not_verified",
-      "observedAt": "2026-11-01T09:51:10+09:00",
+      "observedAt": "2026-11-02T10:24:34+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A1%B0%EB%A7%90%EB%A1%A0%20%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%20%ED%8E%98%EC%96%B4%20%ED%94%84%EB%A6%AC%EC%A7%80%EC%95%84%20100ml"
     },
     {
@@ -185,8 +130,19 @@
       "brand": "바이레도",
       "title": "Blanche EDP 100ml+12ml Set",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:51:17+09:00",
+      "observedAt": "2026-11-02T10:24:41+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%94%EC%9D%B4%EB%A0%88%EB%8F%84%20%EB%B8%94%EB%9E%91%EC%89%AC%20100ml"
+    },
+    {
+      "productId": "p13",
+      "categorySlug": "perfume",
+      "store": "shilla",
+      "sourceItemId": "shilla-037413000291",
+      "brand": "디올",
+      "title": "SAUVAGE EDP",
+      "reason": "size_not_verified",
+      "observedAt": "2026-11-02T10:24:55+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%94%94%EC%98%AC%20%EC%86%8C%EB%B0%94%EC%A5%AC%20%EC%98%A4%20%EB%93%9C%20%ED%8D%BC%ED%93%B8%20100ml"
     },
     {
       "productId": "p4",
@@ -196,7 +152,7 @@
       "brand": "에스케이투",
       "title": "맨 페이셜 트리트먼트 에센스 230ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:52:04+09:00",
+      "observedAt": "2026-11-02T10:25:26+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=SK-II%20%ED%94%BC%ED%85%8C%EB%9D%BC%20%EC%97%90%EC%84%BC%EC%8A%A4%20230ml"
     },
     {
@@ -207,7 +163,7 @@
       "brand": "랑콤",
       "title": "제니피끄 얼티미트 세럼 100ML*2",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:52:11+09:00",
+      "observedAt": "2026-11-02T10:25:34+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml"
     },
     {
@@ -218,7 +174,7 @@
       "brand": "랑콤",
       "title": "제니피끄 얼티미트 세럼 100ML & 클라리피끄 더블 트리트먼트 에센스 250ml",
       "reason": "multiple_sizes",
-      "observedAt": "2026-11-01T09:52:11+09:00",
+      "observedAt": "2026-11-02T10:25:34+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml"
     },
     {
@@ -229,7 +185,7 @@
       "brand": "키엘",
       "title": "키엘 울트라 훼이셜 크림 125ML+ 리필150ML",
       "reason": "bundle_or_refill",
-      "observedAt": "2026-11-01T09:52:18+09:00",
+      "observedAt": "2026-11-02T10:25:41+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%82%A4%EC%97%98%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC%20125ml"
     },
     {
@@ -240,7 +196,7 @@
       "brand": "키엘",
       "title": "ULTRA FACIAL OIL-FREE GEL CREAM",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:52:18+09:00",
+      "observedAt": "2026-11-02T10:25:41+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%82%A4%EC%97%98%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC%20125ml"
     },
     {
@@ -251,7 +207,7 @@
       "brand": "키엘",
       "title": "울트라 훼이셜 크림",
       "reason": "size_not_verified",
-      "observedAt": "2026-11-01T09:52:18+09:00",
+      "observedAt": "2026-11-02T10:25:41+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%82%A4%EC%97%98%20%EC%9A%B8%ED%8A%B8%EB%9D%BC%20%ED%9B%BC%EC%9D%B4%EC%85%9C%20%ED%81%AC%EB%A6%BC%20125ml"
     },
     {
@@ -262,7 +218,7 @@
       "brand": "비오템",
       "title": "라이프 플랑크톤™ 온천수 에센스-속건조 수분",
       "reason": "size_not_verified",
-      "observedAt": "2026-11-01T09:52:36+09:00",
+      "observedAt": "2026-11-02T10:26:00+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B9%84%EC%98%A4%ED%85%9C%20%EB%9D%BC%EC%9D%B4%ED%94%84%20%ED%94%8C%EB%9E%91%ED%81%AC%ED%86%A4%20%EC%97%90%EC%84%BC%EC%8A%A4%20125ml"
     },
     {
@@ -273,7 +229,7 @@
       "brand": "글렌피딕",
       "title": "글렌피딕 15년 벳3 퍼페추얼 컬렉션 700ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:52:43+09:00",
+      "observedAt": "2026-11-02T10:26:07+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml"
     },
     {
@@ -284,7 +240,7 @@
       "brand": "글렌피딕",
       "title": "글렌피딕 15년 셰리 캐스크 피니쉬 700ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:52:43+09:00",
+      "observedAt": "2026-11-02T10:26:07+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml"
     },
     {
@@ -295,7 +251,7 @@
       "brand": "발렌타인",
       "title": "발렌타인 21년 말본 에디션 700ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:52:50+09:00",
+      "observedAt": "2026-11-02T10:26:14+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml"
     },
     {
@@ -306,7 +262,7 @@
       "brand": "맥캘란",
       "title": "맥캘란 GTR12년 700ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:53:06+09:00",
+      "observedAt": "2026-11-02T10:26:28+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=The%20Macallan%2012"
     },
     {
@@ -317,7 +273,7 @@
       "brand": "헤네시",
       "title": "헤네시 파라디 700ml",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:53:47+09:00",
+      "observedAt": "2026-11-02T10:27:12+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO%20700ml"
     },
     {
@@ -328,7 +284,7 @@
       "brand": "투미",
       "title": "ALPHA BRAVO 알파 브라보 내비게이션 백팩 카키",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:54:01+09:00",
+      "observedAt": "2026-11-02T10:27:33+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%88%AC%EB%AF%B8%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EB%B0%B1%ED%8C%A9"
     },
     {
@@ -339,7 +295,7 @@
       "brand": "투미",
       "title": "ALPHA BRAVO 알파 브라보 내비게이션 백팩 블랙",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:54:01+09:00",
+      "observedAt": "2026-11-02T10:27:33+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%88%AC%EB%AF%B8%20%EC%95%8C%ED%8C%8C%20%EB%B8%8C%EB%9D%BC%EB%B3%B4%20%EB%B0%B1%ED%8C%A9"
     },
     {
@@ -350,7 +306,7 @@
       "brand": "코치",
       "title": "태비 숄더 백 26",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:10+09:00",
+      "observedAt": "2026-11-02T10:27:40+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1"
     },
     {
@@ -361,7 +317,7 @@
       "brand": "코치",
       "title": "태비 숄더 백 26 위드 퀼팅",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:10+09:00",
+      "observedAt": "2026-11-02T10:27:40+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1"
     },
     {
@@ -372,7 +328,7 @@
       "brand": "코치",
       "title": "태비 숄더 백 20 위드 필로우 퀼팅",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:10+09:00",
+      "observedAt": "2026-11-02T10:27:40+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%BD%94%EC%B9%98%20%ED%83%9C%EB%B9%84%20%EC%88%84%EB%8D%94%EB%B0%B1"
     },
     {
@@ -383,7 +339,7 @@
       "brand": "쌤소나이트",
       "title": "EVOA Z 에보아 캐리어 프론트 포켓 20인치 기내용_블랙",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:18+09:00",
+      "observedAt": "2026-11-02T10:27:49+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4"
     },
     {
@@ -394,7 +350,7 @@
       "brand": "쌤소나이트",
       "title": "EVOA Z 에보아 롤링 토트 기내용_블랙",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:18+09:00",
+      "observedAt": "2026-11-02T10:27:49+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8C%A4%EC%86%8C%EB%82%98%EC%9D%B4%ED%8A%B8%20%EC%97%90%EB%B3%B4%EC%95%84%20%EC%BA%90%EB%A6%AC%EC%96%B4"
     },
     {
@@ -405,7 +361,7 @@
       "brand": "몽블랑",
       "title": "몽블랑 마이스터스튁 6cc 반지갑_ 221320",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:25+09:00",
+      "observedAt": "2026-11-02T10:27:55+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%20%EC%A7%80%EA%B0%91"
     },
     {
@@ -416,7 +372,7 @@
       "brand": "몽블랑",
       "title": "몽블랑 마이스터스튁 4cc 카드홀더_ 221304",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:25+09:00",
+      "observedAt": "2026-11-02T10:27:55+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%20%EC%A7%80%EA%B0%91"
     },
     {
@@ -427,7 +383,7 @@
       "brand": "몽블랑",
       "title": "몽블랑 마이스터스튁 로미오와 줄리엣 솔리테어 르그랑 수성펜_ 132931",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:54:25+09:00",
+      "observedAt": "2026-11-02T10:27:55+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%AA%BD%EB%B8%94%EB%9E%91%20%EB%A7%88%EC%9D%B4%EC%8A%A4%ED%84%B0%EC%8A%A4%ED%8A%81%20%EC%A7%80%EA%B0%91"
     },
     {
@@ -438,19 +394,41 @@
       "brand": "솔가",
       "title": "솔가 구연산 칼슘 위드 비타민D3 90정",
       "reason": "different_or_unverified_model",
-      "observedAt": "2026-11-01T09:55:30+09:00",
+      "observedAt": "2026-11-02T10:29:03+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BC%20D3"
     },
     {
-      "productId": "p54",
+      "productId": "p53",
       "categorySlug": "watch",
       "store": "shilla",
-      "sourceItemId": "shilla-020622003339",
-      "brand": "지샥",
-      "title": "G-SHOCK_GA-2100WD-1ADR",
+      "sourceItemId": "shilla-006722003063",
+      "brand": "티쏘",
+      "title": "PRX 40mm 파워매틱 80 스틸 & 18K 골드 베젤",
+      "reason": "bundle_or_refill",
+      "observedAt": "2026-11-02T10:32:28+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080"
+    },
+    {
+      "productId": "p53",
+      "categorySlug": "watch",
+      "store": "shilla",
+      "sourceItemId": "shilla-006722002978",
+      "brand": "티쏘",
+      "title": "PRX 파워매틱 80 40mm",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:58:42+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100"
+      "observedAt": "2026-11-02T10:32:28+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080"
+    },
+    {
+      "productId": "p53",
+      "categorySlug": "watch",
+      "store": "shilla",
+      "sourceItemId": "shilla-006722002895",
+      "brand": "티쏘",
+      "title": "PRX 파워매틱 80 40mm",
+      "reason": "model_not_verified",
+      "observedAt": "2026-11-02T10:32:28+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080"
     },
     {
       "productId": "p54",
@@ -460,7 +438,7 @@
       "brand": "지샥",
       "title": "G-SHOCK_GA-B2100CT-5ADR",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:58:42+09:00",
+      "observedAt": "2026-11-02T10:32:35+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100"
     },
     {
@@ -471,7 +449,18 @@
       "brand": "지샥",
       "title": "G-SHOCK_GA-B2100FC-1ADR",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:58:42+09:00",
+      "observedAt": "2026-11-02T10:32:35+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100"
+    },
+    {
+      "productId": "p54",
+      "categorySlug": "watch",
+      "store": "shilla",
+      "sourceItemId": "shilla-020622003152",
+      "brand": "지샥",
+      "title": "G-SHOCK_GMA-S2100GA-1ADR",
+      "reason": "model_not_verified",
+      "observedAt": "2026-11-02T10:32:35+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100"
     },
     {
@@ -482,7 +471,7 @@
       "brand": "스와로브스키",
       "title": "Eternity Tennis브레이슬릿,랩그로운 다이아몬드3ct,18K",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:58:57+09:00",
+      "observedAt": "2026-11-02T10:32:50+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%ED%85%8C%EB%8B%88%EC%8A%A4%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF"
     },
     {
@@ -493,7 +482,7 @@
       "brand": "스와로브스키",
       "title": "MATRIX:BRACELET HRT WOVEN WHI/RHS",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:58:57+09:00",
+      "observedAt": "2026-11-02T10:32:50+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%ED%85%8C%EB%8B%88%EC%8A%A4%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF"
     },
     {
@@ -504,7 +493,7 @@
       "brand": "판도라",
       "title": "Pandora Moments Round Clasp Blue Braided Leather Bracelet",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:05+09:00",
+      "observedAt": "2026-11-02T10:32:57+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF"
     },
     {
@@ -515,7 +504,7 @@
       "brand": "판도라",
       "title": "판도라모멘츠 스파클링 인피니티하트 클라습 브레이슬릿",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:05+09:00",
+      "observedAt": "2026-11-02T10:32:57+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF"
     },
     {
@@ -526,7 +515,7 @@
       "brand": "판도라",
       "title": "판도라 모멘츠 베럴 클라습 스네이크 체인 브레이슬릿",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:05+09:00",
+      "observedAt": "2026-11-02T10:32:57+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EB%AA%A8%EB%A9%98%EC%B8%A0%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF"
     },
     {
@@ -537,7 +526,7 @@
       "brand": "제이에스티나",
       "title": "TIARA 키즈 미아방지 4월 탄생석 목걸이 JJK1NQ2BF759SC340",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:12+09:00",
+      "observedAt": "2026-11-02T10:33:05+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
     },
     {
@@ -548,7 +537,7 @@
       "brand": "제이에스티나",
       "title": "Basic Tiara 목걸이",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:12+09:00",
+      "observedAt": "2026-11-02T10:33:05+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
     },
     {
@@ -559,7 +548,7 @@
       "brand": "제이에스티나",
       "title": "TIARA 키즈 미아방지 4월 탄생석 목걸이 JJK1NQ2BF757SC340",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:12+09:00",
+      "observedAt": "2026-11-02T10:33:05+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4%ED%8B%B0%EB%82%98%20%ED%8B%B0%EC%95%84%EB%9D%BC%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
     },
     {
@@ -570,7 +559,7 @@
       "brand": "스톤헨지",
       "title": "위드 유 SA25C29T 실버 목걸이",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:19+09:00",
+      "observedAt": "2026-11-02T10:33:12+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
     },
     {
@@ -581,7 +570,7 @@
       "brand": "스톤헨지",
       "title": "브레이드 SA25C54U 실버 목걸이",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:19+09:00",
+      "observedAt": "2026-11-02T10:33:12+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
     },
     {
@@ -592,19 +581,8 @@
       "brand": "스톤헨지",
       "title": "크로싱 SA26C13T 실버 목걸이",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:19+09:00",
+      "observedAt": "2026-11-02T10:33:12+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%ED%86%A4%ED%97%A8%EC%A7%80%20%EC%8B%A4%EB%B2%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
-    },
-    {
-      "productId": "p66",
-      "categorySlug": "jewelry",
-      "store": "shilla",
-      "sourceItemId": "shilla-010723012906",
-      "brand": "스와로브스키",
-      "title": "MATRIX:PE HOOP M WHI/RHS",
-      "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:27+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81"
     },
     {
       "productId": "p66",
@@ -614,7 +592,18 @@
       "brand": "스와로브스키",
       "title": "MATRIX:PE MINI HOOP CZWH/RHS",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:27+09:00",
+      "observedAt": "2026-11-02T10:33:19+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81"
+    },
+    {
+      "productId": "p66",
+      "categorySlug": "jewelry",
+      "store": "shilla",
+      "sourceItemId": "shilla-010723012906",
+      "brand": "스와로브스키",
+      "title": "MATRIX:PE HOOP M WHI/RHS",
+      "reason": "model_not_verified",
+      "observedAt": "2026-11-02T10:33:19+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81"
     },
     {
@@ -625,8 +614,41 @@
       "brand": "스와로브스키",
       "title": "MATRIX:PE PEARL WHITE/RHS",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:27+09:00",
+      "observedAt": "2026-11-02T10:33:19+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4%20%EC%9D%B4%EC%96%B4%EB%A7%81"
+    },
+    {
+      "productId": "p67",
+      "categorySlug": "jewelry",
+      "store": "shilla",
+      "sourceItemId": "shilla-010723012140",
+      "brand": "스와로브스키",
+      "title": "SWAN:NECKLACE ANNI CZFU/RHS",
+      "reason": "different_or_unverified_model",
+      "observedAt": "2026-11-02T10:33:27+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EC%8A%A4%EC%99%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
+    },
+    {
+      "productId": "p67",
+      "categorySlug": "jewelry",
+      "store": "shilla",
+      "sourceItemId": "shilla-010723013478",
+      "brand": "스와로브스키",
+      "title": "SWAN:NECKLACE PRL GRY/RHS",
+      "reason": "different_or_unverified_model",
+      "observedAt": "2026-11-02T10:33:27+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EB%A1%9C%EB%B8%8C%EC%8A%A4%ED%82%A4%20%EC%8A%A4%EC%99%84%20%EB%AA%A9%EA%B1%B8%EC%9D%B4"
+    },
+    {
+      "productId": "p68",
+      "categorySlug": "jewelry",
+      "store": "shilla",
+      "sourceItemId": "shilla-072523007303",
+      "brand": "판도라",
+      "title": "스파클링 크레센트 문 참",
+      "reason": "model_not_verified",
+      "observedAt": "2026-11-02T10:33:35+09:00",
+      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EC%B0%B8"
     },
     {
       "productId": "p68",
@@ -636,7 +658,7 @@
       "brand": "판도라",
       "title": "스파클링 파베 라운드 참",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:34+09:00",
+      "observedAt": "2026-11-02T10:33:35+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EC%B0%B8"
     },
     {
@@ -647,18 +669,7 @@
       "brand": "판도라",
       "title": "스파클링 레벨드 하트 참",
       "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:34+09:00",
-      "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EC%B0%B8"
-    },
-    {
-      "productId": "p68",
-      "categorySlug": "jewelry",
-      "store": "shilla",
-      "sourceItemId": "shilla-072523006916",
-      "brand": "판도라",
-      "title": "스파클링 하트 더블 댕글 참",
-      "reason": "model_not_verified",
-      "observedAt": "2026-11-01T09:59:34+09:00",
+      "observedAt": "2026-11-02T10:33:35+09:00",
       "sourceUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8C%90%EB%8F%84%EB%9D%BC%20%EC%8A%A4%ED%8C%8C%ED%81%B4%EB%A7%81%20%EC%B0%B8"
     }
   ]
