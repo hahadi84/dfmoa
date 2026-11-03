@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T01:34:49.305Z",
+  "generatedAt": "2026-11-03T03:35:07.597Z",
   "attemptedCount": 78,
   "failureCount": 56,
   "failures": [
@@ -13,6 +13,12 @@
       "productId": "p9",
       "productSlug": "diptyque-do-son-75ml",
       "categorySlug": "perfume",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p58",
+      "productSlug": "longines-hydroconquest",
+      "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -31,12 +37,6 @@
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p58",
-      "productSlug": "longines-hydroconquest",
-      "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {

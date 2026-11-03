@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-02T01:21:46.142Z",
+  "generatedAt": "2026-11-03T03:22:16.086Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "sulwhasoo-first-care-serum-90ml",
-      "count": 8
+      "count": 7
     },
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 4
+      "count": 6
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
@@ -20,7 +20,7 @@
       "count": 2
     },
     {
-      "productSlug": "royal-salute-21-700ml",
+      "productSlug": "longines-hydroconquest",
       "count": 2
     },
     {
@@ -28,11 +28,11 @@
       "count": 1
     },
     {
-      "productSlug": "celine-triomphe-cl40194u",
+      "productSlug": "bleu-de-chanel-edp-100ml",
       "count": 1
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
+      "productSlug": "celine-triomphe-cl40194u",
       "count": 1
     },
     {
@@ -48,11 +48,11 @@
       "count": 1
     },
     {
-      "productSlug": "longines-hydroconquest",
+      "productSlug": "orthomol-immun",
       "count": 1
     },
     {
-      "productSlug": "orthomol-immun",
+      "productSlug": "royal-salute-21-700ml",
       "count": 1
     },
     {
