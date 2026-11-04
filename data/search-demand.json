@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T03:22:16.086Z",
+  "generatedAt": "2026-11-04T01:59:28.276Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -16,19 +16,19 @@
       "count": 4
     },
     {
-      "productSlug": "diptyque-do-son-75ml",
-      "count": 2
+      "productSlug": "estee-lauder-anr-100ml",
+      "count": 3
     },
     {
       "productSlug": "longines-hydroconquest",
       "count": 2
     },
     {
-      "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "productSlug": "bleu-de-chanel-edp-100ml",
       "count": 1
     },
     {
-      "productSlug": "bleu-de-chanel-edp-100ml",
+      "productSlug": "bose-quietcomfort-ultra",
       "count": 1
     },
     {
@@ -36,11 +36,15 @@
       "count": 1
     },
     {
-      "productSlug": "hera-black-cushion-15g",
+      "productSlug": "diptyque-do-son-75ml",
       "count": 1
     },
     {
-      "productSlug": "hibiki-harmony-700ml",
+      "productSlug": "dyson-supersonic",
+      "count": 1
+    },
+    {
+      "productSlug": "hera-black-cushion-15g",
       "count": 1
     },
     {
@@ -49,14 +53,6 @@
     },
     {
       "productSlug": "orthomol-immun",
-      "count": 1
-    },
-    {
-      "productSlug": "royal-salute-21-700ml",
-      "count": 1
-    },
-    {
-      "productSlug": "shiseido-ultimune-75ml",
       "count": 1
     },
     {
