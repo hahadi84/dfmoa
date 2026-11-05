@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-11-04T01:59:28.276Z",
+  "generatedAt": "2026-11-05T02:03:02.104Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "productSlug": "creed-aventus-50ml",
       "count": 7
     },
     {
-      "productSlug": "creed-aventus-50ml",
-      "count": 6
+      "productSlug": "estee-lauder-anr-100ml",
+      "count": 3
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 4
+      "count": 3
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 3
     },
     {
@@ -24,15 +24,15 @@
       "count": 2
     },
     {
+      "productSlug": "ballantines-21-700ml",
+      "count": 1
+    },
+    {
       "productSlug": "bleu-de-chanel-edp-100ml",
       "count": 1
     },
     {
       "productSlug": "bose-quietcomfort-ultra",
-      "count": 1
-    },
-    {
-      "productSlug": "celine-triomphe-cl40194u",
       "count": 1
     },
     {
@@ -53,14 +53,6 @@
     },
     {
       "productSlug": "orthomol-immun",
-      "count": 1
-    },
-    {
-      "productSlug": "sony-wf-1000xm5",
-      "count": 1
-    },
-    {
-      "productSlug": "sony-wh-1000xm5",
       "count": 1
     }
   ]

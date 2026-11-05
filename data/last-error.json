@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T02:12:44.446Z",
+  "generatedAt": "2026-11-05T02:15:56.486Z",
   "attemptedCount": 80,
   "failureCount": 58,
   "failures": [
@@ -19,12 +19,6 @@
       "productId": "p93",
       "productSlug": "bose-quietcomfort-ultra",
       "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p37",
-      "productSlug": "celine-triomphe-cl40194u",
-      "categorySlug": "eyewear",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -222,6 +216,12 @@
     {
       "productId": "p36",
       "productSlug": "gucci-gg0061s",
+      "categorySlug": "eyewear",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p37",
+      "productSlug": "celine-triomphe-cl40194u",
       "categorySlug": "eyewear",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
