@@ -1,3 +1,4 @@
+import { shoppingPaths } from "@/lib/international";
 import type { MetadataRoute } from "next";
 import { countryGuides, COUNTRY_GUIDANCE_CHECKED } from "@/lib/english-country-guides";
 import { internationalProductIds, INTERNATIONAL_UPDATED } from "@/lib/international";
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     "",
     "/about",
+    ...["en","ja","zh"].flatMap(locale => Object.values(shoppingPaths).map(path => `/${locale}${path}`)),
     "/en",
     "/en/guide/incheon-duty-free-pickup",
     "/en/compare",
@@ -91,6 +93,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     modified.set(`/${locale}`, modified.get("/en")!);
   }
   for (const path of ["/en/travelers", ...countryGuides.map(guide => `/en/guide/${guide.slug}`)]) modified.set(path, COUNTRY_GUIDANCE_CHECKED);
+  for (const locale of ["en", "ja", "zh"]) {
+    const updated = "2026-11-05T00:00:00+09:00";
+    modified.set(`/${locale}`, latest([updated, modified.get(`/${locale}`) ?? ""]));
+    for (const guide of Object.values(shoppingPaths)) modified.set(`/${locale}${guide}`, updated);
+  }
   return [...new Set([
     ...preservedPages.map((page) => page.path),
     ...staticPages,

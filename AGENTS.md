@@ -21,3 +21,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-02 사용자 “전체 페이지 적용되었으면 배포” 요청: release(requested-airport-all): 2026-11-02 전체 공항 디자인 공개 1회 승인. 이번 주 정기 점검은 이 공개 이력을 확인하여 중복 배포하지 않는다.
 
 - 2026-11-02 첫 전체 디자인 배포의 Google 글꼴 처리 실패 후 사용자 “계속” 지시: 글꼴 의존성 수정본 release(requested-airport-font-fix): 2026-11-02 재배포 1회 승인.
+- 2026-11-05 사용자 “seo 검색 최적화 및 배포” 요청에 따라 release(requested-shopping-seo): 2026-11-05 운영 공개 1회를 허용한다. 날짜·운영 환경·중복 방지 검사를 유지한다.

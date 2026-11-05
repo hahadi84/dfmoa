@@ -11,6 +11,7 @@ export function getEnglishCatalog() {
       source.items.filter(item => isInternationalOfferMatch(product, item))
         .map(item => ({ storeId: storeId as StoreId, krw: Number(item.priceKrw), usd: Number(item.priceUsd) || null,
           checkedAt: item.fetchedAt ?? source.fetchedAt ?? snapshot?.fetchedAt ?? null,
+          discountRate: item.discountRate, regularUsd: item.regularUsdPrice,
           listingTitle: item.title, sourceUrl: item.url || source.searchUrl || "", imageUrl: item.imageUrl || null }))
     ).sort((a,b) => a.krw - b.krw);
     return { id, slug: product.slug, name: product.displayName, brand: product.brand, category: product.categorySlug,

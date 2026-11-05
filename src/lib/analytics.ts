@@ -11,6 +11,9 @@ export type AnalyticsEventName =
   | "search_submit"
   | "search_suggestion_select"
   | "category_filter_apply"
+  | "shopping_catalog_open"
+  | "shopping_map_open"
+  | "shopping_branch_open"
   | "web_vital";
 
 type AnalyticsValue = string | number | boolean | null | undefined;

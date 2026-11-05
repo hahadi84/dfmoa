@@ -1,0 +1,51 @@
+export type ShoppingLocale = "en" | "ja" | "zh";
+export const brandSource = "https://www.sulwhasoo.com/about-sulwhasoo/brand-news/archive/contents/2024/2024-first-care-activating-serum-vi-introduction.html";
+export const shops = [
+  { id: "oliveyoung", name: "올리브영 명동 타운", address: "서울특별시 중구 명동길 53 1~2층", url: "https://m.oliveyoung.co.kr/m/mtn/store/information/D176?language=KO&storeCode=D176&tabType=storeInfo" },
+  { id: "osulloc", name: "오설록 롯데백화점 명동점", address: "서울특별시 중구 남대문로 81 롯데백화점 지하1층", url: "https://www.osulloc.com/kr/ko/store-introduction" },
+];
+export const shoppingCopy = {
+ en: {
+  serum: "Sulwhasoo First Care Activating Serum 90ml in Korea: duty free or in-store?",
+  gifts: "Where to buy lightweight gifts in Myeongdong",
+  serumIntro: "Compare the price of one 90ml bottle with Sulwhasoo’s Korean retail reference before deciding whether to order for airport pickup.",
+  giftsIntro: "Two hours in Myeongdong? Choose a stop by the gift you want: sheet masks for friends or tea bags to share at home.",
+  menu: ["What to buy duty free: Sulwhasoo 90ml", "Gifts and shops in Korea: Myeongdong"],
+  price: "One 90ml bottle · Korean listings · KRW", source: "Source", channel: "Seller", amount: "Price", terms: "What the price covers",
+  retail: "Sulwhasoo Korea · brand launch reference", retailTerms: "Serum VI, 90ml. No branch quote, coupon or refund verified.",
+  discount: "Listed discount", dutyTerms: "Observed listing. Confirm the edition, bundle contents and account discounts at checkout.", missing: "No verified observation",
+  decide: "When should you buy in town?", advice: "If you want the gift before your flight, ask the counter for the price of a single 90ml bottle and a refund quote after fees. For airport pickup, check your own duty-free checkout price. A branch price and refund are still missing, so the cheaper route is undetermined.",
+  details: "See duty-free listings", calc: "Compare your two checkout prices", pickup: "Incheon pickup guide",
+  gift: "Gift to look for", shop: "Where to go", items: ["Sheet masks", "Individually wrapped tea bags"], names: ["Olive Young Myeongdong Global", "OSULLOC at Lotte Department Store, Myeongdong"],
+  notes: ["For several small gifts, compare the number of masks in each pack. The branch lists tax refunds and an inventory lookup. Check your item and today’s hours before leaving.", "For a gift to divide among colleagues, look for individually wrapped bags. Head to the basement food floor. The directory lists Mon–Thu 10:30–20:00, Fri–Sun 10:30–20:30. Check department-store closures. Stock and refund terms need counter confirmation."],
+  copy: "Copy Korean name and address", copied: "Copied", fallback: "Select and copy the address above.", map: "Open map", official: "Official store information", checked: "Sources checked",
+ },
+ ja: {
+  serum: "雪花秀のユンジョエッセンス90ml、韓国の免税店と市内ではいくら？", gifts: "明洞で買う軽い韓国土産｜シートマスクとお茶の売り場",
+  serumIntro: "空港で受け取るか、市内で買ってすぐ渡すか。90mlの本品1本を基準に、免税店の掲載価格と韓国公式の参考価格を比べます。",
+  giftsIntro: "明洞で買い物できる時間が2時間なら、友人に配るシートマスクか、職場向けのお茶か、贈る相手に合わせて先に行く店を決めましょう。",
+  menu: ["韓国の免税店で買うなら：雪花秀90ml", "韓国のお土産と買い物スポット：明洞"],
+  price: "90ml本品1本・韓国語サイト・韓国ウォン", source: "出典", channel: "販売元", amount: "価格", terms: "価格の条件",
+  retail: "雪花秀 韓国公式・発売時参考価格", retailTerms: "第6世代の90ml。店頭価格・クーポン・還付額は未確認です。",
+  discount: "掲載割引率", dutyTerms: "掲載時の価格です。世代、セット内容、会員割引は注文画面で確認してください。", missing: "確認できた価格はありません",
+  decide: "市内で買うか、出国時に受け取るか", advice: "旅行中に渡すなら、店頭で90ml単品の支払額と手数料差引後の還付額を聞きましょう。空港受取なら、ご自身の免税店アカウントで決済額を確認してください。店頭価格と還付額がそろうまでは、どちらが安いか判断できません。",
+  details: "免税店の商品掲載情報", calc: "支払額を計算する", pickup: "仁川空港の受取案内",
+  gift: "探すお土産", shop: "売り場", items: ["シートマスク", "個包装のティーバッグ"], names: ["オリーブヤング明洞タウン", "オソルロック ロッテ百貨店明洞店"],
+  notes: ["配る人数に合わせて1袋の枚数を比べましょう。店舗案内には在庫照会と税金還付サービスがあります。当日の営業時間と欲しい品番を出発前に確認してください。", "職場に配るなら個包装のお茶が便利です。売り場は百貨店の地下1階。公式案内は月〜木10:30〜20:00、金〜日10:30〜20:30です。休館日、在庫、還付条件は来店前にご確認ください。"],
+  copy: "韓国語の店名と住所をコピー", copied: "コピーしました", fallback: "上の住所を選択してコピーしてください。", map: "地図を開く", official: "公式店舗案内", checked: "出典確認日",
+ },
+ zh: {
+  serum: "雪花秀润致焕活肌底精华露90ml：韩国免税店和市区怎么买？", gifts: "明洞哪里买轻便伴手礼？面膜和茶包选店指南",
+  serumIntro: "想在市区直接拿货，还是离境时去机场提货？先按90ml正装一瓶，对照免税店采集价和韩国品牌参考价。",
+  giftsIntro: "第一次来明洞，只有两小时逛街？送朋友可以先看面膜，给同事分礼物可以先找独立包装的茶包。",
+  menu: ["韩国免税店买什么：雪花秀90ml精华", "韩国伴手礼在哪里买：明洞店铺"],
+  price: "90ml正装一瓶 · 韩文网站 · 韩元", source: "来源", channel: "销售渠道", amount: "价格", terms: "价格条件",
+  retail: "雪花秀韩国官网上市参考价", retailTerms: "第六代90ml。门店实价、优惠券和退税金额待确认。",
+  discount: "页面折扣幅度", dutyTerms: "免税店页面采集价。请在结账前核对版本、套装内容及账户优惠。", missing: "暂无已核实的采集价",
+  decide: "在市区买还是去机场提货？", advice: "如果要在旅途中送人，先向柜台询问90ml单瓶实付价和扣除手续费后的退税额。如果选择机场提货，请登录免税店查看自己的结账价。目前缺少门店实价和退税报价，暂不能判断哪边更便宜。",
+  details: "查看免税店商品记录", calc: "计算两种购买方式的实付价", pickup: "仁川机场提货指南",
+  gift: "想买的礼物", shop: "去哪家店", items: ["片装面膜", "独立包装茶包"], names: ["欧利芙洋明洞城", "OSULLOC 乐天百货明洞店"],
+  notes: ["按送礼人数比较每包片数。门店官网列有退税服务及库存查询入口，出发前请查询所需商品和当天营业时间。", "给同事分送时，可以找独立包装的茶包。柜台在百货地下1层。官方列出的营业时间为周一至周四10:30–20:00，周五至周日10:30–20:30。请核对百货休息日，并向柜台确认库存和退税条件。"],
+  copy: "复制韩文店名和地址", copied: "已复制", fallback: "请选中上方地址并复制。", map: "打开地图", official: "官方门店信息", checked: "资料核对日期",
+ },
+};

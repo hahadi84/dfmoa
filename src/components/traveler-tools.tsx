@@ -1,4 +1,5 @@
 "use client";
+import { useComparisonMeasurement } from "@/components/shopping-actions";
 import { AdBanner } from "@/components/ad-banner";
 import { useState } from "react";
 import Link from "@/components/app-link";
@@ -30,6 +31,7 @@ export function TravelerComparison({locale}:{locale:TravelerLocale}) {
  const t=travelerCopy[locale];const [values,setValues]=useState(["","","0","0","0"]);
  const complete=values.every(value=>value.trim()!=="");
  const result=complete?compareShoppingCosts(...values.map(Number) as [number,number,number,number,number]):null;
+ useComparisonMeasurement(Boolean(result), locale);
  const money=(value:number)=>new Intl.NumberFormat(t.format,{style:"currency",currency:"KRW",currencyDisplay:"code",maximumFractionDigits:0}).format(value);
  return <><section className="yen-calculator" aria-labelledby="localized-calculator"><h2 className="section-title" id="localized-calculator">{t.calcTitle}</h2><p>{t.calcIntro}</p><div className="yen-fields">{t.fields.map((label,i)=><label key={label}>{label}<input type="number" min="0" max={i>=3?100:undefined} step={i>=3?"0.1":"1"} value={values[i]} onChange={e=>setValues(values.map((value,index)=>i===index?e.target.value:value))}/></label>)}</div><div className="yen-result" aria-live="polite">{result?<><p>{t.dutyTotal}: <strong>{money(result.dutyTotal)}</strong></p><p>{t.storeTotal}: <strong>{money(result.storeTotal)}</strong></p><p>{Math.abs(result.difference)<0.5?t.equal:`${result.difference>0?t.duty:t.store}${t.lower}${money(Math.abs(result.difference))}`}</p></>:<p>{complete?t.invalid:t.enter}</p>}</div><p className="section-copy">{t.formula}</p></section>{result ? <AdBanner placement="results"/> : null}</>;
 }

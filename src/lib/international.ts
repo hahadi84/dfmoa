@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import type { StoreId } from "@/lib/site-data";
 
+export const shoppingPaths = {
+  station: "/guide/busan-station-souvenirs",
+  airport: "/guide/gimhae-duty-free-pickup",
+  serum: "/guide/sulwhasoo-first-care-90ml",
+  gifts: "/guide/myeongdong-gifts",
+};
 export const INTERNATIONAL_UPDATED = "2026-10-25";
 export const internationalProductIds = ["p1", "p3", "p10", "p11", "p12", "p14", "p15", "p17", "p18", "p24"];
 export const englishStores: Record<StoreId, { name: string; url: string }> = {
@@ -17,7 +23,7 @@ export const internationalSources = {
 };
 export function localizedMetadata(locale: "en" | "ja" | "zh", title: string, description: string, path: string, koreanPath?: string): Metadata {
  const suffix=path.replace(/^\/(en|ja|zh)(?=\/|$)/, "");
- const translated = suffix === "" || ["/compare", "/privacy", "/guide/incheon-duty-free-pickup"].includes(suffix) || suffix.startsWith("/product/");
+ const translated = suffix === "" || [...Object.values(shoppingPaths), "/compare", "/privacy", "/guide/incheon-duty-free-pickup"].includes(suffix) || suffix.startsWith("/product/");
  const languages={en:`/en${suffix}`,...(translated?{ja:`/ja${suffix}`,"zh-Hans":`/zh${suffix}`} : {}),...(koreanPath?{ko:koreanPath}:{})};
  const url=`https://www.dfmoa.com${path}`;
  return {title:{absolute:`${title} | DFMOA`},description,alternates:{canonical:path,languages},

@@ -31,3 +31,13 @@
 
 .intl-page[lang="ja"] { font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif; }
 .intl-page[lang="zh-Hans"] { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+
+.shopping-guide table { width: 100%; border-collapse: collapse; margin-block: 1.5rem; }
+.shopping-guide th, .shopping-guide td { padding: .65rem; border-bottom: 1px solid #b8c4ca; text-align: start; vertical-align: top; overflow-wrap: anywhere; }
+.shopping-guide small { display: block; margin-top: .4rem; font-weight: normal; }
+.shopping-guide h2 { margin-top: 2rem; }
+.shopping-guide button { font: inherit; padding: .5rem; cursor: pointer; }
+@media (max-width: 540px) {
+  .shopping-guide th, .shopping-guide td { padding: .45rem .25rem; }
+  .shopping-guide .intl-section-nav { flex-wrap: wrap; }
+}
