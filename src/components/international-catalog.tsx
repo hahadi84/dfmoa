@@ -1,4 +1,5 @@
 "use client";
+import { SafeProductImage } from "@/components/product-image";
 import { useState } from "react";
 import Link from "@/components/app-link";
 import type { EnglishCatalogItem } from "@/lib/international-catalog";
@@ -15,7 +16,7 @@ export function InternationalCatalog({ items }: { items: EnglishCatalogItem[] })
     <div className="intl-product-list">{visible.map(item => { const offer = item.offers[0];
       const amount = !offer ? null : currency === "JPY" ? offer.krw / rate.rate : currency === "USD" ? offer.usd : offer.krw;
       const formatted = amount == null ? "Price not confirmed" : new Intl.NumberFormat("en-US", { style: "currency", currency, maximumFractionDigits: currency === "USD" ? 2 : 0 }).format(amount);
-      return <article className="intl-product-row" key={item.id}><div><p className="intl-brand">{item.brand}</p><h3><Link href={`/en/product/${item.slug}`}>{item.name}</Link></h3><p className="section-copy">{offer ? `${englishStores[offer.storeId].name} · Korean storefront` : "Check the retailer for availability"}</p></div><div className="intl-price"><strong>{currency === "JPY" && amount != null ? "Approx. " : ""}{formatted}</strong>{offer?.checkedAt ? <small>Observed {new Date(offer.checkedAt).toISOString().replace("T", " ").slice(0,16)} UTC</small> : null}<Link href={`/en/product/${item.slug}`}>View price details</Link></div></article>;
+      return <article className="intl-product-row" key={item.id}><div className="intl-item-summary"><SafeProductImage src={offer?.imageUrl} alt="" categorySlug={item.category} className="intl-item-thumbnail"/><div><p className="intl-brand">{item.brand}</p><h3><Link href={`/en/product/${item.slug}`}>{item.name}</Link></h3><p className="section-copy">{offer ? `${englishStores[offer.storeId].name} · Korean storefront` : "Check the retailer for availability"}</p></div></div><div className="intl-price"><strong>{currency === "JPY" && amount != null ? "Approx. " : ""}{formatted}</strong>{offer?.checkedAt ? <small>Observed {new Date(offer.checkedAt).toISOString().replace("T", " ").slice(0,16)} UTC</small> : null}<Link href={`/en/product/${item.slug}`}>View price details</Link></div></article>;
     })}</div><p className="section-copy">Selection for comparison, not a sales ranking. Prices are not a stock or checkout guarantee.</p>
   </section>;
 }

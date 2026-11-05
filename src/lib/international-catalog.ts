@@ -3,8 +3,8 @@ import { readProductPriceSnapshot } from "@/lib/static-price-snapshots";
 import { isInternationalOfferMatch } from "@/lib/international-offer-match";
 import { internationalProductIds } from "@/lib/international";
 
-export function getEnglishCatalog() {
-  return internationalProductIds.map(id => {
+export function getEnglishCatalog(ids: string[] = internationalProductIds) {
+  return ids.map(id => {
     const product = products.find(product => product.id === id)!;
     const snapshot = readProductPriceSnapshot(id);
     const offers = Object.entries(snapshot?.sources ?? {}).flatMap(([storeId, source]) =>

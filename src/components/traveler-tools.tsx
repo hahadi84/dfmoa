@@ -1,6 +1,7 @@
 "use client";
 import { useComparisonMeasurement } from "@/components/shopping-actions";
 import { AdBanner } from "@/components/ad-banner";
+import { SafeProductImage } from "@/components/product-image";
 import { useState } from "react";
 import Link from "@/components/app-link";
 import { travelerCopy, type TravelerLocale } from "@/lib/traveler-locales";
@@ -20,7 +21,7 @@ export function TravelerCatalog({ items, locale }: { items: EnglishCatalogItem[]
  <div className="intl-product-list">{items.filter(item=>category === "all" || item.category === category).map(item=>{
  const offer = item.offers[0]; const amount = !offer ? null : currency === "JPY" ? offer.krw/rate.rate : currency === "USD" ? offer.usd : offer.krw;
  const formatted = amount == null ? t.unconfirmed : new Intl.NumberFormat(t.format,{style:"currency",currency,currencyDisplay:"code",maximumFractionDigits:currency === "USD" ? 2 : 0}).format(amount);
- return <article className="intl-product-row" key={item.id}><div><p className="intl-brand">{item.brand}</p><h3><Link href={`/${locale}/product/${item.slug}`}><span lang="en">{item.name}</span></Link></h3><p>{offer ? `${t.stores[offer.storeId].name} · ${t.storefront}` : t.unconfirmed}</p></div><div className="intl-price"><strong>{currency === "JPY" && amount != null ? t.approx : ""}{formatted}</strong>{offer?.checkedAt ? <small>{t.time} {new Date(offer.checkedAt).toISOString().replace("T"," ").slice(0,16)} UTC</small> : null}<Link href={`/${locale}/product/${item.slug}`}>{t.details}</Link></div></article>;
+ return <article className="intl-product-row" key={item.id}><div className="intl-item-summary"><SafeProductImage src={offer?.imageUrl} alt="" categorySlug={item.category} className="intl-item-thumbnail"/><div><p className="intl-brand">{item.brand}</p><h3><Link href={`/${locale}/product/${item.slug}`}><span lang="en">{item.name}</span></Link></h3><p>{offer ? `${t.stores[offer.storeId].name} · ${t.storefront}` : t.unconfirmed}</p></div></div><div className="intl-price"><strong>{currency === "JPY" && amount != null ? t.approx : ""}{formatted}</strong>{offer?.checkedAt ? <small>{t.time} {new Date(offer.checkedAt).toISOString().replace("T"," ").slice(0,16)} UTC</small> : null}<Link href={`/${locale}/product/${item.slug}`}>{t.details}</Link></div></article>;
  })}</div><p className="section-copy">{t.rankNote}</p></section>;
 }
 export function TravelerRetailerLink({locale,storeId,slug,price=0}:{locale:TravelerLocale;storeId:StoreId;slug:string;price?:number}) {

@@ -41,3 +41,7 @@
   .shopping-guide th, .shopping-guide td { padding: .45rem .25rem; }
   .shopping-guide .intl-section-nav { flex-wrap: wrap; }
 }
+
+.intl-item-summary { display: flex; align-items: center; gap: 1rem; min-width: 0; }
+.intl-item-thumbnail { width: 72px; height: 72px; flex: 0 0 72px; object-fit: contain; }
+.intl-item-thumbnail img { width: 100%; height: 100%; object-fit: contain; }

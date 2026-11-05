@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { StoreId } from "@/lib/site-data";
 
 export const shoppingPaths = {
+  list: "/guide/korea-duty-free-shopping-list",
   station: "/guide/busan-station-souvenirs",
   airport: "/guide/gimhae-duty-free-pickup",
   serum: "/guide/sulwhasoo-first-care-90ml",

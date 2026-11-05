@@ -1,4 +1,5 @@
 import { busanCopy } from "@/lib/busan-guides";
+import { SafeProductImage } from "@/components/product-image";
 import Link from "@/components/app-link";
 import { ShopActions } from "@/components/shopping-actions";
 import { getEnglishCatalog } from "@/lib/international-catalog";
@@ -14,7 +15,8 @@ export function shoppingMetadata(locale: ShoppingLocale, guide: Guide) {
 
 export function ShoppingLinks({locale}: {locale: ShoppingLocale}) {
   const t = shoppingCopy[locale];
-  return <><Link href={"/" + locale + shoppingPaths.serum}>{t.menu[0]}</Link>
+  return <><Link href={"/" + locale + shoppingPaths.list}>{{en:"Korea duty-free shopping list",ja:"韓国免税店の買い物リスト",zh:"韩国免税店购物清单"}[locale]}</Link>
+    <Link href={"/" + locale + shoppingPaths.serum}>{t.menu[0]}</Link>
     <Link href={"/" + locale + shoppingPaths.gifts}>{t.menu[1]}</Link>
     <Link href={"/" + locale + shoppingPaths.station}>{busanCopy[locale].station}</Link>
     <Link href={"/" + locale + shoppingPaths.airport}>{busanCopy[locale].airport}</Link></>;
@@ -23,7 +25,7 @@ export function ShoppingLinks({locale}: {locale: ShoppingLocale}) {
 function Serum({locale}: {locale: ShoppingLocale}) {
   const t = shoppingCopy[locale];
   const product = getEnglishCatalog().find(item => item.id === "p3")!;
-  return <><h2>{t.price}</h2><table><thead><tr>
+  return <><div className="intl-item-summary"><SafeProductImage src={product.offers[0]?.imageUrl} alt={product.name} categorySlug={product.category} className="intl-item-thumbnail"/><h2>{t.price}</h2></div><table><thead><tr>
     <th>{t.channel}</th><th>{t.amount}</th><th>{t.terms}</th>
   </tr></thead><tbody>
     {product.offers.map((offer,i) => <tr key={i}><th scope="row">
