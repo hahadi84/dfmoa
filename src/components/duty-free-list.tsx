@@ -1,4 +1,5 @@
-import Link from "@/components/app-link";
+import { ShoppingActionLink } from "@/components/shopping-actions";
+import { shoppingCopy } from "@/lib/shopping-guides";
 import { SafeProductImage } from "@/components/product-image";
 import { getEnglishCatalog } from "@/lib/international-catalog";
 import { englishStores, internationalProductIds, internationalSources, localizedMetadata, shoppingPaths } from "@/lib/international";
@@ -45,11 +46,13 @@ export function DutyFreeList({locale}:{locale:ShoppingLocale}) {
     const offer=item.offers[0];
     const translated=internationalProductIds.includes(item.id);
     return <div key={item.id} className="intl-product-row"><div className="intl-item-summary">
-     <SafeProductImage src={offer?.imageUrl} alt="" className="intl-item-thumbnail" categorySlug={item.category}/>
+     <SafeProductImage src={offer?.imageUrl} alt={item.name} className="intl-item-thumbnail" categorySlug={item.category}/>
      <div><h3 lang="en">{item.name}</h3>{offer ? <p>{t.observed} · {englishStores[offer.storeId].name} · KRW {offer.krw.toLocaleString(locale)} {offer.checkedAt && <time dateTime={offer.checkedAt}>{new Date(offer.checkedAt).toISOString().slice(0,16).replace("T"," ")} UTC</time>}</p> : <p>{t.missing}</p>}
-     <Link href={(translated ? "/"+locale : "")+"/product/"+item.slug}>{translated?t.details:t.korean}</Link></div></div></div>;
+     <p>{item.volume}</p>
+     {offer && <p>{offer.discountRate != null && <>{shoppingCopy[locale].discount} {offer.discountRate}% · </>}{shoppingCopy[locale].dutyTerms} {offer.sourceUrl && <a href={offer.sourceUrl}>{shoppingCopy[locale].source}</a>}</p>}
+     <ShoppingActionLink locale={locale} source="duty_free_list" kind="product" product={item.slug} href={(translated ? "/"+locale : "")+"/product/"+item.slug}>{translated?t.details:t.korean}</ShoppingActionLink></div></div></div>;
    })}</section>)}
-  <nav className="intl-section-nav"><Link href={`/${locale}/compare`}>{t.compare}</Link>
-  <Link href={`/${locale}/guide/incheon-duty-free-pickup`}>{t.incheon}</Link><Link href={"/"+locale+shoppingPaths.airport}>{t.pickup}</Link></nav>
+  <nav className="intl-section-nav"><ShoppingActionLink locale={locale} source="duty_free_list" kind="compare" href={`/${locale}/compare`}>{t.compare}</ShoppingActionLink>
+  <ShoppingActionLink locale={locale} source="duty_free_list" kind="pickup" href={`/${locale}/guide/incheon-duty-free-pickup`}>{t.incheon}</ShoppingActionLink><ShoppingActionLink locale={locale} source="duty_free_list" kind="pickup" href={"/"+locale+shoppingPaths.airport}>{t.pickup}</ShoppingActionLink></nav>
  </div></article>;
 }

@@ -1,0 +1,74 @@
+[
+  {
+    "route": "/en/guide/korea-duty-free-shopping-list",
+    "overflow": false
+  },
+  {
+    "route": "/en/guide/busan-station-souvenirs",
+    "overflow": false
+  },
+  {
+    "route": "/en/guide/gimhae-duty-free-pickup",
+    "overflow": false
+  },
+  {
+    "route": "/en/guide/incheon-duty-free-pickup",
+    "overflow": false
+  },
+  {
+    "route": "/en/guide/myeongdong-gifts",
+    "overflow": false
+  },
+  {
+    "route": "/en/guide/sulwhasoo-first-care-90ml",
+    "overflow": false
+  },
+  {
+    "route": "/ja/guide/korea-duty-free-shopping-list",
+    "overflow": false
+  },
+  {
+    "route": "/ja/guide/busan-station-souvenirs",
+    "overflow": false
+  },
+  {
+    "route": "/ja/guide/gimhae-duty-free-pickup",
+    "overflow": false
+  },
+  {
+    "route": "/ja/guide/incheon-duty-free-pickup",
+    "overflow": false
+  },
+  {
+    "route": "/ja/guide/myeongdong-gifts",
+    "overflow": false
+  },
+  {
+    "route": "/ja/guide/sulwhasoo-first-care-90ml",
+    "overflow": false
+  },
+  {
+    "route": "/zh/guide/korea-duty-free-shopping-list",
+    "overflow": false
+  },
+  {
+    "route": "/zh/guide/busan-station-souvenirs",
+    "overflow": false
+  },
+  {
+    "route": "/zh/guide/gimhae-duty-free-pickup",
+    "overflow": false
+  },
+  {
+    "route": "/zh/guide/incheon-duty-free-pickup",
+    "overflow": false
+  },
+  {
+    "route": "/zh/guide/myeongdong-gifts",
+    "overflow": false
+  },
+  {
+    "route": "/zh/guide/sulwhasoo-first-care-90ml",
+    "overflow": false
+  }
+]

@@ -23,3 +23,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-02 첫 전체 디자인 배포의 Google 글꼴 처리 실패 후 사용자 “계속” 지시: 글꼴 의존성 수정본 release(requested-airport-font-fix): 2026-11-02 재배포 1회 승인.
 - 2026-11-05 사용자 “seo 검색 최적화 및 배포” 요청에 따라 release(requested-shopping-seo): 2026-11-05 운영 공개 1회를 허용한다. 날짜·운영 환경·중복 방지 검사를 유지한다.
 - 2026-11-05 별도 배포 요청으로 쇼핑리스트·상품 이미지 공개 1회(release(requested-shopping-list): 2026-11-05)를 허용한다.
+
+- 2026-11-05 사용자 추가 “배포” 요청: 검증된 다국어 쇼핑 연결·측정 보강본 release(requested-shopping-actions): 2026-11-05 운영 공개 1회 허용. 중복 방지와 정기 정책은 유지한다.

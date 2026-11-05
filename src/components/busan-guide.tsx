@@ -1,3 +1,4 @@
+import { ShoppingNextSteps } from "@/components/shopping-actions";
 import { ShopActions, BusanCatalogLink } from "@/components/shopping-actions";
 import { busanCopy, busanSources, stationShop } from "@/lib/busan-guides";
 import { localizedMetadata, shoppingPaths } from "@/lib/international";
@@ -29,5 +30,5 @@ export function BusanGuide({locale, topic}: {locale: ShoppingLocale; topic: Topi
     ] : [["Korea Airports Corporation", busanSources.airport], ["Shilla · FAQ", busanSources.shillaTime],
       ["Shilla · Pickup", busanSources.shilla], ["Lotte · Pickup", busanSources.lotte]]).map(([label,url]) =>
         <li key={url}><a href={url}>{label}</a></li>)}</ul>
-  </div></article>;
+  <ShoppingNextSteps locale={locale}/></div></article>;
 }
