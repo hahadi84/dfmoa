@@ -1,15 +1,17 @@
+import { KoreaShoppingStart } from "@/components/korea-shopping-start";
 import { ShoppingLinks } from "@/components/shopping-guide";
 import { EnglishTravelLinks } from "@/components/english-travel-links";
 import Link from "@/components/app-link";
 import { InternationalCatalog } from "@/components/international-catalog";
 import { getEnglishCatalog } from "@/lib/international-catalog";
 import { englishMetadata, internationalSources, INTERNATIONAL_UPDATED } from "@/lib/international";
-export const metadata = englishMetadata("Korea duty-free price comparison for travelers", "Compare Korean duty-free prices, find gifts in Myeongdong and at Busan Station, and check where to collect orders at Incheon or Gimhae Airport.", "/en", "/");
+export const metadata = englishMetadata("What to buy in Korea: shopping lists, gifts and duty-free prices", "Compare Korean duty-free prices, find gifts in Myeongdong and at Busan Station, and check where to collect orders at Incheon or Gimhae Airport.", "/en", "/");
 export default function EnglishHome() {
   return <section className="page-section"><div className="container">
-    <h1 className="page-title">Plan your Korea duty-free shopping</h1><p className="page-description">Find gifts in Myeongdong or at Busan Station, compare duty-free prices and plan pickup at Incheon or Gimhae Airport.</p>
+    <h1 className="page-title">What to buy on your Korea trip</h1><p className="page-description">Find gifts in Myeongdong or at Busan Station, compare duty-free prices and plan pickup at Incheon or Gimhae Airport.</p>
     <nav className="intl-section-nav" aria-label="Shopping tools"><ShoppingLinks locale="en" /><a href="#english-products">Compare 10 products</a><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup guide</Link><Link href="/en/compare">Duty free vs tax refund</Link></nav>
     <section className="intl-note"><h2>Can visitors shop duty free?</h2><p>Yes, travelers with a confirmed international departure can shop. Register and order in the traveling person’s name, enter the correct passport and departure details, and follow the retailer’s collection instructions.</p><p>These pages cover purchases collected when leaving Korea. Do not assume an airside transfer or a domestic flight qualifies.</p><a href={internationalSources.shopping} target="_blank" rel="noreferrer">Official shopping instructions</a></section>
+    <KoreaShoppingStart locale="en" context="home"/>
     <InternationalCatalog items={getEnglishCatalog()} />
     <section className="intl-guide-section"><h2 className="section-title">Before you place an order</h2><ol><li>Match the exact size, concentration, shade and set contents.</li><li>Search the English retailer site for the product. Confirm eligibility, stock and the price available to your account.</li><li>Check your departure terminal, order deadline and pickup location on the retailer’s order confirmation.</li><li>Check the rules of your destination and any transit airport before purchasing liquids or restricted goods.</li></ol><p>DFMOA compares information; purchases and customer service are handled by the retailer. We do not collect passport or flight details.</p><Link href="/en/guide/incheon-duty-free-pickup">Read the Incheon pickup guide</Link></section>
     <EnglishTravelLinks />

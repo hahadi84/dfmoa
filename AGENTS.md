@@ -25,3 +25,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-05 별도 배포 요청으로 쇼핑리스트·상품 이미지 공개 1회(release(requested-shopping-list): 2026-11-05)를 허용한다.
 
 - 2026-11-05 사용자 추가 “배포” 요청: 검증된 다국어 쇼핑 연결·측정 보강본 release(requested-shopping-actions): 2026-11-05 운영 공개 1회 허용. 중복 방지와 정기 정책은 유지한다.
+
+- 2026-11-06 사용자 “검토내용 반영 수정해서 배포” 요청: release(requested-market-shopping): 2026-11-06 다국어 쇼핑·사진·지도·수령 검색 개선 운영 공개 1회 승인. 날짜·중복·production 제한을 유지한다.

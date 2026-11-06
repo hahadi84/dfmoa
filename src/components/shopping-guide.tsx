@@ -1,3 +1,5 @@
+import { ShoppingMap } from "@/components/shopping-map";
+import { MyeongdongPhoto } from "@/components/shopping-photo";
 import { busanCopy } from "@/lib/busan-guides";
 import { SafeProductImage } from "@/components/product-image";
 import Link from "@/components/app-link";
@@ -15,7 +17,7 @@ export function shoppingMetadata(locale: ShoppingLocale, guide: Guide) {
 
 export function ShoppingLinks({locale}: {locale: ShoppingLocale}) {
   const t = shoppingCopy[locale];
-  return <><Link href={"/" + locale + shoppingPaths.list}>{{en:"Korea duty-free shopping list",ja:"韓国免税店の買い物リスト",zh:"韩国免税店购物清单"}[locale]}</Link>
+  return <><Link href={"/" + locale + shoppingPaths.list}>{{en:"What to buy in Korea",ja:"韓国で買うもの・お土産",zh:"韩国旅游购物清单"}[locale]}</Link>
     <Link href={"/" + locale + shoppingPaths.serum}>{t.menu[0]}</Link>
     <Link href={"/" + locale + shoppingPaths.gifts}>{t.menu[1]}</Link>
     <Link href={"/" + locale + shoppingPaths.station}>{busanCopy[locale].station}</Link>
@@ -42,10 +44,10 @@ function Serum({locale}: {locale: ShoppingLocale}) {
 
 function Gifts({locale}: {locale: ShoppingLocale}) {
   const t = shoppingCopy[locale];
-  return <><table><thead><tr><th>{t.gift}</th><th>{t.shop}</th></tr></thead>
+  return <><MyeongdongPhoto locale={locale}/><table><thead><tr><th>{t.gift}</th><th>{t.shop}</th></tr></thead>
     <tbody>{shops.map((shop,i)=><tr key={shop.id}><th scope="row">{t.items[i]}</th><td><a href={"#" + shop.id}>{t.names[i]}</a></td></tr>)}</tbody></table>
     {shops.map((shop,i)=><section id={shop.id} key={shop.id}><h2>{t.names[i]}</h2><p>{t.notes[i]}</p>
-      <p lang="ko"><strong>{shop.name}</strong><br/>{shop.address}</p><ShopActions locale={locale} shop={shop}/></section>)}
+      <p lang="ko"><strong>{shop.name}</strong><br/>{shop.address}</p><ShopActions locale={locale} shop={shop}/><ShoppingMap locale={locale} name={shop.name} address={shop.address} store={shop.id}/></section>)}
     <p>{t.checked} · 2026-11-05</p><Link href={`/${locale}/compare`}>{t.calc}</Link></>;
 }
 

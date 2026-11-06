@@ -1,3 +1,4 @@
+import { ShoppingMap } from "@/components/shopping-map";
 import { ShoppingNextSteps } from "@/components/shopping-actions";
 import { ShopActions, BusanCatalogLink } from "@/components/shopping-actions";
 import { busanCopy, busanSources, stationShop } from "@/lib/busan-guides";
@@ -22,7 +23,7 @@ export function BusanGuide({locale, topic}: {locale: ShoppingLocale; topic: Topi
       <tbody>{rows.map(([name,detail,note]) => <tr key={name}><th scope="row">{name}</th><td>{detail}</td><td>{note}</td></tr>)}</tbody></table>
     {station ? <><p>{t.stock}</p><h2>{t.route}</h2>
       <p lang="ko">{stationShop.name}<br/>{stationShop.address}</p>
-      <ShopActions locale={locale} shop={stationShop}/></> :
+      <ShopActions locale={locale} shop={stationShop}/><ShoppingMap locale={locale} name={stationShop.name} address={stationShop.address} store={stationShop.id}/></> :
       <><p>{t.distinction}</p><nav className="intl-section-nav"><BusanCatalogLink locale={locale}>{t.compare}</BusanCatalogLink></nav></>}
     <p>{t.sources} · <time dateTime="2026-11-05">2026-11-05</time></p>
     <ul>{(station ? [

@@ -16,7 +16,7 @@ export const shoppingCopy = {
   discount: "Listed discount", dutyTerms: "Observed listing. Confirm the edition, bundle contents and account discounts at checkout.", missing: "No verified observation",
   decide: "When should you buy in town?", advice: "If you want the gift before your flight, ask the counter for the price of a single 90ml bottle and a refund quote after fees. For airport pickup, check your own duty-free checkout price. A branch price and refund are still missing, so the cheaper route is undetermined.",
   details: "See duty-free listings", calc: "Compare your two checkout prices", pickup: "Incheon pickup guide",
-  gift: "Gift to look for", shop: "Where to go", items: ["Sheet masks", "Individually wrapped tea bags"], names: ["Olive Young Myeongdong Global", "OSULLOC at Lotte Department Store, Myeongdong"],
+  gift: "Gift to look for", shop: "Where to go", items: ["Sheet masks", "Individually wrapped tea bags"], names: ["Olive Young Myeongdong Town", "OSULLOC at Lotte Department Store, Myeongdong"],
   notes: ["For several small gifts, compare the number of masks in each pack. The branch lists tax refunds and an inventory lookup. Check your item and today’s hours before leaving.", "For a gift to divide among colleagues, look for individually wrapped bags. Head to the basement food floor. The directory lists Mon–Thu 10:30–20:00, Fri–Sun 10:30–20:30. Check department-store closures. Stock and refund terms need counter confirmation."],
   copy: "Copy Korean name and address", copied: "Copied", fallback: "Select and copy the address above.", map: "Open map", official: "Official store information", checked: "Sources checked",
  },

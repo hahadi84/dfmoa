@@ -45,7 +45,7 @@ export function ShoppingActionLink({href, locale, source, kind, product, childre
   kind: "product" | "compare" | "pickup"; product?: string; children: React.ReactNode;
 }) {
   const events = {product:"shopping_product_open", compare:"shopping_compare_open", pickup:"shopping_pickup_open"} as const;
-  return <Link href={href} onClick={()=>trackEvent(events[kind], {language:locale, source_page:source, product_slug:product})}>{children}</Link>;
+  return <Link href={href} onClick={()=>trackEvent(events[kind], {language:locale, source_page:source, product_slug:product, content_market:source==="country_shopping"?{en:"US",ja:"JP",zh:"CN"}[locale]:undefined})}>{children}</Link>;
 }
 
 export function ShoppingNextSteps({locale}: {locale: ShoppingLocale}) {

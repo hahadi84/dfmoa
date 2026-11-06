@@ -1,0 +1,65 @@
+[
+  {
+    "locale": "en",
+    "contentMarket": "US",
+    "items": 10,
+    "stops": 3,
+    "ids": [
+      "pick-mask",
+      "pick-serum",
+      "pick-tea",
+      "pick-gim",
+      "pick-snack",
+      "pick-stationery",
+      "pick-socks",
+      "pick-craft",
+      "pick-sunglasses",
+      "pick-busan"
+    ],
+    "photos": "loaded",
+    "overflow": false,
+    "eventCount": 1
+  },
+  {
+    "locale": "ja",
+    "contentMarket": "JP",
+    "items": 10,
+    "stops": 3,
+    "ids": [
+      "pick-mask",
+      "pick-cushion",
+      "pick-lip",
+      "pick-tea",
+      "pick-gim",
+      "pick-snack",
+      "pick-socks",
+      "pick-stationery",
+      "pick-ramyeon",
+      "pick-busan"
+    ],
+    "photos": "loaded",
+    "overflow": false,
+    "eventCount": 1
+  },
+  {
+    "locale": "zh",
+    "contentMarket": "CN",
+    "items": 10,
+    "stops": 3,
+    "ids": [
+      "pick-serum",
+      "pick-cushion",
+      "pick-mask",
+      "pick-lip",
+      "pick-tea",
+      "pick-ginseng",
+      "pick-sunglasses",
+      "pick-craft",
+      "pick-snack",
+      "pick-busan"
+    ],
+    "photos": "loaded",
+    "overflow": false,
+    "eventCount": 1
+  }
+]
