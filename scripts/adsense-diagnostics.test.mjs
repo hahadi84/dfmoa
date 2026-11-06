@@ -7,14 +7,14 @@ import ts from 'typescript';
 import * as policy from '../src/lib/adsense-policy.mjs';
 const require = createRequire(import.meta.url);
 
-async function mount(host, fail = false, serverSnapshot = false) {
+async function mount(host, fail = false, serverSnapshot = false, path = '/product/test') {
   const effects=[], diagnostics=[], resize=[], mutations=[];
   const attributes=new Map();let pushes=0, loads=0, ref=0, state=0;
   const element={isConnected:true,getAttribute:key=>attributes.get(key)??null,getBoundingClientRect:()=>({width:320,height:280})};
   const react={useRef:()=>({current:ref++===0?element:element}),useState:initial=>[++state===1?initial:'waiting', state===1?()=>{}:value=>diagnostics.push(value)],useEffect:fn=>effects.push(fn),useSyncExternalStore:(_,snapshot,server)=>serverSnapshot?server():snapshot()};
   const exports={};
   const code=ts.transpileModule(fs.readFileSync('src/components/ad-banner.tsx','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX}}).outputText;
-  vm.runInNewContext(code,{exports,require:id=>id==='react'?react:id==='next/navigation'?{usePathname:()=>'/product/test'}:id.includes('adsense-policy')?policy:id.includes('adsense-browser')?{loadAdSense:()=>{loads++;return Promise.resolve();}}:require(id),window:{location:{hostname:host},adsbygoogle:{push:()=>{pushes++;if(fail)throw Error('ad failure');}}},ResizeObserver:class{constructor(fn){resize.push(fn);}observe(){}disconnect(){}},IntersectionObserver:class{constructor(fn){this.fn=fn;}observe(){this.fn([{isIntersecting:true}]);}disconnect(){}},MutationObserver:class{constructor(fn){mutations.push(fn);}observe(){}disconnect(){}}});
+  vm.runInNewContext(code,{exports,require:id=>id==='react'?react:id==='next/navigation'?{usePathname:()=>path}:id.includes('adsense-policy')?policy:id.includes('adsense-browser')?{loadAdSense:()=>{loads++;return Promise.resolve();}}:require(id),window:{location:{hostname:host},adsbygoogle:{push:()=>{pushes++;if(fail)throw Error('ad failure');}}},ResizeObserver:class{constructor(fn){resize.push(fn);}observe(){}disconnect(){}},IntersectionObserver:class{constructor(fn){this.fn=fn;}observe(){this.fn([{isIntersecting:true}]);}disconnect(){}},MutationObserver:class{constructor(fn){mutations.push(fn);}observe(){}disconnect(){}}});
   const tree=exports.AdBanner({placement:'results'});
   const cleanups=effects.map(fn=>fn());await Promise.resolve();await Promise.resolve();
   return {tree,diagnostics,attributes,resize,mutations,counts:()=>({pushes,loads}),cleanup:()=>cleanups.forEach(fn=>fn?.())};
@@ -38,4 +38,18 @@ test('initial server snapshot reserves space without showing a development place
  const preview=await mount('localhost');
  assert.equal(preview.tree.props.children[1].props.children.props.className,'ad-banner__placeholder');
  preview.cleanup();
+});
+
+test('optimized inventory is distinct from empty inventory and language labels follow the page',async()=>{
+ for(const [path,label] of [['/en/guide/korea-duty-free-shopping-list','Advertisement'],['/ja','広告'],['/zh','广告']]){
+  const ad=await mount('www.dfmoa.com',false,false,path);
+  assert.equal(ad.tree.props['aria-label'],label);
+  ad.attributes.set('data-ad-status','unfill-optimized');ad.mutations.forEach(fn=>fn());
+  assert.equal(ad.diagnostics.at(-1),'optimized');
+  ad.resize.forEach(fn=>fn());assert.equal(ad.counts().pushes,1);
+  ad.cleanup();
+ }
+ const css=fs.readFileSync('src/app/adsense.css','utf8');
+ assert.match(css,/data-ad-state="unfilled"/);
+ assert.doesNotMatch(css,/data-ad-state="(?:filled|optimized)"/);
 });

@@ -1,0 +1,125 @@
+[
+  {
+    "route": "/",
+    "ads": [
+      {
+        "state": "processed",
+        "label": "Advertisement",
+        "rect": {
+          "w": 1200,
+          "h": 114
+        },
+        "ins": "<ins class=\"adsbygoogle dfmoa-manual-ad\" data-ad-client=\"ca-pub-2271072565444318\" data-ad-slot=\"9746388185\" style=\"display: block; width: 970px; height: 90px; min-height: 90px;\" data-adsbygoogle-status=\"done\" data-ad-status=\"unfill-optimized\"><div id=\"aswift_1_host\" style=\"border-width: medium; border-style: none; border-color: currentcolor; border-image: none; height: 90px; width: 970px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;\"><div data-google-ad-efd=\"true\" class=\"google-aiuf\" style=\"width: 970px !important; display: flex !important; flex-wrap: wrap !important; place-content: center !important; align-items: c"
+      }
+    ],
+    "script": 1,
+    "iframe": 4,
+    "errors": [],
+    "failures": [
+      {
+        "url": "https://pagead2.googlesyndication.com/pagead/ping",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/pagead/ping",
+        "error": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://pagead2.googlesyndication.com/pagead/ping",
+        "error": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  {
+    "route": "/en",
+    "ads": [
+      {
+        "state": "processed",
+        "label": "Advertisement",
+        "rect": {
+          "w": 1200,
+          "h": 114
+        },
+        "ins": "<ins class=\"adsbygoogle dfmoa-manual-ad\" data-ad-client=\"ca-pub-2271072565444318\" data-ad-slot=\"9746388185\" style=\"display: block; width: 970px; height: 90px; min-height: 90px;\" data-adsbygoogle-status=\"done\" data-ad-status=\"unfill-optimized\"><div id=\"aswift_1_host\" style=\"border-width: medium; border-style: none; border-color: currentcolor; border-image: none; height: 90px; width: 970px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;\"><div data-google-ad-efd=\"true\" class=\"google-aiuf\" style=\"width: 970px !important; display: flex !important; flex-wrap: wrap !important; place-content: center !important; align-items: c"
+      }
+    ],
+    "script": 1,
+    "iframe": 1,
+    "errors": [],
+    "failures": [
+      {
+        "url": "https://pagead2.googlesyndication.com/pagead/ping",
+        "error": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  {
+    "route": "/ja",
+    "ads": [
+      {
+        "state": "processed",
+        "label": "Advertisement",
+        "rect": {
+          "w": 1200,
+          "h": 114
+        },
+        "ins": "<ins class=\"adsbygoogle dfmoa-manual-ad\" data-ad-client=\"ca-pub-2271072565444318\" data-ad-slot=\"9746388185\" style=\"display: block; width: 970px; height: 90px; min-height: 90px;\" data-adsbygoogle-status=\"done\" data-ad-status=\"unfill-optimized\"><div id=\"aswift_1_host\" style=\"border-width: medium; border-style: none; border-color: currentcolor; border-image: none; height: 90px; width: 970px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;\"><div data-google-ad-efd=\"true\" class=\"google-aiuf\" style=\"width: 970px !important; display: flex !important; flex-wrap: wrap !important; place-content: center !important; align-items: c"
+      }
+    ],
+    "script": 1,
+    "iframe": 1,
+    "errors": [],
+    "failures": [
+      {
+        "url": "https://pagead2.googlesyndication.com/pagead/ping",
+        "error": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  {
+    "route": "/zh",
+    "ads": [
+      {
+        "state": "processed",
+        "label": "Advertisement",
+        "rect": {
+          "w": 1200,
+          "h": 114
+        },
+        "ins": "<ins class=\"adsbygoogle dfmoa-manual-ad\" data-ad-client=\"ca-pub-2271072565444318\" data-ad-slot=\"9746388185\" style=\"display: block; width: 970px; height: 90px; min-height: 90px;\" data-adsbygoogle-status=\"done\" data-ad-status=\"unfill-optimized\"><div id=\"aswift_1_host\" style=\"border-width: medium; border-style: none; border-color: currentcolor; border-image: none; height: 90px; width: 970px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;\"><div data-google-ad-efd=\"true\" class=\"google-aiuf\" style=\"width: 970px !important; display: flex !important; flex-wrap: wrap !important; place-content: center !important; align-items: c"
+      }
+    ],
+    "script": 1,
+    "iframe": 1,
+    "errors": [],
+    "failures": [
+      {
+        "url": "https://pagead2.googlesyndication.com/pagead/ping",
+        "error": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  {
+    "route": "/en/guide/korea-duty-free-shopping-list",
+    "ads": [
+      {
+        "state": "processed",
+        "label": "Advertisement",
+        "rect": {
+          "w": 1200,
+          "h": 114
+        },
+        "ins": "<ins class=\"adsbygoogle dfmoa-manual-ad\" data-ad-client=\"ca-pub-2271072565444318\" data-ad-slot=\"9746388185\" style=\"display: block; width: 970px; height: 90px; min-height: 90px;\" data-adsbygoogle-status=\"done\" data-ad-status=\"unfill-optimized\"><div id=\"aswift_1_host\" style=\"border-width: medium; border-style: none; border-color: currentcolor; border-image: none; height: 90px; width: 970px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;\"><div data-google-ad-efd=\"true\" class=\"google-aiuf\" style=\"width: 970px !important; display: flex !important; flex-wrap: wrap !important; place-content: center !important; align-items: c"
+      }
+    ],
+    "script": 1,
+    "iframe": 1,
+    "errors": [],
+    "failures": [
+      {
+        "url": "https://pagead2.googlesyndication.com/pagead/ping",
+        "error": "net::ERR_ABORTED"
+      }
+    ]
+  }
+]

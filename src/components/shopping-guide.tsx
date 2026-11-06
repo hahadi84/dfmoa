@@ -1,3 +1,4 @@
+import { AdBanner } from "@/components/ad-banner";
 import { ShoppingMap } from "@/components/shopping-map";
 import { MyeongdongPhoto } from "@/components/shopping-photo";
 import { busanCopy } from "@/lib/busan-guides";
@@ -55,5 +56,5 @@ export function ShoppingGuide({locale, guide}: {locale: ShoppingLocale; guide: G
   const t = shoppingCopy[locale];
   return <article className="page-section"><div className="container intl-reading shopping-guide"><h1 className="page-title">{t[guide]}</h1>
     <p className="page-description">{guide === "serum" ? t.serumIntro : t.giftsIntro}</p>
-    {guide === "serum" ? <Serum locale={locale}/> : <Gifts locale={locale}/>}</div></article>;
+    {guide === "serum" ? <Serum locale={locale}/> : <Gifts locale={locale}/>}<AdBanner placement="results"/></div></article>;
 }

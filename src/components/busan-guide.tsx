@@ -1,3 +1,4 @@
+import { AdBanner } from "@/components/ad-banner";
 import { ShoppingMap } from "@/components/shopping-map";
 import { ShoppingNextSteps } from "@/components/shopping-actions";
 import { ShopActions, BusanCatalogLink } from "@/components/shopping-actions";
@@ -21,6 +22,7 @@ export function BusanGuide({locale, topic}: {locale: ShoppingLocale; topic: Topi
     <h2>{station ? t.stationQ : t.airportQ}</h2><p>{station ? t.intro : t.flight}</p>
     <table><thead><tr>{columns.map(label => <th key={label} scope="col">{label}</th>)}</tr></thead>
       <tbody>{rows.map(([name,detail,note]) => <tr key={name}><th scope="row">{name}</th><td>{detail}</td><td>{note}</td></tr>)}</tbody></table>
+    <AdBanner placement="results"/>
     {station ? <><p>{t.stock}</p><h2>{t.route}</h2>
       <p lang="ko">{stationShop.name}<br/>{stationShop.address}</p>
       <ShopActions locale={locale} shop={stationShop}/><ShoppingMap locale={locale} name={stationShop.name} address={stationShop.address} store={stationShop.id}/></> :

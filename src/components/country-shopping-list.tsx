@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+import { AdBanner } from "@/components/ad-banner";
 import Link from "@/components/app-link";
 import { SafeProductImage } from "@/components/product-image";
 import { ShoppingActionLink, ShopActions } from "@/components/shopping-actions";
@@ -20,7 +22,7 @@ export function CountryShoppingList({locale}: {locale:ShoppingLocale}) {
   const product=catalog.find(p=>p.id===pickProduct[id]); const offer=product?.offers[0];
   const image=id==="ginseng" ? null : images[pickMedia[id] as keyof typeof images];
   const route=routes[id as keyof typeof routes];
-  return <section className="country-shopping-item" id={`pick-${id}`} key={id}>
+  return <Fragment key={id}><section className="country-shopping-item" id={`pick-${id}`} key={id}>
    <h3>{t.labels[i]}</h3>
    {offer?.imageUrl ? <SafeProductImage src={offer.imageUrl} alt={product!.name} className="country-shopping-image" categorySlug={product!.category}/> : image && <figure>
     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -34,7 +36,7 @@ export function CountryShoppingList({locale}: {locale:ShoppingLocale}) {
     {product && <ShoppingActionLink locale={locale} source="country_shopping" kind="product" product={product.slug} href={`${internationalProductIds.includes(product.id)?`/${locale}`:""}/product/${product.slug}`}>{product.name}{!internationalProductIds.includes(product.id) && <> · {{en:"Korean",ja:"韓国語",zh:"韩文"}[locale]}</>}</ShoppingActionLink>}
     <a href={id==="tea"?shops[1].url:id==="busan"?stationShop.url:id==="craft"?selectionSources.crafts:selectionSources.tourism}>{t.source}</a>
    </nav>
-  </section>;
+  </section>{i===3 && <div className="country-shopping-ad"><AdBanner placement="results"/></div>}</Fragment>;
  })}</div>
  <p><a href={{en:"https://www.aphis.usda.gov/traveling-with-ag-products/another-country",ja:"https://www.maff.go.jp/pps/j/trip/keikouhin.html",zh:"https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html"}[locale]}>{ {en:"Check US food and agricultural entry rules before choosing edible gifts",ja:"食品を選ぶ前に日本の検疫条件を確認",zh:"选择食品礼品前查看目的地海关条件"}[locale]}</a></p>
  <h2>{t.map}</h2><p>{t.mapNote}</p>

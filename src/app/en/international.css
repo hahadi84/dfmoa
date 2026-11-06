@@ -67,3 +67,5 @@
 .country-shop {border-top:1px solid #d8dee7;margin:24px 0;padding-top:12px;}
 .country-shopping .intl-section-nav {gap:10px 18px;}
 @media(max-width:640px){.country-shopping-grid{grid-template-columns:1fr;}}
+
+.country-shopping-ad { grid-column:1 / -1; min-width:0; }

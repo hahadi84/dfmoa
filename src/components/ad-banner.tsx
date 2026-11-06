@@ -7,6 +7,9 @@ const subscribe=()=>()=>{};
 const clientMode=()=>isAdSenseHost(window.location.hostname)?"production":"preview";
 export function AdBanner({placement="results",slot}:{placement?:"top"|"results";slot?:string}) {
  const pathname=usePathname();
+ const language=pathname.match(/^\/(en|ja|zh)(?=\/|$)/)?.[1]??"ko";
+ const labels:Record<string,{label:string;preview:string}>={en:{label:"Advertisement",preview:"Advertising space"},ja:{label:"広告",preview:"広告枠"},zh:{label:"广告",preview:"广告位"},ko:{label:"광고",preview:"광고 영역"}};
+ const copy=labels[language];
  const mode=useSyncExternalStore(subscribe,clientMode,()=>"unknown");
  const element=useRef<HTMLModElement>(null);
  const box=useRef<HTMLDivElement>(null);
@@ -23,7 +26,7 @@ export function AdBanner({placement="results",slot}:{placement?:"top"|"results";
   if(mode!=="production" || !eligible || !/^\d+$/.test(adSlot) || !element.current)return;
   let cancelled=false,near=placement==="top",loaded=false,submitted=false;
   const target=element.current;
-  const observeStatus=()=>setDiagnostic(target.getAttribute('data-ad-status')==='filled'?'filled':target.getAttribute('data-ad-status')==='unfilled'?'unfilled':target.getAttribute('data-adsbygoogle-status')==='done'?'processed':'submitted');
+  const observeStatus=()=>setDiagnostic(target.getAttribute('data-ad-status')==='filled'?'filled':target.getAttribute('data-ad-status')==='unfilled'?'unfilled':target.getAttribute('data-ad-status')==='unfill-optimized'?'optimized':target.getAttribute('data-adsbygoogle-status')==='done'?'processed':'submitted');
   const statusObserver=new MutationObserver(observeStatus);statusObserver.observe(target,{attributes:true,attributeFilter:['data-ad-status','data-adsbygoogle-status']});
   const push=()=>{
    if(cancelled || submitted || !target.isConnected)return;
@@ -40,8 +43,8 @@ export function AdBanner({placement="results",slot}:{placement?:"top"|"results";
   return()=>{cancelled=true;size.disconnect();visibility.disconnect();statusObserver.disconnect();};
  },[mode,eligible,adSlot,placement]);
  if(!eligible)return null;
- return <aside className={`ad-banner ad-banner--${placement}`} aria-label="Advertisement" data-ad-state={mode==='preview'?'preview-blocked':diagnostic}><span className="ad-banner__label">ADVERTISEMENT · 광고</span><div ref={box} className="ad-banner__space">
- {mode==="production" && adSlot ? <ins ref={element} className="adsbygoogle dfmoa-manual-ad" style={{display:"block",width:"100%",height:dimensions.height,minHeight:placement==="top"?90:280}} data-ad-client={ADSENSE_PUBLISHER} data-ad-slot={adSlot}/> : mode==="preview" ? <div className="ad-banner__placeholder">AdSense 영역 ({dimensions.width||"가로"}×{dimensions.height})</div> : null}
+ return <aside className={`ad-banner ad-banner--${placement}`} aria-label={copy.label} lang={language==="zh"?"zh-Hans":language} data-ad-state={mode==='preview'?'preview-blocked':diagnostic}><span className="ad-banner__label">{copy.label}</span><div ref={box} className="ad-banner__space">
+ {mode==="production" && adSlot ? <ins ref={element} className="adsbygoogle dfmoa-manual-ad" style={{display:"block",width:"100%",height:dimensions.height,minHeight:placement==="top"?90:280}} data-ad-client={ADSENSE_PUBLISHER} data-ad-slot={adSlot}/> : mode==="preview" ? <div className="ad-banner__placeholder">{copy.preview} ({dimensions.width||"—"}×{dimensions.height})</div> : null}
  </div></aside>;
 }
 export function TopAdBanner(){const path=usePathname();if(path==="/search" || hasInlineTopAd(path))return null;return <div className="container"><AdBanner key={path} placement="top"/></div>;}

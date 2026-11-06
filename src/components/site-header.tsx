@@ -11,7 +11,7 @@ export function SiteHeader() {
   const path = usePathname();
   if (path === "/ja" || path.startsWith("/ja/")) return <TravelerHeader locale="ja" path={path}/>;
   if (path === "/zh" || path.startsWith("/zh/")) return <TravelerHeader locale="zh" path={path}/>;
-  if (path === "/en" || path.startsWith("/en/")) return <header className="topbar" lang="en"><div className="container topbar-inner"><Link className="brand" href="/en"><BrandMark/><span className="brand-copy"><strong>DFMOA</strong><span>Korea duty-free comparison</span></span></Link><AirportNavigation label="Main navigation" menuLabel="Menu"><Link href="/en">Compare products</Link><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup</Link><Link href="/en/compare">Duty free vs tax refund</Link><LanguageLinks path={path}/></AirportNavigation></div></header>;
+  if (path === "/en" || path.startsWith("/en/")) return <header className="topbar" lang="en"><div className="container topbar-inner"><Link className="brand" href="/en"><BrandMark/><span className="brand-copy"><strong>DFMOA</strong><span>Korea duty-free comparison</span></span></Link><AirportNavigation label="Main navigation" menuLabel="Menu"><Link href="/en/guide/korea-duty-free-shopping-list">What to buy in Korea</Link><Link href="/en">Shopping home</Link><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup</Link><Link href="/en/compare">Duty free vs tax refund</Link><LanguageLinks path={path}/></AirportNavigation></div></header>;
 
   return (
     <header className="topbar">

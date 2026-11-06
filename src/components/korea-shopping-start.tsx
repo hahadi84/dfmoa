@@ -1,3 +1,4 @@
+import { AdBanner } from "@/components/ad-banner";
 import { ShoppingActionLink } from "@/components/shopping-actions";
 import { SafeProductImage } from "@/components/product-image";
 import { getEnglishCatalog } from "@/lib/international-catalog";
@@ -55,6 +56,7 @@ export function KoreaShoppingStart({locale, context}: {locale: ShoppingLocale; c
     <ul>{t.rows.map(([title, body, label, route]) => <li key={route}>
       <h3>{title}</h3><p>{body}</p><Link href={`/${locale}${route}`}>{label}</Link>
     </li>)}</ul>
+    {context === "home" && <AdBanner placement="results"/>}
     <MyeongdongPhoto locale={locale}/>
     <p className="section-copy">{t.note}</p>
     {context === "home" && <Link href={`/${locale}${shoppingPaths.list}`}>{t.list}</Link>}
