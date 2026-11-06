@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-05T02:03:02.104Z",
+  "generatedAt": "2026-11-06T02:03:13.184Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 7
+      "count": 6
     },
     {
       "productSlug": "estee-lauder-anr-100ml",
@@ -16,11 +16,11 @@
       "count": 3
     },
     {
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
-      "count": 3
+      "productSlug": "longines-hydroconquest",
+      "count": 2
     },
     {
-      "productSlug": "longines-hydroconquest",
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 2
     },
     {
@@ -44,7 +44,7 @@
       "count": 1
     },
     {
-      "productSlug": "hera-black-cushion-15g",
+      "productSlug": "hamilton-khaki-field-mechanical",
       "count": 1
     },
     {
@@ -53,6 +53,10 @@
     },
     {
       "productSlug": "orthomol-immun",
+      "count": 1
+    },
+    {
+      "productSlug": "royal-salute-21-700ml",
       "count": 1
     }
   ]

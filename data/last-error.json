@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T02:15:56.486Z",
+  "generatedAt": "2026-11-06T02:16:08.197Z",
   "attemptedCount": 80,
   "failureCount": 58,
   "failures": [
@@ -34,9 +34,9 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p19",
-      "productSlug": "hera-black-cushion-15g",
-      "categorySlug": "beauty",
+      "productId": "p57",
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -66,6 +66,12 @@
     {
       "productId": "p4",
       "productSlug": "sk2-pitera-essence-230ml",
+      "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p19",
+      "productSlug": "hera-black-cushion-15g",
       "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -264,12 +270,6 @@
     {
       "productId": "p54",
       "productSlug": "casio-g-shock-ga-2100",
-      "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p57",
-      "productSlug": "hamilton-khaki-field-mechanical",
       "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
