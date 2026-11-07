@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-11-06T02:16:08.196Z",
-  "generatedAtKst": "2026-11-06 11:16:08",
+  "generatedAt": "2026-11-07T01:56:17.089Z",
+  "generatedAtKst": "2026-11-07 10:56:17",
   "requiredTotal": 40,
-  "searchDemandGeneratedAt": "2026-11-06T02:03:13.184Z",
+  "searchDemandGeneratedAt": "2026-11-07T01:43:18.245Z",
   "prioritizedSlugs": [
     "creed-aventus-50ml",
     "estee-lauder-anr-100ml",
     "johnnie-walker-blue-label-750ml",
     "longines-hydroconquest",
+    "royal-salute-21-700ml",
     "sulwhasoo-first-care-serum-90ml",
     "ballantines-21-700ml",
     "bleu-de-chanel-edp-100ml",
@@ -16,8 +17,7 @@
     "dyson-supersonic",
     "hamilton-khaki-field-mechanical",
     "le-labo-santal-33-50ml",
-    "orthomol-immun",
-    "royal-salute-21-700ml"
+    "orthomol-immun"
   ],
   "selectedCount": 40,
   "quotas": {
@@ -37,6 +37,7 @@
     "estee-lauder-anr-100ml",
     "johnnie-walker-blue-label-750ml",
     "longines-hydroconquest",
+    "royal-salute-21-700ml",
     "sulwhasoo-first-care-serum-90ml",
     "ballantines-21-700ml",
     "bleu-de-chanel-edp-100ml",
@@ -46,7 +47,6 @@
     "hamilton-khaki-field-mechanical",
     "le-labo-santal-33-50ml",
     "orthomol-immun",
-    "royal-salute-21-700ml",
     "jo-malone-english-pear-100ml",
     "byredo-blanche-100ml",
     "dior-sauvage-edp-100ml",
@@ -120,8 +120,8 @@
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:03:13+09:00",
-      "priceKrw": 382100,
+      "fetchedAt": "2026-11-07T10:43:18+09:00",
+      "priceKrw": 382470,
       "priceUsd": 285
     },
     {
@@ -129,17 +129,35 @@
       "productSlug": "estee-lauder-anr-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:03:20+09:00",
-      "priceKrw": 137301,
+      "fetchedAt": "2026-11-07T10:43:26+09:00",
+      "priceKrw": 137434,
       "priceUsd": 102.41
+    },
+    {
+      "productId": "p26",
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "categorySlug": "liquor",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-07T10:43:33+09:00",
+      "priceKrw": 381195,
+      "priceUsd": 284.05
+    },
+    {
+      "productId": "p29",
+      "productSlug": "royal-salute-21-700ml",
+      "categorySlug": "liquor",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-07T10:43:49+09:00",
+      "priceKrw": 146439,
+      "priceUsd": 109.12
     },
     {
       "productId": "p3",
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:04:00+09:00",
-      "priceKrw": 89666,
+      "fetchedAt": "2026-11-07T10:43:56+09:00",
+      "priceKrw": 89753,
       "priceUsd": 66.88
     },
     {
@@ -147,8 +165,8 @@
       "productSlug": "ballantines-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:04:07+09:00",
-      "priceKrw": 205127,
+      "fetchedAt": "2026-11-07T10:44:03+09:00",
+      "priceKrw": 205326,
       "priceUsd": 153
     },
     {
@@ -156,8 +174,8 @@
       "productSlug": "bleu-de-chanel-edp-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:04:14+09:00",
-      "priceKrw": 205127,
+      "fetchedAt": "2026-11-07T10:44:10+09:00",
+      "priceKrw": 205326,
       "priceUsd": 153
     },
     {
@@ -165,26 +183,17 @@
       "productSlug": "le-labo-santal-33-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:04:58+09:00",
-      "priceKrw": 264922,
+      "fetchedAt": "2026-11-07T10:44:56+09:00",
+      "priceKrw": 265179,
       "priceUsd": 197.6
-    },
-    {
-      "productId": "p29",
-      "productSlug": "royal-salute-21-700ml",
-      "categorySlug": "liquor",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:05:13+09:00",
-      "priceKrw": 146297,
-      "priceUsd": 109.12
     },
     {
       "productId": "p10",
       "productSlug": "byredo-blanche-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:05:27+09:00",
-      "priceKrw": 288318,
+      "fetchedAt": "2026-11-07T10:45:20+09:00",
+      "priceKrw": 288597,
       "priceUsd": 215.05
     },
     {
@@ -192,8 +201,8 @@
       "productSlug": "tom-ford-oud-wood-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:05:41+09:00",
-      "priceKrw": 220062,
+      "fetchedAt": "2026-11-07T10:45:34+09:00",
+      "priceKrw": 220276,
       "priceUsd": 164.14
     },
     {
@@ -201,8 +210,8 @@
       "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:05:48+09:00",
-      "priceKrw": 115836,
+      "fetchedAt": "2026-11-07T10:45:41+09:00",
+      "priceKrw": 115949,
       "priceUsd": 86.4
     },
     {
@@ -210,8 +219,8 @@
       "productSlug": "lancome-genifique-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:06:13+09:00",
-      "priceKrw": 169867,
+      "fetchedAt": "2026-11-07T10:46:06+09:00",
+      "priceKrw": 170031,
       "priceUsd": 126.7
     },
     {
@@ -219,8 +228,8 @@
       "productSlug": "aesop-resurrection-hand-balm-75ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:06:58+09:00",
-      "priceKrw": 34389,
+      "fetchedAt": "2026-11-07T10:46:53+09:00",
+      "priceKrw": 34422,
       "priceUsd": 25.65
     },
     {
@@ -228,8 +237,8 @@
       "productSlug": "don-julio-1942-750ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:08:29+09:00",
-      "priceKrw": 229260,
+      "fetchedAt": "2026-11-07T10:48:26+09:00",
+      "priceKrw": 229482,
       "priceUsd": 171
     },
     {
@@ -237,8 +246,8 @@
       "productSlug": "sony-wh-1000xm5",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:08:36+09:00",
-      "priceKrw": 332360,
+      "fetchedAt": "2026-11-07T10:48:33+09:00",
+      "priceKrw": 332682,
       "priceUsd": 247.9
     },
     {
@@ -246,8 +255,8 @@
       "productSlug": "sony-wf-1000xm5",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:08:43+09:00",
-      "priceKrw": 252052,
+      "fetchedAt": "2026-11-07T10:48:40+09:00",
+      "priceKrw": 252296,
       "priceUsd": 188
     },
     {
@@ -255,8 +264,8 @@
       "productSlug": "sony-wh-ch720n",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:08:50+09:00",
-      "priceKrw": 145841,
+      "fetchedAt": "2026-11-07T10:48:47+09:00",
+      "priceKrw": 145983,
       "priceUsd": 108.78
     },
     {
@@ -264,8 +273,8 @@
       "productSlug": "tumi-alpha-bravo-backpack",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:08:56+09:00",
-      "priceKrw": 559876,
+      "fetchedAt": "2026-11-07T10:48:54+09:00",
+      "priceKrw": 560419,
       "priceUsd": 417.6
     },
     {
@@ -273,8 +282,8 @@
       "productSlug": "solgar-vitamin-d3",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:10:22+09:00",
-      "priceKrw": 22122,
+      "fetchedAt": "2026-11-07T10:50:23+09:00",
+      "priceKrw": 22143,
       "priceUsd": 16.5
     },
     {
@@ -282,8 +291,8 @@
       "productSlug": "gnc-mega-men-sport-180-tablets",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:10:29+09:00",
-      "priceKrw": 65962,
+      "fetchedAt": "2026-11-07T10:50:30+09:00",
+      "priceKrw": 66026,
       "priceUsd": 49.2
     },
     {
@@ -291,8 +300,8 @@
       "productSlug": "kgc-everytime-royal",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:10:36+09:00",
-      "priceKrw": 96866,
+      "fetchedAt": "2026-11-07T10:50:37+09:00",
+      "priceKrw": 96960,
       "priceUsd": 72.25
     },
     {
@@ -300,28 +309,18 @@
       "productSlug": "swarovski-swan-necklace",
       "categorySlug": "jewelry",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:14:47+09:00",
-      "priceKrw": 169438,
-      "priceUsd": 126.38
+      "fetchedAt": "2026-11-07T10:54:55+09:00",
+      "priceKrw": 145714,
+      "priceUsd": 108.58
     },
     {
       "productId": "p81",
       "productSlug": "godiva-gold-collection",
       "categorySlug": "food",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-06T11:15:26+09:00",
-      "priceKrw": 39081,
+      "fetchedAt": "2026-11-07T10:55:36+09:00",
+      "priceKrw": 39119,
       "priceUsd": 29.15
-    },
-    {
-      "productId": "p26",
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "categorySlug": "liquor",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p58",
@@ -495,12 +494,6 @@
     }
   ],
   "failures": [
-    {
-      "productId": "p26",
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
     {
       "productId": "p58",
       "productSlug": "longines-hydroconquest",

@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-11-06T02:16:08.197Z",
+  "generatedAt": "2026-11-07T01:56:17.090Z",
   "attemptedCount": 80,
-  "failureCount": 58,
+  "failureCount": 57,
   "failures": [
-    {
-      "productId": "p26",
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
     {
       "productId": "p58",
       "productSlug": "longines-hydroconquest",
