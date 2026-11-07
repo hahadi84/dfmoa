@@ -29,3 +29,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-06 사용자 “검토내용 반영 수정해서 배포” 요청: release(requested-market-shopping): 2026-11-06 다국어 쇼핑·사진·지도·수령 검색 개선 운영 공개 1회 승인. 날짜·중복·production 제한을 유지한다.
 
 - 2026-11-06 사용자 추가 “배포” 요청: release(requested-international-ads): 2026-11-06 외국어 본문 광고·탐색 개선 공개 1회 허용. 날짜·중복·production 제한 유지.
+
+- 2026-11-07 사용자 인증 파일 배포 승인: release(requested-naver-verification): 2026-11-07 운영 공개 1회 허용. 날짜·중복·production 제한 유지.

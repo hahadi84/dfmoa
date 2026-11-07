@@ -64,3 +64,9 @@ test('all-page airport release requires the approved date, subject and productio
   assert.equal(allowWeeklyBuild({ ...input, context: 'deploy-preview' }), false);
   assert.equal(allowWeeklyBuild({ ...input, earlierReleaseThisWeek: true }), false);
 });
+
+test('naver verification release is date, context and duplicate restricted', () => {
+ const input={subject:'release(requested-naver-verification): 2026-11-07',context:'production',currentCommit:'a'.repeat(40),previousCommit:'b'.repeat(40),previousSubject:'previous',now:new Date('2026-11-07T00:00:00Z')};
+ assert.equal(allowWeeklyBuild(input),true);
+ for (const patch of [{context:'deploy-preview'},{now:new Date('2026-11-08T00:00:00Z')},{earlierReleaseThisWeek:true},{previousCommit:input.currentCommit},{previousSubject:input.subject}]) assert.equal(allowWeeklyBuild({...input,...patch}),false);
+});
