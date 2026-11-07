@@ -3,7 +3,7 @@ import Link from "@/components/app-link";
 import { notFound } from "next/navigation";
 import { ProductPageClient } from "@/components/product-page-client";
 import { readProductContext } from "@/lib/context-content";
-import { buildBreadcrumbJsonLd, buildProductJsonLd, serializeJsonLd } from "@/lib/json-ld";
+import { buildBreadcrumbJsonLd, buildProductPageJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildSearchResultFromSnapshot } from "@/lib/price-snapshot-view";
 import { readProductPriceSnapshot } from "@/lib/static-price-snapshots";
 import { buildProductMetadata } from "@/lib/seo-metadata";
@@ -59,13 +59,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
     { name: category?.name ?? product.categorySlug, path: `/category/${product.categorySlug}` },
     { name: product.query, path: `/product/${product.slug}` },
   ]);
-  const productJsonLd = buildProductJsonLd(product, priceSnapshot);
+  const productPageJsonLd = buildProductPageJsonLd(product, priceSnapshot);
 
   return (
     <section className="page-section is-tight">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, productJsonLd]) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, productPageJsonLd]) }}
       />
       <div className="container">
         <div className="breadcrumb">

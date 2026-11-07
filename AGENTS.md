@@ -31,3 +31,12 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-06 사용자 추가 “배포” 요청: release(requested-international-ads): 2026-11-06 외국어 본문 광고·탐색 개선 공개 1회 허용. 날짜·중복·production 제한 유지.
 
 - 2026-11-07 사용자 인증 파일 배포 승인: release(requested-naver-verification): 2026-11-07 운영 공개 1회 허용. 날짜·중복·production 제한 유지.
+
+## 구조화 데이터·스니펫 검사 (사용자 지시, 2026-11-07)
+- 페이지·상품·가격·리뷰·템플릿 수정 시 JSON-LD와 실제 표시 내용의 일치를 반드시 확인한다.
+- Product는 검증된 현재 offers 또는 실제 review/aggregateRating 요건을 충족할 때만 사용한다. 과거 가격·가격 미확인 안내는 WebPage로 표현한다. 가짜 가격·평점·리뷰·재고·유효기간을 만들지 않는다.
+- 배포 전 npm run build에 포함된 check-structured-data 검사를 통과해야 한다. 실패를 무시하거나 검사를 제거해 공개하지 않는다.
+- 구조화 데이터 변경 시 대표 URL의 Google 리치 결과 테스트와 Search Console 상세 오류를 확인한다. 권장사항과 필수 오류를 구분하고, 자동검사가 Google의 전체 요건/사실성을 보장한다고 표현하지 않는다.
+- 배포 후 실제 HTML과 canonical·탐색경로를 확인하고, 해당 오류에 유효성 검사를 요청한다. 보고서 갱신은 재수집 후 확인한다.
+
+- 2026-11-07 사용자 구조화 데이터 수정 및 재발 방지 배포 승인: release(requested-structured-data): 2026-11-07 운영 공개 1회 허용. 날짜·중복·production 제한 유지.

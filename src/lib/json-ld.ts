@@ -1,6 +1,6 @@
 import type { BrandLanding, MonthlyDealReport, ProductComparePage } from "@/lib/content-models";
 import { SITE_OPERATOR } from "@/lib/site-operator";
-import { getCategoryBySlug, products, type Guide, type Product } from "@/lib/site-data";
+import { products, type Guide, type Product } from "@/lib/site-data";
 import { type StoreId } from "@/lib/site-data";
 import type { ProductPriceSnapshot, SnapshotPriceItem, SnapshotSourceRecord } from "@/lib/price-snapshot-types";
 import { getProductSeoSummary } from "@/lib/seo-metadata";
@@ -41,34 +41,27 @@ function getSnapshotOfferEntries(snapshot?: ProductPriceSnapshot | null) {
   );
 }
 
-export function buildProductJsonLd(product: Product, snapshot?: ProductPriceSnapshot | null) {
-  const category = getCategoryBySlug(product.categorySlug);
+export function buildProductPageJsonLd(product: Product, snapshot?: ProductPriceSnapshot | null) {
   const seo = getProductSeoSummary(product, snapshot);
-  // Weekly static pages contain historical observations, not executable checkout
-  // quotes. Do not advertise these snapshots as current Offer/AggregateOffer prices.
+  // These pages explain historical observations, not executable checkout offers.
+  // Use WebPage until verified current offers or genuine reviews are available.
   const image = getSnapshotOfferEntries(snapshot).find(({ item }) => item.imageUrl)?.item.imageUrl;
-  const productJsonLd: Record<string, unknown> = {
+  const url = absoluteUrl(`/product/${product.slug}`);
+  return {
     "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.query,
-    alternateName: product.displayName,
-    brand: {
-      "@type": "Brand",
-      name: product.brand,
-    },
-    image: image || absoluteUrl(`/og/product/${product.slug}.png`),
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    name: `${product.query} | 면세모아`,
     description: seo.description,
-    category: category?.name,
-    sku: product.slug,
-    url: absoluteUrl(`/product/${product.slug}`),
+    image: image || absoluteUrl(`/og/product/${product.slug}.png`),
+    url,
+    about: {
+      "@type": "Thing",
+      name: product.query,
+      alternateName: product.displayName,
+      identifier: product.slug,
+    },
   };
-
-  const observedAt = snapshot?.fetchedAt;
-  if (observedAt && Number.isFinite(Date.parse(observedAt))) productJsonLd.additionalProperty = [{
-    "@type": "PropertyValue", name: "가격 관측 시각", value: observedAt,
-  }];
-
-  return productJsonLd;
 }
 
 export function buildItemListJsonLd(items: Array<{ name: string; path: string }>, name: string) {
