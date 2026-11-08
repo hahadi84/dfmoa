@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-07T01:43:18.245Z",
+  "generatedAt": "2026-11-08T01:11:56.848Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 8
+      "count": 5
     },
     {
       "productSlug": "estee-lauder-anr-100ml",
-      "count": 3
+      "count": 4
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
@@ -40,7 +40,7 @@
       "count": 1
     },
     {
-      "productSlug": "diptyque-do-son-75ml",
+      "productSlug": "dior-sauvage-edp-100ml",
       "count": 1
     },
     {
@@ -52,11 +52,7 @@
       "count": 1
     },
     {
-      "productSlug": "le-labo-santal-33-50ml",
-      "count": 1
-    },
-    {
-      "productSlug": "orthomol-immun",
+      "productSlug": "longchamp-le-pliage-medium",
       "count": 1
     }
   ]

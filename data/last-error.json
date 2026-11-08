@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-07T01:56:17.090Z",
-  "attemptedCount": 80,
-  "failureCount": 57,
+  "generatedAt": "2026-11-08T01:24:29.047Z",
+  "attemptedCount": 79,
+  "failureCount": 56,
   "failures": [
     {
       "productId": "p58",
@@ -16,8 +16,8 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p9",
-      "productSlug": "diptyque-do-son-75ml",
+      "productId": "p13",
+      "productSlug": "dior-sauvage-edp-100ml",
       "categorySlug": "perfume",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -34,9 +34,9 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p72",
-      "productSlug": "orthomol-immun",
-      "categorySlug": "health",
+      "productId": "p41",
+      "productSlug": "longchamp-le-pliage-medium",
+      "categorySlug": "fashion",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -46,8 +46,8 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p13",
-      "productSlug": "dior-sauvage-edp-100ml",
+      "productId": "p9",
+      "productSlug": "diptyque-do-son-75ml",
       "categorySlug": "perfume",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -144,12 +144,6 @@
     {
       "productId": "p43",
       "productSlug": "montblanc-meisterstuck-wallet",
-      "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p41",
-      "productSlug": "longchamp-le-pliage-medium",
       "categorySlug": "fashion",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

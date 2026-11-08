@@ -3,15 +3,15 @@
   "productSlug": "lancome-genifique-100ml",
   "categorySlug": "beauty",
   "query": "랑콤 제니피끄 세럼 100ml",
-  "fetchedAt": "2026-11-07T10:46:06+09:00",
-  "updatedAtLabel": "2026-11-07 10:46 기준",
+  "fetchedAt": "2026-11-08T10:14:48+09:00",
+  "updatedAtLabel": "2026-11-08 10:14 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-11-07T10:46:06+09:00",
+      "fetchedAt": "2026-11-08T10:14:48+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
@@ -30,7 +30,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%96%BC%ED%8B%B0%EB%AF%B8%ED%8A%B8%20%EC%84%B8%EB%9F%BC%20100ML",
           "imageUrl": "https://image1.shilladfs.com/files/product3/2026/10/16/002010000651_20261016_10551125_12_002010000651_13.JPG",
           "matchScore": 99,
-          "fetchedAt": "2026-11-07T10:46:06+09:00"
+          "fetchedAt": "2026-11-08T10:14:48+09:00"
         }
       ],
       "error": null
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-11-07T01:46:08.934Z",
+      "fetchedAt": "2026-11-08T01:14:50.889Z",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
@@ -55,7 +55,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%9E%91%EC%BD%A4%20%EC%A0%9C%EB%8B%88%ED%94%BC%EB%81%84%20%EC%84%B8%EB%9F%BC%20100ml",
-      "fetchedAt": "2026-11-07T01:46:08.935Z",
+      "fetchedAt": "2026-11-08T01:14:50.889Z",
       "matched_via": "original",
       "attempted_queries": [
         "랑콤 제니피끄 세럼 100ml",
