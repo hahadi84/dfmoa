@@ -1,22 +1,30 @@
 {
-  "generatedAt": "2026-11-08T01:11:56.848Z",
+  "generatedAt": "2026-11-09T01:31:12.113Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
+    {
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 6
+    },
     {
       "productSlug": "creed-aventus-50ml",
       "count": 5
     },
     {
       "productSlug": "estee-lauder-anr-100ml",
-      "count": 4
+      "count": 5
     },
     {
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 2
+      "productSlug": "bleu-de-chanel-edp-100ml",
+      "count": 3
     },
     {
-      "productSlug": "longines-hydroconquest",
+      "productSlug": "bose-quietcomfort-ultra",
+      "count": 3
+    },
+    {
+      "productSlug": "longchamp-le-pliage-medium",
       "count": 2
     },
     {
@@ -32,14 +40,6 @@
       "count": 1
     },
     {
-      "productSlug": "bleu-de-chanel-edp-100ml",
-      "count": 1
-    },
-    {
-      "productSlug": "bose-quietcomfort-ultra",
-      "count": 1
-    },
-    {
       "productSlug": "dior-sauvage-edp-100ml",
       "count": 1
     },
@@ -52,7 +52,11 @@
       "count": 1
     },
     {
-      "productSlug": "longchamp-le-pliage-medium",
+      "productSlug": "hibiki-harmony-700ml",
+      "count": 1
+    },
+    {
+      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 1
     }
   ]

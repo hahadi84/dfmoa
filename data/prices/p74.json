@@ -3,15 +3,15 @@
   "productSlug": "solgar-vitamin-d3",
   "categorySlug": "health",
   "query": "솔가 비타민D3 1000 90정",
-  "fetchedAt": "2026-11-08T10:18:45+09:00",
-  "updatedAtLabel": "2026-11-08 10:18 기준",
+  "fetchedAt": "2026-11-09T10:37:58+09:00",
+  "updatedAtLabel": "2026-11-09 10:37 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BC%20D3",
-      "fetchedAt": "2026-11-08T10:18:45+09:00",
+      "fetchedAt": "2026-11-09T10:37:58+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "솔가 비타민 D3",
@@ -29,7 +29,7 @@
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
           "imageUrl": "https://image2.shilladfs.com/files/product2/2025/02/25/286928000007_20250225_14485448_12_286928000007_1.JPG",
           "matchScore": 67,
-          "fetchedAt": "2026-11-08T10:18:45+09:00"
+          "fetchedAt": "2026-11-09T10:37:58+09:00"
         }
       ],
       "error": null
@@ -39,7 +39,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
-      "fetchedAt": "2026-11-08T01:18:47.310Z",
+      "fetchedAt": "2026-11-09T01:38:00.863Z",
       "matched_via": "original",
       "attempted_queries": [
         "솔가 비타민D3 1000 90정",
@@ -54,7 +54,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%94%EA%B0%80%20%EB%B9%84%ED%83%80%EB%AF%BCD3%201000%2090%EC%A0%95",
-      "fetchedAt": "2026-11-08T01:18:47.310Z",
+      "fetchedAt": "2026-11-09T01:38:00.863Z",
       "matched_via": "original",
       "attempted_queries": [
         "솔가 비타민D3 1000 90정",

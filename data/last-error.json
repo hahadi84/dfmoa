@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-08T01:24:29.047Z",
-  "attemptedCount": 79,
-  "failureCount": 56,
+  "generatedAt": "2026-11-09T01:43:51.916Z",
+  "attemptedCount": 78,
+  "failureCount": 55,
   "failures": [
-    {
-      "productId": "p58",
-      "productSlug": "longines-hydroconquest",
-      "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
     {
       "productId": "p93",
       "productSlug": "bose-quietcomfort-ultra",
       "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p41",
+      "productSlug": "longchamp-le-pliage-medium",
+      "categorySlug": "fashion",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -34,9 +34,9 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p41",
-      "productSlug": "longchamp-le-pliage-medium",
-      "categorySlug": "fashion",
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -96,12 +96,6 @@
     {
       "productId": "p5",
       "productSlug": "glenfiddich-15-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
       "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

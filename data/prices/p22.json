@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8B%9C%EC%84%B8%EC%9D%B4%EB%8F%84%20%EC%96%BC%ED%8B%B0%EB%AE%A8",
-      "fetchedAt": "2026-11-08T10:15:21+09:00",
+      "fetchedAt": "2026-11-09T10:34:58+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "시세이도 얼티뮨",
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8B%9C%EC%84%B8%EC%9D%B4%EB%8F%84%20%EC%96%BC%ED%8B%B0%EB%AE%A8%2075ml",
-      "fetchedAt": "2026-11-08T01:15:23.405Z",
+      "fetchedAt": "2026-11-09T01:34:59.622Z",
       "matched_via": "original",
       "attempted_queries": [
         "시세이도 얼티뮨 75ml",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8B%9C%EC%84%B8%EC%9D%B4%EB%8F%84%20%EC%96%BC%ED%8B%B0%EB%AE%A8%2075ml",
-      "fetchedAt": "2026-11-08T01:15:23.405Z",
+      "fetchedAt": "2026-11-09T01:34:59.622Z",
       "matched_via": "original",
       "attempted_queries": [
         "시세이도 얼티뮨 75ml",
