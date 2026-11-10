@@ -7,17 +7,23 @@ import latest from '../../../data/content/benefit-latest.json';
 import sources from '@/lib/benefit-sources.json';
 import { latestBenefitReport } from '@/lib/benefit-report-generator';
 export const metadata: Metadata = {
-  title:'면세점 할인·적립금 이벤트',
+  title:'면세점 할인·적립금 비교',
   description:'롯데·신라·신세계·현대면세점의 기간 확인 행사와 쿠폰·결제·여행 제휴 혜택을 회사별로 정리합니다. 실제 확인일과 원본 상세 조건을 확인하세요.',
   alternates:{canonical:'/benefits'},
 };
 export default function BenefitsPage() {
   return <section className="page-section is-tight benefit-current-page"><div className="container">
-    <div className="breadcrumb"><Link href="/">홈</Link><span>/</span><span>할인·적립금 이벤트</span></div>
-    <h1 className="page-title">면세점 할인·적립금 이벤트</h1>
+    <div className="breadcrumb"><Link href="/">홈</Link><span>/</span><span>할인·적립금</span></div>
+    <h1 className="page-title">면세점 할인·적립금 비교</h1>
     <p className="page-description">롯데·신라·신세계·현대의 공식 목록에서 기간이 확인된 행사를 정리했습니다. 실제 적용 조건과 종료 여부는 각 면세점에서 확인하세요.</p>
     <p className="section-copy">최근 점검: {latest.checkedAt} · {new Set(latest.benefits.map(b=>b.storeId)).size}사 {latest.benefits.length}개 기간 확인 행사 · 회사별 실제 확인일은 아래 표를 확인하세요.</p>
     {latest.benefits.length > 0 ? <AdBanner placement="top" /> : null}
+    <nav aria-label="혜택 유형별 안내" className="chip-row">
+      <Link className="ghost-button" href="/benefits/discounts">면세점 할인</Link>
+      <Link className="ghost-button" href="/benefits/points">면세점 적립금</Link>
+      <Link className="ghost-button" href="/deals">월간 혜택</Link>
+      <Link className="ghost-button" href="/benefit-reports">주간 리포트</Link>
+    </nav>
     <BenefitCollectionStatus coverage={latest.coverage} />
     <nav aria-label="면세점별 혜택 바로가기" className="chip-row">
       {sources.map(source=><a key={source.storeId} className="text-link" href={'#benefits-'+source.storeId}>{source.name} ({latest.benefits.filter(b=>b.storeId===source.storeId).length}개)</a>)}

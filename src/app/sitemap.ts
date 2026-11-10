@@ -31,6 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/airport",
     "/best-seller-examples",
     "/benefits",
+    "/benefits/discounts",
+    "/benefits/points",
     "/benefit-reports",
     "/brand",
     "/category",

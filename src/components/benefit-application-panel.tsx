@@ -186,9 +186,11 @@ export function BenefitApplicationPanel({ offers }: BenefitApplicationPanelProps
         쿠폰·적립금·카드 할인은 로그인, 회원등급, 출국일, 결제수단에 따라 달라져 확정 결제가로 합산하지 않습니다.
       </p>
 
-      <Link className="ghost-button benefit-application-more" href="/benefits">
-        면세점별 혜택 전체 보기
-      </Link>
+      <nav className="chip-row benefit-application-more" aria-label="면세점 혜택 안내">
+        <Link className="ghost-button" href="/benefits/discounts">면세점 할인 조건</Link>
+        <Link className="ghost-button" href="/benefits/points">면세점 적립금 사용 조건</Link>
+        <Link className="ghost-button" href="/benefits">면세점별 혜택 전체 보기</Link>
+      </nav>
     </div>
   );
 }
