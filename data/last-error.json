@@ -1,12 +1,30 @@
 {
-  "generatedAt": "2026-11-09T01:43:51.916Z",
+  "generatedAt": "2026-11-10T04:12:41.176Z",
   "attemptedCount": 78,
   "failureCount": 55,
   "failures": [
     {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p93",
       "productSlug": "bose-quietcomfort-ultra",
       "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p57",
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "categorySlug": "watch",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p21",
+      "productSlug": "la-mer-moisturizing-cream-60ml",
+      "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -28,15 +46,9 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p57",
-      "productSlug": "hamilton-khaki-field-mechanical",
+      "productId": "p53",
+      "productSlug": "tissot-prx-powermatic-80",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
-      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -72,12 +84,6 @@
     {
       "productId": "p20",
       "productSlug": "kiehls-ultra-facial-cream-125ml",
-      "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p21",
-      "productSlug": "la-mer-moisturizing-cream-60ml",
       "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -240,12 +246,6 @@
     {
       "productId": "p52",
       "productSlug": "citizen-tsuyosa-nj015",
-      "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p53",
-      "productSlug": "tissot-prx-powermatic-80",
       "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

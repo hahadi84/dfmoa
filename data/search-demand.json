@@ -1,27 +1,39 @@
 {
-  "generatedAt": "2026-11-09T01:31:12.113Z",
+  "generatedAt": "2026-11-10T03:59:42.625Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 6
+      "count": 8
     },
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 5
+      "count": 4
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
-      "count": 5
+      "productSlug": "hibiki-harmony-700ml",
+      "count": 3
     },
     {
       "productSlug": "bleu-de-chanel-edp-100ml",
-      "count": 3
+      "count": 2
     },
     {
       "productSlug": "bose-quietcomfort-ultra",
-      "count": 3
+      "count": 2
+    },
+    {
+      "productSlug": "estee-lauder-anr-100ml",
+      "count": 2
+    },
+    {
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "count": 2
+    },
+    {
+      "productSlug": "la-mer-moisturizing-cream-60ml",
+      "count": 2
     },
     {
       "productSlug": "longchamp-le-pliage-medium",
@@ -29,10 +41,6 @@
     },
     {
       "productSlug": "royal-salute-21-700ml",
-      "count": 2
-    },
-    {
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 2
     },
     {
@@ -48,11 +56,11 @@
       "count": 1
     },
     {
-      "productSlug": "hamilton-khaki-field-mechanical",
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 1
     },
     {
-      "productSlug": "hibiki-harmony-700ml",
+      "productSlug": "tissot-prx-powermatic-80",
       "count": 1
     },
     {
