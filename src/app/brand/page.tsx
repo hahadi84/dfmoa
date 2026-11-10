@@ -1,102 +1,68 @@
 import type { Metadata } from "next";
+import { BrandDirectory } from "@/components/brand-directory";
 import Link from "@/components/app-link";
+import { brandNameKey, directoryBrands } from "@/lib/brand-directory";
 import { buildBreadcrumbJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { brandLandings } from "@/lib/seo-content";
+import { buildOfficialSearchUrl, dutyFreeSources } from "@/lib/source-policy";
 import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
 import { getLowestPriceSummary } from "@/lib/snapshot-summaries";
-import { products } from "@/lib/site-data";
+import { categories, formatKrw, products } from "@/lib/site-data";
+import "./brand-directory.css";
+
+const initialTime = Date.now();
 
 export const metadata: Metadata = {
-  title: "브랜드별 면세 가격 비교",
-  description: "DFMOA에 등록된 면세점 비교 브랜드를 대표 상품 수와 현재 최저가 상품 기준으로 모아봅니다.",
-  alternates: {
-    canonical: "/brand",
-  },
+  title: "브랜드별 면세 가격 비교 | 대표 브랜드 100개",
+  description: "향수, 화장품, 주류 등 면세 쇼핑 브랜드 100개를 한국어·영문 이름과 카테고리로 찾고, 등록 상품의 관측가와 공식몰을 확인하세요.",
+  alternates: { canonical: "/brand" },
 };
 
-function getBrandInitials(name: string) {
-  return name
-    .split(/\s+/)
-    .map((part) => part.at(0))
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-}
-
 export default function BrandIndexPage() {
-  const priceSnapshotsByProductId = readPriceSnapshotsByProductId(products);
-  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
-    { name: "홈", path: "/" },
-    { name: "브랜드", path: "/brand" },
+  const snapshots = readPriceSnapshotsByProductId(products);
+  const breadcrumbs = buildBreadcrumbJsonLd([
+    { name: "홈", path: "/" }, { name: "브랜드", path: "/brand" },
   ]);
-  const brandCards = brandLandings.map((brand) => {
-    const brandProducts = brand.representativeProductIds
-      .map((id) => products.find((product) => product.id === id))
-      .filter((product): product is (typeof products)[number] => Boolean(product));
-    const lowestItem = brandProducts
-      .flatMap((product) => {
-        const item = getLowestPriceSummary(product, priceSnapshotsByProductId[product.id]);
-        return item ? [item] : [];
-      })
-      .sort((left, right) => left.priceKrw - right.priceKrw)[0];
-
+  const entries = directoryBrands.map(brand => {
+    const key = brandNameKey(brand.nameEn);
+    const matching = products.filter(product => brandNameKey(product.brand) === key);
+    const landing = brandLandings.find(item => brandNameKey(item.nameEn ?? item.nameKo) === key);
+    const observations = matching.flatMap(product => {
+      const snapshot = snapshots[product.id];
+      if (!snapshot) return [];
+      return Object.entries(snapshot.sources).flatMap(([sourceId, source]) => {
+        const summary = getLowestPriceSummary(product, { ...snapshot, sources: { [sourceId]: source } });
+        return summary?.observedAt ? [{
+          name: product.displayName,
+          store: summary.storeName,
+          price: formatKrw(summary.priceKrw),
+          time: summary.timestamp,
+          observedAt: summary.observedAt,
+          path: `/product/${product.slug}`,
+        }] : [];
+      });
+    });
     return {
-      brand,
-      brandProducts,
-      lowestItem,
+      ...brand,
+      categoryName: categories.find(category => category.slug === brand.category)?.name ?? brand.category,
+      count: matching.length,
+      detailPath: landing && `/brand/${landing.slug}`,
+      productPath: matching[0] && `/product/${matching[0].slug}`,
+      officialLinks: dutyFreeSources.map(source => ({
+        name: source.name,
+        url: buildOfficialSearchUrl(source.id, brand.nameKo) ?? source.homepageUrl,
+      })),
+      observations,
     };
   });
-
-  return (
-    <section className="page-section is-tight">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd]) }}
-      />
-      <div className="container">
-        <div className="breadcrumb">
-          <Link href="/">홈</Link>
-          <span>/</span>
-          <span>브랜드</span>
-        </div>
-
-        <span className="eyebrow" style={{ marginTop: 24 }}>
-          Brand Index
-        </span>
-        <h1 className="page-title">브랜드별 면세 가격 비교</h1>
-        <p className="page-description">
-          대표 상품이 등록된 브랜드를 한곳에 모았습니다. 가격이 확인된 브랜드는 현재 최저가 상품을 함께 표시합니다.
-        </p>
-
-        <div className="brand-index-grid">
-          {brandCards.map(({ brand, brandProducts, lowestItem }) => (
-            <Link key={brand.slug} className="brand-index-card" href={`/brand/${brand.slug}`}>
-              <span className="brand-logo-placeholder" aria-hidden="true">
-                {getBrandInitials(brand.nameEn ?? brand.nameKo)}
-              </span>
-              <span className="chip is-soft">{brandProducts.length}개 대표 상품</span>
-              <h2 className="card-title">{brand.nameKo}</h2>
-              <p className="section-copy">{brand.description}</p>
-              <div className="brand-lowest-line">
-                {lowestItem ? (
-                  <>
-                    <strong>{lowestItem.product.displayName}</strong>
-                    <span>
-                      {lowestItem.storeName} · {lowestItem.priceLabel}
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <strong>가격 확인 준비 중</strong>
-                    <span>상세 페이지에서 원본 면세점 확인 링크를 제공합니다.</span>
-                  </>
-                )}
-              </div>
-              <span className="text-link">브랜드 보기</span>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return <section className="page-section is-tight">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbs]) }} />
+    <div className="container">
+      <div className="breadcrumb"><Link href="/">홈</Link><span>/</span><span>브랜드</span></div>
+      <h1 className="page-title">브랜드별 면세 가격 비교</h1>
+      <p className="page-description">한국 여행객의 면세 쇼핑을 위한 대표 브랜드 {entries.length}개를 모았습니다. 등록 상품의 확인 가격과 관측일을 함께 볼 수 있습니다.</p>
+      <p className="section-copy">최근 관측가는 3일 이내 확인한 가격입니다. 공식몰 검색에서 판매 여부와 최종 결제 조건을 확인하세요.</p>
+      <BrandDirectory entries={entries} initialTime={initialTime} />
+    </div>
+  </section>;
 }

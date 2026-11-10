@@ -1,3 +1,4 @@
+import { brandNameKey } from "@/lib/brand-directory";
 import type { AirportGuide, BrandLanding, MonthlyDealReport, ProductComparePage } from "@/lib/content-models";
 import { publishedMonthlyBenefits } from './published-benefits';
 import { benefitRules } from "@/lib/effective-price";
@@ -14,16 +15,12 @@ function idsFromSlugs(slugs: string[]) {
   return slugs.map(productId).filter((id): id is string => Boolean(id));
 }
 
-function representativeProducts(seedSlugs: string[], categorySlug: CategorySlug, brandName?: string) {
-  const seeded = idsFromSlugs(seedSlugs);
-  const sameBrand = brandName
-    ? products
-        .filter((product) => product.brand.toLowerCase() === brandName.toLowerCase())
-        .map((product) => product.id)
-    : [];
-  const sameCategory = products.filter((product) => product.categorySlug === categorySlug).map((product) => product.id);
-
-  return Array.from(new Set([...seeded, ...sameBrand, ...sameCategory])).slice(0, 5);
+function representativeProducts(categorySlug: CategorySlug, brandName: string) {
+  const brandKey = brandNameKey(brandName);
+  return products
+    .filter(product => product.categorySlug === categorySlug && brandNameKey(product.brand) === brandKey)
+    .slice(0, 5)
+    .map(product => product.id);
 }
 
 export const brandLandings: BrandLanding[] = [
@@ -32,9 +29,9 @@ export const brandLandings: BrandLanding[] = [
     nameKo: "크리드",
     nameEn: "CREED",
     description:
-      "크리드는 향수 카테고리에서 검색 수요가 높은 브랜드입니다. DFMOA에서는 대표 상품의 최근 확인 공개가, 면세점별 상태, 원본 확인 링크를 함께 제공해 구매 전 비교 시간을 줄이는 데 초점을 둡니다.",
+      "크리드 향수는 제품명과 용량이 같은 상품끼리 비교해야 합니다. DFMOA에서는 대표 상품의 최근 확인 공개가, 면세점별 상태, 원본 확인 링크를 함께 제공해 구매 전 비교 시간을 줄이는 데 초점을 둡니다.",
     categoryIds: ["perfume"],
-    representativeProductIds: representativeProducts(["creed-aventus-50ml"], "perfume", "CREED"),
+    representativeProductIds: representativeProducts("perfume", "CREED"),
     relatedGuideSlugs: ["price-comparison-checklist", "airport-duty-free-basics"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -45,9 +42,9 @@ export const brandLandings: BrandLanding[] = [
     nameKo: "조말론",
     nameEn: "Jo Malone",
     description:
-      "조말론은 선물용 향수로 자주 비교되는 브랜드입니다. 용량과 향 이름이 비슷한 상품이 많아 브랜드명, 상품명, 용량을 함께 확인하는 것이 중요합니다.",
+      "조말론 향수는 향 이름과 용량별로 비교할 수 있습니다. 용량과 향 이름이 비슷한 상품이 많아 브랜드명, 상품명, 용량을 함께 확인하는 것이 중요합니다.",
     categoryIds: ["perfume"],
-    representativeProductIds: representativeProducts(["jo-malone-english-pear-100ml"], "perfume", "Jo Malone"),
+    representativeProductIds: representativeProducts("perfume", "Jo Malone"),
     relatedGuideSlugs: ["price-comparison-checklist"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -59,7 +56,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "설화수는 세트 구성과 증정품, 적립금 조건에 따라 체감 가격 차이가 커지는 뷰티 브랜드입니다. 공개가와 혜택 적용 가능성을 분리해 확인하는 것이 좋습니다.",
     categoryIds: ["beauty"],
-    representativeProductIds: representativeProducts(["sulwhasoo-first-care-serum-90ml"], "beauty", "Sulwhasoo"),
+    representativeProductIds: representativeProducts("beauty", "Sulwhasoo"),
     relatedGuideSlugs: ["price-comparison-checklist"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -71,7 +68,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "SK-II는 용량과 세트 구성 차이가 가격 비교에 큰 영향을 주는 브랜드입니다. 최근 확인 공개가와 국내가 참고 비교를 함께 확인해 보세요.",
     categoryIds: ["beauty"],
-    representativeProductIds: representativeProducts(["sk2-pitera-essence-230ml"], "beauty", "SK-II"),
+    representativeProductIds: representativeProducts("beauty", "SK-II"),
     relatedGuideSlugs: ["price-comparison-checklist"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -83,7 +80,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "글렌피딕은 주류 면세 비교에서 수령 공항, 반입 주의, 용량 확인이 함께 필요한 브랜드입니다. 원본 면세점에서 출국 정보를 입력한 뒤 최종 수령 가능 여부를 확인해야 합니다.",
     categoryIds: ["liquor"],
-    representativeProductIds: representativeProducts(["glenfiddich-15-700ml"], "liquor", "Glenfiddich"),
+    representativeProductIds: representativeProducts("liquor", "Glenfiddich"),
     relatedGuideSlugs: ["pickup-and-limit-guide", "airport-duty-free-basics"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -95,7 +92,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "히비키는 재고와 노출 상태가 빠르게 바뀔 수 있는 위스키 브랜드입니다. 가격이 없을 때는 실패가 아니라 원본 확인이 필요한 상태로 표시합니다.",
     categoryIds: ["liquor"],
-    representativeProductIds: representativeProducts(["hibiki-harmony-700ml"], "liquor", "Hibiki"),
+    representativeProductIds: representativeProducts("liquor", "Hibiki"),
     relatedGuideSlugs: ["pickup-and-limit-guide"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -107,7 +104,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "젠틀몬스터는 모델명과 컬러 코드 일치 여부가 중요합니다. 동일 모델인지 확인한 뒤 면세가와 국내가를 참고 비교하는 흐름을 권장합니다.",
     categoryIds: ["eyewear"],
-    representativeProductIds: representativeProducts(["gentle-monster-dear-01"], "eyewear", "Gentle Monster"),
+    representativeProductIds: representativeProducts("eyewear", "Gentle Monster"),
     relatedGuideSlugs: ["price-comparison-checklist"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -119,7 +116,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "레이밴은 같은 모델명이라도 렌즈 색상, 사이즈, 코드가 다를 수 있습니다. DFMOA에서는 상품명과 용량/옵션을 기준으로 보수적으로 매칭합니다.",
     categoryIds: ["eyewear"],
-    representativeProductIds: representativeProducts(["rayban-wayfarer-rb2140"], "eyewear", "Ray-Ban"),
+    representativeProductIds: representativeProducts("eyewear", "Ray-Ban"),
     relatedGuideSlugs: ["price-comparison-checklist"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -131,7 +128,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "딥티크는 향 이름과 EDT/EDP 표기가 가격 비교에 영향을 줍니다. 공개가가 일부만 확인될 수 있어 원본 링크와 함께 보는 것이 안전합니다.",
     categoryIds: ["perfume"],
-    representativeProductIds: representativeProducts(["diptyque-do-son-75ml"], "perfume", "Diptyque"),
+    representativeProductIds: representativeProducts("perfume", "Diptyque"),
     relatedGuideSlugs: ["price-comparison-checklist"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,
@@ -143,7 +140,7 @@ export const brandLandings: BrandLanding[] = [
     description:
       "바이레도는 향수 용량과 향 이름을 정확히 맞춰야 의미 있는 비교가 가능합니다. 예상 실결제가 계산기는 쿠폰과 카드 혜택을 직접 입력해 참고값을 계산합니다.",
     categoryIds: ["perfume"],
-    representativeProductIds: representativeProducts(["byredo-blanche-100ml"], "perfume", "Byredo"),
+    representativeProductIds: representativeProducts("perfume", "Byredo"),
     relatedGuideSlugs: ["price-comparison-checklist"],
     relatedDealSlugs: ["2026-04"],
     updatedAt: UPDATED_AT,

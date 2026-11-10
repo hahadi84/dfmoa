@@ -42,3 +42,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-07 사용자 구조화 데이터 수정 및 재발 방지 배포 승인: release(requested-structured-data): 2026-11-07 운영 공개 1회 허용. 날짜·중복·production 제한 유지.
 
 - 2026-11-11 사용자 “배포” 요청에 따라 할인·적립금 콘텐츠 카테고리 공개 1회(release(requested-benefit-topics): 2026-11-11)를 승인한다. 날짜·운영 환경·중복 방지 검사를 유지한다.
+
+- 2026-11-11 사용자 “거기까지 수정해서 배포해줘” 요청으로 대표 브랜드 100개·관측가 상태·면세점별 검색 개편 공개 1회(release(requested-brand-directory): 2026-11-11)를 승인한다. 날짜·운영 환경·중복 방지 검사를 유지한다.

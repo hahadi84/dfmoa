@@ -10,6 +10,7 @@ export type LowestPriceSummary = {
   priceLabel: string;
   imageUrl: string | null;
   timestamp: string;
+  observedAt?: string | null;
 };
 
 export function hasSnapshotPrice(snapshot?: ProductPriceSnapshot | null) {
@@ -25,7 +26,8 @@ export function getLowestPriceSummary(product: Product, snapshot?: ProductPriceS
   }
 
   const store = getStoreById(bestItem.sourceId as StoreId);
-  const timestamp = formatSnapshotTimestamp(bestItem.source.fetchedAt ?? bestItem.item.fetchedAt);
+  const observedAt = bestItem.source.fetchedAt ?? bestItem.item.fetchedAt;
+  const timestamp = formatSnapshotTimestamp(observedAt);
 
   return {
     product,
@@ -34,6 +36,7 @@ export function getLowestPriceSummary(product: Product, snapshot?: ProductPriceS
     priceLabel: `${formatKrw(priceKrw)}${observationState(bestItem.source.fetchedAt ?? bestItem.item.fetchedAt) === 'historical' ? ' · 과거 관측가' : ''}`,
     imageUrl: bestItem.item.imageUrl ?? null,
     timestamp,
+    observedAt,
   } satisfies LowestPriceSummary;
 }
 
