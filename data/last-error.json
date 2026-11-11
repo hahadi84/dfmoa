@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-10T04:12:41.176Z",
-  "attemptedCount": 78,
-  "failureCount": 55,
+  "generatedAt": "2026-11-11T01:58:21.727Z",
+  "attemptedCount": 77,
+  "failureCount": 54,
   "failures": [
     {
       "productId": "p6",
@@ -13,6 +13,12 @@
       "productId": "p93",
       "productSlug": "bose-quietcomfort-ultra",
       "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p13",
+      "productSlug": "dior-sauvage-edp-100ml",
+      "categorySlug": "perfume",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -34,15 +40,15 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p13",
-      "productSlug": "dior-sauvage-edp-100ml",
-      "categorySlug": "perfume",
+      "productId": "p19",
+      "productSlug": "hera-black-cushion-15g",
+      "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p94",
-      "productSlug": "dyson-supersonic",
-      "categorySlug": "electronics",
+      "productId": "p27",
+      "productSlug": "macallan-12-double-cask-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -76,12 +82,6 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p19",
-      "productSlug": "hera-black-cushion-15g",
-      "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p20",
       "productSlug": "kiehls-ultra-facial-cream-125ml",
       "categorySlug": "beauty",
@@ -102,12 +102,6 @@
     {
       "productId": "p5",
       "productSlug": "glenfiddich-15-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p27",
-      "productSlug": "macallan-12-double-cask-700ml",
       "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

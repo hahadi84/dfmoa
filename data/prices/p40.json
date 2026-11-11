@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8D%BC%EC%86%94%20PO0649%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-11-10T13:10:10+09:00",
+      "fetchedAt": "2026-11-11T10:55:53+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "퍼솔 PO0649 선글라스",
@@ -29,7 +29,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8D%BC%EC%86%94%20PO0649%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-11-10T04:10:11.826Z",
+      "fetchedAt": "2026-11-11T01:55:54.848Z",
       "matched_via": "original",
       "attempted_queries": [
         "퍼솔 PO0649 선글라스",
@@ -45,7 +45,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8D%BC%EC%86%94%20PO0649%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-11-10T04:10:11.826Z",
+      "fetchedAt": "2026-11-11T01:55:54.848Z",
       "matched_via": "original",
       "attempted_queries": [
         "퍼솔 PO0649 선글라스",

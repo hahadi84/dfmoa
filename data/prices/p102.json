@@ -3,15 +3,15 @@
   "productSlug": "sony-wh-ch720n",
   "categorySlug": "electronics",
   "query": "소니 WH-CH720N",
-  "fetchedAt": "2026-11-10T13:05:26+09:00",
-  "updatedAtLabel": "2026-11-10 13:05 기준",
+  "fetchedAt": "2026-11-11T10:51:15+09:00",
+  "updatedAtLabel": "2026-11-11 10:51 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-11-10T13:05:26+09:00",
+      "fetchedAt": "2026-11-11T10:51:15+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",
@@ -22,14 +22,14 @@
           "id": "shilla-284429000023",
           "title": "WH-CH720N/W",
           "brand": "소니",
-          "priceKrw": 147712,
+          "priceKrw": 147473,
           "priceUsd": 108.78,
           "regularUsdPrice": 147,
           "discountRate": 26,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WH-CH720N%2FW",
           "imageUrl": "https://image1.shilladfs.com/files/product2/2025/02/03/284429000023_20250203_18551665_12_284429000023_1.JPG",
           "matchScore": 51,
-          "fetchedAt": "2026-11-10T13:05:26+09:00"
+          "fetchedAt": "2026-11-11T10:51:15+09:00"
         }
       ],
       "error": null
@@ -39,7 +39,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-11-10T04:05:28.460Z",
+      "fetchedAt": "2026-11-11T01:51:17.620Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",
@@ -54,7 +54,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-11-10T04:05:28.460Z",
+      "fetchedAt": "2026-11-11T01:51:17.620Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",

@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "base": "JPY",
   "quote": "KRW",
-  "rate": 8.5268,
+  "rate": 8.4652,
   "provider": "ECB via Frankfurter",
   "sourceUrl": "https://api.frankfurter.dev/v2/rate/JPY/KRW?providers=ECB"
 }
