@@ -197,9 +197,12 @@ export function ProductPageClient({
         <span className="eyebrow" style={{ marginTop: 20 }}>
           Product detail
         </span>
-        <h1 className="page-title">{product.query} 면세 가격</h1>
+        <h1 className="page-title">{product.query}{product.slug === "estee-lauder-anr-100ml" ? " 면세점 가격 비교" : " 면세 가격"}</h1>
         <p className="section-copy">{product.displayName}</p>
         <p className="page-description">{product.summary}</p>
+        {product.slug === "estee-lauder-anr-100ml" ? (
+          <a className="button is-secondary" href="#public-prices">면세점별 공개가와 공식몰 보기</a>
+        ) : null}
 
         <div className="chip-row" style={{ marginTop: 16 }}>
           {categoryName ? <span className="chip">{categoryName}</span> : null}
@@ -218,7 +221,7 @@ export function ProductPageClient({
           <ContentContextCard context={productContext} title="상품 배경과 면세 구매 체크" />
         ) : null}
 
-        <div className="surface-card" style={{ marginTop: 10 }}>
+        <div id="public-prices" className="surface-card" style={{ marginTop: 10 }}>
           <div className="section-head">
             <div>
               <h2 className="card-title" style={{ fontSize: "1.1rem" }}>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { TopAdBanner } from "@/components/ad-banner";
 import "./adsense.css";
 import "./brand.css";
@@ -7,11 +8,12 @@ import "./airport-theme.css";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { GA_MEASUREMENT_ID } from "@/lib/analytics";
 import { absoluteSiteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 
 const GA_TAG_ID = process.env.NEXT_PUBLIC_GA_TAG_ID ?? SITE_OPERATOR.analyticsTagId;
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? SITE_OPERATOR.analyticsMeasurementId;
+const GA_ENABLED = Boolean(GA_TAG_ID && GA_MEASUREMENT_ID);
 
 
 export const metadata: Metadata = {
@@ -59,6 +61,23 @@ export default function RootLayout({
   return (
     <html lang="ko" >
       <head>
+        {GA_ENABLED ? (
+          <Script
+            id="dfmoa-google-analytics-init"
+            strategy="beforeInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+                window.gtag('js', new Date());
+                window.gtag('config', ${JSON.stringify(GA_TAG_ID).replace(/</g, "\\u003c")}, {
+                  send_page_view: false,
+                  ...(new URLSearchParams(window.location.search).get('debug_mode') === '1' ? {debug_mode: true} : {})
+                });
+              `,
+            }}
+          />
+        ) : null}
         <link
           rel="alternate"
           type="application/rss+xml"

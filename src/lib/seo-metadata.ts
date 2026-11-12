@@ -94,7 +94,9 @@ export function buildProductMetadata(product: Product, snapshot?: ProductPriceSn
   const seo = getProductSeoSummary(product, snapshot);
 
   const metadata = buildSeoMetadata({
-    title: seo.title,
+    title: product.slug === "estee-lauder-anr-100ml" && seo.hasPrice
+      ? `${product.query} 면세점 가격 비교 · 단품 기준`
+      : seo.title,
     description: seo.description,
     path: `/product/${product.slug}`,
     image: {

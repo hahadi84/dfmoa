@@ -1,13 +1,13 @@
 # GA4 setup checklist
 
-## Measurement ID
+## Google tag and web stream
 
-- Netlify environment variable: `NEXT_PUBLIC_GA_MEASUREMENT_ID`
-- Current production value: `G-VXFLYV6T34`
+- `NEXT_PUBLIC_GA_TAG_ID` identifies the installed Google tag. Use it for the script and the `config` call.
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` identifies the DFMOA web stream. Page views and custom events explicitly route to that destination.
 
 ## Events
 
-Register these events in Google Analytics Admin after deployment:
+The site sends these events directly. They appear after GA4 receives and processes them.
 
 - `outbound_click_store`
 - `favorite_add`
@@ -51,3 +51,5 @@ Open the site with `?debug_mode=1`, then trigger:
 5. Weekly report subscribe.
 
 Confirm every event appears in DebugView with no email, phone, token, URL, or user ID values.
+
+After a release, open the Korean Estée Lauder 100ml product page in debug mode and click a retailer's official link once. Verify one `outbound_click_store` for that action and inspect `store` and `product_slug`. The automatically collected `click` event is a separate measurement.

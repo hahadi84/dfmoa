@@ -1,3 +1,7 @@
+import { SITE_OPERATOR } from "@/lib/site-operator";
+
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? SITE_OPERATOR.analyticsMeasurementId;
+
 export type AnalyticsEventName =
   | "outbound_click_store"
   | "outbound_dutyfree_click"
@@ -83,11 +87,15 @@ function shouldUseDebugMode() {
 }
 
 export function trackEvent(eventName: AnalyticsEventName, params: Record<string, AnalyticsValue> = {}) {
-  if (typeof window === "undefined" || typeof window.gtag !== "function") {
+  if (!GA_MEASUREMENT_ID || typeof window === "undefined" || typeof window.gtag !== "function") {
     return;
   }
 
-  window.gtag("event", eventName, sanitizeParams({ ...params, debug_mode: shouldUseDebugMode() || undefined }));
+  window.gtag("event", eventName, {
+    ...sanitizeParams(params),
+    send_to: GA_MEASUREMENT_ID,
+    ...(shouldUseDebugMode() ? { debug_mode: true } : {}),
+  });
 }
 
 export type WebVitalMetric = {

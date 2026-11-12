@@ -43,7 +43,7 @@ export function GoogleAnalyticsPageView({ measurementId }: GoogleAnalyticsPageVi
         page_location: window.location.href,
         page_title: document.title,
         send_to: measurementId,
-        debug_mode: searchParams.get("debug_mode") === "1",
+        ...(searchParams.get("debug_mode") === "1" ? { debug_mode: true } : {}),
       });
     };
 
