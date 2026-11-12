@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T01:58:21.727Z",
+  "generatedAt": "2026-11-12T02:58:04.215Z",
   "attemptedCount": 77,
   "failureCount": 54,
   "failures": [
@@ -22,12 +22,6 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p57",
-      "productSlug": "hamilton-khaki-field-mechanical",
-      "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p21",
       "productSlug": "la-mer-moisturizing-cream-60ml",
       "categorySlug": "beauty",
@@ -37,6 +31,18 @@
       "productId": "p41",
       "productSlug": "longchamp-le-pliage-medium",
       "categorySlug": "fashion",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p53",
+      "productSlug": "tissot-prx-powermatic-80",
+      "categorySlug": "watch",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p57",
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -52,9 +58,9 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p53",
-      "productSlug": "tissot-prx-powermatic-80",
-      "categorySlug": "watch",
+      "productId": "p65",
+      "productSlug": "tiffany-return-to-tiffany-bracelet",
+      "categorySlug": "jewelry",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -282,12 +288,6 @@
     {
       "productId": "p68",
       "productSlug": "pandora-sparkling-charm",
-      "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p65",
-      "productSlug": "tiffany-return-to-tiffany-bracelet",
       "categorySlug": "jewelry",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },

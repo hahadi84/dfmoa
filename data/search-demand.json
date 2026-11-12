@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T01:45:48.076Z",
+  "generatedAt": "2026-11-12T02:45:37.864Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -9,7 +9,7 @@
     },
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 3
+      "count": 4
     },
     {
       "productSlug": "hibiki-harmony-700ml",
@@ -32,10 +32,6 @@
       "count": 2
     },
     {
-      "productSlug": "hamilton-khaki-field-mechanical",
-      "count": 2
-    },
-    {
       "productSlug": "la-mer-moisturizing-cream-60ml",
       "count": 2
     },
@@ -44,8 +40,16 @@
       "count": 2
     },
     {
-      "productSlug": "royal-salute-21-700ml",
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 2
+    },
+    {
+      "productSlug": "tissot-prx-powermatic-80",
+      "count": 2
+    },
+    {
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "count": 1
     },
     {
       "productSlug": "hera-black-cushion-15g",
@@ -56,11 +60,11 @@
       "count": 1
     },
     {
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "productSlug": "royal-salute-21-700ml",
       "count": 1
     },
     {
-      "productSlug": "tissot-prx-powermatic-80",
+      "productSlug": "tiffany-return-to-tiffany-bracelet",
       "count": 1
     },
     {
