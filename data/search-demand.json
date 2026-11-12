@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T02:45:37.864Z",
+  "generatedAt": "2026-11-12T13:08:34.597Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -32,6 +32,10 @@
       "count": 2
     },
     {
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "count": 2
+    },
+    {
       "productSlug": "la-mer-moisturizing-cream-60ml",
       "count": 2
     },
@@ -48,7 +52,7 @@
       "count": 2
     },
     {
-      "productSlug": "hamilton-khaki-field-mechanical",
+      "productSlug": "gentle-monster-dear-01",
       "count": 1
     },
     {
@@ -61,6 +65,14 @@
     },
     {
       "productSlug": "royal-salute-21-700ml",
+      "count": 1
+    },
+    {
+      "productSlug": "solgar-vitamin-d3",
+      "count": 1
+    },
+    {
+      "productSlug": "swarovski-swan-necklace",
       "count": 1
     },
     {
