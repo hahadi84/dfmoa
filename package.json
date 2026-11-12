@@ -13,9 +13,9 @@
     "check:structured-data": "node scripts/check-structured-data.mjs"
   },
   "dependencies": {
-    "@netlify/blobs": "^10.7.4",
+    "@netlify/blobs": "^10.7.13",
     "cheerio": "^1.2.0",
-    "next": "16.2.4",
+    "next": "16.4.6",
     "playwright": "^1.59.1",
     "react": "19.2.4",
     "react-dom": "19.2.4"
@@ -25,7 +25,12 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.4",
+    "eslint-config-next": "16.4.6",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.1"
+    }
   }
 }
