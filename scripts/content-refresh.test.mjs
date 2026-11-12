@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import ts from 'typescript';
-import { parseBenefits, updateReports, koreaDate, weekStart } from './content-refresh.mjs';
+import { collectBenefits, parseBenefits, updateReports, koreaDate, weekStart } from './content-refresh.mjs';
 test('site data remains loadable by the standalone price collector', () => {
   const js = ts.transpileModule(fs.readFileSync('src/lib/site-data.ts', 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
   const sandbox = { exports: {}, require: name => { throw new Error(`Unexpected runtime dependency: ${name}`); } };
@@ -32,4 +32,31 @@ test('immutable weekly issues, monthly changes, rollover and failure preservatio
   assert.equal(next.monthly[0].publishedAt, '2026-10-23');
   assert.equal(updateReports(next, benefits, '2026-11-01').monthly.length, 2);
   assert.throws(() => updateReports(first, [], '2026-10-26'));
+});
+test('refresh routes Hyundai pagination and retains the real Shinsegae review expiry', async t => {
+  const reviewed=JSON.parse(fs.readFileSync('data/content/benefit-reviewed/shinsegae.json','utf8'));
+  const day=reviewed.checkedAt;
+  const later=new Date(Date.parse(day)+8*86400000).toISOString().slice(0,10);
+  const hyundai={prmoId:'1',prmoTitl:'결제 혜택',prmoStDttm:Date.parse(`${day}T00:00:00+09:00`),prmoEndDttm:Date.parse(`${later}T23:59:59+09:00`),totCnt:1};
+  t.mock.method(globalThis,'fetch',async url=>{
+    if(String(url).includes('lottedfs'))return new Response('<input id="bnfEvtTotCnt" value="0">');
+    if(String(url).includes('getBenefitList'))return Response.json({totCnt:0,eventData:[]});
+    if(String(url).includes('shilladfs'))return new Response('CSRFToken: "fixture"');
+    if(String(url).includes('ssgdfs'))return new Response('Blocked',{status:406});
+    if(String(url).endsWith('evntShop.do'))return new Response('<li name="sndTab" class="is-active"><button data-totalcnt="1"></button></li>');
+    if(String(url).endsWith('getEvntList.json'))return Response.json({totCnt:1,totalPage:1,evntSpex:{page:1,listSize:20},evntList:[hyundai]});
+    throw new Error(`Unexpected public URL: ${url}`);
+  });
+  const fresh=await collectBenefits(day);
+  assert.equal(fresh.coverage.find(x=>x.storeId==='hyundai').status,'ok');
+  assert.equal(fresh.coverage.find(x=>x.storeId==='hyundai').count,1);
+  const shinsegae=fresh.coverage.find(x=>x.storeId==='shinsegae');
+  assert.equal(shinsegae.status,'manual_verified');assert.equal(shinsegae.lastVerifiedAt,day);
+  assert.ok(shinsegae.count>0);
+  for(const row of fresh.benefits.filter(x=>x.storeId==='shinsegae'))assert.equal(row.checkedAt,day);
+  const expired=await collectBenefits(later);
+  const stale=expired.coverage.find(x=>x.storeId==='shinsegae');
+  assert.equal(stale.status,'error');assert.equal(stale.count,0);assert.equal(stale.error,'HTTP 406');
+  assert.equal(stale.lastVerifiedAt,undefined);
+  assert.equal(expired.coverage.find(x=>x.storeId==='hyundai').status,'ok');
 });

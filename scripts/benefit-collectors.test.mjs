@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {parseHyundai,parseLotte,parseShilla,reviewedBenefits,makeBenefit,validDay,collectLotte,collectShilla} from './benefit-collectors.mjs';
+import {parseHyundai,parseHyundaiData,parseLotte,parseShilla,reviewedBenefits,makeBenefit,validDay,collectHyundai,collectLotte,collectShilla} from './benefit-collectors.mjs';
 const day='2026-10-29';
 const lotteCard = (id,date='2026-10-01 ~ 2026-10-31',code='01')=>`<li><a name="bnfEvtDtl" data-evtdispno="${id}" evtconnsctcd="${code}"></a><div class="txt_area"><strong>행사 ${id}</strong><span class="date">${date}</span></div></li>`;
 test('no arbitrary six-event cap; active dates and official detail paths are required',()=>{
@@ -51,6 +51,70 @@ test('Shilla collector follows anonymous form flow and exhausts pagination',asyn
     return Response.json({totCnt:31,eventData:rows});
   });
   assert.equal((await collectShilla(day)).benefits.length,31);assert.deepEqual(requests,[0,1]);
+});
+const hyundaiRow = id=>({prmoId:String(id),prmoTitl:`행사 ${id}`,prmoStDttm:Date.parse('2026-10-01T00:00:00+09:00'),prmoEndDttm:Date.parse('2026-10-31T23:59:59+09:00'),totCnt:26});
+function hyundaiPage(page,total=26){
+  return {...(page===1?{totCnt:total,totalPage:Math.ceil(total/20)}:{}),evntSpex:{page,listSize:20},evntList:Array.from({length:Math.min(20,total-(page-1)*20)},(_,i)=>({...hyundaiRow((page-1)*20+i+1),totCnt:total}))};
+}
+function mockHyundai(t, transform=data=>data, total=26){
+  const requests=[];
+  t.mock.method(globalThis,'fetch',async(url,options)=>{
+    if(String(url).endsWith('evntShop.do'))return new Response(`<li name="sndTab" class="is-active"><button data-totalcnt="${total}"></button></li>`,{headers:{'set-cookie':'anonymous=fixture; Path=/'}});
+    const page=Number(options.body.get('page'));requests.push(page);
+    assert.equal(String(url),`https://www.hddfs.com/event/op/evnt/${page===1?'getEvntList':'getEvntMoreList'}.json`);
+    assert.equal(options.method,'POST');
+    assert.equal(options.headers['X-Requested-With'],'XMLHttpRequest');
+    assert.equal(options.headers.Referer,'https://www.hddfs.com/event/op/evnt/evntShop.do');
+    assert.match(options.headers.Cookie,/anonymous=fixture/);
+    assert.equal(options.body.get('prmoType'),'0');
+    assert.equal(options.body.get('prmoCtgTypeCd'),'2');
+    assert.equal(options.body.get('totalCount'),String(total));
+    const data=transform(hyundaiPage(page,total),page);
+    return data instanceof Response ? data : Response.json(data);
+  });
+  return requests;
+}
+test('Hyundai public AJAX pagination reads all rows, including the second page',async t=>{
+  const requests=mockHyundai(t);
+  const result=await collectHyundai(day);
+  assert.deepEqual(requests,[1,2]);assert.equal(result.scannedCount,26);assert.equal(result.benefits.length,26);
+  assert.ok(result.benefits.some(row=>row.url.endsWith('evntId=26')));
+  // Keep IDs compatible with the previous HTML parser's saved publications.
+  assert.equal(result.benefits[0].id,`hyundai:${result.benefits[0].url}`);
+});
+test('Hyundai requires explicit dates in Korea and respects public link restrictions',()=>{
+  const row=hyundaiRow(1);
+  const result=parseHyundaiData({evntList:[row,
+    {...row,prmoId:'2',adultAucaNeedYn:'Y'}, {...row,prmoId:'3',otsdPrmoDevYn:'Y'},
+    {...row,prmoId:'4',stocRostUseYn:'Y'}, {...row,prmoId:'5',prmoEndDttm:null},
+    {...row,prmoId:'6',prmoStDttm:Date.parse('2026-11-01T00:00:00+09:00')},
+    {...row,prmoId:'7',prmoEndDttm:Date.parse('2026-10-28T23:59:59+09:00')},
+    {...row,prmoId:'8',prmoEndDttm:Date.parse('2099-12-31T23:59:59+09:00')},
+    {...row,prmoId:'9',prmoTitl:'카드 캐시백'}, {...row,prmoId:'10',prmoTitl:'임직원 혜택'}]},day);
+  assert.equal(result.length,1);assert.equal(result[0].startDate,'2026-10-01');assert.equal(result[0].endDate,'2026-10-31');
+});
+for(const [name,transform,error] of [
+  ['repeated rows', (data,page)=>page===2?{...data,evntList:data.evntList.map((row,i)=>({...row,prmoId:String(i+1)}))}:data,/반복|중복/],
+  ['missing last row', (data,page)=>page===2?{...data,evntList:data.evntList.slice(1)}:data,/누락/],
+  ['changed total', (data,page)=>page===2?{...data,evntList:data.evntList.map(row=>({...row,totCnt:27}))}:data,/변경/],
+  ['wrong response page', (data,page)=>page===2?{...data,evntSpex:{...data.evntSpex,page:1}}:data,/응답 불일치/],
+  ['invalid identifier', (data,page)=>page===2?{...data,evntList:data.evntList.map(row=>({...row,prmoId:null}))}:data,/식별자/],
+  ['malformed response', (_data,page)=>page===1?{exception:'BadRequestException'}:null,/형식/],
+  ['missing totals', data=>({...data,totCnt:null}),/총계/],
+  ['inconsistent page count', data=>({...data,totalPage:1}),/총계/],
+])test(`Hyundai refuses partial success for ${name}`,async t=>{
+  mockHyundai(t,transform);await assert.rejects(()=>collectHyundai(day),error);
+});
+test('Hyundai supports a verified empty list and bounds excessive pagination',async t=>{
+  mockHyundai(t,data=>data,0);
+  assert.deepEqual(await collectHyundai(day),{benefits:[],scannedCount:0});
+  t.mock.restoreAll();
+  const requests=mockHyundai(t,data=>data,801);
+  await assert.rejects(()=>collectHyundai(day),/상한/);assert.deepEqual(requests,[1]);
+});
+test('Hyundai HTTP failure on a later page discards partial data',async t=>{
+  mockHyundai(t,(data,page)=>page===2?new Response('Unavailable',{status:503}):data);
+  await assert.rejects(()=>collectHyundai(day),/HTTP 503/);
 });
 test('saved coverage and counts reconcile across all four companies without rewriting weekly archives',()=>{
   const latest=JSON.parse(fs.readFileSync('data/content/benefit-latest.json','utf8'));

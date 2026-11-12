@@ -1,7 +1,6 @@
-import { load } from 'cheerio';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
-import { benefitSources, parseHyundai, collectLotte, collectShilla, reviewedBenefits, dedupeBenefits, fetchPublic } from './benefit-collectors.mjs';
+import { benefitSources, parseHyundai, collectHyundai, collectLotte, collectShilla, reviewedBenefits, dedupeBenefits, fetchPublic } from './benefit-collectors.mjs';
 
 export const BENEFIT_URL = 'https://www.hddfs.com/event/op/evnt/evntShop.do';
 export const FX_URL = 'https://api.frankfurter.dev/v2/rate/JPY/KRW?providers=ECB';
@@ -50,14 +49,10 @@ export async function collectBenefits(day) {
       let result;
       if(source.storeId==='lotte')result=await collectLotte(day);
       else if(source.storeId==='shilla')result=await collectShilla(day);
+      else if(source.storeId==='hyundai')result=await collectHyundai(day);
       else {
-        const html=await(await fetchPublic(source.url)).text();
-        if(source.storeId==='hyundai'){
-          const $=load(html); const total=html.match(/var totalPage\s*=\s*"(\d+)"/);
-          if(total && Number(total[1])>1)throw new Error('현대 목록 페이지 추가 확인 필요');
-          if(!$('a[href*="evntDetail.do"]').length)throw new Error('현대 행사 목록 형식 변경');
-          result={benefits:parseHyundai(html,day),scannedCount:$('a[href*="evntDetail.do"]').length};
-        } else throw new Error('동적 행사 목록: 브라우저 검증 자료 필요');
+        await(await fetchPublic(source.url)).text();
+        throw new Error('동적 행사 목록: 브라우저 검증 자료 필요');
       }
       return {benefits:result.benefits,coverage:{...base,status:result.benefits.length?'ok':'no_verified_events',count:result.benefits.length,scannedCount:result.scannedCount,lastVerifiedAt:day,note:'공개 행사 목록 확인. 기간과 대상 조건이 없는 항목은 수록하지 않습니다.'}};
     }catch(error){

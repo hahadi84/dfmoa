@@ -36,6 +36,17 @@ export function parseHyundai(html, day) {
     if (item) result.push(item);
   }); return dedupeBenefits(result);
 }
+export function parseHyundaiData(data, day) {
+  if (!Array.isArray(data.evntList)) throw new Error('현대 행사 목록 형식 변경');
+  return dedupeBenefits(data.evntList.map(row => {
+    // Match the public list's link/date rules. Do not turn age-gated,
+    // external or "until sold out" promotions into ordinary dated details.
+    if (row.adultAucaNeedYn === 'Y' || row.otsdPrmoDevYn === 'Y' || row.stocRostUseYn === 'Y' || !/^\d+$/.test(row.prmoId ?? '')) return null;
+    const start = typeof row.prmoStDttm === 'number' && Number.isFinite(row.prmoStDttm) ? koreanDay(row.prmoStDttm) : null;
+    const end = typeof row.prmoEndDttm === 'number' && Number.isFinite(row.prmoEndDttm) ? koreanDay(row.prmoEndDttm) : null;
+    return makeBenefit('hyundai', {title:row.prmoTitl,url:`https://www.hddfs.com/event/op/evnt/evntDetail.do?evntId=${row.prmoId}`,startDate:start,endDate:end},day);
+  }).filter(Boolean));
+}
 export function parseLotte(html, day) {
   const $ = load(html); const result = [];
   $('[name="bnfEvtDtl"]').each((_, e) => {
@@ -67,6 +78,44 @@ export function reviewedBenefits(record, storeId, day) {
 export async function fetchPublic(url, options={}) {
   const r=await fetch(url,{signal:AbortSignal.timeout(30000),...options,headers:{'User-Agent':'DFMOA-public-content-check/1.0 (+https://www.dfmoa.com/about)',...options.headers}});
   if(!r.ok)throw new Error(`HTTP ${r.status}`); return r;
+}
+export async function collectHyundai(day) {
+  const sourceUrl=sources.find(s=>s.storeId==='hyundai').url;
+  const page=await fetchPublic(sourceUrl), $=load(await page.text());
+  const integer=value=>/^(?:0|[1-9]\d*)$/.test(String(value)) ? Number(value) : NaN;
+  const initialTotal=integer($('li[name="sndTab"].is-active > button').attr('data-totalcnt'));
+  if(!Number.isSafeInteger(initialTotal))throw new Error('현대 목록 총계 확인 실패');
+  // Use the same anonymous session and public AJAX form as the list's tabs
+  // and infinite scroll, never saved login cookies or a private endpoint.
+  const cookie=page.headers.getSetCookie().map(s=>s.split(';')[0]).join('; ');
+  const headers={'Content-Type':'application/x-www-form-urlencoded','X-Requested-With':'XMLHttpRequest',Referer:sourceUrl,Origin:new URL(sourceUrl).origin,Cookie:cookie};
+  const result=[], ids=new Set();let total, pages, size;
+  for(let index=1;index<=40;index++){
+    const endpoint=index===1?'getEvntList.json':'getEvntMoreList.json';
+    const data=await(await fetchPublic(new URL(endpoint,sourceUrl).href,{method:'POST',headers,body:new URLSearchParams({prmoCtgTypeCd:'2',prmoType:'0',prmoCtgCd:'',keyword:'',page:String(index),totalCount:String(initialTotal)})})).json();
+    if(!Array.isArray(data.evntList)||!data.evntSpex)throw new Error('현대 행사 목록 형식 변경');
+    if(index===1){
+      total=integer(data.totCnt);pages=integer(data.totalPage);size=integer(data.evntSpex.listSize);
+      if(!Number.isSafeInteger(total)||!Number.isSafeInteger(pages)||!Number.isSafeInteger(size)||size<1)throw new Error('현대 목록 총계 확인 실패');
+      if(total!==initialTotal)throw new Error('현대 목록 변경 중: 다음 점검에서 재확인');
+      if(pages>40)throw new Error('현대 페이지 상한 초과: 일부만 전체로 공개하지 않음');
+      if(pages!==Math.ceil(total/size)&&!(total===0&&pages===1))throw new Error('현대 목록 페이지 총계 불일치');
+    }
+    // More-list responses have no top-level totals; each row carries totCnt.
+    if(integer(data.evntSpex.page)!==index||integer(data.evntSpex.listSize)!==size)throw new Error('현대 페이지 응답 불일치');
+    if(data.evntList.length!==Math.min(size,total-(index-1)*size))throw new Error('현대 페이지 항목 누락');
+    for(const row of data.evntList){
+      if(!/^\d+$/.test(row?.prmoId ?? ''))throw new Error('현대 행사 식별자 확인 실패');
+      if(integer(row.totCnt)!==total)throw new Error('현대 목록 변경 중: 다음 점검에서 재확인');
+      if(ids.has(row.prmoId))throw new Error('현대 페이지 반복 또는 중복 항목');
+      ids.add(row.prmoId);
+    }
+    result.push(...parseHyundaiData(data,day));
+    if(index>=pages){
+      if(ids.size!==total)throw new Error('현대 목록 항목 누락 또는 중복');
+      return {benefits:dedupeBenefits(result),scannedCount:total};
+    }
+  }throw new Error('현대 페이지 상한 초과');
 }
 export async function collectLotte(day) {
   const result=[];let total=0;const seen=new Set(), ids=new Set();
