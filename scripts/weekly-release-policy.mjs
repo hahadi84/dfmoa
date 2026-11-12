@@ -26,7 +26,8 @@ export function allowWeeklyBuild({ subject, context, currentCommit, previousComm
   const snippetsRequested = korean.toISOString().slice(0,10) === '2026-11-07' && subject === 'release(requested-structured-data): 2026-11-07';
   const benefitTopicsRequested = korean.toISOString().slice(0,10) === '2026-11-11' && subject === 'release(requested-benefit-topics): 2026-11-11';
   const brandDirectoryRequested = korean.toISOString().slice(0,10) === '2026-11-11' && subject === 'release(requested-brand-directory): 2026-11-11';
-  return context === 'production' && (scheduled || requested || adsRequested || airportRequested || searchAdRequested || unifiedAirportRequested || shoppingRequested || marketShoppingRequested || internationalAdsRequested || naverRequested || snippetsRequested || benefitTopicsRequested || brandDirectoryRequested) &&
+  const securityRequested = korean.toISOString().slice(0,10) === '2026-11-12' && subject === 'release(requested-security): 2026-11-12';
+  return context === 'production' && (scheduled || requested || adsRequested || airportRequested || searchAdRequested || unifiedAirportRequested || shoppingRequested || marketShoppingRequested || internationalAdsRequested || naverRequested || snippetsRequested || benefitTopicsRequested || brandDirectoryRequested || securityRequested) &&
     /^[a-f0-9]{40}$/i.test(currentCommit ?? '') &&
     /^[a-f0-9]{40}$/i.test(previousCommit ?? '') && previousCommit !== currentCommit &&
     typeof previousSubject === 'string' && previousSubject !== subject && !earlierReleaseThisWeek;

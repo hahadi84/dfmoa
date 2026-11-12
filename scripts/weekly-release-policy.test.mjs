@@ -70,3 +70,23 @@ test('naver verification release is date, context and duplicate restricted', () 
  assert.equal(allowWeeklyBuild(input),true);
  for (const patch of [{context:'deploy-preview'},{now:new Date('2026-11-08T00:00:00Z')},{earlierReleaseThisWeek:true},{previousCommit:input.currentCommit},{previousSubject:input.subject}]) assert.equal(allowWeeklyBuild({...input,...patch}),false);
 });
+
+
+test('security release requires the approved November 12 KST date and cannot repeat', () => {
+  const input = { subject: 'release(requested-security): 2026-11-12', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'release(requested-brand-directory): 2026-11-11', now: new Date('2026-11-11T15:00:00Z') };
+  assert.equal(allowWeeklyBuild(input), true);
+  assert.equal(allowWeeklyBuild({ ...input, now: new Date('2026-11-12T14:59:59Z') }), true);
+  for (const override of [
+    { now: new Date('2026-11-11T14:59:59Z') },
+    { now: new Date('2026-11-12T15:00:00Z') },
+    { subject: 'release(requested-security): 2026-11-13' },
+    { subject: 'fix: ordinary change' },
+    { context: 'deploy-preview' },
+    { context: 'branch-deploy' },
+    { earlierReleaseThisWeek: true },
+    { previousSubject: input.subject },
+    { previousCommit: input.currentCommit },
+    { previousCommit: undefined },
+    { currentCommit: undefined },
+  ]) assert.equal(allowWeeklyBuild({ ...input, ...override }), false);
+});
