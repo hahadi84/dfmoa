@@ -90,3 +90,29 @@ test('security release requires the approved November 12 KST date and cannot rep
     { currentCommit: undefined },
   ]) assert.equal(allowWeeklyBuild({ ...input, ...override }), false);
 });
+
+
+test('collection release requires the approved November 13 KST date and cannot repeat', () => {
+  const input = { subject: 'release(requested-collection): 2026-11-13', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'release(requested-security): 2026-11-12', now: new Date('2026-11-12T15:00:00Z') };
+  assert.equal(allowWeeklyBuild(input), true);
+  assert.equal(allowWeeklyBuild({ ...input, now: new Date('2026-11-13T14:59:59Z') }), true);
+  for (const override of [
+    { now: new Date('2026-11-12T14:59:59Z') },
+    { now: new Date('2026-11-13T15:00:00Z') },
+    { subject: 'release(requested-collection): 2026-11-14' },
+    { subject: 'chore(snapshot): data [skip netlify]' },
+    { subject: 'fix: ordinary change' },
+    { subject: 'release(weekly): 2026-11-09' },
+    { context: 'deploy-preview' },
+    { context: 'branch-deploy' },
+    { context: undefined },
+    { earlierReleaseThisWeek: true },
+    { previousSubject: input.subject },
+    { previousSubject: undefined },
+    { previousCommit: input.currentCommit },
+    { previousCommit: undefined },
+    { previousCommit: 'invalid' },
+    { currentCommit: undefined },
+    { currentCommit: 'invalid' },
+  ]) assert.equal(allowWeeklyBuild({ ...input, ...override }), false);
+});

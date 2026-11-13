@@ -46,3 +46,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-11 사용자 “거기까지 수정해서 배포해줘” 요청으로 대표 브랜드 100개·관측가 상태·면세점별 검색 개편 공개 1회(release(requested-brand-directory): 2026-11-11)를 승인한다. 날짜·운영 환경·중복 방지 검사를 유지한다.
 
 - 2026-11-12 사용자 “배포” 요청에 따라 의존성 보안 업데이트 공개 1회(release(requested-security): 2026-11-12)를 승인한다. 날짜·운영 환경·중복 방지 검사를 유지하며 정기 정책은 변경하지 않는다.
+
+- 2026-11-13 당일 수집 완료 후 사용자 “배포” 요청에 따라 검증된 수집 데이터 공개 1회(release(requested-collection): 2026-11-13)를 승인한다. 해당 한국 날짜·운영 환경·중복 방지 검사를 유지하며 정기 정책은 변경하지 않는다.
