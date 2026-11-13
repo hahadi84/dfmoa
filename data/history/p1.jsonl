@@ -1,4 +1,3 @@
-{"ts":"2026-08-15T01:06:16.970Z","shilla":403247,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-16T01:10:36.916Z","shilla":403247,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-17T01:07:51.942Z","shilla":403247,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-18T01:05:36.242Z","shilla":403247,"shinsegae":null,"lotte":null}
@@ -91,3 +90,4 @@
 {"ts":"2026-11-11T10:45:56+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":386375,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-11T10:45:56+09:00","priceKrw":386375,"priceUsd":285,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}
 {"ts":"2026-11-12T11:45:45+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":382841,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-12T11:45:45+09:00","priceKrw":382841,"priceUsd":285,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}
 {"ts":"2026-11-12T22:08:42+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":382841,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-12T22:08:42+09:00","priceKrw":382841,"priceUsd":285,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}
+{"ts":"2026-11-13T11:28:06+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":380960,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-13T11:28:06+09:00","priceKrw":380960,"priceUsd":285,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}

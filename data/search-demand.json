@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T13:08:34.597Z",
+  "generatedAt": "2026-11-13T02:27:58.724Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -9,11 +9,11 @@
     },
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 4
+      "count": 6
     },
     {
       "productSlug": "hibiki-harmony-700ml",
-      "count": 3
+      "count": 4
     },
     {
       "productSlug": "bleu-de-chanel-edp-100ml",
@@ -44,11 +44,11 @@
       "count": 2
     },
     {
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "productSlug": "tissot-prx-powermatic-80",
       "count": 2
     },
     {
-      "productSlug": "tissot-prx-powermatic-80",
+      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 2
     },
     {
@@ -64,6 +64,10 @@
       "count": 1
     },
     {
+      "productSlug": "penhaligons-halfeti-100ml",
+      "count": 1
+    },
+    {
       "productSlug": "royal-salute-21-700ml",
       "count": 1
     },
@@ -72,15 +76,15 @@
       "count": 1
     },
     {
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "count": 1
+    },
+    {
       "productSlug": "swarovski-swan-necklace",
       "count": 1
     },
     {
       "productSlug": "tiffany-return-to-tiffany-bracelet",
-      "count": 1
-    },
-    {
-      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 1
     }
   ]

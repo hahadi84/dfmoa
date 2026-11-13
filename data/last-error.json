@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T13:21:23.792Z",
+  "generatedAt": "2026-11-13T02:40:48.568Z",
   "attemptedCount": 77,
   "failureCount": 53,
   "failures": [
@@ -211,7 +211,7 @@
       "productId": "p37",
       "productSlug": "celine-triomphe-cl40194u",
       "categorySlug": "eyewear",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p38",
