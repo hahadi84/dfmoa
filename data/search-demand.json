@@ -1,15 +1,19 @@
 {
-  "generatedAt": "2026-11-13T02:27:58.724Z",
+  "generatedAt": "2026-11-14T02:00:48.387Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
+    {
+      "productSlug": "la-mer-moisturizing-cream-60ml",
+      "count": 9
+    },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 7
     },
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 6
+      "count": 4
     },
     {
       "productSlug": "hibiki-harmony-700ml",
@@ -24,10 +28,6 @@
       "count": 2
     },
     {
-      "productSlug": "dior-sauvage-edp-100ml",
-      "count": 2
-    },
-    {
       "productSlug": "estee-lauder-anr-100ml",
       "count": 2
     },
@@ -36,11 +36,11 @@
       "count": 2
     },
     {
-      "productSlug": "la-mer-moisturizing-cream-60ml",
+      "productSlug": "le-labo-santal-33-50ml",
       "count": 2
     },
     {
-      "productSlug": "longchamp-le-pliage-medium",
+      "productSlug": "penhaligons-halfeti-100ml",
       "count": 2
     },
     {
@@ -52,6 +52,10 @@
       "count": 2
     },
     {
+      "productSlug": "dior-sauvage-edp-100ml",
+      "count": 1
+    },
+    {
       "productSlug": "gentle-monster-dear-01",
       "count": 1
     },
@@ -60,15 +64,15 @@
       "count": 1
     },
     {
+      "productSlug": "longchamp-le-pliage-medium",
+      "count": 1
+    },
+    {
       "productSlug": "macallan-12-double-cask-700ml",
       "count": 1
     },
     {
-      "productSlug": "penhaligons-halfeti-100ml",
-      "count": 1
-    },
-    {
-      "productSlug": "royal-salute-21-700ml",
+      "productSlug": "pandora-moments-bracelet",
       "count": 1
     },
     {
@@ -81,6 +85,10 @@
     },
     {
       "productSlug": "swarovski-swan-necklace",
+      "count": 1
+    },
+    {
+      "productSlug": "swarovski-tennis-bracelet",
       "count": 1
     },
     {

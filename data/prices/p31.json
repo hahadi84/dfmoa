@@ -10,9 +10,9 @@
       "store": "shilla",
       "status": "error",
       "source_status": "ok",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO%20700ml",
-      "fetchedAt": "2026-11-13T11:33:54+09:00",
-      "matched_via": "original",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO",
+      "fetchedAt": "2026-11-14T11:06:40+09:00",
+      "matched_via": "alias_en",
       "attempted_queries": [
         "헤네시 XO 700ml",
         "헤네시xo700ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO%20700ml",
-      "fetchedAt": "2026-11-13T02:33:56.454Z",
+      "fetchedAt": "2026-11-14T02:06:41.865Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤네시 XO 700ml",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%97%A4%EB%84%A4%EC%8B%9C%20XO%20700ml",
-      "fetchedAt": "2026-11-13T02:33:56.454Z",
+      "fetchedAt": "2026-11-14T02:06:41.865Z",
       "matched_via": "original",
       "attempted_queries": [
         "헤네시 XO 700ml",

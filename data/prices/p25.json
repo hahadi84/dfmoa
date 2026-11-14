@@ -3,15 +3,15 @@
   "productSlug": "ballantines-21-700ml",
   "categorySlug": "liquor",
   "query": "발렌타인 21년 700ml",
-  "fetchedAt": "2026-11-13T11:33:10+09:00",
-  "updatedAtLabel": "2026-11-13 11:33 기준",
+  "fetchedAt": "2026-11-14T11:05:53+09:00",
+  "updatedAtLabel": "2026-11-14 11:05 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
       "status": "ok",
       "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-13T11:33:10+09:00",
+      "fetchedAt": "2026-11-14T11:05:53+09:00",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",
@@ -30,14 +30,14 @@
           "id": "shilla-046131000043",
           "title": "발렌타인 21년 700ml",
           "brand": "발렌타인",
-          "priceKrw": 131799,
+          "priceKrw": 131375,
           "priceUsd": 98.6,
           "regularUsdPrice": 170,
           "discountRate": 42,
           "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
           "imageUrl": "https://image2.shilladfs.com/files/product3/2026/07/22/046131000043_20260722_16361779_12_046131000043_1.JPG",
           "matchScore": 111,
-          "fetchedAt": "2026-11-13T11:33:10+09:00"
+          "fetchedAt": "2026-11-14T11:05:53+09:00"
         }
       ],
       "error": null
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-13T02:33:12.359Z",
+      "fetchedAt": "2026-11-14T02:05:55.263Z",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",
@@ -65,7 +65,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-13T02:33:12.359Z",
+      "fetchedAt": "2026-11-14T02:05:55.263Z",
       "matched_via": "original",
       "attempted_queries": [
         "발렌타인 21년 700ml",
