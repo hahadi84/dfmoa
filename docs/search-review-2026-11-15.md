@@ -64,3 +64,12 @@
 검색 노출·색인·순위·광고 수익 상승은 보장하지 않는다.
 
 참고: https://developers.google.com/analytics/devguides/collection/ga4/events / https://developers.google.com/search/docs/appearance/title-link
+
+## 2026-11-15 운영 공개 결과
+- 20:08:29 KST 공개 완료. release 7637547b57516385bd212545c0fa57ae397e6c30. Netlify deploy: https://app.netlify.com/projects/dfmoa/deploys/6af9927dbdea2bae09a9a409 (47초, Published).
+- 최종 전체 테스트68/68 통과, lint 오류0/기존 경고3, 빌드 성공, 구조화 데이터488개 오류0. 대표8페이지 로컬 HTML의 H1 1개·canonical·본문 내부 링크 검사 통과.
+- 공개 한국어5개 및 en/ja/zh 김해3개 HTTP200, 변경 제목/H1 확인. 갈색병4개 언어 페이지의 상호 hreflang와 자기 canonical 확인. /japan에 /ja 대응 hreflang를 잘못 추가하지 않았다.
+- ads.txt, sitemap.xml, feed.xml 모두200. 사이트맵 제출 상태는 앞서 확인한 성공 상태이며 새 URL을 추가하지 않았다. Google 리치 결과 테스트/재색인 및 Search Console 오류 해결은 이번 공개 후 미확인이다.
+- 운영 갈색병 페이지 ?debug_mode=1에서 ‘상품 원본’을 정확히 한 번 클릭했다. GA4 속성533927864, 웹 스트림14408191791의 측정ID G-VXFLYV6T34를 UI로 재확인했다. 20:11 현재 DebugView에서 해당 outbound_click_store 및 store/product_slug 수신은 확인되지 않았다. 보이는 page_view 등은7:56~7:57 기록으로 이번20:08 이후 클릭 증거로 사용하지 않았다. 일반 보고서 반영도 미확인. 배포된 코드와 스트림ID 일치만으로 이벤트 수신 성공을 주장하지 않는다.
+- 이전 격리 검사에서 확인한 요청 생성과 달리 이번 운영 브라우저의 네트워크 요청 수/페이로드는 별도 확보하지 못했다. 다음 진단은 실제 요청 생성·브라우저 차단/동의·Google 태그 목적지·DebugView 수신을 나눠 확인해야 한다. 광고 클릭은 하지 않았다.
+- 월요일 자동 점검의 오래된 커밋 재적용 지시를 수정해 중복 반영을 방지했다. 정기 배포 주기는 유지한다.
