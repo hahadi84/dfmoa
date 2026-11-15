@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-14T02:13:03.127Z",
-  "attemptedCount": 77,
-  "failureCount": 53,
+  "generatedAt": "2026-11-15T01:46:13.483Z",
+  "attemptedCount": 76,
+  "failureCount": 54,
   "failures": [
     {
       "productId": "p21",
@@ -10,21 +10,15 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p6",
-      "productSlug": "hibiki-harmony-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p93",
-      "productSlug": "bose-quietcomfort-ultra",
-      "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p57",
       "productSlug": "hamilton-khaki-field-mechanical",
       "categorySlug": "watch",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p6",
+      "productSlug": "hibiki-harmony-700ml",
+      "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -37,24 +31,18 @@
       "productId": "p13",
       "productSlug": "dior-sauvage-edp-100ml",
       "categorySlug": "perfume",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p7",
       "productSlug": "gentle-monster-dear-01",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p19",
       "productSlug": "hera-black-cushion-15g",
       "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p41",
-      "productSlug": "longchamp-le-pliage-medium",
-      "categorySlug": "fashion",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -68,6 +56,18 @@
       "productSlug": "pandora-moments-bracelet",
       "categorySlug": "jewelry",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p3",
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "categorySlug": "beauty",
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p67",
+      "productSlug": "swarovski-swan-necklace",
+      "categorySlug": "jewelry",
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p61",
@@ -160,10 +160,16 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p41",
+      "productSlug": "longchamp-le-pliage-medium",
+      "categorySlug": "fashion",
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p45",
       "productSlug": "polo-ralph-lauren-cap",
       "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p46",
@@ -247,19 +253,19 @@
       "productId": "p51",
       "productSlug": "seiko-presage-cocktail-time",
       "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p52",
       "productSlug": "citizen-tsuyosa-nj015",
       "categorySlug": "watch",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p54",
       "productSlug": "casio-g-shock-ga-2100",
       "categorySlug": "watch",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p63",
@@ -307,7 +313,7 @@
       "productId": "p85",
       "productSlug": "lindt-swiss-luxury-selection",
       "categorySlug": "food",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p84",
@@ -319,7 +325,7 @@
       "productId": "p89",
       "productSlug": "loacker-quadratini",
       "categorySlug": "food",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     }
   ]
 }

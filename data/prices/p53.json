@@ -10,9 +10,9 @@
       "store": "shilla",
       "status": "error",
       "source_status": "ok",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080",
-      "fetchedAt": "2026-11-14T11:02:24+09:00",
-      "matched_via": "original",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8B%B0%EC%8F%98prx%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B180",
+      "fetchedAt": "2026-11-15T10:35:00+09:00",
+      "matched_via": "alias_nospace",
       "attempted_queries": [
         "티쏘 PRX 파워매틱 80",
         "티쏘prx파워매틱80"
@@ -25,7 +25,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080",
-      "fetchedAt": "2026-11-14T02:02:26.709Z",
+      "fetchedAt": "2026-11-15T01:35:03.161Z",
       "matched_via": "original",
       "attempted_queries": [
         "티쏘 PRX 파워매틱 80",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8B%B0%EC%8F%98%20PRX%20%ED%8C%8C%EC%9B%8C%EB%A7%A4%ED%8B%B1%2080",
-      "fetchedAt": "2026-11-14T02:02:26.709Z",
+      "fetchedAt": "2026-11-15T01:35:03.161Z",
       "matched_via": "original",
       "attempted_queries": [
         "티쏘 PRX 파워매틱 80",

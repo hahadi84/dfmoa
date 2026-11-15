@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T02:00:48.387Z",
+  "generatedAt": "2026-11-15T01:33:56.659Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -9,31 +9,19 @@
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 7
+      "count": 5
     },
     {
       "productSlug": "creed-aventus-50ml",
       "count": 4
     },
     {
-      "productSlug": "hibiki-harmony-700ml",
-      "count": 4
-    },
-    {
-      "productSlug": "bleu-de-chanel-edp-100ml",
-      "count": 2
-    },
-    {
-      "productSlug": "bose-quietcomfort-ultra",
-      "count": 2
-    },
-    {
-      "productSlug": "estee-lauder-anr-100ml",
-      "count": 2
-    },
-    {
       "productSlug": "hamilton-khaki-field-mechanical",
-      "count": 2
+      "count": 3
+    },
+    {
+      "productSlug": "hibiki-harmony-700ml",
+      "count": 3
     },
     {
       "productSlug": "le-labo-santal-33-50ml",
@@ -52,6 +40,10 @@
       "count": 2
     },
     {
+      "productSlug": "bleu-de-chanel-edp-100ml",
+      "count": 1
+    },
+    {
       "productSlug": "dior-sauvage-edp-100ml",
       "count": 1
     },
@@ -61,10 +53,6 @@
     },
     {
       "productSlug": "hera-black-cushion-15g",
-      "count": 1
-    },
-    {
-      "productSlug": "longchamp-le-pliage-medium",
       "count": 1
     },
     {

@@ -9,23 +9,23 @@
     "shilla": {
       "store": "shilla",
       "status": "error",
-      "source_status": "error",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
-      "fetchedAt": "2026-11-14T11:11:33+09:00",
-      "matched_via": "alias_nospace",
+      "fetchedAt": "2026-11-15T10:44:44+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "카시오 지샥 GA-2100",
         "카시오지샥ga2100"
       ],
       "items": [],
-      "error": "HTTP 403"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
-      "fetchedAt": "2026-11-14T02:11:33.064Z",
+      "fetchedAt": "2026-11-15T01:44:46.440Z",
       "matched_via": "original",
       "attempted_queries": [
         "카시오 지샥 GA-2100",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%B9%B4%EC%8B%9C%EC%98%A4%20%EC%A7%80%EC%83%A5%20GA-2100",
-      "fetchedAt": "2026-11-14T02:11:33.064Z",
+      "fetchedAt": "2026-11-15T01:44:46.440Z",
       "matched_via": "original",
       "attempted_queries": [
         "카시오 지샥 GA-2100",
