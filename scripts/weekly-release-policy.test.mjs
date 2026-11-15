@@ -6,6 +6,14 @@ import os from 'node:os';
 import path from 'node:path';
 import { claimWeeklyRelease } from './prepare-weekly-release.mjs';
 
+test('November 16 shopping facts publication is date-bound, production-only and cannot repeat', () => {
+  const input = { subject: 'release(requested-shopping-facts): 2026-11-16', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'chore(snapshot): previous [skip netlify]', now: new Date('2026-11-16T11:00:00Z') };
+  assert.equal(allowWeeklyBuild(input), true);
+  for (const override of [{now:new Date('2026-11-16T15:00:00Z')}, {context:'deploy-preview'}, {earlierReleaseThisWeek:true}, {previousSubject:input.subject}, {previousCommit:input.currentCommit}, {previousCommit:undefined}]) {
+    assert.equal(allowWeeklyBuild({...input, ...override}), false);
+  }
+});
+
 test('November 15 search analytics publication is date-bound, production-only and cannot repeat', () => {
   const input = { subject: 'release(requested-search-analytics): 2026-11-15', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'chore(snapshot): previous [skip netlify]', now: new Date('2026-11-15T11:00:00Z') };
   assert.equal(allowWeeklyBuild(input), true);

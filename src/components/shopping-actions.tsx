@@ -35,7 +35,7 @@ export function ShopActions({locale, shop}: {locale: ShoppingLocale; shop: typeo
   const params = {language:locale, store:shop.id};
   return <><nav className="intl-section-nav">
     <button type="button" onClick={copyAddress}>{t.copy}</button>
-    <a href={"https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address)} onClick={()=>trackEvent("shopping_map_open", params)}>{t.map}</a>
+    <a href={"https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address)} onClick={()=>trackEvent("shopping_map_open", {...params, interaction:"external_map"})}>{t.map}</a>
     <a href={shop.url} onClick={()=>trackEvent("shopping_branch_open", params)}>{t.official}</a>
   </nav><span role="status">{status}</span></>;
 }

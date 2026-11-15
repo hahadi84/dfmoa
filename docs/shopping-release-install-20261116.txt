@@ -1,0 +1,10 @@
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+npm warn deprecated @opentelemetry/sdk-trace-node@2.9.0: Use @opentelemetry/sdk-trace package
+npm warn deprecated @opentelemetry/sdk-trace-base@2.9.0: Use @opentelemetry/sdk-trace package
+
+added 415 packages, and audited 416 packages in 20s
+
+160 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

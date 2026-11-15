@@ -1,0 +1,106 @@
+TAP version 13
+# Subtest: compares a quoted net refund and different card fees without assuming a tax rate
+ok 1 - compares a quoted net refund and different card fees without assuming a tax rate
+  ---
+  duration_ms: 0.6032
+  type: 'test'
+  ...
+# Subtest: rejects impossible refunds, invalid amounts and invalid fee percentages
+ok 2 - rejects impossible refunds, invalid amounts and invalid fee percentages
+  ---
+  duration_ms: 0.1115
+  type: 'test'
+  ...
+# Subtest: exact volume and identity are required; cheaper wrong products and bundles are rejected
+ok 3 - exact volume and identity are required; cheaper wrong products and bundles are rejected
+  ---
+  duration_ms: 1.6211
+  type: 'test'
+  ...
+# Subtest: launch snapshots preserve product identity and report collection failures instead of requiring fabricated prices
+ok 4 - launch snapshots preserve product identity and report collection failures instead of requiring fabricated prices
+  ---
+  duration_ms: 13.6282
+  type: 'test'
+  ...
+# Subtest: exported English pages with no verified offers explain that prices are unconfirmed
+ok 5 - exported English pages with no verified offers explain that prices are unconfirmed
+  ---
+  duration_ms: 10.6514
+  type: 'test'
+  ...
+# Subtest: November 16 shopping facts publication is date-bound, production-only and cannot repeat
+ok 6 - November 16 shopping facts publication is date-bound, production-only and cannot repeat
+  ---
+  duration_ms: 1.6781
+  type: 'test'
+  ...
+# Subtest: November 15 search analytics publication is date-bound, production-only and cannot repeat
+ok 7 - November 15 search analytics publication is date-bound, production-only and cannot repeat
+  ---
+  duration_ms: 0.3065
+  type: 'test'
+  ...
+# Subtest: release week follows Monday in Korea, including the UTC Sunday boundary
+ok 8 - release week follows Monday in Korea, including the UTC Sunday boundary
+  ---
+  duration_ms: 0.0981
+  type: 'test'
+  ...
+# Subtest: only an explicit current Monday production release may build
+ok 9 - only an explicit current Monday production release may build
+  ---
+  duration_ms: 0.2421
+  type: 'test'
+  ...
+# Subtest: two runs cannot claim the same weekly release; next week remains independent
+ok 10 - two runs cannot claim the same weekly release; next week remains independent
+  ---
+  duration_ms: 2.1694
+  type: 'test'
+  ...
+# Subtest: explicit user-requested release is limited to October 29 KST and cannot repeat
+ok 11 - explicit user-requested release is limited to October 29 KST and cannot repeat
+  ---
+  duration_ms: 0.2693
+  type: 'test'
+  ...
+# Subtest: separate benefits publication requires the specifically approved subject and same KST date
+ok 12 - separate benefits publication requires the specifically approved subject and same KST date
+  ---
+  duration_ms: 0.186
+  type: 'test'
+  ...
+# Subtest: all-page airport release requires the approved date, subject and production context
+ok 13 - all-page airport release requires the approved date, subject and production context
+  ---
+  duration_ms: 0.1493
+  type: 'test'
+  ...
+# Subtest: naver verification release is date, context and duplicate restricted
+ok 14 - naver verification release is date, context and duplicate restricted
+  ---
+  duration_ms: 0.3154
+  type: 'test'
+  ...
+# Subtest: security release requires the approved November 12 KST date and cannot repeat
+ok 15 - security release requires the approved November 12 KST date and cannot repeat
+  ---
+  duration_ms: 0.5221
+  type: 'test'
+  ...
+# Subtest: collection release requires the approved November 13 KST date and cannot repeat
+ok 16 - collection release requires the approved November 13 KST date and cannot repeat
+  ---
+  duration_ms: 0.8049
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 422.4399
