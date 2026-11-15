@@ -4,6 +4,8 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
+- 2026-11-15 사용자 “지금 배포” 요청: 검증된 검색 페이지·공식몰 GA4 측정 개선 `release(requested-search-analytics): 2026-11-15` 운영 공개 1회 승인. 날짜·운영 환경·중복 방지 검사를 유지한다. 기존 11월 16일 대기 건은 이미 반영된 커밋을 중복 적용하지 않는다.
+
 ## 운영 배포 주기 (사용자 지시, 2026-10-27)
 - 2026-10-29 혜택 4사 수정 완료 후 사용자가 별도로 “배포”를 지시했다. `release(requested-benefits): 2026-10-29` 공개 1회를 추가 승인하며, 해당 날짜·운영 환경·중복 방지 검사를 유지한다. 정기 정책은 변경하지 않는다.
 - 2026-10-29 사용자 직접 지시 “오늘 배포하자”에 따라 이날 1회 `release(requested): 2026-10-29` 공개를 허용한다. 해당 한국 날짜에만 유효하며, 이후 월요일 정기 정책은 유지한다. 같은 요청 커밋의 반복 공개는 금지한다.

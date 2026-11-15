@@ -97,6 +97,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
         </span>
         <h1 className="page-title">{guide.title}</h1>
         <p className="page-description">{guide.excerpt}</p>
+        {["yen-rate-duty-free-comparison", "japan-shopping-price-checklist"].includes(slug) ? (
+          <nav className="chip-row" aria-label="쇼핑 가격 비교 도구">
+            <Link className="ghost-button" href="/japan#yen-calculator-title">엔화 금액을 원화로 계산</Link>
+            <Link className="ghost-button" href="/price-compare">같은 상품의 면세 가격 확인</Link>
+          </nav>
+        ) : null}
         {guide.updatedAt ? <p className="section-copy">최종 확인: {guide.updatedAt} · <Link href="/japan">엔화 계산기와 일본 쇼핑 가이드</Link></p> : null}
 
         <div className="split-grid" style={{ marginTop: 28 }}>

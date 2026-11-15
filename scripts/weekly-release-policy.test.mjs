@@ -6,6 +6,14 @@ import os from 'node:os';
 import path from 'node:path';
 import { claimWeeklyRelease } from './prepare-weekly-release.mjs';
 
+test('November 15 search analytics publication is date-bound, production-only and cannot repeat', () => {
+  const input = { subject: 'release(requested-search-analytics): 2026-11-15', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'chore(snapshot): previous [skip netlify]', now: new Date('2026-11-15T11:00:00Z') };
+  assert.equal(allowWeeklyBuild(input), true);
+  for (const override of [{now:new Date('2026-11-15T15:00:00Z')}, {context:'deploy-preview'}, {earlierReleaseThisWeek:true}, {previousSubject:input.subject}, {previousCommit:input.currentCommit}, {previousCommit:undefined}]) {
+    assert.equal(allowWeeklyBuild({...input, ...override}), false);
+  }
+});
+
 test('release week follows Monday in Korea, including the UTC Sunday boundary', () => {
   assert.equal(koreanWeekStart(new Date('2026-11-01T14:59:59Z')), '2026-10-26');
   assert.equal(koreanWeekStart(new Date('2026-11-01T15:00:00Z')), '2026-11-02');

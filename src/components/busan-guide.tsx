@@ -20,13 +20,14 @@ export function BusanGuide({locale, topic}: {locale: ShoppingLocale; topic: Topi
   return <article className="page-section"><div className="container intl-reading shopping-guide">
     <h1 className="page-title">{t[topic]}</h1>
     <h2>{station ? t.stationQ : t.airportQ}</h2><p>{station ? t.intro : t.flight}</p>
+    {!station ? <nav className="intl-section-nav"><BusanCatalogLink locale={locale}>{t.compare}</BusanCatalogLink></nav> : null}
     <table><thead><tr>{columns.map(label => <th key={label} scope="col">{label}</th>)}</tr></thead>
       <tbody>{rows.map(([name,detail,note]) => <tr key={name}><th scope="row">{name}</th><td>{detail}</td><td>{note}</td></tr>)}</tbody></table>
     <AdBanner placement="results"/>
     {station ? <><p>{t.stock}</p><h2>{t.route}</h2>
       <p lang="ko">{stationShop.name}<br/>{stationShop.address}</p>
       <ShopActions locale={locale} shop={stationShop}/><ShoppingMap locale={locale} name={stationShop.name} address={stationShop.address} store={stationShop.id}/></> :
-      <><p>{t.distinction}</p><nav className="intl-section-nav"><BusanCatalogLink locale={locale}>{t.compare}</BusanCatalogLink></nav></>}
+      <p>{t.distinction}</p>}
     <p>{t.sources} · <time dateTime="2026-11-05">2026-11-05</time></p>
     <ul>{(station ? [
       ["Visit Busan", busanSources.visit], ["VISITKOREA", busanSources.tourism], ["Daily Busan", busanSources.city],

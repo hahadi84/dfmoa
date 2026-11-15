@@ -1,10 +1,14 @@
+"use client";
+
 import Link from "@/components/app-link";
+import { trackEvent } from "@/lib/analytics";
 import { dutyFreeBenefitStores } from "@/lib/duty-free-benefits";
 import { formatKrw, getStoreById } from "@/lib/site-data";
 import type { LiveOffer } from "@/lib/search-types";
 
 type BenefitApplicationPanelProps = {
   offers: LiveOffer[];
+  productSlug?: string;
 };
 
 type BenefitKind = "sale" | "coupon" | "reward" | "card" | "gift" | "event";
@@ -95,7 +99,7 @@ function getBenefitHomeUrl(offer: LiveOffer) {
   return dutyFreeBenefitStores.find((store) => store.storeId === offer.storeId)?.benefitHomeUrl ?? offer.sourceUrl;
 }
 
-export function BenefitApplicationPanel({ offers }: BenefitApplicationPanelProps) {
+export function BenefitApplicationPanel({ offers, productSlug = "search" }: BenefitApplicationPanelProps) {
   if (!offers.length) {
     return null;
   }
@@ -170,10 +174,16 @@ export function BenefitApplicationPanel({ offers }: BenefitApplicationPanelProps
                   : "현재 수집가 기준으로 비교 가능"}
               </p>
               <div className="benefit-application-links">
-                <a href={offer.sourceUrl} target="_blank" rel="noreferrer">
+                <a href={offer.sourceUrl} target="_blank" rel="noreferrer" onClick={() => trackEvent("outbound_click_store", {
+                  store: offer.storeId, product_slug: productSlug, price_krw: offer.krwPrice,
+                  source_status: offer.status, cta_type: "benefit_product_source",
+                })}>
                   상품 원본
                 </a>
-                <a href={getBenefitHomeUrl(offer)} target="_blank" rel="noreferrer">
+                <a href={getBenefitHomeUrl(offer)} target="_blank" rel="noreferrer" onClick={() => trackEvent("outbound_click_store", {
+                  store: offer.storeId, product_slug: productSlug, price_krw: offer.krwPrice,
+                  source_status: offer.status, cta_type: "benefit_conditions_source",
+                })}>
                   혜택 원본
                 </a>
               </div>
