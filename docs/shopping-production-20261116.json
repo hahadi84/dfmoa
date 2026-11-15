@@ -1,0 +1,55 @@
+{
+  "deployment": {
+    "id": "6af9e9a66b094d3dd3cdeb20",
+    "state": "ready",
+    "commit_ref": "e485d7f1c0316db0fd1452355aefba156bdd0742",
+    "published_at": "2026-11-15T17:20:22.688Z"
+  },
+  "pages": [
+    {
+      "language": "en",
+      "status": 200,
+      "facts": 3,
+      "canonical": [
+        "https://www.dfmoa.com/en/guide/korea-duty-free-shopping-list"
+      ],
+      "shop_anchors": true,
+      "review_date": true,
+      "hreflang": [
+        "en",
+        "ja",
+        "zh-Hans"
+      ]
+    },
+    {
+      "language": "ja",
+      "status": 200,
+      "facts": 3,
+      "canonical": [
+        "https://www.dfmoa.com/ja/guide/korea-duty-free-shopping-list"
+      ],
+      "shop_anchors": true,
+      "review_date": true,
+      "hreflang": [
+        "en",
+        "ja",
+        "zh-Hans"
+      ]
+    },
+    {
+      "language": "zh",
+      "status": 200,
+      "facts": 4,
+      "canonical": [
+        "https://www.dfmoa.com/zh/guide/korea-duty-free-shopping-list"
+      ],
+      "shop_anchors": true,
+      "review_date": true,
+      "hreflang": [
+        "en",
+        "ja",
+        "zh-Hans"
+      ]
+    }
+  ]
+}
