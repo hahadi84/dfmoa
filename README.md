@@ -20,6 +20,19 @@ npm ci
 npm run dev
 ```
 
+## 검증
+
+새 체크아웃에서는 빌드를 먼저 실행합니다. 전체 테스트에는 `out/`의 정적 HTML을 읽는 검사도 포함됩니다.
+
+```bash
+npm ci
+npm run build
+node --test scripts/*.test.mjs
+npm run lint
+```
+
+`npm run build`는 정적 페이지 생성과 구조화 데이터 검사를 수행하며 사이트를 배포하지 않습니다.
+
 ## 스냅샷 수동 실행
 
 ```bash

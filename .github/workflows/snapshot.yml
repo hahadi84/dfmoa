@@ -20,6 +20,10 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
       - run: npm ci
+      # Export assertions read out/; a fresh checkout has no generated pages.
+      # Build locally on the runner before testing. This does not deploy the site.
+      - name: Build static pages for validation
+        run: npm run build
       - name: Validate internal demand and failure handling
         run: node --test scripts/*.test.mjs
       - name: Refresh monthly benefits, weekly issue and yen reference rate
