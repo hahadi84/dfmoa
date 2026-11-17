@@ -1,0 +1,56 @@
+[
+  {
+    "locale": "en",
+    "url": "https://www.dfmoa.com/en/guide/korea-duty-free-shopping-list",
+    "status": 200,
+    "canonical": [
+      "https://www.dfmoa.com/en/guide/korea-duty-free-shopping-list"
+    ],
+    "alternates": {
+      "en": "https://www.dfmoa.com/en/guide/korea-duty-free-shopping-list",
+      "ja": "https://www.dfmoa.com/ja/guide/korea-duty-free-shopping-list",
+      "zh-Hans": "https://www.dfmoa.com/zh/guide/korea-duty-free-shopping-list"
+    },
+    "newNavigation": true,
+    "robots": [],
+    "lastmod": [
+      "2026-11-17T15:00:00.000Z"
+    ]
+  },
+  {
+    "locale": "ja",
+    "url": "https://www.dfmoa.com/ja/guide/korea-duty-free-shopping-list",
+    "status": 200,
+    "canonical": [
+      "https://www.dfmoa.com/ja/guide/korea-duty-free-shopping-list"
+    ],
+    "alternates": {
+      "en": "https://www.dfmoa.com/en/guide/korea-duty-free-shopping-list",
+      "ja": "https://www.dfmoa.com/ja/guide/korea-duty-free-shopping-list",
+      "zh-Hans": "https://www.dfmoa.com/zh/guide/korea-duty-free-shopping-list"
+    },
+    "newNavigation": true,
+    "robots": [],
+    "lastmod": [
+      "2026-11-17T15:00:00.000Z"
+    ]
+  },
+  {
+    "locale": "zh",
+    "url": "https://www.dfmoa.com/zh/guide/korea-duty-free-shopping-list",
+    "status": 200,
+    "canonical": [
+      "https://www.dfmoa.com/zh/guide/korea-duty-free-shopping-list"
+    ],
+    "alternates": {
+      "en": "https://www.dfmoa.com/en/guide/korea-duty-free-shopping-list",
+      "ja": "https://www.dfmoa.com/ja/guide/korea-duty-free-shopping-list",
+      "zh-Hans": "https://www.dfmoa.com/zh/guide/korea-duty-free-shopping-list"
+    },
+    "newNavigation": true,
+    "robots": [],
+    "lastmod": [
+      "2026-11-17T15:00:00.000Z"
+    ]
+  }
+]

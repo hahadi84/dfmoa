@@ -44,6 +44,7 @@
 - GA4 property 533927864 DebugView 직접 수신: shopping_compare_open 1, effective_price_calculate 1, shopping_address_copy 1, shopping_map_open 2(삽입+외부 각1), shopping_branch_open 1. 별도 자동 click 이벤트를 구매로 합산하지 않음.
 - 테스트는 localhost + debug_mode=1로 구분. 운영 여행자 성과에서 hostname/테스트 시간으로 제외해야 함. 내부 트래픽 필터·주요 이벤트 지정 변경 없음.
 - 수령 이동 shopping_pickup_open 1회도 추가 수신 확인. 초기 즉시 이동 시도는 수신 미확인, 페이지 준비 확인 후 실행에서 수신됨. 모든 환경/로딩 시점의 무손실·무중복을 일반화하지 않음.
+- 수령 이벤트 상세에서 content_market=US, source_page=country_shopping, page_location=localhost 쇼핑리스트 debug URL 확인.
 - 측정 ID G-VXFLYV6T34 코드 및 올바른 속성 수신 확인. 브라우저 전송 패킷 원문은 수집하지 않음.
 - 출처: https://analytics.google.com/analytics/web/?hl=ko#/a159549163p533927864/admin/debugview/overview
 
@@ -57,7 +58,11 @@
 ## 배포
 - Netlify API 이력 확인: 이번 주 기존 공개 1건, 2026-11-16 02:20:22 KST, e485d7f1, deploy 6af9e9a66b094d3dd3cdeb20.
 - 사용자 별도 11월18일 요청에 따른 추가 공개 1회. production/날짜/중복 방지 제한 유지. preview 없음.
-- 배포 완료 정보와 운영 검증은 후속 기록.
+- 운영 공개 완료: 2026-11-18 00:46:48 KST, commit `2d32e746de457d6d27a6ddbed3b96c0f0197f840`, Netlify deploy `6afc76ab746ee233002c9647`, ready.
+- 세 언어 운영 URL HTTP200, 새 탐색 문구·쇼핑 지점 anchor·자기 canonical·en/ja/zh-Hans 상호 alternate·sitemap lastmod(2026-11-18 KST) 확인. 증거 `shopping-routing-live-20261118.json`.
+- 운영 일본어 → 간체 동일 글 전환 확인. 운영 360px에서 본문 scrollWidth345/viewport360. 운영 설화수 상품 링크 정상 도착.
+- 일본어 운영 광고 iframe에 실제 광고 creative 표시 확인(클릭 안 함). 모든 방문에서 광고 채움이 보장된다는 의미가 아님.
+- 운영 간체 화면 캡처 `shopping-routing-mobile-20261118.jpg`.
 
 ## 28일 평가
 - 11월18일 공개 다음 완결일부터 2026-11-19~12-16 평가, 직전28일 10/22~11/18과 비교하되 재수집 전후와 신규페이지 영향을 명시.
@@ -65,3 +70,12 @@
 - 행동: 해당 랜딩에서 시작한 자연검색 세션 중 같은 세션에서 비교/지도/공식링크를 이용한 세션 수 ÷ 해당 페이지 자연검색 랜딩 세션 수. 이벤트 횟수와 세션 수를 구분.
 - 영어·일본어의 11월16일 및 이번 수정본 재수집, 선택 canonical 추적. 자체 테스트 제외.
 - 목표 수치는 GA 세션 기준값 확보 후 제안. 방문·순위·수익 상승 보장 없음.
+
+## 배포 후 측정 범위와 남은 확인
+- 운영 도메인에서 설화수 상품 이동 및 가격 비교 링크를 실행하고 정상 도착을 확인했으나 해당 운영 테스트의 DebugView 수신은 아직 확인하지 못함. 로컬 수신과 운영 수신을 동일하게 보고하지 않음.
+- 운영 HTML/JavaScript에서 tag G-SRSWS2FHS2, send_to G-VXFLYV6T34 및 debug_mode 조건을 확인. 운영 브라우저 콘솔 오류 없음. send_to 누락 오류로 단정하지 않음.
+- GA4 데이터 필터의 Internal Traffic은 ‘제외 / 테스트’ 상태를 읽었음. 필터 설정 변경 없음. 수신 미확인의 원인을 필터로 단정하지 않음.
+- 이번 검증은 전체 국가/기기/브라우저의 이벤트 무손실·무중복 보증이 아님. 원시 전송 패킷과 운영 DebugView 이벤트를 대조하는 추가 진단이 필요.
+- 상품 정보 추가 취재: 현재 한국 지점가격·포장별 재고, 미확인 품목의 정확한 규격은 기존 미확인 표시 유지. 이번 변경에서 새로운 가격이나 공식 상품 정보 재확인으로 가장하지 않음.
+
+- 추가 로컬 상품 이동 시험: 00:51:31 KST shopping_product_open 1회 수신. 이로써 로컬에서 7종 행동 이벤트 수신을 확인(지도2회는 embed/external 별도 동작). 운영 도메인 테스트 수신은 위와 같이 미확인으로 유지.
