@@ -9,6 +9,7 @@ import { GoogleAnalytics } from "@/components/google-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { GA_MEASUREMENT_ID } from "@/lib/analytics";
+import { analyticsBootstrap } from "@/lib/analytics-bootstrap";
 import { absoluteSiteUrl, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 
@@ -66,15 +67,7 @@ export default function RootLayout({
             id="dfmoa-google-analytics-init"
             strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
-                window.gtag('js', new Date());
-                window.gtag('config', ${JSON.stringify(GA_TAG_ID).replace(/</g, "\\u003c")}, {
-                  send_page_view: false,
-                  ...(new URLSearchParams(window.location.search).get('debug_mode') === '1' ? {debug_mode: true} : {})
-                });
-              `,
+              __html: analyticsBootstrap(GA_TAG_ID, GA_MEASUREMENT_ID),
             }}
           />
         ) : null}

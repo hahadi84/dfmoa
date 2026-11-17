@@ -29,6 +29,11 @@ export function GoogleAnalyticsPageView({ measurementId }: GoogleAnalyticsPageVi
         return;
       }
 
+      if (window.__dfmoaPageViewLocation === window.location.href) {
+        lastSentPath.current = pagePath;
+        return;
+      }
+
       if (typeof window.gtag !== "function") {
         attempts += 1;
         if (attempts <= 20) {
@@ -45,6 +50,7 @@ export function GoogleAnalyticsPageView({ measurementId }: GoogleAnalyticsPageVi
         send_to: measurementId,
         ...(searchParams.get("debug_mode") === "1" ? { debug_mode: true } : {}),
       });
+      window.__dfmoaPageViewLocation = window.location.href;
     };
 
     timeoutId = window.setTimeout(sendPageView, 0);

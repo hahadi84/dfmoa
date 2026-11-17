@@ -51,6 +51,7 @@ export type GAEvent =
 
 declare global {
   interface Window {
+    __dfmoaPageViewLocation?: string;
     dataLayer?: unknown[];
     gtag?: (
       command: "config" | "event" | "js",
