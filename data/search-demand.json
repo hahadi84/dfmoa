@@ -1,22 +1,14 @@
 {
-  "generatedAt": "2026-11-15T01:33:56.659Z",
+  "generatedAt": "2026-11-17T04:22:37.178Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "la-mer-moisturizing-cream-60ml",
-      "count": 9
-    },
-    {
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 5
+      "count": 7
     },
     {
       "productSlug": "creed-aventus-50ml",
-      "count": 4
-    },
-    {
-      "productSlug": "hamilton-khaki-field-mechanical",
       "count": 3
     },
     {
@@ -24,27 +16,27 @@
       "count": 3
     },
     {
+      "productSlug": "penhaligons-halfeti-100ml",
+      "count": 3
+    },
+    {
+      "productSlug": "hamilton-khaki-field-mechanical",
+      "count": 2
+    },
+    {
       "productSlug": "le-labo-santal-33-50ml",
       "count": 2
     },
     {
-      "productSlug": "penhaligons-halfeti-100ml",
+      "productSlug": "now-omega-3",
       "count": 2
     },
     {
-      "productSlug": "tissot-prx-powermatic-80",
+      "productSlug": "sony-wh-1000xm5",
       "count": 2
     },
     {
-      "productSlug": "tom-ford-oud-wood-50ml",
-      "count": 2
-    },
-    {
-      "productSlug": "bleu-de-chanel-edp-100ml",
-      "count": 1
-    },
-    {
-      "productSlug": "dior-sauvage-edp-100ml",
+      "productSlug": "estee-lauder-anr-100ml",
       "count": 1
     },
     {
@@ -56,11 +48,15 @@
       "count": 1
     },
     {
-      "productSlug": "macallan-12-double-cask-700ml",
+      "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 1
     },
     {
       "productSlug": "pandora-moments-bracelet",
+      "count": 1
+    },
+    {
+      "productSlug": "royal-salute-21-700ml",
       "count": 1
     },
     {
@@ -81,6 +77,14 @@
     },
     {
       "productSlug": "tiffany-return-to-tiffany-bracelet",
+      "count": 1
+    },
+    {
+      "productSlug": "tissot-prx-powermatic-80",
+      "count": 1
+    },
+    {
+      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 1
     }
   ]

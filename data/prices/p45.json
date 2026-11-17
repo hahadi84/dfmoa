@@ -11,21 +11,21 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
-      "fetchedAt": "2026-11-15T10:40:51+09:00",
+      "fetchedAt": "2026-11-17T13:29:34+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "폴로 랄프로렌 볼캡",
         "폴로랄프로렌볼캡"
       ],
       "items": [],
-      "error": "HTTP 403"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
-      "fetchedAt": "2026-11-15T01:40:51.450Z",
+      "fetchedAt": "2026-11-17T04:29:36.471Z",
       "matched_via": "original",
       "attempted_queries": [
         "폴로 랄프로렌 볼캡",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%ED%8F%B4%EB%A1%9C%20%EB%9E%84%ED%94%84%EB%A1%9C%EB%A0%8C%20%EB%B3%BC%EC%BA%A1",
-      "fetchedAt": "2026-11-15T01:40:51.450Z",
+      "fetchedAt": "2026-11-17T04:29:36.471Z",
       "matched_via": "original",
       "attempted_queries": [
         "폴로 랄프로렌 볼캡",

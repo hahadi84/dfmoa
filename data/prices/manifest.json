@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-11-15T01:46:13.482Z",
-  "generatedAtKst": "2026-11-15 10:46:13",
+  "generatedAt": "2026-11-17T04:34:47.924Z",
+  "generatedAtKst": "2026-11-17 13:34:47",
   "requiredTotal": 40,
-  "searchDemandGeneratedAt": "2026-11-15T01:33:56.659Z",
+  "searchDemandGeneratedAt": "2026-11-17T04:22:37.178Z",
   "prioritizedSlugs": [
     "la-mer-moisturizing-cream-60ml",
-    "johnnie-walker-blue-label-750ml",
     "creed-aventus-50ml",
-    "hamilton-khaki-field-mechanical",
     "hibiki-harmony-700ml",
-    "le-labo-santal-33-50ml",
     "penhaligons-halfeti-100ml",
-    "tissot-prx-powermatic-80",
-    "tom-ford-oud-wood-50ml",
-    "bleu-de-chanel-edp-100ml",
-    "dior-sauvage-edp-100ml",
+    "hamilton-khaki-field-mechanical",
+    "le-labo-santal-33-50ml",
+    "now-omega-3",
+    "sony-wh-1000xm5",
+    "estee-lauder-anr-100ml",
     "gentle-monster-dear-01",
     "hera-black-cushion-15g",
-    "macallan-12-double-cask-700ml",
+    "johnnie-walker-blue-label-750ml",
     "pandora-moments-bracelet",
+    "royal-salute-21-700ml",
     "solgar-vitamin-d3",
     "sulwhasoo-first-care-serum-90ml",
     "swarovski-swan-necklace",
     "swarovski-tennis-bracelet",
-    "tiffany-return-to-tiffany-bracelet"
+    "tiffany-return-to-tiffany-bracelet",
+    "tissot-prx-powermatic-80",
+    "tom-ford-oud-wood-50ml"
   ],
   "selectedCount": 40,
   "quotas": {
@@ -40,31 +41,33 @@
   },
   "attempted": [
     "la-mer-moisturizing-cream-60ml",
-    "johnnie-walker-blue-label-750ml",
     "creed-aventus-50ml",
-    "hamilton-khaki-field-mechanical",
     "hibiki-harmony-700ml",
-    "le-labo-santal-33-50ml",
     "penhaligons-halfeti-100ml",
-    "tissot-prx-powermatic-80",
-    "tom-ford-oud-wood-50ml",
-    "bleu-de-chanel-edp-100ml",
-    "dior-sauvage-edp-100ml",
+    "hamilton-khaki-field-mechanical",
+    "le-labo-santal-33-50ml",
+    "now-omega-3",
+    "sony-wh-1000xm5",
+    "estee-lauder-anr-100ml",
     "gentle-monster-dear-01",
     "hera-black-cushion-15g",
-    "macallan-12-double-cask-700ml",
+    "johnnie-walker-blue-label-750ml",
     "pandora-moments-bracelet",
+    "royal-salute-21-700ml",
     "solgar-vitamin-d3",
     "sulwhasoo-first-care-serum-90ml",
     "swarovski-swan-necklace",
     "swarovski-tennis-bracelet",
     "tiffany-return-to-tiffany-bracelet",
+    "tissot-prx-powermatic-80",
+    "tom-ford-oud-wood-50ml",
     "jo-malone-english-pear-100ml",
     "diptyque-do-son-75ml",
     "byredo-blanche-100ml",
+    "bleu-de-chanel-edp-100ml",
+    "dior-sauvage-edp-100ml",
     "maison-margiela-lazy-sunday-morning-100ml",
     "sk2-pitera-essence-230ml",
-    "estee-lauder-anr-100ml",
     "lancome-genifique-100ml",
     "kiehls-ultra-facial-cream-125ml",
     "shiseido-ultimune-75ml",
@@ -72,12 +75,11 @@
     "aesop-resurrection-hand-balm-75ml",
     "glenfiddich-15-700ml",
     "ballantines-21-700ml",
+    "macallan-12-double-cask-700ml",
     "yamazaki-12-700ml",
-    "royal-salute-21-700ml",
     "glenmorangie-original-10-700ml",
     "hennessy-xo-700ml",
     "don-julio-1942-750ml",
-    "sony-wh-1000xm5",
     "sony-wf-1000xm5",
     "sony-wh-ch720n",
     "tumi-alpha-bravo-backpack",
@@ -118,102 +120,138 @@
   ],
   "selected": [
     {
-      "productId": "p26",
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "categorySlug": "liquor",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:34:07+09:00",
-      "priceKrw": 378468,
-      "priceUsd": 284.05
-    },
-    {
       "productId": "p1",
       "productSlug": "creed-aventus-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:34:15+09:00",
-      "priceKrw": 379734,
+      "fetchedAt": "2026-11-17T13:22:48+09:00",
+      "priceKrw": 380105,
       "priceUsd": 285
-    },
-    {
-      "productId": "p11",
-      "productSlug": "le-labo-santal-33-50ml",
-      "categorySlug": "perfume",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:34:46+09:00",
-      "priceKrw": 263282,
-      "priceUsd": 197.6
     },
     {
       "productId": "p16",
       "productSlug": "penhaligons-halfeti-100ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:34:53+09:00",
-      "priceKrw": 321375,
+      "fetchedAt": "2026-11-17T13:23:16+09:00",
+      "priceKrw": 321688,
       "priceUsd": 241.2
     },
     {
-      "productId": "p14",
-      "productSlug": "tom-ford-oud-wood-50ml",
+      "productId": "p11",
+      "productSlug": "le-labo-santal-33-50ml",
       "categorySlug": "perfume",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:35:08+09:00",
-      "priceKrw": 214929,
-      "priceUsd": 161.31
+      "fetchedAt": "2026-11-17T13:23:31+09:00",
+      "priceKrw": 263539,
+      "priceUsd": 197.6
     },
     {
-      "productId": "p12",
-      "productSlug": "bleu-de-chanel-edp-100ml",
-      "categorySlug": "perfume",
+      "productId": "p92",
+      "productSlug": "sony-wh-1000xm5",
+      "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:35:15+09:00",
-      "priceKrw": 203857,
-      "priceUsd": 153
-    },
-    {
-      "productId": "p74",
-      "productSlug": "solgar-vitamin-d3",
-      "categorySlug": "health",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:36:21+09:00",
-      "priceKrw": 20319,
-      "priceUsd": 15.25
-    },
-    {
-      "productId": "p10",
-      "productSlug": "byredo-blanche-100ml",
-      "categorySlug": "perfume",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:37:23+09:00",
-      "priceKrw": 286533,
-      "priceUsd": 215.05
-    },
-    {
-      "productId": "p15",
-      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
-      "categorySlug": "perfume",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:37:30+09:00",
-      "priceKrw": 116918,
-      "priceUsd": 87.75
+      "fetchedAt": "2026-11-17T13:23:47+09:00",
+      "priceKrw": 330624,
+      "priceUsd": 247.9
     },
     {
       "productId": "p17",
       "productSlug": "estee-lauder-anr-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:37:46+09:00",
-      "priceKrw": 136451,
+      "fetchedAt": "2026-11-17T13:23:53+09:00",
+      "priceKrw": 136584,
       "priceUsd": 102.41
+    },
+    {
+      "productId": "p26",
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "categorySlug": "liquor",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:24:31+09:00",
+      "priceKrw": 378837,
+      "priceUsd": 284.05
+    },
+    {
+      "productId": "p29",
+      "productSlug": "royal-salute-21-700ml",
+      "categorySlug": "liquor",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:24:45+09:00",
+      "priceKrw": 145533,
+      "priceUsd": 109.12
+    },
+    {
+      "productId": "p74",
+      "productSlug": "solgar-vitamin-d3",
+      "categorySlug": "health",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:24:52+09:00",
+      "priceKrw": 20339,
+      "priceUsd": 15.25
+    },
+    {
+      "productId": "p3",
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "categorySlug": "beauty",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:24:59+09:00",
+      "priceKrw": 89198,
+      "priceUsd": 66.88
+    },
+    {
+      "productId": "p67",
+      "productSlug": "swarovski-swan-necklace",
+      "categorySlug": "jewelry",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:25:05+09:00",
+      "priceKrw": 168553,
+      "priceUsd": 126.38
+    },
+    {
+      "productId": "p14",
+      "productSlug": "tom-ford-oud-wood-50ml",
+      "categorySlug": "perfume",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:25:36+09:00",
+      "priceKrw": 215139,
+      "priceUsd": 161.31
+    },
+    {
+      "productId": "p10",
+      "productSlug": "byredo-blanche-100ml",
+      "categorySlug": "perfume",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:26:03+09:00",
+      "priceKrw": 286812,
+      "priceUsd": 215.05
+    },
+    {
+      "productId": "p12",
+      "productSlug": "bleu-de-chanel-edp-100ml",
+      "categorySlug": "perfume",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:26:10+09:00",
+      "priceKrw": 204056,
+      "priceUsd": 153
+    },
+    {
+      "productId": "p15",
+      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
+      "categorySlug": "perfume",
+      "sourceId": "shilla",
+      "fetchedAt": "2026-11-17T13:26:25+09:00",
+      "priceKrw": 117032,
+      "priceUsd": 87.75
     },
     {
       "productId": "p18",
       "productSlug": "lancome-genifique-100ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:37:53+09:00",
-      "priceKrw": 168815,
+      "fetchedAt": "2026-11-17T13:26:40+09:00",
+      "priceKrw": 168980,
       "priceUsd": 126.7
     },
     {
@@ -221,8 +259,8 @@
       "productSlug": "aesop-resurrection-hand-balm-75ml",
       "categorySlug": "beauty",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:38:22+09:00",
-      "priceKrw": 35975,
+      "fetchedAt": "2026-11-17T13:27:09+09:00",
+      "priceKrw": 36010,
       "priceUsd": 27
     },
     {
@@ -230,44 +268,26 @@
       "productSlug": "ballantines-21-700ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:38:37+09:00",
-      "priceKrw": 131375,
+      "fetchedAt": "2026-11-17T13:27:23+09:00",
+      "priceKrw": 131503,
       "priceUsd": 98.6
-    },
-    {
-      "productId": "p29",
-      "productSlug": "royal-salute-21-700ml",
-      "categorySlug": "liquor",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:39:12+09:00",
-      "priceKrw": 145391,
-      "priceUsd": 109.12
     },
     {
       "productId": "p32",
       "productSlug": "don-julio-1942-750ml",
       "categorySlug": "liquor",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:39:37+09:00",
-      "priceKrw": 227840,
+      "fetchedAt": "2026-11-17T13:28:27+09:00",
+      "priceKrw": 228063,
       "priceUsd": 171
-    },
-    {
-      "productId": "p92",
-      "productSlug": "sony-wh-1000xm5",
-      "categorySlug": "electronics",
-      "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:39:43+09:00",
-      "priceKrw": 330302,
-      "priceUsd": 247.9
     },
     {
       "productId": "p101",
       "productSlug": "sony-wf-1000xm5",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:39:51+09:00",
-      "priceKrw": 263016,
+      "fetchedAt": "2026-11-17T13:28:34+09:00",
+      "priceKrw": 263272,
       "priceUsd": 197.4
     },
     {
@@ -275,8 +295,8 @@
       "productSlug": "sony-wh-ch720n",
       "categorySlug": "electronics",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:39:58+09:00",
-      "priceKrw": 144938,
+      "fetchedAt": "2026-11-17T13:28:41+09:00",
+      "priceKrw": 145080,
       "priceUsd": 108.78
     },
     {
@@ -284,8 +304,8 @@
       "productSlug": "tumi-alpha-bravo-backpack",
       "categorySlug": "fashion",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:40:05+09:00",
-      "priceKrw": 556410,
+      "fetchedAt": "2026-11-17T13:28:47+09:00",
+      "priceKrw": 556953,
       "priceUsd": 417.6
     },
     {
@@ -293,8 +313,8 @@
       "productSlug": "gnc-mega-men-sport-180-tablets",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:41:33+09:00",
-      "priceKrw": 65554,
+      "fetchedAt": "2026-11-17T13:30:14+09:00",
+      "priceKrw": 65618,
       "priceUsd": 49.2
     },
     {
@@ -302,8 +322,8 @@
       "productSlug": "kgc-everytime-royal",
       "categorySlug": "health",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:41:41+09:00",
-      "priceKrw": 96266,
+      "fetchedAt": "2026-11-17T13:30:21+09:00",
+      "priceKrw": 96360,
       "priceUsd": 72.25
     },
     {
@@ -311,24 +331,14 @@
       "productSlug": "godiva-gold-collection",
       "categorySlug": "food",
       "sourceId": "shilla",
-      "fetchedAt": "2026-11-15T10:45:37+09:00",
-      "priceKrw": 38839,
+      "fetchedAt": "2026-11-17T13:34:07+09:00",
+      "priceKrw": 38877,
       "priceUsd": 29.15
     },
     {
       "productId": "p21",
       "productSlug": "la-mer-moisturizing-cream-60ml",
       "categorySlug": "beauty",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p57",
-      "productSlug": "hamilton-khaki-field-mechanical",
-      "categorySlug": "watch",
       "sourceId": null,
       "fetchedAt": null,
       "priceKrw": null,
@@ -346,8 +356,8 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p53",
-      "productSlug": "tissot-prx-powermatic-80",
+      "productId": "p57",
+      "productSlug": "hamilton-khaki-field-mechanical",
       "categorySlug": "watch",
       "sourceId": null,
       "fetchedAt": null,
@@ -363,7 +373,7 @@
       "fetchedAt": null,
       "priceKrw": null,
       "priceUsd": null,
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p19",
@@ -386,29 +396,19 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p3",
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
-      "categorySlug": "beauty",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p67",
-      "productSlug": "swarovski-swan-necklace",
-      "categorySlug": "jewelry",
-      "sourceId": null,
-      "fetchedAt": null,
-      "priceKrw": null,
-      "priceUsd": null,
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p61",
       "productSlug": "swarovski-tennis-bracelet",
       "categorySlug": "jewelry",
+      "sourceId": null,
+      "fetchedAt": null,
+      "priceKrw": null,
+      "priceUsd": null,
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p53",
+      "productSlug": "tissot-prx-powermatic-80",
+      "categorySlug": "watch",
       "sourceId": null,
       "fetchedAt": null,
       "priceKrw": null,
@@ -473,7 +473,7 @@
       "fetchedAt": null,
       "priceKrw": null,
       "priceUsd": null,
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p82",
@@ -493,7 +493,7 @@
       "fetchedAt": null,
       "priceKrw": null,
       "priceUsd": null,
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     }
   ],
   "failures": [
@@ -504,34 +504,28 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p57",
-      "productSlug": "hamilton-khaki-field-mechanical",
-      "categorySlug": "watch",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
       "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p53",
-      "productSlug": "tissot-prx-powermatic-80",
+      "productId": "p57",
+      "productSlug": "hamilton-khaki-field-mechanical",
       "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p13",
-      "productSlug": "dior-sauvage-edp-100ml",
-      "categorySlug": "perfume",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "productId": "p79",
+      "productSlug": "now-omega-3",
+      "categorySlug": "health",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p7",
       "productSlug": "gentle-monster-dear-01",
       "categorySlug": "eyewear",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p19",
@@ -540,28 +534,10 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p27",
-      "productSlug": "macallan-12-double-cask-700ml",
-      "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p62",
       "productSlug": "pandora-moments-bracelet",
       "categorySlug": "jewelry",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p3",
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
-      "categorySlug": "beauty",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p67",
-      "productSlug": "swarovski-swan-necklace",
-      "categorySlug": "jewelry",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p61",
@@ -576,6 +552,12 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
+      "productId": "p53",
+      "productSlug": "tissot-prx-powermatic-80",
+      "categorySlug": "watch",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
       "productId": "p2",
       "productSlug": "jo-malone-english-pear-100ml",
       "categorySlug": "perfume",
@@ -584,6 +566,12 @@
     {
       "productId": "p9",
       "productSlug": "diptyque-do-son-75ml",
+      "categorySlug": "perfume",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p13",
+      "productSlug": "dior-sauvage-edp-100ml",
       "categorySlug": "perfume",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -614,6 +602,12 @@
     {
       "productId": "p5",
       "productSlug": "glenfiddich-15-700ml",
+      "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p27",
+      "productSlug": "macallan-12-double-cask-700ml",
       "categorySlug": "liquor",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -657,13 +651,13 @@
       "productId": "p41",
       "productSlug": "longchamp-le-pliage-medium",
       "categorySlug": "fashion",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p45",
       "productSlug": "polo-ralph-lauren-cap",
       "categorySlug": "fashion",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p46",
@@ -747,7 +741,7 @@
       "productId": "p51",
       "productSlug": "seiko-presage-cocktail-time",
       "categorySlug": "watch",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p52",
@@ -807,7 +801,7 @@
       "productId": "p85",
       "productSlug": "lindt-swiss-luxury-selection",
       "categorySlug": "food",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p84",
@@ -819,7 +813,7 @@
       "productId": "p89",
       "productSlug": "loacker-quadratini",
       "categorySlug": "food",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     }
   ]
 }
