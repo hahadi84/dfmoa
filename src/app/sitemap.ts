@@ -101,7 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const guide of Object.values(shoppingPaths)) modified.set(`/${locale}${guide}`, updated);
     const shoppingRevision = "2026-11-06T00:00:00+09:00";
     modified.set(`/${locale}`, latest([shoppingRevision, modified.get(`/${locale}`) ?? ""]));
-    modified.set(`/${locale}${shoppingPaths.list}`, "2026-11-16T00:00:00+09:00");
+    modified.set(`/${locale}${shoppingPaths.list}`, "2026-11-18T00:00:00+09:00");
     for (const route of [shoppingPaths.gifts, shoppingPaths.station, ...(locale === "en" ? ["/guide/incheon-duty-free-pickup"] : [])]) modified.set(`/${locale}${route}`, shoppingRevision);
   }
   return [...new Set([

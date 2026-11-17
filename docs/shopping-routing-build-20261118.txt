@@ -1,0 +1,150 @@
+
+> dfmoa@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.4.6 (webpack)
+✓ Running next.config.ts took 34ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.3s
+  Running TypeScript ...
+  Finished TypeScript in 2.3s ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/250) ...
+  Generating static pages using 11 workers (62/250) 
+  Generating static pages using 11 workers (124/250) 
+  Generating static pages using 11 workers (187/250) 
+✓ Generating static pages using 11 workers (250/250) in 2.3s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /admin
+├ ○ /advertising-policy
+├ ○ /airport
+├   /airport/[slug]
+│ ├ ● /airport/icn-t1
+│ ├ ● /airport/icn-t2
+│ ├ ● /airport/gmp
+│ └ ● [+2 more paths]
+├ ○ /benefit-reports
+├   /benefit-reports/[slug]
+│ ├ ● /benefit-reports/2026-11-17-duty-free-benefit-weekly
+│ ├ ● /benefit-reports/2026-11-09-duty-free-benefit-weekly
+│ ├ ● /benefit-reports/2026-11-02-duty-free-benefit-weekly
+│ └ ● [+9 more paths]
+├ ○ /benefits
+├ ○ /benefits/discounts
+├ ○ /benefits/points
+├ ○ /best-seller-examples
+├ ○ /brand
+├   /brand/[slug]
+│ ├ ● /brand/creed
+│ ├ ● /brand/jo-malone
+│ ├ ● /brand/sulwhasoo
+│ └ ● [+7 more paths]
+├ ○ /category
+├   /category/[slug]
+│ ├ ● /category/perfume
+│ ├ ● /category/beauty
+│ ├ ● /category/liquor
+│ └ ● [+7 more paths]
+├   /compare/[slug]
+│ ├ ● /compare/creed-aventus-50ml-vs-diptyque-do-son-75ml
+│ ├ ● /compare/sulwhasoo-first-care-serum-90ml-vs-sk-ii-facial-treatment-essence-230ml
+│ └ ● /compare/glenfiddich-15-700ml-vs-hibiki-harmony-700ml
+├ ○ /contact
+├ ○ /contact/success
+├ ○ /data-source-policy
+├ ○ /deals
+├   /deals/[slug]
+│ ├ ● /deals/2026-11
+│ ├ ● /deals/2026-10
+│ ├ ● /deals/2026-04
+│ └ ● [+4 more paths]
+├ ○ /editorial-policy
+├ ○ /en
+├ ○ /en/compare
+├   /en/guide/[country]
+│ ├ ● /en/guide/bringing-korea-duty-free-to-australia
+│ └ ● /en/guide/bringing-korea-duty-free-to-canada
+├ ○ /en/guide/busan-station-souvenirs
+├ ○ /en/guide/gimhae-duty-free-pickup
+├ ○ /en/guide/incheon-duty-free-pickup
+├ ○ /en/guide/korea-duty-free-shopping-list
+├ ○ /en/guide/myeongdong-gifts
+├ ○ /en/guide/sulwhasoo-first-care-90ml
+├ ○ /en/privacy
+├   /en/product/[slug]
+│ ├ ● /en/product/creed-aventus-50ml
+│ ├ ● /en/product/sulwhasoo-first-care-serum-90ml
+│ ├ ● /en/product/byredo-blanche-100ml
+│ └ ● [+7 more paths]
+├ ○ /en/travelers
+├ ○ /faq
+├ ○ /favorites
+├ ○ /feed.xml
+├   /guide/[slug]
+│ ├ ● /guide/yen-rate-duty-free-comparison
+│ ├ ● /guide/japan-tax-refund-2026
+│ ├ ● /guide/japan-shopping-price-checklist
+│ └ ● [+4 more paths]
+├ ○ /icon.svg
+├ ○ /ja
+├ ○ /ja/compare
+├ ○ /ja/guide/busan-station-souvenirs
+├ ○ /ja/guide/gimhae-duty-free-pickup
+├ ○ /ja/guide/incheon-duty-free-pickup
+├ ○ /ja/guide/korea-duty-free-shopping-list
+├ ○ /ja/guide/myeongdong-gifts
+├ ○ /ja/guide/sulwhasoo-first-care-90ml
+├ ○ /ja/privacy
+├   /ja/product/[slug]
+│ ├ ● /ja/product/creed-aventus-50ml
+│ ├ ● /ja/product/sulwhasoo-first-care-serum-90ml
+│ ├ ● /ja/product/byredo-blanche-100ml
+│ └ ● [+7 more paths]
+├ ○ /japan
+├ ○ /methodology
+├ ○ /price-compare
+├ ○ /privacy
+├   /product/[slug]
+│ ├ ● /product/creed-aventus-50ml
+│ ├ ● /product/jo-malone-english-pear-100ml
+│ ├ ● /product/sulwhasoo-first-care-serum-90ml
+│ └ ● [+100 more paths]
+├ ○ /robots.txt
+├ ○ /search
+├ ○ /sitemap.xml
+├ ○ /terms
+├ ○ /unsubscribe
+├ ○ /zh
+├ ○ /zh/compare
+├ ○ /zh/guide/busan-station-souvenirs
+├ ○ /zh/guide/gimhae-duty-free-pickup
+├ ○ /zh/guide/incheon-duty-free-pickup
+├ ○ /zh/guide/korea-duty-free-shopping-list
+├ ○ /zh/guide/myeongdong-gifts
+├ ○ /zh/guide/sulwhasoo-first-care-90ml
+├ ○ /zh/privacy
+└   /zh/product/[slug]
+  ├ ● /zh/product/creed-aventus-50ml
+  ├ ● /zh/product/sulwhasoo-first-care-serum-90ml
+  ├ ● /zh/product/byredo-blanche-100ml
+  └ ● [+7 more paths]
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+
+> dfmoa@0.1.0 postbuild
+> node scripts/export-static-pages.mjs && node scripts/check-structured-data.mjs
+
+{
+  "checked": 490,
+  "errors": []
+}

@@ -18,6 +18,11 @@ export function CountryShoppingList({locale}: {locale:ShoppingLocale}) {
  const routes={mask:shoppingPaths.gifts,tea:shoppingPaths.gifts,busan:shoppingPaths.station,craft:shoppingPaths.station,serum:shoppingPaths.serum};
  return <section className="intl-guide-section country-shopping" id="country-shopping">
  <h2>{t.title}</h2><p>{t.intro}</p>
+ <nav className="intl-section-nav" aria-label={{en:"Choose your shopping route",ja:"買い方を選ぶ",zh:"选择购买方式"}[locale]}>
+  <a href="#shopping-stops">{{en:"Find city gift shops",ja:"お土産を買う店舗を探す",zh:"查找市区礼品门店"}[locale]}</a>
+  <ShoppingActionLink locale={locale} source="country_shopping" kind="compare" href={`/${locale}/compare`}>{{en:"Compare your checkout prices",ja:"実際の支払額を比較する",zh:"比较实际结账价"}[locale]}</ShoppingActionLink>
+  <ShoppingActionLink locale={locale} source="country_shopping" kind="pickup" href={`/${locale}/guide/incheon-duty-free-pickup`}>{{en:"Check departure pickup",ja:"出国時の受取方法を確認",zh:"确认离境提货流程"}[locale]}</ShoppingActionLink>
+ </nav>
  <nav className="intl-section-nav">{countrySelections[locale].map((id,i)=><a key={id} href={`#pick-${id}`}>{t.labels[i]}</a>)}</nav>
  <div className="country-shopping-grid">{countrySelections[locale].map((id,i)=>{
   const product=catalog.find(p=>p.id===pickProduct[id]); const offer=product?.offers[0];
@@ -44,7 +49,7 @@ export function CountryShoppingList({locale}: {locale:ShoppingLocale}) {
   </section>{i===3 && <div className="country-shopping-ad"><AdBanner placement="results"/></div>}</Fragment>;
  })}</div>
  <p><a href={{en:"https://www.aphis.usda.gov/traveling-with-ag-products/another-country",ja:"https://www.maff.go.jp/pps/j/trip/keikouhin.html",zh:"https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html"}[locale]}>{ {en:"Check US food and agricultural entry rules before choosing edible gifts",ja:"食品を選ぶ前に日本の検疫条件を確認",zh:"选择食品礼品前查看目的地海关条件"}[locale]}</a></p>
- <h2>{t.map}</h2><p>{t.mapNote}</p>
+ <h2 id="shopping-stops">{t.map}</h2><p>{t.mapNote}</p>
  {[...shops,stationShop].map(shop=><section className="country-shop" id={`shop-${shop.id}`} key={shop.id}><h3 lang="ko">{shop.name}</h3><p lang="ko">{shop.address}</p><ShopActions locale={locale} shop={shop}/><ShoppingMap locale={locale} name={shop.name} address={shop.address} store={shop.id}/></section>)}
  <p>{{en:"Editorial review",ja:"編集確認",zh:"编辑核对"}[locale]} · <time dateTime="2026-11-16">2026-11-16</time></p>
  </section>;
