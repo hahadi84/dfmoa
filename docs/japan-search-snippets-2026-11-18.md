@@ -32,3 +32,6 @@ Google은 제목·설명을 재작성할 수 있다. 문구 반영·CTR상승을
 - 사용자 배포 요청 2026-11-18, 기존6688f246 운영 공개 및 이번 주 이력 Netlify 확인.
 - 배포 정책 테스트17개, 빌드251페이지, 구조화 데이터492개 오류0.
 - release(requested-japan-snippets): 2026-11-18 공개 후 실제 메타태그·사이트맵 검증 예정.
+- 2026-11-18 17:06:13 KST Netlify Published 확인. release f9224b63, deploy 6afd5c42e3e756e28c429e1c.
+- 운영3페이지 HTTP200, 실제 title·description·canonical·OG 설명이 로컬 빌드와 일치함. 운영 sitemap3페이지 lastmod11/18 확인.
+- Google 검색결과 재수집 및 문구 표시 변화는 배포 완료와 별도이며 아직 확인하지 않음.
