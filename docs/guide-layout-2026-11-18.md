@@ -17,3 +17,7 @@
 - 2026-11-18 사용자 재배포 요청. 기존 0c5114ca 운영 공개 및 이번 주 이력 확인.
 - 배포 정책 테스트16개, 빌드251페이지, 구조화 데이터492개 오류0.
 - release(requested-guide-layout): 2026-11-18 공개 후 운영 검증 예정.
+- 2026-11-18 09:48:46 KST 공개 완료. release 6688f246, Netlify deploy 6afcf5c347e9ef3a83d9d9c4 Published 확인.
+- 운영 마운자로·환급·공항 기본 가이드 HTTP200, 새 목차·관련 글·canonical 확인.
+- 운영 PC 본문860px, viewport1265px/scroll1265px. 모바일360px(스크롤바 제외345) 본문332px, scroll345px으로 가로 넘침 없음.
+- 운영 스크린샷 guide-layout-live-2026-11-18.jpg 저장. 임시 viewport 해제.
