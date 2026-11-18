@@ -27,3 +27,8 @@ Google 지침 확인:
 https://developers.google.com/search/docs/appearance/title-link
 https://developers.google.com/search/docs/appearance/snippet
 Google은 제목·설명을 재작성할 수 있다. 문구 반영·CTR상승을 보장하지 않는다. 다음 배포 및 재수집 후 완결된28일을 기준으로 페이지·검색어·기기·게재순위를 함께 비교한다.
+
+## 검색 문구 운영 배포
+- 사용자 배포 요청 2026-11-18, 기존6688f246 운영 공개 및 이번 주 이력 Netlify 확인.
+- 배포 정책 테스트17개, 빌드251페이지, 구조화 데이터492개 오류0.
+- release(requested-japan-snippets): 2026-11-18 공개 후 실제 메타태그·사이트맵 검증 예정.
