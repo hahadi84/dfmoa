@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...monthlyDealReports.map(report => [`/deals/${report.slug}`, report.updatedAt] as [string, string]),
     ['/japan', yenRate.date > '2026-11-18' ? yenRate.date : '2026-11-18'],
     ['/guide/japan-shopping-price-checklist', '2026-11-18'],
+    ['/guide/yen-rate-duty-free-comparison', '2026-11-18'],
     ['/deals', monthlyDealReports[0].updatedAt],
     ['/benefit-reports', benefitReports[0].updatedAt],
   ]);

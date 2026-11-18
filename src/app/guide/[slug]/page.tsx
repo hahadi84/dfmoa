@@ -5,6 +5,7 @@ import { buildBreadcrumbJsonLd, buildGuideArticleJsonLd, serializeJsonLd } from 
 import { buildSeoMetadata } from "@/lib/seo-metadata";
 import { guides, getGuideBySlug } from "@/lib/site-data";
 import { JapanRefundVisual } from "@/components/japan-refund-visual";
+import { JapanPriceExamples } from "@/components/japan-price-examples";
 import styles from "./guide.module.css";
 
 type GuidePageProps = {
@@ -105,6 +106,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
         {guide.updatedAt ? <p className="section-copy">최종 확인: {guide.updatedAt} · <Link href="/japan">엔화 계산기와 일본 쇼핑 가이드</Link></p> : null}
 
         {slug === "japan-tax-refund-2026" ? <JapanRefundVisual /> : null}
+        {slug === "japan-shopping-price-checklist" ? <JapanPriceExamples source="japan_shopping_checklist" /> : null}
+        {slug === "yen-rate-duty-free-comparison" ? <p className="section-copy"><Link href="/guide/japan-shopping-price-checklist#japan-price-examples-title">디올·SK-II·히비키의 규격과 일본 가격 확인 자료 보기</Link></p> : null}
         <div className={styles.layout}>
           <nav className={styles.contents} aria-label="이 글의 목차">
             <h2>이 글에서 확인할 내용</h2>

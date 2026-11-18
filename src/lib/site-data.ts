@@ -52,6 +52,7 @@ export type Product = {
 };
 
 export type Guide = {
+  publishedAt?: string;
   updatedAt?: string;
   sources?: { label: string; url: string }[];
   slug: string;
@@ -1573,7 +1574,8 @@ export const japanGuides: Guide[] = [
     slug: 'japan-shopping-price-checklist',
     title: '일본 쇼핑리스트 | 향수·화장품·위스키 가격 비교 준비',
     excerpt: '일본에서 사기 전, 같은 상품인지부터 확인하세요. 향수 농도·용량, 화장품 세트 구성, 위스키 연수·용량을 체크하고 일본 매장 가격과 한국 면세점 최종가를 비교하는 구매 메모를 준비할 수 있습니다.',
-    updatedAt: '2026-10-23',
+    updatedAt: '2026-11-18',
+    publishedAt: '2026-10-23',
     sections: [
       { heading: '여행 전에 저장할 품목별 체크리스트', body: ['사려는 상품마다 일본 매장의 세금 포함가, 한국 면세점의 최종 결제액, 확인 날짜를 적으세요. 여행 동선에 있는 매장을 기준으로 재고와 이동 시간도 함께 확인하세요.'], bullets: ['향수: 향 이름, EDP·EDT, 용량, 단품·세트', '화장품: 제품명, 본품 용량, 개수, 증정품', '위스키: 제품명, 숙성 연수, 에디션, 병 용량'] },
       { heading: '향수는 농도와 용량을 함께 적으세요', body: ['동일한 향 이름이어도 오드퍼퓸과 오드뚜왈렛의 가격은 다릅니다. 50ml와 100ml, 단품과 세트도 별도 상품입니다. 한국 면세점의 할인 후 가격과 일본 매장의 동일 제품 가격을 비교하고, 휴대 수하물 조건은 항공사와 공항에서 확인하세요.'] },

@@ -1,0 +1,15 @@
+.section { margin: 32px 0; line-height: 1.75; }
+.section h2 { font-size: 1.5rem; line-height: 1.4; }
+.tableWrap { overflow-x: auto; margin: 20px 0; }
+.tableWrap table { border-collapse: collapse; width: 100%; min-width: 580px; text-align: left; }
+.tableWrap caption { text-align: left; margin-bottom: 12px; font-size: .9rem; }
+.tableWrap th, .tableWrap td { padding: 12px; border-bottom: 1px solid #d8dee7; vertical-align: top; }
+.tableWrap thead { background: #f3f6fa; }
+.product { padding: 24px 0; border-bottom: 1px solid #d8dee7; scroll-margin-top: 100px; }
+.product h3 { font-size: 1.2rem; }
+.product dl { display: grid; grid-template-columns: 115px minmax(0, 1fr); gap: 10px 16px; }
+.product dt { font-weight: 600; }
+.product dd { margin: 0; overflow-wrap: anywhere; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.actions a { white-space: normal; }
+@media (max-width: 640px) { .product dl { grid-template-columns: 1fr; gap: 4px; } .product dd { margin-bottom: 12px; } }

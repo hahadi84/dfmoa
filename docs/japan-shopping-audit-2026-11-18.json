@@ -1,0 +1,45 @@
+{
+  "base": "http://127.0.0.1:4318",
+  "viewports": [
+    {
+      "width": 360,
+      "route": "/japan",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "route": "/guide/japan-shopping-price-checklist",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "route": "/japan",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "route": "/guide/japan-shopping-price-checklist",
+      "overflow": false
+    }
+  ],
+  "checks": [
+    "no event on load/typing/invalid input",
+    "correct fee/refund arithmetic",
+    "deduplicated numeric submissions",
+    "measurement destination/debug/locale/context",
+    "three product routes HTTP 200",
+    "product/calculator/official links each emit one distinct event",
+    "mobile table scroll and no page overflow"
+  ],
+  "transport": {
+    "generatedCalculationRequests": 0,
+    "receiver": "not tested: collector interception enabled to exclude local QA traffic",
+    "destinations": [],
+    "scriptDiagnostics": [
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-SRSWS2FHS2",
+        "status": 200
+      }
+    ]
+  }
+}

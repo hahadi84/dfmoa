@@ -1,0 +1,36 @@
+// Editorial observations, not live offers. Do not infer a shop price from MSRP.
+export const japanPriceExamples = [
+  {
+    productId: 'p13', slug: 'dior-sauvage-edp-100ml', name: '디올 소바쥬 오 드 퍼퓸 100ml',
+    specification: 'Eau de Parfum · 100ml 본품 1개 · 상품 코드 3348901368247',
+    recommendation: '이 향을 이미 사용하는 사람의 재구매 선물. EDT·Parfum·Elixir, 300ml 리필과 구분하세요.',
+    price: '22,110엔 (JPY, 세금 포함)', priceType: '공식 온라인 판매가',
+    seller: '다이마루·마쓰자카야 DEPACO', sourceLanguage: '일본어',
+    url: 'https://depaco.daimaru-matsuzakaya.jp/shop/g/g3348901368247/',
+    checked: '2026-11-18 17:46 KST',
+    conditions: '공개 표시가. 회원 포인트·쿠폰·환급을 차감하지 않았습니다. 온라인 표시가를 백화점 지점 가격·재고로 보지 마세요.',
+    route: '일본 온라인몰의 규격·가격 참고 자료입니다. 여행 중 구매할 지점의 취급·가격과 여행자 환급 적용 여부는 별도로 확인하세요.',
+  },
+  {
+    productId: 'p4', slug: 'sk2-pitera-essence-230ml', name: 'SK-II 페이셜 트리트먼트 에센스 230ml',
+    specification: '230ml 본품 1개 · 상품 코드 4979006070064 · 클리어 로션·맨 제품·세트 제외',
+    recommendation: '이 제품을 사용하는 가족이나 본인의 재구매용. 증정품을 본품 용량에 합산하지 마세요.',
+    price: '29,150엔 (JPY, 세금 포함)', priceType: '백화점 온라인 판매가',
+    seller: '오다큐백화점 온라인쇼핑', sourceLanguage: '일본어',
+    url: 'https://shop.odakyu-dept.co.jp/product/detail/s/4979006070064',
+    checked: '2026-11-18 · 공식 페이지 웹 조회 (시각 미기록)',
+    conditions: '공개 표시가. 포인트·쿠폰·환급 미반영. 페이지의 배송료는 660엔이며 비교 금액에는 더하지 않았습니다.',
+    route: '상품 페이지에 매장 수령 가능 표시가 있으나 수령 지점·일정·여행자 이용 조건은 주문 전에 공식 수령 안내를 확인하세요. 온라인가를 지점 판매가나 여행자 면세가로 사용하지 않습니다.',
+  },
+  {
+    productId: 'p6', slug: 'hibiki-harmony-700ml', name: '히비키 JAPANESE HARMONY 700ml',
+    specification: '700ml 1병 · 알코올 43% · JAN 4901777270688 · Master’s Select·Blossom Harmony·750ml 제외',
+    recommendation: '위스키를 즐기는 성인에게 고려할 선물. 원하는 에디션과 병 용량을 먼저 확인하세요.',
+    price: '8,000엔 (JPY, 세금 별도)', priceType: '제조사 희망소매가격 — 실판매가 아님',
+    seller: '산토리 상품 정보 (판매처 아님)', sourceLanguage: '일본어',
+    url: 'https://products.suntory.co.jp/d/4901777270688/',
+    checked: '2026-11-18 · 공식 페이지 웹 조회 (시각 미기록)',
+    conditions: '산토리가 공개한 세전 권장가격입니다. 실제 판매점 가격을 구속하지 않으며 할인·재고·구매 가능성을 의미하지 않습니다.',
+    route: '가격 비교에는 실제 판매점의 세금 포함 결제액이 필요합니다. 일본 판매점 가격과 한국 면세 가격을 모두 확인하기 전에는 어느 쪽이 유리한지 결론을 내리지 않습니다.',
+  },
+] as const;
