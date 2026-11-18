@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/japan",
+    "status": 200,
+    "canonical": "https://www.dfmoa.com/japan"
+  },
+  {
+    "path": "/guide/japan-shopping-price-checklist",
+    "status": 200,
+    "canonical": "https://www.dfmoa.com/guide/japan-shopping-price-checklist"
+  },
+  {
+    "path": "/guide/yen-rate-duty-free-comparison",
+    "status": 200,
+    "canonical": "https://www.dfmoa.com/guide/yen-rate-duty-free-comparison"
+  }
+]
