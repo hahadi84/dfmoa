@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T04:22:37.178Z",
+  "generatedAt": "2026-11-18T03:25:11.436Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -8,7 +8,7 @@
       "count": 7
     },
     {
-      "productSlug": "creed-aventus-50ml",
+      "productSlug": "estee-lauder-anr-100ml",
       "count": 3
     },
     {
@@ -18,6 +18,14 @@
     {
       "productSlug": "penhaligons-halfeti-100ml",
       "count": 3
+    },
+    {
+      "productSlug": "braun-series-9-pro",
+      "count": 2
+    },
+    {
+      "productSlug": "creed-aventus-50ml",
+      "count": 2
     },
     {
       "productSlug": "hamilton-khaki-field-mechanical",
@@ -36,15 +44,7 @@
       "count": 2
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
-      "count": 1
-    },
-    {
       "productSlug": "gentle-monster-dear-01",
-      "count": 1
-    },
-    {
-      "productSlug": "hera-black-cushion-15g",
       "count": 1
     },
     {
@@ -73,10 +73,6 @@
     },
     {
       "productSlug": "swarovski-tennis-bracelet",
-      "count": 1
-    },
-    {
-      "productSlug": "tiffany-return-to-tiffany-bracelet",
       "count": 1
     },
     {

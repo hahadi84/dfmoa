@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-17T04:34:47.926Z",
-  "attemptedCount": 77,
-  "failureCount": 53,
+  "generatedAt": "2026-11-18T03:37:49.529Z",
+  "attemptedCount": 78,
+  "failureCount": 54,
   "failures": [
     {
       "productId": "p21",
@@ -13,6 +13,12 @@
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
       "categorySlug": "liquor",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p95",
+      "productSlug": "braun-series-9-pro",
+      "categorySlug": "electronics",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -34,12 +40,6 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p19",
-      "productSlug": "hera-black-cushion-15g",
-      "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p62",
       "productSlug": "pandora-moments-bracelet",
       "categorySlug": "jewelry",
@@ -48,12 +48,6 @@
     {
       "productId": "p61",
       "productSlug": "swarovski-tennis-bracelet",
-      "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p65",
-      "productSlug": "tiffany-return-to-tiffany-bracelet",
       "categorySlug": "jewelry",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -84,6 +78,12 @@
     {
       "productId": "p4",
       "productSlug": "sk2-pitera-essence-230ml",
+      "categorySlug": "beauty",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p19",
+      "productSlug": "hera-black-cushion-15g",
       "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
@@ -282,6 +282,12 @@
     {
       "productId": "p68",
       "productSlug": "pandora-sparkling-charm",
+      "categorySlug": "jewelry",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p65",
+      "productSlug": "tiffany-return-to-tiffany-bracelet",
       "categorySlug": "jewelry",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
