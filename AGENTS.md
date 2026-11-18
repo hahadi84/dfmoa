@@ -58,3 +58,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-18 사용자 후속 요청 “운영 사이트에서 GA4 이벤트가 수신되지 않는 원인까지 확인하고, 필요한 수정과 검증”에 따라 초기 페이지 조회 경로 보강본 공개 1회(release(requested-analytics-receipt): 2026-11-18)를 수행한다. 같은 주 11월 16일·18일 이력을 확인했으며 이 후속 수정에만 적용한다. 날짜·production·중복 방지와 정기 배포 제한을 유지한다.
 
 - 2026-11-18 사용자 추가 “배포” 요청으로 일본 환급 인포그래픽·마운자로 여행 안내 공개 1회(release(requested-japan-travel): 2026-11-18)를 승인한다. Netlify에서 이번 주 11월 16일 및 18일 두 차례 공개 이력을 확인했으며, 이번 별도 요청에 한해 추가 공개한다. 날짜·production·중복 방지와 정기 정책은 유지한다.
+
+- 2026-11-18 일본 여행 콘텐츠 배포 후 운영 검증에서 발견한 환급 가이드 OG 이미지 404를 보완한다. 같은 배포 요청의 검증 완료를 위한 release(requested-japan-travel-assets-fix): 2026-11-18 수정 공개 1회이며, 날짜·production·중복 방지는 유지한다.

@@ -32,7 +32,7 @@ export function allowWeeklyBuild({ subject, context, currentCommit, previousComm
   const shoppingFactsRequested = korean.toISOString().slice(0,10) === '2026-11-16' && subject === 'release(requested-shopping-facts): 2026-11-16';
   const shoppingRoutingRequested = korean.toISOString().slice(0,10) === '2026-11-18' && subject === 'release(requested-shopping-routing): 2026-11-18';
   const analyticsReceiptRequested = korean.toISOString().slice(0,10) === '2026-11-18' && subject === 'release(requested-analytics-receipt): 2026-11-18';
-  const japanTravelRequested = korean.toISOString().slice(0,10) === '2026-11-18' && subject === 'release(requested-japan-travel): 2026-11-18';
+  const japanTravelRequested = korean.toISOString().slice(0,10) === '2026-11-18' && ['release(requested-japan-travel): 2026-11-18', 'release(requested-japan-travel-assets-fix): 2026-11-18'].includes(subject);
   return context === 'production' && (scheduled || requested || adsRequested || airportRequested || searchAdRequested || unifiedAirportRequested || shoppingRequested || marketShoppingRequested || internationalAdsRequested || naverRequested || snippetsRequested || benefitTopicsRequested || brandDirectoryRequested || securityRequested || collectionRequested || searchAnalyticsRequested || shoppingFactsRequested || shoppingRoutingRequested || analyticsReceiptRequested || japanTravelRequested) &&
     /^[a-f0-9]{40}$/i.test(currentCommit ?? '') &&
     /^[a-f0-9]{40}$/i.test(previousCommit ?? '') && previousCommit !== currentCommit &&
