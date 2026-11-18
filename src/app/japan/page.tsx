@@ -1,22 +1,23 @@
-import type { Metadata } from 'next';
+import { buildSeoMetadata } from '@/lib/seo-metadata';
 import Link from '@/components/app-link';
 import { YenComparisonCalculator } from '@/components/yen-comparison-calculator';
 import { japanGuides } from '@/lib/japan-guides';
 import { buildBreadcrumbJsonLd, serializeJsonLd } from '@/lib/json-ld';
 import rate from '../../../data/content/yen-rate.json';
 
-export const metadata: Metadata = {
-  title: '엔화 환율 계산기 | 일본 쇼핑 원화 환산·면세가 비교',
-  description: '일본 매장 가격을 엔화로 입력하면 원화로 환산할 수 있습니다. 100엔당 참고 환율을 확인하고 카드 수수료와 예상 환급액을 반영해 한국 면세점 결제액과 비교하세요.',
-  alternates: { canonical: '/japan' },
-};
+export const metadata = buildSeoMetadata({
+  title: '엔화 환율 계산기 | 일본 쇼핑 금액을 원화로',
+  description: '일본에서 본 엔화 가격, 원화로 얼마일까요? 엔화 금액을 입력해 원화로 환산하고 카드 수수료·확인된 예상 환급액을 반영해 한국 면세점 결제액과 비교하세요. 적용 환율의 기준일도 확인할 수 있습니다.',
+  path: '/japan',
+  image: { path: '/og/default.png', alt: '면세모아 DFMOA' },
+});
 
 export default function JapanPage() {
   return <section className="page-section is-tight japan-page"><div className="container">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd([buildBreadcrumbJsonLd([{ name: '홈', path: '/' }, { name: '일본 여행 쇼핑', path: '/japan' }])]) }} />
     <div className="breadcrumb"><Link href="/">홈</Link><span>/</span><span>일본 여행 쇼핑</span></div>
-    <h1 className="page-title">엔화 환율 계산기</h1>
-    <p className="page-description">일본 매장의 엔화 가격을 원화로 바꿔 보세요. 카드 수수료와 예상 환급액을 알면 함께 입력해 한국 면세점의 최종 결제액과 비교할 수 있습니다.</p>
+    <h1 className="page-title">엔화 환율 계산기: 일본 쇼핑 금액을 원화로</h1>
+    <p className="page-description">일본에서 본 가격이 원화로 얼마인지 바로 계산해 보세요. 카드 수수료와 확인된 예상 환급액을 입력하면 한국 면세점의 최종 결제액과 비교할 수 있습니다. 환급액이 불확실하면 0엔으로 두세요.</p>
     <div className="chip-row">
       <a className="button" href="#yen-calculator-title">엔화 가격 입력하기</a>
       <Link className="button is-secondary" href="/price-compare">한국 면세가 찾기</Link>

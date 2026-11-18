@@ -61,7 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides.filter(guide => guide.updatedAt).map(guide => [`/guide/${guide.slug}`, guide.updatedAt!] as [string, string]),
     ...benefitReports.map(report => [`/benefit-reports/${report.slug}`, report.updatedAt] as [string, string]),
     ...monthlyDealReports.map(report => [`/deals/${report.slug}`, report.updatedAt] as [string, string]),
-    ['/japan', yenRate.date],
+    ['/japan', yenRate.date > '2026-11-18' ? yenRate.date : '2026-11-18'],
+    ['/guide/japan-shopping-price-checklist', '2026-11-18'],
     ['/deals', monthlyDealReports[0].updatedAt],
     ['/benefit-reports', benefitReports[0].updatedAt],
   ]);
@@ -90,7 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const product of products.filter(product => internationalProductIds.includes(product.id))) modified.set(`/en/product/${product.slug}`, modified.get(`/product/${product.slug}`)!);
   modified.set("/en", latest([INTERNATIONAL_UPDATED, ...products.filter(product => internationalProductIds.includes(product.id)).map(product => modified.get(`/product/${product.slug}`) ?? "")]));
   for (const locale of ["ja", "zh"]) {
-    for (const path of staticPages.filter(path => path.startsWith(`/${locale}`))) modified.set(path, INTERNATIONAL_UPDATED);
+    for (const path of staticPages.filter(path => path === `/${locale}` || path.startsWith(`/${locale}/`))) modified.set(path, INTERNATIONAL_UPDATED);
     for (const product of products.filter(product => internationalProductIds.includes(product.id))) modified.set(`/${locale}/product/${product.slug}`, modified.get(`/en/product/${product.slug}`)!);
     modified.set(`/${locale}`, modified.get("/en")!);
   }
