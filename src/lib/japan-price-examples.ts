@@ -1,6 +1,12 @@
 // Editorial observations, not live offers. Do not infer a shop price from MSRP.
 export const japanPriceExamples = [
   {
+    koreaPrice: '$135 USD · 180,225원 KRW (롯데 정상가)',
+    koreaChecked: '2026-11-18 18:06 KST · 한국어',
+    koreaUrl: 'https://kor.lottedfs.com/kr/product/productDetail?prdNo=20000501205&prdOptNo=20000566678&adltPrdYn=N',
+    koreaSeller: '롯데인터넷면세점',
+    koreaDetails: '100ML 선택 옵션 · EAU DE PARFUM · REF F078524009 · 상품 코드 2067688993. 판매처 표시 환율 $1=1,335원. 회원가는 로그인 후 확인이므로 할인·쿠폰은 반영하지 않았습니다. 조회 시 수령 공항은 인천국제공항이며 본인의 출국편·수령 조건으로 다시 확인하세요.',
+    comparison: '동일 EDP 100ml 공개 표시가 비교 가능. 2026-11-17 참고 환율 100엔=838.82원으로 일본 22,110엔은 약 185,463원이며, 롯데 정상가가 약 5,238원 낮습니다. 일본 환급·카드 수수료·배송비와 면세 회원 할인은 미반영한 단순 환산으로, 최종 결제액의 우열이나 최저가를 의미하지 않습니다.',
     productId: 'p13', slug: 'dior-sauvage-edp-100ml', name: '디올 소바쥬 오 드 퍼퓸 100ml',
     specification: 'Eau de Parfum · 100ml 본품 1개 · 상품 코드 3348901368247',
     recommendation: '이 향을 이미 사용하는 사람의 재구매 선물. EDT·Parfum·Elixir, 300ml 리필과 구분하세요.',
@@ -12,6 +18,12 @@ export const japanPriceExamples = [
     route: '일본 온라인몰의 규격·가격 참고 자료입니다. 여행 중 구매할 지점의 취급·가격과 여행자 환급 적용 여부는 별도로 확인하세요.',
   },
   {
+    koreaPrice: '동일 규격 230ml 관찰가 미확인',
+    koreaChecked: '2026-11-18 · 한국어 검색 결과 확인',
+    koreaUrl: 'https://www.shilladfs.com/estore/kr/ko/search?text=SK-II',
+    koreaSeller: '신라인터넷면세점 검색',
+    koreaDetails: '신라 검색 결과의 일반 페이셜 트리트먼트 에센스는 250ml·330ml, 230ml 결과는 맨 제품이었습니다. 롯데 검색에서도 맨 230ml와 듀오 세트가 확인되어 이 글의 일반 230ml 단품과 비교하지 않았습니다.',
+    comparison: '가격 우열 보류: 일반 230ml 단품의 한국 면세 가격이 필요합니다. 용량·라인·세트가 다른 상품 가격을 대신 넣지 않습니다. 미확인은 품절이나 판매 중단을 뜻하지 않습니다.',
     productId: 'p4', slug: 'sk2-pitera-essence-230ml', name: 'SK-II 페이셜 트리트먼트 에센스 230ml',
     specification: '230ml 본품 1개 · 상품 코드 4979006070064 · 클리어 로션·맨 제품·세트 제외',
     recommendation: '이 제품을 사용하는 가족이나 본인의 재구매용. 증정품을 본품 용량에 합산하지 마세요.',
@@ -23,6 +35,12 @@ export const japanPriceExamples = [
     route: '상품 페이지에 매장 수령 가능 표시가 있으나 수령 지점·일정·여행자 이용 조건은 주문 전에 공식 수령 안내를 확인하세요. 온라인가를 지점 판매가나 여행자 면세가로 사용하지 않습니다.',
   },
   {
+    koreaPrice: '동일 JAPANESE HARMONY 700ml 관찰가 미확인',
+    koreaChecked: '2026-11-18 · 한국어 검색 결과 확인',
+    koreaUrl: 'https://www.ssgdfs.com/kr/search/resultsTotal?query=히비키',
+    koreaSeller: '신세계인터넷면세점 검색',
+    koreaDetails: '신세계 검색에서 확인한 히비키는 마스터즈 셀렉트 스페셜 에디션 700ml로 이 글의 JAPANESE HARMONY와 다릅니다. 롯데·신라 검색에서도 동일 제품의 공개 가격을 확보하지 못했습니다.',
+    comparison: '가격 우열 보류: 한국 면세 동일 에디션 가격과 일본 판매점의 실제 판매가가 모두 필요합니다. 제조사 세전 권장가격 8,000엔으로 절약액을 계산하지 않습니다.',
     productId: 'p6', slug: 'hibiki-harmony-700ml', name: '히비키 JAPANESE HARMONY 700ml',
     specification: '700ml 1병 · 알코올 43% · JAN 4901777270688 · Master’s Select·Blossom Harmony·750ml 제외',
     recommendation: '위스키를 즐기는 성인에게 고려할 선물. 원하는 에디션과 병 용량을 먼저 확인하세요.',

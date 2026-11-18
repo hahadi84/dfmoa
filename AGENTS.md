@@ -66,3 +66,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-18 사용자 “배포” 요청으로 일본 여행 제목·검색 설명·사이트맵 수정본 공개 1회(release(requested-japan-snippets): 2026-11-18)를 승인한다. 현재 운영6688f246 및 이번 주 이력을 Netlify에서 확인했다. 날짜·production·중복 방지를 유지한다.
 
 - 2026-11-18 사용자 “배포하고 운영 사이트에서 GA4 이벤트가 실제 수신되는지까지 확인” 요청으로 엔화 계산기 측정·대표 상품 정보 공개 1회(release(requested-yen-products): 2026-11-18)를 승인한다. Netlify에서 현재 운영 f9224b63 및 이번 주 11월 16일·18일 공개 이력을 확인했다. 날짜·production·중복 제한과 정기 정책을 유지한다.
+
+- 2026-11-18 사용자 추가 “배포” 요청으로 한국 면세 가격 대조 보강본 공개 1회(release(requested-korea-prices): 2026-11-18)를 승인한다. Netlify에서 현재 운영 e4c360fb 및 이번 주 11월 16일·18일 공개 이력을 확인했다. 날짜·production·중복 제한과 정기 정책을 유지한다.

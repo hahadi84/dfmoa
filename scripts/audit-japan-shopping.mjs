@@ -92,6 +92,11 @@ try {
         assert.match(await page.locator('table').innerText(), /22,110엔/);
         assert.match(await page.locator('table').innerText(), /29,150엔/);
         assert.match(await page.locator('table').innerText(), /실판매가 아님/);
+        assert.match(await page.locator('#example-p13').innerText(), /180,225원/);
+        assert.match(await page.locator('#example-p13').innerText(), /5,238원/);
+        assert.match(await page.locator('#example-p4').innerText(), /가격 우열 보류/);
+        assert.match(await page.locator('#example-p6').innerText(), /가격 우열 보류/);
+        assert.equal(await page.locator('a[href*="prdNo=20000501205"]').count(), 1);
         if (width === 360) {
           const table = page.getByRole('region', { name: /대표 상품 가격 비교표/ });
           assert.ok(await table.evaluate(el => el.scrollWidth > el.clientWidth));
