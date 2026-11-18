@@ -1,0 +1,34 @@
+.container { max-width: 860px; }
+.title { margin: 28px 0 16px; color: #192d3a; font-size: clamp(1.75rem, 3.2vw, 2.4rem); font-weight: 600; line-height: 1.4; word-break: keep-all; overflow-wrap: anywhere; }
+.intro { margin: 0 0 18px; color: #475966; font-size: 1.0625rem; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.layout { display: block; margin-top: 28px; min-width: 0; }
+.contents { padding: 22px 24px; border-block: 1px solid #d8e0e5; background: #fff; }
+.contents h2, .related h2 { margin: 0 0 14px; font-size: 1.125rem; font-weight: 600; }
+.contents ol { margin: 0; padding-left: 22px; display: grid; gap: 9px; }
+.contents a { color: #28556d; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.article { min-width: 0; margin-top: 32px; padding: 32px; background: #fff; border: 1px solid #d8e0e5; border-radius: 8px; }
+.stack { display: grid; gap: 32px; }
+.section { min-width: 0; }
+.section + .section { border-top: 1px solid #e4e9ec; padding-top: 28px; }
+.heading { margin: 0 0 16px; font-size: 1.3rem; font-weight: 600; line-height: 1.5; color: #192d3a; word-break: keep-all; overflow-wrap: anywhere; scroll-margin-top: 110px; }
+.section p, .section li { margin: 0; font-size: 1rem; line-height: 1.9; white-space: normal; overflow: visible; text-overflow: clip; word-break: keep-all; overflow-wrap: anywhere; }
+.section p + p { margin-top: 16px; }
+.section ul { margin: 16px 0 0; padding-left: 22px; }
+.section li + li { margin-top: 10px; }
+.section a { text-decoration: underline; text-underline-offset: 3px; }
+.related { margin: 40px 0 0; padding-top: 24px; border-top: 1px solid #d8e0e5; }
+.relatedList { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.relatedLink { display: block; min-width: 0; padding: 12px 0; }
+.relatedLink h3 { margin: 0 0 10px; font-size: 1rem; line-height: 1.6; font-weight: 600; color: #28556d; }
+.relatedLink p { margin: 0 0 10px; color: #536470; font-size: .9375rem; line-height: 1.75; }
+.relatedLink small { color: #536470; }
+.relatedLink h3, .relatedLink p { white-space: normal; overflow: visible; word-break: keep-all; overflow-wrap: anywhere; }
+.contents a:focus-visible, .relatedLink:focus-visible { outline: 2px solid #28556d; outline-offset: 4px; }
+@media (max-width: 600px) {
+  .title { margin-top: 20px; }
+  .article { padding: 22px 18px; }
+  .contents { padding: 18px; }
+  .heading { font-size: 1.2rem; }
+  .relatedList { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .relatedLink + .relatedLink { border-top: 1px solid #e4e9ec; }
+}

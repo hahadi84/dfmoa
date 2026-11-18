@@ -5,6 +5,7 @@ import { buildBreadcrumbJsonLd, buildGuideArticleJsonLd, serializeJsonLd } from 
 import { buildSeoMetadata } from "@/lib/seo-metadata";
 import { guides, getGuideBySlug } from "@/lib/site-data";
 import { JapanRefundVisual } from "@/components/japan-refund-visual";
+import styles from "./guide.module.css";
 
 type GuidePageProps = {
   params: Promise<{
@@ -84,7 +85,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd([breadcrumbJsonLd, articleJsonLd]) }}
       />
-      <div className="container">
+      <div className={`container ${styles.container}`}>
         <div className="breadcrumb">
           <Link href="/">홈</Link>
           <span>/</span>
@@ -93,11 +94,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
           <span>{guide.title}</span>
         </div>
 
-        <span className="eyebrow" style={{ marginTop: 24 }}>
-          Guide
-        </span>
-        <h1 className="page-title">{guide.title}</h1>
-        <p className="page-description">{guide.excerpt}</p>
+        <h1 className={styles.title}>{guide.title}</h1>
+        <p className={styles.intro}>{guide.excerpt}</p>
         {["yen-rate-duty-free-comparison", "japan-shopping-price-checklist"].includes(slug) ? (
           <nav className="chip-row" aria-label="쇼핑 가격 비교 도구">
             <Link className="ghost-button" href="/japan#yen-calculator-title">엔화 금액을 원화로 계산</Link>
@@ -107,12 +105,16 @@ export default async function GuidePage({ params }: GuidePageProps) {
         {guide.updatedAt ? <p className="section-copy">최종 확인: {guide.updatedAt} · <Link href="/japan">엔화 계산기와 일본 쇼핑 가이드</Link></p> : null}
 
         {slug === "japan-tax-refund-2026" ? <JapanRefundVisual /> : null}
-        <div className="split-grid" style={{ marginTop: 28 }}>
-          <article className="surface-card">
-            <div className="guide-stack">
-              {guide.sections.map((section) => (
-                <section key={section.heading} className="guide-section">
-                  <h2 className="card-title" style={{ fontSize: "1.25rem" }}>
+        <div className={styles.layout}>
+          <nav className={styles.contents} aria-label="이 글의 목차">
+            <h2>이 글에서 확인할 내용</h2>
+            <ol>{guide.sections.map((section, index) => <li key={section.heading}><a href={`#guide-section-${index + 1}`}>{section.heading}</a></li>)}</ol>
+          </nav>
+          <article className={styles.article}>
+            <div className={styles.stack}>
+              {guide.sections.map((section, index) => (
+                <section key={section.heading} className={styles.section}>
+                  <h2 id={`guide-section-${index + 1}`} className={styles.heading}>
                     {section.heading}
                   </h2>
                   {section.body.map((paragraph) => (
@@ -129,10 +131,10 @@ export default async function GuidePage({ params }: GuidePageProps) {
                   ) : null}
                 </section>
               ))}
-              {guide.sources?.length ? <section className="guide-section"><h2 className="card-title">공식 출처</h2><ul>{guide.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label}</a></li>)}</ul></section> : null}
-              {(guide.updatedAt ? [] : reviewNotes).map((section) => (
-                <section key={section.heading} className="guide-section">
-                  <h2 className="card-title" style={{ fontSize: "1.25rem" }}>
+              {guide.sources?.length ? <section className={styles.section}><h2 className={styles.heading}>공식 출처</h2><ul>{guide.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.label}</a></li>)}</ul></section> : null}
+              {(guide.updatedAt ? [] : reviewNotes).map((section, index) => (
+                <section key={section.heading} className={styles.section}>
+                  <h2 id={`review-section-${index + 1}`} className={styles.heading}>
                     {section.heading}
                   </h2>
                   {section.body.map((paragraph) => (
@@ -152,18 +154,17 @@ export default async function GuidePage({ params }: GuidePageProps) {
             </div>
           </article>
 
-          <aside className="feature-panel">
-            <p className="panel-title">다른 가이드</p>
-            <div className="subgrid" style={{ marginTop: 18 }}>
+          <aside className={styles.related} aria-labelledby="related-guides-title">
+            <h2 id="related-guides-title">함께 읽을 가이드</h2>
+            <div className={styles.relatedList}>
               {guides
                 .filter((item) => item.slug !== guide.slug)
+                .slice(0, 3)
                 .map((item) => (
-                  <Link key={item.slug} href={`/guide/${item.slug}`} className="list-item">
-                    <span className="list-number">G</span>
-                    <p className="list-copy">
-                      <strong>{item.title}</strong>
-                      {item.excerpt}
-                    </p>
+                  <Link key={item.slug} href={`/guide/${item.slug}`} className={styles.relatedLink}>
+                    <h3>{item.title}</h3>
+                    <p>{item.excerpt}</p>
+                    {item.updatedAt ? <small>확인일 {item.updatedAt}</small> : null}
                   </Link>
                 ))}
             </div>
