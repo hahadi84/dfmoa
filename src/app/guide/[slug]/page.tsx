@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { buildBreadcrumbJsonLd, buildGuideArticleJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildSeoMetadata } from "@/lib/seo-metadata";
 import { guides, getGuideBySlug } from "@/lib/site-data";
+import { JapanRefundVisual } from "@/components/japan-refund-visual";
 
 type GuidePageProps = {
   params: Promise<{
@@ -105,6 +106,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
         ) : null}
         {guide.updatedAt ? <p className="section-copy">최종 확인: {guide.updatedAt} · <Link href="/japan">엔화 계산기와 일본 쇼핑 가이드</Link></p> : null}
 
+        {slug === "japan-tax-refund-2026" ? <JapanRefundVisual /> : null}
         <div className="split-grid" style={{ marginTop: 28 }}>
           <article className="surface-card">
             <div className="guide-stack">

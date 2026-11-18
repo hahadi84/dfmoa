@@ -1,0 +1,41 @@
+.root { margin: 32px 0; color: #213244; line-height: 1.75; }
+.header { border-top: 3px solid #234d68; padding-top: 20px; }
+.header h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 600; line-height: 1.4; margin: 8px 0 12px; }
+.header p { margin: 6px 0; }
+.figure { margin: 24px 0 0; padding: 24px; border: 1px solid #d2dde4; border-radius: 8px; background: #f8fafb; }
+.steps { list-style: none; margin: 0; padding: 0; }
+.steps > li { position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; padding-bottom: 28px; }
+.steps > li:not(:last-child)::before { content: ''; position: absolute; top: 40px; bottom: 0; left: 19px; width: 2px; background: #c0cfd9; }
+.steps > li:last-child { padding-bottom: 0; }
+.number { display: grid; place-items: center; height: 40px; width: 40px; border-radius: 50%; color: #fff; background: #234d68; font-weight: 600; }
+.steps h3 { margin: 2px 0 6px; font-weight: 600; font-size: 1.2rem; }
+.steps p { margin: 0; }
+.place { color: #526271; font-size: .9rem; }
+.branches { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.branches > div { padding: 14px; border-left: 4px solid; }
+.green { background: #eaf3ee; border-color: #32684b; }
+.red { background: #faf0e9; border-color: #9d4e34; }
+.branches strong { font-weight: 600; }
+.figure figcaption { border-top: 1px solid #d2dde4; margin-top: 20px; padding-top: 14px; font-size: .88rem; color: #526271; }
+.root a { color: #214f72; text-decoration: underline; text-underline-offset: 3px; }
+.tools { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 16px 0 28px; }
+.tools a { padding: 10px 0; }
+.tableWrap { overflow-x: auto; margin: 28px 0; }
+.tableWrap table { width: 100%; border-collapse: collapse; min-width: 490px; }
+.tableWrap caption { text-align: left; font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; }
+.tableWrap th, .tableWrap td { padding: 14px; border-bottom: 1px solid #d2dde4; vertical-align: top; text-align: left; }
+.tableWrap th { font-weight: 600; background: #f1f5f7; }
+.checklist { min-width: 0; margin: 28px 0; padding: 16px 20px; border: 1px solid #d2dde4; border-radius: 8px; }
+.checklist legend { padding: 0 8px; font-weight: 600; font-size: 1.2rem; }
+.checklist > p { margin: 0 0 12px; color: #526271; font-size: .9rem; }
+.checklist label { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; cursor: pointer; }
+.checklist input { flex: 0 0 20px; width: 20px; height: 20px; margin-top: 4px; accent-color: #234d68; }
+.root :focus-visible { outline: 2px solid #234d68; outline-offset: 4px; }
+@media (max-width: 600px) {
+  .figure { padding: 16px 12px; }
+  .steps > li { grid-template-columns: 32px minmax(0, 1fr); gap: 10px; }
+  .number { width: 32px; height: 32px; }
+  .steps > li:not(:last-child)::before { left: 15px; top: 32px; }
+  .branches { grid-template-columns: 1fr; }
+  .checklist { padding: 12px; }
+}
