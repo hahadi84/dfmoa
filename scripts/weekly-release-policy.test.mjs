@@ -205,3 +205,21 @@ test('Japan travel asset correction release requires the approved November 18 KS
     { currentCommit: undefined },
   ]) assert.equal(allowWeeklyBuild({ ...input, ...override }), false);
 });
+
+test('Guide layout release requires the approved November 18 KST date and cannot repeat', () => {
+  const input = { subject: 'release(requested-guide-layout): 2026-11-18', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'release(requested-shopping-facts): 2026-11-16', now: new Date('2026-11-17T15:00:00Z') };
+  assert.equal(allowWeeklyBuild(input), true);
+  assert.equal(allowWeeklyBuild({ ...input, now: new Date('2026-11-18T14:59:59Z') }), true);
+  for (const override of [
+    { now: new Date('2026-11-17T14:59:59Z') },
+    { now: new Date('2026-11-18T15:00:00Z') },
+    { subject: 'fix: ordinary change' },
+    { context: 'deploy-preview' },
+    { context: 'branch-deploy' },
+    { earlierReleaseThisWeek: true },
+    { previousSubject: input.subject },
+    { previousCommit: input.currentCommit },
+    { previousCommit: undefined },
+    { currentCommit: undefined },
+  ]) assert.equal(allowWeeklyBuild({ ...input, ...override }), false);
+});

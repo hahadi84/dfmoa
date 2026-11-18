@@ -60,3 +60,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-18 사용자 추가 “배포” 요청으로 일본 환급 인포그래픽·마운자로 여행 안내 공개 1회(release(requested-japan-travel): 2026-11-18)를 승인한다. Netlify에서 이번 주 11월 16일 및 18일 두 차례 공개 이력을 확인했으며, 이번 별도 요청에 한해 추가 공개한다. 날짜·production·중복 방지와 정기 정책은 유지한다.
 
 - 2026-11-18 일본 여행 콘텐츠 배포 후 운영 검증에서 발견한 환급 가이드 OG 이미지 404를 보완한다. 같은 배포 요청의 검증 완료를 위한 release(requested-japan-travel-assets-fix): 2026-11-18 수정 공개 1회이며, 날짜·production·중복 방지는 유지한다.
+
+- 2026-11-18 사용자 “재배포” 요청에 따라 검증된 가이드 본문·목차·관련 글 레이아웃 수정본 공개 1회(release(requested-guide-layout): 2026-11-18)를 승인한다. 현재 운영 0c5114ca와 이번 주 기존 공개 이력을 Netlify에서 확인했다. 날짜·production·중복 방지와 정기 정책을 유지한다.
