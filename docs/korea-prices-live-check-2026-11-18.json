@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-18T09:24:59.865589+00:00",
+  "release": "8eaf6569",
+  "deployId": "6afd6e8740bdfac0d389af3a",
+  "results": [
+    {
+      "url": "https://www.dfmoa.com/japan",
+      "status": 200,
+      "canonical": "https://www.dfmoa.com/japan",
+      "markers": {
+        "소바쥬는 롯데면세점 100ml 공개 정상가": true
+      }
+    },
+    {
+      "url": "https://www.dfmoa.com/guide/japan-shopping-price-checklist",
+      "status": 200,
+      "canonical": "https://www.dfmoa.com/guide/japan-shopping-price-checklist",
+      "markers": {
+        "180,225원": true,
+        "5,238원": true,
+        "가격 우열 보류": true,
+        "prdNo=20000501205": true
+      }
+    }
+  ]
+}

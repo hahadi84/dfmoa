@@ -23,7 +23,7 @@
 - scripts/audit-japan-shopping.mjs: 정상가·환산 차이·보류 표시·롯데 링크 존재 회귀 검사 추가.
 
 ## 배포
-이번 수정은 로컬 검증본이며 운영 재배포하지 않음. 기존 정기 배포 정책 유지.
+후속 사용자 배포 요청에 따라 2026-11-18 18:23 KST 운영 빌드 시작, Netlify published 확인(45초). release 8eaf6569, deploy 6afd6e8740bdfac0d389af3a. 운영 /japan 및 비교 가이드 HTTP 200·자기 참조 canonical·가격/보류 표시 확인. 배포 정책 테스트 19개 통과. 기존 정기 배포 정책 유지.
 
 ## 검증 결과
 - npm run build 통과: 251 페이지, 구조화 데이터 492개 오류 0.
