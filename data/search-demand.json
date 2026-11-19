@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T03:25:11.436Z",
+  "generatedAt": "2026-11-19T02:58:55.198Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -9,6 +9,10 @@
     },
     {
       "productSlug": "estee-lauder-anr-100ml",
+      "count": 6
+    },
+    {
+      "productSlug": "creed-aventus-50ml",
       "count": 3
     },
     {
@@ -24,11 +28,7 @@
       "count": 2
     },
     {
-      "productSlug": "creed-aventus-50ml",
-      "count": 2
-    },
-    {
-      "productSlug": "hamilton-khaki-field-mechanical",
+      "productSlug": "dyson-supersonic",
       "count": 2
     },
     {
@@ -44,11 +44,23 @@
       "count": 2
     },
     {
-      "productSlug": "gentle-monster-dear-01",
+      "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "count": 1
+    },
+    {
+      "productSlug": "dior-sauvage-edp-100ml",
+      "count": 1
+    },
+    {
+      "productSlug": "hamilton-khaki-field-mechanical",
       "count": 1
     },
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 1
+    },
+    {
+      "productSlug": "kgc-everytime-royal",
       "count": 1
     },
     {
@@ -60,23 +72,11 @@
       "count": 1
     },
     {
-      "productSlug": "solgar-vitamin-d3",
-      "count": 1
-    },
-    {
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 1
     },
     {
-      "productSlug": "swarovski-swan-necklace",
-      "count": 1
-    },
-    {
       "productSlug": "swarovski-tennis-bracelet",
-      "count": 1
-    },
-    {
-      "productSlug": "tissot-prx-powermatic-80",
       "count": 1
     },
     {

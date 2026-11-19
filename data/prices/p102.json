@@ -3,43 +3,29 @@
   "productSlug": "sony-wh-ch720n",
   "categorySlug": "electronics",
   "query": "소니 WH-CH720N",
-  "fetchedAt": "2026-11-18T12:31:21+09:00",
-  "updatedAtLabel": "2026-11-18 12:31 기준",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "ok",
-      "source_status": "ok",
+      "status": "error",
+      "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-11-18T12:31:21+09:00",
-      "matched_via": "original",
+      "fetchedAt": "2026-11-19T12:03:04+09:00",
+      "matched_via": "alias_nospace",
       "attempted_queries": [
         "소니 WH-CH720N",
         "소니whch720n"
       ],
-      "items": [
-        {
-          "id": "shilla-284429000023",
-          "title": "WH-CH720N/W",
-          "brand": "소니",
-          "priceKrw": 145221,
-          "priceUsd": 108.78,
-          "regularUsdPrice": 147,
-          "discountRate": 26,
-          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=WH-CH720N%2FW",
-          "imageUrl": "https://image1.shilladfs.com/files/product2/2025/02/03/284429000023_20250203_18551665_12_284429000023_1.JPG",
-          "matchScore": 51,
-          "fetchedAt": "2026-11-18T12:31:21+09:00"
-        }
-      ],
-      "error": null
+      "items": [],
+      "error": "HTTP 403"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-11-18T03:31:23.091Z",
+      "fetchedAt": "2026-11-19T03:03:04.837Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",
@@ -54,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%86%8C%EB%8B%88%20WH-CH720N",
-      "fetchedAt": "2026-11-18T03:31:23.091Z",
+      "fetchedAt": "2026-11-19T03:03:04.837Z",
       "matched_via": "original",
       "attempted_queries": [
         "소니 WH-CH720N",

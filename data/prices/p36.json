@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B5%AC%EC%B0%8C%20GG0061S%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-11-18T12:34:34+09:00",
+      "fetchedAt": "2026-11-19T12:06:03+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
@@ -21,14 +21,14 @@
         "guccigg0061s"
       ],
       "items": [],
-      "error": "product_match_failed"
+      "error": "HTTP 403"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B5%AC%EC%B0%8C%20GG0061S%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-11-18T03:34:35.593Z",
+      "fetchedAt": "2026-11-19T03:06:03.643Z",
       "matched_via": "original",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
@@ -44,7 +44,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B5%AC%EC%B0%8C%20GG0061S%20%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4",
-      "fetchedAt": "2026-11-18T03:34:35.593Z",
+      "fetchedAt": "2026-11-19T03:06:03.643Z",
       "matched_via": "original",
       "attempted_queries": [
         "구찌 GG0061S 선글라스",
