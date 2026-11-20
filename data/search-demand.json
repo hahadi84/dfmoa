@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T02:58:55.198Z",
+  "generatedAt": "2026-11-20T02:53:33.294Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -12,15 +12,11 @@
       "count": 6
     },
     {
-      "productSlug": "creed-aventus-50ml",
-      "count": 3
-    },
-    {
       "productSlug": "hibiki-harmony-700ml",
       "count": 3
     },
     {
-      "productSlug": "penhaligons-halfeti-100ml",
+      "productSlug": "royal-salute-21-700ml",
       "count": 3
     },
     {
@@ -48,6 +44,10 @@
       "count": 1
     },
     {
+      "productSlug": "creed-aventus-50ml",
+      "count": 1
+    },
+    {
       "productSlug": "dior-sauvage-edp-100ml",
       "count": 1
     },
@@ -64,11 +64,7 @@
       "count": 1
     },
     {
-      "productSlug": "pandora-moments-bracelet",
-      "count": 1
-    },
-    {
-      "productSlug": "royal-salute-21-700ml",
+      "productSlug": "penhaligons-halfeti-100ml",
       "count": 1
     },
     {
@@ -77,10 +73,6 @@
     },
     {
       "productSlug": "swarovski-tennis-bracelet",
-      "count": 1
-    },
-    {
-      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 1
     }
   ]
