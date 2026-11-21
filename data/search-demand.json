@@ -1,12 +1,8 @@
 {
-  "generatedAt": "2026-11-20T02:53:33.294Z",
+  "generatedAt": "2026-11-21T03:01:09.845Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
-    {
-      "productSlug": "la-mer-moisturizing-cream-60ml",
-      "count": 7
-    },
     {
       "productSlug": "estee-lauder-anr-100ml",
       "count": 6
@@ -28,10 +24,6 @@
       "count": 2
     },
     {
-      "productSlug": "le-labo-santal-33-50ml",
-      "count": 2
-    },
-    {
       "productSlug": "now-omega-3",
       "count": 2
     },
@@ -40,7 +32,15 @@
       "count": 2
     },
     {
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "count": 2
+    },
+    {
       "productSlug": "aesop-resurrection-hand-balm-75ml",
+      "count": 1
+    },
+    {
+      "productSlug": "apple-airpods-pro-2",
       "count": 1
     },
     {
@@ -49,6 +49,10 @@
     },
     {
       "productSlug": "dior-sauvage-edp-100ml",
+      "count": 1
+    },
+    {
+      "productSlug": "gentle-monster-dear-01",
       "count": 1
     },
     {
@@ -64,15 +68,15 @@
       "count": 1
     },
     {
+      "productSlug": "longines-hydroconquest",
+      "count": 1
+    },
+    {
+      "productSlug": "pandora-sparkling-charm",
+      "count": 1
+    },
+    {
       "productSlug": "penhaligons-halfeti-100ml",
-      "count": 1
-    },
-    {
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
-      "count": 1
-    },
-    {
-      "productSlug": "swarovski-tennis-bracelet",
       "count": 1
     }
   ]
