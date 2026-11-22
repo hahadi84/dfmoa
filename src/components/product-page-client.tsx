@@ -1,5 +1,6 @@
 "use client";
 
+import { getPriceDisplay } from "@/lib/price-display";
 import { startTransition, useEffect, useState } from "react";
 import { BenefitApplicationPanel } from "@/components/benefit-application-panel";
 import { CategoryTravelNotice } from "@/components/category-travel-notice";
@@ -164,7 +165,7 @@ export function ProductPageClient({
 
   const offers = result?.offers ?? [];
   const statuses = result?.statuses ?? [];
-  const lowestOffer = offers[0];
+  const { storeCount, representative: lowestOffer } = getPriceDisplay(offers);
   const domesticResult = domesticState.query === product.query ? domesticState.result : null;
   const domesticError = domesticState.query === product.query ? domesticState.error : null;
   const isDomesticLoading = domesticState.query !== product.query;
@@ -248,7 +249,7 @@ export function ProductPageClient({
 
           {!isLoading && !error ? (
             <>
-              {result?.summary && offers.length ? <PriceRangeSummary summary={result.summary} /> : null}
+              {result?.summary && offers.length ? <PriceRangeSummary summary={result.summary} offers={offers} /> : null}
               <SourcePriceStatusPanel sourcePrices={sourcePrices} query={product.query} product={product} />
               {offers.length ? <BenefitApplicationPanel offers={offers} productSlug={product.slug} /> : null}
               {offers.length ? <OfferTable offers={offers} productSlug={product.slug} showAd /> : null}
@@ -327,7 +328,7 @@ export function ProductPageClient({
             </span>
             <FavoriteButton product={product} />
           </div>
-          <p className="meta-kicker">{lowestOffer ? "최저 확인가" : "공개가 상태"}</p>
+          <p className="meta-kicker">{storeCount > 1 ? "최저 확인가" : lowestOffer ? "최근 확인가" : "공개가 상태"}</p>
           <p className={`meta-value${lowestOffer ? "" : " is-state"}`}>
             {lowestOffer ? formatKrw(lowestOffer.krwPrice) : aggregateCopy.title}
           </p>

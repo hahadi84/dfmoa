@@ -1,5 +1,6 @@
 "use client";
 
+import { getPriceDisplay } from "@/lib/price-display";
 import Link from "@/components/app-link";
 import { trackEvent } from "@/lib/analytics";
 import { dutyFreeBenefitStores } from "@/lib/duty-free-benefits";
@@ -105,7 +106,7 @@ export function BenefitApplicationPanel({ offers, productSlug = "search" }: Bene
   }
 
   const visibleOffers = offers.slice(0, 4);
-  const bestOffer = offers[0];
+  const { storeCount, representative: bestOffer } = getPriceDisplay(offers);
   const bestStore = getStoreById(bestOffer.storeId);
   const maxPublicDiscountKrw = Math.max(...offers.map((offer) => getPublicDiscountKrw(offer)));
   const storesWithBenefitSignals = offers.filter((offer) => getBenefitKinds(offer).length > 0).length;
@@ -121,7 +122,7 @@ export function BenefitApplicationPanel({ offers, productSlug = "search" }: Bene
           </p>
         </div>
         <div className="benefit-application-summary">
-          <span>{bestStore ? formatStoreName(bestStore.name) : bestOffer.storeId} 최저</span>
+          <span>{bestStore ? formatStoreName(bestStore.name) : bestOffer.storeId} {storeCount > 1 ? "최저" : "최근 확인가"}</span>
           <strong>{formatKrw(bestOffer.krwPrice)}</strong>
         </div>
       </div>

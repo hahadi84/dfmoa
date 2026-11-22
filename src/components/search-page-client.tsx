@@ -380,7 +380,7 @@ export function SearchPageClient() {
                 </span>
               </div>
 
-              {result?.summary ? <PriceRangeSummary summary={result.summary} /> : null}
+              {result?.summary ? <PriceRangeSummary summary={result.summary} offers={result.offers} /> : null}
               <SourcePriceStatusPanel sourcePrices={sourcePrices} query={query} />
               <BenefitApplicationPanel offers={liveOffers} />
               <OfferTable offers={liveOffers} showAd />
