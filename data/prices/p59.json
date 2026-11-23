@@ -1,0 +1,54 @@
+{
+  "productId": "p59",
+  "productSlug": "swatch-moonswatch-mission-moon",
+  "categorySlug": "watch",
+  "query": "스와치 문스와치 미션 투 더 문",
+  "fetchedAt": null,
+  "updatedAtLabel": null,
+  "sources": {
+    "shilla": {
+      "store": "shilla",
+      "status": "error",
+      "source_status": "error",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EC%8A%A4%EC%99%80%EC%B9%98%20%EB%AC%B8%EC%8A%A4%EC%99%80%EC%B9%98%20%EB%AF%B8%EC%85%98%20%ED%88%AC%20%EB%8D%94%20%EB%AC%B8",
+      "fetchedAt": "2026-11-23T11:25:44+09:00",
+      "matched_via": "alias_nospace",
+      "attempted_queries": [
+        "스와치 문스와치 미션 투 더 문",
+        "스와치문스와치미션투더문"
+      ],
+      "items": [],
+      "error": "product_match_failed"
+    },
+    "shinsegae": {
+      "store": "shinsegae",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EC%8A%A4%EC%99%80%EC%B9%98%20%EB%AC%B8%EC%8A%A4%EC%99%80%EC%B9%98%20%EB%AF%B8%EC%85%98%20%ED%88%AC%20%EB%8D%94%20%EB%AC%B8",
+      "fetchedAt": "2026-11-23T02:25:46.072Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "스와치 문스와치 미션 투 더 문",
+        "Swatch MoonSwatch Mission to the Moon",
+        "Swatch MoonSwatch Mission to the Moon Moon"
+      ],
+      "items": [],
+      "error": "cookie_or_login_required"
+    },
+    "lotte": {
+      "store": "lotte",
+      "status": "disabled_by_policy",
+      "source_status": "disabled_by_policy",
+      "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EC%8A%A4%EC%99%80%EC%B9%98%20%EB%AC%B8%EC%8A%A4%EC%99%80%EC%B9%98%20%EB%AF%B8%EC%85%98%20%ED%88%AC%20%EB%8D%94%20%EB%AC%B8",
+      "fetchedAt": "2026-11-23T02:25:46.072Z",
+      "matched_via": "original",
+      "attempted_queries": [
+        "스와치 문스와치 미션 투 더 문",
+        "Swatch MoonSwatch Mission to the Moon",
+        "Swatch MoonSwatch Mission to the Moon Moon"
+      ],
+      "items": [],
+      "error": "disabled_by_policy"
+    }
+  }
+}

@@ -1,23 +1,27 @@
 {
-  "generatedAt": "2026-11-22T01:57:44.548Z",
+  "generatedAt": "2026-11-23T02:22:58.963Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "estee-lauder-anr-100ml",
-      "count": 7
-    },
-    {
-      "productSlug": "hibiki-harmony-700ml",
-      "count": 4
+      "count": 8
     },
     {
       "productSlug": "royal-salute-21-700ml",
-      "count": 3
+      "count": 4
     },
     {
       "productSlug": "braun-series-9-pro",
-      "count": 2
+      "count": 3
+    },
+    {
+      "productSlug": "hibiki-harmony-700ml",
+      "count": 3
+    },
+    {
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 3
     },
     {
       "productSlug": "dyson-supersonic",
@@ -28,15 +32,7 @@
       "count": 2
     },
     {
-      "productSlug": "now-omega-3",
-      "count": 2
-    },
-    {
       "productSlug": "polo-ralph-lauren-cap",
-      "count": 2
-    },
-    {
-      "productSlug": "sony-wh-1000xm5",
       "count": 2
     },
     {
@@ -64,10 +60,6 @@
       "count": 1
     },
     {
-      "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 1
-    },
-    {
       "productSlug": "kgc-everytime-royal",
       "count": 1
     },
@@ -80,7 +72,11 @@
       "count": 1
     },
     {
-      "productSlug": "penhaligons-halfeti-100ml",
+      "productSlug": "sk2-pitera-essence-230ml",
+      "count": 1
+    },
+    {
+      "productSlug": "swatch-moonswatch-mission-moon",
       "count": 1
     }
   ]
