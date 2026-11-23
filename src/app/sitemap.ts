@@ -61,8 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides.filter(guide => guide.updatedAt).map(guide => [`/guide/${guide.slug}`, guide.updatedAt!] as [string, string]),
     ...benefitReports.map(report => [`/benefit-reports/${report.slug}`, report.updatedAt] as [string, string]),
     ...monthlyDealReports.map(report => [`/deals/${report.slug}`, report.updatedAt] as [string, string]),
-    ['/japan', yenRate.date > '2026-11-18' ? yenRate.date : '2026-11-18'],
-    ['/guide/japan-shopping-price-checklist', '2026-11-18'],
+    ['/japan', yenRate.date > '2026-11-23' ? yenRate.date : '2026-11-23'],
+    ['/guide/japan-shopping-price-checklist', '2026-11-23'],
     ['/guide/yen-rate-duty-free-comparison', '2026-11-18'],
     ['/deals', monthlyDealReports[0].updatedAt],
     ['/benefit-reports', benefitReports[0].updatedAt],
@@ -103,7 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const guide of Object.values(shoppingPaths)) modified.set(`/${locale}${guide}`, updated);
     const shoppingRevision = "2026-11-06T00:00:00+09:00";
     modified.set(`/${locale}`, latest([shoppingRevision, modified.get(`/${locale}`) ?? ""]));
-    modified.set(`/${locale}${shoppingPaths.list}`, "2026-11-18T00:00:00+09:00");
+    modified.set(`/${locale}${shoppingPaths.list}`, "2026-11-23T09:21:00+09:00");
     for (const route of [shoppingPaths.gifts, shoppingPaths.station, ...(locale === "en" ? ["/guide/incheon-duty-free-pickup"] : [])]) modified.set(`/${locale}${route}`, shoppingRevision);
   }
   return [...new Set([

@@ -102,7 +102,7 @@ try {
           assert.ok(await table.evaluate(el => el.scrollWidth > el.clientWidth));
         }
       }
-      await page.screenshot({ path: `docs/japan-${route.includes('checklist') ? 'products' : 'calculator'}-${width}-2026-11-18.png`, fullPage: true });
+      await page.screenshot({ path: `docs/japan-${route.includes('checklist') ? 'products' : 'calculator'}-${width}-2026-11-23.png`, fullPage: true });
     }
   }
   await page.evaluate(() => { window.auditEvents = []; window.gtag = (...args) => window.auditEvents.push(args); });
@@ -116,7 +116,20 @@ try {
     const response = await context.request.get(`${base}/product/${slug}`);
     assert.equal(response.status(), 200);
   }
+  await page.goto(`${base}/japan`);
+  await page.getByText('과거 관찰가로 계산 방법 보기', {exact:true}).click();
+  await page.getByRole('button', {name:'11월 18일 관찰가를 예시로 입력'}).click();
+  assert.equal(await page.locator('#yen-field-0').inputValue(), '22110');
+  assert.equal(await page.locator('#yen-field-1').inputValue(), '838.82');
+  assert.equal(await page.locator('#yen-field-4').inputValue(), '180225');
+  assert.doesNotMatch(await page.locator('.yen-result').innerText(), /낮습니다/);
+  await page.getByRole('button', {name:'입력한 가격 비교하기'}).click();
+  assert.match(await page.locator('.yen-result').innerText(), /과거 관찰가/);
+  assert.match(await page.locator('.yen-result').innerText(), /5,238원/);
+  await page.locator('#yen-field-0').fill('22000');
+  assert.doesNotMatch(await page.locator('.yen-result').innerText(), /5,238원/);
+  report.checks.push('historical preset explicit, no auto calculation, result cleared on edit');
   report.checks.push('three product routes HTTP 200', 'product/calculator/official links each emit one distinct event', 'mobile table scroll and no page overflow');
-  await writeFile('docs/japan-shopping-audit-2026-11-18.json', JSON.stringify(report, null, 2) + '\n');
+  await writeFile('docs/japan-shopping-audit-2026-11-23.json', JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify(report, null, 2));
 } finally { await browser.close(); }

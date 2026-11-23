@@ -19,7 +19,7 @@ export function BusanCatalogLink({locale, children}: {locale: ShoppingLocale; ch
   return <Link href={`/${locale}#${anchor}`} onClick={()=>trackEvent("shopping_catalog_open", {language:locale, source_page:"gimhae_pickup"})}>{children}</Link>;
 }
 
-export function ShopActions({locale, shop}: {locale: ShoppingLocale; shop: typeof shops[number]}) {
+export function ShopActions({locale, shop, source = "shopping_guide"}: {locale: ShoppingLocale; shop: typeof shops[number]; source?: string}) {
   const t = shoppingCopy[locale];
   const [status, setStatus] = useState("");
   const address = shop.name + " " + shop.address;
@@ -27,12 +27,12 @@ export function ShopActions({locale, shop}: {locale: ShoppingLocale; shop: typeo
     try {
       await navigator.clipboard.writeText(address);
       setStatus(t.copied);
-      trackEvent("shopping_address_copy", {language:locale, store:shop.id});
+      trackEvent("shopping_address_copy", {language:locale, store:shop.id, source_page:source});
     } catch {
       setStatus(t.fallback);
     }
   }
-  const params = {language:locale, store:shop.id};
+  const params = {language:locale, store:shop.id, source_page:source};
   return <><nav className="intl-section-nav">
     <button type="button" onClick={copyAddress}>{t.copy}</button>
     <a href={"https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address)} onClick={()=>trackEvent("shopping_map_open", {...params, interaction:"external_map"})}>{t.map}</a>
@@ -42,10 +42,10 @@ export function ShopActions({locale, shop}: {locale: ShoppingLocale; shop: typeo
 
 export function ShoppingActionLink({href, locale, source, kind, product, children}: {
   href: string; locale: ShoppingLocale; source: string;
-  kind: "product" | "compare" | "pickup"; product?: string; children: React.ReactNode;
+  kind: "product" | "compare" | "pickup" | "official"; product?: string; children: React.ReactNode;
 }) {
-  const events = {product:"shopping_product_open", compare:"shopping_compare_open", pickup:"shopping_pickup_open"} as const;
-  return <Link href={href} onClick={()=>trackEvent(events[kind], {language:locale, source_page:source, product_slug:product, content_market:source==="country_shopping"?{en:"US",ja:"JP",zh:"CN"}[locale]:undefined})}>{children}</Link>;
+  const events = {product:"shopping_product_open", compare:"shopping_compare_open", pickup:"shopping_pickup_open", official:"shopping_branch_open"} as const;
+  return <Link href={href} onClick={()=>trackEvent(events[kind], {language:locale, source_page:source, product_slug:product, interaction:kind === "official" ? "official_product_source" : undefined, content_market:source==="country_shopping"?{en:"US",ja:"JP",zh:"CN"}[locale]:undefined})}>{children}</Link>;
 }
 
 export function ShoppingNextSteps({locale}: {locale: ShoppingLocale}) {

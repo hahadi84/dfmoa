@@ -277,3 +277,10 @@ test('Korea prices release requires the approved November 18 KST date and cannot
     { currentCommit: undefined },
   ]) assert.equal(allowWeeklyBuild({ ...input, ...override }), false);
 });
+
+test('Purchase information release is limited to November 23 KST and one production build', () => {
+  const input = { subject: 'release(requested-purchase-info): 2026-11-23', context: 'production', currentCommit: 'a'.repeat(40), previousCommit: 'b'.repeat(40), previousSubject: 'release(requested-price-summary): 2026-11-22', now: new Date('2026-11-22T15:00:00Z') };
+  assert.equal(allowWeeklyBuild(input), true);
+  assert.equal(allowWeeklyBuild({...input, now:new Date('2026-11-23T14:59:59Z')}), true);
+  for (const override of [{now:new Date('2026-11-22T14:59:59Z')},{now:new Date('2026-11-23T15:00:00Z')},{context:'deploy-preview'},{context:'branch-deploy'},{earlierReleaseThisWeek:true},{previousCommit:input.currentCommit},{previousSubject:input.subject},{previousCommit:undefined},{subject:'fix: ordinary change'}]) assert.equal(allowWeeklyBuild({...input,...override}),false);
+});

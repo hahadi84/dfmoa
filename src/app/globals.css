@@ -5566,3 +5566,8 @@ textarea:focus,
 .benefit-current-page nav { gap: 8px 16px; margin: 16px 0; }
 .benefit-events .benefit-link-copy { gap: 6px; }
 .benefit-events .benefit-link-copy small { line-height: 1.6; }
+
+.country-purchase-table { overflow-x: auto; margin-block: 1rem 1.5rem; }
+.country-purchase-table table { width: 100%; border-collapse: collapse; min-width: 560px; }
+.country-purchase-table th, .country-purchase-table td { text-align: start; vertical-align: top; padding: 0.85rem; border-bottom: 1px solid #cbd5e1; overflow-wrap: anywhere; }
+.country-purchase-table th { font-weight: 600; }

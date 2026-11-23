@@ -52,3 +52,8 @@ export const japanPriceExamples = [
     route: '가격 비교에는 실제 판매점의 세금 포함 결제액이 필요합니다. 일본 판매점 가격과 한국 면세 가격을 모두 확인하기 전에는 어느 쪽이 유리한지 결론을 내리지 않습니다.',
   },
 ] as const;
+
+export const historicalYenExample = {
+  product: "dior-sauvage-edp-100ml", observedAt: "2026-11-18",
+  yen: 22110, domestic: 180225, rate: 838.82, rateDate: "2026-11-17",
+} as const;
