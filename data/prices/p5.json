@@ -10,9 +10,9 @@
       "store": "shilla",
       "status": "error",
       "source_status": "ok",
-      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84",
-      "fetchedAt": "2026-11-23T11:27:37+09:00",
-      "matched_via": "alias_nospace",
+      "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
+      "fetchedAt": "2026-11-24T14:52:22+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
         "글렌피딕15년700ml",
@@ -26,7 +26,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-23T02:27:39.612Z",
+      "fetchedAt": "2026-11-24T05:52:24.969Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",
@@ -41,7 +41,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EA%B8%80%EB%A0%8C%ED%94%BC%EB%94%95%2015%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-23T02:27:39.612Z",
+      "fetchedAt": "2026-11-24T05:52:24.969Z",
       "matched_via": "original",
       "attempted_queries": [
         "글렌피딕 15년 700ml",

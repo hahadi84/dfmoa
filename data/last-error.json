@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-11-23T02:36:02.225Z",
-  "attemptedCount": 81,
-  "failureCount": 57,
+  "generatedAt": "2026-11-24T05:59:34.722Z",
+  "attemptedCount": 80,
+  "failureCount": 56,
   "failures": [
-    {
-      "productId": "p95",
-      "productSlug": "braun-series-9-pro",
-      "categorySlug": "electronics",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
     {
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
@@ -37,7 +31,13 @@
       "productId": "p91",
       "productSlug": "apple-airpods-pro-2",
       "categorySlug": "electronics",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+    },
+    {
+      "productId": "p95",
+      "productSlug": "braun-series-9-pro",
+      "categorySlug": "electronics",
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p13",
@@ -55,7 +55,7 @@
       "productId": "p58",
       "productSlug": "longines-hydroconquest",
       "categorySlug": "watch",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p68",
@@ -67,12 +67,6 @@
       "productId": "p4",
       "productSlug": "sk2-pitera-essence-230ml",
       "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p59",
-      "productSlug": "swatch-moonswatch-mission-moon",
-      "categorySlug": "watch",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -223,7 +217,7 @@
       "productId": "p37",
       "productSlug": "celine-triomphe-cl40194u",
       "categorySlug": "eyewear",
-      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p38",
