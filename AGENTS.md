@@ -70,3 +70,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-18 사용자 추가 “배포” 요청으로 한국 면세 가격 대조 보강본 공개 1회(release(requested-korea-prices): 2026-11-18)를 승인한다. Netlify에서 현재 운영 e4c360fb 및 이번 주 11월 16일·18일 공개 이력을 확인했다. 날짜·production·중복 제한과 정기 정책을 유지한다.
 
 - 2026-11-23 사용자 “배포” 요청: 검증된 구매 정보·엔화 계산 예시·다국어 행동 측정 보강본 release(requested-purchase-info): 2026-11-23 운영 공개 1회 승인. Netlify 최신 공개가 11월 22일 fb17d034이며 이번 주 선행 공개가 없음을 확인했다. 날짜·production·중복 제한과 정기 정책을 유지한다.
+
+- 2026-11-25 사용자 요청으로 엔화 단독 환산·모바일 쇼핑 버튼 공개 1회(release(requested-mobile-yen): 2026-11-25)를 승인한다. 기존 운영 17565af2 및 날짜·중복 검사를 확인한다.

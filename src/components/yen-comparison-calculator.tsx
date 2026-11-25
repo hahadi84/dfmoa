@@ -29,6 +29,9 @@ export function YenComparisonCalculator({ initialRate }: { initialRate: number }
   return <section className="yen-calculator" aria-labelledby="yen-calculator-title">
     <h2 id="yen-calculator-title" className="section-title">일본 쇼핑 비용 계산기</h2>
     <p className="section-copy">같은 상품·용량·구성의 두 가격을 입력하세요. 환급액이 확인되지 않으면 0엔으로 두고, 카드 수수료는 본인의 결제 조건을 확인하세요.</p>
+    <label htmlFor="quick-yen">원화로 환산할 금액 (엔)</label>
+    <input id="quick-yen" type="number" inputMode="decimal" min="0" step="any" value={yen} onChange={event => { setYen(event.target.value); setResult(null); }} />
+    <p aria-live="polite">{yen.trim() && Number(yen) >= 0 && Number(rate) > 0 && Number.isFinite(Number(yen) * Number(rate)) ? `원화 환산액 ${won(Number(yen) * Number(rate) / 100)} · 100엔당 ${rate}원 기준` : '엔화 금액을 입력하면 원화 환산액이 표시됩니다.'}</p>
     <details><summary>과거 관찰가로 계산 방법 보기</summary>
       <p>소바쥬 EDP 100ml 단품: {historicalYenExample.observedAt} DEPACO 22,110엔(세금 포함), 롯데 공개 정상가 180,225원. 현재 가격이나 최종 결제액이 아닙니다. {historicalYenExample.rateDate} 참고 환율 100엔={historicalYenExample.rate}원을 사용하며 수수료·환급은 0으로 둡니다.</p>
       <button type="button" onClick={() => { setYen(String(historicalYenExample.yen)); setDomestic(String(historicalYenExample.domestic)); setRate(String(historicalYenExample.rate)); setFee('0'); setRefund('0'); setHistorical(true); setResult(null); }}>11월 18일 관찰가를 예시로 입력</button>

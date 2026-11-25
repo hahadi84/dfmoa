@@ -18,7 +18,7 @@ export default function JapanPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd([buildBreadcrumbJsonLd([{ name: '홈', path: '/' }, { name: '일본 여행 쇼핑', path: '/japan' }])]) }} />
     <div className="breadcrumb"><Link href="/">홈</Link><span>/</span><span>일본 여행 쇼핑</span></div>
     <h1 className="page-title">엔화 환율 계산기: 일본 쇼핑 금액을 원화로</h1>
-    <p className="page-description">같은 상품의 일본 엔화 가격과 한국 면세점 원화 가격을 입력해 예상 비용을 비교하세요. 두 가격이 모두 있어야 계산할 수 있습니다. 카드 수수료와 확인된 예상 환급액을 입력하면 한국 면세점의 최종 결제액과 비교할 수 있습니다. 환급액이 불확실하면 0엔으로 두세요.</p>
+    <p className="page-description">같은 상품의 일본 엔화 가격과 한국 면세점 원화 가격을 입력해 예상 비용을 비교하세요. 엔화만 입력하면 원화 환산액이 바로 표시됩니다. 카드 수수료와 확인된 예상 환급액을 입력하면 한국 면세점의 최종 결제액과 비교할 수 있습니다. 환급액이 불확실하면 0엔으로 두세요.</p>
     <div className="chip-row">
       <a className="button" href="#yen-calculator-title">엔화 가격 입력하기</a>
       <Link className="button is-secondary" href="/price-compare">한국 면세가 찾기</Link>

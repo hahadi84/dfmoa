@@ -5571,3 +5571,6 @@ textarea:focus,
 .country-purchase-table table { width: 100%; border-collapse: collapse; min-width: 560px; }
 .country-purchase-table th, .country-purchase-table td { text-align: start; vertical-align: top; padding: 0.85rem; border-bottom: 1px solid #cbd5e1; overflow-wrap: anywhere; }
 .country-purchase-table th { font-weight: 600; }
+
+.mobile-purchase-actions { display: none; }
+@media(max-width: 600px) { .country-purchase-table table { min-width: 0; } .country-purchase-table thead { position:absolute; clip-path:inset(50%); } .country-purchase-table tr,.country-purchase-table td,.country-purchase-table th { display:block; } .mobile-purchase-actions { display:flex; flex-wrap:wrap; gap:1rem; } .mobile-purchase-actions a { padding-block:.65rem; } }
