@@ -12,6 +12,15 @@ export function YenComparisonCalculator({ initialRate }: { initialRate: number }
   const [refund, setRefund] = useState('0');
   const [domestic, setDomestic] = useState('');
   const [result, setResult] = useState<{ charged: number; net: number; difference: number } | null>(null);
+  const quickInputEdited = useRef(false);
+  function finishQuickConversion() {
+    if (!quickInputEdited.current) return;
+    quickInputEdited.current = false;
+    if (Number(yen) <= 0 || Number(rate) <= 0 || !Number.isFinite(Number(yen) * Number(rate))) return;
+    trackEvent('yen_conversion_complete', {
+      language: 'ko', source_page: 'japan', interaction: 'input_complete',
+    });
+  }
   const lastMeasured = useRef('');
   const valid = [yen, rate, fee, refund, domestic].every(value => value.trim() !== '' && Number.isFinite(Number(value)) && Number(value) >= 0)
     && Number(rate) > 0 && Number(yen) > 0 && Number(domestic) > 0 && Number(refund) <= Number(yen) && Number(fee) <= 100;
@@ -28,9 +37,19 @@ export function YenComparisonCalculator({ initialRate }: { initialRate: number }
   ];
   return <section className="yen-calculator" aria-labelledby="yen-calculator-title">
     <h2 id="yen-calculator-title" className="section-title">일본 쇼핑 비용 계산기</h2>
-    <p className="section-copy">같은 상품·용량·구성의 두 가격을 입력하세요. 환급액이 확인되지 않으면 0엔으로 두고, 카드 수수료는 본인의 결제 조건을 확인하세요.</p>
+    <p className="section-copy">엔화 금액만 입력하면 원화 환산액을 바로 볼 수 있습니다. 이 금액은 카드 수수료와 환급을 반영하기 전 금액입니다.</p>
     <label htmlFor="quick-yen">원화로 환산할 금액 (엔)</label>
-    <input id="quick-yen" type="number" inputMode="decimal" min="0" step="any" value={yen} onChange={event => { setYen(event.target.value); setResult(null); }} />
+    <input id="quick-yen" type="number" inputMode="decimal" min="0" step="any" value={yen}
+      onChange={event => {
+        quickInputEdited.current = true;
+        setYen(event.target.value);
+        setResult(null);
+      }}
+      onBlur={finishQuickConversion}
+      onKeyDown={event => {
+        if (event.key === 'Enter') finishQuickConversion();
+      }}
+    />
     <p aria-live="polite">{yen.trim() && Number(yen) >= 0 && Number(rate) > 0 && Number.isFinite(Number(yen) * Number(rate)) ? `원화 환산액 ${won(Number(yen) * Number(rate) / 100)} · 100엔당 ${rate}원 기준` : '엔화 금액을 입력하면 원화 환산액이 표시됩니다.'}</p>
     <details><summary>과거 관찰가로 계산 방법 보기</summary>
       <p>소바쥬 EDP 100ml 단품: {historicalYenExample.observedAt} DEPACO 22,110엔(세금 포함), 롯데 공개 정상가 180,225원. 현재 가격이나 최종 결제액이 아닙니다. {historicalYenExample.rateDate} 참고 환율 100엔={historicalYenExample.rate}원을 사용하며 수수료·환급은 0으로 둡니다.</p>
@@ -38,6 +57,8 @@ export function YenComparisonCalculator({ initialRate }: { initialRate: number }
       <button type="button" onClick={() => { setYen(''); setDomestic(''); setRate(initialRate.toFixed(2)); setFee('0'); setRefund('0'); setHistorical(false); setResult(null); }}>예시 지우고 내 가격 입력</button>
     </details>
     {historical && <p role="status">과거 관찰가에서 시작한 입력입니다. 값을 수정해도 최신 판매가 검증을 뜻하지 않습니다. 실제 비교는 예시를 지운 뒤 판매처에서 확인한 두 가격으로 시작하세요.</p>}
+    <h3>한국 면세점 가격과 비교하기</h3>
+    <p className="section-copy">같은 용량·구성의 국내 면세점 최종 가격을 입력하세요. 카드 수수료는 본인의 결제 조건에 맞추고, 환급액이 확인되지 않으면 0엔으로 두세요.</p>
     <form onSubmit={event => {
       event.preventDefault();
       if (!valid || ![charged, net, difference].every(Number.isFinite)) return;

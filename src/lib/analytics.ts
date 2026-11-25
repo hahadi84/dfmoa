@@ -9,6 +9,7 @@ export type AnalyticsEventName =
   | "favorite_add"
   | "favorite_remove"
   | "price_alert_submit"
+  | "yen_conversion_complete"
   | "effective_price_calculate"
   | "weekly_report_subscribe"
   | "newsletter_subscribe_submit"
@@ -21,6 +22,7 @@ export type AnalyticsEventName =
   | "shopping_pickup_open"
   | "shopping_catalog_open"
   | "shopping_map_open"
+  | "shopping_store_guide_open"
   | "shopping_branch_open"
   | "web_vital";
 

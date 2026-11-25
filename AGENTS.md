@@ -72,3 +72,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-23 사용자 “배포” 요청: 검증된 구매 정보·엔화 계산 예시·다국어 행동 측정 보강본 release(requested-purchase-info): 2026-11-23 운영 공개 1회 승인. Netlify 최신 공개가 11월 22일 fb17d034이며 이번 주 선행 공개가 없음을 확인했다. 날짜·production·중복 제한과 정기 정책을 유지한다.
 
 - 2026-11-25 사용자 요청으로 엔화 단독 환산·모바일 쇼핑 버튼 공개 1회(release(requested-mobile-yen): 2026-11-25)를 승인한다. 기존 운영 17565af2 및 날짜·중복 검사를 확인한다.
+
+- 2026-11-25 사용자 추가 요청으로 엔화 환산·매장 이동 측정과 검증한 안내 개선 release(requested-shopping-events): 2026-11-25 운영 배포 1회 승인.

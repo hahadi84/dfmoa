@@ -42,8 +42,13 @@ export function ShopActions({locale, shop, source = "shopping_guide"}: {locale: 
 
 export function ShoppingActionLink({href, locale, source, kind, product, children}: {
   href: string; locale: ShoppingLocale; source: string;
-  kind: "product" | "compare" | "pickup" | "official"; product?: string; children: React.ReactNode;
+  kind: "product" | "compare" | "pickup" | "official" | "shop_guide"; product?: string; children: React.ReactNode;
 }) {
+  if (kind === "shop_guide") {
+    return <a href={href} onClick={() => trackEvent("shopping_store_guide_open", {
+      language: locale, source_page: source, product_slug: product, destination: href.slice(1),
+    })}>{children}</a>;
+  }
   const events = {product:"shopping_product_open", compare:"shopping_compare_open", pickup:"shopping_pickup_open", official:"shopping_branch_open"} as const;
   return <Link href={href} onClick={()=>trackEvent(events[kind], {language:locale, source_page:source, product_slug:product, interaction:kind === "official" ? "official_product_source" : undefined, content_market:source==="country_shopping"?{en:"US",ja:"JP",zh:"CN"}[locale]:undefined})}>{children}</Link>;
 }
