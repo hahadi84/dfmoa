@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-24T05:47:26.293Z",
+  "generatedAt": "2026-11-25T04:49:22.749Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
-      "productSlug": "estee-lauder-anr-100ml",
-      "count": 7
+      "productSlug": "johnnie-walker-blue-label-750ml",
+      "count": 6
     },
     {
-      "productSlug": "johnnie-walker-blue-label-750ml",
+      "productSlug": "estee-lauder-anr-100ml",
       "count": 4
     },
     {
@@ -16,7 +16,15 @@
       "count": 4
     },
     {
+      "productSlug": "ballantines-21-700ml",
+      "count": 3
+    },
+    {
       "productSlug": "hibiki-harmony-700ml",
+      "count": 3
+    },
+    {
+      "productSlug": "sk2-pitera-essence-230ml",
       "count": 3
     },
     {
@@ -24,19 +32,15 @@
       "count": 3
     },
     {
-      "productSlug": "creed-aventus-50ml",
-      "count": 2
-    },
-    {
-      "productSlug": "dyson-supersonic",
-      "count": 2
+      "productSlug": "tom-ford-oud-wood-50ml",
+      "count": 3
     },
     {
       "productSlug": "gentle-monster-dear-01",
       "count": 2
     },
     {
-      "productSlug": "kgc-everytime-royal",
+      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
       "count": 2
     },
     {
@@ -52,10 +56,6 @@
       "count": 1
     },
     {
-      "productSlug": "ballantines-21-700ml",
-      "count": 1
-    },
-    {
       "productSlug": "bleu-de-chanel-edp-100ml",
       "count": 1
     },
@@ -68,7 +68,7 @@
       "count": 1
     },
     {
-      "productSlug": "dior-sauvage-edp-100ml",
+      "productSlug": "creed-aventus-50ml",
       "count": 1
     },
     {
@@ -88,6 +88,10 @@
       "count": 1
     },
     {
+      "productSlug": "kgc-everytime-royal",
+      "count": 1
+    },
+    {
       "productSlug": "lancome-genifique-100ml",
       "count": 1
     },
@@ -100,19 +104,11 @@
       "count": 1
     },
     {
-      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
-      "count": 1
-    },
-    {
       "productSlug": "pandora-sparkling-charm",
       "count": 1
     },
     {
       "productSlug": "penhaligons-halfeti-100ml",
-      "count": 1
-    },
-    {
-      "productSlug": "sk2-pitera-essence-230ml",
       "count": 1
     },
     {
@@ -137,10 +133,6 @@
     },
     {
       "productSlug": "swatch-moonswatch-mission-moon",
-      "count": 1
-    },
-    {
-      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 1
     },
     {

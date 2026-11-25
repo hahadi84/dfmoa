@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-24T05:59:34.722Z",
-  "attemptedCount": 80,
-  "failureCount": 56,
+  "generatedAt": "2026-11-25T05:00:31.820Z",
+  "attemptedCount": 77,
+  "failureCount": 53,
   "failures": [
     {
       "productId": "p6",
       "productSlug": "hibiki-harmony-700ml",
       "categorySlug": "liquor",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p94",
-      "productSlug": "dyson-supersonic",
-      "categorySlug": "electronics",
+      "productId": "p4",
+      "productSlug": "sk2-pitera-essence-230ml",
+      "categorySlug": "beauty",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -40,12 +40,6 @@
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
-      "productId": "p13",
-      "productSlug": "dior-sauvage-edp-100ml",
-      "categorySlug": "perfume",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
       "productId": "p2",
       "productSlug": "jo-malone-english-pear-100ml",
       "categorySlug": "perfume",
@@ -61,18 +55,6 @@
       "productId": "p68",
       "productSlug": "pandora-sparkling-charm",
       "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p4",
-      "productSlug": "sk2-pitera-essence-230ml",
-      "categorySlug": "beauty",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
-    },
-    {
-      "productId": "p9",
-      "productSlug": "diptyque-do-son-75ml",
-      "categorySlug": "perfume",
       "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
@@ -181,7 +163,7 @@
       "productId": "p50",
       "productSlug": "lululemon-everywhere-belt-bag",
       "categorySlug": "fashion",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p8",
@@ -223,7 +205,7 @@
       "productId": "p38",
       "productSlug": "saint-laurent-sl-276-mica",
       "categorySlug": "eyewear",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p39",
@@ -313,7 +295,7 @@
       "productId": "p70",
       "productSlug": "goldendew-diamond-necklace",
       "categorySlug": "jewelry",
-      "error": "shilla:product_match_failed, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
+      "error": "shilla:HTTP 403, shinsegae:cookie_or_login_required, lotte:disabled_by_policy"
     },
     {
       "productId": "p82",
