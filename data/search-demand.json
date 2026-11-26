@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T04:49:22.749Z",
+  "generatedAt": "2026-11-26T04:00:21.535Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
@@ -8,11 +8,7 @@
       "count": 6
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
-      "count": 4
-    },
-    {
-      "productSlug": "royal-salute-21-700ml",
+      "productSlug": "tom-ford-oud-wood-50ml",
       "count": 4
     },
     {
@@ -24,6 +20,10 @@
       "count": 3
     },
     {
+      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
+      "count": 3
+    },
+    {
       "productSlug": "sk2-pitera-essence-230ml",
       "count": 3
     },
@@ -32,15 +32,11 @@
       "count": 3
     },
     {
-      "productSlug": "tom-ford-oud-wood-50ml",
-      "count": 3
-    },
-    {
-      "productSlug": "gentle-monster-dear-01",
+      "productSlug": "estee-lauder-anr-100ml",
       "count": 2
     },
     {
-      "productSlug": "maison-margiela-lazy-sunday-morning-100ml",
+      "productSlug": "gentle-monster-dear-01",
       "count": 2
     },
     {
@@ -48,8 +44,8 @@
       "count": 2
     },
     {
-      "productSlug": "aesop-resurrection-hand-balm-75ml",
-      "count": 1
+      "productSlug": "royal-salute-21-700ml",
+      "count": 2
     },
     {
       "productSlug": "apple-airpods-pro-2",

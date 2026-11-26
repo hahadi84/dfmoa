@@ -9,23 +9,23 @@
     "shilla": {
       "store": "shilla",
       "status": "error",
-      "source_status": "error",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-11-19T12:04:45+09:00",
-      "matched_via": "alias_nospace",
+      "fetchedAt": "2026-11-26T13:06:49+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",
         "gnc메가맨"
       ],
       "items": [],
-      "error": "HTTP 403"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-11-19T03:04:45.303Z",
+      "fetchedAt": "2026-11-26T04:06:51.782Z",
       "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",
@@ -40,7 +40,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=GNC%20%EB%A9%94%EA%B0%80%EB%A7%A8",
-      "fetchedAt": "2026-11-19T03:04:45.303Z",
+      "fetchedAt": "2026-11-26T04:06:51.782Z",
       "matched_via": "original",
       "attempted_queries": [
         "GNC 메가맨",
