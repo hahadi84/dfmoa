@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
 import { getSearchSuggestions, type SearchSuggestion } from "@/lib/search-suggestions";
@@ -8,6 +8,7 @@ import { getSearchSuggestions, type SearchSuggestion } from "@/lib/search-sugges
 type SearchFormProps = {
   defaultValue?: string;
   compact?: boolean;
+  fromPriceCompare?: boolean;
 };
 
 function getSuggestionMeta(suggestion: SearchSuggestion) {
@@ -26,13 +27,29 @@ function getSuggestionMeta(suggestion: SearchSuggestion) {
   return "인기 검색어";
 }
 
-export function SearchForm({ defaultValue = "", compact = false }: SearchFormProps) {
+export function SearchForm({ defaultValue = "", compact = false, fromPriceCompare = false }: SearchFormProps) {
   const router = useRouter();
   const inputId = useId();
   const listboxId = `${inputId}-suggestions`;
   const [inputState, setInputState] = useState({ defaultValue, value: defaultValue });
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const formRef = useRef<HTMLFormElement>(null);
+  useEffect(() => {
+    if (!isOpen) return;
+    function dismissOutside(event: Event) {
+      if (event.target instanceof Node && !formRef.current?.contains(event.target)) {
+        setIsOpen(false);
+        setActiveIndex(-1);
+      }
+    }
+    document.addEventListener("pointerdown", dismissOutside, true);
+    document.addEventListener("focusin", dismissOutside);
+    return () => {
+      document.removeEventListener("pointerdown", dismissOutside, true);
+      document.removeEventListener("focusin", dismissOutside);
+    };
+  }, [isOpen]);
   const query = inputState.defaultValue === defaultValue ? inputState.value : defaultValue;
   const suggestions = useMemo(() => getSearchSuggestions(query), [query]);
   const activeSuggestion = activeIndex >= 0 ? suggestions[activeIndex] : undefined;
@@ -54,6 +71,15 @@ export function SearchForm({ defaultValue = "", compact = false }: SearchFormPro
         product_id: suggestion.productId,
         suggestion_slug: suggestion.slug,
       });
+      if (fromPriceCompare && suggestion.type === "product" && suggestion.slug) {
+        trackEvent("shopping_product_open", {
+          language: "ko", source_page: "price_compare", placement: "autocomplete",
+          product_slug: suggestion.slug,
+        });
+        setIsOpen(false);
+        router.push(`/product/${suggestion.slug}`);
+        return;
+      }
     }
 
     trackEvent("search_submit", {
@@ -66,6 +92,7 @@ export function SearchForm({ defaultValue = "", compact = false }: SearchFormPro
 
   return (
     <form
+      ref={formRef}
       action="/search"
       className={`search-form${compact ? " is-compact" : ""}`}
       role="search"
@@ -87,8 +114,8 @@ export function SearchForm({ defaultValue = "", compact = false }: SearchFormPro
           placeholder="브랜드 + 상품명 + 용량"
           role="combobox"
           aria-autocomplete="list"
-          aria-expanded={isOpen}
-          aria-controls={listboxId}
+          aria-expanded={isOpen && suggestions.length > 0}
+          aria-controls={isOpen && suggestions.length ? listboxId : undefined}
           aria-activedescendant={activeIndex >= 0 ? `${listboxId}-${activeIndex}` : undefined}
           onChange={(event) => {
             updateQuery(event.target.value);
@@ -96,8 +123,10 @@ export function SearchForm({ defaultValue = "", compact = false }: SearchFormPro
             setActiveIndex(-1);
           }}
           onFocus={() => setIsOpen(true)}
+          onClick={() => setIsOpen(true)}
           onKeyDown={(event) => {
-            if (event.key === "Escape") {
+            if (event.key === "Escape" && isOpen) {
+              event.preventDefault();
               setIsOpen(false);
               setActiveIndex(-1);
               return;
@@ -130,7 +159,7 @@ export function SearchForm({ defaultValue = "", compact = false }: SearchFormPro
                 onClick={() => goToSearch(suggestion.value, suggestion)}
               >
                 <strong>{suggestion.label}</strong>
-                <span>{getSuggestionMeta(suggestion)}</span>
+                <span>{getSuggestionMeta(suggestion)}{fromPriceCompare && suggestion.type === "product" && " · 가격 보기"}</span>
               </button>
             ))}
           </div>

@@ -14,7 +14,8 @@ import { OfficialSourceLinks, SourcePriceStatusPanel } from "@/components/source
 import { StoreStatusList } from "@/components/store-status-list";
 import { buildDomesticPriceApiPath, buildSearchApiPath } from "@/lib/search-api-url";
 import type { DomesticPriceResult } from "@/lib/domestic-price-types";
-import { categories, featureSearches, getStoreById, searchProducts, stores } from "@/lib/site-data";
+import { categories, featureSearches, getStoreById, products, searchProducts, stores } from "@/lib/site-data";
+import { brandLandings } from "@/lib/seo-content";
 import { recordBrowserSearchDemand } from "@/lib/record-search-demand";
 import {
   buildSourcePrices,
@@ -32,6 +33,10 @@ function getSearchErrorMessage() {
   }
 
   return "가격 정보를 불러오지 못했습니다.";
+}
+
+function searchKey(value: string) {
+  return value.normalize("NFKC").toLowerCase().replace(/\s+/g, "");
 }
 
 export function SearchPageClient() {
@@ -216,6 +221,13 @@ export function SearchPageClient() {
   const aggregateStatus = getAggregatePriceStatus(sourcePrices);
   const aggregateCopy = getAggregatePriceCopy(sourcePrices);
   const comparablePrices = getComparableSourcePrices(sourcePrices);
+  const needsNextStep = Boolean(query && result && !comparablePrices.length);
+  const key = searchKey(query);
+  const catalogMatch = needsNextStep && products.find(product =>
+    [product.query, product.displayName].some(name => searchKey(name) === key));
+  const matchingBrands = needsNextStep && !catalogMatch ? brandLandings.filter(brand =>
+    [brand.nameKo, brand.nameEn].some(name => name && key.includes(searchKey(name)))) : [];
+  const brand = matchingBrands.length === 1 ? matchingBrands[0] : undefined;
 
   return (
     <section className="page-section is-tight">
@@ -237,6 +249,18 @@ export function SearchPageClient() {
         {query ? <AdBanner placement="top" /> : null}
 
         <SearchForm defaultValue={query} compact />
+
+        {needsNextStep && <section className="surface-card" aria-label="검색 결과 안내">
+          <h2 className="card-title">{catalogMatch ? "등록된 상품이지만 비교할 공개가가 없습니다" : "입력한 조건으로 비교할 가격을 찾지 못했습니다"}</h2>
+          {catalogMatch ? <Link className="text-link" href={`/product/${catalogMatch.slug}`}>{catalogMatch.query} 판매처 확인</Link> : <>
+            <p className="section-copy">위 검색창에서 상품명이나 용량을 바꿔 보세요.</p>
+            {brand ? <div className="chip-row">
+              {products.filter(product => brand.representativeProductIds.includes(product.id)).slice(0, 3).map(product =>
+                <Link className="chip is-soft" key={product.id} href={`/product/${product.slug}`}>{product.query}</Link>)}
+              <Link className="text-link" href={`/brand/${brand.slug}`}>{brand.nameKo} 등록 상품 보기</Link>
+            </div> : <Link className="text-link" href="/brand">브랜드별 등록 상품 보기</Link>}
+          </>}
+        </section>}
 
         <div className="chip-row" style={{ marginTop: 16 }}>
           {featureSearches.map((searchText) => (

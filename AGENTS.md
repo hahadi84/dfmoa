@@ -76,3 +76,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-25 사용자 추가 요청으로 엔화 환산·매장 이동 측정과 검증한 안내 개선 release(requested-shopping-events): 2026-11-25 운영 배포 1회 승인.
 
 - 2026-11-27 사용자 요청에 따라 로컬 검증 개선 묶음 release(requested-verified-updates): 2026-11-27 운영 배포 1회를 승인한다.
+
+- 2026-11-27 사용자 추가 요청으로 한국어 및 다국어 상품 검색 개선 release(requested-product-search): 2026-11-27 공개 1회를 승인한다.

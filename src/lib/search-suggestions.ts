@@ -37,8 +37,6 @@ const manualAliases: SearchAlias[] = [
   {
     canonical: "조말론 잉글리쉬 페어 100ml",
     aliases: [
-      "조말론블랙베리",
-      "jomaloneblackberry",
       "jomaloneenglishpear",
       "조말론잉글리쉬페어",
       "englishpear100",

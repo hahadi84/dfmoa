@@ -1,3 +1,4 @@
+import { LocalizedProductFinder } from "@/components/localized-product-finder";
 import { KoreaShoppingStart } from "@/components/korea-shopping-start";
 import { ShoppingLinks } from "@/components/shopping-guide";
 import { EnglishTravelLinks } from "@/components/english-travel-links";
@@ -9,7 +10,7 @@ export const metadata = englishMetadata("What to buy in Korea: shopping lists, g
 export default function EnglishHome() {
   return <section className="page-section"><div className="container">
     <h1 className="page-title">What to buy on your Korea trip</h1><p className="page-description">Find gifts in Myeongdong or at Busan Station, compare duty-free prices and plan pickup at Incheon or Gimhae Airport.</p>
-    <nav className="intl-section-nav" aria-label="Shopping tools"><ShoppingLinks locale="en" /><a href="#english-products">Compare 10 products</a><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup guide</Link><Link href="/en/compare">Duty free vs tax refund</Link></nav>
+    <LocalizedProductFinder locale="en" /><nav className="intl-section-nav" aria-label="Shopping tools"><ShoppingLinks locale="en" /><a href="#english-products">Compare 10 products</a><Link href="/en/guide/incheon-duty-free-pickup">Airport pickup guide</Link><Link href="/en/compare">Duty free vs tax refund</Link></nav>
     <section className="intl-note"><h2>Can visitors shop duty free?</h2><p>Yes, travelers with a confirmed international departure can shop. Register and order in the traveling person’s name, enter the correct passport and departure details, and follow the retailer’s collection instructions.</p><p>These pages cover purchases collected when leaving Korea. Do not assume an airside transfer or a domestic flight qualifies.</p><a href={internationalSources.shopping} target="_blank" rel="noreferrer">Official shopping instructions</a></section>
     <KoreaShoppingStart locale="en" context="home"/>
     <InternationalCatalog items={getEnglishCatalog()} />
