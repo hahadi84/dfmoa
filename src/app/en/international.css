@@ -73,11 +73,19 @@
 
 .country-shopping-ad { grid-column:1 / -1; min-width:0; }
 
-.traveler-home-search [role=search] { margin: 16px 0 24px; padding: 0; border: 0; }
+.traveler-home-search [role=search] { margin: 6px 0 8px; padding: 0; border: 0; }
 .traveler-home-search input[type=search] { display: block; width: 100%; max-width: 720px; margin-top: 6px; padding: 12px; border: 2px solid #173954; border-radius: 8px; }
-.traveler-price-rows { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 24px; }
-.traveler-price-rows > a { display: grid; grid-template-columns: 44px minmax(0,1fr) auto; align-items: center; gap: 10px; padding: 12px 0; border-bottom: 1px solid #d5dde2; color: #142838; text-decoration: none; }
-.traveler-price-rows img { width: 44px; height: 48px; object-fit: contain; }
-.traveler-price-rows small { display: block; font-size: 12px; color: #526176; font-weight: normal; }
-.traveler-price-rows strong { text-align: right; font-variant-numeric: tabular-nums; }
+.traveler-price-rows { --home-thumb: clamp(76px, 8vw, 104px); display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 24px; }
+.traveler-price-rows > a { display: grid; grid-template-columns: var(--home-thumb) minmax(0,1fr) auto; align-items: center; gap: 10px; padding: 12px 0; border-bottom: 1px solid #d5dde2; color: #142838; text-decoration: none; }
+.traveler-price-rows img { width: var(--home-thumb); height: var(--home-thumb); object-fit: contain; }
+.traveler-price-rows small { display: block; font-size: .875rem; color: #526176; font-weight: normal; }
+.traveler-price-rows strong { font-size: 1.25rem; text-align: right; font-variant-numeric: tabular-nums; }
 @media (max-width: 640px) { .traveler-price-rows { grid-template-columns: minmax(0,1fr); } }
+
+.traveler-price-rows > a { font-size: 1.125rem; line-height: 1.4; padding-block: 5px; }
+.intl-page .page-section:has(.traveler-home-search) { padding-top: 12px; }
+@media (max-width: 640px) {
+  .traveler-price-rows > a { grid-template-columns: var(--home-thumb) minmax(0,1fr); gap: 3px 12px; }
+  .traveler-price-rows > a > :first-child { grid-row: span 2; width: var(--home-thumb); height: var(--home-thumb); }
+  .traveler-price-rows strong { grid-column: 2; text-align: start; }
+}

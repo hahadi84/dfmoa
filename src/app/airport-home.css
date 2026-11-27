@@ -29,7 +29,7 @@
 .airport-home .today-lowest-section { border-bottom: 1px solid #d5dde2; }
 .airport-home .section-title, .airport-home .card-title { font-weight: 700; }
 .airport-home .today-lowest-grid { gap: 12px; }
-.airport-home .today-lowest-card { background: #fff; padding: 14px; border-radius: 8px; border-color: #d5dde2; border-top: 3px solid #174f70; }
+.airport-home .today-lowest-card { background: #fff; padding: 10px 14px; border-radius: 8px; border-color: #d5dde2; border-top: 3px solid #174f70; }
 .airport-home .today-lowest-image, .airport-home .today-lowest-image img { min-height: 104px; height: 104px; }
 .airport-home .today-lowest-card .card-title { font-size: 14px; line-height: 1.5; white-space: normal; }
 .airport-home .today-lowest-price { color: #174f70; font-size: 15px; font-weight: 700; white-space: normal; font-variant-numeric: tabular-nums; }
@@ -57,21 +57,21 @@
 }
 
 /* Keep the search field and observed prices together on a first visit. */
-.airport-home .hero { background: white; border-top: 0; }
+.airport-home .hero { background: white; border-top: 0; padding: 12px 0 8px; }
 .airport-home .hero-title { color: #142838; }
 .airport-home .hero-description { color: #465a69; }
 .airport-home .hero .search-form { border: 2px solid #173954; margin-bottom: 4px; }
 .airport-home .hero .search-form button[type=submit] { color: white; background: #173954; border-color: #173954; }
 .airport-home .hero .home-product-shortcut { color: #174f70; }
 .airport-home .hero-search-terms { color: #465a69; }
-.airport-home .today-lowest-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; background: white; }
-.airport-home .today-lowest-card { display: grid; grid-template-columns: 48px minmax(0,1fr); align-items: center; gap: 12px; border: 0; border-bottom: 1px solid #d5dde2; border-radius: 0; min-width: 0; width: auto; }
-.airport-home .today-lowest-image, .airport-home .today-lowest-image img { width: 48px; height: 52px; min-height: 0; object-fit: contain; }
+.airport-home .today-lowest-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 16px; background: white; }
+.airport-home .today-lowest-card { display: grid; grid-template-columns: var(--home-thumb) minmax(0,1fr); align-items: center; gap: 12px; border: 0; border-bottom: 1px solid #d5dde2; border-radius: 0; min-width: 0; width: auto; }
+.airport-home .today-lowest-image, .airport-home .today-lowest-image img { width: var(--home-thumb); height: var(--home-thumb); min-height: 0; object-fit: contain; }
 .airport-home .today-lowest-copy { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: baseline; gap: 4px 8px; }
 .airport-home .today-lowest-time { grid-column: 1 / -1; }
 @media (max-width: 640px) {
   .airport-home .today-lowest-grid { grid-template-columns: minmax(0,1fr); }
-  .airport-home .today-lowest-card { padding: 12px 8px; }
+  .airport-home .today-lowest-card { padding: 8px; }
 }
 
 .airport-home .hero-copy > * { order: 0; }
@@ -80,4 +80,15 @@
   .airport-home .hero .search-button { width: auto; }
   .airport-home .hero .search-input { width: 100%; }
   .airport-home .today-lowest-head { display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
+}
+
+.airport-home { --home-thumb: clamp(76px, 8vw, 104px); }
+.airport-home .hero-copy { gap: 4px; }
+.airport-home .hero-description { margin: 0; }
+.airport-home .today-lowest-head { margin-bottom: 6px; }
+.airport-home .today-lowest-card .card-title { font-size: 1.125rem; line-height: 1.35; }
+.airport-home .today-lowest-price { font-size: 1.25rem; line-height: 1.3; }
+.airport-home .today-lowest-time { font-size: .875rem; }
+@media (max-width: 640px) {
+  .airport-home .today-lowest-copy { grid-template-columns: minmax(0,1fr); gap: 2px; }
 }
