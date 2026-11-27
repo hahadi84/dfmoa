@@ -72,3 +72,26 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 /* System fonts keep production builds independent of external font downloads. */
 :root { --font-body: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; --font-ibm-mono: Consolas, "SFMono-Regular", monospace; }
+
+.korean-header { border-bottom-width: 2px; }
+.korean-header .topbar-inner { min-height: 64px; gap: clamp(12px, 2vw, 32px); }
+.korean-header .brand-copy strong { font-size: 1.125rem; }
+.korean-header .brand-copy span { font-size: .75rem; }
+.korean-header .header-compare { margin-left: auto; display: inline-flex; align-items: center; min-height: 44px; padding-inline: 16px; border-radius: 6px; background: var(--airport-yellow); color: #142838; font-weight: 700; white-space: nowrap; }
+.korean-header .topnav { align-items: center; gap: 4px 16px; }
+.header-group { position: relative; color: white; }
+.header-group summary { padding: 12px 0; cursor: pointer; }
+.header-group summary:focus-visible { outline: 2px solid var(--airport-yellow); }
+.header-group > div { position: absolute; z-index: 2; right: 0; min-width: 136px; padding: 4px 12px; background: #142838; border: 1px solid #718695; border-radius: 6px; }
+.header-group > div a { display: block; }
+@media (max-width: 1100px) {
+  .korean-header .topbar-inner { min-height: 60px; gap: 10px; }
+  .korean-header .header-group > div { position: static; min-width: 0; padding-inline: 6px; }
+}
+
+.header-languages { display: flex; align-items: center; gap: 12px; }
+.header-languages a { display: inline-flex; align-items: center; min-height: 44px; color: #fff; white-space: nowrap; }
+@media (max-width: 1100px) {
+  .korean-header .topbar-inner { flex-wrap: wrap; row-gap: 0; }
+  .header-languages { flex-basis: 100%; justify-content: flex-end; border-top: 1px solid #425664; }
+}

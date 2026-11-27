@@ -9,6 +9,12 @@ export function AirportNavigation({ children, label, menuLabel }: {
   const [open, setOpen] = useState(false);
   return <div className="airport-navigation" onKeyDown={(event) => {
     if (event.key === "Escape") {
+      const group = event.currentTarget.querySelector<HTMLDetailsElement>("details[open]");
+      if (group) {
+        group.open = false;
+        group.querySelector("summary")?.focus();
+        return;
+      }
       setOpen(false);
       event.currentTarget.querySelector<HTMLButtonElement>("button")?.focus();
     }

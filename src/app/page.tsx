@@ -26,8 +26,8 @@ function homePriceLinkLabel(product: Product) {
 
 export const metadata: Metadata = {
   ...buildSeoMetadata({
-    title: "면세점 가격비교 · 상품별 공개가와 할인 혜택",
-    description: "면세모아에서 신라·롯데·신세계·현대 면세점 공개가와 국내가 참고 정보를 비교하고, 출국 전 원본 링크로 최종 가격을 확인하세요.",
+    title: "면세점 가격 비교 | 위스키·향수·화장품 상품 검색",
+    description: "위스키·향수·화장품을 상품명과 용량으로 검색하세요. 면세모아에서 면세점별 공개 가격과 확인 시각을 비교하고, 판매처에서 할인 조건과 최종 결제액을 확인할 수 있습니다.",
     path: "/",
     image: {
       path: HOME_OG_IMAGE,
@@ -101,8 +101,8 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <h1 className="hero-title">면세점 가격비교</h1>
-            <p className="hero-description">상품명으로 검색하고 같은 용량의 면세점 가격을 확인하세요.</p>
+            <h1 className="hero-title">면세점 가격 비교</h1>
+            <p className="hero-description">위스키·향수·화장품을 검색하고 같은 용량의 면세 가격을 비교하세요.</p>
             <SearchForm />
             {royalSalute && (
               <PriceCompareProductLinks homePlacement="search">
@@ -138,7 +138,7 @@ export default function Home() {
                 <h2 className="section-title">{hasRankedPrices ? "인기검색 상품 최근 가격" : "최근 확인한 면세 가격"}</h2>
               </div>
               <Link className="ghost-button" href="/search">
-                전체 가격 비교
+                전체 상품 검색
               </Link>
             </div>
 
