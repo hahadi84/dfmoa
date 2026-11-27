@@ -19,7 +19,7 @@ function normalize(value: string) {
 }
 export function TravelerProductSearch({ locale, items }: {
   locale: ShoppingLocale;
-  items: {slug: string; name: string; koreanName: string; href: string; serum: boolean}[];
+  items: {slug: string; name: string; koreanName: string; href: string; serum: boolean; koreanDetail: boolean}[];
 }) {
   const [query, setQuery] = useState("");
   const [label, example, empty] = copy[locale];
@@ -37,7 +37,7 @@ export function TravelerProductSearch({ locale, items }: {
       value={query} onChange={event => setQuery(event.target.value)} />
     {matches.length > 0 && <ul>{matches.map(item => <li key={item.slug}>
       <ShoppingActionLink locale={locale} source="traveler_home_search" kind="product" product={item.slug} href={item.href}>
-        {item.serum ? serumNames[locale] : item.name}
+        {item.serum ? serumNames[locale] : item.name}{item.koreanDetail && ({en: " (Korean)", ja: "（韓国語）", zh: "（韩文）"}[locale])}
       </ShoppingActionLink>
     </li>)}</ul>}
     <div role="status">{tokens.length > 0 && matches.length === 0 ? empty : ""}</div>

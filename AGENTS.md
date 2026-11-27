@@ -78,3 +78,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-27 사용자 요청에 따라 로컬 검증 개선 묶음 release(requested-verified-updates): 2026-11-27 운영 배포 1회를 승인한다.
 
 - 2026-11-27 사용자 추가 요청으로 한국어 및 다국어 상품 검색 개선 release(requested-product-search): 2026-11-27 공개 1회를 승인한다.
+
+- 2026-11-27 사용자 요청으로 네 언어 홈 검색·가격 목록 통일본 release(requested-home-prices): 2026-11-27 운영 공개 1회를 승인한다.

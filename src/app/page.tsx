@@ -13,15 +13,10 @@ import {
   serializeJsonLd,
 } from "@/lib/json-ld";
 import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
-import { getLowestPriceSummaries, getLowestPriceSummary, hasSnapshotPrice } from "@/lib/snapshot-summaries";
+import { getLowestPriceSummary, hasSnapshotPrice } from "@/lib/snapshot-summaries";
 import { buildSeoMetadata, HOME_OG_IMAGE } from "@/lib/seo-metadata";
-import { categories, guides, products, stores, type Product } from "@/lib/site-data";
-import searchDemand from "../../data/search-demand.json";
-import { getSnapshotBestItem } from "@/lib/price-snapshot-view";
-
-const brandProofs = ["공개가 기준", "국내가 비교", "혜택 조건 분리"];
-// This page is statically exported; all freshness decisions use one build-time clock.
-const buildTimestamp = Date.now();
+import { categories, guides, products, type Product } from "@/lib/site-data";
+import { getHomePriceList } from "@/lib/home-price-list";
 
 function homePriceLinkLabel(product: Product) {
   return product.slug === "royal-salute-21-700ml"
@@ -44,7 +39,6 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const featuredGuides = guides.slice(0, 3);
-  const supportedStoreNames = stores.map((store) => store.name).join(", ");
   const priceSnapshotsByProductId = readPriceSnapshotsByProductId(products);
   const latestSnapshotTimestamp = Object.values(priceSnapshotsByProductId)
     .flatMap((snapshot) => Object.values(snapshot?.sources ?? {})
@@ -54,22 +48,8 @@ export default function Home() {
     .at(-1);
   const latestSnapshotLabel = latestSnapshotTimestamp?.replace("T", " ").slice(0, 16) || "최근 확인 시각 없음";
   const pricedProducts = products.filter((product) => hasSnapshotPrice(priceSnapshotsByProductId[product.id]));
-  const demandRows = searchDemand.products as { productSlug: string; count: number }[];
-  const demandTimestamp = Date.parse(searchDemand.generatedAt ?? "");
-  const hasSearchDemand = Number.isFinite(demandTimestamp) && buildTimestamp - demandTimestamp < 48 * 3_600_000 && demandRows.length > 0;
-  const demandCounts = new Map(hasSearchDemand ? demandRows.map((item) => [item.productSlug, item.count]) : []);
-  const recentPriceItems = getLowestPriceSummaries(products, priceSnapshotsByProductId)
-    .filter((item) => {
-      const best = getSnapshotBestItem(priceSnapshotsByProductId[item.product.id]);
-      const timestamp = Date.parse(best?.source.fetchedAt ?? best?.item.fetchedAt ?? "");
-      return Number.isFinite(timestamp) && buildTimestamp - timestamp <= 3 * 86_400_000;
-    });
-  const popularPriceItems = recentPriceItems.filter((item) => demandCounts.has(item.product.slug))
-    .sort((a, b) => (demandCounts.get(b.product.slug) ?? 0) - (demandCounts.get(a.product.slug) ?? 0) || a.product.slug.localeCompare(b.product.slug));
-  const lowestPriceItems = (popularPriceItems.length ? popularPriceItems : recentPriceItems).slice(0, 6);
-  const heroLowestPriceItems = lowestPriceItems.slice(0, 3);
+  const { lowestPriceItems, hasSearchDemand, demandRows, hasRankedPrices } = getHomePriceList(priceSnapshotsByProductId);
   const royalSalute = products.find((product) => product.slug === "royal-salute-21-700ml");
-  const showRoyalSaluteLink = royalSalute && !heroLowestPriceItems.some(({ product }) => product.id === royalSalute.id);
   const preferredSearchSlugs = [
     "creed-aventus-50ml",
     "sulwhasoo-first-care-serum-90ml",
@@ -121,14 +101,10 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">출국 전 쇼핑 안내 · DFMOA</span>
             <h1 className="hero-title">면세점 가격비교</h1>
-            <p className="hero-description">
-              상품명과 용량만 넣으면 면세점 공개가, 국내 판매가, 혜택 링크를 한 화면에 정리합니다.
-            </p>
-
+            <p className="hero-description">상품명으로 검색하고 같은 용량의 면세점 가격을 확인하세요.</p>
             <SearchForm />
-            {showRoyalSaluteLink && (
+            {royalSalute && (
               <PriceCompareProductLinks homePlacement="search">
                 <Link className="text-link home-product-shortcut" href={`/product/${royalSalute.slug}`}>
                   {homePriceLinkLabel(royalSalute)}
@@ -136,27 +112,7 @@ export default function Home() {
               </PriceCompareProductLinks>
             )}
 
-            <div className="hero-chip-strip">
-              <div className="brand-proof-strip" aria-label="DFMOA 비교 기준">
-                {brandProofs.map((proof) => (
-                  <span key={proof}>{proof}</span>
-                ))}
-              </div>
-
-              <div className="hero-actions">
-                <Link className="chip is-demo" href="/benefits">
-                  할인·적립금
-                </Link>
-                <Link className="chip is-soft" href="/benefit-reports">
-                  주간 리포트
-                </Link>
-                <Link className="chip is-soft" href="/search">
-                  전체 최저가
-                </Link>
-              </div>
-            </div>
-
-            {popularSearchItems.length ? (
+            {!lowestPriceItems.length && popularSearchItems.length ? (
               <div className="hero-search-terms" aria-label={searchHeading}>
                 <span>{searchHeading}</span>
                 <div className="chip-row">
@@ -169,40 +125,6 @@ export default function Home() {
               </div>
             ) : null}
 
-            {heroLowestPriceItems.length ? (
-              <div className="hero-lowest-preview" aria-label="최근 수집 가격">
-                <div className="hero-lowest-preview-head">
-                  <span>{popularPriceItems.length ? "인기검색 상품 최근 가격" : "최근 수집 가격"}</span>
-                  <Link className="text-link" href="/search">
-                    전체 보기
-                  </Link>
-                </div>
-                <PriceCompareProductLinks className="hero-lowest-preview-list" homePlacement="hero">
-                  {heroLowestPriceItems.map((item) => (
-                    <Link key={item.product.id} className="hero-lowest-preview-card" href={`/product/${item.product.slug}`}>
-                      <SafeProductImage
-                        src={item.imageUrl}
-                        alt={`${item.product.brand} ${item.product.name} ${item.product.volume}`}
-                        categorySlug={item.product.categorySlug}
-                      />
-                      <span>
-                        <strong>{homePriceLinkLabel(item.product)}</strong>
-                        <small>
-                          {item.storeName} {item.priceLabel} · {item.timestamp || latestSnapshotLabel}
-                        </small>
-                      </span>
-                    </Link>
-                  ))}
-                </PriceCompareProductLinks>
-              </div>
-            ) : null}
-
-            <div className="hero-meta-line">
-              <span className="hero-note">
-                {supportedStoreNames}의 최근 확인 가능한 공개가와 공식 링크를 함께 제공합니다.
-              </span>
-              <span className="hero-note">가격 기준 시각: {latestSnapshotLabel} 자동 수집</span>
-            </div>
           </div>
         </div>
       </section>
@@ -213,7 +135,7 @@ export default function Home() {
             <div className="section-head today-lowest-head">
               <div>
                 <span className="eyebrow">기준: {latestSnapshotLabel} 자동 수집</span>
-                <h2 className="section-title">{popularPriceItems.length ? "인기검색 상품 최근 가격" : "최근 수집 가격 TOP 6"}</h2>
+                <h2 className="section-title">{hasRankedPrices ? "인기검색 상품 최근 가격" : "최근 확인한 면세 가격"}</h2>
               </div>
               <Link className="ghost-button" href="/search">
                 전체 가격 비교
@@ -233,9 +155,9 @@ export default function Home() {
                   <div className="today-lowest-copy">
                     <h3 className="card-title">{homePriceLinkLabel(item.product)}</h3>
                     <p className="today-lowest-price">
-                      {item.storeName} · {item.priceLabel}
+                      {item.priceLabel}
                     </p>
-                    <p className="today-lowest-time">{item.timestamp || latestSnapshotLabel} 기준</p>
+                    <p className="today-lowest-time">{item.storeName} · {item.timestamp || latestSnapshotLabel} 기준</p>
                   </div>
                 </Link>
               ))}
