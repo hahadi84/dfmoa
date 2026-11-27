@@ -9,6 +9,7 @@ export const shoppingPaths = {
   gifts: "/guide/myeongdong-gifts",
 };
 export const INTERNATIONAL_UPDATED = "2026-10-25";
+export const EN_INCHEON_PICKUP_CHECKED = "2026-11-26";
 export const internationalProductIds = ["p1", "p3", "p10", "p11", "p12", "p14", "p15", "p17", "p18", "p24"];
 export const englishStores: Record<StoreId, { name: string; url: string }> = {
   shilla: { name: "The Shilla Duty Free", url: "https://www.shilladfs.com/estore/kr/en/" },

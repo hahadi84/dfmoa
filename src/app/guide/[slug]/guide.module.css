@@ -1,6 +1,9 @@
 .container { max-width: 860px; }
 .title { margin: 28px 0 16px; color: #192d3a; font-size: clamp(1.75rem, 3.2vw, 2.4rem); font-weight: 600; line-height: 1.4; word-break: keep-all; overflow-wrap: anywhere; }
 .intro { margin: 0 0 18px; color: #475966; font-size: 1.0625rem; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.quickLinks { display: flex; flex-wrap: wrap; gap: 8px 12px; margin-bottom: 16px; }
+.quickLinks a { min-height: 44px; line-height: 1.4; }
+.quickLinks a:focus-visible { outline: 2px solid #28556d; outline-offset: 3px; }
 .layout { display: block; margin-top: 28px; min-width: 0; }
 .contents { padding: 22px 24px; border-block: 1px solid #d8e0e5; background: #fff; }
 .contents h2, .related h2 { margin: 0 0 14px; font-size: 1.125rem; font-weight: 600; }
@@ -9,6 +12,10 @@
 .article { min-width: 0; margin-top: 32px; padding: 32px; background: #fff; border: 1px solid #d8e0e5; border-radius: 8px; }
 .stack { display: grid; gap: 32px; }
 .section { min-width: 0; }
+.section[id] { scroll-margin-top: 110px; }
+.mapLinks { display: grid; justify-items: start; margin: 0 0 16px; }
+.mapLinks a { display: inline-flex; align-items: center; min-height: 44px; color: #28556d; }
+.mapLinks a:focus-visible { outline: 2px solid #28556d; outline-offset: 3px; }
 .section + .section { border-top: 1px solid #e4e9ec; padding-top: 28px; }
 .heading { margin: 0 0 16px; font-size: 1.3rem; font-weight: 600; line-height: 1.5; color: #192d3a; word-break: keep-all; overflow-wrap: anywhere; scroll-margin-top: 110px; }
 .section p, .section li { margin: 0; font-size: 1rem; line-height: 1.9; white-space: normal; overflow: visible; text-overflow: clip; word-break: keep-all; overflow-wrap: anywhere; }

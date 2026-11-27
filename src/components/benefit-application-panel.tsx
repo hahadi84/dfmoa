@@ -5,6 +5,7 @@ import Link from "@/components/app-link";
 import { trackEvent } from "@/lib/analytics";
 import { dutyFreeBenefitStores } from "@/lib/duty-free-benefits";
 import { formatKrw, getStoreById } from "@/lib/site-data";
+import { getRoyalSaluteSearchLabel } from "@/lib/source-policy";
 import type { LiveOffer } from "@/lib/search-types";
 
 type BenefitApplicationPanelProps = {
@@ -179,7 +180,7 @@ export function BenefitApplicationPanel({ offers, productSlug = "search" }: Bene
                   store: offer.storeId, product_slug: productSlug, price_krw: offer.krwPrice,
                   source_status: offer.status, cta_type: "benefit_product_source",
                 })}>
-                  상품 원본
+                  {getRoyalSaluteSearchLabel(productSlug, offer.sourceUrl) ?? "상품 원본"}
                 </a>
                 <a href={getBenefitHomeUrl(offer)} target="_blank" rel="noreferrer" onClick={() => trackEvent("outbound_click_store", {
                   store: offer.storeId, product_slug: productSlug, price_krw: offer.krwPrice,

@@ -19,7 +19,20 @@ export function BusanCatalogLink({locale, children}: {locale: ShoppingLocale; ch
   return <Link href={`/${locale}#${anchor}`} onClick={()=>trackEvent("shopping_catalog_open", {language:locale, source_page:"gimhae_pickup"})}>{children}</Link>;
 }
 
-export function ShopActions({locale, shop, source = "shopping_guide"}: {locale: ShoppingLocale; shop: typeof shops[number]; source?: string}) {
+type ShopActionProps = { locale: ShoppingLocale; shop: typeof shops[number]; source?: string };
+
+type ShopOfficialLinkProps = Pick<ShopActionProps, "locale" | "source"> & {
+  shop: Pick<ShopActionProps["shop"], "id" | "url">;
+  label?: string;
+};
+
+export function ShopOfficialLink({locale, shop, source = "shopping_guide", label}: ShopOfficialLinkProps) {
+  return <a href={shop.url} onClick={() => trackEvent("shopping_branch_open", {
+    language: locale, store: shop.id, source_page: source,
+  })}>{label ?? shoppingCopy[locale].official}</a>;
+}
+
+export function ShopActions({locale, shop, source = "shopping_guide", showOfficialLink = true}: ShopActionProps & {showOfficialLink?: boolean}) {
   const t = shoppingCopy[locale];
   const [status, setStatus] = useState("");
   const address = shop.name + " " + shop.address;
@@ -36,7 +49,7 @@ export function ShopActions({locale, shop, source = "shopping_guide"}: {locale: 
   return <><nav className="intl-section-nav">
     <button type="button" onClick={copyAddress}>{t.copy}</button>
     <a href={"https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address)} onClick={()=>trackEvent("shopping_map_open", {...params, interaction:"external_map"})}>{t.map}</a>
-    <a href={shop.url} onClick={()=>trackEvent("shopping_branch_open", params)}>{t.official}</a>
+    {showOfficialLink && <ShopOfficialLink locale={locale} shop={shop} source={source}/>}
   </nav><span role="status">{status}</span></>;
 }
 
@@ -53,7 +66,7 @@ export function ShoppingActionLink({href, locale, source, kind, product, childre
   return <Link href={href} onClick={()=>trackEvent(events[kind], {language:locale, source_page:source, product_slug:product, interaction:kind === "official" ? "official_product_source" : undefined, content_market:source==="country_shopping"?{en:"US",ja:"JP",zh:"CN"}[locale]:undefined})}>{children}</Link>;
 }
 
-export function ShoppingNextSteps({locale}: {locale: ShoppingLocale}) {
+export function ShoppingNextSteps({locale, includePickup = true}: {locale: ShoppingLocale; includePickup?: boolean}) {
   const labels = {
     en:["Plan your shopping before ordering", "What to buy duty free in Korea", "Compare your checkout prices", "Check Incheon pickup conditions"],
     ja:["注文前に買い物を計画する", "韓国免税店で買うもの", "決済価格を比較する", "仁川空港の受取条件を確認"],
@@ -62,6 +75,6 @@ export function ShoppingNextSteps({locale}: {locale: ShoppingLocale}) {
   return <section className="intl-guide-section"><h2>{labels[0]}</h2><nav className="intl-section-nav">
     <Link href={`/${locale}/guide/korea-duty-free-shopping-list`}>{labels[1]}</Link>
     <ShoppingActionLink locale={locale} source="guide_next_steps" kind="compare" href={`/${locale}/compare`}>{labels[2]}</ShoppingActionLink>
-    <ShoppingActionLink locale={locale} source="guide_next_steps" kind="pickup" href={`/${locale}/guide/incheon-duty-free-pickup`}>{labels[3]}</ShoppingActionLink>
+    {includePickup && <ShoppingActionLink locale={locale} source="guide_next_steps" kind="pickup" href={`/${locale}/guide/incheon-duty-free-pickup`}>{labels[3]}</ShoppingActionLink>}
   </nav></section>;
 }

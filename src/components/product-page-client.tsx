@@ -18,6 +18,7 @@ import { SafeProductImage } from "@/components/product-image";
 import { SourceHealthPanel } from "@/components/source-health-panel";
 import { SourcePriceStatusPanel } from "@/components/source-price-panel";
 import { StoreStatusList } from "@/components/store-status-list";
+import { trackEvent } from "@/lib/analytics";
 import { buildDomesticPriceApiPath, buildSearchApiPath } from "@/lib/search-api-url";
 import {
   buildSourcePrices,
@@ -25,6 +26,7 @@ import {
   getAggregatePriceStatus,
   getPriceStatusLabel,
   getPriceStatusTone,
+  getRoyalSaluteSearchLabel,
 } from "@/lib/source-policy";
 import type { DomesticPriceResult } from "@/lib/domestic-price-types";
 import { formatKrw, formatUsd, getStoreById, type Product } from "@/lib/site-data";
@@ -170,6 +172,7 @@ export function ProductPageClient({
   const domesticError = domesticState.query === product.query ? domesticState.error : null;
   const isDomesticLoading = domesticState.query !== product.query;
   const bestStore = lowestOffer ? getStoreById(lowestOffer.storeId) : undefined;
+  const searchLabel = getRoyalSaluteSearchLabel(product.slug, lowestOffer?.sourceUrl);
   const sourcePrices = buildSourcePrices({ offers, statuses, query: product.query });
   const aggregateStatus = getAggregatePriceStatus(sourcePrices);
   const aggregateCopy = getAggregatePriceCopy(sourcePrices);
@@ -354,8 +357,22 @@ export function ProductPageClient({
           </div>
 
           {lowestOffer ? (
-            <a className="button" href={lowestOffer.sourceUrl} target="_blank" rel="noreferrer">
-              원본에서 확인
+            <a
+              className="button"
+              href={lowestOffer.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={searchLabel ? () => trackEvent("outbound_click_store", {
+                store: lowestOffer.storeId,
+                product_id: product.id,
+                product_slug: product.slug,
+                price_krw: lowestOffer.krwPrice,
+                source_status: lowestOffer.status,
+                page_type: "product",
+                cta_type: "official_search",
+              }) : undefined}
+            >
+              {searchLabel ?? "원본에서 확인"}
             </a>
           ) : null}
 

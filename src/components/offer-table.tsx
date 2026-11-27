@@ -10,6 +10,7 @@ import {
 } from "@/lib/site-data";
 import { SafeProductImage } from "@/components/product-image";
 import { trackEvent } from "@/lib/analytics";
+import { getRoyalSaluteSearchLabel } from "@/lib/source-policy";
 import type { LiveOffer } from "@/lib/search-types";
 
 type OfferTableProps = {
@@ -104,7 +105,7 @@ export function OfferTable({ offers, productSlug, showAd = false }: OfferTablePr
                       })
                     }
                   >
-                    원본에서 확인
+                    {getRoyalSaluteSearchLabel(productSlug, offer.sourceUrl) ?? "원본에서 확인"}
                   </a>
                 </td>
               </tr>

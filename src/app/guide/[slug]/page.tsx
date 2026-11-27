@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import Link from "@/components/app-link";
 import { notFound } from "next/navigation";
 import { buildBreadcrumbJsonLd, buildGuideArticleJsonLd, serializeJsonLd } from "@/lib/json-ld";
-import { buildSeoMetadata } from "@/lib/seo-metadata";
+import { buildSeoMetadata, DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { guides, getGuideBySlug } from "@/lib/site-data";
 import { JapanRefundVisual } from "@/components/japan-refund-visual";
 import { JapanPriceExamples } from "@/components/japan-price-examples";
+import { JapanShoppingLink } from "@/components/japan-shopping-link";
 import styles from "./guide.module.css";
 
 type GuidePageProps = {
@@ -53,14 +56,14 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
     };
   }
 
+  const imagePath = `/og/guide/${guide.slug}.png`;
   return buildSeoMetadata({
     title: guide.title,
     description: guide.excerpt,
     path: `/guide/${guide.slug}`,
-    image: {
-      path: `/og/guide/${guide.slug}.png`,
-      alt: guide.title,
-    },
+    image: existsSync(join(process.cwd(), "public", imagePath))
+      ? { path: imagePath, alt: guide.title }
+      : { path: DEFAULT_OG_IMAGE, alt: "면세모아 DFMOA" },
     type: "article",
   });
 }
@@ -98,9 +101,16 @@ export default async function GuidePage({ params }: GuidePageProps) {
         <h1 className={styles.title}>{guide.title}</h1>
         <p className={styles.intro}>{guide.excerpt}</p>
         {["yen-rate-duty-free-comparison", "japan-shopping-price-checklist"].includes(slug) ? (
-          <nav className="chip-row" aria-label="쇼핑 가격 비교 도구">
-            <Link className="ghost-button" href="/japan#yen-calculator-title">엔화 금액을 원화로 계산</Link>
+          <nav className={styles.quickLinks} aria-label="쇼핑 가격 비교 도구">
+            <JapanShoppingLink href="/japan#yen-calculator-title" kind="compare" source={slug === "japan-shopping-price-checklist" ? "japan_shopping_checklist" : slug}>엔화 금액을 원화로 계산</JapanShoppingLink>
             <Link className="ghost-button" href="/price-compare">같은 상품의 면세 가격 확인</Link>
+            {slug === "japan-shopping-price-checklist" && <Link className="ghost-button" href="#japan-liquid-baggage">기내·위탁 수하물 확인</Link>}
+          </nav>
+        ) : null}
+        {slug === "japan-tax-refund-2026" ? (
+          <nav className={styles.quickLinks} aria-label="환급 준비 도구">
+            <Link className="button" href="#refund-airports">나리타·하네다·간사이 세관 지도</Link>
+            <JapanShoppingLink href="/japan#yen-calculator-title" kind="compare" source={slug}>환급 예상액을 넣어 원화로 비교</JapanShoppingLink>
           </nav>
         ) : null}
         {guide.updatedAt ? <p className="section-copy">최종 확인: {guide.updatedAt} · <Link href="/japan">엔화 계산기와 일본 쇼핑 가이드</Link></p> : null}
@@ -111,15 +121,22 @@ export default async function GuidePage({ params }: GuidePageProps) {
         <div className={styles.layout}>
           <nav className={styles.contents} aria-label="이 글의 목차">
             <h2>이 글에서 확인할 내용</h2>
-            <ol>{guide.sections.map((section, index) => <li key={section.heading}><a href={`#guide-section-${index + 1}`}>{section.heading}</a></li>)}</ol>
+            <ol>{guide.sections.map((section, index) => <li key={section.heading}><Link href={`#${section.anchor ?? `guide-section-${index + 1}`}`}>{section.heading}</Link></li>)}</ol>
           </nav>
           <article className={styles.article}>
             <div className={styles.stack}>
               {guide.sections.map((section, index) => (
-                <section key={section.heading} className={styles.section}>
+                <section key={section.heading} id={section.anchor} className={styles.section}>
                   <h2 id={`guide-section-${index + 1}`} className={styles.heading}>
                     {section.heading}
                   </h2>
+                  {section.maps && <nav className={styles.mapLinks} aria-label="일본 세관 공식 지도">
+                    {section.maps.map(map => (
+                      <JapanShoppingLink key={map.url} href={map.url} kind="map" source={slug} airport={map.airport} terminal={map.terminal}>
+                        {map.label}
+                      </JapanShoppingLink>
+                    ))}
+                  </nav>}
                   {section.body.map((paragraph) => (
                     <p key={paragraph} className="section-copy">
                       {paragraph}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./airport-home.css";
 import Link from "@/components/app-link";
+import { PriceCompareProductLinks } from "@/components/price-compare-product-links";
 import { SavedProductsPanel } from "@/components/product-actions";
 import { SafeProductImage } from "@/components/product-image";
 import { SearchForm } from "@/components/search-form";
@@ -14,13 +15,19 @@ import {
 import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
 import { getLowestPriceSummaries, getLowestPriceSummary, hasSnapshotPrice } from "@/lib/snapshot-summaries";
 import { buildSeoMetadata, HOME_OG_IMAGE } from "@/lib/seo-metadata";
-import { categories, guides, products, stores } from "@/lib/site-data";
+import { categories, guides, products, stores, type Product } from "@/lib/site-data";
 import searchDemand from "../../data/search-demand.json";
 import { getSnapshotBestItem } from "@/lib/price-snapshot-view";
 
 const brandProofs = ["공개가 기준", "국내가 비교", "혜택 조건 분리"];
 // This page is statically exported; all freshness decisions use one build-time clock.
 const buildTimestamp = Date.now();
+
+function homePriceLinkLabel(product: Product) {
+  return product.slug === "royal-salute-21-700ml"
+    ? `${product.query} 면세 가격`
+    : product.displayName;
+}
 
 export const metadata: Metadata = {
   ...buildSeoMetadata({
@@ -61,6 +68,8 @@ export default function Home() {
     .sort((a, b) => (demandCounts.get(b.product.slug) ?? 0) - (demandCounts.get(a.product.slug) ?? 0) || a.product.slug.localeCompare(b.product.slug));
   const lowestPriceItems = (popularPriceItems.length ? popularPriceItems : recentPriceItems).slice(0, 6);
   const heroLowestPriceItems = lowestPriceItems.slice(0, 3);
+  const royalSalute = products.find((product) => product.slug === "royal-salute-21-700ml");
+  const showRoyalSaluteLink = royalSalute && !heroLowestPriceItems.some(({ product }) => product.id === royalSalute.id);
   const preferredSearchSlugs = [
     "creed-aventus-50ml",
     "sulwhasoo-first-care-serum-90ml",
@@ -119,6 +128,13 @@ export default function Home() {
             </p>
 
             <SearchForm />
+            {showRoyalSaluteLink && (
+              <PriceCompareProductLinks homePlacement="search">
+                <Link className="text-link home-product-shortcut" href={`/product/${royalSalute.slug}`}>
+                  {homePriceLinkLabel(royalSalute)}
+                </Link>
+              </PriceCompareProductLinks>
+            )}
 
             <div className="hero-chip-strip">
               <div className="brand-proof-strip" aria-label="DFMOA 비교 기준">
@@ -161,7 +177,7 @@ export default function Home() {
                     전체 보기
                   </Link>
                 </div>
-                <div className="hero-lowest-preview-list">
+                <PriceCompareProductLinks className="hero-lowest-preview-list" homePlacement="hero">
                   {heroLowestPriceItems.map((item) => (
                     <Link key={item.product.id} className="hero-lowest-preview-card" href={`/product/${item.product.slug}`}>
                       <SafeProductImage
@@ -170,14 +186,14 @@ export default function Home() {
                         categorySlug={item.product.categorySlug}
                       />
                       <span>
-                        <strong>{item.product.displayName}</strong>
+                        <strong>{homePriceLinkLabel(item.product)}</strong>
                         <small>
                           {item.storeName} {item.priceLabel} · {item.timestamp || latestSnapshotLabel}
                         </small>
                       </span>
                     </Link>
                   ))}
-                </div>
+                </PriceCompareProductLinks>
               </div>
             ) : null}
 
@@ -204,7 +220,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="today-lowest-grid">
+            <PriceCompareProductLinks className="today-lowest-grid" homePlacement="recent_prices">
               {lowestPriceItems.map((item) => (
                 <Link key={item.product.id} className="today-lowest-card" href={`/product/${item.product.slug}`}>
                   <div className="today-lowest-image">
@@ -215,7 +231,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="today-lowest-copy">
-                    <h3 className="card-title">{item.product.displayName}</h3>
+                    <h3 className="card-title">{homePriceLinkLabel(item.product)}</h3>
                     <p className="today-lowest-price">
                       {item.storeName} · {item.priceLabel}
                     </p>
@@ -223,7 +239,7 @@ export default function Home() {
                   </div>
                 </Link>
               ))}
-            </div>
+            </PriceCompareProductLinks>
           </div>
         </section>
       ) : null}

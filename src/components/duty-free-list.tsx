@@ -18,6 +18,7 @@ const copy = {
  }, ja: {
   title:"韓国で買うお土産10選｜日本へ持ち帰る買い物リスト",
   intro:"韓国旅行で買うものに迷ったら、コスメ好きへの贈り物、配るお土産、自分用に分けて選びましょう。明洞・釜山駅の買い物スポットから、免税店の価格比較と空港受取まで案内します。",
+  lead:"すぐに渡すお土産なら、明洞でシートマスクやお茶を探せます。免税店で注文するなら、市内の同じ商品と価格を比べ、出発空港で受け取れるか確かめましょう。",
   eligibility:"国際線での出国が決まったら、販売店で便名と旅券情報を登録します。オンライン注文は商品ごとの決済額と出国空港での受取可否を確認してください。",
   headings:["スキンケアとメイク","配りやすいお土産","アクセサリーと旅行用品","香水"],
   tips:["美容液は市内の同じ90ml単品と比較。クッションは色番とリフィルの有無を確かめましょう。","配る人数に合わせて紅参スティックの本数やチョコの個数を確認。原材料と到着国の食品持込条件も確認しましょう。","バッグは色と型番、ネックレスは仕上げ、ヘッドホンはモデル番号を照合してください。","できれば先に試香し、濃度と容量をそろえて比較しましょう。乗継があれば液体の持込条件も確認してください。"],
@@ -39,7 +40,7 @@ export function DutyFreeList({locale}:{locale:ShoppingLocale}) {
  const t=copy[locale];
  const items=getEnglishCatalog(groups.flat());
  return <article className="page-section"><div className="container intl-reading">
-  <h1 className="page-title">{t.title}</h1><p className="page-description">{t.intro}</p>
+  <h1 className="page-title">{t.title}</h1><p className="page-description">{"lead" in t ? t.lead : t.intro}</p>
   <CountryShoppingList locale={locale}/><details><summary>{ {en:"Additional duty-free products to compare",ja:"免税店の追加比較商品",zh:"更多免税商品价格比较"}[locale]}</summary>
   <p>{t.eligibility} <a href={internationalSources.eligibility}>{t.rules}</a></p>
   <nav className="intl-section-nav">{t.headings.map((heading,i)=><a key={heading} href={"#group-"+i}>{heading}</a>)}</nav>

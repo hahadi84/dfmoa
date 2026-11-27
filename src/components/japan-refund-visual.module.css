@@ -18,8 +18,6 @@
 .branches strong { font-weight: 600; }
 .figure figcaption { border-top: 1px solid #d2dde4; margin-top: 20px; padding-top: 14px; font-size: .88rem; color: #526271; }
 .root a { color: #214f72; text-decoration: underline; text-underline-offset: 3px; }
-.tools { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 16px 0 28px; }
-.tools a { padding: 10px 0; }
 .tableWrap { overflow-x: auto; margin: 28px 0; }
 .tableWrap table { width: 100%; border-collapse: collapse; min-width: 490px; }
 .tableWrap caption { text-align: left; font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; }

@@ -1,4 +1,3 @@
-import Link from '@/components/app-link';
 import styles from './japan-refund-visual.module.css';
 
 const officialGuide = 'https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html';
@@ -6,9 +5,9 @@ const officialGuide = 'https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00
 export function JapanRefundVisual() {
   return <section className={styles.root} aria-labelledby="refund-visual-title">
     <header className={styles.header}>
-      <p>2026년 11월 1일 이후 구매분 · 확인 2026.11.18</p>
+      <p>2026년 11월 1일부터 일본 시내 면세점에서 산 물품 기준</p>
       <h2 id="refund-visual-title">일본 면세 환급, 한눈에 보는 순서</h2>
-      <p>가장 중요한 순서: <strong>세관 확인을 끝낸 다음 수하물을 맡기세요.</strong></p>
+      <p><strong>면세품이 든 짐은 세관 확인을 마치고 부치세요.</strong></p>
     </header>
     <figure className={styles.figure}>
       <ol className={styles.steps}>
@@ -34,11 +33,6 @@ export function JapanRefundVisual() {
       </ol>
       <figcaption>DFMOA 제작 절차도. 실제 공항 지도나 단말기 화면이 아닙니다. 환급 시점은 매장 안내에 따르며, 키오스크 확인이 곧 현금 수령을 뜻하지 않습니다. <a href={officialGuide} target="_blank" rel="noreferrer">공식 근거: 일본 관광청</a></figcaption>
     </figure>
-
-    <div className={styles.tools}>
-      <a href="https://www.customs.go.jp/kaigairyoko/taxrefund/map.htm" target="_blank" rel="noreferrer">공식 지도: 공항·터미널별 확인 장소</a>
-      <Link href="/japan#yen-calculator-title">DFMOA: 환급 예상액을 넣어 가격 비교</Link>
-    </div>
 
     <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="일본 면세 변경 전후 비교표, 좁은 화면에서는 가로로 이동">
       <table>

@@ -15,7 +15,7 @@ const copy = {
     rows: [
       ["For a beauty lover", "Start with the Sulwhasoo 90ml comparison. Match the edition and bottle size; for makeup, confirm the shade and refill contents.", "Compare Sulwhasoo 90ml", shoppingPaths.serum],
       ["Small gifts for friends or colleagues", "Use the Myeongdong guide to find branches for sheet masks or individually wrapped tea bags. Check pack counts and ingredients before choosing.", "Find gifts and shops in Myeongdong", shoppingPaths.gifts],
-      ["A Busan-themed keepsake before your train", "Check the Busan Station guide for Dongbaek Store’s location outside the station and documented gift categories. Prices and current stock need confirmation.", "Find the Busan Station gift stop", shoppingPaths.station],
+      ["A Busan-themed keepsake before your train", "The operator has announced a December 2026 opening at the station plaza. Check whether you can shop there on your travel date before leaving the KTX building.", "Check the Busan Station shop’s opening notice", shoppingPaths.station],
     ],
     list: "10 Korea shopping ideas for US travelers",
     decision: "Choose a gift first, then compare the exact item and check how you can buy it. For something you need during your trip, use a city shop; departure pickup requires a qualifying flight and retailer confirmation.",
@@ -27,7 +27,7 @@ const copy = {
     rows: [
       ["コスメ好きへの贈り物", "雪花秀90mlの比較から。同じ世代・容量をそろえ、メイク用品は色番とリフィルの有無を確認しましょう。", "雪花秀90mlの価格を確認", shoppingPaths.serum],
       ["友人や職場に配るお土産", "明洞ガイドでシートマスクや個包装ティーバッグを探せる店舗を確認。入り数と原材料を見て選びましょう。", "明洞のお土産と店舗を探す", shoppingPaths.gifts],
-      ["KTXに乗る前に釜山らしい記念品", "釜山駅ガイドで、駅舎の外にある東栢商会の場所と取扱根拠のある品目を確認。価格・在庫は店舗への確認が必要です。", "釜山駅周辺の売り場を確認", shoppingPaths.station],
+      ["KTXに乗る前に釜山らしい記念品", "駅前広場の店舗は2026年12月開店予定と案内されています。KTXの駅舎を出る前に、旅行当日に立ち寄れるか確認しましょう。", "釜山駅の店舗の開店案内を確認", shoppingPaths.station],
     ],
     list: "日本へ持ち帰る買い物候補10選を見る",
     decision: "まず贈るものを決め、同一商品の価格と買い方を確認しましょう。旅行中に使うものは市内店舗へ。出国時の受取は対象便や販売店の条件確認が必要です。",
@@ -39,7 +39,7 @@ const copy = {
     rows: [
       ["送给喜欢美妆的人", "先看雪花秀90ml价格比较，核对代际和容量；选彩妆时确认色号及替换芯配置。", "比较雪花秀90ml", shoppingPaths.serum],
       ["分送朋友或同事的小礼物", "用明洞指南查找面膜、独立包装茶包的门店，按人数核对包装数量和配料。", "查找明洞伴手礼与门店", shoppingPaths.gifts],
-      ["坐KTX前挑一件釜山主题纪念品", "釜山站指南说明站外东柏商会的位置及有资料支持的商品类别；价格和当天库存需向门店确认。", "查看釜山站购物地点", shoppingPaths.station],
+      ["坐KTX前挑一件釜山主题纪念品", "运营方公告显示站前广场的门店计划于2026年12月开业。出站前先确认出行当天能否购物，再决定是否前往。", "查看釜山站门店开业公告", shoppingPaths.station],
     ],
     list: "查看回中国大陆前的10项购物候选",
     decision: "先决定送什么，再比较同款价格和购买方式。旅行途中就要用的商品可去市区门店；出境提货则需先确认航班与销售方条件。",

@@ -1,4 +1,4 @@
-import { stores, type StoreId } from "@/lib/site-data";
+import { getProductBySlug, stores, type StoreId } from "@/lib/site-data";
 import type {
   LiveOffer,
   PriceStatus,
@@ -102,6 +102,14 @@ export function buildOfficialSearchUrl(sourceId: StoreId | string, query: string
   }
 
   return source.searchUrlTemplate.replace("{query}", encodeURIComponent(query));
+}
+
+export function getRoyalSaluteSearchLabel(productSlug?: string, href?: string | null) {
+  if (productSlug !== "royal-salute-21-700ml" || !href) return;
+  const product = getProductBySlug(productSlug);
+  if (product && href === buildOfficialSearchUrl("shilla", product.query)) {
+    return `신라에서 ${product.volume} 검색`;
+  }
 }
 
 export function getSourceAccessLabel(policy: SourceAccessPolicy) {

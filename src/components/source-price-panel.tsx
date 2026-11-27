@@ -9,6 +9,7 @@ import {
   getComparableSourcePrices,
   getPriceStatusLabel,
   getPriceStatusTone,
+  getRoyalSaluteSearchLabel,
   getSourceAccessLabel,
   getSourceCtaLabel,
 } from "@/lib/source-policy";
@@ -86,6 +87,7 @@ export function SourcePriceStatusPanel({
           const store = getStoreById(sourcePrice.sourceId as StoreId);
           const sourceHref =
             sourcePrice.sourceUrl || sourcePrice.searchUrl || buildOfficialSearchUrl(sourcePrice.sourceId, query);
+          const searchLabel = getRoyalSaluteSearchLabel(product?.slug, sourceHref);
           const timestamp = formatDisplayTimestamp(sourcePrice.fetchedAt);
           const hasPrice = typeof sourcePrice.price === "number";
           const source = dutyFreeSources.find((item) => item.id === sourcePrice.sourceId);
@@ -127,7 +129,7 @@ export function SourcePriceStatusPanel({
                   href={sourceHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`${sourcePrice.sourceName} 원본에서 확인`}
+                  aria-label={searchLabel ?? `${sourcePrice.sourceName} 원본에서 확인`}
                   onClick={() =>
                     trackEvent("outbound_click_store", {
                       store: sourcePrice.sourceId,
@@ -136,11 +138,11 @@ export function SourcePriceStatusPanel({
                       price_krw: sourcePrice.price ?? 0,
                       source_status: sourcePrice.status,
                       page_type: "product",
-                      cta_type: sourcePrice.sourceUrl ? "original_source" : "official_search",
+                      cta_type: sourcePrice.sourceUrl && !searchLabel ? "original_source" : "official_search",
                     })
                   }
                 >
-                  {getSourceCtaLabel(sourcePrice)}
+                  {searchLabel ?? getSourceCtaLabel(sourcePrice)}
                 </a>
               ) : null}
             </article>

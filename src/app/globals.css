@@ -5535,21 +5535,34 @@ textarea:focus,
 }
 .japan-page .page-title { margin-top: 24px; }
 .japan-page .page-description, .japan-page .section-copy, .deal-rule-card .section-copy { white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; }
-.yen-reference { margin: 24px 0; padding: 20px 0; border-top: 1px solid #d8dee7; border-bottom: 1px solid #d8dee7; }
-.yen-reference strong { font-size: 1.6rem; font-weight: 600; }
-.yen-reference p { margin: 8px 0; line-height: 1.7; }
+.yen-quick-heading { margin: 0 0 8px; font-size: 1.15rem; scroll-margin-top: 6rem; }
+.yen-calculator #quick-yen { display: block; width: 100%; max-width: 24rem; min-height: 48px; padding: 8px 12px; font-size: max(1rem, 16px); }
+#quick-yen-result { margin: 8px 0; font-variant-numeric: tabular-nums; word-break: keep-all; overflow-wrap: anywhere; }
+.yen-reference { margin: 8px 0; border-block: 1px solid #d8dee7; }
+.yen-reference summary { min-height: 44px; padding-block: 10px; cursor: pointer; }
+.yen-reference p { margin: 0 0 12px; line-height: 1.7; }
 .yen-calculator { padding: 24px; border: 1px solid #d8dee7; border-radius: 12px; background: #fff; }
 .yen-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 24px 0; }
 .yen-fields label { display: grid; gap: 8px; font-size: 0.95rem; }
 .yen-fields input { width: 100%; min-width: 0; padding: 12px; border: 1px solid #b9c4d3; border-radius: 8px; font: inherit; }
 .yen-result { padding: 16px; background: #f3f6fa; border-radius: 8px; line-height: 1.8; }
 .yen-result p { margin: 4px 0; }
+.yen-example { margin-top: 24px; padding-top: 20px; border-top: 1px solid #d8dee7; word-break: keep-all; overflow-wrap: anywhere; }
+.yen-example h3, .yen-comparison-heading, #quick-yen { scroll-margin-top: 6rem; }
+.yen-example h3 { text-wrap: balance; }
+.yen-example p { margin: 12px 0; line-height: 1.7; }
+.yen-example a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: .18em; }
 .japan-next { margin: 36px 0; }
 .japan-guide-list { display: grid; gap: 0; margin-top: 16px; }
 .japan-guide-list > a { display: block; padding: 20px 0; border-bottom: 1px solid #d8dee7; }
 .japan-guide-list h3 { font-size: 1.15rem; font-weight: 600; margin: 0 0 8px; }
 .japan-guide-list p { margin: 0 0 8px; line-height: 1.7; }
-@media (max-width: 640px) { .yen-fields { grid-template-columns: 1fr; } .yen-calculator { padding: 18px; } }
+@media (max-width: 640px) {
+  .japan-page.page-section.is-tight { padding-top: var(--space-4); }
+  .japan-page .page-title { margin-top: var(--space-3); }
+  .yen-fields { grid-template-columns: 1fr; }
+  .yen-calculator { padding: 18px; }
+}
 
 /* Benefit conditions must remain readable instead of inheriting one-line cards. */
 .benefit-coverage .section-copy,

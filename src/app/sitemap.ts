@@ -1,7 +1,8 @@
 import { shoppingPaths } from "@/lib/international";
+import { jaGimhaePickup, stationStatusCheckedAt } from "@/lib/busan-guides";
 import type { MetadataRoute } from "next";
 import { countryGuides, COUNTRY_GUIDANCE_CHECKED } from "@/lib/english-country-guides";
-import { internationalProductIds, INTERNATIONAL_UPDATED } from "@/lib/international";
+import { EN_INCHEON_PICKUP_CHECKED, internationalProductIds, INTERNATIONAL_UPDATED } from "@/lib/international";
 import { benefitReports } from "@/lib/benefit-report-generator";
 import { airportGuides, brandLandings, comparePages, monthlyDealReports } from "@/lib/seo-content";
 import { SITE_OPERATOR } from "@/lib/site-operator";
@@ -61,9 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides.filter(guide => guide.updatedAt).map(guide => [`/guide/${guide.slug}`, guide.updatedAt!] as [string, string]),
     ...benefitReports.map(report => [`/benefit-reports/${report.slug}`, report.updatedAt] as [string, string]),
     ...monthlyDealReports.map(report => [`/deals/${report.slug}`, report.updatedAt] as [string, string]),
-    ['/japan', yenRate.date > '2026-11-23' ? yenRate.date : '2026-11-23'],
-    ['/guide/japan-shopping-price-checklist', '2026-11-23'],
-    ['/guide/yen-rate-duty-free-comparison', '2026-11-18'],
+    ['/japan', yenRate.date > '2026-11-26' ? yenRate.date : '2026-11-26'],
     ['/deals', monthlyDealReports[0].updatedAt],
     ['/benefit-reports', benefitReports[0].updatedAt],
   ]);
@@ -102,10 +101,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     modified.set(`/${locale}`, latest([updated, modified.get(`/${locale}`) ?? ""]));
     for (const guide of Object.values(shoppingPaths)) modified.set(`/${locale}${guide}`, updated);
     const shoppingRevision = "2026-11-06T00:00:00+09:00";
-    modified.set(`/${locale}`, latest([shoppingRevision, modified.get(`/${locale}`) ?? ""]));
-    modified.set(`/${locale}${shoppingPaths.list}`, "2026-11-23T09:21:00+09:00");
-    for (const route of [shoppingPaths.gifts, shoppingPaths.station, ...(locale === "en" ? ["/guide/incheon-duty-free-pickup"] : [])]) modified.set(`/${locale}${route}`, shoppingRevision);
+    const stationRevision = `${stationStatusCheckedAt}T00:00:00+09:00`;
+    modified.set(`/${locale}`, latest([stationRevision, modified.get(`/${locale}`) ?? ""]));
+    for (const route of [shoppingPaths.list, shoppingPaths.station]) modified.set(`/${locale}${route}`, stationRevision);
+    modified.set(`/${locale}${shoppingPaths.gifts}`, shoppingRevision);
   }
+  modified.set("/en/guide/incheon-duty-free-pickup", `${EN_INCHEON_PICKUP_CHECKED}T00:00:00+09:00`);
+  modified.set(`/ja${shoppingPaths.airport}`, `${jaGimhaePickup.checkedAt}T00:00:00+09:00`);
   return [...new Set([
     ...preservedPages.map((page) => page.path),
     ...staticPages,

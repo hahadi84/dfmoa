@@ -18,14 +18,17 @@ export default function JapanPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd([buildBreadcrumbJsonLd([{ name: '홈', path: '/' }, { name: '일본 여행 쇼핑', path: '/japan' }])]) }} />
     <div className="breadcrumb"><Link href="/">홈</Link><span>/</span><span>일본 여행 쇼핑</span></div>
     <h1 className="page-title">엔화 환율 계산기: 일본 쇼핑 금액을 원화로</h1>
-    <p className="page-description">같은 상품의 일본 엔화 가격과 한국 면세점 원화 가격을 입력해 예상 비용을 비교하세요. 엔화만 입력하면 원화 환산액이 바로 표시됩니다. 카드 수수료와 확인된 예상 환급액을 입력하면 한국 면세점의 최종 결제액과 비교할 수 있습니다. 환급액이 불확실하면 0엔으로 두세요.</p>
-    <div className="chip-row">
-      <a className="button" href="#yen-calculator-title">엔화 가격 입력하기</a>
-      <Link className="button is-secondary" href="/price-compare">한국 면세가 찾기</Link>
-    </div>
-    <div className="yen-reference"><strong>100엔 = {(rate.rate * 100).toLocaleString('ko-KR', { maximumFractionDigits: 2 })}원</strong><p>{rate.date} 기준 · ECB 참고 환율 · Frankfurter 제공</p><p>매일 갱신을 시도하며 휴일·제공 지연 시 마지막 기준일을 표시합니다. 실시간 시세나 은행·카드사의 실제 적용 환율이 아닙니다.</p><a href="https://frankfurter.dev/" target="_blank" rel="noreferrer">환율 출처</a></div>
-    <YenComparisonCalculator initialRate={rate.rate * 100} />
-    <section className="japan-next"><h2 className="section-title">비교할 상품과 가격부터 확인하기</h2><p className="section-copy">디올 소바쥬 100ml·SK-II 230ml의 일본 온라인 표시가와 히비키 700ml의 제조사 권장가격을 구분했습니다. 2026년 11월 18일의 과거 관찰 기록이며 현재가는 미확인입니다. 소바쥬는 당시 롯데면세점 100ml 공개 정상가와 비교하고, 나머지는 규격과 가격 종류 차이로 판단을 보류합니다.</p><JapanShoppingLink href="/guide/japan-shopping-price-checklist#japan-price-examples-title" kind="product" source="japan">대표 상품 3개의 가격·규격 확인</JapanShoppingLink></section>
+    <p className="page-description"><span lang="ja">税込</span>(세금 포함) 금액을 입력하세요. 환산액은 카드 수수료·환급 적용 전 금액입니다. <Link href="/guide/yen-rate-duty-free-comparison#japan-price-tag">가격표 읽는 예시</Link></p>
+    <YenComparisonCalculator initialRate={rate.rate * 100} rateDate={rate.date} />
+    <section className="japan-next">
+      <h2 className="section-title">쇼핑 전에 가격과 귀국편 수하물 확인하기</h2>
+      <p className="section-copy">히비키 재패니즈 하모니 700ml는 11월 26일 일본 배송몰과 부산면세점이 표시한 한 병 가격을 대조했습니다. 디올 향수와 SK-II 에센스는 11월 18일에 확인한 가격과 규격을 볼 수 있습니다.</p>
+      <div className="chip-row">
+        <JapanShoppingLink href="/guide/japan-shopping-price-checklist#example-p6" kind="product" source="japan" product="hibiki-harmony-700ml">히비키 700ml의 일본·한국 표시가 확인</JapanShoppingLink>
+        <JapanShoppingLink href="/guide/japan-shopping-price-checklist#japan-price-examples-title" kind="product" source="japan">대표 상품 3개의 가격·규격 확인</JapanShoppingLink>
+        <Link className="ghost-button" href="/guide/japan-shopping-price-checklist#japan-liquid-baggage">향수·화장품·위스키 짐 싸는 법</Link>
+      </div>
+    </section>
     <section className="japan-next"><h2 className="section-title">같은 상품의 면세 가격 확인</h2><p className="section-copy">모델·용량·수량을 맞춘 뒤 쿠폰 적용 후 최종가를 계산기에 입력하세요.</p><div className="chip-row"><Link className="button" href="/price-compare">면세 가격 비교하기</Link><Link className="button is-secondary" href="/category/perfume">향수</Link><Link className="button is-secondary" href="/category/beauty">화장품</Link><Link className="button is-secondary" href="/category/liquor">위스키·주류</Link></div></section>
     <section className="japan-next"><h2 className="section-title">일본 여행 전 읽어볼 가이드</h2><div className="japan-guide-list">{japanGuides.map(guide => <Link href={`/guide/${guide.slug}`} key={guide.slug}><h3>{guide.title}</h3><p>{guide.excerpt}</p><small>확인일 {guide.updatedAt}</small></Link>)}</div></section>
     <p className="section-copy"><Link href="/deals">이번 달 면세점 혜택</Link> · <Link href="/benefit-reports">주간 혜택 리포트</Link></p>

@@ -47,3 +47,11 @@
  .airport-home .weekly-benefit-banner { grid-template-columns: 1fr; gap: 8px; }
  .airport-home .hero-chip-strip { align-items: flex-start; }
 }
+
+@media (max-width: 600px) {
+  .airport-home .home-product-shortcut {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
