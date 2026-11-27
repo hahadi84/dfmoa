@@ -11,7 +11,7 @@
       "status": "error",
       "source_status": "error",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-11-26T13:08:45+09:00",
+      "fetchedAt": "2026-11-27T13:08:08+09:00",
       "matched_via": "alias_nospace",
       "attempted_queries": [
         "마우이짐 피아히 B202",
@@ -23,14 +23,14 @@
         "mauijimb202"
       ],
       "items": [],
-      "error": "HTTP 403"
+      "error": "product_match_failed"
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-11-26T04:08:45.029Z",
+      "fetchedAt": "2026-11-27T04:08:09.668Z",
       "matched_via": "original",
       "attempted_queries": [
         "마우이짐 피아히 B202",
@@ -47,7 +47,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A7%88%EC%9A%B0%EC%9D%B4%EC%A7%90%20%ED%94%BC%EC%95%84%ED%9E%88%20B202",
-      "fetchedAt": "2026-11-26T04:08:45.029Z",
+      "fetchedAt": "2026-11-27T04:08:09.668Z",
       "matched_via": "original",
       "attempted_queries": [
         "마우이짐 피아히 B202",

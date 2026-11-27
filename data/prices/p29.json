@@ -3,30 +3,44 @@
   "productSlug": "royal-salute-21-700ml",
   "categorySlug": "liquor",
   "query": "로얄살루트 21년 700ml",
-  "fetchedAt": null,
-  "updatedAtLabel": null,
+  "fetchedAt": "2026-11-27T13:00:45+09:00",
+  "updatedAtLabel": "2026-11-27 13:00 기준",
   "sources": {
     "shilla": {
       "store": "shilla",
-      "status": "error",
-      "source_status": "error",
+      "status": "ok",
+      "source_status": "ok",
       "searchUrl": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-26T13:01:31+09:00",
-      "matched_via": "alias_nospace",
+      "fetchedAt": "2026-11-27T13:00:45+09:00",
+      "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",
         "로얄살루트21년700ml",
         "로얄살루트 21년"
       ],
-      "items": [],
-      "error": "HTTP 403"
+      "items": [
+        {
+          "id": "shilla-110231000020",
+          "title": "로얄살루트 21년 700ml",
+          "brand": "로얄살루트",
+          "priceKrw": 149012,
+          "priceUsd": 110.88,
+          "regularUsdPrice": 176,
+          "discountRate": 37,
+          "url": "https://www.shilladfs.com/estore/kr/ko/search?text=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
+          "imageUrl": "https://image2.shilladfs.com/files/product3/2026/08/01/110231000020_20260801_11171311_12_110231000020_1.JPG",
+          "matchScore": 111,
+          "fetchedAt": "2026-11-27T13:00:45+09:00"
+        }
+      ],
+      "error": null
     },
     "shinsegae": {
       "store": "shinsegae",
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://www.ssgdfs.com/kr/search/resultsTotal?query=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-26T04:01:31.997Z",
+      "fetchedAt": "2026-11-27T04:00:47.683Z",
       "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",
@@ -41,7 +55,7 @@
       "status": "disabled_by_policy",
       "source_status": "disabled_by_policy",
       "searchUrl": "https://kor.lottedfs.com/kr/search?comSearchWord=%EB%A1%9C%EC%96%84%EC%82%B4%EB%A3%A8%ED%8A%B8%2021%EB%85%84%20700ml",
-      "fetchedAt": "2026-11-26T04:01:31.997Z",
+      "fetchedAt": "2026-11-27T04:00:47.683Z",
       "matched_via": "original",
       "attempted_queries": [
         "로얄살루트 21년 700ml",

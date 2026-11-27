@@ -1,11 +1,15 @@
 {
-  "generatedAt": "2026-11-26T04:00:21.535Z",
+  "generatedAt": "2026-11-27T03:59:23.803Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
-      "count": 6
+      "count": 5
+    },
+    {
+      "productSlug": "sk2-pitera-essence-230ml",
+      "count": 4
     },
     {
       "productSlug": "tom-ford-oud-wood-50ml",
@@ -13,6 +17,10 @@
     },
     {
       "productSlug": "ballantines-21-700ml",
+      "count": 3
+    },
+    {
+      "productSlug": "bleu-de-chanel-edp-100ml",
       "count": 3
     },
     {
@@ -24,19 +32,11 @@
       "count": 3
     },
     {
-      "productSlug": "sk2-pitera-essence-230ml",
-      "count": 3
-    },
-    {
       "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 3
     },
     {
       "productSlug": "estee-lauder-anr-100ml",
-      "count": 2
-    },
-    {
-      "productSlug": "gentle-monster-dear-01",
       "count": 2
     },
     {
@@ -46,14 +46,6 @@
     {
       "productSlug": "royal-salute-21-700ml",
       "count": 2
-    },
-    {
-      "productSlug": "apple-airpods-pro-2",
-      "count": 1
-    },
-    {
-      "productSlug": "bleu-de-chanel-edp-100ml",
-      "count": 1
     },
     {
       "productSlug": "braun-series-9-pro",
@@ -69,6 +61,10 @@
     },
     {
       "productSlug": "don-julio-1942-750ml",
+      "count": 1
+    },
+    {
+      "productSlug": "gentle-monster-dear-01",
       "count": 1
     },
     {
