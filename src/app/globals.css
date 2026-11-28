@@ -5587,3 +5587,31 @@ textarea:focus,
 
 .mobile-purchase-actions { display: none; }
 @media(max-width: 600px) { .country-purchase-table table { min-width: 0; } .country-purchase-table thead { position:absolute; clip-path:inset(50%); } .country-purchase-table tr,.country-purchase-table td,.country-purchase-table th { display:block; } .mobile-purchase-actions { display:flex; flex-wrap:wrap; gap:1rem; } .mobile-purchase-actions a { padding-block:.65rem; } }
+
+.fragrance-heading {
+  margin: 0 0 6px;
+  color: var(--color-text);
+  font-size: clamp(1.6rem, 2.6vw, 2.5rem);
+  font-weight: 650;
+  line-height: 1.22;
+  word-break: keep-all;
+}
+.fragrance-comparison { margin-top: 20px; }
+.fragrance-spec, .fragrance-actions small, .fragrance-price span { color: var(--color-text-secondary); }
+.fragrance-spec { margin: 4px 0 16px; }
+.fragrance-stores { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-block: 1px solid #d6dfe6; }
+.fragrance-store { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 18px 16px 10px 0; }
+.fragrance-store + .fragrance-store { border-inline-start: 1px solid #d6dfe6; padding-inline: 18px 0; }
+.fragrance-store h3 { margin: 0; font-size: 1rem; }
+.fragrance-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.fragrance-price strong { font-size: 1.65rem; line-height: 1.15; }
+.fragrance-price span, .fragrance-store p { font-size: .94rem; }
+.fragrance-store p { margin: 0; line-height: 1.55; word-break: keep-all; }
+.fragrance-official { display: inline-flex; gap: 6px; align-items: center; min-height: 44px; margin-top: auto; text-decoration: underline; text-underline-offset: 4px; }
+.fragrance-actions { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; padding-top: 16px; }
+@media (max-width: 640px) {
+  .fragrance-stores { grid-template-columns: 1fr; }
+  .fragrance-store, .fragrance-store + .fragrance-store { padding: 14px 0 6px; }
+  .fragrance-store + .fragrance-store { border-inline-start: 0; border-top: 1px solid #d6dfe6; }
+  .fragrance-actions .button { width: 100%; }
+}

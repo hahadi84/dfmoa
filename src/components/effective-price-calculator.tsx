@@ -76,13 +76,16 @@ export function EffectivePriceCalculator({
     pricedSources.find((sourcePrice) => sourcePrice.sourceId === preferences.sourceId) ?? pricedSources[0];
   const selectedStore = selectedSource ? getStoreById(selectedSource.sourceId as StoreId) : undefined;
   const sourceRules = selectedSource ? getBenefitRulesForSource(selectedSource.sourceId) : [];
+  const excludesCouponAndPoints = product.slug === "bleu-de-chanel-edp-100ml" && selectedSource?.sourceId === "lotte";
+  const usesExchangeRate = selectedSource?.currency === "USD";
   const estimate =
     selectedSource && typeof selectedSource.price === "number"
       ? calculateEffectivePriceEstimate({
           productId: product.slug,
           sourceId: selectedSource.sourceId,
           basePrice: selectedSource.price,
-          preferences,
+          currency: selectedSource.currency,
+          preferences: excludesCouponAndPoints ? { ...preferences, couponAmount: 0, pointsAmount: 0 } : preferences,
           ruleConfidence: sourceRules.some((rule) => rule.confidence === "low") ? "low" : "medium",
         })
       : null;
@@ -125,7 +128,7 @@ export function EffectivePriceCalculator({
 
   if (!pricedSources.length) {
     return (
-      <article className="surface-card effective-price-panel">
+      <article id="effective-price" className="surface-card effective-price-panel">
         <div>
           <span className="eyebrow">Estimate</span>
           <h2 className="card-title">예상 실결제가 계산기</h2>
@@ -138,7 +141,7 @@ export function EffectivePriceCalculator({
   }
 
   return (
-    <article className="surface-card effective-price-panel">
+    <article id="effective-price" className="surface-card effective-price-panel">
       <div className="section-head">
         <div>
           <span className="eyebrow">Estimate</span>
@@ -166,6 +169,7 @@ export function EffectivePriceCalculator({
             </select>
           </label>
 
+          {excludesCouponAndPoints && <p className="section-copy">롯데 샤넬 상품은 쿠폰·적립금 사용이 제외됩니다. 카드·회원 혜택은 결제 단계에서 적용이 확인된 경우에만 입력하세요.</p>}
           <label className="estimate-field">
             <span>회원 등급 예상 할인</span>
             <select
@@ -191,7 +195,8 @@ export function EffectivePriceCalculator({
                 if (event.key === "Enter") event.currentTarget.blur();
               }}
               inputMode="numeric"
-              value={preferences.couponAmount}
+              disabled={excludesCouponAndPoints}
+              value={excludesCouponAndPoints ? 0 : preferences.couponAmount}
               onChange={(event) => updatePreference({ couponAmount: toNumber(event.target.value) })}
             />
           </label>
@@ -220,12 +225,13 @@ export function EffectivePriceCalculator({
                 if (event.key === "Enter") event.currentTarget.blur();
               }}
               inputMode="numeric"
-              value={preferences.pointsAmount}
+              disabled={excludesCouponAndPoints}
+              value={excludesCouponAndPoints ? 0 : preferences.pointsAmount}
               onChange={(event) => updatePreference({ pointsAmount: toNumber(event.target.value) })}
             />
           </label>
 
-          <label className="estimate-field">
+          {usesExchangeRate && <label className="estimate-field">
             <span>참고 환율</span>
             <input
               onFocus={(event) => { inputStart.current = event.currentTarget.value; }}
@@ -239,11 +245,12 @@ export function EffectivePriceCalculator({
               value={preferences.exchangeRate}
               onChange={(event) => updatePreference({ exchangeRate: toNumber(event.target.value) || exchangeRateSnapshot.rate })}
             />
-          </label>
+          </label>}
         </div>
 
         <div className="effective-result-card">
           <span className="chip is-soft">{selectedStore?.name ?? selectedSource?.sourceName}</span>
+          {selectedSource?.status === "manual_only" && <span>{selectedSource.message}</span>}
           <p className="metric-title">내 조건 기준 예상가</p>
           <strong>{estimate ? formatKrw(estimate.estimatedFinalPrice) : "계산 대기"}</strong>
           <span>
@@ -271,7 +278,7 @@ export function EffectivePriceCalculator({
             </div>
             <div>
               <strong>제외/확인 필요</strong>
-              {sourceRules.length ? (
+              {excludesCouponAndPoints ? <span>롯데 샤넬은 쿠폰·적립금 및 구매금액별 사은행사 제외</span> : sourceRules.length ? (
                 sourceRules.map((rule) => (
                   <a key={rule.id} href={rule.sourceUrl} target="_blank" rel="noreferrer">
                     {rule.title}
@@ -281,13 +288,13 @@ export function EffectivePriceCalculator({
                 <span>공식 혜택 페이지에서 추가 확인</span>
               )}
             </div>
-            <div>
+            {usesExchangeRate && <div>
               <strong>환율 기준</strong>
               <span>
                 {exchangeRateSnapshot.sourceName} · {preferences.exchangeRate.toLocaleString("ko-KR")}원/USD
               </span>
               <span>기준일 {exchangeRateSnapshot.validForDate}</span>
-            </div>
+            </div>}
           </div>
           <p className="effective-warning">
             최종 결제가는 면세점 원본 결제 단계에서 확인해 주세요. 카드 실적, 월 한도, 쿠폰 중복 여부,

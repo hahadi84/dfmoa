@@ -173,6 +173,14 @@ export function ProductPageClient({
   const bestStore = lowestOffer ? getStoreById(lowestOffer.storeId) : undefined;
   const searchLabel = getRoyalSaluteSearchLabel(product.slug, lowestOffer?.sourceUrl);
   const sourcePrices = buildSourcePrices({ offers, statuses, query: product.query });
+  const isChanelEdp = product.slug === "bleu-de-chanel-edp-100ml";
+  const calculatorPrices = isChanelEdp ? sourcePrices.map((source) =>
+    source.sourceId === "lotte" && (source.price == null || source.status === "low_confidence")
+      ? { ...source, price: 205433, currency: "KRW" as const, fetchedAt: "2026-11-28T23:21:00+09:00",
+          message: "2026년 11월 28일 23:21(KST) 공식 상품 페이지에서 확인한 판매가 기준",
+          status: "manual_only" as const }
+      : source
+  ) : sourcePrices;
   const aggregateStatus = getAggregatePriceStatus(sourcePrices);
   const aggregateCopy = getAggregatePriceCopy(sourcePrices);
   const showCollectionUnavailableNotice = !isLoading && !offers.length;
@@ -197,33 +205,35 @@ export function ProductPageClient({
     <div className="detail-grid">
       <RecentProductsTracker product={product} />
       <div>
-        <span className="eyebrow" style={{ marginTop: 20 }}>
-          Product detail
-        </span>
-        <h1 className="page-title">{product.query}{product.slug === "estee-lauder-anr-100ml" ? " 면세점 가격 비교" : " 면세 가격"}</h1>
+        {!isChanelEdp && <span className="eyebrow" style={{ marginTop: 20 }}>Product detail</span>}
+        <h1 className={isChanelEdp ? "fragrance-heading" : "page-title"}>{product.query}{product.slug === "estee-lauder-anr-100ml" ? " 면세점 가격 비교" : " 면세 가격"}</h1>
         <p className="section-copy">{product.displayName}</p>
-        <p className="page-description">{product.summary}</p>
-        {product.slug === "bleu-de-chanel-edp-100ml" && (
-          <section className="surface-card" aria-labelledby="chanel-observed-prices">
+        {!isChanelEdp && <p className="page-description">{product.summary}</p>}
+        {isChanelEdp && (
+          <section className="surface-card fragrance-comparison" aria-labelledby="chanel-observed-prices">
             <h2 className="card-title" id="chanel-observed-prices">롯데·신라 면세 가격과 할인 조건</h2>
-            <p>블루 드 샤넬 오 드 빠르펭(EDP) 100ml 스프레이 한 병의 공개가는 두 곳 모두
-              <strong> US$153 (205,433원)</strong>이었습니다.</p>
-            <p className="section-copy">한국어 공식 상품 페이지에서 품번 107360과 수량 1개를 대조했습니다.
-              확인 시각은 2026년 11월 28일 23:21(KST)입니다.</p>
+            <p className="fragrance-spec">100ml 스프레이 1병 · 품번 107360</p>
+            <div className="fragrance-stores">
             {[
               { store: "lotte", name: "롯데", label: "판매가", note: "샤넬 제품에는 쿠폰 할인과 적립금이 적용되지 않으며 구매금액별 사은행사에서도 제외됩니다.", url: "https://kor.lottedfs.com/kr/product/productDetail?prdNo=10002012173" },
               { store: "shilla", name: "신라", label: "정상가", note: "상품 상세에는 정상가만 표시됐습니다. 회원·쿠폰 추가 할인 여부는 주문 시 확인하세요.", url: "https://m.shilladfs.com/estore/kr/ko/p/370545" },
             ].map(({ store, name, label, note, url }) => (
-              <div key={store}>
-                <h3>{name}면세점 {label} · US$153</h3>
+              <div key={store} className="fragrance-store">
+                <h3>{name}면세점</h3>
+                <div className="fragrance-price"><strong>US$153</strong><span>{label} · 205,433원</span></div>
                 <p>{note}</p>
-                <a className="button is-secondary" href={url} target="_blank" rel="noreferrer"
+                <a className="fragrance-official" href={url} target="_blank" rel="noreferrer"
                   onClick={() => trackEvent("outbound_click_store", {
                     store, product_id: product.id, product_slug: product.slug, price_krw: 205433,
                     source_status: "editorial_observation", page_type: "product", cta_type: "official_product",
-                  })}>{name}에서 EDP 100ml 확인</a>
+                  })}>{name} 공식몰에서 확인 <span aria-hidden="true">↗</span></a>
               </div>
             ))}
+            </div>
+            <footer className="fragrance-actions">
+              <small>한국어 공식몰 확인 · <time dateTime="2026-11-28T23:21:00+09:00">2026.11.28 23:21 KST</time></small>
+              {!isLoading && !error && <a className="button is-primary" href="#effective-price">예상 결제액 계산</a>}
+            </footer>
           </section>
         )}
         {product.slug === "estee-lauder-anr-100ml" ? (
@@ -298,7 +308,7 @@ export function ProductPageClient({
         )}
 
         {!isLoading && !error ? (
-          <EffectivePriceCalculator product={product} sourcePrices={sourcePrices} />
+          <EffectivePriceCalculator product={product} sourcePrices={calculatorPrices} />
         ) : null}
 
 
