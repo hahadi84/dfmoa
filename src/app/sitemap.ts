@@ -10,6 +10,7 @@ import { categories, guides, products } from "@/lib/site-data";
 import { preservedPages } from "@/lib/preserved-pages";
 import { readPriceSnapshotsByProductId } from "@/lib/static-price-snapshots";
 import yenRate from '../../data/content/yen-rate.json';
+import { carePath, locales as careLocales, topics as careTopics } from "@/lib/japan-care";
 
 const SITE_URL = SITE_OPERATOR.serviceUrl;
 // Actual date of the title/content revision; never substitute the build clock.
@@ -38,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/brand",
     "/category",
     "/deals",
-    "/japan",
+    "/japan", ...careLocales.flatMap(locale => [carePath(locale), ...careTopics.map(topic => carePath(locale,topic.slug))]),
     "/faq",
     "/privacy",
     "/terms",
@@ -62,7 +63,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...guides.filter(guide => guide.updatedAt).map(guide => [`/guide/${guide.slug}`, guide.updatedAt!] as [string, string]),
     ...benefitReports.map(report => [`/benefit-reports/${report.slug}`, report.updatedAt] as [string, string]),
     ...monthlyDealReports.map(report => [`/deals/${report.slug}`, report.updatedAt] as [string, string]),
-    ['/japan', yenRate.date > '2026-11-26' ? yenRate.date : '2026-11-26'],
+    ...staticPages.filter(path => path.startsWith("/japan/clinics")).map(path => [path,"2026-11-28"] as [string,string]),
+    ['/japan', yenRate.date > '2026-11-28' ? yenRate.date : '2026-11-28'],
     ['/deals', monthlyDealReports[0].updatedAt],
     ['/benefit-reports', benefitReports[0].updatedAt],
   ]);

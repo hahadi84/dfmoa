@@ -115,6 +115,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
         ) : null}
         {guide.updatedAt ? <p className="section-copy">최종 확인: {guide.updatedAt} · <Link href="/japan">엔화 계산기와 일본 쇼핑 가이드</Link></p> : null}
 
+        {slug === "japan-mounjaro-travel-checklist" && <p className="section-copy"><Link href="/japan/clinics/mounjaro">일본 마운자로 상담 병원과 초진·서류 비용 확인</Link></p>}
         {slug === "japan-tax-refund-2026" ? <JapanRefundVisual /> : null}
         {slug === "japan-shopping-price-checklist" ? <JapanPriceExamples source="japan_shopping_checklist" /> : null}
         {slug === "yen-rate-duty-free-comparison" ? <p className="section-copy"><Link href="/guide/japan-shopping-price-checklist#japan-price-examples-title">디올·SK-II·히비키의 규격과 일본 가격 확인 자료 보기</Link></p> : null}

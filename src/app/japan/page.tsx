@@ -30,7 +30,15 @@ export default function JapanPage() {
       </div>
     </section>
     <section className="japan-next"><h2 className="section-title">같은 상품의 면세 가격 확인</h2><p className="section-copy">모델·용량·수량을 맞춘 뒤 쿠폰 적용 후 최종가를 계산기에 입력하세요.</p><div className="chip-row"><Link className="button" href="/price-compare">면세 가격 비교하기</Link><Link className="button is-secondary" href="/category/perfume">향수</Link><Link className="button is-secondary" href="/category/beauty">화장품</Link><Link className="button is-secondary" href="/category/liquor">위스키·주류</Link></div></section>
-    <section className="japan-next"><h2 className="section-title">일본 여행 전 읽어볼 가이드</h2><div className="japan-guide-list">{japanGuides.map(guide => <Link href={`/guide/${guide.slug}`} key={guide.slug}><h3>{guide.title}</h3><p>{guide.excerpt}</p><small>확인일 {guide.updatedAt}</small></Link>)}</div></section>
+    <section className="japan-next">
+      <h2 className="section-title">일본 여행 중 병원·처방약 안내</h2>
+      <div className="japan-guide-list">
+        <Link href="/japan/clinics"><h3>일본 병원 찾기</h3><p>지역과 진료 분야별로 병원을 찾고 언어 지원과 방문 조건을 확인하세요.</p></Link>
+        <Link href="/japan/clinics/mounjaro"><h3>일본 마운자로 처방 병원·가격</h3><p>지역별 상담 기관과 초진료·서류비를 포함한 견적을 확인하세요.</p></Link>
+        <Link href="/guide/japan-mounjaro-travel-checklist"><h3>마운자로 처방·한국 반입 준비</h3><p>출발 전 확인할 증빙 서류와 보관·항공 운송 조건을 살펴보세요.</p><small>DFMOA 여행 가이드</small></Link>
+      </div>
+    </section>
+    <section className="japan-next"><h2 className="section-title">일본 여행 전 읽어볼 가이드</h2><div className="japan-guide-list">{japanGuides.filter(guide => guide.slug !== "japan-mounjaro-travel-checklist").map(guide => <Link href={`/guide/${guide.slug}`} key={guide.slug}><h3>{guide.title}</h3><p>{guide.excerpt}</p><small>확인일 {guide.updatedAt}</small></Link>)}</div></section>
     <p className="section-copy"><Link href="/deals">이번 달 면세점 혜택</Link> · <Link href="/benefit-reports">주간 혜택 리포트</Link></p>
   </div></section>;
 }
