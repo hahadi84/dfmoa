@@ -68,6 +68,7 @@ export function EffectivePriceCalculator({
   product: Product;
   sourcePrices: SourcePrice[];
 }) {
+  const [ready, setReady] = useState(false);
   const [preferences, setPreferences] = useState<EffectivePricePreferences>(() => readPreferences(product.slug));
   const pricedSources = sourcePrices.filter(
     (sourcePrice) => typeof sourcePrice.price === "number" && sourcePrice.status !== "low_confidence"
@@ -93,6 +94,7 @@ export function EffectivePriceCalculator({
   const inputStart = useRef("");
 
   useEffect(() => {
+    setReady(true);
     writePreferences(product.slug, preferences);
   }, [preferences, product.slug]);
 
@@ -124,6 +126,13 @@ export function EffectivePriceCalculator({
       ...current,
       ...next,
     }));
+  }
+
+  if (!ready) {
+    return <article id="effective-price" className="surface-card effective-price-panel">
+      <h2 className="card-title">예상 실결제가 계산기</h2>
+      <p role="status">계산기를 불러오는 중입니다.</p>
+    </article>;
   }
 
   if (!pricedSources.length) {

@@ -92,3 +92,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-28 사용자 요청으로 샤넬 상품 비교와 메일링 신청 종료 변경 release(requested-chanel-mail): 2026-11-28 운영 공개 1회 승인.
 
 - 2026-11-28 사용자 요청으로 샤넬 상세 가격 비교 디자인과 계산기 개선 release(requested-chanel-detail): 2026-11-28 운영 공개 1회를 승인한다.
+
+- 2026-11-29 사용자 요청으로 계산기 첫 입력 준비 상태 수정 release(requested-calculator-ready): 2026-11-29 운영 공개 1회를 승인한다.
