@@ -1,5 +1,3 @@
-{"ts":"2026-08-29T05:40:16.019Z","shilla":393386,"shinsegae":null,"lotte":null}
-{"ts":"2026-08-30T03:40:40.719Z","shilla":393386,"shinsegae":null,"lotte":null}
 {"ts":"2026-08-31T03:41:06.143Z","shilla":393386,"shinsegae":null,"lotte":null}
 {"ts":"2026-09-01T03:36:24.511Z","shilla":392303,"shinsegae":null,"lotte":null}
 {"ts":"2026-09-02T02:54:34.693Z","shilla":391476,"shinsegae":null,"lotte":null}
@@ -91,3 +89,4 @@
 {"ts":"2026-11-25T13:51:39+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":363582,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-25T13:51:39+09:00","priceKrw":363582,"priceUsd":270,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}
 {"ts":"2026-11-26T13:02:02+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":362772,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-26T13:02:02+09:00","priceKrw":362772,"priceUsd":270,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}
 {"ts":"2026-11-27T13:01:06+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":362853,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-27T13:01:06+09:00","priceKrw":362853,"priceUsd":270,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}
+{"ts":"2026-11-28T12:48:43+09:00","productId":"p1","validationVersion":"exact-product-v2","shilla":362529,"shinsegae":null,"lotte":null,"observations":{"shilla":{"fetchedAt":"2026-11-28T12:48:43+09:00","priceKrw":362529,"priceUsd":270,"itemId":"shilla-162513000012","title":"AVENTUS 50ml","sourceUrl":"https://www.shilladfs.com/estore/kr/ko/search?text=AVENTUS%2050ml"},"shinsegae":null,"lotte":null}}

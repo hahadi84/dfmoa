@@ -1,11 +1,15 @@
 {
-  "generatedAt": "2026-11-27T03:59:23.803Z",
+  "generatedAt": "2026-11-28T03:47:05.379Z",
   "windowDays": 7,
   "metric": "daily_tab_product_searches",
   "products": [
     {
       "productSlug": "johnnie-walker-blue-label-750ml",
       "count": 5
+    },
+    {
+      "productSlug": "ballantines-21-700ml",
+      "count": 4
     },
     {
       "productSlug": "sk2-pitera-essence-230ml",
@@ -16,15 +20,11 @@
       "count": 4
     },
     {
-      "productSlug": "ballantines-21-700ml",
-      "count": 3
-    },
-    {
       "productSlug": "bleu-de-chanel-edp-100ml",
       "count": 3
     },
     {
-      "productSlug": "hibiki-harmony-700ml",
+      "productSlug": "estee-lauder-anr-100ml",
       "count": 3
     },
     {
@@ -32,19 +32,15 @@
       "count": 3
     },
     {
-      "productSlug": "sulwhasoo-first-care-serum-90ml",
+      "productSlug": "royal-salute-21-700ml",
       "count": 3
     },
     {
-      "productSlug": "estee-lauder-anr-100ml",
+      "productSlug": "hibiki-harmony-700ml",
       "count": 2
     },
     {
-      "productSlug": "polo-ralph-lauren-cap",
-      "count": 2
-    },
-    {
-      "productSlug": "royal-salute-21-700ml",
+      "productSlug": "sulwhasoo-first-care-serum-90ml",
       "count": 2
     },
     {
@@ -64,19 +60,11 @@
       "count": 1
     },
     {
-      "productSlug": "gentle-monster-dear-01",
-      "count": 1
-    },
-    {
       "productSlug": "gnc-mega-men-sport-180-tablets",
       "count": 1
     },
     {
       "productSlug": "godiva-gold-collection",
-      "count": 1
-    },
-    {
-      "productSlug": "jo-malone-english-pear-100ml",
       "count": 1
     },
     {
@@ -89,14 +77,6 @@
     },
     {
       "productSlug": "le-labo-santal-33-50ml",
-      "count": 1
-    },
-    {
-      "productSlug": "longines-hydroconquest",
-      "count": 1
-    },
-    {
-      "productSlug": "pandora-sparkling-charm",
       "count": 1
     },
     {
@@ -125,6 +105,10 @@
     },
     {
       "productSlug": "swatch-moonswatch-mission-moon",
+      "count": 1
+    },
+    {
+      "productSlug": "tiffany-return-to-tiffany-bracelet",
       "count": 1
     },
     {
