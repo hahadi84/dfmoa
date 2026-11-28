@@ -3,7 +3,6 @@
 import { usePathname } from "next/navigation";
 import { TravelerFooter, LanguageLinks } from "@/components/traveler-chrome";
 import Link from "@/components/app-link";
-import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
 import { AFFILIATE_DISCLOSURE_TEXT } from "@/lib/affiliate";
 import { SITE_OPERATOR } from "@/lib/site-operator";
 
@@ -32,9 +31,6 @@ export function SiteFooter() {
               문의: <a href={`mailto:${SITE_OPERATOR.email}`}>{SITE_OPERATOR.email}</a>
             </p>
             <p>DFMOA는 개인이 비영리 목적으로 운영하는 정보 제공 서비스이며, 면세점과 제휴 관계가 없습니다.</p>
-          </div>
-          <div style={{ marginTop: 12 }}>
-            <NewsletterSignupForm source="footer" compact />
           </div>
         </div>
 

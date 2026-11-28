@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
 import { ContentContextCard } from "@/components/content-context-card";
 import { ContentProductGrid } from "@/components/content-product-grid";
-import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
 import { readBrandContext } from "@/lib/context-content";
 import { buildBrandJsonLd, buildBreadcrumbJsonLd, serializeJsonLd } from "@/lib/json-ld";
 import { buildBrandMetadata } from "@/lib/seo-metadata";
@@ -107,7 +106,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
 
         <ContentProductGrid products={brandProducts} title={`${brand.nameKo} 대표 상품`} />
 
-        <div className="split-grid" style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 12 }}>
           <article className="surface-card">
             <h2 className="card-title">공식 면세점 확인 링크</h2>
             <p className="section-copy">
@@ -123,7 +122,6 @@ export default async function BrandPage({ params }: BrandPageProps) {
             </div>
           </article>
 
-          <NewsletterSignupForm source="benefit_reports" />
         </div>
 
         <div className="split-grid" style={{ marginTop: 12 }}>

@@ -5,7 +5,6 @@ import benefitSources from '@/lib/benefit-sources.json';
 import { notFound } from "next/navigation";
 import Link from "@/components/app-link";
 import { ContentProductGrid } from "@/components/content-product-grid";
-import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
 import { benefitRules } from "@/lib/effective-price";
 import { buildBreadcrumbJsonLd, buildMonthlyDealArticleJsonLd } from "@/lib/json-ld";
 import { getMonthlyDealReportBySlug, monthlyDealReports } from "@/lib/seo-content";
@@ -147,7 +146,7 @@ export default async function DealsPage({ params }: DealsPageProps) {
         <ContentProductGrid products={relatedProducts} title="혜택 적용을 확인할 대표 상품" />
         <p className="section-copy"><Link href="/japan">일본 여행 쇼핑: 엔화 환율로 현지가와 면세가 비교하기</Link> · <Link href="/benefit-reports">주간 혜택 보기</Link></p>
 
-        <div className="split-grid" style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 12 }}>
           <article className="surface-card">
             <h2 className="card-title">원본 링크와 마지막 확인일</h2>
             <div className="benefit-link-list">
@@ -163,7 +162,6 @@ export default async function DealsPage({ params }: DealsPageProps) {
             </div>
           </article>
 
-          <NewsletterSignupForm source="benefit_reports" />
         </div>
       </div>
     </section>

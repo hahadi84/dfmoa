@@ -405,7 +405,7 @@ export const products: Product[] = [
     query: "블루 드 샤넬 오 드 빠르펭 100ml",
     volume: "100ml",
     categorySlug: "perfume",
-    summary: "남성 향수 대표 상품으로 가격과 재고 확인 수요가 큽니다.",
+    summary: "오 드 빠르펭 100ml 스프레이를 살 때 확인할 롯데·신라면세점 판매가와 쿠폰 조건을 비교합니다.",
     badge: "남성 향수",
     tags: ["샤넬", "블루드샤넬", "100ml"],
     searchTerms: ["chanel", "bleu de chanel", "블루 드 샤넬"],

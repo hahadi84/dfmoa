@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 };
 
 const effectiveDate = "2026-04-20";
-const updatedDate = "2026-10-23 (Google AdSense 광고 및 쿠키 안내 갱신)";
+const updatedDate = "2026-11-28 (메일링 신규 접수 종료)";
 
 const collectionRows = [
-  ["필수", "이메일 주소", "주간 리포트 구독, 가격 알림 등록 시"],
+  ["기존 신청", "이메일 주소", "기존 리포트·가격 알림 신청자의 수신거부 처리 (신규 접수 종료)"],
   ["자동수집", "IP 주소, 쿠키, User-Agent, 브라우저 종류, 방문일시, 방문 페이지, 유입 경로, 클릭 행동", "사이트 이용 전 과정"],
   ["검색 집계", "등록 상품 식별자, 한국 날짜, 상품·날짜·임시 탭 식별자의 해시", "상품 검색 화면 (Do Not Track 요청 제외)"],
   ["없음", "주민등록번호, 카드정보, 계좌정보 등", "수집 안 함"],
@@ -98,7 +98,7 @@ export default function PrivacyPage() {
           <section>
             <h2>1. 총칙</h2>
             <p>
-              본 방침은 {SITE_OPERATOR.serviceUrl}에서 제공하는 면세 가격 비교, 주간 리포트, 가격 알림, 문의 접수
+              본 방침은 {SITE_OPERATOR.serviceUrl}에서 제공하는 면세 가격 비교, 주간 리포트, 문의 접수
               기능에 적용됩니다. DFMOA는 {SITE_OPERATOR.operationType} 운영 서비스이며, 운영자 정보는 아래 방침과
               푸터에 표시된 내용을 기준으로 합니다.
             </p>
@@ -116,7 +116,7 @@ export default function PrivacyPage() {
           <section>
             <h2>3. 개인정보의 수집·이용 목적</h2>
             <ul>
-              <li>이메일: 주간 면세 리포트 발송, 가격 알림 전송, 수신거부 처리</li>
+              <li>메일링: 기존 신청자의 수신거부 처리</li>
               <li>자동수집 정보: 서비스 품질 개선, 방문 분석, 보안 및 광고 제공</li>
               <li>검색 집계: 최근 7일 인기상품 순위와 가격 수집 우선순위 결정. 검색 원문, IP 주소와 임시 탭 식별자는 이 집계에 저장하지 않습니다.</li>
               <li>문의 정보: 데이터 오류 확인, 권리자 요청 처리, 서비스 개선 의견 회신</li>

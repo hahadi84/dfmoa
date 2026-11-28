@@ -2,8 +2,6 @@
 
 import { startTransition, useEffect, useMemo, useState } from "react";
 import Link from "@/components/app-link";
-import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
-import { PriceAlertForm } from "@/components/price-alert-form";
 import { FavoriteButton, useFavoriteProducts, useRecentProducts } from "@/components/product-actions";
 import { SafeProductImage } from "@/components/product-image";
 import { SearchForm } from "@/components/search-form";
@@ -143,7 +141,7 @@ export function FavoritesPageClient({ popularProducts }: FavoritesPageClientProp
         <EmptyFavoritesState recentProducts={recentKnownProducts} popularProducts={popularProducts} />
       )}
 
-      <div className="split-grid" style={{ marginTop: 12 }}>
+      <div style={{ marginTop: 12 }}>
         <article className="surface-card">
           <span className="eyebrow">Recently Viewed</span>
           <h2 className="card-title">최근 본 상품</h2>
@@ -164,7 +162,6 @@ export function FavoritesPageClient({ popularProducts }: FavoritesPageClientProp
           )}
         </article>
 
-        <NewsletterSignupForm source="favorite_page" />
       </div>
     </div>
   );
@@ -248,10 +245,6 @@ function FavoriteInsightCard({
         ) : null}
       </div>
 
-      <details className="favorite-alert-details">
-        <summary>가격 알림 등록</summary>
-        <PriceAlertForm product={product} source="favorite_page" compact />
-      </details>
     </article>
   );
 }

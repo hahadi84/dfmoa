@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "@/components/app-link";
-import { NewsletterSignupForm } from "@/components/newsletter-signup-form";
 import { benefitReports, latestBenefitReport } from "@/lib/benefit-report-generator";
 
 export const metadata: Metadata = {
@@ -48,7 +47,7 @@ export default function BenefitReportsPage() {
 
         <p className="section-copy"><Link href="/japan">일본 여행·엔화 계산기</Link> · <Link href="/deals">월간 혜택 모아보기</Link></p>
 
-        <div className="split-grid" style={{ marginTop: 12 }}>
+        <div style={{ marginTop: 12 }}>
           <div className="report-grid">
             {benefitReports.map((report) => (
               <Link key={report.slug} className="report-card" href={`/benefit-reports/${report.slug}`}>
@@ -63,16 +62,8 @@ export default function BenefitReportsPage() {
             ))}
           </div>
 
-          <NewsletterSignupForm source="benefit_reports" />
         </div>
 
-        <article className="surface-card report-callout">
-          <h2 className="card-title">메일 구독 운영 원칙</h2>
-          <p className="section-copy">
-            주간 리포트 구독 동의와 가격 알림 동의는 분리해 저장합니다. 광고/제휴 링크가 포함될 수 있는 메일은
-            광고성 정보 수신동의를 별도로 받으며, 모든 이메일에는 로그인 없는 수신거부 링크를 포함합니다.
-          </p>
-        </article>
       </div>
     </section>
   );
