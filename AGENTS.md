@@ -86,3 +86,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - 2026-11-27 사용자 요청으로 한국어 헤더·홈 SEO 개선 release(requested-header-seo): 2026-11-27 운영 공개 1회를 승인한다.
 
 - 2026-11-28 사용자 요청으로 일본 병원 검색·마운자로 SEO 개선 release(requested-clinic-seo): 2026-11-28 운영 공개 1회를 승인한다. 날짜·운영 환경·중복 방지를 유지한다.
+
+- 2026-11-28 사용자 배포 요청으로 로얄살루트 기내면세 가격과 계산기 이용 측정 수정본 release(requested-royal-comparison): 2026-11-28 운영 공개 1회 승인.

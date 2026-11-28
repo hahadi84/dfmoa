@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   calculateEffectivePriceEstimate,
   defaultEffectivePricePreferences,
@@ -86,30 +86,35 @@ export function EffectivePriceCalculator({
           ruleConfidence: sourceRules.some((rule) => rule.confidence === "low") ? "low" : "medium",
         })
       : null;
-  const estimateEventKey = estimate
-    ? `${selectedSource?.sourceId}:${estimate.estimatedFinalPrice}:${estimate.discounts.length}:${estimate.confidence}`
-    : "";
-  const estimateConfidence = estimate?.confidence;
-  const estimateDiscountCount = estimate?.discounts.length ?? 0;
-  const selectedSourceId = selectedSource?.sourceId;
+  const pendingSelection = useRef(false);
+  const inputStart = useRef("");
 
   useEffect(() => {
     writePreferences(product.slug, preferences);
   }, [preferences, product.slug]);
 
-  useEffect(() => {
-    if (!estimateEventKey || !selectedSourceId) {
-      return;
-    }
-
+  function recordCalculation() {
+    if (!selectedSource || !estimate) return;
     trackEvent("effective_price_calculate", {
       product_id: product.id,
       product_slug: product.slug,
-      source_id: selectedSourceId,
-      confidence: estimateConfidence,
-      has_discount: estimateDiscountCount > 0,
+      source_id: selectedSource.sourceId,
+      confidence: estimate.confidence,
+      has_discount: estimate.discounts.length > 0,
     });
-  }, [estimateConfidence, estimateDiscountCount, estimateEventKey, product.id, product.slug, selectedSourceId]);
+  }
+
+  useEffect(() => {
+    if (pendingSelection.current) {
+      pendingSelection.current = false;
+      recordCalculation();
+    }
+  });
+
+  function selectPreference(next: Partial<EffectivePricePreferences>) {
+    pendingSelection.current = true;
+    updatePreference(next);
+  }
 
   function updatePreference(next: Partial<EffectivePricePreferences>) {
     setPreferences((current) => ({
@@ -151,7 +156,7 @@ export function EffectivePriceCalculator({
             <span>면세점</span>
             <select
               value={selectedSource?.sourceId ?? ""}
-              onChange={(event) => updatePreference({ sourceId: event.target.value as StoreId })}
+              onChange={(event) => selectPreference({ sourceId: event.target.value as StoreId })}
             >
               {pricedSources.map((sourcePrice) => (
                 <option key={sourcePrice.sourceId} value={sourcePrice.sourceId}>
@@ -165,7 +170,7 @@ export function EffectivePriceCalculator({
             <span>회원 등급 예상 할인</span>
             <select
               value={preferences.vipDiscountPercent}
-              onChange={(event) => updatePreference({ vipDiscountPercent: toNumber(event.target.value) })}
+              onChange={(event) => selectPreference({ vipDiscountPercent: toNumber(event.target.value) })}
             >
               <option value={0}>없음</option>
               <option value={3}>3% 예상</option>
@@ -178,6 +183,13 @@ export function EffectivePriceCalculator({
           <label className="estimate-field">
             <span>공개 쿠폰 직접 입력</span>
             <input
+              onFocus={(event) => { inputStart.current = event.currentTarget.value; }}
+              onBlur={(event) => {
+                if (event.currentTarget.value !== inputStart.current) recordCalculation();
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") event.currentTarget.blur();
+              }}
               inputMode="numeric"
               value={preferences.couponAmount}
               onChange={(event) => updatePreference({ couponAmount: toNumber(event.target.value) })}
@@ -188,7 +200,7 @@ export function EffectivePriceCalculator({
             <span>대표 카드 혜택</span>
             <select
               value={preferences.cardDiscountAmount}
-              onChange={(event) => updatePreference({ cardDiscountAmount: toNumber(event.target.value) })}
+              onChange={(event) => selectPreference({ cardDiscountAmount: toNumber(event.target.value) })}
             >
               <option value={0}>없음</option>
               <option value={5000}>5,000원 예상</option>
@@ -200,6 +212,13 @@ export function EffectivePriceCalculator({
           <label className="estimate-field">
             <span>적립금 사용 예상액</span>
             <input
+              onFocus={(event) => { inputStart.current = event.currentTarget.value; }}
+              onBlur={(event) => {
+                if (event.currentTarget.value !== inputStart.current) recordCalculation();
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") event.currentTarget.blur();
+              }}
               inputMode="numeric"
               value={preferences.pointsAmount}
               onChange={(event) => updatePreference({ pointsAmount: toNumber(event.target.value) })}
@@ -209,6 +228,13 @@ export function EffectivePriceCalculator({
           <label className="estimate-field">
             <span>참고 환율</span>
             <input
+              onFocus={(event) => { inputStart.current = event.currentTarget.value; }}
+              onBlur={(event) => {
+                if (event.currentTarget.value !== inputStart.current) recordCalculation();
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") event.currentTarget.blur();
+              }}
               inputMode="decimal"
               value={preferences.exchangeRate}
               onChange={(event) => updatePreference({ exchangeRate: toNumber(event.target.value) || exchangeRateSnapshot.rate })}

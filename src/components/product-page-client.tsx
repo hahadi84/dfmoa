@@ -260,6 +260,21 @@ export function ProductPageClient({
           ) : null}
         </div>
 
+        {product.slug === "royal-salute-21-700ml" && (
+          <section className="surface-card">
+            <h2 className="card-title">제주항공 국제선 기내에서 살 때</h2>
+            <p>롯데기내면세점의 로얄살루트 21년 시그니처 블렌드 700ml 한 병은
+              2026년 10~11월 카탈로그 기준 <strong>162,000원(US$122)</strong>입니다.
+              정상가 US$174에서 30% 할인한 표시가입니다.</p>
+            <p className="section-copy">11월 28일 확인한 한국어 카탈로그 가격입니다.
+              탑승편의 판매 여부와 결제 가격을 확인하세요. 온라인 면세점 상품과
+              에디션·포장 및 인도 조건이 일치하는지는 확인이 필요합니다.</p>
+            <a href="https://static.jejuair.net/cms/images/pdf/20260928172426817.pdf">
+              제주항공 공식 기내 면세 카탈로그 35쪽 확인
+            </a>
+          </section>
+        )}
+
         {!isLoading && !error ? (
           <EffectivePriceCalculator product={product} sourcePrices={sourcePrices} />
         ) : null}
